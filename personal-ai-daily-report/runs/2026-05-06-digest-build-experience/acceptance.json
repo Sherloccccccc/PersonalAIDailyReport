@@ -1,0 +1,15 @@
+{
+  "target_name": "personal-ai-daily-report/scripts/build_digest.py",
+  "task_id": "2026-05-06-digest-build-experience",
+  "checks": {
+    "build_exit_code": "pass",
+    "juya_news_count_positive": "pass",
+    "paper_selected_count_valid": "pass",
+    "paper_state_written": "pass",
+    "paper_scores_present": "pass",
+    "run_log_written": "pass",
+    "folo_timeout_fallback_logged": "pass"
+  },
+  "overall_result": "pass",
+  "generated_at": "2026-05-06T22:29:00+08:00"
+}

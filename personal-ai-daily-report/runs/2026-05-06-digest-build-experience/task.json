@@ -1,0 +1,23 @@
+{
+  "task_id": "2026-05-06-digest-build-experience",
+  "target_name": "personal-ai-daily-report/scripts/build_digest.py",
+  "task_type": "local_pipeline_fix",
+  "goal": "Fix Daily AI Info data-build experience for Juya News, diagnosable Folo timeout/fallback, paper scoring/selection, and persistent paper state.",
+  "inputs": [
+    "Juya RSS: https://imjuya.github.io/juya-ai-daily/rss.xml",
+    "Folo category: AI FrontEnd",
+    "Paper fallback: arXiv API with old filter rules",
+    "Paper score dimensions: application_relevance, new_signal, engineering_utility, timeliness_rarity"
+  ],
+  "done_when": [
+    "build command exit_code = 0",
+    "digest-data.json stats.news_count > 0",
+    "digest-data.json paper_status.selected_count <= 10",
+    "digest-data.json paper_status.selected_count > 0",
+    "paper-state.json exists and contains scored papers with abstract and if_pushed",
+    "run-log.jsonl exists and contains current run_id",
+    "Folo timeout/fallback is represented in digest-data.json logs when timeout is forced"
+  ],
+  "retry_limit": 3,
+  "created_at": "2026-05-06T22:20:00+08:00"
+}
