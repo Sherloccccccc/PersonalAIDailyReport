@@ -1,65 +1,92 @@
 # Selection Notes
 
-Use this skill for a Folo digest where:
+Use these notes for the `Paper` module of `Daily AI Info`.
 
-- non-paper items are kept in full
-- arXiv papers come only from `cs.AI updates on arXiv.org`
-- papers are filtered first by category and blacklist
-- Codex then reads the filtered pool and picks `5 new + 5 classic`
-- final output hides pipeline stats and shows only reader-facing digest content
+## Source Order
 
-## Paper Candidate Rules
+1. Folo category `AI FrontEnd`
+2. arXiv API fallback
+3. arXiv RSS fallback
 
-- allowed categories: `cs.LG`, `cs.CL`, `cs.SE`
-- blacklist terms:
-  - `clinical`
-  - `psychiatric`
-  - `lung cancer`
-  - `biomechanical`
-  - `traffic`
-  - `driving`
-  - `emboli`
-  - `field medicine`
-  - `legal`
-  - `graph`
+The fallback path exists because Folo CLI or arXiv API may hang, fail auth, or hit rate limits. Build logs must preserve which source was used.
 
-## Bucket Intuition
+## Hard Filter
 
-`classic`:
+Keep papers only when they pass both checks:
 
-- agent
-- reasoning
-- RAG / retrieval
-- memory
-- coding
-- safety
-- alignment
-- efficiency
+- categories intersect with `cs.LG`, `cs.CL`, `cs.SE`
+- title/abstract do not contain blacklist terms
 
-`new`:
+Blacklist:
 
-- a new product angle
-- a new interface or modality
-- a new execution boundary
-- a new workflow pattern
-- a new deployment or UX implication
+- `clinical`
+- `psychiatric`
+- `lung cancer`
+- `biomechanical`
+- `traffic`
+- `driving`
+- `emboli`
+- `field medicine`
+- `legal`
+- `graph`
 
-These are ranking hints, not hard inclusion rules.
+## Score Dimensions
+
+Total score is 100 points:
+
+| Dimension | Points | Meaning |
+|---|---:|---|
+| `application_relevance` | 25 | Can inform AI products, agents, workflows, tools, or developer experience |
+| `new_signal` | 25 | New task, interface, dataset, benchmark, deployment pattern, or usage mode |
+| `engineering_utility` | 25 | Can plausibly be implemented, integrated, tested, or reused |
+| `timeliness_rarity` | 25 | Fits current AI trends or is rare enough to be worth attention |
+
+Current threshold: `score_total >= 60`.
+
+## State Rules
+
+`data/paper-state.json` is a single table.
+
+- `if_pushed = 0`: waiting list
+- `if_pushed = 1`: already sent
+
+Do not migrate rows between separate waiting/sent lists. Select from `if_pushed = 0` by `score_total` descending.
+
+Store full abstract in the state file for later audit.
+
+## Summary Rules
+
+Paper `一句话总结` should be around 100 Chinese characters and answer:
+
+- What did the paper build/propose/evaluate?
+- What concrete task, benchmark, dataset, method, system, or result is involved?
+- Why does it matter for AI products, agents, tools, or workflows?
+
+Good:
+
+```text
+提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞，覆盖199 three-stage attack chains、10 web-application substrates、31 CWE classes；实验还比较 staged tickets 与 direct prompt，并评估 reviewer 是否会把漏洞 PR 当作常规改动放行。
+```
+
+Bad:
+
+```text
+这篇论文围绕某主题展开，提供了工程线索。
+```
+
+Forbidden generic phrases:
+
+- `围绕...展开`
+- `工程线索`
+- `新方法、评测或工程线索`
 
 ## Final Presentation Rules
 
-- `News` must work for every non-paper feed, not only blog/news feeds.
-- `News` uses:
-  - title
-  - original content in English
-  - original link
-- `News` numbering restarts from `1`
-- `Paper` uses:
-  - title
-  - original content in English
-  - insights in Chinese
-  - original link
-- `Paper` numbering restarts from `1`
-- Do not show a separate abstract section in the final digest.
-- Do not show internal counters such as totals, candidate counts, or test-send notes in the final digest.
-- Use the Feishu OpenAPI send path from `scripts/send_lark_markdown.py` for final delivery so Chinese text and rich formatting survive on Windows.
+Do not show score, abstract, candidate counts, source fallback details, or logs in the daily report body.
+
+Show only:
+
+- paper title
+- publish date
+- 一句话总结
+- link

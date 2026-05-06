@@ -1,116 +1,161 @@
 ---
 name: personal-ai-daily-report
-description: Build and deliver a personal daily AI digest from the Folo category "AI FrontEnd". Use when Codex needs to fetch recent Folo entries, keep all non-paper items as News, filter arXiv AI papers with fixed rules, select 10 papers balancing new signals and core themes, write a final markdown report, and optionally send it to Feishu/Lark chat.
+description: Build and deliver the user's Daily AI Info report. News comes from Juya RSS, Paper comes from the existing arXiv/Folo paper flow with scoring, persistent paper state, Feishu delivery, and Git-backed run artifacts.
 ---
 
 # Personal AI Daily Report
 
-Use this skill to produce the user's `Daily AI Info` report from Folo and deliver it to Feishu.
+Use this skill to produce and deliver `Daily AI Info`.
 
-Keep the workflow deterministic until paper selection:
+## Stable Daily Workflow
 
-- use `scripts/build_digest.py` to fetch, paginate, split, filter, and enrich items
-- use Codex judgment only for final paper selection and Chinese insights
-- use `scripts/send_lark_markdown.py` for Feishu delivery to avoid Windows Unicode corruption
-
-## Workflow
-
-1. Run the build script from this skill directory:
-
-```powershell
-python scripts/build_digest.py --category "AI FrontEnd" --hours 24 --output-dir ".tmp/folo-daily"
-```
-
-2. Read `.tmp/folo-daily/digest-data.json` and `.tmp/folo-daily/digest-scaffold.md`.
-
-3. Render all `news` entries in the final `News` section.
-
-4. From `paper_candidates`, select 10 papers total when available:
-
-- prefer 5 `new` signal papers
-- prefer 5 `classic` or core-theme papers
-- backfill from the other bucket only when the requested output allows it
-
-5. Write the final markdown to the requested path. If no path is given, use:
+The production path is GitHub Actions:
 
 ```text
-.tmp/folo-daily/daily-ai-info-final.md
+GitHub Actions cron -> build digest -> send Feishu -> write run artifacts -> commit/push
 ```
 
-6. If the user asks for delivery, send the prepared markdown:
+Manual local build:
 
-```powershell
-python scripts/send_lark_markdown.py --markdown-file ".tmp/folo-daily/daily-ai-info-final.md" --chat-id <chat_id>
+```bash
+RUN_ID=$(TZ=Asia/Shanghai date +%F)
+mkdir -p "runs/$RUN_ID" data
+python personal-ai-daily-report/scripts/build_digest.py \
+  --output-dir "runs/$RUN_ID" \
+  --state-file data/paper-state.json \
+  --run-summary "runs/$RUN_ID/run-log.json" \
+  --run-id "$RUN_ID" \
+  --folo-timeout 30 \
+  --paper-source auto \
+  --top-k 10
 ```
 
-If no `--chat-id` or `--user-id` is provided, the sender script resolves the current authenticated Feishu user via `lark-cli`.
+Manual Feishu send:
+
+```bash
+python personal-ai-daily-report/scripts/send_lark_markdown.py \
+  --markdown-file "runs/$RUN_ID/daily-ai-info.md" \
+  --chat-id "$FEISHU_CHAT_ID" \
+  --delivery-log "runs/$RUN_ID/run-log.json" \
+  --result-json "runs/$RUN_ID/delivery-result.json"
+```
+
+## Sources
+
+`News`:
+
+- source: `https://imjuya.github.io/juya-ai-daily/rss.xml`
+- parser: latest RSS item `content:encoded`
+- keeps Juya categories such as `要闻`, `模型发布`, `开发生态`, `产品应用`, `技术与洞察`, `行业动态`, `前瞻与传闻`
+
+`Paper`:
+
+- primary source: existing Folo category `AI FrontEnd`
+- fallback source: arXiv API
+- second fallback: arXiv RSS category feeds
+- allowed arXiv categories: `cs.LG`, `cs.CL`, `cs.SE`
+- blacklist terms: `clinical`, `psychiatric`, `lung cancer`, `biomechanical`, `traffic`, `driving`, `emboli`, `field medicine`, `legal`, `graph`
+
+## Persistent Artifacts
+
+```text
+data/
+  paper-state.json
+
+runs/
+  index.jsonl
+  YYYY-MM-DD/
+    daily-ai-info.md
+    digest-data.json
+    run-log.json
+    delivery-result.json
+```
+
+`data/paper-state.json` is the long-lived paper table:
+
+- stores scored paper candidates with full abstract
+- `if_pushed = 0` means waiting list
+- `if_pushed = 1` means already sent
+
+`runs/YYYY-MM-DD/daily-ai-info.md` is the exact report body to send.
+
+`runs/YYYY-MM-DD/digest-data.json` stores build internals: Juya issue, parsed news, paper candidates, dropped papers, selected papers, scores, and logs.
+
+`runs/YYYY-MM-DD/run-log.json` stores the daily status and delivery result.
+
+`runs/index.jsonl` stores one compact index row per run.
 
 ## Output Contract
 
-Title the report exactly:
+Title:
 
-```text
-Daily AI Info
+```md
+# Daily AI Info
 ```
 
-Use these sections:
+Use only these top-level sections:
 
 - `News`
 - `Paper`
 
-For `News`:
+For each News item:
 
-- include every non-paper item
-- number from 1 inside the section
-- include title
-- include `Original Content in English`
-- include `Original Link`
+```md
+1. **Title**
 
-For `Paper`:
+**摘要:**
+Chinese summary.
 
-- number from 1 inside the section
-- include title
-- include `Original Content in English`
-- include `Insights in Chinese`
-- include `Original Link`
-- do not include a separate abstract field
+**Original Link:**
+https://...
+```
 
-Do not include summary stats, raw counts, candidate counts, build notes, delivery notes, or other internal pipeline details in the final digest.
+For each Paper item:
 
-## Paper Rules
+```md
+1. **Paper Title**
 
-The build script applies the fixed filter rules. Do not manually reimplement them unless the user changes the rules.
+**Publish Date:**
+YYYY-MM-DD
 
-Current fixed rules:
+**一句话总结:**
+Around 100 Chinese characters describing what the paper specifically did.
 
-- time window: past 24 hours by default
-- paper source: `cs.AI updates on arXiv.org`
-- allowed arXiv categories: `cs.LG`, `cs.CL`, `cs.SE`
-- blacklist terms: `clinical`, `psychiatric`, `lung cancer`, `biomechanical`, `traffic`, `driving`, `emboli`, `field medicine`, `legal`, `graph`
+**Link:**
+https://arxiv.org/abs/...
+```
 
-Read `references/selection-notes.md` when the paper pool is ambiguous or when deciding between new-signal and core-theme papers.
+Do not include internal stats, candidate counts, delivery notes, scoring details, or build logs in `daily-ai-info.md`.
 
-## Selection Guidance
+## Paper Scoring
 
-Treat these as core themes by default:
+The build script uses four 25-point dimensions:
 
-- agent
-- multi-agent
-- reasoning
-- RAG or retrieval
-- memory
-- coding agents
-- safety
-- alignment
-- efficiency
+- `application_relevance`
+- `new_signal`
+- `engineering_utility`
+- `timeliness_rarity`
 
-Treat papers as new signals when they introduce a new product angle, interface, modality, workflow boundary, deployment pattern, or UX implication.
+Keep selected papers at `top-k = 10` when available. If fewer papers pass threshold, send fewer. Waiting-list papers are selected by score without age decay.
 
-Prefer papers that support a concrete insight about future AI applications. Avoid choosing routine benchmark-only papers unless the pool is thin.
+Paper summaries must be concrete. Avoid generic filler such as:
+
+- `围绕...展开`
+- `工程线索`
+- `新方法、评测或工程线索`
+
+## Required Secrets For GitHub Actions
+
+- `LARK_APP_ID`
+- `LARK_APP_SECRET`
+- `FEISHU_CHAT_ID`
+- `FOLO_TOKEN` optional
+
+The local `lark-cli` config showed app id `cli_a96cf46a56789bb5`; store that as `LARK_APP_ID` if this is the app you want the workflow to use. Do not commit app secrets.
 
 ## Windows UTF-8 Handling
 
-For Chinese insights, Chinese paths, or Feishu delivery on Windows, set UTF-8 before running commands:
+For Chinese output, Chinese paths, or Feishu delivery on Windows, set UTF-8 first:
 
 ```powershell
 [Console]::InputEncoding = [System.Text.UTF8Encoding]::new($false)
@@ -120,6 +165,7 @@ $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
 ## Resources
 
-- `scripts/build_digest.py`: fetches Folo data, filters papers, fetches arXiv abstracts, writes JSON and scaffold markdown
-- `scripts/send_lark_markdown.py`: sends final markdown via Feishu OpenAPI using `lark-cli` credentials
-- `references/selection-notes.md`: stable notes for paper bucket selection and final presentation rules
+- `scripts/build_digest.py`: builds report data, markdown, paper state, and run summary
+- `scripts/send_lark_markdown.py`: sends markdown to Feishu and updates delivery status
+- `references/selection-notes.md`: paper scoring and filtering notes
+- `DAILY_WORKFLOW.md`: stable production workflow and daily prompt

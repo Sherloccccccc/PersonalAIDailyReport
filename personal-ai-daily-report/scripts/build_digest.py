@@ -81,7 +81,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--arxiv-max-results", type=int, default=80)
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--state-file", default="data/paper-state.json")
-    parser.add_argument("--run-log", default="data/run-log.jsonl")
+    parser.add_argument("--run-log", default=None, help="Optional legacy JSONL run log path.")
+    parser.add_argument("--run-summary", default=None, help="Daily run summary JSON path.")
+    parser.add_argument("--index-log", default=None, help="Append one JSONL index row for this run.")
     parser.add_argument("--run-id")
     return parser.parse_args()
 
@@ -791,6 +793,11 @@ def append_run_log(path: Path, payload: Dict[str, Any]) -> None:
         handle.write(json.dumps(payload, ensure_ascii=False) + "\n")
 
 
+def write_json(path: Path, payload: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> int:
     args = parse_args()
     output_dir = Path(args.output_dir).resolve()
@@ -831,9 +838,11 @@ def main() -> int:
     scaffold = build_scaffold_markdown(dataset)
 
     json_path = output_dir / "digest-data.json"
-    md_path = output_dir / "digest-scaffold.md"
-    json_path.write_text(json.dumps(dataset, ensure_ascii=False, indent=2), encoding="utf-8")
+    md_path = output_dir / "daily-ai-info.md"
+    legacy_md_path = output_dir / "digest-scaffold.md"
+    write_json(json_path, dataset)
     md_path.write_text(scaffold, encoding="utf-8")
+    legacy_md_path.write_text(scaffold, encoding="utf-8")
 
     run_log = {
         "run_id": run_id,
@@ -846,17 +855,45 @@ def main() -> int:
         "paper_selected_count": len(selected_papers),
         "paper_added_to_state_count": paper_status["added_to_state_count"],
         "paper_waiting_remaining_count": paper_status["waiting_remaining_count"],
+        "delivery": {
+            "status": "not_sent",
+            "channel": None,
+            "message_ids": [],
+        },
+        "artifacts": {
+            "daily_ai_info": str(md_path),
+            "digest_data": str(json_path),
+            "paper_state": args.state_file,
+        },
         "logs": logs,
     }
-    append_run_log(Path(args.run_log), run_log)
+    run_summary_path = Path(args.run_summary) if args.run_summary else output_dir / "run-log.json"
+    write_json(run_summary_path, run_log)
+    if args.run_log:
+        append_run_log(Path(args.run_log), run_log)
+    if args.index_log:
+        append_run_log(
+            Path(args.index_log),
+            {
+                "run_id": run_id,
+                "status": run_log["delivery"]["status"],
+                "news_count": len(news),
+                "paper_selected_count": len(selected_papers),
+                "path": str(run_summary_path),
+                "generated_at": dataset["generated_at"],
+            },
+        )
 
     print(
         json.dumps(
             {
                 "json": str(json_path),
                 "markdown": str(md_path),
+                "legacy_markdown": str(legacy_md_path),
                 "state_file": args.state_file,
+                "run_summary": str(run_summary_path),
                 "run_log": args.run_log,
+                "index_log": args.index_log,
                 "stats": dataset["stats"],
                 "paper_status": paper_status,
             },

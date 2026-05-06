@@ -1,0 +1,109 @@
+name: Daily AI Info
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ai-info
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build digest
+        env:
+          FOLO_TOKEN: ${{ secrets.FOLO_TOKEN }}
+        run: |
+          RUN_ID=$(TZ=Asia/Shanghai date +%F)
+          mkdir -p "runs/$RUN_ID" data
+          python personal-ai-daily-report/scripts/build_digest.py \
+            --output-dir "runs/$RUN_ID" \
+            --state-file data/paper-state.json \
+            --run-summary "runs/$RUN_ID/run-log.json" \
+            --run-id "$RUN_ID" \
+            --folo-timeout 30 \
+            --paper-source auto \
+            --top-k 10
+
+      - name: Send Feishu
+        env:
+          LARK_APP_ID: ${{ secrets.LARK_APP_ID }}
+          LARK_APP_SECRET: ${{ secrets.LARK_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+        run: |
+          RUN_ID=$(TZ=Asia/Shanghai date +%F)
+          python personal-ai-daily-report/scripts/send_lark_markdown.py \
+            --markdown-file "runs/$RUN_ID/daily-ai-info.md" \
+            --chat-id "$FEISHU_CHAT_ID" \
+            --delivery-log "runs/$RUN_ID/run-log.json" \
+            --result-json "runs/$RUN_ID/delivery-result.json"
+
+      - name: Update index
+        run: |
+          RUN_ID=$(TZ=Asia/Shanghai date +%F)
+          export RUN_ID
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          run_id = os.environ["RUN_ID"]
+          run_log_path = Path("runs") / run_id / "run-log.json"
+          run_log = json.loads(run_log_path.read_text(encoding="utf-8"))
+          row = {
+              "run_id": run_id,
+              "status": run_log.get("delivery", {}).get("status", "unknown"),
+              "news_count": run_log.get("news_count"),
+              "paper_selected_count": run_log.get("paper_selected_count"),
+              "path": str(run_log_path),
+              "generated_at": run_log.get("generated_at"),
+              "sent_at": run_log.get("delivery", {}).get("sent_at"),
+          }
+          index_path = Path("runs/index.jsonl")
+          existing = []
+          if index_path.exists():
+              existing = [
+                  json.loads(line)
+                  for line in index_path.read_text(encoding="utf-8").splitlines()
+                  if line.strip()
+              ]
+          existing = [item for item in existing if item.get("run_id") != run_id]
+          existing.append(row)
+          index_path.parent.mkdir(parents=True, exist_ok=True)
+          index_path.write_text(
+              "\n".join(json.dumps(item, ensure_ascii=False) for item in existing) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Commit artifacts
+        run: |
+          RUN_ID=$(TZ=Asia/Shanghai date +%F)
+          git config user.name "daily-ai-info-bot"
+          git config user.email "daily-ai-info-bot@users.noreply.github.com"
+          git add data/paper-state.json "runs/$RUN_ID" runs/index.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(daily): add Daily AI Info $RUN_ID"
+          git push
