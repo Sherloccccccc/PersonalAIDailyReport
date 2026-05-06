@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T17:55:36.942950+00:00",
+  "generated_at": "2026-05-06T17:58:48.408766+00:00",
   "run_id": "2026-05-07",
   "juya_issue": {
     "feed_title": "橘鸦AI早报",
@@ -16,7 +16,7 @@
     "news_count": 20,
     "paper_candidate_count": 43,
     "paper_dropped_count": 37,
-    "paper_selected_count": 9
+    "paper_selected_count": 0
   },
   "rules": {
     "allowed_categories": [
@@ -1985,339 +1985,15 @@
       "drop_reason": "category"
     }
   ],
-  "selected_papers": [
-    {
-      "id": "arxiv:2605.04000",
-      "arxiv_id": "2605.04000",
-      "title": "Mitigating False Positives in Static Memory Safety Analysis of Rust Programs via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2605.04000",
-      "published_at": "2026-05-05T17:21:40Z",
-      "publish_date": "2026-05-05",
-      "description": "Static analysis tools are essential for ensuring memory safety in Rust programs, particularly as Rust gains adoption in safety-critical domains. However, existing tools such as Rudra and MirChecker suffer from high false positive rates, which diminish developer trust, increase manual review effort, and may obscure genuine vulnerabilities. This paper presents a novel reinforcement learning (RL)-based approach for automatically classifying and suppressing spurious warnings in static memory safety analysis for Rust. To achieve this, we design an RL agent that learns a warning suppression policy by extracting contextual features from Rust's Mid-level Intermediate Representation (MIR) and optimizing its decisions through interaction with static analysis outputs. To improve decision quality, we integrate dynamic validation via cargo-fuzz as an auxiliary feedback mechanism, allowing the agent to selectively validate suspicious warnings through targeted fuzz testing. Our evaluation shows that the proposed approach significantly outperforms state-of-the-art LLM-based baselines, achieving 65.2% accuracy and an F1 score of 0.659, an improvement of 17.1% over the best LLM baseline. With a recall of 74.6%, our method successfully identifies nearly three-quarters of true bugs while substantially reducing false positives, improving precision from 25.6% in raw Rudra output to 59.0%. Incorporating dynamic fuzzing further boosts performance, yielding additional improvements of 10.7 percentage points in accuracy and 8.6 percentage points in F1 score over the RL-only variant. Overall, our work demonstrates that combining reinforcement learning with hybrid static-dynamic analysis can substantially reduce false positives and improve the practical usability of memory safety verification tools for Rust.",
-      "summary": "Static analysis tools are essential for ensuring memory safety in Rust programs, particularly as Rust gains adoption in safety-critical domains. However, existing tools such as Rudra and MirChecker suffer from high false positive rates, which diminish developer trust, increase manual review effort, and may obscure genuine vulnerabilities. This paper presents a novel reinforcement learning (RL)-based approach for automatically classifying and suppressing spurious warnings in static memory safety analysis for Rust. To achieve this, we design an RL agent that learns a warning suppression policy by extracting contextual features from Rust's Mid-level Intermediate Representation (MIR) and optimizing its decisions through interaction with static analysis outputs. To improve decision quality, we integrate dynamic validation via cargo-fuzz as an auxiliary feedback mechanism, allowing the agent to selectively validate suspicious warnings through targeted fuzz testing. Our evaluation shows that the proposed approach significantly outperforms state-of-the-art LLM-based baselines, achieving 65.2% accuracy and an F1 score of 0.659, an improvement of 17.1% over the best LLM baseline. With a recall of 74.6%, our method successfully identifies nearly three-quarters of true bugs while substantially reducing false positives, improving precision from 25.6% in raw Rudra output to 59.0%. Incorporating dynamic fuzzing further boosts performance, yielding additional improvements of 10.7 percentage points in accuracy and 8.6 percentage points in F1 score over the RL-only variant. Overall, our work demonstrates that combining reinforcement learning with hybrid static-dynamic analysis can substantially reduce false positives and improve the practical usability of memory safety verification tools for Rust.",
-      "abstract": "Static analysis tools are essential for ensuring memory safety in Rust programs, particularly as Rust gains adoption in safety-critical domains. However, existing tools such as Rudra and MirChecker suffer from high false positive rates, which diminish developer trust, increase manual review effort, and may obscure genuine vulnerabilities. This paper presents a novel reinforcement learning (RL)-based approach for automatically classifying and suppressing spurious warnings in static memory safety analysis for Rust. To achieve this, we design an RL agent that learns a warning suppression policy by extracting contextual features from Rust's Mid-level Intermediate Representation (MIR) and optimizing its decisions through interaction with static analysis outputs. To improve decision quality, we integrate dynamic validation via cargo-fuzz as an auxiliary feedback mechanism, allowing the agent to selectively validate suspicious warnings through targeted fuzz testing. Our evaluation shows that the proposed approach significantly outperforms state-of-the-art LLM-based baselines, achieving 65.2% accuracy and an F1 score of 0.659, an improvement of 17.1% over the best LLM baseline. With a recall of 74.6%, our method successfully identifies nearly three-quarters of true bugs while substantially reducing false positives, improving precision from 25.6% in raw Rudra output to 59.0%. Incorporating dynamic fuzzing further boosts performance, yielding additional improvements of 10.7 percentage points in accuracy and 8.6 percentage points in F1 score over the RL-only variant. Overall, our work demonstrates that combining reinforcement learning with hybrid static-dynamic analysis can substantially reduce false positives and improve the practical usability of memory safety verification tools for Rust.",
-      "categories": [
-        "cs.SE"
-      ],
-      "api_categories": [
-        "cs.SE"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 10,
-        "engineering_utility": 24,
-        "timeliness_rarity": 19
-      },
-      "score_total": 73,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "用强化学习学习 Rust 静态内存安全分析告警的抑制策略，从 MIR 中抽取上下文特征，并结合 cargo-fuzz 动态验证可疑告警，目标是降低 Rudra/MirChecker 这类工具的误报，让开发者更信任安全扫描结果。",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03952",
-      "arxiv_id": "2605.03952",
-      "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
-      "url": "https://arxiv.org/abs/2605.03952",
-      "published_at": "2026-05-05T16:38:23Z",
-      "publish_date": "2026-05-05",
-      "description": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.",
-      "summary": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.",
-      "abstract": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.",
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "api_categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 20,
-        "engineering_utility": 14,
-        "timeliness_rarity": 19
-      },
-      "score_total": 73,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞，覆盖199 three-stage attack chains、10 web-application substrates、31 CWE classes；实验还比较 staged tickets 与 direct prompt，并评估 reviewer 是否会把漏洞 PR 当作常规改动放行。",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.04018",
-      "arxiv_id": "2605.04018",
-      "title": "Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems",
-      "url": "https://arxiv.org/abs/2605.04018",
-      "published_at": "2026-05-05T17:42:50Z",
-      "publish_date": "2026-05-05",
-      "description": "Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search systems, where retrievers must provide complementary evidence across iterative search and synthesis. However, existing work remains limited on both evaluation and training: benchmarks such as BRIGHT provide narrow gold sets and evaluate retrievers in isolation, while synthetic training corpora often optimize single-passage relevance rather than evidence portfolio construction. We introduce BRIGHT-Pro, an expert-annotated benchmark that expands each query with multi-aspect gold evidence and evaluates retrievers under both static and agentic search protocols. We further construct RTriever-Synth, an aspect-decomposed synthetic corpus that generates complementary positives and positive-conditioned hard negatives, and use it to LoRA fine-tune RTriever-4B from Qwen3-Embedding-4B. Experiments across lexical, general-purpose, and reasoning-intensive retrievers show that aspect-aware and agentic evaluation expose behaviors hidden by standard metrics, while RTriever-4B substantially improves over its base model.",
-      "summary": "Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search systems, where retrievers must provide complementary evidence across iterative search and synthesis. However, existing work remains limited on both evaluation and training: benchmarks such as BRIGHT provide narrow gold sets and evaluate retrievers in isolation, while synthetic training corpora often optimize single-passage relevance rather than evidence portfolio construction. We introduce BRIGHT-Pro, an expert-annotated benchmark that expands each query with multi-aspect gold evidence and evaluates retrievers under both static and agentic search protocols. We further construct RTriever-Synth, an aspect-decomposed synthetic corpus that generates complementary positives and positive-conditioned hard negatives, and use it to LoRA fine-tune RTriever-4B from Qwen3-Embedding-4B. Experiments across lexical, general-purpose, and reasoning-intensive retrievers show that aspect-aware and agentic evaluation expose behaviors hidden by standard metrics, while RTriever-4B substantially improves over its base model.",
-      "abstract": "Reasoning-intensive retrieval aims to surface evidence that supports downstream reasoning rather than merely matching topical similarity. This capability is increasingly important for agentic search systems, where retrievers must provide complementary evidence across iterative search and synthesis. However, existing work remains limited on both evaluation and training: benchmarks such as BRIGHT provide narrow gold sets and evaluate retrievers in isolation, while synthetic training corpora often optimize single-passage relevance rather than evidence portfolio construction. We introduce BRIGHT-Pro, an expert-annotated benchmark that expands each query with multi-aspect gold evidence and evaluates retrievers under both static and agentic search protocols. We further construct RTriever-Synth, an aspect-decomposed synthetic corpus that generates complementary positives and positive-conditioned hard negatives, and use it to LoRA fine-tune RTriever-4B from Qwen3-Embedding-4B. Experiments across lexical, general-purpose, and reasoning-intensive retrievers show that aspect-aware and agentic evaluation expose behaviors hidden by standard metrics, while RTriever-4B substantially improves over its base model.",
-      "categories": [
-        "cs.CL",
-        "cs.IR"
-      ],
-      "api_categories": [
-        "cs.CL",
-        "cs.IR"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 15,
-        "new_signal": 20,
-        "engineering_utility": 19,
-        "timeliness_rarity": 14
-      },
-      "score_total": 68,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "提出 BRIGHT-Pro 和 RTriever-Synth，把检索评测从单段相关性改成多方面证据组合；它同时测试静态检索和 agentic search 协议，用来判断检索器能否为复杂推理持续提供互补证据。",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03822",
-      "arxiv_id": "2605.03822",
-      "title": "KVerus: Scalable and Resilient Formal Verification Proof Generation for Rust Code",
-      "url": "https://arxiv.org/abs/2605.03822",
-      "published_at": "2026-05-05T14:50:24Z",
-      "publish_date": "2026-05-05",
-      "description": "Formal verification provides the highest assurance of software correctness and security, but its application to large-scale, evolving systems remains a major challenge. While large language models (LLMs) have shown promise in automating proof generation, they often fail in real-world settings due to their inability to handle complex cross-module dependencies or changes in the codebase or the verification toolchain. We identify the fundamental problem as the Semantic-Structural Gap: LLMs operate on semantic code patterns, whereas formal verification is governed by rigid structural dependencies, a disconnect that leads to brittle, unsustainable proofs. To bridge this gap, we propose a new paradigm of self-adaptive verification and present KVerus, a retrieval-augmented system for Verus-based Rust verification that can adapt to an evolving software environment. KVerus constructs a dynamic knowledge base of code metadata, lemma semantics, and toolchain specifics. By combining dependency-aware program analysis, semantic lemma indexing, and error-driven self-refinement, it can navigate intricate cross-file dependencies to synthesize proofs and automatically repair proofs when faced with common evolutionary changes. Across three single-file benchmarks, KVerus verifies 80.2% of tasks, outperforming the state-of-the-art AutoVerus (56.9%) and degrades less than AutoVerus under breaking Verus updates. On three repository-level benchmarks with cross-file dependencies, KVerus achieves a 51.0% success rate, compared to 4.5% for a multi-round prompting baseline. Finally, on the Asterinas Rust OS kernel, KVerus produces upstream-accepted proofs that verify 23 previously unverified functions (21.0% of proof code) in the memory-management module. KVerus represents a significant step towards making formal verification a scalable and sustainable practice for modern, security-critical software.",
-      "summary": "Formal verification provides the highest assurance of software correctness and security, but its application to large-scale, evolving systems remains a major challenge. While large language models (LLMs) have shown promise in automating proof generation, they often fail in real-world settings due to their inability to handle complex cross-module dependencies or changes in the codebase or the verification toolchain. We identify the fundamental problem as the Semantic-Structural Gap: LLMs operate on semantic code patterns, whereas formal verification is governed by rigid structural dependencies, a disconnect that leads to brittle, unsustainable proofs. To bridge this gap, we propose a new paradigm of self-adaptive verification and present KVerus, a retrieval-augmented system for Verus-based Rust verification that can adapt to an evolving software environment. KVerus constructs a dynamic knowledge base of code metadata, lemma semantics, and toolchain specifics. By combining dependency-aware program analysis, semantic lemma indexing, and error-driven self-refinement, it can navigate intricate cross-file dependencies to synthesize proofs and automatically repair proofs when faced with common evolutionary changes. Across three single-file benchmarks, KVerus verifies 80.2% of tasks, outperforming the state-of-the-art AutoVerus (56.9%) and degrades less than AutoVerus under breaking Verus updates. On three repository-level benchmarks with cross-file dependencies, KVerus achieves a 51.0% success rate, compared to 4.5% for a multi-round prompting baseline. Finally, on the Asterinas Rust OS kernel, KVerus produces upstream-accepted proofs that verify 23 previously unverified functions (21.0% of proof code) in the memory-management module. KVerus represents a significant step towards making formal verification a scalable and sustainable practice for modern, security-critical software.",
-      "abstract": "Formal verification provides the highest assurance of software correctness and security, but its application to large-scale, evolving systems remains a major challenge. While large language models (LLMs) have shown promise in automating proof generation, they often fail in real-world settings due to their inability to handle complex cross-module dependencies or changes in the codebase or the verification toolchain. We identify the fundamental problem as the Semantic-Structural Gap: LLMs operate on semantic code patterns, whereas formal verification is governed by rigid structural dependencies, a disconnect that leads to brittle, unsustainable proofs. To bridge this gap, we propose a new paradigm of self-adaptive verification and present KVerus, a retrieval-augmented system for Verus-based Rust verification that can adapt to an evolving software environment. KVerus constructs a dynamic knowledge base of code metadata, lemma semantics, and toolchain specifics. By combining dependency-aware program analysis, semantic lemma indexing, and error-driven self-refinement, it can navigate intricate cross-file dependencies to synthesize proofs and automatically repair proofs when faced with common evolutionary changes. Across three single-file benchmarks, KVerus verifies 80.2% of tasks, outperforming the state-of-the-art AutoVerus (56.9%) and degrades less than AutoVerus under breaking Verus updates. On three repository-level benchmarks with cross-file dependencies, KVerus achieves a 51.0% success rate, compared to 4.5% for a multi-round prompting baseline. Finally, on the Asterinas Rust OS kernel, KVerus produces upstream-accepted proofs that verify 23 previously unverified functions (21.0% of proof code) in the memory-management module. KVerus represents a significant step towards making formal verification a scalable and sustainable practice for modern, security-critical software.",
-      "categories": [
-        "cs.SE",
-        "cs.CR"
-      ],
-      "api_categories": [
-        "cs.SE",
-        "cs.CR"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 15,
-        "engineering_utility": 24,
-        "timeliness_rarity": 9
-      },
-      "score_total": 68,
-      "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文的核心贡献是：To bridge this gap, we propose a new paradigm of self-adaptive verification and present KVerus, a retrieval-augmented system for Verus-based Rust verification that can adapt to an evolving software environment.",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03820",
-      "arxiv_id": "2605.03820",
-      "title": "Multimodal Learning on Low-Quality Data with Conformal Predictive Self-Calibration",
-      "url": "https://arxiv.org/abs/2605.03820",
-      "published_at": "2026-05-05T14:48:52Z",
-      "publish_date": "2026-05-05",
-      "description": "Multimodal learning often grapples with the challenge of low-quality data, which predominantly manifests as two facets: modality imbalance and noisy corruption. While these issues are often studied in isolation, we argue that they share a common root in the predictive uncertainty towards the reliability of individual modalities and instances during learning. In this paper, we propose a unified framework, termed Conformal Predictive Self-Calibration (CPSC), which leverages conformal prediction to equip the model with the ability to perform self-guided calibration on-the-fly. The core of our proposed CPSC lies in a novel self-calibrating training loop that seamlessly integrates two key modules: (1) Representation Self-Calibration, which decomposes unimodal features into components, and selectively fuses the most robust ones identified by a conformal predictor to enhance feature resilience. (2) Gradient Self-Calibration, which recalibrates the gradient flow during backpropagation based on instance-wise reliability scores, steering the optimization towards more trustworthy directions. Furthermore, we also devise a self-update strategy for the conformal predictor to ensure the entire system co-evolves consistently throughout the training process. Extensive experiments on six benchmark datasets under both imbalanced and noisy settings demonstrate that our CPSC framework consistently outperforms existing state-of-the-art methods. Our code is available at https://github.com/XunCHN/CPSC.",
-      "summary": "Multimodal learning often grapples with the challenge of low-quality data, which predominantly manifests as two facets: modality imbalance and noisy corruption. While these issues are often studied in isolation, we argue that they share a common root in the predictive uncertainty towards the reliability of individual modalities and instances during learning. In this paper, we propose a unified framework, termed Conformal Predictive Self-Calibration (CPSC), which leverages conformal prediction to equip the model with the ability to perform self-guided calibration on-the-fly. The core of our proposed CPSC lies in a novel self-calibrating training loop that seamlessly integrates two key modules: (1) Representation Self-Calibration, which decomposes unimodal features into components, and selectively fuses the most robust ones identified by a conformal predictor to enhance feature resilience. (2) Gradient Self-Calibration, which recalibrates the gradient flow during backpropagation based on instance-wise reliability scores, steering the optimization towards more trustworthy directions. Furthermore, we also devise a self-update strategy for the conformal predictor to ensure the entire system co-evolves consistently throughout the training process. Extensive experiments on six benchmark datasets under both imbalanced and noisy settings demonstrate that our CPSC framework consistently outperforms existing state-of-the-art methods. Our code is available at https://github.com/XunCHN/CPSC.",
-      "abstract": "Multimodal learning often grapples with the challenge of low-quality data, which predominantly manifests as two facets: modality imbalance and noisy corruption. While these issues are often studied in isolation, we argue that they share a common root in the predictive uncertainty towards the reliability of individual modalities and instances during learning. In this paper, we propose a unified framework, termed Conformal Predictive Self-Calibration (CPSC), which leverages conformal prediction to equip the model with the ability to perform self-guided calibration on-the-fly. The core of our proposed CPSC lies in a novel self-calibrating training loop that seamlessly integrates two key modules: (1) Representation Self-Calibration, which decomposes unimodal features into components, and selectively fuses the most robust ones identified by a conformal predictor to enhance feature resilience. (2) Gradient Self-Calibration, which recalibrates the gradient flow during backpropagation based on instance-wise reliability scores, steering the optimization towards more trustworthy directions. Furthermore, we also devise a self-update strategy for the conformal predictor to ensure the entire system co-evolves consistently throughout the training process. Extensive experiments on six benchmark datasets under both imbalanced and noisy settings demonstrate that our CPSC framework consistently outperforms existing state-of-the-art methods. Our code is available at https://github.com/XunCHN/CPSC.",
-      "categories": [
-        "cs.CV",
-        "cs.LG",
-        "cs.MM"
-      ],
-      "api_categories": [
-        "cs.CV",
-        "cs.LG",
-        "cs.MM"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 15,
-        "engineering_utility": 19,
-        "timeliness_rarity": 14
-      },
-      "score_total": 68,
-      "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文的核心贡献是：In this paper, we propose a unified framework, termed Conformal Predictive Self-Calibration (CPSC), which leverages conformal prediction to equip the model with the ability to perform self-guided calibration on-the-fly.",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03799",
-      "arxiv_id": "2605.03799",
-      "title": "Natural Language Processing: A Comprehensive Practical Guide from Tokenisation to RLHF",
-      "url": "https://arxiv.org/abs/2605.03799",
-      "published_at": "2026-05-05T14:25:48Z",
-      "publish_date": "2026-05-05",
-      "description": "This preprint presents a systematic, research-oriented practicum that guides the reader through the entire modern NLP pipeline: from tokenisation and vectorisation to fine-tuning of large language models, retrieval-augmented generation, and reinforcement learning from human feedback. Twelve hands-on sessions combine concise theory with detailed implementation plans, formalised evaluation metrics, and transparent assessment criteria. The work is not a conventional textbook: it is designed as a reproducible research artefact where every session requires publishing code, models, and reports in public repositories. All experiments are conducted on a single evolving corpus, and the work advocates open-weight models over commercial APIs, with special attention to the Hugging Face ecosystem. The material is enriched by original research on low-resource languages, incorporating linguistic resources for Tajik and Tatar (subword tokenisers, embeddings, lexical databases, and transliteration benchmarks), demonstrating how modern NLP can be adapted to data-scarce environments. Designed for senior undergraduates, graduate students, and practising developers seeking to implement, compare, and deploy methods from classical ML to state-of-the-art LLM-based systems.",
-      "summary": "This preprint presents a systematic, research-oriented practicum that guides the reader through the entire modern NLP pipeline: from tokenisation and vectorisation to fine-tuning of large language models, retrieval-augmented generation, and reinforcement learning from human feedback. Twelve hands-on sessions combine concise theory with detailed implementation plans, formalised evaluation metrics, and transparent assessment criteria. The work is not a conventional textbook: it is designed as a reproducible research artefact where every session requires publishing code, models, and reports in public repositories. All experiments are conducted on a single evolving corpus, and the work advocates open-weight models over commercial APIs, with special attention to the Hugging Face ecosystem. The material is enriched by original research on low-resource languages, incorporating linguistic resources for Tajik and Tatar (subword tokenisers, embeddings, lexical databases, and transliteration benchmarks), demonstrating how modern NLP can be adapted to data-scarce environments. Designed for senior undergraduates, graduate students, and practising developers seeking to implement, compare, and deploy methods from classical ML to state-of-the-art LLM-based systems.",
-      "abstract": "This preprint presents a systematic, research-oriented practicum that guides the reader through the entire modern NLP pipeline: from tokenisation and vectorisation to fine-tuning of large language models, retrieval-augmented generation, and reinforcement learning from human feedback. Twelve hands-on sessions combine concise theory with detailed implementation plans, formalised evaluation metrics, and transparent assessment criteria. The work is not a conventional textbook: it is designed as a reproducible research artefact where every session requires publishing code, models, and reports in public repositories. All experiments are conducted on a single evolving corpus, and the work advocates open-weight models over commercial APIs, with special attention to the Hugging Face ecosystem. The material is enriched by original research on low-resource languages, incorporating linguistic resources for Tajik and Tatar (subword tokenisers, embeddings, lexical databases, and transliteration benchmarks), demonstrating how modern NLP can be adapted to data-scarce environments. Designed for senior undergraduates, graduate students, and practising developers seeking to implement, compare, and deploy methods from classical ML to state-of-the-art LLM-based systems.",
-      "categories": [
-        "cs.CL"
-      ],
-      "api_categories": [
-        "cs.CL"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 25,
-        "new_signal": 10,
-        "engineering_utility": 24,
-        "timeliness_rarity": 9
-      },
-      "score_total": 68,
-      "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文主要做的是：This preprint presents a systematic, research-oriented practicum that guides the reader through the entire modern NLP pipeline: from tokenisation and vectorisation to fine-tuning of large language models, retrieval-augmented generation, and reinforcement learning from human feedback.",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03943",
-      "arxiv_id": "2605.03943",
-      "title": "Beyond Rules: LLM-Powered Linting for Quantum Programs",
-      "url": "https://arxiv.org/abs/2605.03943",
-      "published_at": "2026-05-05T16:31:14Z",
-      "publish_date": "2026-05-05",
-      "description": "As quantum computing transitions from theoretical experimentation to its practical application, the reliability of quantum software has become a critical bottleneck. Traditional static analysis techniques for quantum programs, primarily rule-based linters, are increasingly inadequate; they struggle to keep pace with rapidly evolving APIs and fail to capture complex, context-dependent quantum programming problems. This results in high maintenance overhead and limited detection capabilities. In this paper, we introduce LintQ-LLM+CoT and LintQ-LLM+RAG, novel approaches that redefine the detection of quantum programming problems by employing Large Language Models (LLMs) specialized, respectively, via Chain-of-Thought (CoT) prompting and a Retrieval-Augmented Generation (RAG) system that grounds the model's reasoning in a curated knowledge base of verified quantum programming problems and best practices. We conducted a rigorous and manual comparative evaluation against the state-of-the-art rule-based tool, LintQ, using a corpus of 55 Qiskit programs. Our results show that LLM-based approaches, with and without RAG, outperform LintQ in terms of quantum programming problems detection correctness (precision) and completeness (recall). Overall, LLM-based approaches were more effective than LintQ (F1-score equal to 0.70 and 0.68 vs. 0.41). Furthermore, the RAG-enhanced variant demonstrated a slightly superior precision, effectively reducing false positives. Our findings suggest that LLMs provide a scalable and adaptive foundation for the next generation of linters in quantum software engineering.",
-      "summary": "As quantum computing transitions from theoretical experimentation to its practical application, the reliability of quantum software has become a critical bottleneck. Traditional static analysis techniques for quantum programs, primarily rule-based linters, are increasingly inadequate; they struggle to keep pace with rapidly evolving APIs and fail to capture complex, context-dependent quantum programming problems. This results in high maintenance overhead and limited detection capabilities. In this paper, we introduce LintQ-LLM+CoT and LintQ-LLM+RAG, novel approaches that redefine the detection of quantum programming problems by employing Large Language Models (LLMs) specialized, respectively, via Chain-of-Thought (CoT) prompting and a Retrieval-Augmented Generation (RAG) system that grounds the model's reasoning in a curated knowledge base of verified quantum programming problems and best practices. We conducted a rigorous and manual comparative evaluation against the state-of-the-art rule-based tool, LintQ, using a corpus of 55 Qiskit programs. Our results show that LLM-based approaches, with and without RAG, outperform LintQ in terms of quantum programming problems detection correctness (precision) and completeness (recall). Overall, LLM-based approaches were more effective than LintQ (F1-score equal to 0.70 and 0.68 vs. 0.41). Furthermore, the RAG-enhanced variant demonstrated a slightly superior precision, effectively reducing false positives. Our findings suggest that LLMs provide a scalable and adaptive foundation for the next generation of linters in quantum software engineering.",
-      "abstract": "As quantum computing transitions from theoretical experimentation to its practical application, the reliability of quantum software has become a critical bottleneck. Traditional static analysis techniques for quantum programs, primarily rule-based linters, are increasingly inadequate; they struggle to keep pace with rapidly evolving APIs and fail to capture complex, context-dependent quantum programming problems. This results in high maintenance overhead and limited detection capabilities. In this paper, we introduce LintQ-LLM+CoT and LintQ-LLM+RAG, novel approaches that redefine the detection of quantum programming problems by employing Large Language Models (LLMs) specialized, respectively, via Chain-of-Thought (CoT) prompting and a Retrieval-Augmented Generation (RAG) system that grounds the model's reasoning in a curated knowledge base of verified quantum programming problems and best practices. We conducted a rigorous and manual comparative evaluation against the state-of-the-art rule-based tool, LintQ, using a corpus of 55 Qiskit programs. Our results show that LLM-based approaches, with and without RAG, outperform LintQ in terms of quantum programming problems detection correctness (precision) and completeness (recall). Overall, LLM-based approaches were more effective than LintQ (F1-score equal to 0.70 and 0.68 vs. 0.41). Furthermore, the RAG-enhanced variant demonstrated a slightly superior precision, effectively reducing false positives. Our findings suggest that LLMs provide a scalable and adaptive foundation for the next generation of linters in quantum software engineering.",
-      "categories": [
-        "cs.SE"
-      ],
-      "api_categories": [
-        "cs.SE"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 10,
-        "engineering_utility": 24,
-        "timeliness_rarity": 9
-      },
-      "score_total": 63,
-      "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "把量子程序 linting 从人工维护规则改成 LLM+CoT/RAG 检测，让模型基于上下文识别快速变化 API、框架用法和量子程序特有错误，解决传统 rule-based linter 更新慢、覆盖窄的问题。",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03903",
-      "arxiv_id": "2605.03903",
-      "title": "CC-OCR V2: Benchmarking Large Multimodal Models for Literacy in Real-world Document Processing",
-      "url": "https://arxiv.org/abs/2605.03903",
-      "published_at": "2026-05-05T15:56:12Z",
-      "publish_date": "2026-05-05",
-      "description": "Large Multimodal Models (LMMs) have recently shown strong performance on Optical Character Recognition (OCR) tasks, demonstrating their promising capability in document literacy. However, their effectiveness in real-world applications remains underexplored, as existing benchmarks adopt task scopes misaligned with practical applications and assume homogeneous acquisition conditions. To address this gap, we introduce CC-OCR V2, a comprehensive and challenging OCR benchmark tailored to real-world document processing. CC-OCR V2 focuses on practical enterprise document processing tasks and incorporates hard and corner cases that are critical yet underrepresented in prior benchmarks, covering 5 major OCR-centric tracks: text recognition, document parsing, document grounding, key information extraction, and document question answering, comprising 7,093 high-difficulty samples. Extensive experiments on 14 advanced LMMs reveal that current models fall short of real-world application requirements. Even state-of-the-art LMMs exhibit substantial performance degradation across diverse tasks and scenarios. These findings reveal a significant gap between performance on current benchmarks and effectiveness in real-world applications. We release the full dataset and evaluation toolkit at https://github.com/eioss/CC-OCR-V2.",
-      "summary": "Large Multimodal Models (LMMs) have recently shown strong performance on Optical Character Recognition (OCR) tasks, demonstrating their promising capability in document literacy. However, their effectiveness in real-world applications remains underexplored, as existing benchmarks adopt task scopes misaligned with practical applications and assume homogeneous acquisition conditions. To address this gap, we introduce CC-OCR V2, a comprehensive and challenging OCR benchmark tailored to real-world document processing. CC-OCR V2 focuses on practical enterprise document processing tasks and incorporates hard and corner cases that are critical yet underrepresented in prior benchmarks, covering 5 major OCR-centric tracks: text recognition, document parsing, document grounding, key information extraction, and document question answering, comprising 7,093 high-difficulty samples. Extensive experiments on 14 advanced LMMs reveal that current models fall short of real-world application requirements. Even state-of-the-art LMMs exhibit substantial performance degradation across diverse tasks and scenarios. These findings reveal a significant gap between performance on current benchmarks and effectiveness in real-world applications. We release the full dataset and evaluation toolkit at https://github.com/eioss/CC-OCR-V2.",
-      "abstract": "Large Multimodal Models (LMMs) have recently shown strong performance on Optical Character Recognition (OCR) tasks, demonstrating their promising capability in document literacy. However, their effectiveness in real-world applications remains underexplored, as existing benchmarks adopt task scopes misaligned with practical applications and assume homogeneous acquisition conditions. To address this gap, we introduce CC-OCR V2, a comprehensive and challenging OCR benchmark tailored to real-world document processing. CC-OCR V2 focuses on practical enterprise document processing tasks and incorporates hard and corner cases that are critical yet underrepresented in prior benchmarks, covering 5 major OCR-centric tracks: text recognition, document parsing, document grounding, key information extraction, and document question answering, comprising 7,093 high-difficulty samples. Extensive experiments on 14 advanced LMMs reveal that current models fall short of real-world application requirements. Even state-of-the-art LMMs exhibit substantial performance degradation across diverse tasks and scenarios. These findings reveal a significant gap between performance on current benchmarks and effectiveness in real-world applications. We release the full dataset and evaluation toolkit at https://github.com/eioss/CC-OCR-V2.",
-      "categories": [
-        "cs.CL"
-      ],
-      "api_categories": [
-        "cs.CL"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 20,
-        "engineering_utility": 14,
-        "timeliness_rarity": 9
-      },
-      "score_total": 63,
-      "score_reason": "evaluation signal",
-      "one_sentence_summary": "提出 CC-OCR V2，面向真实企业文档处理重新设计 OCR/LMM 评测，覆盖 OCR、版面理解、表格图表读取和复杂文档读写等硬场景，强调以实际业务文档里的 corner cases 检验模型能力。",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    },
-    {
-      "id": "arxiv:2605.03808",
-      "arxiv_id": "2605.03808",
-      "title": "Agentic-imodels: Evolving agentic interpretability tools via autoresearch",
-      "url": "https://arxiv.org/abs/2605.03808",
-      "published_at": "2026-05-05T14:35:47Z",
-      "publish_date": "2026-05-05",
-      "description": "Agentic data science (ADS) systems are rapidly improving their capability to autonomously analyze, fit, and interpret data, potentially moving towards a future where agents conduct the vast majority of data-science work. However, current ADS systems use statistical tools designed to be interpretable by humans, rather than interpretable by agents. To address this, we introduce Agentic-imodels, an agentic autoresearch loop that evolves data-science tools designed to be interpretable by agents. Specifically, it develops a library of scikit-learn-compatible regressors for tabular data that are optimized for both predictive performance and a novel LLM-based interpretability metric. The metric measures a suite of LLM-graded tests that probe whether a fitted model's string representation is \"simulatable\" by an LLM, i.e. whether the LLM can answer questions about the model's behavior by reading its string output alone. We find that the evolved models jointly improve predictive performance and agent-facing interpretability, generalizing to new datasets and new interpretability tests. Furthermore, these evolved models improve downstream end-to-end ADS, increasing performance for Copilot CLI, Claude Code, and Codex on the BLADE benchmark by up to 73%",
-      "summary": "Agentic data science (ADS) systems are rapidly improving their capability to autonomously analyze, fit, and interpret data, potentially moving towards a future where agents conduct the vast majority of data-science work. However, current ADS systems use statistical tools designed to be interpretable by humans, rather than interpretable by agents. To address this, we introduce Agentic-imodels, an agentic autoresearch loop that evolves data-science tools designed to be interpretable by agents. Specifically, it develops a library of scikit-learn-compatible regressors for tabular data that are optimized for both predictive performance and a novel LLM-based interpretability metric. The metric measures a suite of LLM-graded tests that probe whether a fitted model's string representation is \"simulatable\" by an LLM, i.e. whether the LLM can answer questions about the model's behavior by reading its string output alone. We find that the evolved models jointly improve predictive performance and agent-facing interpretability, generalizing to new datasets and new interpretability tests. Furthermore, these evolved models improve downstream end-to-end ADS, increasing performance for Copilot CLI, Claude Code, and Codex on the BLADE benchmark by up to 73%",
-      "abstract": "Agentic data science (ADS) systems are rapidly improving their capability to autonomously analyze, fit, and interpret data, potentially moving towards a future where agents conduct the vast majority of data-science work. However, current ADS systems use statistical tools designed to be interpretable by humans, rather than interpretable by agents. To address this, we introduce Agentic-imodels, an agentic autoresearch loop that evolves data-science tools designed to be interpretable by agents. Specifically, it develops a library of scikit-learn-compatible regressors for tabular data that are optimized for both predictive performance and a novel LLM-based interpretability metric. The metric measures a suite of LLM-graded tests that probe whether a fitted model's string representation is \"simulatable\" by an LLM, i.e. whether the LLM can answer questions about the model's behavior by reading its string output alone. We find that the evolved models jointly improve predictive performance and agent-facing interpretability, generalizing to new datasets and new interpretability tests. Furthermore, these evolved models improve downstream end-to-end ADS, increasing performance for Copilot CLI, Claude Code, and Codex on the BLADE benchmark by up to 73%",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "api_categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "feed_title": "cs.AI updates on arXiv.org",
-      "source": "arxiv_api",
-      "score_detail": {
-        "application_relevance": 15,
-        "new_signal": 20,
-        "engineering_utility": 19,
-        "timeliness_rarity": 9
-      },
-      "score_total": 63,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文的核心贡献是：To address this, we introduce Agentic-imodels, an agentic autoresearch loop that evolves data-science tools designed to be interpretable by agents.",
-      "if_pushed": 1,
-      "added_at": "2026-05-06T17:55:36.924765+00:00",
-      "pushed_at": "2026-05-06T17:55:36.924765+00:00",
-      "source_run_id": "2026-05-07",
-      "pushed_run_id": "2026-05-07"
-    }
-  ],
+  "selected_papers": [],
   "paper_status": {
     "state_file": "data/paper-state.json",
     "new_candidate_count": 43,
-    "added_to_state_count": 9,
+    "added_to_state_count": 0,
     "skipped_low_score_count": 34,
-    "selected_count": 9,
+    "selected_count": 0,
     "waiting_remaining_count": 0,
-    "selected_ids": [
-      "arxiv:2605.04000",
-      "arxiv:2605.03952",
-      "arxiv:2605.04018",
-      "arxiv:2605.03822",
-      "arxiv:2605.03820",
-      "arxiv:2605.03799",
-      "arxiv:2605.03943",
-      "arxiv:2605.03903",
-      "arxiv:2605.03808"
-    ],
+    "selected_ids": [],
     "source": "arxiv_api"
   },
   "logs": [
@@ -2342,7 +2018,7 @@
       "stage": "paper_fetch",
       "source": "folo",
       "status": "failed",
-      "error": "Command failed: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json\n{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": {\n    \"code\": \"UNAUTHORIZED\",\n    \"message\": \"Missing token. Run `folo login` (browser sign-in) or set FOLO_TOKEN.\"\n  }\n}\n"
+      "error": "Command timed out after 30s: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json"
     },
     {
       "stage": "paper_fetch",
