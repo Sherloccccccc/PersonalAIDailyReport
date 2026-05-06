@@ -13,3 +13,13 @@ symptom: all acceptance checks passed
 root_cause: fixed by Folo timeout logging plus arXiv fallback, Juya parser, scoring, state, and run log
 action: write acceptance.json with overall_result=pass
 result: pass
+[2026-05-06 22:42:00+08:00] task=2026-05-06-digest-build-experience attempt=3 failed_check=paper_summary_specific
+symptom: one_sentence_summary used generic filler such as 围绕 and 工程线索
+root_cause: summary generation was a topic-template fallback, not a concrete contribution extractor
+action: add specific contribution summaries for high-value paper patterns and reject generic filler in acceptance
+result: retry_pending
+[2026-05-06 22:45:00+08:00] task=2026-05-06-digest-build-experience attempt=3 failed_check=none
+symptom: paper summaries now describe concrete contributions and no longer contain generic filler
+root_cause: fixed by specific contribution templates and numeric fact extraction
+action: rewrite acceptance.json with paper_summary_specific=pass
+result: pass

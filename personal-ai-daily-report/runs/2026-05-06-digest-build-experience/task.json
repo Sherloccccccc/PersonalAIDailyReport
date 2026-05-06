@@ -15,6 +15,7 @@
     "digest-data.json paper_status.selected_count <= 10",
     "digest-data.json paper_status.selected_count > 0",
     "paper-state.json exists and contains scored papers with abstract and if_pushed",
+    "selected paper summaries do not contain generic filler such as 围绕 or 工程线索",
     "run-log.jsonl exists and contains current run_id",
     "Folo timeout/fallback is represented in digest-data.json logs when timeout is forced"
   ],

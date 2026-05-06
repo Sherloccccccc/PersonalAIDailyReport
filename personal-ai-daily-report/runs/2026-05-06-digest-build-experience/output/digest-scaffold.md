@@ -185,7 +185,7 @@ https://x.com/mingchikuo/status/2051523855286776034
 2026-05-05
 
 **一句话总结:**
-这篇论文围绕「Mitigating False Positives in Static Memory Safety Analysis of Rust Programs via Reinforcement Learning」展开，重点提供了面向AI 安全和漏洞验证的新方法、评测或工程线索。
+用强化学习学习 Rust 静态分析告警的抑制策略，并结合 cargo-fuzz 动态验证，降低 Rudra/MirChecker 这类工具的误报。
 
 **Link:**
 https://arxiv.org/abs/2605.04000
@@ -196,7 +196,7 @@ https://arxiv.org/abs/2605.04000
 2026-05-05
 
 **一句话总结:**
-这篇论文围绕「MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents」展开，重点提供了面向软件工程或 coding agent的新方法、评测或工程线索。
+提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞，覆盖199 three-stage attack chains、10 web-application substrates、31 CWE classes。
 
 **Link:**
 https://arxiv.org/abs/2605.03952
@@ -207,7 +207,7 @@ https://arxiv.org/abs/2605.03952
 2026-05-05
 
 **一句话总结:**
-这篇论文围绕「Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems」展开，重点提供了面向检索增强和 agentic search的新方法、评测或工程线索。
+提出 BRIGHT-Pro 和 RTriever-Synth，用多方面证据标注和 agentic search 协议评估检索器能否为复杂推理提供互补证据。
 
 **Link:**
 https://arxiv.org/abs/2605.04018
@@ -218,7 +218,7 @@ https://arxiv.org/abs/2605.04018
 2026-05-05
 
 **一句话总结:**
-这篇论文围绕「Beyond Rules: LLM-Powered Linting for Quantum Programs」展开，重点提供了面向软件工程或 coding agent的新方法、评测或工程线索。
+把量子程序 linting 从规则维护改成 LLM+CoT/RAG 检测，用模型识别快速变化 API 和上下文相关的量子编程问题。
 
 **Link:**
 https://arxiv.org/abs/2605.03943
@@ -229,7 +229,7 @@ https://arxiv.org/abs/2605.03943
 2026-05-05
 
 **一句话总结:**
-这篇论文围绕「CC-OCR V2: Benchmarking Large Multimodal Models for Literacy in Real-world Document Processing」展开，重点提供了面向真实文档处理和多模态理解的新方法、评测或工程线索。
+提出 CC-OCR V2，面向真实企业文档处理评测多模态模型的 OCR、版面理解、表格/图表读取和复杂文档读写能力。
 
 **Link:**
 https://arxiv.org/abs/2605.03903
