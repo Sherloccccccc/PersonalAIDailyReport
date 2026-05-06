@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-05-07",
+  "generated_at": "2026-05-06T17:55:36.942950+00:00",
+  "juya_issue_title": "2026-05-06",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-81/",
+  "news_count": 20,
+  "paper_source": "arxiv_api",
+  "paper_candidate_count": 43,
+  "paper_selected_count": 9,
+  "paper_added_to_state_count": 9,
+  "paper_waiting_remaining_count": 0,
+  "delivery": {
+    "channel": "feishu",
+    "status": "success",
+    "sent_at": "2026-05-06T17:55:38.192615+00:00",
+    "target_type": "chat_id",
+    "target_configured": true,
+    "message_ids": [
+      "om_x100b508c4766a8a0b3091acf198b4de",
+      "om_x100b508c4773a53cb3499bf0ba4e0a6"
+    ],
+    "parts": 2
+  },
+  "artifacts": {
+    "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-07/daily-ai-info.md",
+    "digest_data": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-07/digest-data.json",
+    "paper_state": "data/paper-state.json"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 20,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。",
+        "last_build_date": "2026-05-06T01:31:08+00:00",
+        "issue_title": "2026-05-06",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-81/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/81",
+        "published_at": "2026-05-06T01:30:36+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "folo",
+      "status": "failed",
+      "error": "Command failed: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json\n{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": {\n    \"code\": \"UNAUTHORIZED\",\n    \"message\": \"Missing token. Run `folo login` (browser sign-in) or set FOLO_TOKEN.\"\n  }\n}\n"
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "ok",
+      "raw": 80,
+      "kept": 43
+    }
+  ],
+  "status": "success",
+  "sent_at": "2026-05-06T17:55:38.192615+00:00"
+}
