@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-06T14:47:55.881041+00:00",
+  "updated_at": "2026-05-06T14:52:44.096033+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -30,12 +30,12 @@
       },
       "score_total": 68,
       "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "提出 BRIGHT-Pro 和 RTriever-Synth，用多方面证据标注和 agentic search 协议评估检索器能否为复杂推理提供互补证据。",
+      "one_sentence_summary": "提出 BRIGHT-Pro 和 RTriever-Synth，把检索评测从单段相关性改成多方面证据组合；它同时测试静态检索和 agentic search 协议，用来判断检索器能否为复杂推理持续提供互补证据。",
       "if_pushed": 1,
-      "added_at": "2026-05-06T14:47:55.881041+00:00",
-      "pushed_at": "2026-05-06T14:47:55.881041+00:00",
-      "source_run_id": "acceptance-2026-05-06-specific-summary",
-      "pushed_run_id": "acceptance-2026-05-06-specific-summary"
+      "added_at": "2026-05-06T14:52:44.096033+00:00",
+      "pushed_at": "2026-05-06T14:52:44.096033+00:00",
+      "source_run_id": "acceptance-2026-05-06-longer-summary",
+      "pushed_run_id": "acceptance-2026-05-06-longer-summary"
     },
     {
       "id": "arxiv:2605.04000",
@@ -63,12 +63,12 @@
       },
       "score_total": 73,
       "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "用强化学习学习 Rust 静态分析告警的抑制策略，并结合 cargo-fuzz 动态验证，降低 Rudra/MirChecker 这类工具的误报。",
+      "one_sentence_summary": "用强化学习学习 Rust 静态内存安全分析告警的抑制策略，从 MIR 中抽取上下文特征，并结合 cargo-fuzz 动态验证可疑告警，目标是降低 Rudra/MirChecker 这类工具的误报，让开发者更信任安全扫描结果。",
       "if_pushed": 1,
-      "added_at": "2026-05-06T14:47:55.881041+00:00",
-      "pushed_at": "2026-05-06T14:47:55.881041+00:00",
-      "source_run_id": "acceptance-2026-05-06-specific-summary",
-      "pushed_run_id": "acceptance-2026-05-06-specific-summary"
+      "added_at": "2026-05-06T14:52:44.096033+00:00",
+      "pushed_at": "2026-05-06T14:52:44.096033+00:00",
+      "source_run_id": "acceptance-2026-05-06-longer-summary",
+      "pushed_run_id": "acceptance-2026-05-06-longer-summary"
     },
     {
       "id": "arxiv:2605.03952",
@@ -100,12 +100,12 @@
       },
       "score_total": 73,
       "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞，覆盖199 three-stage attack chains、10 web-application substrates、31 CWE classes。",
+      "one_sentence_summary": "提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞，覆盖199 three-stage attack chains、10 web-application substrates、31 CWE classes；实验还比较 staged tickets 与 direct prompt，并评估 reviewer 是否会把漏洞 PR 当作常规改动放行。",
       "if_pushed": 1,
-      "added_at": "2026-05-06T14:47:55.881041+00:00",
-      "pushed_at": "2026-05-06T14:47:55.881041+00:00",
-      "source_run_id": "acceptance-2026-05-06-specific-summary",
-      "pushed_run_id": "acceptance-2026-05-06-specific-summary"
+      "added_at": "2026-05-06T14:52:44.096033+00:00",
+      "pushed_at": "2026-05-06T14:52:44.096033+00:00",
+      "source_run_id": "acceptance-2026-05-06-longer-summary",
+      "pushed_run_id": "acceptance-2026-05-06-longer-summary"
     },
     {
       "id": "arxiv:2605.03943",
@@ -133,12 +133,12 @@
       },
       "score_total": 63,
       "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "把量子程序 linting 从规则维护改成 LLM+CoT/RAG 检测，用模型识别快速变化 API 和上下文相关的量子编程问题。",
+      "one_sentence_summary": "把量子程序 linting 从人工维护规则改成 LLM+CoT/RAG 检测，让模型基于上下文识别快速变化 API、框架用法和量子程序特有错误，解决传统 rule-based linter 更新慢、覆盖窄的问题。",
       "if_pushed": 1,
-      "added_at": "2026-05-06T14:47:55.881041+00:00",
-      "pushed_at": "2026-05-06T14:47:55.881041+00:00",
-      "source_run_id": "acceptance-2026-05-06-specific-summary",
-      "pushed_run_id": "acceptance-2026-05-06-specific-summary"
+      "added_at": "2026-05-06T14:52:44.096033+00:00",
+      "pushed_at": "2026-05-06T14:52:44.096033+00:00",
+      "source_run_id": "acceptance-2026-05-06-longer-summary",
+      "pushed_run_id": "acceptance-2026-05-06-longer-summary"
     },
     {
       "id": "arxiv:2605.03903",
@@ -166,12 +166,12 @@
       },
       "score_total": 63,
       "score_reason": "evaluation signal",
-      "one_sentence_summary": "提出 CC-OCR V2，面向真实企业文档处理评测多模态模型的 OCR、版面理解、表格/图表读取和复杂文档读写能力。",
+      "one_sentence_summary": "提出 CC-OCR V2，面向真实企业文档处理重新设计 OCR/LMM 评测，覆盖 OCR、版面理解、表格图表读取和复杂文档读写等硬场景，强调以实际业务文档里的 corner cases 检验模型能力。",
       "if_pushed": 1,
-      "added_at": "2026-05-06T14:47:55.881041+00:00",
-      "pushed_at": "2026-05-06T14:47:55.881041+00:00",
-      "source_run_id": "acceptance-2026-05-06-specific-summary",
-      "pushed_run_id": "acceptance-2026-05-06-specific-summary"
+      "added_at": "2026-05-06T14:52:44.096033+00:00",
+      "pushed_at": "2026-05-06T14:52:44.096033+00:00",
+      "source_run_id": "acceptance-2026-05-06-longer-summary",
+      "pushed_run_id": "acceptance-2026-05-06-longer-summary"
     }
   ]
 }

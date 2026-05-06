@@ -4,13 +4,15 @@
   "checks": {
     "build_exit_code": "pass",
     "juya_news_count_positive": "pass",
+    "news_summary_label": "pass",
     "paper_selected_count_valid": "pass",
     "paper_state_written": "pass",
     "paper_scores_present": "pass",
     "paper_summary_specific": "pass",
+    "paper_summary_length": "pass",
     "run_log_written": "pass",
     "folo_timeout_fallback_logged": "pass"
   },
   "overall_result": "pass",
-  "generated_at": "2026-05-06T22:45:00+08:00"
+  "generated_at": "2026-05-06T22:55:00+08:00"
 }

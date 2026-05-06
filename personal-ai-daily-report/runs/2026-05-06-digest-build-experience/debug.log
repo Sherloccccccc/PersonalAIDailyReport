@@ -23,3 +23,8 @@ symptom: paper summaries now describe concrete contributions and no longer conta
 root_cause: fixed by specific contribution templates and numeric fact extraction
 action: rewrite acceptance.json with paper_summary_specific=pass
 result: pass
+[2026-05-06 22:55:00+08:00] task=2026-05-06-digest-build-experience attempt=4 failed_check=none
+symptom: user requested longer paper summaries and shorter News label
+root_cause: output labels and summary length needed refinement after human review
+action: change News label to 摘要 and extend contribution summaries to around 100 Chinese characters
+result: pass

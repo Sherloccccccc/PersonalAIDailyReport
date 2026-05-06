@@ -581,31 +581,31 @@ def build_specific_summary(title: str, abstract: str, lowered: str) -> Optional[
     stats = extract_numeric_facts(abstract)
     suffix = f"，覆盖{stats}" if stats else ""
     if "mosaic-bench" in lowered:
-        return f"提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞{suffix}。"
+        return f"提出 MOSAIC-Bench，把 coding agent 的安全评测从单次提示扩展到多阶段工程任务，检查连续无害改动是否会组合成可利用漏洞{suffix}；实验还比较 staged tickets 与 direct prompt，并评估 reviewer 是否会把漏洞 PR 当作常规改动放行。"
     if "bright-pro" in lowered or "reasoning-intensive retrieval" in lowered:
-        return f"提出 BRIGHT-Pro 和 RTriever-Synth，用多方面证据标注和 agentic search 协议评估检索器能否为复杂推理提供互补证据{suffix}。"
+        return f"提出 BRIGHT-Pro 和 RTriever-Synth，把检索评测从单段相关性改成多方面证据组合；它同时测试静态检索和 agentic search 协议，用来判断检索器能否为复杂推理持续提供互补证据{suffix}。"
     if "tracelift" in lowered or "executor-grounded rewards" in lowered:
-        return "提出 TraceLift，用冻结执行器给 planner 的中间推理轨迹打反馈，让训练目标从最终答案正确扩展到推理过程可执行、可消费。"
+        return "提出 TraceLift，把推理轨迹当作会被下游模块消费的中间产物：planner 生成带标签的推理，冻结 executor 执行并反馈奖励，从而避免只用最终答案正确性训练出“对但不可执行”的推理过程。"
     if "povsmith" in lowered or "proof-of-vulnerability" in lowered:
-        return f"提出 PoVSmith，让 coding agent 结合调用路径、代码上下文和执行反馈自动生成漏洞可达性的 proof-of-vulnerability 测试{suffix}。"
+        return f"提出 PoVSmith，用调用路径分析、示例测试、代码上下文和执行反馈多轮提示 coding agent，自动生成证明依赖漏洞可达的 proof-of-vulnerability 测试{suffix}；重点是把安全告警变成开发者可运行的证据。"
     if "mcjudgebench" in lowered:
-        return "提出 MCJudgeBench，把 LLM judge 评测细化到每条约束是否满足，用受控扰动测试 judge 在多约束指令下的正确性和稳定性。"
+        return "提出 MCJudgeBench，把 LLM judge 评测从整体回答对错细化到每条约束是否满足；数据包含显式约束列表、逐约束 gold label 和受控扰动，用来测试 judge 在多约束指令下的正确性与稳定性。"
     if "cc-ocr v2" in lowered:
-        return "提出 CC-OCR V2，面向真实企业文档处理评测多模态模型的 OCR、版面理解、表格/图表读取和复杂文档读写能力。"
+        return "提出 CC-OCR V2，面向真实企业文档处理重新设计 OCR/LMM 评测，覆盖 OCR、版面理解、表格图表读取和复杂文档读写等硬场景，强调以实际业务文档里的 corner cases 检验模型能力。"
     if "static memory safety analysis of rust" in lowered:
-        return "用强化学习学习 Rust 静态分析告警的抑制策略，并结合 cargo-fuzz 动态验证，降低 Rudra/MirChecker 这类工具的误报。"
+        return "用强化学习学习 Rust 静态内存安全分析告警的抑制策略，从 MIR 中抽取上下文特征，并结合 cargo-fuzz 动态验证可疑告警，目标是降低 Rudra/MirChecker 这类工具的误报，让开发者更信任安全扫描结果。"
     if "satformer" in lowered or "selective access transformer" in lowered:
-        return "提出 SATFormer，把早期表示复用做成按上下文门控的选择性访问机制，在接近原 Transformer 成本下改善检索密集任务表现。"
+        return "提出 SATFormer，把 Transformer 早期 value 表示的复用从静态残差改成上下文相关的门控选择；模型能按 token、head 和层深决定访问多少早期信息，在接近原始成本下改善检索密集任务。"
     if "activation steering" in lowered and "prompt" in lowered:
-        return "把提示词引导解释为一种激活引导，提出 PSR 模型去学习哪些 token 需要强干预，从而缩小 activation steering 和 prompting 的效果差距。"
+        return "把提示词引导重新表述为一种激活引导，发现常见 activation steering 没有复现 prompting 的 token 级干预模式；论文提出 PSR 模型学习哪些 token 需要强干预，以缩小两类方法的效果差距。"
     if "llm-powered linting" in lowered or "lintq" in lowered:
-        return "把量子程序 linting 从规则维护改成 LLM+CoT/RAG 检测，用模型识别快速变化 API 和上下文相关的量子编程问题。"
+        return "把量子程序 linting 从人工维护规则改成 LLM+CoT/RAG 检测，让模型基于上下文识别快速变化 API、框架用法和量子程序特有错误，解决传统 rule-based linter 更新慢、覆盖窄的问题。"
     if "hallucination detection" in lowered or "logical consistency" in lowered:
-        return "提出 LaaB，把模型回答和自我判断之间的逻辑一致性作为桥梁，融合神经不确定性与符号判断来检测幻觉。"
+        return "提出 LaaB，把模型回答与自我判断之间的逻辑一致性建模成桥梁：一边利用内部特征的不确定性，一边利用显式 self-judgment 标签，再通过互学习融合两类信号来提升幻觉检测。"
     if "ai-text detection" in lowered:
-        return "训练带语言特征融合的 Transformer 文本检测器，并用固定阈值测试跨领域、跨生成器迁移时的鲁棒性。"
+        return "训练带语言特征融合的 Transformer AI 文本检测器，并固定一个验证集阈值去测试跨数据集、跨领域、跨生成器迁移；重点观察真实部署时的分布偏移和错误不对称，而不是只看域内高分。"
     if "complex set-compositional information retrieval" in lowered:
-        return "复现实验并扩展集合组合式检索评测，检查检索系统是否真正满足与、或、排除等约束，而不是依赖语义捷径。"
+        return "复现实验并扩展集合组合式检索评测，关注查询里的与、或、排除等集合约束；论文用受控 benchmark 检查检索系统是否真正满足属性约束，而不是靠预训练知识或语义捷径命中结果。"
     return None
 
 
@@ -754,7 +754,7 @@ def build_scaffold_markdown(data: Dict[str, Any]) -> str:
             [
                 f"{idx}. **{item['title']}**",
                 "",
-                "**Original Content in Chinese:**",
+                "**摘要:**",
                 item.get("summary") or item.get("description") or "",
                 "",
                 "**Original Link:**",
