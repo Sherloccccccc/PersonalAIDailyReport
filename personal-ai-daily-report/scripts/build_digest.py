@@ -4,24 +4,20 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import shutil
 import ssl
-import subprocess
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 
-FOLO_CATEGORY_DEFAULT = "AI FrontEnd"
 JUYA_RSS_URL_DEFAULT = "https://imjuya.github.io/juya-ai-daily/rss.xml"
 PAPER_FEED_TITLE = "cs.AI updates on arXiv.org"
 ALLOWED_ARXIV_CATEGORIES = {"cs.LG", "cs.CL", "cs.SE"}
@@ -55,29 +51,10 @@ SCORE_KEYS = [
 ]
 
 
-@dataclass
-class TimelineEntry:
-    title: str
-    url: str
-    published_at: str
-    description: str
-    summary: str
-    categories: List[str]
-    feed_title: str
-    feed_url: str
-    feed_site_url: str
-    raw: Dict[str, Any]
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build the Daily AI Info digest dataset.")
-    parser.add_argument("--category", default=FOLO_CATEGORY_DEFAULT)
-    parser.add_argument("--hours", type=int, default=24)
     parser.add_argument("--output-dir", default="output")
-    parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--juya-rss-url", default=JUYA_RSS_URL_DEFAULT)
-    parser.add_argument("--paper-source", choices=["auto", "folo", "arxiv"], default="auto")
-    parser.add_argument("--folo-timeout", type=int, default=45)
     parser.add_argument("--arxiv-max-results", type=int, default=80)
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--state-file", default="data/paper-state.json")
@@ -207,102 +184,6 @@ def parse_juya_news(rss_url: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]
     return news, issue
 
 
-def run_json_command(args: List[str], timeout: int) -> Dict[str, Any]:
-    last_error = ""
-    for attempt in range(2):
-        try:
-            proc = subprocess.run(args, capture_output=True, text=True, encoding="utf-8", timeout=timeout)
-        except subprocess.TimeoutExpired as exc:
-            raise TimeoutError(f"Command timed out after {timeout}s: {' '.join(args)}") from exc
-        if proc.returncode == 0:
-            try:
-                return json.loads(proc.stdout)
-            except json.JSONDecodeError as exc:
-                raise RuntimeError(f"Failed to parse JSON from command: {' '.join(args)}\n{proc.stdout}") from exc
-        last_error = proc.stderr or proc.stdout
-        if "aborted" not in last_error.lower() or attempt == 1:
-            break
-        time.sleep(2 * (attempt + 1))
-    raise RuntimeError(f"Command failed: {' '.join(args)}\n{last_error}")
-
-
-def resolve_executable(name: str) -> str:
-    candidates = [name]
-    if sys.platform.startswith("win"):
-        candidates = [f"{name}.cmd", f"{name}.exe", name]
-    for candidate in candidates:
-        path = shutil.which(candidate)
-        if path:
-            return path
-    raise RuntimeError(f"Could not find executable for {name}")
-
-
-def parse_dt(value: str) -> datetime:
-    if value.endswith("Z"):
-        value = value[:-1] + "+00:00"
-    return datetime.fromisoformat(value)
-
-
-def fetch_timeline(category: str, hours: int, limit: int, timeout: int) -> List[TimelineEntry]:
-    cutoff = utc_now() - timedelta(hours=hours)
-    cursor: Optional[str] = None
-    collected: List[TimelineEntry] = []
-
-    while True:
-        cmd = [
-            resolve_executable("npx"),
-            "--yes",
-            "folocli@latest",
-            "timeline",
-            "--category",
-            category,
-            "--limit",
-            str(limit),
-            "--format",
-            "json",
-        ]
-        if cursor:
-            cmd.extend(["--cursor", cursor])
-
-        payload = run_json_command(cmd, timeout=timeout)
-        data = payload.get("data") or {}
-        entries = data.get("entries") or []
-        if not entries:
-            break
-
-        stop = False
-        for item in entries:
-            entry = item.get("entries") or {}
-            published_at = entry.get("publishedAt")
-            if not published_at:
-                continue
-            published_dt = parse_dt(published_at)
-            if published_dt < cutoff:
-                stop = True
-                continue
-            collected.append(
-                TimelineEntry(
-                    title=entry.get("title") or "",
-                    url=entry.get("url") or "",
-                    published_at=published_at,
-                    description=entry.get("description") or "",
-                    summary=entry.get("summary") or "",
-                    categories=list(entry.get("categories") or []),
-                    feed_title=((item.get("feeds") or {}).get("title") or ""),
-                    feed_url=((item.get("feeds") or {}).get("url") or ""),
-                    feed_site_url=((item.get("feeds") or {}).get("siteUrl") or ""),
-                    raw=item,
-                )
-            )
-
-        cursor = data.get("nextCursor")
-        if stop or not data.get("hasNext") or not cursor:
-            break
-        time.sleep(0.2)
-
-    return collected
-
-
 def is_blacklisted(text: str) -> bool:
     lowered = text.lower()
     return any(term in lowered for term in BLACKLIST_TERMS)
@@ -421,41 +302,6 @@ def fetch_arxiv_abstracts(arxiv_ids: Iterable[str]) -> Dict[str, Dict[str, Any]]
             output[row["arxiv_id"]] = row
         time.sleep(0.2)
     return output
-
-
-def paper_rows_from_folo(entries: List[TimelineEntry]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
-    raw: List[Dict[str, Any]] = []
-    dropped: List[Dict[str, Any]] = []
-    kept: List[Dict[str, Any]] = []
-    for item in entries:
-        if item.feed_title != PAPER_FEED_TITLE:
-            continue
-        row = {
-            "title": item.title,
-            "url": item.url,
-            "published_at": item.published_at,
-            "publish_date": item.published_at[:10],
-            "description": item.description,
-            "summary": item.summary,
-            "categories": item.categories,
-            "feed_title": item.feed_title,
-            "source": "folo",
-        }
-        raw.append(row)
-        result = filter_paper_row(row)
-        if result:
-            dropped.append(result)
-            continue
-        row["arxiv_id"] = extract_arxiv_id(item.url) or ""
-        row["id"] = f"arxiv:{row['arxiv_id']}" if row["arxiv_id"] else item.url
-        kept.append(row)
-
-    abstracts = fetch_arxiv_abstracts([row.get("arxiv_id") for row in kept if row.get("arxiv_id")])
-    for row in kept:
-        abstract_data = abstracts.get(row.get("arxiv_id") or "", {})
-        row["abstract"] = abstract_data.get("abstract") or row.get("summary") or row.get("description") or ""
-        row["api_categories"] = abstract_data.get("api_categories") or abstract_data.get("categories") or row["categories"]
-    return kept, dropped
 
 
 def filter_paper_row(row: Dict[str, Any]) -> Optional[Dict[str, Any]]:
@@ -795,18 +641,6 @@ def update_paper_state(state_path: Path, candidates: List[Dict[str, Any]], top_k
 
 
 def fetch_paper_candidates(args: argparse.Namespace, logs: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], str]:
-    if args.paper_source in {"auto", "folo"}:
-        try:
-            entries = fetch_timeline(args.category, args.hours, args.limit, args.folo_timeout)
-            kept, dropped = paper_rows_from_folo(entries)
-            logs.append({"stage": "paper_fetch", "source": "folo", "status": "ok", "entries": len(entries), "kept": len(kept)})
-            if kept or args.paper_source == "folo":
-                return kept, dropped, "folo"
-        except Exception as exc:
-            logs.append({"stage": "paper_fetch", "source": "folo", "status": "failed", "error": str(exc)})
-            if args.paper_source == "folo":
-                raise
-
     try:
         arxiv_rows = fetch_arxiv_latest(args.arxiv_max_results)
         arxiv_source = "arxiv_api"

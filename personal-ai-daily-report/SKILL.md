@@ -1,6 +1,6 @@
 ---
 name: personal-ai-daily-report
-description: Build and deliver the user's Daily AI Info report. News comes from Juya RSS, Paper comes from the existing arXiv/Folo paper flow with scoring, persistent paper state, Feishu delivery, and Git-backed run artifacts.
+description: Build and deliver the user's Daily AI Info report. News comes from Juya RSS, Paper comes from arXiv with scoring, persistent paper state, Feishu delivery, and Git-backed run artifacts.
 ---
 
 # Personal AI Daily Report
@@ -25,8 +25,6 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --state-file data/paper-state.json \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
-  --folo-timeout 30 \
-  --paper-source auto \
   --top-k 10
 ```
 
@@ -50,9 +48,8 @@ python personal-ai-daily-report/scripts/send_lark_markdown.py \
 
 `Paper`:
 
-- primary source: existing Folo category `AI FrontEnd`
-- fallback source: arXiv API
-- second fallback: arXiv RSS category feeds
+- primary source: arXiv API
+- fallback source: arXiv RSS category feeds
 - allowed arXiv categories: `cs.LG`, `cs.CL`, `cs.SE`
 - blacklist terms: `clinical`, `psychiatric`, `lung cancer`, `biomechanical`, `traffic`, `driving`, `emboli`, `field medicine`, `legal`, `graph`
 
@@ -152,7 +149,6 @@ Paper summaries must be concrete. Avoid generic filler such as:
 - `LARK_APP_ID`
 - `LARK_APP_SECRET`
 - `FEISHU_CHAT_ID`
-- `FOLO_TOKEN` optional
 
 The local `lark-cli` config showed app id `cli_a96cf46a56789bb5`; store that as `LARK_APP_ID` if this is the app you want the workflow to use. Do not commit app secrets.
 

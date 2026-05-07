@@ -21,7 +21,6 @@ Manual trigger is also available through `workflow_dispatch`.
 | `LARK_APP_ID` | yes | Feishu app id |
 | `LARK_APP_SECRET` | yes | Feishu app secret |
 | `FEISHU_CHAT_ID` | yes | Target chat id, usually `oc_...` |
-| `FOLO_TOKEN` | no | Folo token for the primary paper source |
 
 Local `lark-cli` config showed app id:
 
@@ -57,9 +56,7 @@ Workflow:
 1. Pull the latest repository state.
 2. Build the digest:
    - News source: Juya RSS
-   - Paper source: auto
-   - Folo timeout enabled
-   - arXiv API fallback enabled
+   - Paper source: arXiv API
    - arXiv RSS fallback enabled
    - paper state: data/paper-state.json
    - run directory: runs/YYYY-MM-DD
@@ -115,8 +112,6 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --state-file data/paper-state.json \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
-  --folo-timeout 30 \
-  --paper-source auto \
   --top-k 10
 ```
 

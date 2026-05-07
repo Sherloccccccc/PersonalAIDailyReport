@@ -33,8 +33,6 @@ jobs:
           node-version: "22"
 
       - name: Build digest
-        env:
-          FOLO_TOKEN: ${{ secrets.FOLO_TOKEN }}
         run: |
           RUN_ID=$(TZ=Asia/Shanghai date +%F)
           mkdir -p "runs/$RUN_ID" data
@@ -43,8 +41,6 @@ jobs:
             --state-file data/paper-state.json \
             --run-summary "runs/$RUN_ID/run-log.json" \
             --run-id "$RUN_ID" \
-            --folo-timeout 30 \
-            --paper-source auto \
             --top-k 10
 
       - name: Send Feishu

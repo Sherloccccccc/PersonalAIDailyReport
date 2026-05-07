@@ -4,11 +4,10 @@ Use these notes for the `Paper` module of `Daily AI Info`.
 
 ## Source Order
 
-1. Folo category `AI FrontEnd`
-2. arXiv API fallback
-3. arXiv RSS fallback
+1. arXiv API
+2. arXiv RSS fallback
 
-The fallback path exists because Folo CLI or arXiv API may hang, fail auth, or hit rate limits. Build logs must preserve which source was used.
+The fallback path exists because arXiv API may hang, fail, or hit rate limits. Build logs must preserve which source was used.
 
 ## Hard Filter
 
