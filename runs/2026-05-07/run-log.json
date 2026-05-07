@@ -1,23 +1,23 @@
 {
   "run_id": "2026-05-07",
-  "generated_at": "2026-05-06T17:58:48.408766+00:00",
-  "juya_issue_title": "2026-05-06",
-  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-81/",
-  "news_count": 20,
+  "generated_at": "2026-05-07T04:55:59.923263+00:00",
+  "juya_issue_title": "2026-05-07",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-82/",
+  "news_count": 16,
   "paper_source": "arxiv_api",
-  "paper_candidate_count": 43,
-  "paper_selected_count": 0,
-  "paper_added_to_state_count": 0,
+  "paper_candidate_count": 54,
+  "paper_selected_count": 6,
+  "paper_added_to_state_count": 6,
   "paper_waiting_remaining_count": 0,
   "delivery": {
     "channel": "feishu",
     "status": "success",
-    "sent_at": "2026-05-06T17:58:50.169187+00:00",
+    "sent_at": "2026-05-07T04:56:01.223671+00:00",
     "target_type": "chat_id",
     "target_configured": true,
     "message_ids": [
-      "om_x100b508c5b6100a0b2cf28b0665bed1",
-      "om_x100b508c5b77f8a0b3f8b7f7bd58a1f"
+      "om_x100b50f5f8d61ca8b2623341fb1988f",
+      "om_x100b50f5f8e280b8b321d8b4dc5a1d1"
     ],
     "parts": 2
   },
@@ -31,16 +31,16 @@
       "stage": "news_fetch",
       "source": "juya",
       "status": "ok",
-      "news_count": 20,
+      "news_count": 16,
       "issue": {
         "feed_title": "橘鸦AI早报",
         "feed_link": "https://imjuya.github.io/juya-ai-daily/",
         "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。",
-        "last_build_date": "2026-05-06T01:31:08+00:00",
-        "issue_title": "2026-05-06",
-        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-81/",
-        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/81",
-        "published_at": "2026-05-06T01:30:36+00:00",
+        "last_build_date": "2026-05-07T01:44:12+00:00",
+        "issue_title": "2026-05-07",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-82/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/82",
+        "published_at": "2026-05-07T01:40:42+00:00",
         "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
       }
     },
@@ -48,16 +48,16 @@
       "stage": "paper_fetch",
       "source": "folo",
       "status": "failed",
-      "error": "Command timed out after 30s: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json"
+      "error": "Command failed: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json\n{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": {\n    \"code\": \"UNAUTHORIZED\",\n    \"message\": \"Missing token. Run `folo login` (browser sign-in) or set FOLO_TOKEN.\"\n  }\n}\n"
     },
     {
       "stage": "paper_fetch",
       "source": "arxiv_api",
       "status": "ok",
       "raw": 80,
-      "kept": 43
+      "kept": 54
     }
   ],
   "status": "success",
-  "sent_at": "2026-05-06T17:58:50.169187+00:00"
+  "sent_at": "2026-05-07T04:56:01.223671+00:00"
 }
