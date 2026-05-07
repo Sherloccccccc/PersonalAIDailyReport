@@ -56,7 +56,7 @@ Store full abstract in the state file for later audit.
 
 ## Summary Rules
 
-Paper `一句话总结` should be around 100 Chinese characters and answer:
+Paper `一句话总结` should be around 80-120 Chinese characters, must be Chinese, and answer:
 
 - What did the paper build/propose/evaluate?
 - What concrete task, benchmark, dataset, method, system, or result is involved?
@@ -77,6 +77,8 @@ Bad:
 Forbidden generic phrases:
 
 - `围绕...展开`
+- `核心贡献是：We introduce...`
+- raw English contribution sentences copied from abstracts
 - `工程线索`
 - `新方法、评测或工程线索`
 

@@ -95,7 +95,13 @@ Report rules:
 - Do not include internal stats in daily-ai-info.md.
 - News fields: title, 摘要, Original Link.
 - Paper fields: title, Publish Date, 一句话总结, Link.
-- Paper 一句话总结 should be around 100 Chinese characters and say what the paper specifically did.
+- GitHub artifact daily-ai-info.md stays standard Markdown.
+- Feishu card body must be Feishu-safe: do not render `#`, `##`, or `###` as body text; convert section headings to bold plain lines instead.
+- Feishu card body may use only bold text, numbered items, links, short paragraphs, and separators.
+- Paper 一句话总结 should be around 80-120 Chinese characters and say what the paper specifically did.
+- Paper 一句话总结 must be Chinese, not copied English from the abstract.
+- Paper 一句话总结 should include at least two concrete elements when available: problem/object, method/framework, data/evaluation, result/use.
+- Paper 一句话总结 must avoid generic filler like “围绕……展开”, “提供新方法、评测或工程线索”, and “核心贡献是：We introduce...”.
 ```
 
 ## Local Manual Run

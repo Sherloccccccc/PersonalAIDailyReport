@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -105,9 +106,22 @@ def markdown_to_blocks(markdown: str) -> tuple[str, list[str]]:
         return "Daily AI Info", []
 
     title = lines[0].lstrip("\ufeff").strip() or "Daily AI Info"
-    body = "\n".join(lines[1:]).strip()
+    title = re.sub(r"^#+\s*", "", title).strip() or "Daily AI Info"
+    safe_lines = [feishu_safe_line(line) for line in lines[1:]]
+    body = "\n".join(safe_lines).strip()
     raw_blocks = [block.strip() for block in body.split("\n\n") if block.strip()]
     return title, raw_blocks
+
+
+def feishu_safe_line(line: str) -> str:
+    stripped = line.strip()
+    heading = re.match(r"^(#{1,6})\s+(.+)$", stripped)
+    if not heading:
+        return line
+    text = heading.group(2).strip()
+    if not text:
+        return ""
+    return f"**{text}**"
 
 
 def build_card(title: str, blocks: list[str]) -> dict:

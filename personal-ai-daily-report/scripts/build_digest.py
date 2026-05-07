@@ -570,13 +570,88 @@ def build_one_sentence_summary(row: Dict[str, Any]) -> str:
     specific = build_specific_summary(title, abstract, lowered)
     if specific:
         return specific
-    contribution = extract_contribution_sentence(abstract)
-    if contribution:
-        return f"这篇论文的核心贡献是：{contribution}"
-    first = first_sentence(abstract)
-    if first:
-        return f"这篇论文主要做的是：{first}"
-    return f"这篇论文研究 {title}。"
+    structured = build_structured_chinese_summary(title, abstract, lowered)
+    if structured:
+        return structured
+    return f"这篇论文讨论《{title}》，但摘要里缺少足够明确的方法、数据或评测信息，暂时只能判断它与当前 AI paper 主题相关。"
+
+
+def build_structured_chinese_summary(title: str, abstract: str, lowered: str) -> str:
+    subject = infer_paper_subject(title, lowered)
+    method = infer_paper_method(lowered)
+    evaluation = infer_paper_evaluation(abstract, lowered)
+    usage = infer_paper_usage(lowered)
+
+    parts = [f"这篇论文{method}{subject}"]
+    if evaluation:
+        parts.append(evaluation)
+    if usage:
+        parts.append(usage)
+    return "；".join(parts) + "。"
+
+
+def infer_paper_subject(title: str, lowered: str) -> str:
+    if "coding agent" in lowered or "software engineering" in lowered:
+        return "面向 coding agent 或软件工程任务"
+    if "preference" in lowered or "alignment" in lowered:
+        return "面向偏好学习、模型对齐或社会价值评测"
+    if "retrieval" in lowered or "rag" in lowered:
+        return "面向检索增强生成或复杂信息检索任务"
+    if "benchmark" in lowered or "evaluation" in lowered:
+        return "面向大模型能力评测"
+    if "memory" in lowered or "long-context" in lowered or "long context" in lowered:
+        return "面向长上下文或 agent 记忆管理"
+    if "gui" in lowered or "interface" in lowered or "multimodal" in lowered:
+        return "面向多模态界面理解与操作"
+    clean_title = title.strip().rstrip(".")
+    return f"针对《{clean_title}》这个问题"
+
+
+def infer_paper_method(lowered: str) -> str:
+    if "convert" in lowered and "pairwise preference" in lowered:
+        return "提出一个把原始评测数据转换成两两偏好数据的框架，"
+    if "benchmark" in lowered:
+        return "构建一个新的 benchmark，"
+    if "dataset" in lowered:
+        return "整理一个新的数据集或任务集合，"
+    if "framework" in lowered:
+        return "提出一个可复用框架，"
+    if "agent" in lowered and ("workflow" in lowered or "tool" in lowered):
+        return "设计一套 agent workflow，"
+    if "train" in lowered or "fine-tun" in lowered:
+        return "训练或微调模型，"
+    if "detect" in lowered or "detection" in lowered:
+        return "设计检测方法，"
+    return "提出一种方法，"
+
+
+def infer_paper_evaluation(abstract: str, lowered: str) -> str:
+    facts = extract_numeric_facts(abstract)
+    if "gold label" in lowered and "directional bias" in lowered:
+        base = "有标准答案时用 gold label 构造偏好，没有标准答案时用方向性偏差指标补齐监督信号"
+    elif "experiment" in lowered or "evaluate" in lowered or "benchmark" in lowered:
+        base = "通过实验或基准测试验证方法是否真的改善任务表现"
+    elif "dataset" in lowered:
+        base = "重点说明数据构造、样本筛选和任务定义方式"
+    else:
+        base = ""
+    if facts:
+        return f"{base}，并覆盖{facts}" if base else f"覆盖{facts}"
+    return base
+
+
+def infer_paper_usage(lowered: str) -> str:
+    if "preference" in lowered or "alignment" in lowered:
+        return "用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程"
+    if "coding agent" in lowered:
+        return "用途是发现 coding agent 在真实开发流程中的能力边界或安全风险"
+    if "retrieval" in lowered or "rag" in lowered:
+        return "用途是判断检索系统能否为复杂推理持续提供有效证据"
+    if "benchmark" in lowered or "evaluation" in lowered:
+        return "用途是给模型、agent 或工具链提供更可复现的横向比较标准"
+    if "memory" in lowered:
+        return "用途是降低长任务执行中的上下文成本，并提升历史信息复用效率"
+    return ""
 
 
 def build_specific_summary(title: str, abstract: str, lowered: str) -> Optional[str]:

@@ -119,13 +119,15 @@ For each Paper item:
 YYYY-MM-DD
 
 **一句话总结:**
-Around 100 Chinese characters describing what the paper specifically did.
+Around 80-120 Chinese characters in Chinese, describing what the paper specifically did.
 
 **Link:**
 https://arxiv.org/abs/...
 ```
 
 Do not include internal stats, candidate counts, delivery notes, scoring details, or build logs in `daily-ai-info.md`.
+
+Feishu card delivery uses a safer subset than `daily-ai-info.md`: convert `#`, `##`, and `###` headings to bold plain lines before sending, because Feishu interactive cards do not reliably render Markdown heading syntax inside `lark_md`.
 
 ## Paper Scoring
 
@@ -141,6 +143,7 @@ Keep selected papers at `top-k = 10` when available. If fewer papers pass thresh
 Paper summaries must be concrete. Avoid generic filler such as:
 
 - `围绕...展开`
+- `核心贡献是：We introduce...`
 - `工程线索`
 - `新方法、评测或工程线索`
 
