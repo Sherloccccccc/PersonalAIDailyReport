@@ -1,25 +1,24 @@
 {
   "run_id": "2026-05-07",
-  "generated_at": "2026-05-07T04:55:59.923263+00:00",
+  "generated_at": "2026-05-07T13:12:24.451302+00:00",
   "juya_issue_title": "2026-05-07",
   "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-82/",
   "news_count": 16,
   "paper_source": "arxiv_api",
   "paper_candidate_count": 54,
-  "paper_selected_count": 6,
-  "paper_added_to_state_count": 6,
+  "paper_selected_count": 0,
+  "paper_added_to_state_count": 0,
   "paper_waiting_remaining_count": 0,
   "delivery": {
     "channel": "feishu",
     "status": "success",
-    "sent_at": "2026-05-07T04:56:01.223671+00:00",
+    "sent_at": "2026-05-07T13:12:25.406399+00:00",
     "target_type": "chat_id",
     "target_configured": true,
     "message_ids": [
-      "om_x100b50f5f8d61ca8b2623341fb1988f",
-      "om_x100b50f5f8e280b8b321d8b4dc5a1d1"
+      "om_x100b50fcb5516ca0b1163201ee92425"
     ],
-    "parts": 2
+    "parts": 1
   },
   "artifacts": {
     "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-07/daily-ai-info.md",
@@ -46,12 +45,6 @@
     },
     {
       "stage": "paper_fetch",
-      "source": "folo",
-      "status": "failed",
-      "error": "Command failed: /opt/hostedtoolcache/node/22.22.2/x64/bin/npx --yes folocli@latest timeline --category AI FrontEnd --limit 100 --format json\n{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": {\n    \"code\": \"UNAUTHORIZED\",\n    \"message\": \"Missing token. Run `folo login` (browser sign-in) or set FOLO_TOKEN.\"\n  }\n}\n"
-    },
-    {
-      "stage": "paper_fetch",
       "source": "arxiv_api",
       "status": "ok",
       "raw": 80,
@@ -59,5 +52,5 @@
     }
   ],
   "status": "success",
-  "sent_at": "2026-05-07T04:56:01.223671+00:00"
+  "sent_at": "2026-05-07T13:12:25.406399+00:00"
 }
