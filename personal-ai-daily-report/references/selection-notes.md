@@ -42,6 +42,8 @@ Total score is 100 points:
 
 Current threshold: `score_total >= 60`.
 
+Production scoring uses DeepSeek `deepseek-v4-pro` through the OpenAI-compatible API. Each dimension is still capped at 25 points. Rule-based scoring remains a local/debug fallback so the daily report can still build if the model path is disabled.
+
 ## State Rules
 
 `data/paper-state.json` is a single table.

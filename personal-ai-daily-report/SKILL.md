@@ -25,6 +25,7 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --state-file data/paper-state.json \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
+  --ai-provider deepseek \
   --top-k 10
 ```
 
@@ -50,6 +51,8 @@ python personal-ai-daily-report/scripts/send_lark_markdown.py \
 
 - primary source: arXiv API
 - fallback source: arXiv RSS category feeds
+- scoring and summaries: DeepSeek `deepseek-v4-pro`
+- local/debug fallback: rule-based scorer and summary builder
 - allowed arXiv categories: `cs.LG`, `cs.CL`, `cs.SE`
 - blacklist terms: `clinical`, `psychiatric`, `lung cancer`, `biomechanical`, `traffic`, `driving`, `emboli`, `field medicine`, `legal`, `graph`
 
@@ -149,6 +152,7 @@ Paper summaries must be concrete. Avoid generic filler such as:
 - `LARK_APP_ID`
 - `LARK_APP_SECRET`
 - `FEISHU_CHAT_ID`
+- `DEEPSEEK_API_KEY`
 
 The local `lark-cli` config showed app id `cli_a96cf46a56789bb5`; store that as `LARK_APP_ID` if this is the app you want the workflow to use. Do not commit app secrets.
 

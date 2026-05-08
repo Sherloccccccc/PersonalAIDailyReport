@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import ssl
 import sys
@@ -49,6 +50,9 @@ SCORE_KEYS = [
     "engineering_utility",
     "timeliness_rarity",
 ]
+DEEPSEEK_BASE_URL_DEFAULT = "https://api.deepseek.com"
+DEEPSEEK_MODEL_DEFAULT = "deepseek-v4-pro"
+AI_BATCH_SIZE = 8
 
 
 def parse_args() -> argparse.Namespace:
@@ -57,6 +61,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--juya-rss-url", default=JUYA_RSS_URL_DEFAULT)
     parser.add_argument("--arxiv-max-results", type=int, default=80)
     parser.add_argument("--top-k", type=int, default=10)
+    parser.add_argument("--ai-provider", choices=["auto", "deepseek", "none"], default="auto")
+    parser.add_argument("--deepseek-model", default=os.environ.get("DEEPSEEK_MODEL", DEEPSEEK_MODEL_DEFAULT))
+    parser.add_argument("--deepseek-base-url", default=os.environ.get("DEEPSEEK_BASE_URL", DEEPSEEK_BASE_URL_DEFAULT))
     parser.add_argument("--state-file", default="data/paper-state.json")
     parser.add_argument("--run-log", default=None, help="Optional legacy JSONL run log path.")
     parser.add_argument("--run-summary", default=None, help="Daily run summary JSON path.")
@@ -84,6 +91,16 @@ def read_url_text(url: str, timeout: int = 30) -> str:
         context = ssl._create_unverified_context()
         with urllib.request.urlopen(req, timeout=timeout, context=context) as response:
             return response.read().decode("utf-8")
+
+
+def read_request_json(req: urllib.request.Request, timeout: int = 30) -> Dict[str, Any]:
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.URLError:
+        context = ssl._create_unverified_context()
+        with urllib.request.urlopen(req, timeout=timeout, context=context) as response:
+            return json.loads(response.read().decode("utf-8"))
 
 
 def clean_html(value: str) -> str:
@@ -340,6 +357,19 @@ def keyword_score(text: str, groups: List[List[str]], base: int = 4) -> int:
 
 
 def score_paper(row: Dict[str, Any]) -> Dict[str, Any]:
+    ai_score = row.get("ai_score")
+    if isinstance(ai_score, dict) and is_valid_score_detail(ai_score.get("score_detail")):
+        detail = normalize_score_detail(ai_score["score_detail"])
+        total = sum(detail.values())
+        scored = dict(row)
+        scored["score_detail"] = detail
+        scored["score_total"] = total
+        scored["score_reason"] = clean_ai_text(ai_score.get("score_reason") or "DeepSeek paper scoring")
+        summary = clean_ai_text(ai_score.get("one_sentence_summary") or "")
+        scored["one_sentence_summary"] = summary or build_one_sentence_summary(scored)
+        scored["score_source"] = "deepseek"
+        return scored
+
     text = " ".join([row.get("title", ""), row.get("abstract", "")])
     app = keyword_score(
         text,
@@ -393,7 +423,33 @@ def score_paper(row: Dict[str, Any]) -> Dict[str, Any]:
     scored["score_total"] = total
     scored["score_reason"] = build_score_reason(scored)
     scored["one_sentence_summary"] = build_one_sentence_summary(scored)
+    scored["score_source"] = "rules"
     return scored
+
+
+def is_valid_score_detail(value: object) -> bool:
+    if not isinstance(value, dict):
+        return False
+    return all(key in value for key in SCORE_KEYS)
+
+
+def normalize_score_detail(value: Dict[str, Any]) -> Dict[str, int]:
+    detail: Dict[str, int] = {}
+    for key in SCORE_KEYS:
+        try:
+            score = int(round(float(value.get(key, 0))))
+        except (TypeError, ValueError):
+            score = 0
+        detail[key] = max(0, min(25, score))
+    return detail
+
+
+def clean_ai_text(value: object) -> str:
+    text = " ".join(str(value or "").split())
+    forbidden = ["We introduce", "We propose", "这篇论文围绕", "工程线索", "新方法、评测或工程线索"]
+    if any(term in text for term in forbidden):
+        return ""
+    return text
 
 
 def build_score_reason(row: Dict[str, Any]) -> str:
@@ -578,6 +634,135 @@ def extract_numeric_facts(abstract: str) -> str:
     return "、".join(facts)
 
 
+def apply_ai_paper_scores(candidates: List[Dict[str, Any]], args: argparse.Namespace, logs: List[Dict[str, Any]]) -> None:
+    provider = args.ai_provider
+    if provider == "none":
+        logs.append({"stage": "paper_ai_scoring", "provider": "none", "status": "skipped"})
+        return
+
+    api_key = os.environ.get("DEEPSEEK_API_KEY")
+    if not api_key:
+        status = "skipped" if provider == "auto" else "failed"
+        logs.append({"stage": "paper_ai_scoring", "provider": "deepseek", "status": status, "reason": "missing DEEPSEEK_API_KEY"})
+        if provider == "deepseek":
+            raise RuntimeError("DEEPSEEK_API_KEY is required when --ai-provider=deepseek")
+        return
+
+    scored_count = 0
+    failed_batches = 0
+    for start in range(0, len(candidates), AI_BATCH_SIZE):
+        batch = candidates[start : start + AI_BATCH_SIZE]
+        try:
+            result = call_deepseek_paper_scorer(batch, api_key, args.deepseek_model, args.deepseek_base_url)
+            by_id = {item.get("id"): item for item in result.get("papers", []) if isinstance(item, dict)}
+            for row in batch:
+                paper_id = row.get("id") or row.get("url")
+                ai_score = by_id.get(paper_id)
+                if ai_score and is_valid_score_detail(ai_score.get("score_detail")):
+                    row["ai_score"] = ai_score
+                    scored_count += 1
+        except Exception as exc:
+            failed_batches += 1
+            logs.append(
+                {
+                    "stage": "paper_ai_scoring_batch",
+                    "provider": "deepseek",
+                    "status": "failed",
+                    "batch_start": start,
+                    "batch_size": len(batch),
+                    "error": str(exc),
+                }
+            )
+
+    logs.append(
+        {
+            "stage": "paper_ai_scoring",
+            "provider": "deepseek",
+            "model": args.deepseek_model,
+            "status": "ok" if scored_count else "fallback_rules",
+            "candidate_count": len(candidates),
+            "scored_count": scored_count,
+            "failed_batches": failed_batches,
+        }
+    )
+
+
+def call_deepseek_paper_scorer(batch: List[Dict[str, Any]], api_key: str, model: str, base_url: str) -> Dict[str, Any]:
+    url = base_url.rstrip("/") + "/chat/completions"
+    papers = [
+        {
+            "id": row.get("id") or row.get("url"),
+            "title": row.get("title", ""),
+            "publish_date": row.get("publish_date", ""),
+            "categories": row.get("api_categories") or row.get("categories") or [],
+            "abstract": row.get("abstract", "")[:3500],
+        }
+        for row in batch
+    ]
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "你是 AI 产品和 agent 工程方向的论文筛选编辑。"
+                    "只输出 JSON，不要 Markdown。"
+                    "为每篇 paper 生成四个 0-25 分的分项分、总分理由和中文一句话总结。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": build_deepseek_paper_prompt(papers),
+            },
+        ],
+        "temperature": 0.2,
+        "response_format": {"type": "json_object"},
+    }
+    data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=data,
+        headers={
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {api_key}",
+        },
+        method="POST",
+    )
+    response_payload = read_request_json(req, timeout=90)
+    content = response_payload["choices"][0]["message"]["content"]
+    return parse_json_object(content)
+
+
+def build_deepseek_paper_prompt(papers: List[Dict[str, Any]]) -> str:
+    return (
+        "按以下标准筛选 Daily AI Info 的 Paper 模块。\n"
+        "四个分项各 0-25 分：\n"
+        "1. application_relevance：是否启发 AI 产品、Agent、Workflow、工具、开发者体验。\n"
+        "2. new_signal：是否出现新任务、新界面、新数据集、新使用方式。\n"
+        "3. engineering_utility：是否可能被实现、集成、复用，而不是纯理论。\n"
+        "4. timeliness_rarity：是否代表近期趋势或少见方向。\n\n"
+        "一句话总结要求：中文，80-120 字，具体说明论文做了什么；尽量包含对象、方法、数据/评测、用途。"
+        "禁止复制英文 abstract，禁止使用“围绕……展开”“工程线索”“新方法、评测或工程线索”。\n\n"
+        "返回 JSON 格式："
+        "{\"papers\":[{\"id\":\"...\",\"score_detail\":{\"application_relevance\":0,\"new_signal\":0,\"engineering_utility\":0,\"timeliness_rarity\":0},\"score_reason\":\"...\",\"one_sentence_summary\":\"...\"}]}\n\n"
+        f"待评估 papers：\n{json.dumps(papers, ensure_ascii=False)}"
+    )
+
+
+def parse_json_object(text: str) -> Dict[str, Any]:
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", cleaned, flags=re.S)
+        if not match:
+            raise
+        return json.loads(match.group(0))
+
+
 def load_paper_state(path: Path) -> Dict[str, Any]:
     if not path.exists():
         return {"version": 1, "updated_at": None, "papers": []}
@@ -718,8 +903,11 @@ def main() -> int:
     logs.append({"stage": "news_fetch", "source": "juya", "status": "ok", "news_count": len(news), "issue": juya_issue})
 
     paper_candidates, paper_dropped, paper_source = fetch_paper_candidates(args, logs)
+    apply_ai_paper_scores(paper_candidates, args, logs)
     selected_papers, paper_status = update_paper_state(Path(args.state_file), paper_candidates, args.top_k, run_id)
     paper_status["source"] = paper_source
+    paper_status["ai_provider"] = args.ai_provider
+    paper_status["ai_model"] = args.deepseek_model if args.ai_provider != "none" else None
 
     dataset = {
         "generated_at": iso_now(),
@@ -736,6 +924,8 @@ def main() -> int:
             "blacklist_terms": BLACKLIST_TERMS,
             "score_keys": SCORE_KEYS,
             "score_threshold": SCORE_THRESHOLD,
+            "ai_provider": args.ai_provider,
+            "deepseek_model": args.deepseek_model if args.ai_provider != "none" else None,
         },
         "news": news,
         "paper_candidates": paper_candidates,

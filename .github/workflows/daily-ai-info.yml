@@ -33,6 +33,9 @@ jobs:
           node-version: "22"
 
       - name: Build digest
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-pro
         run: |
           RUN_ID=$(TZ=Asia/Shanghai date +%F)
           mkdir -p "runs/$RUN_ID" data
@@ -41,6 +44,7 @@ jobs:
             --state-file data/paper-state.json \
             --run-summary "runs/$RUN_ID/run-log.json" \
             --run-id "$RUN_ID" \
+            --ai-provider deepseek \
             --top-k 10
 
       - name: Send Feishu

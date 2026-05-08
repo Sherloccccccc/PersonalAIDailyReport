@@ -21,6 +21,7 @@ Manual trigger is also available through `workflow_dispatch`.
 | `LARK_APP_ID` | yes | Feishu app id |
 | `LARK_APP_SECRET` | yes | Feishu app secret |
 | `FEISHU_CHAT_ID` | yes | Target chat id, usually `oc_...` |
+| `DEEPSEEK_API_KEY` | yes | DeepSeek API key for paper scoring and summaries |
 
 Local `lark-cli` config showed app id:
 
@@ -58,6 +59,8 @@ Workflow:
    - News source: Juya RSS
    - Paper source: arXiv API
    - arXiv RSS fallback enabled
+   - Paper scoring and summaries: DeepSeek `deepseek-v4-pro`
+   - Rule-based scoring and summaries remain as fallback only for local/debug runs
    - paper state: data/paper-state.json
    - run directory: runs/YYYY-MM-DD
 3. Generate:
@@ -112,6 +115,7 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --state-file data/paper-state.json \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
+  --ai-provider deepseek \
   --top-k 10
 ```
 
