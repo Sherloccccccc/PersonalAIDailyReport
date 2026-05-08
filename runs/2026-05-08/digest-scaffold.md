@@ -257,68 +257,112 @@ https://the-decoder.com/ai-translation-company-deepl-cuts-around-250-jobs-to-reb
 
 ## Paper
 
-1. **AsymmetryZero: A Framework for Operationalizing Human Expert Preferences as Semantic Evals**
+1. **SkillOS: Learning Skill Curation for Self-Evolving Agents**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。
+SkillOS 提出一种基于强化学习的技能管理方法，通过冻结执行器与可训练管理器的协作，从任务流中学习维护外部技能库，使智能体在多轮交互中自我进化，其技能最终组织为富含元技能的 Markdown 结构化文件，提升了长期任务效率。
 
 **Link:**
-https://arxiv.org/abs/2605.04083
+https://arxiv.org/abs/2605.06614
 
-2. **LCM: Lossless Context Management**
+2. **EMO: Pretraining Mixture of Experts for Emergent Modularity**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文构建一个新的 benchmark，面向 coding agent 或软件工程任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是发现 coding agent 在真实开发流程中的能力边界或安全风险。
+提出EMO预训练方法，通过限制同文档token共享专家池，使MoE模型在仅使用25%专家时精度仅降1%，且专家按数学、代码等语义领域分工，为稀疏模型的模块化高效部署开辟了新路径。
 
 **Link:**
-https://arxiv.org/abs/2605.04050
+https://arxiv.org/abs/2605.06663
 
-3. **Deployment-Relevant Alignment Cannot Be Inferred from Model-Level Evaluation Alone**
+3. **StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。
+StraTA框架为LLM智能体强化学习引入轨迹级策略，通过层次GRPO联合训练策略与动作，在ALFWorld、WebShop和SciWorld上成功率分别达93.1%、84.2%和63.5%，超越前沿闭源模型。
 
 **Link:**
-https://arxiv.org/abs/2605.04454
+https://arxiv.org/abs/2605.06642
 
-4. **AuditRepairBench: A Paired-Execution Trace Corpus for Evaluator-Channel Ranking Instability in Agent Repair**
+4. **Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文训练或微调模型，面向检索增强生成或复杂信息检索任务；用途是判断检索系统能否为复杂推理持续提供有效证据。
+SIRA通过LLM离线扩充文档检索词、在线预测查询缺失词汇并结合文档频率过滤，将多轮探索搜索压缩为单次加权BM25检索，在十个BEIR基准上超越稠密检索与多轮代理方法，实现高效、可解释的检索。
 
 **Link:**
-https://arxiv.org/abs/2605.04624
+https://arxiv.org/abs/2605.06647
 
-5. **TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments**
+5. **STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文构建一个新的 benchmark，面向大模型能力评测；通过实验或基准测试验证方法是否真的改善任务表现，并覆盖12 models；用途是给模型、agent 或工具链提供更可复现的横向比较标准。
+针对LLM代理记忆中隐式冲突导致信念过时问题，提出包含400个场景的STALE基准和CUPMem原型，从状态解析、前提抵抗和隐式策略适应三维度评估发现模型准确率仅55.2%，揭示检索更新证据与基于证据行动间的差距。
 
 **Link:**
-https://arxiv.org/abs/2605.04107
+https://arxiv.org/abs/2605.06527
 
-6. **MedFabric and EtHER: A Data-Centric Framework for Word-Level Fabrication Generation and Detection in Medical LLMs**
+6. **Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents**
 
 **Publish Date:**
-2026-05-08
+2026-05-07
 
 **一句话总结:**
-这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。
+提出首个结构化来源归因评测框架，通过AST解析LLM生成报告中的内联引用并检索原文，从链接可访问性、内容相关性和事实准确性三维度评估14个模型，发现事实准确率仅39-77%且随检索轮次增加而下降。
 
 **Link:**
-https://arxiv.org/abs/2605.04180
+https://arxiv.org/abs/2605.06635
+
+7. **MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems**
+
+**Publish Date:**
+2026-05-07
+
+**一句话总结:**
+MASPO框架通过联合评价机制评估提示词对下游代理成功的影响，无需标签，采用进化束搜索迭代优化多代理系统提示，在6项任务上平均提升2.9个点，开源代码，解决本地目标与全局目标错位问题。
+
+**Link:**
+https://arxiv.org/abs/2605.06623
+
+8. **Algospeak, Hiding in the Open: The Trade-off Between Legible Meaning and Detection Avoidance**
+
+**Publish Date:**
+2026-05-07
+
+**一句话总结:**
+该论文通过构建可调的 Algospeak 变体数据集，并利用七种语言模型评估语义可恢复性与虚假信息检测之间的权衡，提出了多数可理解调制（MUM）概念，为对抗性语言规范研究提供了框架。
+
+**Link:**
+https://arxiv.org/abs/2605.06619
+
+9. **How Many Iterations to Jailbreak? Dynamic Budget Allocation for Multi-Turn LLM Evaluation**
+
+**Publish Date:**
+2026-05-07
+
+**一句话总结:**
+提出动态预算分配框架DAPRO，通过预测优化与覆盖保证，在多轮LLM交互中高效估计越狱等事件所需迭代次数的下界，并在Llama 3.1等模型上验证了其在安全和幻觉检测任务中的有效性。
+
+**Link:**
+https://arxiv.org/abs/2605.06605
+
+10. **Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study**
+
+**Publish Date:**
+2026-05-07
+
+**一句话总结:**
+提出多模态域泛化统一基准MMDG-Bench，涵盖6个数据集、三种任务和多种评估设置，发现现有方法相比ERM基线提升有限，且在损坏与缺失模态下性能大幅下降，距上界性能仍有较大差距。
+
+**Link:**
+https://arxiv.org/abs/2605.06643

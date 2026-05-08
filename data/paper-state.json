@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-08T04:35:52.253182+00:00",
+  "updated_at": "2026-05-08T14:42:18.463157+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -744,6 +744,619 @@
       "if_pushed": 1,
       "added_at": "2026-05-08T04:35:52.253182+00:00",
       "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06663",
+      "arxiv_id": "2605.06663",
+      "title": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "url": "https://arxiv.org/abs/2605.06663",
+      "published_at": "2026-05-07T17:59:20Z",
+      "publish_date": "2026-05-07",
+      "description": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific knowledge. Mixture-of-Experts (MoEs) seemingly offer a potential alternative by activating only a subset of experts per input, but in practice, restricting inference to a subset of experts for a given domain leads to severe performance degradation. This limits their practicality in memory-constrained settings, especially as models grow larger and sparser. We introduce EMO, an MoE designed for modularity-the independent use and composition of expert subsets-without requiring human-defined priors. Our key idea is to encourage tokens from similar domains to rely on similar experts. Since tokens within a document often share a domain, EMO restricts them to select experts from a shared pool, while allowing different documents to use different pools. This simple constraint enables coherent expert groupings to emerge during pretraining using document boundaries alone. We pretrain a 1B-active, 14B-total EMO on 1T tokens. As a full model, it matches standard MoE performance. Crucially, it enables selective expert use: retaining only 25% (12.5%) of experts incurs just a 1% (3%) absolute drop, whereas standard MoEs break under the same setting. We further find that expert subsets in EMO specialize at semantic levels (e.g., domains such as math or code), in contrast to the low-level syntactic specialization observed in standard MoEs. Altogether, our results demonstrate a path toward modular, memory-efficient deployment of large, sparse models and open new opportunities for composable architectures.",
+      "summary": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific knowledge. Mixture-of-Experts (MoEs) seemingly offer a potential alternative by activating only a subset of experts per input, but in practice, restricting inference to a subset of experts for a given domain leads to severe performance degradation. This limits their practicality in memory-constrained settings, especially as models grow larger and sparser. We introduce EMO, an MoE designed for modularity-the independent use and composition of expert subsets-without requiring human-defined priors. Our key idea is to encourage tokens from similar domains to rely on similar experts. Since tokens within a document often share a domain, EMO restricts them to select experts from a shared pool, while allowing different documents to use different pools. This simple constraint enables coherent expert groupings to emerge during pretraining using document boundaries alone. We pretrain a 1B-active, 14B-total EMO on 1T tokens. As a full model, it matches standard MoE performance. Crucially, it enables selective expert use: retaining only 25% (12.5%) of experts incurs just a 1% (3%) absolute drop, whereas standard MoEs break under the same setting. We further find that expert subsets in EMO specialize at semantic levels (e.g., domains such as math or code), in contrast to the low-level syntactic specialization observed in standard MoEs. Altogether, our results demonstrate a path toward modular, memory-efficient deployment of large, sparse models and open new opportunities for composable architectures.",
+      "abstract": "Large language models are typically deployed as monolithic systems, requiring the full model even when applications need only a narrow subset of capabilities, e.g., code, math, or domain-specific knowledge. Mixture-of-Experts (MoEs) seemingly offer a potential alternative by activating only a subset of experts per input, but in practice, restricting inference to a subset of experts for a given domain leads to severe performance degradation. This limits their practicality in memory-constrained settings, especially as models grow larger and sparser. We introduce EMO, an MoE designed for modularity-the independent use and composition of expert subsets-without requiring human-defined priors. Our key idea is to encourage tokens from similar domains to rely on similar experts. Since tokens within a document often share a domain, EMO restricts them to select experts from a shared pool, while allowing different documents to use different pools. This simple constraint enables coherent expert groupings to emerge during pretraining using document boundaries alone. We pretrain a 1B-active, 14B-total EMO on 1T tokens. As a full model, it matches standard MoE performance. Crucially, it enables selective expert use: retaining only 25% (12.5%) of experts incurs just a 1% (3%) absolute drop, whereas standard MoEs break under the same setting. We further find that expert subsets in EMO specialize at semantic levels (e.g., domains such as math or code), in contrast to the low-level syntactic specialization observed in standard MoEs. Altogether, our results demonstrate a path toward modular, memory-efficient deployment of large, sparse models and open new opportunities for composable architectures.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06663",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出EMO，一种通过文档边界约束预训练MoE的方法，使专家自发形成语义模块化，实现选择性使用少数专家时性能几乎不下降。该方法为大规模稀疏模型在内存受限环境下的部署提供了高效、可复用的路径，对AI产品工程化具有重要意义。",
+        "one_sentence_summary": "提出EMO预训练方法，通过限制同文档token共享专家池，使MoE模型在仅使用25%专家时精度仅降1%，且专家按数学、代码等语义领域分工，为稀疏模型的模块化高效部署开辟了新路径。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 89,
+      "score_reason": "提出EMO，一种通过文档边界约束预训练MoE的方法，使专家自发形成语义模块化，实现选择性使用少数专家时性能几乎不下降。该方法为大规模稀疏模型在内存受限环境下的部署提供了高效、可复用的路径，对AI产品工程化具有重要意义。",
+      "one_sentence_summary": "提出EMO预训练方法，通过限制同文档token共享专家池，使MoE模型在仅使用25%专家时精度仅降1%，且专家按数学、代码等语义领域分工，为稀疏模型的模块化高效部署开辟了新路径。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06647",
+      "arxiv_id": "2605.06647",
+      "title": "Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval",
+      "url": "https://arxiv.org/abs/2605.06647",
+      "published_at": "2026-05-07T17:54:29Z",
+      "publish_date": "2026-05-07",
+      "description": "Retrieval-augmented agents are increasingly the interface to large organizational knowledge bases, yet most still treat retrieval as a black box: they issue exploratory queries, inspect returned snippets, and iteratively reformulate until useful evidence emerges. This approach resembles how a newcomer searches an unfamiliar database rather than how an expert navigates it with strong priors about terminology and likely evidence, and results in unnecessary retrieval rounds, increased latency, and poor recall. We introduce \\textit{SuperIntelligent Retrieval Agent} (SIRA), which defines \\emph{superintelligence} in retrieval as the ability to compress multi-round exploratory search into a single corpus-discriminative retrieval action. SIRA does not merely ask what terms are relevant to the query; it asks which terms are likely to separate the desired evidence from corpus-level confusers. On the corpus side, an LLM enriches each document offline with missing search vocabulary; on the query side, it predicts evidence vocabulary omitted by the query; and document-frequency statistics as a tool call to filter proposed terms that are absent, overly common, or unlikely to create retrieval margin. The final retrieval step is a single weighted BM25 call combining the original query with the validated expansion. Across ten BEIR benchmarks and downstream question-answering tasks, SIRA achieves the significantly superior performance outperforming dense retrievers and state-of-the-art multi-round agentic baselines, demonstrating that one well-formed lexical query, guided by LLM cognition and lightweight corpus statistics, can exceed substantially more expensive multi-round search while remaining interpretable, training-free, and efficient.",
+      "summary": "Retrieval-augmented agents are increasingly the interface to large organizational knowledge bases, yet most still treat retrieval as a black box: they issue exploratory queries, inspect returned snippets, and iteratively reformulate until useful evidence emerges. This approach resembles how a newcomer searches an unfamiliar database rather than how an expert navigates it with strong priors about terminology and likely evidence, and results in unnecessary retrieval rounds, increased latency, and poor recall. We introduce \\textit{SuperIntelligent Retrieval Agent} (SIRA), which defines \\emph{superintelligence} in retrieval as the ability to compress multi-round exploratory search into a single corpus-discriminative retrieval action. SIRA does not merely ask what terms are relevant to the query; it asks which terms are likely to separate the desired evidence from corpus-level confusers. On the corpus side, an LLM enriches each document offline with missing search vocabulary; on the query side, it predicts evidence vocabulary omitted by the query; and document-frequency statistics as a tool call to filter proposed terms that are absent, overly common, or unlikely to create retrieval margin. The final retrieval step is a single weighted BM25 call combining the original query with the validated expansion. Across ten BEIR benchmarks and downstream question-answering tasks, SIRA achieves the significantly superior performance outperforming dense retrievers and state-of-the-art multi-round agentic baselines, demonstrating that one well-formed lexical query, guided by LLM cognition and lightweight corpus statistics, can exceed substantially more expensive multi-round search while remaining interpretable, training-free, and efficient.",
+      "abstract": "Retrieval-augmented agents are increasingly the interface to large organizational knowledge bases, yet most still treat retrieval as a black box: they issue exploratory queries, inspect returned snippets, and iteratively reformulate until useful evidence emerges. This approach resembles how a newcomer searches an unfamiliar database rather than how an expert navigates it with strong priors about terminology and likely evidence, and results in unnecessary retrieval rounds, increased latency, and poor recall. We introduce \\textit{SuperIntelligent Retrieval Agent} (SIRA), which defines \\emph{superintelligence} in retrieval as the ability to compress multi-round exploratory search into a single corpus-discriminative retrieval action. SIRA does not merely ask what terms are relevant to the query; it asks which terms are likely to separate the desired evidence from corpus-level confusers. On the corpus side, an LLM enriches each document offline with missing search vocabulary; on the query side, it predicts evidence vocabulary omitted by the query; and document-frequency statistics as a tool call to filter proposed terms that are absent, overly common, or unlikely to create retrieval margin. The final retrieval step is a single weighted BM25 call combining the original query with the validated expansion. Across ten BEIR benchmarks and downstream question-answering tasks, SIRA achieves the significantly superior performance outperforming dense retrievers and state-of-the-art multi-round agentic baselines, demonstrating that one well-formed lexical query, guided by LLM cognition and lightweight corpus statistics, can exceed substantially more expensive multi-round search while remaining interpretable, training-free, and efficient.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06647",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "该论文提出高效的单次检索方法，通过LLM增强查询和文档并过滤词项，将多轮搜索压缩为一次加权BM25调用，在BEIR上超越稠密检索和多轮代理，对检索增强代理产品直接启发，工程实用性强，代表近期高效检索趋势。",
+        "one_sentence_summary": "SIRA通过LLM离线扩充文档检索词、在线预测查询缺失词汇并结合文档频率过滤，将多轮探索搜索压缩为单次加权BM25检索，在十个BEIR基准上超越稠密检索与多轮代理方法，实现高效、可解释的检索。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 19
+      },
+      "score_total": 84,
+      "score_reason": "该论文提出高效的单次检索方法，通过LLM增强查询和文档并过滤词项，将多轮搜索压缩为一次加权BM25调用，在BEIR上超越稠密检索和多轮代理，对检索增强代理产品直接启发，工程实用性强，代表近期高效检索趋势。",
+      "one_sentence_summary": "SIRA通过LLM离线扩充文档检索词、在线预测查询缺失词汇并结合文档频率过滤，将多轮探索搜索压缩为单次加权BM25检索，在十个BEIR基准上超越稠密检索与多轮代理方法，实现高效、可解释的检索。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06643",
+      "arxiv_id": "2605.06643",
+      "title": "Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study",
+      "url": "https://arxiv.org/abs/2605.06643",
+      "published_at": "2026-05-07T17:51:16Z",
+      "publish_date": "2026-05-07",
+      "description": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or are artifacts of inconsistent evaluation protocols. Current research is fragmented, with studies varying significantly across datasets, modality configurations, and experimental settings. Furthermore, existing benchmarks focus predominantly on action recognition, often neglecting critical real-world challenges such as input corruptions, missing modalities, and model trustworthiness. This lack of standardization obscures a reliable assessment of the field's advancement. To address this issue, we introduce MMDG-Bench, the first unified and comprehensive benchmark for MMDG, which standardizes evaluation across six datasets spanning three diverse tasks: action recognition, mechanical fault diagnosis, and sentiment analysis. MMDG-Bench encompasses six modality combinations, nine representative methods, and multiple evaluation settings. Beyond standard accuracy, it systematically assesses corruption robustness, missing-modality generalization, misclassification detection, and out-of-distribution detection. With 7, 402 neural networks trained in total across 95 unique cross-domain tasks, MMDG-Bench yields five key findings: (1) under fair comparisons, recent specialized MMDG methods offer only marginal improvements over ERM baseline; (2) no single method consistently outperforms others across datasets or modality combinations; (3) a substantial gap to upper-bound performance persists, indicating that MMDG remains far from solved; (4) trimodal fusion does not consistently outperform the strongest bimodal configurations; and (5) all evaluated methods exhibit significant degradation under corruption and missing-modality scenarios, with some methods further compromising model trustworthiness.",
+      "summary": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or are artifacts of inconsistent evaluation protocols. Current research is fragmented, with studies varying significantly across datasets, modality configurations, and experimental settings. Furthermore, existing benchmarks focus predominantly on action recognition, often neglecting critical real-world challenges such as input corruptions, missing modalities, and model trustworthiness. This lack of standardization obscures a reliable assessment of the field's advancement. To address this issue, we introduce MMDG-Bench, the first unified and comprehensive benchmark for MMDG, which standardizes evaluation across six datasets spanning three diverse tasks: action recognition, mechanical fault diagnosis, and sentiment analysis. MMDG-Bench encompasses six modality combinations, nine representative methods, and multiple evaluation settings. Beyond standard accuracy, it systematically assesses corruption robustness, missing-modality generalization, misclassification detection, and out-of-distribution detection. With 7, 402 neural networks trained in total across 95 unique cross-domain tasks, MMDG-Bench yields five key findings: (1) under fair comparisons, recent specialized MMDG methods offer only marginal improvements over ERM baseline; (2) no single method consistently outperforms others across datasets or modality combinations; (3) a substantial gap to upper-bound performance persists, indicating that MMDG remains far from solved; (4) trimodal fusion does not consistently outperform the strongest bimodal configurations; and (5) all evaluated methods exhibit significant degradation under corruption and missing-modality scenarios, with some methods further compromising model trustworthiness.",
+      "abstract": "Despite the growing popularity of Multimodal Domain Generalization (MMDG) for enhancing model robustness, it remains unclear whether reported performance gains reflect genuine algorithmic progress or are artifacts of inconsistent evaluation protocols. Current research is fragmented, with studies varying significantly across datasets, modality configurations, and experimental settings. Furthermore, existing benchmarks focus predominantly on action recognition, often neglecting critical real-world challenges such as input corruptions, missing modalities, and model trustworthiness. This lack of standardization obscures a reliable assessment of the field's advancement. To address this issue, we introduce MMDG-Bench, the first unified and comprehensive benchmark for MMDG, which standardizes evaluation across six datasets spanning three diverse tasks: action recognition, mechanical fault diagnosis, and sentiment analysis. MMDG-Bench encompasses six modality combinations, nine representative methods, and multiple evaluation settings. Beyond standard accuracy, it systematically assesses corruption robustness, missing-modality generalization, misclassification detection, and out-of-distribution detection. With 7, 402 neural networks trained in total across 95 unique cross-domain tasks, MMDG-Bench yields five key findings: (1) under fair comparisons, recent specialized MMDG methods offer only marginal improvements over ERM baseline; (2) no single method consistently outperforms others across datasets or modality combinations; (3) a substantial gap to upper-bound performance persists, indicating that MMDG remains far from solved; (4) trimodal fusion does not consistently outperform the strongest bimodal configurations; and (5) all evaluated methods exhibit significant degradation under corruption and missing-modality scenarios, with some methods further compromising model trustworthiness.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06643",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "构建了首个统一的多模态域泛化基准MMDG-Bench，覆盖动作识别、故障诊断和情感分析三个任务，系统评估了9种方法在95个跨域任务上的表现，揭示了现有方法仅提供边际改进、在损坏和模态缺失下显著退化等问题。该研究为领域提供了标准化评估协议和重要发现，但本身属于评测文章，直接产品启发稍弱。",
+        "one_sentence_summary": "提出多模态域泛化统一基准MMDG-Bench，涵盖6个数据集、三种任务和多种评估设置，发现现有方法相比ERM基线提升有限，且在损坏与缺失模态下性能大幅下降，距上界性能仍有较大差距。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "构建了首个统一的多模态域泛化基准MMDG-Bench，覆盖动作识别、故障诊断和情感分析三个任务，系统评估了9种方法在95个跨域任务上的表现，揭示了现有方法仅提供边际改进、在损坏和模态缺失下显著退化等问题。该研究为领域提供了标准化评估协议和重要发现，但本身属于评测文章，直接产品启发稍弱。",
+      "one_sentence_summary": "提出多模态域泛化统一基准MMDG-Bench，涵盖6个数据集、三种任务和多种评估设置，发现现有方法相比ERM基线提升有限，且在损坏与缺失模态下性能大幅下降，距上界性能仍有较大差距。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06642",
+      "arxiv_id": "2605.06642",
+      "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+      "url": "https://arxiv.org/abs/2605.06642",
+      "published_at": "2026-05-07T17:51:16Z",
+      "publish_date": "2026-05-07",
+      "description": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models.",
+      "summary": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models.",
+      "abstract": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06642",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "直接面向LLM智能体的长时程决策优化，提出策略抽象和层次训练框架，实验结果显著，与当前Agent工程和RL热点高度吻合，易于集成。",
+        "one_sentence_summary": "StraTA框架为LLM智能体强化学习引入轨迹级策略，通过层次GRPO联合训练策略与动作，在ALFWorld、WebShop和SciWorld上成功率分别达93.1%、84.2%和63.5%，超越前沿闭源模型。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 87,
+      "score_reason": "直接面向LLM智能体的长时程决策优化，提出策略抽象和层次训练框架，实验结果显著，与当前Agent工程和RL热点高度吻合，易于集成。",
+      "one_sentence_summary": "StraTA框架为LLM智能体强化学习引入轨迹级策略，通过层次GRPO联合训练策略与动作，在ALFWorld、WebShop和SciWorld上成功率分别达93.1%、84.2%和63.5%，超越前沿闭源模型。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06635",
+      "arxiv_id": "2605.06635",
+      "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+      "url": "https://arxiv.org/abs/2605.06635",
+      "published_at": "2026-05-07T17:46:45Z",
+      "publish_date": "2026-05-07",
+      "description": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect.",
+      "summary": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect.",
+      "abstract": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06635",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "该论文提出首个结构化来源归因评测框架，通过解析LLM生成报告中的引用并对比原文，揭示表面引用质量与事实准确性的脱节，对开发可信的深度研究代理产品具有重要指导，其评测框架可复用。",
+        "one_sentence_summary": "提出首个结构化来源归因评测框架，通过AST解析LLM生成报告中的内联引用并检索原文，从链接可访问性、内容相关性和事实准确性三维度评估14个模型，发现事实准确率仅39-77%且随检索轮次增加而下降。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "该论文提出首个结构化来源归因评测框架，通过解析LLM生成报告中的引用并对比原文，揭示表面引用质量与事实准确性的脱节，对开发可信的深度研究代理产品具有重要指导，其评测框架可复用。",
+      "one_sentence_summary": "提出首个结构化来源归因评测框架，通过AST解析LLM生成报告中的内联引用并检索原文，从链接可访问性、内容相关性和事实准确性三维度评估14个模型，发现事实准确率仅39-77%且随检索轮次增加而下降。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06623",
+      "arxiv_id": "2605.06623",
+      "title": "MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2605.06623",
+      "published_at": "2026-05-07T17:35:26Z",
+      "publish_date": "2026-05-07",
+      "description": "Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO.",
+      "summary": "Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO.",
+      "abstract": "Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06623",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 21,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "该论文提出MASPO框架，通过联合评价机制和进化搜索自动优化多代理系统提示词，在多项任务上提升准确率，并开源代码，对多代理AI产品开发具有工程实用性和直接启发。",
+        "one_sentence_summary": "MASPO框架通过联合评价机制评估提示词对下游代理成功的影响，无需标签，采用进化束搜索迭代优化多代理系统提示，在6项任务上平均提升2.9个点，开源代码，解决本地目标与全局目标错位问题。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 21,
+        "timeliness_rarity": 19
+      },
+      "score_total": 82,
+      "score_reason": "该论文提出MASPO框架，通过联合评价机制和进化搜索自动优化多代理系统提示词，在多项任务上提升准确率，并开源代码，对多代理AI产品开发具有工程实用性和直接启发。",
+      "one_sentence_summary": "MASPO框架通过联合评价机制评估提示词对下游代理成功的影响，无需标签，采用进化束搜索迭代优化多代理系统提示，在6项任务上平均提升2.9个点，开源代码，解决本地目标与全局目标错位问题。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06619",
+      "arxiv_id": "2605.06619",
+      "title": "Algospeak, Hiding in the Open: The Trade-off Between Legible Meaning and Detection Avoidance",
+      "url": "https://arxiv.org/abs/2605.06619",
+      "published_at": "2026-05-07T17:34:01Z",
+      "publish_date": "2026-05-07",
+      "description": "As large language models (LLMs) increasingly mediate both content generation and moderation, linguistic evasion strategies known as Algospeak have intensified the coevolution between evaders and detectors. This research formalizes the underlying dynamics grounded in a joint action model: when Algospeak increases, detectability and understandability decrease. Further, the concept of Majority Understandable Modulation (MUM) is introduced and defined as the modulation level at which additional evasive alteration increases detector evasion but loses comprehension for the majority of recipients. To empirically probe this trade-off, we introduce a reproducible framework that can be used to create meaning-preserving, Algospeak-style variants, based on an existing taxonomy and with tunable modulation levels. Using COVID-19 disinformation as a first proof-by-example setting, we construct a reference dataset of 700 modulated items, drawn from twenty base sentences across five modulation levels and seven strategies. We then run two linked evaluations with seven different language models: one testing for interpretation through meaning recovery and one for disinformation detection through classification. Curve fitting over modulation levels yields an estimate of the Majority Understandable Modulation threshold and enables sensitivity analyses across strategies and models, see Figure 1. Results reveal the characteristic relationships between understandability and modulation. This study lays the groundwork for understanding the dynamics behind Algospeak and provides the framework, dataset, and experimental setups described.",
+      "summary": "As large language models (LLMs) increasingly mediate both content generation and moderation, linguistic evasion strategies known as Algospeak have intensified the coevolution between evaders and detectors. This research formalizes the underlying dynamics grounded in a joint action model: when Algospeak increases, detectability and understandability decrease. Further, the concept of Majority Understandable Modulation (MUM) is introduced and defined as the modulation level at which additional evasive alteration increases detector evasion but loses comprehension for the majority of recipients. To empirically probe this trade-off, we introduce a reproducible framework that can be used to create meaning-preserving, Algospeak-style variants, based on an existing taxonomy and with tunable modulation levels. Using COVID-19 disinformation as a first proof-by-example setting, we construct a reference dataset of 700 modulated items, drawn from twenty base sentences across five modulation levels and seven strategies. We then run two linked evaluations with seven different language models: one testing for interpretation through meaning recovery and one for disinformation detection through classification. Curve fitting over modulation levels yields an estimate of the Majority Understandable Modulation threshold and enables sensitivity analyses across strategies and models, see Figure 1. Results reveal the characteristic relationships between understandability and modulation. This study lays the groundwork for understanding the dynamics behind Algospeak and provides the framework, dataset, and experimental setups described.",
+      "abstract": "As large language models (LLMs) increasingly mediate both content generation and moderation, linguistic evasion strategies known as Algospeak have intensified the coevolution between evaders and detectors. This research formalizes the underlying dynamics grounded in a joint action model: when Algospeak increases, detectability and understandability decrease. Further, the concept of Majority Understandable Modulation (MUM) is introduced and defined as the modulation level at which additional evasive alteration increases detector evasion but loses comprehension for the majority of recipients. To empirically probe this trade-off, we introduce a reproducible framework that can be used to create meaning-preserving, Algospeak-style variants, based on an existing taxonomy and with tunable modulation levels. Using COVID-19 disinformation as a first proof-by-example setting, we construct a reference dataset of 700 modulated items, drawn from twenty base sentences across five modulation levels and seven strategies. We then run two linked evaluations with seven different language models: one testing for interpretation through meaning recovery and one for disinformation detection through classification. Curve fitting over modulation levels yields an estimate of the Majority Understandable Modulation threshold and enables sensitivity analyses across strategies and models, see Figure 1. Results reveal the characteristic relationships between understandability and modulation. This study lays the groundwork for understanding the dynamics behind Algospeak and provides the framework, dataset, and experimental setups described.",
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06619",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This paper formalizes Algospeak dynamics with a novel MUM metric and provides a reproducible dataset and framework for studying evasion-detection trade-offs, directly applicable to content moderation tools and AI safety.",
+        "one_sentence_summary": "该论文通过构建可调的 Algospeak 变体数据集，并利用七种语言模型评估语义可恢复性与虚假信息检测之间的权衡，提出了多数可理解调制（MUM）概念，为对抗性语言规范研究提供了框架。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "This paper formalizes Algospeak dynamics with a novel MUM metric and provides a reproducible dataset and framework for studying evasion-detection trade-offs, directly applicable to content moderation tools and AI safety.",
+      "one_sentence_summary": "该论文通过构建可调的 Algospeak 变体数据集，并利用七种语言模型评估语义可恢复性与虚假信息检测之间的权衡，提出了多数可理解调制（MUM）概念，为对抗性语言规范研究提供了框架。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06614",
+      "arxiv_id": "2605.06614",
+      "title": "SkillOS: Learning Skill Curation for Self-Evolving Agents",
+      "url": "https://arxiv.org/abs/2605.06614",
+      "published_at": "2026-05-07T17:31:50Z",
+      "publish_date": "2026-05-07",
+      "description": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience provide a natural substrate for self-evolution, where high-quality skill curation serves as the key bottleneck. Existing approaches either rely on manual skill curation, prescribe heuristic skill operations, or train for short-horizon skill operations. However, they still struggle to learn complex long-term curation policies from indirect and delayed feedback. To tackle this challenge, we propose SkillOS, an experience-driven RL training recipe for learning skill curation in self-evolving agents. SkillOS pairs a frozen agent executor that retrieves and applies skills with a trainable skill curator that updates an external SkillRepo from accumulated experience. To provide learning signals for curation, we design composite rewards and train on grouped task streams based on skill-relevant task dependencies, where earlier trajectories update the SkillRepo, and later related tasks evaluate these updates. Across multi-turn agentic tasks and single-turn reasoning tasks, SkillOS consistently outperforms memory-free and strong memory-based baselines in both effectiveness and efficiency, with the learned skill curator generalizing across different executor backbones and task domains. Further analyses show that the learned curator produces more targeted skill use, while the skills in SkillRepo evolve into more richly structured Markdown files that encode higher-level meta-skills over time.",
+      "summary": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience provide a natural substrate for self-evolution, where high-quality skill curation serves as the key bottleneck. Existing approaches either rely on manual skill curation, prescribe heuristic skill operations, or train for short-horizon skill operations. However, they still struggle to learn complex long-term curation policies from indirect and delayed feedback. To tackle this challenge, we propose SkillOS, an experience-driven RL training recipe for learning skill curation in self-evolving agents. SkillOS pairs a frozen agent executor that retrieves and applies skills with a trainable skill curator that updates an external SkillRepo from accumulated experience. To provide learning signals for curation, we design composite rewards and train on grouped task streams based on skill-relevant task dependencies, where earlier trajectories update the SkillRepo, and later related tasks evaluate these updates. Across multi-turn agentic tasks and single-turn reasoning tasks, SkillOS consistently outperforms memory-free and strong memory-based baselines in both effectiveness and efficiency, with the learned skill curator generalizing across different executor backbones and task domains. Further analyses show that the learned curator produces more targeted skill use, while the skills in SkillRepo evolve into more richly structured Markdown files that encode higher-level meta-skills over time.",
+      "abstract": "LLM-based agents are increasingly deployed to handle streaming tasks, yet they often remain one-off problem solvers that fail to learn from past interactions. Reusable skills distilled from experience provide a natural substrate for self-evolution, where high-quality skill curation serves as the key bottleneck. Existing approaches either rely on manual skill curation, prescribe heuristic skill operations, or train for short-horizon skill operations. However, they still struggle to learn complex long-term curation policies from indirect and delayed feedback. To tackle this challenge, we propose SkillOS, an experience-driven RL training recipe for learning skill curation in self-evolving agents. SkillOS pairs a frozen agent executor that retrieves and applies skills with a trainable skill curator that updates an external SkillRepo from accumulated experience. To provide learning signals for curation, we design composite rewards and train on grouped task streams based on skill-relevant task dependencies, where earlier trajectories update the SkillRepo, and later related tasks evaluate these updates. Across multi-turn agentic tasks and single-turn reasoning tasks, SkillOS consistently outperforms memory-free and strong memory-based baselines in both effectiveness and efficiency, with the learned skill curator generalizing across different executor backbones and task domains. Further analyses show that the learned curator produces more targeted skill use, while the skills in SkillRepo evolve into more richly structured Markdown files that encode higher-level meta-skills over time.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06614",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "SkillOS provides an RL-based skill curation method for self-evolving agents, enabling agents to learn from experience and build structured skill repositories, which is highly applicable to building adaptive AI agent products and workflows.",
+        "one_sentence_summary": "SkillOS 提出一种基于强化学习的技能管理方法，通过冻结执行器与可训练管理器的协作，从任务流中学习维护外部技能库，使智能体在多轮交互中自我进化，其技能最终组织为富含元技能的 Markdown 结构化文件，提升了长期任务效率。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "SkillOS provides an RL-based skill curation method for self-evolving agents, enabling agents to learn from experience and build structured skill repositories, which is highly applicable to building adaptive AI agent products and workflows.",
+      "one_sentence_summary": "SkillOS 提出一种基于强化学习的技能管理方法，通过冻结执行器与可训练管理器的协作，从任务流中学习维护外部技能库，使智能体在多轮交互中自我进化，其技能最终组织为富含元技能的 Markdown 结构化文件，提升了长期任务效率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06605",
+      "arxiv_id": "2605.06605",
+      "title": "How Many Iterations to Jailbreak? Dynamic Budget Allocation for Multi-Turn LLM Evaluation",
+      "url": "https://arxiv.org/abs/2605.06605",
+      "published_at": "2026-05-07T17:25:15Z",
+      "publish_date": "2026-05-07",
+      "description": "Evaluating and predicting the performance of large language models (LLMs) in multi-turn conversational settings is critical yet computationally expensive; key events -- e.g., jailbreaks or successful task completion by an agent -- often emerge only after repeated interactions. These events might be rare, and under any feasible computational budget, remain unobserved. Recent conformal survival frameworks construct reliable lower predictive bounds (LPBs) on the number of iterations to trigger the event of interest, but rely on static budget allocation that is inefficient in multi-turn setups. To address this, we introduce \\emph{Dynamic Allocation via PRojected Optimization} (DAPRO), the first theoretically valid dynamic budget allocation framework for bounding the time-to-event in multi-turn LLM interactions. We prove that DAPRO satisfies the budget constraint and provides distribution-free, finite-sample coverage guarantees without requiring the conditional independence between censoring and event times assumed by prior conformal survival approaches. A key theoretical contribution is a novel coverage bound that scales with the square root of the mean censoring weight rather than the worst-case weight, yielding provably tighter guarantees than prior work. Furthermore, DAPRO can be employed to obtain unbiased, low-variance estimates of population-level evaluation metrics, such as the jailbreak rate, under limited computing resources. Comprehensive experiments across agentic task success, adversarial jailbreaks, toxic content generation, and RAG hallucinations using LLMs such as Llama 3.1 and Qwen 2.5 demonstrate that DAPRO consistently achieves coverage closer to the nominal level with lower variance than static baselines, while satisfying the budget constraint.",
+      "summary": "Evaluating and predicting the performance of large language models (LLMs) in multi-turn conversational settings is critical yet computationally expensive; key events -- e.g., jailbreaks or successful task completion by an agent -- often emerge only after repeated interactions. These events might be rare, and under any feasible computational budget, remain unobserved. Recent conformal survival frameworks construct reliable lower predictive bounds (LPBs) on the number of iterations to trigger the event of interest, but rely on static budget allocation that is inefficient in multi-turn setups. To address this, we introduce \\emph{Dynamic Allocation via PRojected Optimization} (DAPRO), the first theoretically valid dynamic budget allocation framework for bounding the time-to-event in multi-turn LLM interactions. We prove that DAPRO satisfies the budget constraint and provides distribution-free, finite-sample coverage guarantees without requiring the conditional independence between censoring and event times assumed by prior conformal survival approaches. A key theoretical contribution is a novel coverage bound that scales with the square root of the mean censoring weight rather than the worst-case weight, yielding provably tighter guarantees than prior work. Furthermore, DAPRO can be employed to obtain unbiased, low-variance estimates of population-level evaluation metrics, such as the jailbreak rate, under limited computing resources. Comprehensive experiments across agentic task success, adversarial jailbreaks, toxic content generation, and RAG hallucinations using LLMs such as Llama 3.1 and Qwen 2.5 demonstrate that DAPRO consistently achieves coverage closer to the nominal level with lower variance than static baselines, while satisfying the budget constraint.",
+      "abstract": "Evaluating and predicting the performance of large language models (LLMs) in multi-turn conversational settings is critical yet computationally expensive; key events -- e.g., jailbreaks or successful task completion by an agent -- often emerge only after repeated interactions. These events might be rare, and under any feasible computational budget, remain unobserved. Recent conformal survival frameworks construct reliable lower predictive bounds (LPBs) on the number of iterations to trigger the event of interest, but rely on static budget allocation that is inefficient in multi-turn setups. To address this, we introduce \\emph{Dynamic Allocation via PRojected Optimization} (DAPRO), the first theoretically valid dynamic budget allocation framework for bounding the time-to-event in multi-turn LLM interactions. We prove that DAPRO satisfies the budget constraint and provides distribution-free, finite-sample coverage guarantees without requiring the conditional independence between censoring and event times assumed by prior conformal survival approaches. A key theoretical contribution is a novel coverage bound that scales with the square root of the mean censoring weight rather than the worst-case weight, yielding provably tighter guarantees than prior work. Furthermore, DAPRO can be employed to obtain unbiased, low-variance estimates of population-level evaluation metrics, such as the jailbreak rate, under limited computing resources. Comprehensive experiments across agentic task success, adversarial jailbreaks, toxic content generation, and RAG hallucinations using LLMs such as Llama 3.1 and Qwen 2.5 demonstrate that DAPRO consistently achieves coverage closer to the nominal level with lower variance than static baselines, while satisfying the budget constraint.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06605",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "论文针对多轮LLM交互中关键事件（如越狱）的评估计算成本问题，提出动态预算分配框架DAPRO，在有限资源下提供分布无关的覆盖保证，并可用于无偏估计越狱率等指标。该方法直接适用于AI产品安全测试、Agent评估等场景，具有较高的工程实用价值和近期性。",
+        "one_sentence_summary": "提出动态预算分配框架DAPRO，通过预测优化与覆盖保证，在多轮LLM交互中高效估计越狱等事件所需迭代次数的下界，并在Llama 3.1等模型上验证了其在安全和幻觉检测任务中的有效性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 80,
+      "score_reason": "论文针对多轮LLM交互中关键事件（如越狱）的评估计算成本问题，提出动态预算分配框架DAPRO，在有限资源下提供分布无关的覆盖保证，并可用于无偏估计越狱率等指标。该方法直接适用于AI产品安全测试、Agent评估等场景，具有较高的工程实用价值和近期性。",
+      "one_sentence_summary": "提出动态预算分配框架DAPRO，通过预测优化与覆盖保证，在多轮LLM交互中高效估计越狱等事件所需迭代次数的下界，并在Llama 3.1等模型上验证了其在安全和幻觉检测任务中的有效性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.06596",
+      "arxiv_id": "2605.06596",
+      "title": "FedAttr: Towards Privacy-preserving Client-Level Attribution in Federated LLM Fine-tuning",
+      "url": "https://arxiv.org/abs/2605.06596",
+      "published_at": "2026-05-07T17:21:02Z",
+      "publish_date": "2026-05-07",
+      "description": "Watermark radioactivity testing type of methods can detect whether a model was trained on watermarked documents, and have become key tools for protecting data ownership in the fine-tuning of large language models (LLMs). Existing works have proved their effectiveness in centralized LLM fine-tuning. However, this type of method faces several challenges and remains underexplored in federated learning (FL), a widely-applied paradigm for fine-tuning LLMs collaboratively on private data across different users. FL mainly ensures privacy through secure aggregation (SA), which allows the server to aggregate updates while keeping clients' updates private. This mechanism preserves privacy but makes it difficult to identify which client trained on watermarked documents. In this work, we propose FedAttr, a new client-level attribution protocol for FL. FedAttr identifies which clients trained on watermarked data via a paired-subset-difference mechanism, while preserving the privacy guarantees of SA and FL performance. FedAttr proceeds in three steps: (i) estimate each client's update by differencing two SA queries, (ii) score the estimate with the watermark detector via differential scoring, and (iii) combine scores across rounds via Stouffer method. We theoretically show that FedAttr produces an unbiased estimator of each client's update with bounded mutual information leakage (i.e., $O(d^*/N)$ per-round update). Moreover, FedAttr empirically achieves 100% TPR and 0% FPR, outperforming all baselines by at least 44.4% in TPR or 19.1% in FPR, with only 6.3% overhead relative to FL training time. Ablation studies confirm that FedAttr is robust to protocol parameters and configurations.",
+      "summary": "Watermark radioactivity testing type of methods can detect whether a model was trained on watermarked documents, and have become key tools for protecting data ownership in the fine-tuning of large language models (LLMs). Existing works have proved their effectiveness in centralized LLM fine-tuning. However, this type of method faces several challenges and remains underexplored in federated learning (FL), a widely-applied paradigm for fine-tuning LLMs collaboratively on private data across different users. FL mainly ensures privacy through secure aggregation (SA), which allows the server to aggregate updates while keeping clients' updates private. This mechanism preserves privacy but makes it difficult to identify which client trained on watermarked documents. In this work, we propose FedAttr, a new client-level attribution protocol for FL. FedAttr identifies which clients trained on watermarked data via a paired-subset-difference mechanism, while preserving the privacy guarantees of SA and FL performance. FedAttr proceeds in three steps: (i) estimate each client's update by differencing two SA queries, (ii) score the estimate with the watermark detector via differential scoring, and (iii) combine scores across rounds via Stouffer method. We theoretically show that FedAttr produces an unbiased estimator of each client's update with bounded mutual information leakage (i.e., $O(d^*/N)$ per-round update). Moreover, FedAttr empirically achieves 100% TPR and 0% FPR, outperforming all baselines by at least 44.4% in TPR or 19.1% in FPR, with only 6.3% overhead relative to FL training time. Ablation studies confirm that FedAttr is robust to protocol parameters and configurations.",
+      "abstract": "Watermark radioactivity testing type of methods can detect whether a model was trained on watermarked documents, and have become key tools for protecting data ownership in the fine-tuning of large language models (LLMs). Existing works have proved their effectiveness in centralized LLM fine-tuning. However, this type of method faces several challenges and remains underexplored in federated learning (FL), a widely-applied paradigm for fine-tuning LLMs collaboratively on private data across different users. FL mainly ensures privacy through secure aggregation (SA), which allows the server to aggregate updates while keeping clients' updates private. This mechanism preserves privacy but makes it difficult to identify which client trained on watermarked documents. In this work, we propose FedAttr, a new client-level attribution protocol for FL. FedAttr identifies which clients trained on watermarked data via a paired-subset-difference mechanism, while preserving the privacy guarantees of SA and FL performance. FedAttr proceeds in three steps: (i) estimate each client's update by differencing two SA queries, (ii) score the estimate with the watermark detector via differential scoring, and (iii) combine scores across rounds via Stouffer method. We theoretically show that FedAttr produces an unbiased estimator of each client's update with bounded mutual information leakage (i.e., $O(d^*/N)$ per-round update). Moreover, FedAttr empirically achieves 100% TPR and 0% FPR, outperforming all baselines by at least 44.4% in TPR or 19.1% in FPR, with only 6.3% overhead relative to FL training time. Ablation studies confirm that FedAttr is robust to protocol parameters and configurations.",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06596",
+        "score_detail": {
+          "application_relevance": 16,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "FedAttr proposes a new protocol for client-level attribution in federated LLM fine-tuning, combining secure aggregation with watermark detection to identify data ownership while preserving privacy, which is useful for privacy-conscious LLM deployment but more niche for general AI product development.",
+        "one_sentence_summary": "FedAttr 提出一种联邦学习中客户级归属协议，通过成对子集差分估计、水印检测评分及 Stouffer 方法组合，在保护安全聚合隐私的同时精准识别使用水印数据训练的客户，经验证达到 100% 真阳性和 0% 假阳性，且仅增加 6.3% 额外开销。"
+      },
+      "score_detail": {
+        "application_relevance": 16,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "FedAttr proposes a new protocol for client-level attribution in federated LLM fine-tuning, combining secure aggregation with watermark detection to identify data ownership while preserving privacy, which is useful for privacy-conscious LLM deployment but more niche for general AI product development.",
+      "one_sentence_summary": "FedAttr 提出一种联邦学习中客户级归属协议，通过成对子集差分估计、水印检测评分及 Stouffer 方法组合，在保护安全聚合隐私的同时精准识别使用水印数据训练的客户，经验证达到 100% 真阳性和 0% 假阳性，且仅增加 6.3% 额外开销。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.06582",
+      "arxiv_id": "2605.06582",
+      "title": "PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization",
+      "url": "https://arxiv.org/abs/2605.06582",
+      "published_at": "2026-05-07T17:11:22Z",
+      "publish_date": "2026-05-07",
+      "description": "Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures. In language this interface is given by tokens; in audio, it must be learned. Existing audio tokenizers rely on quantization, clustering, or codec reconstruction, assigning tokens locally, so sequence consistency, compactness, length control, termination, and edit similarity are rarely optimized directly. We introduce PairAlign, a framework for compact audio tokenization through sequence-level self-alignment. PairAlign treats tokenization as conditional sequence generation: an encoder maps speech to a continuous condition, and an autoregressive decoder generates tokens from BOS, learning token identity, order, length, and EOS placement. Given two content-preserving views, each view's sequence is trained to be likely under the other's representation, while unrelated examples provide competing sequences. This gives a scalable surrogate for edit-distance preservation while discouraging many-to-one collapse. PairAlign starts from VQ-style tokenization and refines it with EMA-teacher targets, cross-paired teacher forcing, prefix corruption, likelihood contrast, and length control. On 3-second speech, PairAlign learns compact, non-degenerate sequences with broad vocabulary usage and strong cross-view consistency. On TIMIT retrieval, it preserves edit-distance search while reducing archive token count by 55%. A continuous-sweep probe shows lower local overlap than a dense geometric tokenizer, but stronger length control and bounded edit trajectories under 100 ms shifts. PairAlign is a sequence-symbolic predictive learner: like JEPA-style objectives, it predicts an abstract target from another view as a learned variable-length symbolic sequence, not a continuous latent.",
+      "summary": "Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures. In language this interface is given by tokens; in audio, it must be learned. Existing audio tokenizers rely on quantization, clustering, or codec reconstruction, assigning tokens locally, so sequence consistency, compactness, length control, termination, and edit similarity are rarely optimized directly. We introduce PairAlign, a framework for compact audio tokenization through sequence-level self-alignment. PairAlign treats tokenization as conditional sequence generation: an encoder maps speech to a continuous condition, and an autoregressive decoder generates tokens from BOS, learning token identity, order, length, and EOS placement. Given two content-preserving views, each view's sequence is trained to be likely under the other's representation, while unrelated examples provide competing sequences. This gives a scalable surrogate for edit-distance preservation while discouraging many-to-one collapse. PairAlign starts from VQ-style tokenization and refines it with EMA-teacher targets, cross-paired teacher forcing, prefix corruption, likelihood contrast, and length control. On 3-second speech, PairAlign learns compact, non-degenerate sequences with broad vocabulary usage and strong cross-view consistency. On TIMIT retrieval, it preserves edit-distance search while reducing archive token count by 55%. A continuous-sweep probe shows lower local overlap than a dense geometric tokenizer, but stronger length control and bounded edit trajectories under 100 ms shifts. PairAlign is a sequence-symbolic predictive learner: like JEPA-style objectives, it predicts an abstract target from another view as a learned variable-length symbolic sequence, not a continuous latent.",
+      "abstract": "Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures. In language this interface is given by tokens; in audio, it must be learned. Existing audio tokenizers rely on quantization, clustering, or codec reconstruction, assigning tokens locally, so sequence consistency, compactness, length control, termination, and edit similarity are rarely optimized directly. We introduce PairAlign, a framework for compact audio tokenization through sequence-level self-alignment. PairAlign treats tokenization as conditional sequence generation: an encoder maps speech to a continuous condition, and an autoregressive decoder generates tokens from BOS, learning token identity, order, length, and EOS placement. Given two content-preserving views, each view's sequence is trained to be likely under the other's representation, while unrelated examples provide competing sequences. This gives a scalable surrogate for edit-distance preservation while discouraging many-to-one collapse. PairAlign starts from VQ-style tokenization and refines it with EMA-teacher targets, cross-paired teacher forcing, prefix corruption, likelihood contrast, and length control. On 3-second speech, PairAlign learns compact, non-degenerate sequences with broad vocabulary usage and strong cross-view consistency. On TIMIT retrieval, it preserves edit-distance search while reducing archive token count by 55%. A continuous-sweep probe shows lower local overlap than a dense geometric tokenizer, but stronger length control and bounded edit trajectories under 100 ms shifts. PairAlign is a sequence-symbolic predictive learner: like JEPA-style objectives, it predicts an abstract target from another view as a learned variable-length symbolic sequence, not a continuous latent.",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06582",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "提出一种新的音频分词框架，将序列自对齐引入离散符号学习，具有新颖的方法设计和明确的实现路径，在语音检索等应用场景中展现潜力，但直接的产品关联度中等。",
+        "one_sentence_summary": "PairAlign框架通过序列级自对齐实现紧凑音频分词，将分词建模为条件序列生成，利用跨视图一致性和长度控制学习离散符号序列，在TIMIT检索中减少55%存档令牌并保持编辑距离搜索性能。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 73,
+      "score_reason": "提出一种新的音频分词框架，将序列自对齐引入离散符号学习，具有新颖的方法设计和明确的实现路径，在语音检索等应用场景中展现潜力，但直接的产品关联度中等。",
+      "one_sentence_summary": "PairAlign框架通过序列级自对齐实现紧凑音频分词，将分词建模为条件序列生成，利用跨视图一致性和长度控制学习离散符号序列，在TIMIT检索中减少55%存档令牌并保持编辑距离搜索性能。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.06557",
+      "arxiv_id": "2605.06557",
+      "title": "Coordination Matters: Evaluation of Cooperative Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.06557",
+      "published_at": "2026-05-07T16:50:53Z",
+      "publish_date": "2026-05-07",
+      "description": "Cooperative multi-agent reinforcement learning (MARL) benchmarks commonly emphasize aggregate outcomes such as return, success rate, or completion time. While essential, these metrics often fail to reveal how agents coordinate, particularly in settings where agents, tasks, and joint assignment choices scale combinatorially. We propose a coordination-aware evaluation perspective that supplements return with process-level diagnostics. We instantiate this perspective using STAT, a controlled commitment-constrained spatial task-allocation testbed that systematically varies agents, tasks, and environment size while holding observation access and task rules fixed. We evaluate six representative value-based MARL methods across varying levels of centralization. Our results show that similar return trends can reflect distinct coordination mechanisms, including differences in redundant assignment, assignment diversity, and task-completion efficiency. We find that in commitment-constrained task allocation, performance under scale is shaped not only by nominal action-space size, but also by assignment pressure, sparse decision opportunities, and redundant choices among interdependent agents. Our findings motivate coordination-aware evaluation as a necessary complement to return-based benchmarking for cooperative MARL.",
+      "summary": "Cooperative multi-agent reinforcement learning (MARL) benchmarks commonly emphasize aggregate outcomes such as return, success rate, or completion time. While essential, these metrics often fail to reveal how agents coordinate, particularly in settings where agents, tasks, and joint assignment choices scale combinatorially. We propose a coordination-aware evaluation perspective that supplements return with process-level diagnostics. We instantiate this perspective using STAT, a controlled commitment-constrained spatial task-allocation testbed that systematically varies agents, tasks, and environment size while holding observation access and task rules fixed. We evaluate six representative value-based MARL methods across varying levels of centralization. Our results show that similar return trends can reflect distinct coordination mechanisms, including differences in redundant assignment, assignment diversity, and task-completion efficiency. We find that in commitment-constrained task allocation, performance under scale is shaped not only by nominal action-space size, but also by assignment pressure, sparse decision opportunities, and redundant choices among interdependent agents. Our findings motivate coordination-aware evaluation as a necessary complement to return-based benchmarking for cooperative MARL.",
+      "abstract": "Cooperative multi-agent reinforcement learning (MARL) benchmarks commonly emphasize aggregate outcomes such as return, success rate, or completion time. While essential, these metrics often fail to reveal how agents coordinate, particularly in settings where agents, tasks, and joint assignment choices scale combinatorially. We propose a coordination-aware evaluation perspective that supplements return with process-level diagnostics. We instantiate this perspective using STAT, a controlled commitment-constrained spatial task-allocation testbed that systematically varies agents, tasks, and environment size while holding observation access and task rules fixed. We evaluate six representative value-based MARL methods across varying levels of centralization. Our results show that similar return trends can reflect distinct coordination mechanisms, including differences in redundant assignment, assignment diversity, and task-completion efficiency. We find that in commitment-constrained task allocation, performance under scale is shaped not only by nominal action-space size, but also by assignment pressure, sparse decision opportunities, and redundant choices among interdependent agents. Our findings motivate coordination-aware evaluation as a necessary complement to return-based benchmarking for cooperative MARL.",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06557",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 18,
+          "engineering_utility": 15,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "关注多智能体协作评估的缺失维度，提出协调感知的测试平台和诊断指标，对多智能体系统设计有启发，但核心是评估方法，工程可复用性中等。",
+        "one_sentence_summary": "该工作提出协调感知的协作多智能体强化学习评估视角和STAT测试平台，通过承诺约束任务分配实验揭示回报趋势相似的背后存在不同协调机制，如冗余分配和任务完成效率差异。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 18,
+        "engineering_utility": 15,
+        "timeliness_rarity": 16
+      },
+      "score_total": 67,
+      "score_reason": "关注多智能体协作评估的缺失维度，提出协调感知的测试平台和诊断指标，对多智能体系统设计有启发，但核心是评估方法，工程可复用性中等。",
+      "one_sentence_summary": "该工作提出协调感知的协作多智能体强化学习评估视角和STAT测试平台，通过承诺约束任务分配实验揭示回报趋势相似的背后存在不同协调机制，如冗余分配和任务完成效率差异。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.06527",
+      "arxiv_id": "2605.06527",
+      "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
+      "url": "https://arxiv.org/abs/2605.06527",
+      "published_at": "2026-05-07T16:31:15Z",
+      "publish_date": "2026-05-07",
+      "description": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory.",
+      "summary": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory.",
+      "abstract": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06527",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "该论文针对LLM代理记忆失效问题，提出STALE基准和CUPMem原型，揭示代理在检测隐式冲突和基于新证据更新行为方面的不足，对构建可靠长期记忆的AI产品有重要启发，提供新的评测资源和方法方向。",
+        "one_sentence_summary": "针对LLM代理记忆中隐式冲突导致信念过时问题，提出包含400个场景的STALE基准和CUPMem原型，从状态解析、前提抵抗和隐式策略适应三维度评估发现模型准确率仅55.2%，揭示检索更新证据与基于证据行动间的差距。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 84,
+      "score_reason": "该论文针对LLM代理记忆失效问题，提出STALE基准和CUPMem原型，揭示代理在检测隐式冲突和基于新证据更新行为方面的不足，对构建可靠长期记忆的AI产品有重要启发，提供新的评测资源和方法方向。",
+      "one_sentence_summary": "针对LLM代理记忆中隐式冲突导致信念过时问题，提出包含400个场景的STALE基准和CUPMem原型，从状态解析、前提抵抗和隐式策略适应三维度评估发现模型准确率仅55.2%，揭示检索更新证据与基于证据行动间的差距。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T14:42:18.463157+00:00",
+      "pushed_at": "2026-05-08T14:42:18.463157+00:00",
       "source_run_id": "2026-05-08",
       "pushed_run_id": "2026-05-08"
     }
