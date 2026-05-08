@@ -45,6 +45,8 @@ jobs:
             --run-summary "runs/$RUN_ID/run-log.json" \
             --run-id "$RUN_ID" \
             --ai-provider deepseek \
+            --ai-max-candidates 16 \
+            --deepseek-timeout 60 \
             --top-k 10
 
       - name: Send Feishu

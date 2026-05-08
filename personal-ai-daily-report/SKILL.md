@@ -26,6 +26,8 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
   --ai-provider deepseek \
+  --ai-max-candidates 16 \
+  --deepseek-timeout 60 \
   --top-k 10
 ```
 
@@ -52,6 +54,7 @@ python personal-ai-daily-report/scripts/send_lark_markdown.py \
 - primary source: arXiv API
 - fallback source: arXiv RSS category feeds
 - scoring and summaries: DeepSeek `deepseek-v4-pro`
+- DeepSeek receives the rule-prefiltered top 16 unpushed candidates
 - local/debug fallback: rule-based scorer and summary builder
 - allowed arXiv categories: `cs.LG`, `cs.CL`, `cs.SE`
 - blacklist terms: `clinical`, `psychiatric`, `lung cancer`, `biomechanical`, `traffic`, `driving`, `emboli`, `field medicine`, `legal`, `graph`

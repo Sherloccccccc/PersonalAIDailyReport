@@ -52,7 +52,8 @@ SCORE_KEYS = [
 ]
 DEEPSEEK_BASE_URL_DEFAULT = "https://api.deepseek.com"
 DEEPSEEK_MODEL_DEFAULT = "deepseek-v4-pro"
-AI_BATCH_SIZE = 8
+AI_BATCH_SIZE = 4
+AI_MAX_CANDIDATES_DEFAULT = 16
 
 
 def parse_args() -> argparse.Namespace:
@@ -62,6 +63,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--arxiv-max-results", type=int, default=80)
     parser.add_argument("--top-k", type=int, default=10)
     parser.add_argument("--ai-provider", choices=["auto", "deepseek", "none"], default="auto")
+    parser.add_argument("--ai-max-candidates", type=int, default=AI_MAX_CANDIDATES_DEFAULT)
+    parser.add_argument("--deepseek-timeout", type=int, default=60)
     parser.add_argument("--deepseek-model", default=os.environ.get("DEEPSEEK_MODEL", DEEPSEEK_MODEL_DEFAULT))
     parser.add_argument("--deepseek-base-url", default=os.environ.get("DEEPSEEK_BASE_URL", DEEPSEEK_BASE_URL_DEFAULT))
     parser.add_argument("--state-file", default="data/paper-state.json")
@@ -648,12 +651,20 @@ def apply_ai_paper_scores(candidates: List[Dict[str, Any]], args: argparse.Names
             raise RuntimeError("DEEPSEEK_API_KEY is required when --ai-provider=deepseek")
         return
 
+    pushed_ids = load_pushed_paper_ids(Path(args.state_file))
+    scorable = [row for row in candidates if (row.get("id") or row.get("url")) not in pushed_ids]
+    rule_ranked = sorted(
+        scorable,
+        key=lambda row: (score_paper(row).get("score_total", 0), row.get("publish_date", "")),
+        reverse=True,
+    )
+    ai_candidates = rule_ranked[: max(0, args.ai_max_candidates)]
     scored_count = 0
     failed_batches = 0
-    for start in range(0, len(candidates), AI_BATCH_SIZE):
-        batch = candidates[start : start + AI_BATCH_SIZE]
+    for start in range(0, len(ai_candidates), AI_BATCH_SIZE):
+        batch = ai_candidates[start : start + AI_BATCH_SIZE]
         try:
-            result = call_deepseek_paper_scorer(batch, api_key, args.deepseek_model, args.deepseek_base_url)
+            result = call_deepseek_paper_scorer(batch, api_key, args.deepseek_model, args.deepseek_base_url, args.deepseek_timeout)
             by_id = {item.get("id"): item for item in result.get("papers", []) if isinstance(item, dict)}
             for row in batch:
                 paper_id = row.get("id") or row.get("url")
@@ -681,13 +692,21 @@ def apply_ai_paper_scores(candidates: List[Dict[str, Any]], args: argparse.Names
             "model": args.deepseek_model,
             "status": "ok" if scored_count else "fallback_rules",
             "candidate_count": len(candidates),
+            "eligible_candidate_count": len(scorable),
+            "ai_candidate_count": len(ai_candidates),
+            "skipped_already_pushed_count": len(candidates) - len(scorable),
             "scored_count": scored_count,
             "failed_batches": failed_batches,
         }
     )
 
 
-def call_deepseek_paper_scorer(batch: List[Dict[str, Any]], api_key: str, model: str, base_url: str) -> Dict[str, Any]:
+def load_pushed_paper_ids(state_path: Path) -> set[str]:
+    state = load_paper_state(state_path)
+    return {paper.get("id") or paper.get("url") for paper in state.get("papers", []) if paper.get("if_pushed", 0) == 1}
+
+
+def call_deepseek_paper_scorer(batch: List[Dict[str, Any]], api_key: str, model: str, base_url: str, timeout: int) -> Dict[str, Any]:
     url = base_url.rstrip("/") + "/chat/completions"
     papers = [
         {
@@ -728,7 +747,7 @@ def call_deepseek_paper_scorer(batch: List[Dict[str, Any]], api_key: str, model:
         },
         method="POST",
     )
-    response_payload = read_request_json(req, timeout=90)
+    response_payload = read_request_json(req, timeout=timeout)
     content = response_payload["choices"][0]["message"]["content"]
     return parse_json_object(content)
 

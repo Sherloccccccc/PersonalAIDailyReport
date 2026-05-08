@@ -60,6 +60,7 @@ Workflow:
    - Paper source: arXiv API
    - arXiv RSS fallback enabled
    - Paper scoring and summaries: DeepSeek `deepseek-v4-pro`
+   - DeepSeek receives only the rule-prefiltered top 16 unpushed candidates
    - Rule-based scoring and summaries remain as fallback only for local/debug runs
    - paper state: data/paper-state.json
    - run directory: runs/YYYY-MM-DD
@@ -116,6 +117,8 @@ python personal-ai-daily-report/scripts/build_digest.py \
   --run-summary "runs/$RUN_ID/run-log.json" \
   --run-id "$RUN_ID" \
   --ai-provider deepseek \
+  --ai-max-candidates 16 \
+  --deepseek-timeout 60 \
   --top-k 10
 ```
 
