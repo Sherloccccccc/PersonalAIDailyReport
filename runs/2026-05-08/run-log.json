@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-05-08",
+  "generated_at": "2026-05-08T04:35:52.283524+00:00",
+  "juya_issue_title": "2026-05-08",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-83/",
+  "news_count": 30,
+  "paper_source": "arxiv_rss",
+  "paper_candidate_count": 42,
+  "paper_selected_count": 6,
+  "paper_added_to_state_count": 6,
+  "paper_waiting_remaining_count": 0,
+  "delivery": {
+    "channel": "feishu",
+    "status": "success",
+    "sent_at": "2026-05-08T04:35:53.920981+00:00",
+    "target_type": "chat_id",
+    "target_configured": true,
+    "message_ids": [
+      "om_x100b50e2cc7dd93cc216ecaab0a5834",
+      "om_x100b50e2cc09e0a4c32a94608c22236"
+    ],
+    "parts": 2
+  },
+  "artifacts": {
+    "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-08/daily-ai-info.md",
+    "digest_data": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-08/digest-data.json",
+    "paper_state": "data/paper-state.json"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 30,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。",
+        "last_build_date": "2026-05-08T01:52:43+00:00",
+        "issue_title": "2026-05-08",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-83/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/83",
+        "published_at": "2026-05-08T01:47:03+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "failed",
+      "error": "HTTP Error 429: Unknown Error"
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_rss",
+      "status": "ok",
+      "raw": 80,
+      "kept": 42
+    }
+  ],
+  "status": "success",
+  "sent_at": "2026-05-08T04:35:53.920981+00:00"
+}

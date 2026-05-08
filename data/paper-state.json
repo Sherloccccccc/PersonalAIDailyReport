@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-07T13:12:24.414815+00:00",
+  "updated_at": "2026-05-08T04:35:52.253182+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -528,6 +528,224 @@
       "pushed_at": "2026-05-07T04:55:59.897878+00:00",
       "source_run_id": "2026-05-07",
       "pushed_run_id": "2026-05-07"
+    },
+    {
+      "id": "arxiv:2605.04050",
+      "arxiv_id": "2605.04050",
+      "title": "LCM: Lossless Context Management",
+      "url": "https://arxiv.org/abs/2605.04050",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "We introduce Lossless Context Management (LCM), a deterministic architecture for LLM memory that outperforms Claude Code on long-context tasks. When benchmarked using Opus 4.6, our LCM-augmented coding agent, Volt, achieves higher scores than Claude Code on the OOLONG long-context eval, including at every context length between 32K and 1M tokens. LCM may be considered both a vindication and extension of the recursive paradigm pioneered by Recursive Language Models (RLMs). Our results demonstrate that recursive context manipulation can outperform not just conventional LLMs, but frontier coding agents with native file-system access. LCM departs from RLM by decomposing symbolic recursion into two deterministic, engine-managed mechanisms: recursive context compression, in which a hierarchical summary DAG automatically compacts older messages while retaining lossless pointers to every original; and recursive task partitioning, in which engine-managed parallel primitives like LLM-Map replace model-written loops. This trade-off, analogous to the move from GOTO to structured control flow in program-ming language design, sacrifices maximal flexibility for termination guarantees, zero-cost continuity on short tasks, and lossless retrievability of all prior state.",
+      "summary": "We introduce Lossless Context Management (LCM), a deterministic architecture for LLM memory that outperforms Claude Code on long-context tasks. When benchmarked using Opus 4.6, our LCM-augmented coding agent, Volt, achieves higher scores than Claude Code on the OOLONG long-context eval, including at every context length between 32K and 1M tokens. LCM may be considered both a vindication and extension of the recursive paradigm pioneered by Recursive Language Models (RLMs). Our results demonstrate that recursive context manipulation can outperform not just conventional LLMs, but frontier coding agents with native file-system access. LCM departs from RLM by decomposing symbolic recursion into two deterministic, engine-managed mechanisms: recursive context compression, in which a hierarchical summary DAG automatically compacts older messages while retaining lossless pointers to every original; and recursive task partitioning, in which engine-managed parallel primitives like LLM-Map replace model-written loops. This trade-off, analogous to the move from GOTO to structured control flow in program-ming language design, sacrifices maximal flexibility for termination guarantees, zero-cost continuity on short tasks, and lossless retrievability of all prior state.",
+      "abstract": "We introduce Lossless Context Management (LCM), a deterministic architecture for LLM memory that outperforms Claude Code on long-context tasks. When benchmarked using Opus 4.6, our LCM-augmented coding agent, Volt, achieves higher scores than Claude Code on the OOLONG long-context eval, including at every context length between 32K and 1M tokens. LCM may be considered both a vindication and extension of the recursive paradigm pioneered by Recursive Language Models (RLMs). Our results demonstrate that recursive context manipulation can outperform not just conventional LLMs, but frontier coding agents with native file-system access. LCM departs from RLM by decomposing symbolic recursion into two deterministic, engine-managed mechanisms: recursive context compression, in which a hierarchical summary DAG automatically compacts older messages while retaining lossless pointers to every original; and recursive task partitioning, in which engine-managed parallel primitives like LLM-Map replace model-written loops. This trade-off, analogous to the move from GOTO to structured control flow in program-ming language design, sacrifices maximal flexibility for termination guarantees, zero-cost continuity on short tasks, and lossless retrievability of all prior state.",
+      "categories": [
+        "cs.AI",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 10,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向 coding agent 或软件工程任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是发现 coding agent 在真实开发流程中的能力边界或安全风险。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.04454",
+      "arxiv_id": "2605.04454",
+      "title": "Deployment-Relevant Alignment Cannot Be Inferred from Model-Level Evaluation Alone",
+      "url": "https://arxiv.org/abs/2605.04454",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "Alignment evaluation in machine learning has largely become evaluation of models. Influential benchmarks score model outputs under fixed inputs, such as truthfulness, instruction following, or pairwise preference, and these scores are often used to support claims about deployed alignment. This paper argues that deployment-relevant alignment cannot be inferred from model-level evaluation alone. Alignment claims should instead be indexed to the level at which evidence is collected: model-level, response-level, interaction-level, or deployment-level. Two studies support this position. First, a structured audit of eleven alignment benchmarks, extended to a sixteen-benchmark corpus, dual-coded against an eight-dimension rubric with Cohen's kappa = 0.87, finds that user-facing verification support is absent across every benchmark examined, while process steerability is nearly absent. The few interactional benchmarks identified, including tau-bench, CURATe, Rifts, and Common Ground, remain fragmented in coverage, and benchmark construction rather than data source determines what is measured. Second, a blinded cross-model stress test using 180 transcripts across three frontier models and four scaffolds finds that the same verification scaffold raises one model's verification support to ceiling while leaving another categorically unchanged. This shows that scaffold efficacy is model-dependent and that the gap identified by the audit cannot be closed at the model level alone. We propose a system-level evaluation agenda: alignment profiles instead of single scores, fixed-scaffolding protocols for comparable interactional evaluation, and reporting templates that make the inferential distance between evaluation evidence and deployment claims explicit.",
+      "summary": "Alignment evaluation in machine learning has largely become evaluation of models. Influential benchmarks score model outputs under fixed inputs, such as truthfulness, instruction following, or pairwise preference, and these scores are often used to support claims about deployed alignment. This paper argues that deployment-relevant alignment cannot be inferred from model-level evaluation alone. Alignment claims should instead be indexed to the level at which evidence is collected: model-level, response-level, interaction-level, or deployment-level. Two studies support this position. First, a structured audit of eleven alignment benchmarks, extended to a sixteen-benchmark corpus, dual-coded against an eight-dimension rubric with Cohen's kappa = 0.87, finds that user-facing verification support is absent across every benchmark examined, while process steerability is nearly absent. The few interactional benchmarks identified, including tau-bench, CURATe, Rifts, and Common Ground, remain fragmented in coverage, and benchmark construction rather than data source determines what is measured. Second, a blinded cross-model stress test using 180 transcripts across three frontier models and four scaffolds finds that the same verification scaffold raises one model's verification support to ceiling while leaving another categorically unchanged. This shows that scaffold efficacy is model-dependent and that the gap identified by the audit cannot be closed at the model level alone. We propose a system-level evaluation agenda: alignment profiles instead of single scores, fixed-scaffolding protocols for comparable interactional evaluation, and reporting templates that make the inferential distance between evaluation evidence and deployment claims explicit.",
+      "abstract": "Alignment evaluation in machine learning has largely become evaluation of models. Influential benchmarks score model outputs under fixed inputs, such as truthfulness, instruction following, or pairwise preference, and these scores are often used to support claims about deployed alignment. This paper argues that deployment-relevant alignment cannot be inferred from model-level evaluation alone. Alignment claims should instead be indexed to the level at which evidence is collected: model-level, response-level, interaction-level, or deployment-level. Two studies support this position. First, a structured audit of eleven alignment benchmarks, extended to a sixteen-benchmark corpus, dual-coded against an eight-dimension rubric with Cohen's kappa = 0.87, finds that user-facing verification support is absent across every benchmark examined, while process steerability is nearly absent. The few interactional benchmarks identified, including tau-bench, CURATe, Rifts, and Common Ground, remain fragmented in coverage, and benchmark construction rather than data source determines what is measured. Second, a blinded cross-model stress test using 180 transcripts across three frontier models and four scaffolds finds that the same verification scaffold raises one model's verification support to ceiling while leaving another categorically unchanged. This shows that scaffold efficacy is model-dependent and that the gap identified by the audit cannot be closed at the model level alone. We propose a system-level evaluation agenda: alignment profiles instead of single scores, fixed-scaffolding protocols for comparable interactional evaluation, and reporting templates that make the inferential distance between evaluation evidence and deployment claims explicit.",
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 9
+      },
+      "score_total": 63,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.04624",
+      "arxiv_id": "2605.04624",
+      "title": "AuditRepairBench: A Paired-Execution Trace Corpus for Evaluator-Channel Ranking Instability in Agent Repair",
+      "url": "https://arxiv.org/abs/2605.04624",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "Agent-repair leaderboards reorder under evaluator reconfiguration, and a measurable share of the reordering is produced by methods that consult evaluator-derived signal during internal selection of candidate repairs. We document this failure mode on a public leaderboard and release AuditRepairBench, a paired-execution trace corpus of 576,000 registered cells (96,000 executed) that operationalizes evaluator-channel-blocking ranking instability within a declared observability boundary. A modular screening architecture decides pathway-blocking through four interchangeable implementations, a learned influence proxy, a rule-based channel-exposure ratio that uses no trained model, a counterfactual sensitivity proxy, and a sparse human-audit proxy, combined into a screening posterior that feeds a cell-level flip functional, a set-valued label, a stratified system score, and a set-valued leaderboard. The resource is supported by mechanism-anchored validation on an 80-case source-level channel-surgery subset, an independent-discovery protocol under which two annotator groups separated from the pipeline developers discover coupling patterns blinded to the screening design and the frozen ensemble attains pooled AUROC 0.83 on their 79 cases, implementation robustness, uncertainty propagation that raises 95% coverage from 0.81 to 0.95, and forward transfer with pooled community-evaluator Spearman \\r{ho} = 0.65. Screening-guided blinding patches reduce rank displacement by 55--74% (mean 62%) at fewer than 50 lines of code, whereas random channel blinding produces at most 7% reduction and generic retraining at most 13%. AuditRepairBench-Lite, a rule-only configuration on a 12,000-cell subset, preserves the leaderboard at Kendall {\\tau} = 0.88 under twenty-four GPU-hours and is the primary release artifact at 42 GB.",
+      "summary": "Agent-repair leaderboards reorder under evaluator reconfiguration, and a measurable share of the reordering is produced by methods that consult evaluator-derived signal during internal selection of candidate repairs. We document this failure mode on a public leaderboard and release AuditRepairBench, a paired-execution trace corpus of 576,000 registered cells (96,000 executed) that operationalizes evaluator-channel-blocking ranking instability within a declared observability boundary. A modular screening architecture decides pathway-blocking through four interchangeable implementations, a learned influence proxy, a rule-based channel-exposure ratio that uses no trained model, a counterfactual sensitivity proxy, and a sparse human-audit proxy, combined into a screening posterior that feeds a cell-level flip functional, a set-valued label, a stratified system score, and a set-valued leaderboard. The resource is supported by mechanism-anchored validation on an 80-case source-level channel-surgery subset, an independent-discovery protocol under which two annotator groups separated from the pipeline developers discover coupling patterns blinded to the screening design and the frozen ensemble attains pooled AUROC 0.83 on their 79 cases, implementation robustness, uncertainty propagation that raises 95% coverage from 0.81 to 0.95, and forward transfer with pooled community-evaluator Spearman \\r{ho} = 0.65. Screening-guided blinding patches reduce rank displacement by 55--74% (mean 62%) at fewer than 50 lines of code, whereas random channel blinding produces at most 7% reduction and generic retraining at most 13%. AuditRepairBench-Lite, a rule-only configuration on a 12,000-cell subset, preserves the leaderboard at Kendall {\\tau} = 0.88 under twenty-four GPU-hours and is the primary release artifact at 42 GB.",
+      "abstract": "Agent-repair leaderboards reorder under evaluator reconfiguration, and a measurable share of the reordering is produced by methods that consult evaluator-derived signal during internal selection of candidate repairs. We document this failure mode on a public leaderboard and release AuditRepairBench, a paired-execution trace corpus of 576,000 registered cells (96,000 executed) that operationalizes evaluator-channel-blocking ranking instability within a declared observability boundary. A modular screening architecture decides pathway-blocking through four interchangeable implementations, a learned influence proxy, a rule-based channel-exposure ratio that uses no trained model, a counterfactual sensitivity proxy, and a sparse human-audit proxy, combined into a screening posterior that feeds a cell-level flip functional, a set-valued label, a stratified system score, and a set-valued leaderboard. The resource is supported by mechanism-anchored validation on an 80-case source-level channel-surgery subset, an independent-discovery protocol under which two annotator groups separated from the pipeline developers discover coupling patterns blinded to the screening design and the frozen ensemble attains pooled AUROC 0.83 on their 79 cases, implementation robustness, uncertainty propagation that raises 95% coverage from 0.81 to 0.95, and forward transfer with pooled community-evaluator Spearman \\r{ho} = 0.65. Screening-guided blinding patches reduce rank displacement by 55--74% (mean 62%) at fewer than 50 lines of code, whereas random channel blinding produces at most 7% reduction and generic retraining at most 13%. AuditRepairBench-Lite, a rule-only configuration on a 12,000-cell subset, preserves the leaderboard at Kendall {\\tau} = 0.88 under twenty-four GPU-hours and is the primary release artifact at 42 GB.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 10,
+        "engineering_utility": 14,
+        "timeliness_rarity": 19
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, engineering utility",
+      "one_sentence_summary": "这篇论文训练或微调模型，面向检索增强生成或复杂信息检索任务；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.04083",
+      "arxiv_id": "2605.04083",
+      "title": "AsymmetryZero: A Framework for Operationalizing Human Expert Preferences as Semantic Evals",
+      "url": "https://arxiv.org/abs/2605.04083",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "Much of the focus in RL today is on evaluation design: building meaningful evals that serve simultaneously as benchmarks and as well-defined reward signals for post-training. Yet, many real-world tasks are governed by subjective, procedural, and domain-specific requirements that are difficult to encode as exact-match targets or open-ended preference judgments frequently used in RL pipelines today. In this work, we present AsymmetryZero, a framework for operationalizing human expert preferences as semantic evals. AsymmetryZero represents each task as a stable evaluation contract that makes grading criteria explicit: what is being graded, how each criterion is judged, and how criterion-level decisions are aggregated into a task outcome. The same contract can be executed using Inspect for model-only evaluations, as well as the Harbor Framework for agentic evaluations, enabling comparable scores and shared audit artifacts across both settings. We argue that the central challenge in post-training today is the faithful encoding of expert requirements into the evaluation itself. To that end, we present a study using Harbor that holds task contracts fixed and compares a five-model frontier jury against a five-model compact jury across four frontier-class solvers (Claude Opus 4.6, GPT-5.4, Grok-4.20, Gemini-3.1-Pro). We find that criterion-level frontier-vs-compact agreement ranges from $75.9\\%$ to $89.6\\%$ (strict common-subset agreement: $77.8\\%$ to $92.1\\%$), while compact juries exhibit substantially higher internal dissent (3--2 split rate $28.7\\%$--$32.4\\%$) than frontier juries ($6.1\\%$--$11.5\\%$). Verifier traces further show that compact juries reduce per-criterion judging cost to roughly $4.2\\%$--$5.6\\%$ of frontier and latency to roughly $21.7\\%$--$27.1\\%$, even as aggregated task-level outcomes often remain comparatively stable.",
+      "summary": "Much of the focus in RL today is on evaluation design: building meaningful evals that serve simultaneously as benchmarks and as well-defined reward signals for post-training. Yet, many real-world tasks are governed by subjective, procedural, and domain-specific requirements that are difficult to encode as exact-match targets or open-ended preference judgments frequently used in RL pipelines today. In this work, we present AsymmetryZero, a framework for operationalizing human expert preferences as semantic evals. AsymmetryZero represents each task as a stable evaluation contract that makes grading criteria explicit: what is being graded, how each criterion is judged, and how criterion-level decisions are aggregated into a task outcome. The same contract can be executed using Inspect for model-only evaluations, as well as the Harbor Framework for agentic evaluations, enabling comparable scores and shared audit artifacts across both settings. We argue that the central challenge in post-training today is the faithful encoding of expert requirements into the evaluation itself. To that end, we present a study using Harbor that holds task contracts fixed and compares a five-model frontier jury against a five-model compact jury across four frontier-class solvers (Claude Opus 4.6, GPT-5.4, Grok-4.20, Gemini-3.1-Pro). We find that criterion-level frontier-vs-compact agreement ranges from $75.9\\%$ to $89.6\\%$ (strict common-subset agreement: $77.8\\%$ to $92.1\\%$), while compact juries exhibit substantially higher internal dissent (3--2 split rate $28.7\\%$--$32.4\\%$) than frontier juries ($6.1\\%$--$11.5\\%$). Verifier traces further show that compact juries reduce per-criterion judging cost to roughly $4.2\\%$--$5.6\\%$ of frontier and latency to roughly $21.7\\%$--$27.1\\%$, even as aggregated task-level outcomes often remain comparatively stable.",
+      "abstract": "Much of the focus in RL today is on evaluation design: building meaningful evals that serve simultaneously as benchmarks and as well-defined reward signals for post-training. Yet, many real-world tasks are governed by subjective, procedural, and domain-specific requirements that are difficult to encode as exact-match targets or open-ended preference judgments frequently used in RL pipelines today. In this work, we present AsymmetryZero, a framework for operationalizing human expert preferences as semantic evals. AsymmetryZero represents each task as a stable evaluation contract that makes grading criteria explicit: what is being graded, how each criterion is judged, and how criterion-level decisions are aggregated into a task outcome. The same contract can be executed using Inspect for model-only evaluations, as well as the Harbor Framework for agentic evaluations, enabling comparable scores and shared audit artifacts across both settings. We argue that the central challenge in post-training today is the faithful encoding of expert requirements into the evaluation itself. To that end, we present a study using Harbor that holds task contracts fixed and compares a five-model frontier jury against a five-model compact jury across four frontier-class solvers (Claude Opus 4.6, GPT-5.4, Grok-4.20, Gemini-3.1-Pro). We find that criterion-level frontier-vs-compact agreement ranges from $75.9\\%$ to $89.6\\%$ (strict common-subset agreement: $77.8\\%$ to $92.1\\%$), while compact juries exhibit substantially higher internal dissent (3--2 split rate $28.7\\%$--$32.4\\%$) than frontier juries ($6.1\\%$--$11.5\\%$). Verifier traces further show that compact juries reduce per-criterion judging cost to roughly $4.2\\%$--$5.6\\%$ of frontier and latency to roughly $21.7\\%$--$27.1\\%$, even as aggregated task-level outcomes often remain comparatively stable.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 25,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 78,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.04107",
+      "arxiv_id": "2605.04107",
+      "title": "TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments",
+      "url": "https://arxiv.org/abs/2605.04107",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "Production agent frameworks (OpenAI Function Calling, Anthropic Tool Use, MCP) transmit tool schemas as JSON, a format designed for machine parsing, not for interpretation by language models. For small models (4B-14B), this protocol mismatch accounts for the majority of tool-use failure at production catalog sizes. We present TSCG, a deterministic tool-schema compiler that resolves this mismatch at the API boundary, converting JSON schemas into token-efficient structured text without model access, fine-tuning, or runtime search. TSCG combines eight composable operators with a formal compression bound (>=51% on well-formed schemas). On TSCG-Agentic-Bench (about 19,000 calls, 12 models, 5 scenarios), TSCG restores Phi-4 14B from 0% to 84.4% accuracy at 20 tools (90.3% at 50 tools) and achieves 108-181% accuracy-retained ratio across three models on BFCL. Format-versus-compression decomposition (R^2=0.88 -> 0.03) establishes representation change as the dominant mechanism. Per-operator isolation across three frontier models reveals three distinct operator-response profiles: operator-hungry (Opus 4.7), operator-sensitive (GPT-5.2), and operator-robust (Sonnet 4), providing per-model deployment guidance. Scaling experiments show accuracy advantages persisting on heavy production MCP schemas (+5.0 pp at about 10,500 input tokens) despite saturation on light synthetic catalogs, with 52-57% token savings throughout. The synthetic benchmark generalizes to real MCP schemas within 0.1 accuracy points. TSCG ships as a 1,200-line zero-dependency TypeScript package.",
+      "summary": "Production agent frameworks (OpenAI Function Calling, Anthropic Tool Use, MCP) transmit tool schemas as JSON, a format designed for machine parsing, not for interpretation by language models. For small models (4B-14B), this protocol mismatch accounts for the majority of tool-use failure at production catalog sizes. We present TSCG, a deterministic tool-schema compiler that resolves this mismatch at the API boundary, converting JSON schemas into token-efficient structured text without model access, fine-tuning, or runtime search. TSCG combines eight composable operators with a formal compression bound (>=51% on well-formed schemas). On TSCG-Agentic-Bench (about 19,000 calls, 12 models, 5 scenarios), TSCG restores Phi-4 14B from 0% to 84.4% accuracy at 20 tools (90.3% at 50 tools) and achieves 108-181% accuracy-retained ratio across three models on BFCL. Format-versus-compression decomposition (R^2=0.88 -> 0.03) establishes representation change as the dominant mechanism. Per-operator isolation across three frontier models reveals three distinct operator-response profiles: operator-hungry (Opus 4.7), operator-sensitive (GPT-5.2), and operator-robust (Sonnet 4), providing per-model deployment guidance. Scaling experiments show accuracy advantages persisting on heavy production MCP schemas (+5.0 pp at about 10,500 input tokens) despite saturation on light synthetic catalogs, with 52-57% token savings throughout. The synthetic benchmark generalizes to real MCP schemas within 0.1 accuracy points. TSCG ships as a 1,200-line zero-dependency TypeScript package.",
+      "abstract": "Production agent frameworks (OpenAI Function Calling, Anthropic Tool Use, MCP) transmit tool schemas as JSON, a format designed for machine parsing, not for interpretation by language models. For small models (4B-14B), this protocol mismatch accounts for the majority of tool-use failure at production catalog sizes. We present TSCG, a deterministic tool-schema compiler that resolves this mismatch at the API boundary, converting JSON schemas into token-efficient structured text without model access, fine-tuning, or runtime search. TSCG combines eight composable operators with a formal compression bound (>=51% on well-formed schemas). On TSCG-Agentic-Bench (about 19,000 calls, 12 models, 5 scenarios), TSCG restores Phi-4 14B from 0% to 84.4% accuracy at 20 tools (90.3% at 50 tools) and achieves 108-181% accuracy-retained ratio across three models on BFCL. Format-versus-compression decomposition (R^2=0.88 -> 0.03) establishes representation change as the dominant mechanism. Per-operator isolation across three frontier models reveals three distinct operator-response profiles: operator-hungry (Opus 4.7), operator-sensitive (GPT-5.2), and operator-robust (Sonnet 4), providing per-model deployment guidance. Scaling experiments show accuracy advantages persisting on heavy production MCP schemas (+5.0 pp at about 10,500 input tokens) despite saturation on light synthetic catalogs, with 52-57% token savings throughout. The synthetic benchmark generalizes to real MCP schemas within 0.1 accuracy points. TSCG ships as a 1,200-line zero-dependency TypeScript package.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 14,
+        "timeliness_rarity": 9
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, evaluation signal",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向大模型能力评测；通过实验或基准测试验证方法是否真的改善任务表现，并覆盖12 models；用途是给模型、agent 或工具链提供更可复现的横向比较标准。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
+    },
+    {
+      "id": "arxiv:2605.04180",
+      "arxiv_id": "2605.04180",
+      "title": "MedFabric and EtHER: A Data-Centric Framework for Word-Level Fabrication Generation and Detection in Medical LLMs",
+      "url": "https://arxiv.org/abs/2605.04180",
+      "published_at": "2026-05-08T04:00:00+00:00",
+      "publish_date": "2026-05-08",
+      "description": "Large Language Models exhibit strong reasoning and semantic understanding capabilities but often hallucinate in domains that require expert knowledge, among which fabrications, the generation of factually incorrect yet fluent statements, pose the greatest risk in medical contexts. Existing medical hallucination datasets inadequately capture fabrication phenomena due to limited fabrication coverage, stylistic disparities between human and LLM-authored texts, and distributional drift during hallucinated sample synthesis. To address this, we propose a data-centric pipeline to generate realistic and word-level fabrications that preserve syntactic and stylistic fidelity while introducing subtle factual deviations, resulting in MedFabric. Building upon this dataset, we introduce ETHER, a modular word-level fabrication detector integrating Text2Table Decomposition, Word Masking and Filling and Hybrid Sentence Pair Evaluation to enhance factual alignment. Empirical results demonstrate that MedFabric outperforms state-of-the-art detectors by over 15% on word-level fabrication benchmarks while maintaining consistent performance across structural similarities, offering a comprehensive framework for reliable and domain-specific factuality detection.",
+      "summary": "Large Language Models exhibit strong reasoning and semantic understanding capabilities but often hallucinate in domains that require expert knowledge, among which fabrications, the generation of factually incorrect yet fluent statements, pose the greatest risk in medical contexts. Existing medical hallucination datasets inadequately capture fabrication phenomena due to limited fabrication coverage, stylistic disparities between human and LLM-authored texts, and distributional drift during hallucinated sample synthesis. To address this, we propose a data-centric pipeline to generate realistic and word-level fabrications that preserve syntactic and stylistic fidelity while introducing subtle factual deviations, resulting in MedFabric. Building upon this dataset, we introduce ETHER, a modular word-level fabrication detector integrating Text2Table Decomposition, Word Masking and Filling and Hybrid Sentence Pair Evaluation to enhance factual alignment. Empirical results demonstrate that MedFabric outperforms state-of-the-art detectors by over 15% on word-level fabrication benchmarks while maintaining consistent performance across structural similarities, offering a comprehensive framework for reliable and domain-specific factuality detection.",
+      "abstract": "Large Language Models exhibit strong reasoning and semantic understanding capabilities but often hallucinate in domains that require expert knowledge, among which fabrications, the generation of factually incorrect yet fluent statements, pose the greatest risk in medical contexts. Existing medical hallucination datasets inadequately capture fabrication phenomena due to limited fabrication coverage, stylistic disparities between human and LLM-authored texts, and distributional drift during hallucinated sample synthesis. To address this, we propose a data-centric pipeline to generate realistic and word-level fabrications that preserve syntactic and stylistic fidelity while introducing subtle factual deviations, resulting in MedFabric. Building upon this dataset, we introduce ETHER, a modular word-level fabrication detector integrating Text2Table Decomposition, Word Masking and Filling and Hybrid Sentence Pair Evaluation to enhance factual alignment. Empirical results demonstrate that MedFabric outperforms state-of-the-art detectors by over 15% on word-level fabrication benchmarks while maintaining consistent performance across structural similarities, offering a comprehensive framework for reliable and domain-specific factuality detection.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 15,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 63,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "if_pushed": 1,
+      "added_at": "2026-05-08T04:35:52.253182+00:00",
+      "pushed_at": "2026-05-08T04:35:52.253182+00:00",
+      "source_run_id": "2026-05-08",
+      "pushed_run_id": "2026-05-08"
     }
   ]
 }
