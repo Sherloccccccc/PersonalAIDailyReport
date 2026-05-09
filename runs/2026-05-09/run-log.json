@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-05-09",
+  "generated_at": "2026-05-09T04:54:37.310287+00:00",
+  "juya_issue_title": "2026-05-09",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-84/",
+  "news_count": 24,
+  "paper_source": "arxiv_api",
+  "paper_candidate_count": 60,
+  "paper_selected_count": 10,
+  "paper_added_to_state_count": 8,
+  "paper_waiting_remaining_count": 1,
+  "delivery": {
+    "channel": "feishu",
+    "status": "success",
+    "sent_at": "2026-05-09T04:54:38.475874+00:00",
+    "target_type": "chat_id",
+    "target_configured": true,
+    "message_ids": [
+      "om_x100b50dfae234ca0c45917a5c08420d",
+      "om_x100b50dfae337ca0c32653aea43c1b0"
+    ],
+    "parts": 2
+  },
+  "artifacts": {
+    "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-09/daily-ai-info.md",
+    "digest_data": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-09/digest-data.json",
+    "paper_state": "data/paper-state.json"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 24,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。",
+        "last_build_date": "2026-05-09T04:04:31+00:00",
+        "issue_title": "2026-05-09",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-84/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/84",
+        "published_at": "2026-05-09T01:38:10+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "ok",
+      "raw": 80,
+      "kept": 60
+    },
+    {
+      "stage": "paper_ai_scoring",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "status": "ok",
+      "candidate_count": 60,
+      "eligible_candidate_count": 50,
+      "ai_candidate_count": 16,
+      "skipped_already_pushed_count": 10,
+      "scored_count": 15,
+      "failed_batches": 0
+    }
+  ],
+  "status": "success",
+  "sent_at": "2026-05-09T04:54:38.475874+00:00"
+}
