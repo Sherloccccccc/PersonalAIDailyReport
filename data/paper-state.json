@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-09T04:54:37.276964+00:00",
+  "updated_at": "2026-05-10T05:10:27.456746+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -1671,29 +1671,29 @@
       "ai_score": {
         "id": "arxiv:2605.06529",
         "score_detail": {
-          "application_relevance": 18,
-          "new_signal": 17,
-          "engineering_utility": 15,
-          "timeliness_rarity": 15
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
         },
-        "score_reason": "直接解决定价Agent在部分可观测竞争中的奖励劫持问题，提供诊断与修复配方，高度相关且方法可复现。",
-        "one_sentence_summary": "在双酒店收益管理模拟中，标准强化学习代理因无法观察对手状态而陷入奖励劫持，论文提出基于市场迹的分布先验RL和迹诊断协议，使策略既匹配对手收益又保持价格分布对齐，并揭示更高动作准确率可能损害分布对齐的“迹级”悖论。"
+        "score_reason": "论文通过酒店定价仿真揭示部分可观测下奖励黑客问题，提出基于市场痕迹的诊断和 Trace-Prior RL 方法，通过分布先验和 KL 惩罚使智能体行为与市场对齐，为定价类 AI 产品提供了可复现的失败分析与修复方案。",
+        "one_sentence_summary": "该论文在双酒店收益管理模拟器中，发现标准RL定价智能体因部分可观测和奖励错位导致市场行为崩溃，提出基于历史市场痕迹的分布先验和KL惩罚的Trace-Prior RL方法，使智能体在优化自身收益的同时匹配市场价格分布，并提供完整的痕迹诊断工具集。"
       },
       "score_detail": {
-        "application_relevance": 18,
-        "new_signal": 17,
-        "engineering_utility": 15,
-        "timeliness_rarity": 15
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
       },
-      "score_total": 65,
-      "score_reason": "直接解决定价Agent在部分可观测竞争中的奖励劫持问题，提供诊断与修复配方，高度相关且方法可复现。",
-      "one_sentence_summary": "在双酒店收益管理模拟中，标准强化学习代理因无法观察对手状态而陷入奖励劫持，论文提出基于市场迹的分布先验RL和迹诊断协议，使策略既匹配对手收益又保持价格分布对齐，并揭示更高动作准确率可能损害分布对齐的“迹级”悖论。",
+      "score_total": 94,
+      "score_reason": "论文通过酒店定价仿真揭示部分可观测下奖励黑客问题，提出基于市场痕迹的诊断和 Trace-Prior RL 方法，通过分布先验和 KL 惩罚使智能体行为与市场对齐，为定价类 AI 产品提供了可复现的失败分析与修复方案。",
+      "one_sentence_summary": "该论文在双酒店收益管理模拟器中，发现标准RL定价智能体因部分可观测和奖励错位导致市场行为崩溃，提出基于历史市场痕迹的分布先验和KL惩罚的Trace-Prior RL方法，使智能体在优化自身收益的同时匹配市场价格分布，并提供完整的痕迹诊断工具集。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-09T04:54:37.276964+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
       "source_run_id": "2026-05-09",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-10"
     },
     {
       "id": "arxiv:2605.06522",
@@ -1741,6 +1741,541 @@
       "pushed_at": "2026-05-09T04:54:37.276964+00:00",
       "source_run_id": "2026-05-09",
       "pushed_run_id": "2026-05-09"
+    },
+    {
+      "id": "arxiv:2605.06660",
+      "arxiv_id": "2605.06660",
+      "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
+      "url": "https://arxiv.org/abs/2605.06660",
+      "published_at": "2026-05-07T17:58:32Z",
+      "publish_date": "2026-05-07",
+      "description": "Large Language Models (LLMs) demonstrate strong capabilities for solving scientific and mathematical problems, yet they struggle to produce valid, challenging, and novel problems - an essential component for advancing LLM training and enabling autonomous scientific research. Existing problem generation approaches either depend on expensive human expert involvement or adopt naive self-play paradigms, which frequently yield invalid problems due to reward hacking. This work introduces VHG, a verifier-enhanced hard problem generation framework built upon three-party self-play. By integrating an independent verifier into the conventional setter-solver duality, our design constrains the setter's reward to be jointly determined by problem validity (evaluated by the verifier) and difficulty (assessed by the solver). We instantiate two verifier variants: a Hard symbolic verifier and a Soft LLM-based verifier, with evaluations conducted on indefinite integral tasks and general mathematical reasoning tasks. Experimental results show that VHG substantially outperforms all baseline methods by a clear margin.",
+      "summary": "Large Language Models (LLMs) demonstrate strong capabilities for solving scientific and mathematical problems, yet they struggle to produce valid, challenging, and novel problems - an essential component for advancing LLM training and enabling autonomous scientific research. Existing problem generation approaches either depend on expensive human expert involvement or adopt naive self-play paradigms, which frequently yield invalid problems due to reward hacking. This work introduces VHG, a verifier-enhanced hard problem generation framework built upon three-party self-play. By integrating an independent verifier into the conventional setter-solver duality, our design constrains the setter's reward to be jointly determined by problem validity (evaluated by the verifier) and difficulty (assessed by the solver). We instantiate two verifier variants: a Hard symbolic verifier and a Soft LLM-based verifier, with evaluations conducted on indefinite integral tasks and general mathematical reasoning tasks. Experimental results show that VHG substantially outperforms all baseline methods by a clear margin.",
+      "abstract": "Large Language Models (LLMs) demonstrate strong capabilities for solving scientific and mathematical problems, yet they struggle to produce valid, challenging, and novel problems - an essential component for advancing LLM training and enabling autonomous scientific research. Existing problem generation approaches either depend on expensive human expert involvement or adopt naive self-play paradigms, which frequently yield invalid problems due to reward hacking. This work introduces VHG, a verifier-enhanced hard problem generation framework built upon three-party self-play. By integrating an independent verifier into the conventional setter-solver duality, our design constrains the setter's reward to be jointly determined by problem validity (evaluated by the verifier) and difficulty (assessed by the solver). We instantiate two verifier variants: a Hard symbolic verifier and a Soft LLM-based verifier, with evaluations conducted on indefinite integral tasks and general mathematical reasoning tasks. Experimental results show that VHG substantially outperforms all baseline methods by a clear margin.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06660",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "引入三方自我博弈的验证器约束机制，有效防止问题生成中的奖励黑客，生成高质量难题，对LLM训练和自主科研有直接推动，框架可扩展。",
+        "one_sentence_summary": "VHG框架通过引入独立验证器到设置者-求解者对弈中，让设置者奖励由问题有效性和难度联合决定，使用硬符号或软LLM验证器，在不定积分和通用数学推理任务上生成的问题难度和有效性显著优于基线。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 24
+      },
+      "score_total": 86,
+      "score_reason": "引入三方自我博弈的验证器约束机制，有效防止问题生成中的奖励黑客，生成高质量难题，对LLM训练和自主科研有直接推动，框架可扩展。",
+      "one_sentence_summary": "VHG框架通过引入独立验证器到设置者-求解者对弈中，让设置者奖励由问题有效性和难度联合决定，使用硬符号或软LLM验证器，在不定积分和通用数学推理任务上生成的问题难度和有效性显著优于基线。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06639",
+      "arxiv_id": "2605.06639",
+      "title": "Recursive Agent Optimization",
+      "url": "https://arxiv.org/abs/2605.06639",
+      "published_at": "2026-05-07T17:49:09Z",
+      "publish_date": "2026-05-07",
+      "description": "We introduce Recursive Agent Optimization (RAO), a reinforcement learning approach for training recursive agents: agents that can spawn and delegate sub-tasks to new instantiations of themselves recursively. Recursive agents implement an inference-time scaling algorithm that naturally allows agents to scale to longer contexts and generalize to more difficult problems via divide-and-conquer. RAO provides a method to train models to best take advantage of such recursive inference, teaching agents when and how to delegate and communicate. We find that recursive agents trained in this way enjoy better training efficiency, can scale to tasks that go beyond the model's context window, generalize to tasks much harder than the ones the agent was trained on, and can enjoy reduced wall-clock time compared to single-agent systems.",
+      "summary": "We introduce Recursive Agent Optimization (RAO), a reinforcement learning approach for training recursive agents: agents that can spawn and delegate sub-tasks to new instantiations of themselves recursively. Recursive agents implement an inference-time scaling algorithm that naturally allows agents to scale to longer contexts and generalize to more difficult problems via divide-and-conquer. RAO provides a method to train models to best take advantage of such recursive inference, teaching agents when and how to delegate and communicate. We find that recursive agents trained in this way enjoy better training efficiency, can scale to tasks that go beyond the model's context window, generalize to tasks much harder than the ones the agent was trained on, and can enjoy reduced wall-clock time compared to single-agent systems.",
+      "abstract": "We introduce Recursive Agent Optimization (RAO), a reinforcement learning approach for training recursive agents: agents that can spawn and delegate sub-tasks to new instantiations of themselves recursively. Recursive agents implement an inference-time scaling algorithm that naturally allows agents to scale to longer contexts and generalize to more difficult problems via divide-and-conquer. RAO provides a method to train models to best take advantage of such recursive inference, teaching agents when and how to delegate and communicate. We find that recursive agents trained in this way enjoy better training efficiency, can scale to tasks that go beyond the model's context window, generalize to tasks much harder than the ones the agent was trained on, and can enjoy reduced wall-clock time compared to single-agent systems.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06639",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "递归代理训练直接赋能AI代理的自主分解与扩展，对Agent、Workflow产品设计意义重大；递归委托与分治推理是新的使用范式；方法清晰，可集成至现有RL框架；代理推理时缩放是近期前沿，代表性强。",
+        "one_sentence_summary": "递归代理优化（RAO）用强化学习训练代理递归生成和委托子任务，实现分治式推理扩展，可处理超上下文窗口任务并泛化至更难问题，同时减少训练和推理用时。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "递归代理训练直接赋能AI代理的自主分解与扩展，对Agent、Workflow产品设计意义重大；递归委托与分治推理是新的使用范式；方法清晰，可集成至现有RL框架；代理推理时缩放是近期前沿，代表性强。",
+      "one_sentence_summary": "递归代理优化（RAO）用强化学习训练代理递归生成和委托子任务，实现分治式推理扩展，可处理超上下文窗口任务并泛化至更难问题，同时减少训练和推理用时。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06638",
+      "arxiv_id": "2605.06638",
+      "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key",
+      "url": "https://arxiv.org/abs/2605.06638",
+      "published_at": "2026-05-07T17:48:42Z",
+      "publish_date": "2026-05-07",
+      "description": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic (\"if-then\") towards more expressive first-order reasoning with conjunction (\"and\"), disjunction (\"or\"), negation (\"not\"), and universal quantification (\"for all\"). Using this framework, we show that the RL training compute $T$ follows a power law with respect to reasoning depth $D$ ($T \\propto D^γ$, $R^{2} > 0.99$), and that the scaling exponent $γ$ increases monotonically with logical expressiveness, from $1.04$ to $2.60$. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to $+10.66$ points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer. We further show that the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency.",
+      "summary": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic (\"if-then\") towards more expressive first-order reasoning with conjunction (\"and\"), disjunction (\"or\"), negation (\"not\"), and universal quantification (\"for all\"). Using this framework, we show that the RL training compute $T$ follows a power law with respect to reasoning depth $D$ ($T \\propto D^γ$, $R^{2} > 0.99$), and that the scaling exponent $γ$ increases monotonically with logical expressiveness, from $1.04$ to $2.60$. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to $+10.66$ points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer. We further show that the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency.",
+      "abstract": "Reinforcement learning (RL) has been applied to improve large language model (LLM) reasoning, yet the systematic study of how training scales with task difficulty has been hampered by the lack of controlled, scalable environments. We introduce ScaleLogic, a synthetic logical reasoning framework that offers independent control over two axes of difficulty: the depth of the required proof planning (i.e., the horizon) and the expressiveness of the underlying logic. Our proposed framework supports a wide range of logics: from simple implication-only logic (\"if-then\") towards more expressive first-order reasoning with conjunction (\"and\"), disjunction (\"or\"), negation (\"not\"), and universal quantification (\"for all\"). Using this framework, we show that the RL training compute $T$ follows a power law with respect to reasoning depth $D$ ($T \\propto D^γ$, $R^{2} > 0.99$), and that the scaling exponent $γ$ increases monotonically with logical expressiveness, from $1.04$ to $2.60$. On downstream mathematics and general reasoning benchmarks, more expressive training settings yield both larger performance gains (up to $+10.66$ points) and more compute-efficient transfer compared to less expressive settings, demonstrating that what a model is trained on, not just how much it is trained, shapes downstream transfer. We further show that the power-law relationship holds across multiple RL methods, and curriculum-based training substantially improves scaling efficiency.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06638",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This paper introduces a synthetic logical reasoning framework to study RL-based long-horizon reasoning training, revealing a power-law scaling with depth and a strong influence of logical expressiveness on transfer. The findings offer actionable insights for designing more compute-efficient reasoning training, directly relevant to AI product developers aiming to enhance model reasoning capabilities.",
+        "one_sentence_summary": "通过构建可独立控制推理深度和逻辑表达力的合成框架ScaleLogic，该研究发现强化学习训练计算量随深度呈幂律增长，且更高表达力的逻辑训练能更高效地迁移至数学和通用推理基准，指导更经济的推理模型训练。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "This paper introduces a synthetic logical reasoning framework to study RL-based long-horizon reasoning training, revealing a power-law scaling with depth and a strong influence of logical expressiveness on transfer. The findings offer actionable insights for designing more compute-efficient reasoning training, directly relevant to AI product developers aiming to enhance model reasoning capabilities.",
+      "one_sentence_summary": "通过构建可独立控制推理深度和逻辑表达力的合成框架ScaleLogic，该研究发现强化学习训练计算量随深度呈幂律增长，且更高表达力的逻辑训练能更高效地迁移至数学和通用推理基准，指导更经济的推理模型训练。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06632",
+      "arxiv_id": "2605.06632",
+      "title": "Crafting Reversible SFT Behaviors in Large Language Models",
+      "url": "https://arxiv.org/abs/2605.06632",
+      "published_at": "2026-05-07T17:44:07Z",
+      "publish_date": "2026-05-07",
+      "description": "Supervised fine-tuning (SFT) induces new behaviors in large language models, yet imposes no structural constraint on how these behaviors are distributed within the model. Existing behavior interpretation methods, such as circuit attribution approaches, identify sparse subnetworks correlated with SFT-induced behaviors post-hoc. However, such correlations do not imply *causal necessity*, limiting the ability to selectively control SFT-induced behaviors at inference time. We pursue an alternative by asking: can an SFT-induced behavior be deliberately compressed into a sparse, mechanistically necessary subnetwork, termed a *carrier*, while remaining controllable at inference time without weight modification? We propose (a) **Loss-Constrained Dual Descent (LCDD)**, which constructs such carriers by jointly optimizing routing masks and model weights under an explicit utility budget, and (b) **SFT-Eraser**, a soft prompt optimized via activation matching on extracted carrier channels, to reverse the SFT-induced behavior. Across safety, fixed-response, and style behaviors on multiple model families, LCDD yields sparse carriers that preserve target behaviors while enabling strong reversion when triggered by SFT-Eraser. Ablations further establish that the sparse structure is the key precondition for reversal: the same trigger optimization fails on standard SFT models, confirming that structure rather than trigger design is the operative factor. These results provide direct evidence that the learned carriers are causally necessary for the behaviors, pointing to a new direction for systematically localizing and selectively suppressing SFT-induced behaviors in deployed models.",
+      "summary": "Supervised fine-tuning (SFT) induces new behaviors in large language models, yet imposes no structural constraint on how these behaviors are distributed within the model. Existing behavior interpretation methods, such as circuit attribution approaches, identify sparse subnetworks correlated with SFT-induced behaviors post-hoc. However, such correlations do not imply *causal necessity*, limiting the ability to selectively control SFT-induced behaviors at inference time. We pursue an alternative by asking: can an SFT-induced behavior be deliberately compressed into a sparse, mechanistically necessary subnetwork, termed a *carrier*, while remaining controllable at inference time without weight modification? We propose (a) **Loss-Constrained Dual Descent (LCDD)**, which constructs such carriers by jointly optimizing routing masks and model weights under an explicit utility budget, and (b) **SFT-Eraser**, a soft prompt optimized via activation matching on extracted carrier channels, to reverse the SFT-induced behavior. Across safety, fixed-response, and style behaviors on multiple model families, LCDD yields sparse carriers that preserve target behaviors while enabling strong reversion when triggered by SFT-Eraser. Ablations further establish that the sparse structure is the key precondition for reversal: the same trigger optimization fails on standard SFT models, confirming that structure rather than trigger design is the operative factor. These results provide direct evidence that the learned carriers are causally necessary for the behaviors, pointing to a new direction for systematically localizing and selectively suppressing SFT-induced behaviors in deployed models.",
+      "abstract": "Supervised fine-tuning (SFT) induces new behaviors in large language models, yet imposes no structural constraint on how these behaviors are distributed within the model. Existing behavior interpretation methods, such as circuit attribution approaches, identify sparse subnetworks correlated with SFT-induced behaviors post-hoc. However, such correlations do not imply *causal necessity*, limiting the ability to selectively control SFT-induced behaviors at inference time. We pursue an alternative by asking: can an SFT-induced behavior be deliberately compressed into a sparse, mechanistically necessary subnetwork, termed a *carrier*, while remaining controllable at inference time without weight modification? We propose (a) **Loss-Constrained Dual Descent (LCDD)**, which constructs such carriers by jointly optimizing routing masks and model weights under an explicit utility budget, and (b) **SFT-Eraser**, a soft prompt optimized via activation matching on extracted carrier channels, to reverse the SFT-induced behavior. Across safety, fixed-response, and style behaviors on multiple model families, LCDD yields sparse carriers that preserve target behaviors while enabling strong reversion when triggered by SFT-Eraser. Ablations further establish that the sparse structure is the key precondition for reversal: the same trigger optimization fails on standard SFT models, confirming that structure rather than trigger design is the operative factor. These results provide direct evidence that the learned carriers are causally necessary for the behaviors, pointing to a new direction for systematically localizing and selectively suppressing SFT-induced behaviors in deployed models.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06632",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "This work proposes to embed SFT-induced behaviors into sparse, causally necessary sub-networks (carriers) and reverse them at inference via an optimized soft prompt. It demonstrates strong reversibility on safety and style tasks, offering a practical mechanism for real-time behavior control in deployed LLMs, directly impacting AI product safety and customization.",
+        "one_sentence_summary": "提出通过联合优化路由掩码和模型权重将SFT诱导的行为压缩为稀疏、因果必要的子网络，并利用激活匹配优化的软提示在推理时实现行为逆转，在安全与风格任务上验证了可控性，为部署模型的实时行为管理提供新方案。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "This work proposes to embed SFT-induced behaviors into sparse, causally necessary sub-networks (carriers) and reverse them at inference via an optimized soft prompt. It demonstrates strong reversibility on safety and style tasks, offering a practical mechanism for real-time behavior control in deployed LLMs, directly impacting AI product safety and customization.",
+      "one_sentence_summary": "提出通过联合优化路由掩码和模型权重将SFT诱导的行为压缩为稀疏、因果必要的子网络，并利用激活匹配优化的软提示在推理时实现行为逆转，在安全与风格任务上验证了可控性，为部署模型的实时行为管理提供新方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06608",
+      "arxiv_id": "2605.06608",
+      "title": "DARTS: Targeting Prognostic Covariates in Budget-Constrained Sequential Experiments",
+      "url": "https://arxiv.org/abs/2605.06608",
+      "published_at": "2026-05-07T17:27:51Z",
+      "publish_date": "2026-05-07",
+      "description": "Randomized controlled trials typically assume that prognostic covariates are known and available at no cost. In practice, obtaining high-dimensional pretreatment data is costly, forcing a trade-off between covariate-adaptive precision and a measurement budget. We introduce Dynamic Adaptive Rerandomization via Thompson Sampling (DARTS), which treats covariate acquisition as a sequential optimization problem embedded within a design-based causal inference task. A budgeted combinatorial Thompson sampler learns which covariates are most prognostic across successive batches; selected covariates then drive rerandomization and regression adjustment to reduce batch-level average treatment effect variance. Our primary theoretical contribution is a decoupling result: adaptive covariate selection based on past batches preserves batch-level randomization validity, and the cumulative inverse-variance weighted estimator achieves at least nominal asymptotic coverage. We further derive a Bayes risk bound for the acquisition layer that matches the minimax lower bound up to logarithmic factors. Empirically, DARTS systematically concentrates the budget on informative features, significantly closing the efficiency gap to oracle designs while maintaining strict inferential validity.",
+      "summary": "Randomized controlled trials typically assume that prognostic covariates are known and available at no cost. In practice, obtaining high-dimensional pretreatment data is costly, forcing a trade-off between covariate-adaptive precision and a measurement budget. We introduce Dynamic Adaptive Rerandomization via Thompson Sampling (DARTS), which treats covariate acquisition as a sequential optimization problem embedded within a design-based causal inference task. A budgeted combinatorial Thompson sampler learns which covariates are most prognostic across successive batches; selected covariates then drive rerandomization and regression adjustment to reduce batch-level average treatment effect variance. Our primary theoretical contribution is a decoupling result: adaptive covariate selection based on past batches preserves batch-level randomization validity, and the cumulative inverse-variance weighted estimator achieves at least nominal asymptotic coverage. We further derive a Bayes risk bound for the acquisition layer that matches the minimax lower bound up to logarithmic factors. Empirically, DARTS systematically concentrates the budget on informative features, significantly closing the efficiency gap to oracle designs while maintaining strict inferential validity.",
+      "abstract": "Randomized controlled trials typically assume that prognostic covariates are known and available at no cost. In practice, obtaining high-dimensional pretreatment data is costly, forcing a trade-off between covariate-adaptive precision and a measurement budget. We introduce Dynamic Adaptive Rerandomization via Thompson Sampling (DARTS), which treats covariate acquisition as a sequential optimization problem embedded within a design-based causal inference task. A budgeted combinatorial Thompson sampler learns which covariates are most prognostic across successive batches; selected covariates then drive rerandomization and regression adjustment to reduce batch-level average treatment effect variance. Our primary theoretical contribution is a decoupling result: adaptive covariate selection based on past batches preserves batch-level randomization validity, and the cumulative inverse-variance weighted estimator achieves at least nominal asymptotic coverage. We further derive a Bayes risk bound for the acquisition layer that matches the minimax lower bound up to logarithmic factors. Empirically, DARTS systematically concentrates the budget on informative features, significantly closing the efficiency gap to oracle designs while maintaining strict inferential validity.",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "api_categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06608",
+        "score_detail": {
+          "application_relevance": 14,
+          "new_signal": 18,
+          "engineering_utility": 16,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "This paper introduces an adaptive experimental design method that treats covariate acquisition as a sequential optimization problem, using Thompson sampling to select informative features under budget constraints. It provides theoretical guarantees and empirical efficiency gains, offering a practical tool for cost-effective A/B testing in AI product development.",
+        "one_sentence_summary": "将协变量获取视为序贯优化问题，提出基于汤普森采样的动态自适应重随机化方法，在预算限制下选择最预后特征以降低因果效应方差，在实验中显著逼近理想设计的效率并保持推断有效性。"
+      },
+      "score_detail": {
+        "application_relevance": 14,
+        "new_signal": 18,
+        "engineering_utility": 16,
+        "timeliness_rarity": 15
+      },
+      "score_total": 63,
+      "score_reason": "This paper introduces an adaptive experimental design method that treats covariate acquisition as a sequential optimization problem, using Thompson sampling to select informative features under budget constraints. It provides theoretical guarantees and empirical efficiency gains, offering a practical tool for cost-effective A/B testing in AI product development.",
+      "one_sentence_summary": "将协变量获取视为序贯优化问题，提出基于汤普森采样的动态自适应重随机化方法，在预算限制下选择最预后特征以降低因果效应方差，在实验中显著逼近理想设计的效率并保持推断有效性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.06595",
+      "arxiv_id": "2605.06595",
+      "title": "Cross-Modal Navigation with Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.06595",
+      "published_at": "2026-05-07T17:20:34Z",
+      "publish_date": "2026-05-07",
+      "description": "Robust embodied navigation relies on complementary sensory cues. However, high-quality and well-aligned multi-modal data is often difficult to obtain in practice. Training a monolithic model is also challenging as rich multi-modal inputs induce complex representations and substantially enlarge the policy space. Cross-modal collaboration among lightweight modality-specialized agents offers a scalable paradigm. It enables flexible deployment and parallel execution, while preserving the strength of each modality. In this paper, we propose \\textbf{CRONA}, a Multi-Agent Reinforcement Learning (MARL) framework for \\textbf{Cro}ss-Modal \\textbf{Na}vigation. CRONA improves collaboration by leveraging control-relevant auxiliary beliefs and a centralized multi-modal critic with global state. Experiments on visual-acoustic navigation tasks show that multi-agent methods significantly improve performance and efficiency over single-agent baselines. We find that homogeneous collaboration with limited modalities is sufficient for short-range navigation under salient cues; heterogeneous collaboration among agents with complementary modalities is generally efficient and effective; and navigation in large, complex environments requires both richer multi-modal perception and increased model capacity.",
+      "summary": "Robust embodied navigation relies on complementary sensory cues. However, high-quality and well-aligned multi-modal data is often difficult to obtain in practice. Training a monolithic model is also challenging as rich multi-modal inputs induce complex representations and substantially enlarge the policy space. Cross-modal collaboration among lightweight modality-specialized agents offers a scalable paradigm. It enables flexible deployment and parallel execution, while preserving the strength of each modality. In this paper, we propose \\textbf{CRONA}, a Multi-Agent Reinforcement Learning (MARL) framework for \\textbf{Cro}ss-Modal \\textbf{Na}vigation. CRONA improves collaboration by leveraging control-relevant auxiliary beliefs and a centralized multi-modal critic with global state. Experiments on visual-acoustic navigation tasks show that multi-agent methods significantly improve performance and efficiency over single-agent baselines. We find that homogeneous collaboration with limited modalities is sufficient for short-range navigation under salient cues; heterogeneous collaboration among agents with complementary modalities is generally efficient and effective; and navigation in large, complex environments requires both richer multi-modal perception and increased model capacity.",
+      "abstract": "Robust embodied navigation relies on complementary sensory cues. However, high-quality and well-aligned multi-modal data is often difficult to obtain in practice. Training a monolithic model is also challenging as rich multi-modal inputs induce complex representations and substantially enlarge the policy space. Cross-modal collaboration among lightweight modality-specialized agents offers a scalable paradigm. It enables flexible deployment and parallel execution, while preserving the strength of each modality. In this paper, we propose \\textbf{CRONA}, a Multi-Agent Reinforcement Learning (MARL) framework for \\textbf{Cro}ss-Modal \\textbf{Na}vigation. CRONA improves collaboration by leveraging control-relevant auxiliary beliefs and a centralized multi-modal critic with global state. Experiments on visual-acoustic navigation tasks show that multi-agent methods significantly improve performance and efficiency over single-agent baselines. We find that homogeneous collaboration with limited modalities is sufficient for short-range navigation under salient cues; heterogeneous collaboration among agents with complementary modalities is generally efficient and effective; and navigation in large, complex environments requires both richer multi-modal perception and increased model capacity.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06595",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 18,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文提出多智能体强化学习框架CRONA用于跨模态导航，通过轻量级模态专用代理协作提升效率和可扩展性，实验验证了同质和异质协作在不同场景下的优势，工程实现性强。",
+        "one_sentence_summary": "CRONA框架通过多智能体强化学习实现视觉-声学跨模态导航，利用辅助信念和集中式多模态评论家增强协作，实验表明轻量级代理协作在短距离和大规模环境中均比单体模型更高效、更灵活。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 18,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "论文提出多智能体强化学习框架CRONA用于跨模态导航，通过轻量级模态专用代理协作提升效率和可扩展性，实验验证了同质和异质协作在不同场景下的优势，工程实现性强。",
+      "one_sentence_summary": "CRONA框架通过多智能体强化学习实现视觉-声学跨模态导航，利用辅助信念和集中式多模态评论家增强协作，实验表明轻量级代理协作在短距离和大规模环境中均比单体模型更高效、更灵活。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06592",
+      "arxiv_id": "2605.06592",
+      "title": "DINORANKCLIP: DINOv3 Distillation and Injection for Vision-Language Pretraining with High-Order Ranking Consistency",
+      "url": "https://arxiv.org/abs/2605.06592",
+      "published_at": "2026-05-07T17:19:52Z",
+      "publish_date": "2026-05-07",
+      "description": "Contrastive language-image pretraining (CLIP) suffers from two structural weaknesses: the symmetric InfoNCE loss discards the relative ordering among unmatched in-batch pairs, and global pooling collapses the visual representation into a semantic bottleneck that is poorly sensitive to fine-grained local structure. RANKCLIP partially addresses the first issue with a list-wise Plackett-Luce ranking-consistency loss, but its model is strictly first-order and inherits the second weakness untouched. We propose DINORANKCLIP, a pretraining framework that addresses both jointly. Our principal contribution is injecting a frozen DINOv3 teacher into the contrastive trunk through a dual-branch lightweight student and a multi-scale fusion module with channel-spatial attention, a self-attention refiner, and a conflict-aware gate that preserves the cross-modal alignment up to first order. Complementarily, we introduce a high-order Plackett-Luce ranking model in which the per-position utility is augmented with attention-parameterised pairwise and tuple-wise transition terms; the family contains CLIP and RANKCLIP as nested zero-order and first-order special cases, and the optimal order on every benchmark is $R^*=3$. The full empirical study -- order sweep, Fine-grained Probe on five datasets, four-node Modality-Gap analysis, six-variant Fusion ablation -- fits in 72 hours on a single eight-GPU H100 node and trains entirely on Conceptual Captions 3M. DINORANKCLIP consistently outperforms CLIP, CyCLIP, ALIP, and RANKCLIP under matched compute, with the largest relative gains on the fine-grained and out-of-distribution evaluations that most directly stress local structural reasoning.",
+      "summary": "Contrastive language-image pretraining (CLIP) suffers from two structural weaknesses: the symmetric InfoNCE loss discards the relative ordering among unmatched in-batch pairs, and global pooling collapses the visual representation into a semantic bottleneck that is poorly sensitive to fine-grained local structure. RANKCLIP partially addresses the first issue with a list-wise Plackett-Luce ranking-consistency loss, but its model is strictly first-order and inherits the second weakness untouched. We propose DINORANKCLIP, a pretraining framework that addresses both jointly. Our principal contribution is injecting a frozen DINOv3 teacher into the contrastive trunk through a dual-branch lightweight student and a multi-scale fusion module with channel-spatial attention, a self-attention refiner, and a conflict-aware gate that preserves the cross-modal alignment up to first order. Complementarily, we introduce a high-order Plackett-Luce ranking model in which the per-position utility is augmented with attention-parameterised pairwise and tuple-wise transition terms; the family contains CLIP and RANKCLIP as nested zero-order and first-order special cases, and the optimal order on every benchmark is $R^*=3$. The full empirical study -- order sweep, Fine-grained Probe on five datasets, four-node Modality-Gap analysis, six-variant Fusion ablation -- fits in 72 hours on a single eight-GPU H100 node and trains entirely on Conceptual Captions 3M. DINORANKCLIP consistently outperforms CLIP, CyCLIP, ALIP, and RANKCLIP under matched compute, with the largest relative gains on the fine-grained and out-of-distribution evaluations that most directly stress local structural reasoning.",
+      "abstract": "Contrastive language-image pretraining (CLIP) suffers from two structural weaknesses: the symmetric InfoNCE loss discards the relative ordering among unmatched in-batch pairs, and global pooling collapses the visual representation into a semantic bottleneck that is poorly sensitive to fine-grained local structure. RANKCLIP partially addresses the first issue with a list-wise Plackett-Luce ranking-consistency loss, but its model is strictly first-order and inherits the second weakness untouched. We propose DINORANKCLIP, a pretraining framework that addresses both jointly. Our principal contribution is injecting a frozen DINOv3 teacher into the contrastive trunk through a dual-branch lightweight student and a multi-scale fusion module with channel-spatial attention, a self-attention refiner, and a conflict-aware gate that preserves the cross-modal alignment up to first order. Complementarily, we introduce a high-order Plackett-Luce ranking model in which the per-position utility is augmented with attention-parameterised pairwise and tuple-wise transition terms; the family contains CLIP and RANKCLIP as nested zero-order and first-order special cases, and the optimal order on every benchmark is $R^*=3$. The full empirical study -- order sweep, Fine-grained Probe on five datasets, four-node Modality-Gap analysis, six-variant Fusion ablation -- fits in 72 hours on a single eight-GPU H100 node and trains entirely on Conceptual Captions 3M. DINORANKCLIP consistently outperforms CLIP, CyCLIP, ALIP, and RANKCLIP under matched compute, with the largest relative gains on the fine-grained and out-of-distribution evaluations that most directly stress local structural reasoning.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06592",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "DINORANKCLIP改进了CLIP的排序损失和局部结构推理，对多模态产品有启发；高阶排名与DINOv3蒸馏引入新信号；可在有限资源下复现，工程可用性较高；但排序优化方向并非近期最前沿，稀有度一般。",
+        "one_sentence_summary": "DINORANKCLIP提出高阶Plackett-Luce排序一致损失和冻结DINOv3教师蒸馏的多尺度融合模块，在Conceptual Captions 3M上训练，显著提升CLIP在细粒度和分布外评测上的局部结构推理性能。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 15
+      },
+      "score_total": 71,
+      "score_reason": "DINORANKCLIP改进了CLIP的排序损失和局部结构推理，对多模态产品有启发；高阶排名与DINOv3蒸馏引入新信号；可在有限资源下复现，工程可用性较高；但排序优化方向并非近期最前沿，稀有度一般。",
+      "one_sentence_summary": "DINORANKCLIP提出高阶Plackett-Luce排序一致损失和冻结DINOv3教师蒸馏的多尺度融合模块，在Conceptual Captions 3M上训练，显著提升CLIP在细粒度和分布外评测上的局部结构推理性能。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06570",
+      "arxiv_id": "2605.06570",
+      "title": "SNAPO: Smooth Neural Adjoint Policy Optimization for Optimal Control via Differentiable Simulation",
+      "url": "https://arxiv.org/abs/2605.06570",
+      "published_at": "2026-05-07T17:01:13Z",
+      "publish_date": "2026-05-07",
+      "description": "Many real-world problems require sequential decisions under uncertainty: when to inject or withdraw gas from storage, how to rebalance a pension portfolio each month, what temperature profile to run through a pharmaceutical reactor chain. Dynamic programming solves small instances exactly but scales exponentially in state dimensions. Black-box reinforcement learning handles high-dimensional states but trains slowly and produces no sensitivities. We introduce SNAPO (Smooth Neural Adjoint Policy Optimization), a framework that embeds a neural policy inside a known, differentiable simulator, replaces hard constraints with smooth approximations, and computes exact gradients of the objective with respect to all policy parameters and all inputs in a single adjoint pass. We demonstrate SNAPO on three domains: natural gas storage (training in under a minute, 365 forward curve sensitivities at no additional cost per sensitivity), pension fund asset-liability management (6.5x-200x sensitivity speedup over bump-and-revalue, scaling with the number of risk factors), and pharmaceutical manufacturing (cross-unit sensitivities through a 4-unit process chain, with 20 ICH Q8 regulatory sensitivities from 5 adjoint passes in 74.5 milliseconds). All sensitivities are produced by the same backward pass that trains the policy, at a cost proportional to one reverse pass regardless of how many sensitivities are computed.",
+      "summary": "Many real-world problems require sequential decisions under uncertainty: when to inject or withdraw gas from storage, how to rebalance a pension portfolio each month, what temperature profile to run through a pharmaceutical reactor chain. Dynamic programming solves small instances exactly but scales exponentially in state dimensions. Black-box reinforcement learning handles high-dimensional states but trains slowly and produces no sensitivities. We introduce SNAPO (Smooth Neural Adjoint Policy Optimization), a framework that embeds a neural policy inside a known, differentiable simulator, replaces hard constraints with smooth approximations, and computes exact gradients of the objective with respect to all policy parameters and all inputs in a single adjoint pass. We demonstrate SNAPO on three domains: natural gas storage (training in under a minute, 365 forward curve sensitivities at no additional cost per sensitivity), pension fund asset-liability management (6.5x-200x sensitivity speedup over bump-and-revalue, scaling with the number of risk factors), and pharmaceutical manufacturing (cross-unit sensitivities through a 4-unit process chain, with 20 ICH Q8 regulatory sensitivities from 5 adjoint passes in 74.5 milliseconds). All sensitivities are produced by the same backward pass that trains the policy, at a cost proportional to one reverse pass regardless of how many sensitivities are computed.",
+      "abstract": "Many real-world problems require sequential decisions under uncertainty: when to inject or withdraw gas from storage, how to rebalance a pension portfolio each month, what temperature profile to run through a pharmaceutical reactor chain. Dynamic programming solves small instances exactly but scales exponentially in state dimensions. Black-box reinforcement learning handles high-dimensional states but trains slowly and produces no sensitivities. We introduce SNAPO (Smooth Neural Adjoint Policy Optimization), a framework that embeds a neural policy inside a known, differentiable simulator, replaces hard constraints with smooth approximations, and computes exact gradients of the objective with respect to all policy parameters and all inputs in a single adjoint pass. We demonstrate SNAPO on three domains: natural gas storage (training in under a minute, 365 forward curve sensitivities at no additional cost per sensitivity), pension fund asset-liability management (6.5x-200x sensitivity speedup over bump-and-revalue, scaling with the number of risk factors), and pharmaceutical manufacturing (cross-unit sensitivities through a 4-unit process chain, with 20 ICH Q8 regulatory sensitivities from 5 adjoint passes in 74.5 milliseconds). All sensitivities are produced by the same backward pass that trains the policy, at a cost proportional to one reverse pass regardless of how many sensitivities are computed.",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "q-fin.CP",
+        "q-fin.MF",
+        "q-fin.RM"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "math.OC",
+        "q-fin.CP",
+        "q-fin.MF",
+        "q-fin.RM"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06570",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "SNAPO框架将神经网络策略嵌入可微仿真器，通过平滑约束和伴随方法高效计算精确梯度和敏感度，在天然气存储、养老金管理和制药制造中验证快速训练和多敏感度生成，工程价值高。",
+        "one_sentence_summary": "SNAPO框架将神经网络策略与可微仿真器结合，用平滑逼近替代硬约束，通过一次伴随传递计算所有策略参数和目标函数的精确梯度，在天然气存储、养老金资产管理和制药反应链控制中实现了秒级训练和毫秒级敏感度计算。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "SNAPO框架将神经网络策略嵌入可微仿真器，通过平滑约束和伴随方法高效计算精确梯度和敏感度，在天然气存储、养老金管理和制药制造中验证快速训练和多敏感度生成，工程价值高。",
+      "one_sentence_summary": "SNAPO框架将神经网络策略与可微仿真器结合，用平滑逼近替代硬约束，通过一次伴随传递计算所有策略参数和目标函数的精确梯度，在天然气存储、养老金资产管理和制药反应链控制中实现了秒级训练和毫秒级敏感度计算。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06564",
+      "arxiv_id": "2605.06564",
+      "title": "Dynamic Treatment on Networks",
+      "url": "https://arxiv.org/abs/2605.06564",
+      "published_at": "2026-05-07T16:58:38Z",
+      "publish_date": "2026-05-07",
+      "description": "In networks, effective dynamic treatment allocation requires deciding both whom to treat and also when, so as to amplify policy impact through spillovers. An early intervention at a well-connected node can trigger cascades that change which nodes are worth targeting in the next period. Existing treatment strategies under network interference are largely static while dynamic treatment frameworks typically ignore network structure altogether. We integrate these perspectives and propose Q-Ising, a three-stage pipeline that (i) estimates network adoption dynamics via a Bayesian dynamic Ising model from a single observed panel, (ii) augments treatment adoption histories with continuous posterior latent states, and (iii) learns a dynamic policy via offline reinforcement learning. The Bayesian mechanism enables uncertainty quantification over dynamic decisions, yielding posterior ensemble policies with interpretable spillover estimates. We provide a finite-sample regret upper bound that decomposes into standard offline-RL uncertainty, network abstraction error, and first stage error in Ising state estimation. We apply our method to data from Indian village microfinance networks and synthetic stochastic block models under simulated heterogeneous susceptible-infected-susceptible (SIS) dynamics and demonstrate that adaptive targeting outperforms static centrality benchmarks.",
+      "summary": "In networks, effective dynamic treatment allocation requires deciding both whom to treat and also when, so as to amplify policy impact through spillovers. An early intervention at a well-connected node can trigger cascades that change which nodes are worth targeting in the next period. Existing treatment strategies under network interference are largely static while dynamic treatment frameworks typically ignore network structure altogether. We integrate these perspectives and propose Q-Ising, a three-stage pipeline that (i) estimates network adoption dynamics via a Bayesian dynamic Ising model from a single observed panel, (ii) augments treatment adoption histories with continuous posterior latent states, and (iii) learns a dynamic policy via offline reinforcement learning. The Bayesian mechanism enables uncertainty quantification over dynamic decisions, yielding posterior ensemble policies with interpretable spillover estimates. We provide a finite-sample regret upper bound that decomposes into standard offline-RL uncertainty, network abstraction error, and first stage error in Ising state estimation. We apply our method to data from Indian village microfinance networks and synthetic stochastic block models under simulated heterogeneous susceptible-infected-susceptible (SIS) dynamics and demonstrate that adaptive targeting outperforms static centrality benchmarks.",
+      "abstract": "In networks, effective dynamic treatment allocation requires deciding both whom to treat and also when, so as to amplify policy impact through spillovers. An early intervention at a well-connected node can trigger cascades that change which nodes are worth targeting in the next period. Existing treatment strategies under network interference are largely static while dynamic treatment frameworks typically ignore network structure altogether. We integrate these perspectives and propose Q-Ising, a three-stage pipeline that (i) estimates network adoption dynamics via a Bayesian dynamic Ising model from a single observed panel, (ii) augments treatment adoption histories with continuous posterior latent states, and (iii) learns a dynamic policy via offline reinforcement learning. The Bayesian mechanism enables uncertainty quantification over dynamic decisions, yielding posterior ensemble policies with interpretable spillover estimates. We provide a finite-sample regret upper bound that decomposes into standard offline-RL uncertainty, network abstraction error, and first stage error in Ising state estimation. We apply our method to data from Indian village microfinance networks and synthetic stochastic block models under simulated heterogeneous susceptible-infected-susceptible (SIS) dynamics and demonstrate that adaptive targeting outperforms static centrality benchmarks.",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06564",
+        "score_detail": {
+          "application_relevance": 12,
+          "new_signal": 18,
+          "engineering_utility": 15,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "动态网络干预结合了动态分配和网络结构，方法新颖；在微金融场景有应用潜力，但对通用AI产品启发有限；实现复杂度高，集成难度中等；网络干预与因果推断是近期热点，方向较新。",
+        "one_sentence_summary": "论文提出Q-Ising管道，利用贝叶斯动态Ising模型估计网络采纳动态，结合离线强化学习训练自适应干预策略，在印度微金融网络数据上验证其优于静态中心性基准。"
+      },
+      "score_detail": {
+        "application_relevance": 12,
+        "new_signal": 18,
+        "engineering_utility": 15,
+        "timeliness_rarity": 17
+      },
+      "score_total": 62,
+      "score_reason": "动态网络干预结合了动态分配和网络结构，方法新颖；在微金融场景有应用潜力，但对通用AI产品启发有限；实现复杂度高，集成难度中等；网络干预与因果推断是近期热点，方向较新。",
+      "one_sentence_summary": "论文提出Q-Ising管道，利用贝叶斯动态Ising模型估计网络采纳动态，结合离线强化学习训练自适应干预策略，在印度微金融网络数据上验证其优于静态中心性基准。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.06510",
+      "arxiv_id": "2605.06510",
+      "title": "Is One Layer Enough? Understanding Inference Dynamics in Tabular Foundation Models",
+      "url": "https://arxiv.org/abs/2605.06510",
+      "published_at": "2026-05-07T16:22:04Z",
+      "publish_date": "2026-05-07",
+      "description": "Transformer-based tabular foundation models (TFMs) dominate small to medium tabular predictive benchmark tasks, yet their inference mechanisms remain largely unexplored. We present the first large-scale mechanistic study of layerwise dynamics in 6 state-of-the-art tabular in-context learning models. We explore how predictions emerge across depth, identify distinct stages of inference and reveal latent-space dynamics that differ from those of language models. Our findings indicate substantial depthwise redundancy across multiple models, suggesting iterative refinement with overlapping computations during inference stages. Guided by these insights, we design a proof-of-concept, looped single-layer model that uses only 20% of the original model's parameters while achieving comparable performance. The code is available at https://github.com/amirbalef/is_one_layer_enough.",
+      "summary": "Transformer-based tabular foundation models (TFMs) dominate small to medium tabular predictive benchmark tasks, yet their inference mechanisms remain largely unexplored. We present the first large-scale mechanistic study of layerwise dynamics in 6 state-of-the-art tabular in-context learning models. We explore how predictions emerge across depth, identify distinct stages of inference and reveal latent-space dynamics that differ from those of language models. Our findings indicate substantial depthwise redundancy across multiple models, suggesting iterative refinement with overlapping computations during inference stages. Guided by these insights, we design a proof-of-concept, looped single-layer model that uses only 20% of the original model's parameters while achieving comparable performance. The code is available at https://github.com/amirbalef/is_one_layer_enough.",
+      "abstract": "Transformer-based tabular foundation models (TFMs) dominate small to medium tabular predictive benchmark tasks, yet their inference mechanisms remain largely unexplored. We present the first large-scale mechanistic study of layerwise dynamics in 6 state-of-the-art tabular in-context learning models. We explore how predictions emerge across depth, identify distinct stages of inference and reveal latent-space dynamics that differ from those of language models. Our findings indicate substantial depthwise redundancy across multiple models, suggesting iterative refinement with overlapping computations during inference stages. Guided by these insights, we design a proof-of-concept, looped single-layer model that uses only 20% of the original model's parameters while achieving comparable performance. The code is available at https://github.com/amirbalef/is_one_layer_enough.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06510",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "层动态分析揭示表格基础模型冗余，直接推动模型压缩与高效部署，高度相关AI产品工程；首次大规模研究动态阶段，信号新颖；提供循环单层概念验证及代码，可快速集成；模型效率是当前热门，恰逢其时。",
+        "one_sentence_summary": "论文首次系统分析六种表格基础模型的每层推理动态，发现深度冗余，设计循环单层模型仅用20%参数达到可比性能，并开源代码，有望简化表格AI产品的部署。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 89,
+      "score_reason": "层动态分析揭示表格基础模型冗余，直接推动模型压缩与高效部署，高度相关AI产品工程；首次大规模研究动态阶段，信号新颖；提供循环单层概念验证及代码，可快速集成；模型效率是当前热门，恰逢其时。",
+      "one_sentence_summary": "论文首次系统分析六种表格基础模型的每层推理动态，发现深度冗余，设计循环单层模型仅用20%参数达到可比性能，并开源代码，有望简化表格AI产品的部署。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.06507",
+      "arxiv_id": "2605.06507",
+      "title": "MARBLE: Multi-Aspect Reward Balance for Diffusion RL",
+      "url": "https://arxiv.org/abs/2605.06507",
+      "published_at": "2026-05-07T16:20:42Z",
+      "publish_date": "2026-05-07",
+      "description": "Reinforcement learning fine-tuning has become the dominant approach for aligning diffusion models with human preferences. However, assessing images is intrinsically a multi-dimensional task, and multiple evaluation criteria need to be optimized simultaneously. Existing practice deal with multiple rewards by training one specialist model per reward, optimizing a weighted-sum reward $R(x)=\\sum_k w_k R_k(x)$, or sequentially fine-tuning with a hand-crafted stage schedule. These approaches either fail to produce a unified model that can be jointly trained on all rewards or necessitates heavy manually tuned sequential training. We find that the failure stems from using a naive weighted-sum reward aggregation. This approach suffers from a sample-level mismatch because most rollouts are specialist samples, highly informative for certain reward dimensions but irrelevant for others; consequently, weighted summation dilutes their supervision. To address this issue, we propose MARBLE (Multi-Aspect Reward BaLancE), a gradient-space optimization framework that maintains independent advantage estimators for each reward, computes per-reward policy gradients, and harmonizes them into a single update direction without manually-tuned reward weighting, by solving a Quadratic Programming problem. We further propose an amortized formulation that exploits the affine structure of the loss used in DiffusionNFT, to reduce the per-step cost from K+1 backward passes to near single-reward baseline cost, together with EMA smoothing on the balancing coefficients to stabilize updates against transient single-batch fluctuations. On SD3.5 Medium with five rewards, MARBLE improves all five reward dimensions simultaneously, turns the worst-aligned reward's gradient cosine from negative under weighted summation in 80% of mini-batches to consistently positive, and runs at 0.97X the training speed of baseline training.",
+      "summary": "Reinforcement learning fine-tuning has become the dominant approach for aligning diffusion models with human preferences. However, assessing images is intrinsically a multi-dimensional task, and multiple evaluation criteria need to be optimized simultaneously. Existing practice deal with multiple rewards by training one specialist model per reward, optimizing a weighted-sum reward $R(x)=\\sum_k w_k R_k(x)$, or sequentially fine-tuning with a hand-crafted stage schedule. These approaches either fail to produce a unified model that can be jointly trained on all rewards or necessitates heavy manually tuned sequential training. We find that the failure stems from using a naive weighted-sum reward aggregation. This approach suffers from a sample-level mismatch because most rollouts are specialist samples, highly informative for certain reward dimensions but irrelevant for others; consequently, weighted summation dilutes their supervision. To address this issue, we propose MARBLE (Multi-Aspect Reward BaLancE), a gradient-space optimization framework that maintains independent advantage estimators for each reward, computes per-reward policy gradients, and harmonizes them into a single update direction without manually-tuned reward weighting, by solving a Quadratic Programming problem. We further propose an amortized formulation that exploits the affine structure of the loss used in DiffusionNFT, to reduce the per-step cost from K+1 backward passes to near single-reward baseline cost, together with EMA smoothing on the balancing coefficients to stabilize updates against transient single-batch fluctuations. On SD3.5 Medium with five rewards, MARBLE improves all five reward dimensions simultaneously, turns the worst-aligned reward's gradient cosine from negative under weighted summation in 80% of mini-batches to consistently positive, and runs at 0.97X the training speed of baseline training.",
+      "abstract": "Reinforcement learning fine-tuning has become the dominant approach for aligning diffusion models with human preferences. However, assessing images is intrinsically a multi-dimensional task, and multiple evaluation criteria need to be optimized simultaneously. Existing practice deal with multiple rewards by training one specialist model per reward, optimizing a weighted-sum reward $R(x)=\\sum_k w_k R_k(x)$, or sequentially fine-tuning with a hand-crafted stage schedule. These approaches either fail to produce a unified model that can be jointly trained on all rewards or necessitates heavy manually tuned sequential training. We find that the failure stems from using a naive weighted-sum reward aggregation. This approach suffers from a sample-level mismatch because most rollouts are specialist samples, highly informative for certain reward dimensions but irrelevant for others; consequently, weighted summation dilutes their supervision. To address this issue, we propose MARBLE (Multi-Aspect Reward BaLancE), a gradient-space optimization framework that maintains independent advantage estimators for each reward, computes per-reward policy gradients, and harmonizes them into a single update direction without manually-tuned reward weighting, by solving a Quadratic Programming problem. We further propose an amortized formulation that exploits the affine structure of the loss used in DiffusionNFT, to reduce the per-step cost from K+1 backward passes to near single-reward baseline cost, together with EMA smoothing on the balancing coefficients to stabilize updates against transient single-batch fluctuations. On SD3.5 Medium with five rewards, MARBLE improves all five reward dimensions simultaneously, turns the worst-aligned reward's gradient cosine from negative under weighted summation in 80% of mini-batches to consistently positive, and runs at 0.97X the training speed of baseline training.",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.06507",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "直接解决扩散模型多奖励RL微调中的奖励平衡问题，提出梯度空间解耦与二次规划方法，无需手动调权，训练速度快，对当前多目标对齐具有重要实用价值。",
+        "one_sentence_summary": "MARBLE在扩散模型强化学习中，为每个奖励保持独立优势估计，通过二次规划在梯度空间平衡多奖励更新方向，消除手动加权，在SD3.5上同时提升五项奖励指标，且训练速度接近单奖励基线。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 87,
+      "score_reason": "直接解决扩散模型多奖励RL微调中的奖励平衡问题，提出梯度空间解耦与二次规划方法，无需手动调权，训练速度快，对当前多目标对齐具有重要实用价值。",
+      "one_sentence_summary": "MARBLE在扩散模型强化学习中，为每个奖励保持独立优势估计，通过二次规划在梯度空间平衡多奖励更新方向，消除手动加权，在SD3.5上同时提升五项奖励指标，且训练速度接近单奖励基线。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-10T05:10:27.456746+00:00",
+      "pushed_at": "2026-05-10T05:10:27.456746+00:00",
+      "source_run_id": "2026-05-10",
+      "pushed_run_id": "2026-05-10"
     }
   ]
 }
