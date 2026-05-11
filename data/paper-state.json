@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-10T05:10:27.456746+00:00",
+  "updated_at": "2026-05-11T05:40:13.935326+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -2276,6 +2276,565 @@
       "pushed_at": "2026-05-10T05:10:27.456746+00:00",
       "source_run_id": "2026-05-10",
       "pushed_run_id": "2026-05-10"
+    },
+    {
+      "id": "arxiv:2605.08083",
+      "arxiv_id": "2605.08083",
+      "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+      "url": "https://arxiv.org/abs/2605.08083",
+      "published_at": "2026-05-08T17:59:40Z",
+      "publish_date": "2026-05-08",
+      "description": "Test-time scaling (TTS) has become an effective approach for improving large language model performance by allocating additional computation during inference. However, existing TTS strategies are largely hand-crafted: researchers manually design reasoning patterns and tune heuristics by intuition, leaving much of the computation-allocation space unexplored. We propose an environment-driven framework, AutoTTS, that changes what researchers design: from individual TTS heuristics to environments where TTS strategies can be discovered automatically. The key to AutoTTS lies in environment construction: the discovery environment must make the control space tractable and provide cheap, frequent feedback for TTS search. As a concrete instantiation, we formulate width--depth TTS as controller synthesis over pre-collected reasoning trajectories and probe signals, where controllers decide when to branch, continue, probe, prune, or stop and can be evaluated cheaply without repeated LLM calls. We further introduce beta parameterization to make the search tractable and fine-grained execution trace feedback to improve discovery efficiency by helping the agent diagnose why a TTS program fails. Experiments on mathematical reasoning benchmarks show that the discovered strategies improve the overall accuracy--cost tradeoff over strong manually designed baselines. The discovered strategies generalize to held-out benchmarks and model scales, while the entire discovery costs only $39.9 and 160 minutes. Our data, and code will be open-source at https://github.com/zhengkid/AutoTTS.",
+      "summary": "Test-time scaling (TTS) has become an effective approach for improving large language model performance by allocating additional computation during inference. However, existing TTS strategies are largely hand-crafted: researchers manually design reasoning patterns and tune heuristics by intuition, leaving much of the computation-allocation space unexplored. We propose an environment-driven framework, AutoTTS, that changes what researchers design: from individual TTS heuristics to environments where TTS strategies can be discovered automatically. The key to AutoTTS lies in environment construction: the discovery environment must make the control space tractable and provide cheap, frequent feedback for TTS search. As a concrete instantiation, we formulate width--depth TTS as controller synthesis over pre-collected reasoning trajectories and probe signals, where controllers decide when to branch, continue, probe, prune, or stop and can be evaluated cheaply without repeated LLM calls. We further introduce beta parameterization to make the search tractable and fine-grained execution trace feedback to improve discovery efficiency by helping the agent diagnose why a TTS program fails. Experiments on mathematical reasoning benchmarks show that the discovered strategies improve the overall accuracy--cost tradeoff over strong manually designed baselines. The discovered strategies generalize to held-out benchmarks and model scales, while the entire discovery costs only $39.9 and 160 minutes. Our data, and code will be open-source at https://github.com/zhengkid/AutoTTS.",
+      "abstract": "Test-time scaling (TTS) has become an effective approach for improving large language model performance by allocating additional computation during inference. However, existing TTS strategies are largely hand-crafted: researchers manually design reasoning patterns and tune heuristics by intuition, leaving much of the computation-allocation space unexplored. We propose an environment-driven framework, AutoTTS, that changes what researchers design: from individual TTS heuristics to environments where TTS strategies can be discovered automatically. The key to AutoTTS lies in environment construction: the discovery environment must make the control space tractable and provide cheap, frequent feedback for TTS search. As a concrete instantiation, we formulate width--depth TTS as controller synthesis over pre-collected reasoning trajectories and probe signals, where controllers decide when to branch, continue, probe, prune, or stop and can be evaluated cheaply without repeated LLM calls. We further introduce beta parameterization to make the search tractable and fine-grained execution trace feedback to improve discovery efficiency by helping the agent diagnose why a TTS program fails. Experiments on mathematical reasoning benchmarks show that the discovered strategies improve the overall accuracy--cost tradeoff over strong manually designed baselines. The discovered strategies generalize to held-out benchmarks and model scales, while the entire discovery costs only $39.9 and 160 minutes. Our data, and code will be open-source at https://github.com/zhengkid/AutoTTS.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 9
+      },
+      "score_total": 68,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向大模型能力评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是给模型、agent 或工具链提供更可复现的横向比较标准。",
+      "score_source": "rules",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.08075",
+      "arxiv_id": "2605.08075",
+      "title": "Zero-Shot Imagined Speech Decoding via Imagined-to-Listened MEG Mapping",
+      "url": "https://arxiv.org/abs/2605.08075",
+      "published_at": "2026-05-08T17:56:19Z",
+      "publish_date": "2026-05-08",
+      "description": "Decoding imagined speech from non-invasive brain recordings is challenging because imagined datasets are scarce and difficult to align temporally across subjects and sessions In this work, we propose a new approach to the decoding of imagined speech that leverages the richer and more reliably labeled recordings during listening to speech. We collected paired listened and imagined MEG recordings to rhythmic melodic and spoken stimuli from trained musicians. Using trained musicians helped improve temporal alignment across conditions. We then developed a three-stage decoding pipeline that revealed consistent and meaningful relationships between neural activity evoked by imagining and listening to the same stimuli. First, we trained six linear and neural models to map imagined MEG responses to listened responses. We evaluated these models against a null baseline from unseen subjects to validate that the predicted-listening responses preserve stimulus-specific information. In the second stage, we trained a contrastive word decoder exclusively on the listened MEG responses, and evaluated it using four embedding strategies including semantic, acoustic, and phonetic representations. In the third stage, we process the imagined MEG responses from held-out subjects through the mapping pipeline to compute the corresponding listening responses that are then decoded by the listened decoder. Using rank-based analysis, we show that the imagined words are decodable significantly above chance. We shall report here the results of a proof-of-concept implementation to decode imagined speech, where all evaluations are performed on held-out subjects. We also demonstrate that performance improves with training data size, suggesting that this approach is scalable and can directly be made applicable to realistic brain-computer interface scenarios.",
+      "summary": "Decoding imagined speech from non-invasive brain recordings is challenging because imagined datasets are scarce and difficult to align temporally across subjects and sessions In this work, we propose a new approach to the decoding of imagined speech that leverages the richer and more reliably labeled recordings during listening to speech. We collected paired listened and imagined MEG recordings to rhythmic melodic and spoken stimuli from trained musicians. Using trained musicians helped improve temporal alignment across conditions. We then developed a three-stage decoding pipeline that revealed consistent and meaningful relationships between neural activity evoked by imagining and listening to the same stimuli. First, we trained six linear and neural models to map imagined MEG responses to listened responses. We evaluated these models against a null baseline from unseen subjects to validate that the predicted-listening responses preserve stimulus-specific information. In the second stage, we trained a contrastive word decoder exclusively on the listened MEG responses, and evaluated it using four embedding strategies including semantic, acoustic, and phonetic representations. In the third stage, we process the imagined MEG responses from held-out subjects through the mapping pipeline to compute the corresponding listening responses that are then decoded by the listened decoder. Using rank-based analysis, we show that the imagined words are decodable significantly above chance. We shall report here the results of a proof-of-concept implementation to decode imagined speech, where all evaluations are performed on held-out subjects. We also demonstrate that performance improves with training data size, suggesting that this approach is scalable and can directly be made applicable to realistic brain-computer interface scenarios.",
+      "abstract": "Decoding imagined speech from non-invasive brain recordings is challenging because imagined datasets are scarce and difficult to align temporally across subjects and sessions In this work, we propose a new approach to the decoding of imagined speech that leverages the richer and more reliably labeled recordings during listening to speech. We collected paired listened and imagined MEG recordings to rhythmic melodic and spoken stimuli from trained musicians. Using trained musicians helped improve temporal alignment across conditions. We then developed a three-stage decoding pipeline that revealed consistent and meaningful relationships between neural activity evoked by imagining and listening to the same stimuli. First, we trained six linear and neural models to map imagined MEG responses to listened responses. We evaluated these models against a null baseline from unseen subjects to validate that the predicted-listening responses preserve stimulus-specific information. In the second stage, we trained a contrastive word decoder exclusively on the listened MEG responses, and evaluated it using four embedding strategies including semantic, acoustic, and phonetic representations. In the third stage, we process the imagined MEG responses from held-out subjects through the mapping pipeline to compute the corresponding listening responses that are then decoded by the listened decoder. Using rank-based analysis, we show that the imagined words are decodable significantly above chance. We shall report here the results of a proof-of-concept implementation to decode imagined speech, where all evaluations are performed on held-out subjects. We also demonstrate that performance improves with training data size, suggesting that this approach is scalable and can directly be made applicable to realistic brain-computer interface scenarios.",
+      "categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "eess.AS"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 15,
+        "engineering_utility": 14,
+        "timeliness_rarity": 9
+      },
+      "score_total": 63,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文整理一个新的数据集或任务集合，面向偏好学习、模型对齐或社会价值评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.08057",
+      "arxiv_id": "2605.08057",
+      "title": "CA-SQL: Complexity-Aware Inference Time Reasoning for Text-to-SQL via Exploration and Compute Budget Allocation",
+      "url": "https://arxiv.org/abs/2605.08057",
+      "published_at": "2026-05-08T17:44:15Z",
+      "publish_date": "2026-05-08",
+      "description": "While recent advancements in inference-time learning have improved LLM reasoning on Text-to-SQL tasks, current solutions still struggle to perform well on the most challenging tasks in the Bird-Bench (BIRD) benchmark. This is due to inadequate solution space exploration, which is necessary to uncover promising candidate queries that can be further refined to produce the correct output. To address this challenge, we introduce CA-SQL, a novel Text-to-SQL pipeline that utilizes the estimated difficulty of a task to dynamically scale the breadth of the exploration for generating solution candidates. In addition, we use a custom prompt seeding method, based on principles of evolutionary search, to further elicit exploratory behavior from the base LLM and a novel voting method to select the best candidate solution at the end of the search. Experiments demonstrate that our solution achieves a state-of-the-art score of 51.72% on the \"challenging\" tier of BIRD development set problems, using only GPT-4o-mini, out-performing other in-context learning approaches, even those that leverage larger models. Overall, our method attains a competitive 61.06% execution accuracy and 68.77% Soft F1 score on the BIRD development dataset.",
+      "summary": "While recent advancements in inference-time learning have improved LLM reasoning on Text-to-SQL tasks, current solutions still struggle to perform well on the most challenging tasks in the Bird-Bench (BIRD) benchmark. This is due to inadequate solution space exploration, which is necessary to uncover promising candidate queries that can be further refined to produce the correct output. To address this challenge, we introduce CA-SQL, a novel Text-to-SQL pipeline that utilizes the estimated difficulty of a task to dynamically scale the breadth of the exploration for generating solution candidates. In addition, we use a custom prompt seeding method, based on principles of evolutionary search, to further elicit exploratory behavior from the base LLM and a novel voting method to select the best candidate solution at the end of the search. Experiments demonstrate that our solution achieves a state-of-the-art score of 51.72% on the \"challenging\" tier of BIRD development set problems, using only GPT-4o-mini, out-performing other in-context learning approaches, even those that leverage larger models. Overall, our method attains a competitive 61.06% execution accuracy and 68.77% Soft F1 score on the BIRD development dataset.",
+      "abstract": "While recent advancements in inference-time learning have improved LLM reasoning on Text-to-SQL tasks, current solutions still struggle to perform well on the most challenging tasks in the Bird-Bench (BIRD) benchmark. This is due to inadequate solution space exploration, which is necessary to uncover promising candidate queries that can be further refined to produce the correct output. To address this challenge, we introduce CA-SQL, a novel Text-to-SQL pipeline that utilizes the estimated difficulty of a task to dynamically scale the breadth of the exploration for generating solution candidates. In addition, we use a custom prompt seeding method, based on principles of evolutionary search, to further elicit exploratory behavior from the base LLM and a novel voting method to select the best candidate solution at the end of the search. Experiments demonstrate that our solution achieves a state-of-the-art score of 51.72% on the \"challenging\" tier of BIRD development set problems, using only GPT-4o-mini, out-performing other in-context learning approaches, even those that leverage larger models. Overall, our method attains a competitive 61.06% execution accuracy and 68.77% Soft F1 score on the BIRD development dataset.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.08057",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "复杂度感知的Text-to-SQL推理管线，直接提升挑战性任务表现，方法可高效实现，对产品化SQL查询工具很有启发。",
+        "one_sentence_summary": "CA-SQL根据任务难度动态调整探索广度，结合进化提示和投票机制，在BIRD挑战子集上以GPT-4o-mini实现最佳性能。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "复杂度感知的Text-to-SQL推理管线，直接提升挑战性任务表现，方法可高效实现，对产品化SQL查询工具很有启发。",
+      "one_sentence_summary": "CA-SQL根据任务难度动态调整探索广度，结合进化提示和投票机制，在BIRD挑战子集上以GPT-4o-mini实现最佳性能。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.08029",
+      "arxiv_id": "2605.08029",
+      "title": "STARFlow2: Bridging Language Models and Normalizing Flows for Unified Multimodal Generation",
+      "url": "https://arxiv.org/abs/2605.08029",
+      "published_at": "2026-05-08T17:14:43Z",
+      "publish_date": "2026-05-08",
+      "description": "Deep generative models have advanced rapidly across text and vision, motivating unified multimodal systems that can understand, reason over, and generate interleaved text-image sequences. Most existing approaches combine autoregressive language modeling with diffusion-based image generators, inheriting a structural mismatch between causal text generation and iterative visual denoising. We observe that autoregressive normalizing flows are autoregressive Transformers--sharing the same causal mask, KV-cache mechanism, and left-to-right structure as LLMs--making them the most natural paradigm for true unified multimodal generation. We present STARFlow2, built on the Pretzel architecture that vertically interleaves a pretrained VLM stream with a TarFlow stream via residual skip connections, both operating under the same causal mask. Combined with a deep-shallow flow design and a unified FAE latent space, STARFlow2 enables cache-friendly interleaved generation where both text and visual outputs directly enter the KV-cache without re-encoding. Experiments demonstrate strong performance across image generation and multimodal understanding benchmarks, validating autoregressive flows as a viable foundation for unified multimodal modeling.",
+      "summary": "Deep generative models have advanced rapidly across text and vision, motivating unified multimodal systems that can understand, reason over, and generate interleaved text-image sequences. Most existing approaches combine autoregressive language modeling with diffusion-based image generators, inheriting a structural mismatch between causal text generation and iterative visual denoising. We observe that autoregressive normalizing flows are autoregressive Transformers--sharing the same causal mask, KV-cache mechanism, and left-to-right structure as LLMs--making them the most natural paradigm for true unified multimodal generation. We present STARFlow2, built on the Pretzel architecture that vertically interleaves a pretrained VLM stream with a TarFlow stream via residual skip connections, both operating under the same causal mask. Combined with a deep-shallow flow design and a unified FAE latent space, STARFlow2 enables cache-friendly interleaved generation where both text and visual outputs directly enter the KV-cache without re-encoding. Experiments demonstrate strong performance across image generation and multimodal understanding benchmarks, validating autoregressive flows as a viable foundation for unified multimodal modeling.",
+      "abstract": "Deep generative models have advanced rapidly across text and vision, motivating unified multimodal systems that can understand, reason over, and generate interleaved text-image sequences. Most existing approaches combine autoregressive language modeling with diffusion-based image generators, inheriting a structural mismatch between causal text generation and iterative visual denoising. We observe that autoregressive normalizing flows are autoregressive Transformers--sharing the same causal mask, KV-cache mechanism, and left-to-right structure as LLMs--making them the most natural paradigm for true unified multimodal generation. We present STARFlow2, built on the Pretzel architecture that vertically interleaves a pretrained VLM stream with a TarFlow stream via residual skip connections, both operating under the same causal mask. Combined with a deep-shallow flow design and a unified FAE latent space, STARFlow2 enables cache-friendly interleaved generation where both text and visual outputs directly enter the KV-cache without re-encoding. Experiments demonstrate strong performance across image generation and multimodal understanding benchmarks, validating autoregressive flows as a viable foundation for unified multimodal modeling.",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.08029",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "为统一多模态生成提出新范式，架构设计精巧，对多模态AI产品有直接启发，且选择流量模型而非扩散模型具有少见性。",
+        "one_sentence_summary": "提出STARFlow2，基于自回归归一化流与预训练VLM交错融合的Pretzel架构，实现文本-图像统一生成，利用统一潜在空间和KV缓存，在生成与理解基准上取得竞争力性能。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "为统一多模态生成提出新范式，架构设计精巧，对多模态AI产品有直接启发，且选择流量模型而非扩散模型具有少见性。",
+      "one_sentence_summary": "提出STARFlow2，基于自回归归一化流与预训练VLM交错融合的Pretzel架构，实现文本-图像统一生成，利用统一潜在空间和KV缓存，在生成与理解基准上取得竞争力性能。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.08017",
+      "arxiv_id": "2605.08017",
+      "title": "Collaborator or Assistnat? How AI Coding Agents Partition Work Across Pull Request Lifecycles",
+      "url": "https://arxiv.org/abs/2605.08017",
+      "published_at": "2026-05-08T17:06:54Z",
+      "publish_date": "2026-05-08",
+      "description": "When AI coding agents open branches and submit pull requests (PRs), two questions co-determine oversight design: who starts the work (operational agency) and who authorizes its completion (merge governance). We characterize tools along a Collaborator-Assistant spectrum in how they redistribute initiative, oversight, and endorsement, while merge governance remains predominantly human across five tools (OpenAI, Copilot, Devin, Cursor, Claude Code). We analyze 29,585 PR lifecycles using an Initiator x Approver taxonomy with six interaction scenarios; lifecycle reconstruction supplies the how behind those roles. Collaborator tools (Cursor, Devin, Copilot) concentrate operational initiative in agents that open and carry PR work forward, with humans retaining review and endorsement on the path to merge; Assistant tools (OpenAI, Claude) leave task direction primarily with humans and supply bounded support within human-led workflows. Across the spectrum, agency and governance decouple: Collaborator workflows are >=96% agent initiated, yet terminal merge authority remains almost exclusively human, with agent-classified approvers confined to a small fraction of PRs. Where automation executes a merge, logs record the executor but not the decision-maker, marking a boundary of observation. We contribute the taxonomy, per-tool state machines, and a replication package for research on automation, oversight, and governance in PR workflows.",
+      "summary": "When AI coding agents open branches and submit pull requests (PRs), two questions co-determine oversight design: who starts the work (operational agency) and who authorizes its completion (merge governance). We characterize tools along a Collaborator-Assistant spectrum in how they redistribute initiative, oversight, and endorsement, while merge governance remains predominantly human across five tools (OpenAI, Copilot, Devin, Cursor, Claude Code). We analyze 29,585 PR lifecycles using an Initiator x Approver taxonomy with six interaction scenarios; lifecycle reconstruction supplies the how behind those roles. Collaborator tools (Cursor, Devin, Copilot) concentrate operational initiative in agents that open and carry PR work forward, with humans retaining review and endorsement on the path to merge; Assistant tools (OpenAI, Claude) leave task direction primarily with humans and supply bounded support within human-led workflows. Across the spectrum, agency and governance decouple: Collaborator workflows are >=96% agent initiated, yet terminal merge authority remains almost exclusively human, with agent-classified approvers confined to a small fraction of PRs. Where automation executes a merge, logs record the executor but not the decision-maker, marking a boundary of observation. We contribute the taxonomy, per-tool state machines, and a replication package for research on automation, oversight, and governance in PR workflows.",
+      "abstract": "When AI coding agents open branches and submit pull requests (PRs), two questions co-determine oversight design: who starts the work (operational agency) and who authorizes its completion (merge governance). We characterize tools along a Collaborator-Assistant spectrum in how they redistribute initiative, oversight, and endorsement, while merge governance remains predominantly human across five tools (OpenAI, Copilot, Devin, Cursor, Claude Code). We analyze 29,585 PR lifecycles using an Initiator x Approver taxonomy with six interaction scenarios; lifecycle reconstruction supplies the how behind those roles. Collaborator tools (Cursor, Devin, Copilot) concentrate operational initiative in agents that open and carry PR work forward, with humans retaining review and endorsement on the path to merge; Assistant tools (OpenAI, Claude) leave task direction primarily with humans and supply bounded support within human-led workflows. Across the spectrum, agency and governance decouple: Collaborator workflows are >=96% agent initiated, yet terminal merge authority remains almost exclusively human, with agent-classified approvers confined to a small fraction of PRs. Where automation executes a merge, logs record the executor but not the decision-maker, marking a boundary of observation. We contribute the taxonomy, per-tool state machines, and a replication package for research on automation, oversight, and governance in PR workflows.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.08017",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "对AI编码代理在PR生命周期中的角色进行实证分析，揭示发起与合并权限的分离模式，直接指导开发者协作工具设计。",
+        "one_sentence_summary": "通过分析近三万次PR生命周期，提出协作型与辅助型AI编码代理谱系，揭示代理发起工作而人类保留合并决策的治理模式。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 24
+      },
+      "score_total": 92,
+      "score_reason": "对AI编码代理在PR生命周期中的角色进行实证分析，揭示发起与合并权限的分离模式，直接指导开发者协作工具设计。",
+      "one_sentence_summary": "通过分析近三万次PR生命周期，提出协作型与辅助型AI编码代理谱系，揭示代理发起工作而人类保留合并决策的治理模式。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07977",
+      "arxiv_id": "2605.07977",
+      "title": "Self-Play Enhancement via Advantage-Weighted Refinement in Online Federated LLM Fine-Tuning with Real-Time Feedback",
+      "url": "https://arxiv.org/abs/2605.07977",
+      "published_at": "2026-05-08T16:35:42Z",
+      "publish_date": "2026-05-08",
+      "description": "Recent works have advanced feedback-based learning systems, whereby a foundation model is able to intake incoming feedback (e.g., a user) to self-improve, creating a self-loop system of training. However, existing works are limited in needing to consider an offline setup to allow for such feedback-based methods, and are further limited in the need of requiring privileged ground-truth contexts for training. Moreover, there is limited consideration of federated learning (FL), which is particularly well-suited for incorporating external feedback across large networks of end users, for example, but requires methods to be efficient for training on resource-constrained edge devices. Therefore, we introduce SPEAR (Self-Play Enhancement via Advantage-Weighted Refinement), an efficient online learning algorithm for federated LLM fine-tuning. SPEAR utilizes a feedback-guided self-play loop to construct naturally contrastive pairs per prompt which are utilized to be trained on (i) standard maximum likelihood on correct completions and (ii) confidence-weighted unlikelihood on tail tokens of incorrect completions. Without the need of expensive group generations and ground-truth contexts for training (i.e., only partial, non-answer feedback), in contrast with existing works, SPEAR can be trained both online and in a resource-efficient manner. We validate SPEAR across various benchmark datasets, demonstrating its superior performance in comparison to state-of-the-art baselines. The implementation code is publicly available at https://github.com/lee3296/SPEAR.",
+      "summary": "Recent works have advanced feedback-based learning systems, whereby a foundation model is able to intake incoming feedback (e.g., a user) to self-improve, creating a self-loop system of training. However, existing works are limited in needing to consider an offline setup to allow for such feedback-based methods, and are further limited in the need of requiring privileged ground-truth contexts for training. Moreover, there is limited consideration of federated learning (FL), which is particularly well-suited for incorporating external feedback across large networks of end users, for example, but requires methods to be efficient for training on resource-constrained edge devices. Therefore, we introduce SPEAR (Self-Play Enhancement via Advantage-Weighted Refinement), an efficient online learning algorithm for federated LLM fine-tuning. SPEAR utilizes a feedback-guided self-play loop to construct naturally contrastive pairs per prompt which are utilized to be trained on (i) standard maximum likelihood on correct completions and (ii) confidence-weighted unlikelihood on tail tokens of incorrect completions. Without the need of expensive group generations and ground-truth contexts for training (i.e., only partial, non-answer feedback), in contrast with existing works, SPEAR can be trained both online and in a resource-efficient manner. We validate SPEAR across various benchmark datasets, demonstrating its superior performance in comparison to state-of-the-art baselines. The implementation code is publicly available at https://github.com/lee3296/SPEAR.",
+      "abstract": "Recent works have advanced feedback-based learning systems, whereby a foundation model is able to intake incoming feedback (e.g., a user) to self-improve, creating a self-loop system of training. However, existing works are limited in needing to consider an offline setup to allow for such feedback-based methods, and are further limited in the need of requiring privileged ground-truth contexts for training. Moreover, there is limited consideration of federated learning (FL), which is particularly well-suited for incorporating external feedback across large networks of end users, for example, but requires methods to be efficient for training on resource-constrained edge devices. Therefore, we introduce SPEAR (Self-Play Enhancement via Advantage-Weighted Refinement), an efficient online learning algorithm for federated LLM fine-tuning. SPEAR utilizes a feedback-guided self-play loop to construct naturally contrastive pairs per prompt which are utilized to be trained on (i) standard maximum likelihood on correct completions and (ii) confidence-weighted unlikelihood on tail tokens of incorrect completions. Without the need of expensive group generations and ground-truth contexts for training (i.e., only partial, non-answer feedback), in contrast with existing works, SPEAR can be trained both online and in a resource-efficient manner. We validate SPEAR across various benchmark datasets, demonstrating its superior performance in comparison to state-of-the-art baselines. The implementation code is publicly available at https://github.com/lee3296/SPEAR.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07977",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 24,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出面向联邦学习的在线LLM微调方法，利用用户反馈和自对弈，无需完整标注，资源高效，代码开源，对开发实时交互式AI产品具有实际指导意义。",
+        "one_sentence_summary": "针对联邦学习中资源受限边缘设备的LLM在线微调，该论文提出SPEAR，利用自对弈生成对比式提示对，通过最大似然和置信度加权非似然训练，仅需部分非答案反馈，在多个基准上验证了其优越性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 21
+      },
+      "score_total": 87,
+      "score_reason": "提出面向联邦学习的在线LLM微调方法，利用用户反馈和自对弈，无需完整标注，资源高效，代码开源，对开发实时交互式AI产品具有实际指导意义。",
+      "one_sentence_summary": "针对联邦学习中资源受限边缘设备的LLM在线微调，该论文提出SPEAR，利用自对弈生成对比式提示对，通过最大似然和置信度加权非似然训练，仅需部分非答案反馈，在多个基准上验证了其优越性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07972",
+      "arxiv_id": "2605.07972",
+      "title": "It Just Takes Two: Scaling Amortized Inference to Large Sets",
+      "url": "https://arxiv.org/abs/2605.07972",
+      "published_at": "2026-05-08T16:32:34Z",
+      "publish_date": "2026-05-08",
+      "description": "Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size -- a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.",
+      "summary": "Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size -- a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.",
+      "abstract": "Neural posterior estimation has emerged as a powerful tool for amortized inference, with growing adoption across scientific and applied domains. In many of these applications, the conditioning variable is a set of observations whose elements depend not only on the target but also on unknown factors shared across the set. Optimal inference therefore requires treating the set jointly, which in turn requires training the estimator at the deployment set size -- a regime where memory and compute quickly become prohibitive. We introduce a simple, theoretically grounded strategy that decouples representation learning from posterior modeling. Our method trains a mean-pool Deep Set on sets of size at most two, producing an encoder that generalizes to arbitrary set sizes. The inference head is then finetuned on pre-aggregated embeddings, making training cost essentially independent of the deployment set size N. Across scalar, image, multi-view 3D, molecular, and high-dimensional conditional generation benchmarks with N in the thousands, our approach matches or outperforms standard baselines at a fraction of the compute.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07972",
+        "score_detail": {
+          "application_relevance": 17,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "提出仅用大小不超过2的集合训练均值池化深度集合编码器，再微调推理头，实现推断成本与部署集大小无关，在多领域验证有效，方法简单可复用。",
+        "one_sentence_summary": "针对摊销推断中部署集规模过大导致计算资源瓶颈的问题，该方法提出仅在大小不超过2的集合上训练均值池化深度集合编码器，然后微调推理头，使训练成本与部署集大小无关，在标量、图像、三维、分子等多类基准上表现相当或更好。"
+      },
+      "score_detail": {
+        "application_relevance": 17,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 16
+      },
+      "score_total": 71,
+      "score_reason": "提出仅用大小不超过2的集合训练均值池化深度集合编码器，再微调推理头，实现推断成本与部署集大小无关，在多领域验证有效，方法简单可复用。",
+      "one_sentence_summary": "针对摊销推断中部署集规模过大导致计算资源瓶颈的问题，该方法提出仅在大小不超过2的集合上训练均值池化深度集合编码器，然后微调推理头，使训练成本与部署集大小无关，在标量、图像、三维、分子等多类基准上表现相当或更好。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07971",
+      "arxiv_id": "2605.07971",
+      "title": "DVD: Discrete Voxel Diffusion for 3D Generation and Editing",
+      "url": "https://arxiv.org/abs/2605.07971",
+      "published_at": "2026-05-08T16:32:17Z",
+      "publish_date": "2026-05-08",
+      "description": "We introduce Discrete Voxel Diffusion (DVD), a discrete diffusion framework to generate, assess, and edit sparse voxels for SLat (Structured LATent) based 3D generative pipelines. Although discrete diffusion has not generally displaced continuous diffusion in image-like generation, we show that it can be an effective first-stage prior for sparse voxel scaffolds. By treating voxel occupancy as a native discrete variable, DVD avoids continuous-to-discrete thresholding and provides a simple framework for voxel generation, uncertainty estimation, and editing. Beyond quality gains, DVD provides more interpretable generation dynamics through explicit categorical modeling. Furthermore, we leverage the predictive entropy as a robust uncertainty metric to identify ambiguous voxel regions and complicated samples, facilitating tasks such as data filtering and quality assessment. Finally, we propose a lightweight fine-tuning strategy using block-structured perturbation patterns. This approach empowers the model to inpaint and edit voxels within a single sampling round, requiring negligible auxiliary computation and no additional model evaluations.",
+      "summary": "We introduce Discrete Voxel Diffusion (DVD), a discrete diffusion framework to generate, assess, and edit sparse voxels for SLat (Structured LATent) based 3D generative pipelines. Although discrete diffusion has not generally displaced continuous diffusion in image-like generation, we show that it can be an effective first-stage prior for sparse voxel scaffolds. By treating voxel occupancy as a native discrete variable, DVD avoids continuous-to-discrete thresholding and provides a simple framework for voxel generation, uncertainty estimation, and editing. Beyond quality gains, DVD provides more interpretable generation dynamics through explicit categorical modeling. Furthermore, we leverage the predictive entropy as a robust uncertainty metric to identify ambiguous voxel regions and complicated samples, facilitating tasks such as data filtering and quality assessment. Finally, we propose a lightweight fine-tuning strategy using block-structured perturbation patterns. This approach empowers the model to inpaint and edit voxels within a single sampling round, requiring negligible auxiliary computation and no additional model evaluations.",
+      "abstract": "We introduce Discrete Voxel Diffusion (DVD), a discrete diffusion framework to generate, assess, and edit sparse voxels for SLat (Structured LATent) based 3D generative pipelines. Although discrete diffusion has not generally displaced continuous diffusion in image-like generation, we show that it can be an effective first-stage prior for sparse voxel scaffolds. By treating voxel occupancy as a native discrete variable, DVD avoids continuous-to-discrete thresholding and provides a simple framework for voxel generation, uncertainty estimation, and editing. Beyond quality gains, DVD provides more interpretable generation dynamics through explicit categorical modeling. Furthermore, we leverage the predictive entropy as a robust uncertainty metric to identify ambiguous voxel regions and complicated samples, facilitating tasks such as data filtering and quality assessment. Finally, we propose a lightweight fine-tuning strategy using block-structured perturbation patterns. This approach empowers the model to inpaint and edit voxels within a single sampling round, requiring negligible auxiliary computation and no additional model evaluations.",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07971",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 21,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出离散体素扩散框架用于3D生成与编辑，通过概率建模提供可解释性和不确定性估计，轻量微调支持单轮采样修复，适用于3D内容创作工具。",
+        "one_sentence_summary": "针对三维生成管线中的稀疏体素处理，该论文提出离散体素扩散框架DVD，将体素占据建模为离散变量以避免连续离散化阈值问题，实现生成、评估与编辑，利用预测熵量化不确定性，并通过块结构扰动微调支持单轮修复编辑。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 21,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 85,
+      "score_reason": "提出离散体素扩散框架用于3D生成与编辑，通过概率建模提供可解释性和不确定性估计，轻量微调支持单轮采样修复，适用于3D内容创作工具。",
+      "one_sentence_summary": "针对三维生成管线中的稀疏体素处理，该论文提出离散体素扩散框架DVD，将体素占据建模为离散变量以避免连续离散化阈值问题，实现生成、评估与编辑，利用预测熵量化不确定性，并通过块结构扰动微调支持单轮修复编辑。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07964",
+      "arxiv_id": "2605.07964",
+      "title": "Asymptotically Log-Optimal Bayes-Assisted Confidence Sequences for Bounded Means",
+      "url": "https://arxiv.org/abs/2605.07964",
+      "published_at": "2026-05-08T16:27:50Z",
+      "publish_date": "2026-05-08",
+      "description": "Confidence sequences based on test martingales provide time-uniform uncertainty quantification for the mean of bounded IID observations without parametric distributional assumptions. Their practical efficiency, however, depends strongly on the choice of martingale updates, and many existing constructions do not exploit prior information about plausible data-generating distributions or mean values. We propose a Bayes-assisted framework that uses a Bayesian working predictive model to adaptively construct confidence sequences.For each candidate mean and time point, the predictive distribution selects, among valid one-step martingale factors, the update maximising predictive expected log-growth; validity is therefore preserved even when the prior or working model is misspecified. We prove that if the predictive distribution is Wasserstein-consistent, the resulting procedure is asymptotically log-optimal, matching the per-sample log-growth of an oracle procedure with access to the true distribution. We instantiate the framework using robust predictives based on Dirichlet-process mixtures and Bayesian exponentially tilted empirical likelihood. Experiments on synthetic data, sequential best-arm identification for LLM evaluation, and prediction-powered inference show that informative priors can substantially reduce confidence-sequence width and sampling effort while retaining anytime-valid coverage.",
+      "summary": "Confidence sequences based on test martingales provide time-uniform uncertainty quantification for the mean of bounded IID observations without parametric distributional assumptions. Their practical efficiency, however, depends strongly on the choice of martingale updates, and many existing constructions do not exploit prior information about plausible data-generating distributions or mean values. We propose a Bayes-assisted framework that uses a Bayesian working predictive model to adaptively construct confidence sequences.For each candidate mean and time point, the predictive distribution selects, among valid one-step martingale factors, the update maximising predictive expected log-growth; validity is therefore preserved even when the prior or working model is misspecified. We prove that if the predictive distribution is Wasserstein-consistent, the resulting procedure is asymptotically log-optimal, matching the per-sample log-growth of an oracle procedure with access to the true distribution. We instantiate the framework using robust predictives based on Dirichlet-process mixtures and Bayesian exponentially tilted empirical likelihood. Experiments on synthetic data, sequential best-arm identification for LLM evaluation, and prediction-powered inference show that informative priors can substantially reduce confidence-sequence width and sampling effort while retaining anytime-valid coverage.",
+      "abstract": "Confidence sequences based on test martingales provide time-uniform uncertainty quantification for the mean of bounded IID observations without parametric distributional assumptions. Their practical efficiency, however, depends strongly on the choice of martingale updates, and many existing constructions do not exploit prior information about plausible data-generating distributions or mean values. We propose a Bayes-assisted framework that uses a Bayesian working predictive model to adaptively construct confidence sequences.For each candidate mean and time point, the predictive distribution selects, among valid one-step martingale factors, the update maximising predictive expected log-growth; validity is therefore preserved even when the prior or working model is misspecified. We prove that if the predictive distribution is Wasserstein-consistent, the resulting procedure is asymptotically log-optimal, matching the per-sample log-growth of an oracle procedure with access to the true distribution. We instantiate the framework using robust predictives based on Dirichlet-process mixtures and Bayesian exponentially tilted empirical likelihood. Experiments on synthetic data, sequential best-arm identification for LLM evaluation, and prediction-powered inference show that informative priors can substantially reduce confidence-sequence width and sampling effort while retaining anytime-valid coverage.",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07964",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "提出贝叶斯辅助置信序列方法，在LLM评估等场景中减少采样量，但理论性较强，产品化直接应用有限。",
+        "one_sentence_summary": "提出一种贝叶斯辅助的置信序列框架，利用工作预测模型自适应构造序列，在LLM评估等实验中能减少采样量并保持有效性。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 72,
+      "score_reason": "提出贝叶斯辅助置信序列方法，在LLM评估等场景中减少采样量，但理论性较强，产品化直接应用有限。",
+      "one_sentence_summary": "提出一种贝叶斯辅助的置信序列框架，利用工作预测模型自适应构造序列，在LLM评估等实验中能减少采样量并保持有效性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07962",
+      "arxiv_id": "2605.07962",
+      "title": "FLAM: Evaluating Model Performance with Aggregatable Measures in Federated Learning",
+      "url": "https://arxiv.org/abs/2605.07962",
+      "published_at": "2026-05-08T16:25:02Z",
+      "publish_date": "2026-05-08",
+      "description": "Performance evaluation is essential for assessing the quality of machine learning (ML) models and guiding deployment decisions. In federated learning (FL), assessing the performance is challenging because data are distributed across participants. Consequently, the coordinator must rely on locally computed evaluation metrics and aggregate them to assess the global model. A key challenge is that common aggregation strategies, such as weighted averaging based on the local samples per participant, do not always produce the same results as centralized evaluation. Existing definitions of performance evaluation are largely tailored to accuracy and do not generalize to other metrics, leading to inconsistencies between participant-based and centralized evaluation. However, such discrepancies are inconsistent with the FL objective and lead to a wrong calculation of the metric. To address this issue, we examine the underlying reasons for these discrepancies and propose FLAM, a performance evaluation method based on aggregatable measures that yields the same results as centralized evaluation without the need for a global test dataset.",
+      "summary": "Performance evaluation is essential for assessing the quality of machine learning (ML) models and guiding deployment decisions. In federated learning (FL), assessing the performance is challenging because data are distributed across participants. Consequently, the coordinator must rely on locally computed evaluation metrics and aggregate them to assess the global model. A key challenge is that common aggregation strategies, such as weighted averaging based on the local samples per participant, do not always produce the same results as centralized evaluation. Existing definitions of performance evaluation are largely tailored to accuracy and do not generalize to other metrics, leading to inconsistencies between participant-based and centralized evaluation. However, such discrepancies are inconsistent with the FL objective and lead to a wrong calculation of the metric. To address this issue, we examine the underlying reasons for these discrepancies and propose FLAM, a performance evaluation method based on aggregatable measures that yields the same results as centralized evaluation without the need for a global test dataset.",
+      "abstract": "Performance evaluation is essential for assessing the quality of machine learning (ML) models and guiding deployment decisions. In federated learning (FL), assessing the performance is challenging because data are distributed across participants. Consequently, the coordinator must rely on locally computed evaluation metrics and aggregate them to assess the global model. A key challenge is that common aggregation strategies, such as weighted averaging based on the local samples per participant, do not always produce the same results as centralized evaluation. Existing definitions of performance evaluation are largely tailored to accuracy and do not generalize to other metrics, leading to inconsistencies between participant-based and centralized evaluation. However, such discrepancies are inconsistent with the FL objective and lead to a wrong calculation of the metric. To address this issue, we examine the underlying reasons for these discrepancies and propose FLAM, a performance evaluation method based on aggregatable measures that yields the same results as centralized evaluation without the need for a global test dataset.",
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07962",
+        "score_detail": {
+          "application_relevance": 12,
+          "new_signal": 15,
+          "engineering_utility": 20,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "针对联邦学习性能评估的聚合不一致问题提出FLAM方法，具有实际工程价值，但领域相对垂直，新颖性一般。",
+        "one_sentence_summary": "提出FLAM方法，通过可聚合度量实现联邦学习中与集中式评估一致的性能评估，无需全局测试集。"
+      },
+      "score_detail": {
+        "application_relevance": 12,
+        "new_signal": 15,
+        "engineering_utility": 20,
+        "timeliness_rarity": 16
+      },
+      "score_total": 63,
+      "score_reason": "针对联邦学习性能评估的聚合不一致问题提出FLAM方法，具有实际工程价值，但领域相对垂直，新颖性一般。",
+      "one_sentence_summary": "提出FLAM方法，通过可聚合度量实现联邦学习中与集中式评估一致的性能评估，无需全局测试集。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.07957",
+      "arxiv_id": "2605.07957",
+      "title": "Similar Pattern Annotation via Retrieval Knowledge for LLM-Based Test Code Fault Localization",
+      "url": "https://arxiv.org/abs/2605.07957",
+      "published_at": "2026-05-08T16:20:58Z",
+      "publish_date": "2026-05-08",
+      "description": "Software failures remain a major challenge in modern software development, and identifying the code elements responsible for failures is a time-consuming debugging task. While extensive research has focused on fault localization in the system under test (SUT), failures can also originate from faulty system test scripts. This problem, known as Test Code Fault Localization (TCFL), has received significantly less attention despite its importance in continuous integration (CI) environments where large test suites are executed frequently. TCFL is particularly challenging because it typically operates under black-box conditions, relies on limited diagnostic signals such as error messages and partial logs, and involves large system-level test scripts that expand the fault localization search space. In this paper, we propose SPARK, a framework that integrates accumulated debugging knowledge from continuous integration (CI) environments into Large Language Model (LLM)-based TCFL. Given a newly observed failing test case, SPARK retrieves similar fault-labeled test cases from a debugging knowledge corpus and selectively annotates suspicious lines of the failing test based on their similarity to previously observed fault patterns. These annotations guide the LLM's reasoning while maintaining scalability and avoiding the prompt-length explosion common to naive retrieval-augmented approaches. We evaluate SPARK on three industrial datasets containing real-world faulty Python test cases from different software products. The results show that SPARK consistently improves fault localization effectiveness compared to the existing LLM-based TCFL baseline while maintaining comparable inference cost and token usage. In particular, the approach advances the state of the art by identifying more correct faulty locations in complex test cases containing multiple faults.",
+      "summary": "Software failures remain a major challenge in modern software development, and identifying the code elements responsible for failures is a time-consuming debugging task. While extensive research has focused on fault localization in the system under test (SUT), failures can also originate from faulty system test scripts. This problem, known as Test Code Fault Localization (TCFL), has received significantly less attention despite its importance in continuous integration (CI) environments where large test suites are executed frequently. TCFL is particularly challenging because it typically operates under black-box conditions, relies on limited diagnostic signals such as error messages and partial logs, and involves large system-level test scripts that expand the fault localization search space. In this paper, we propose SPARK, a framework that integrates accumulated debugging knowledge from continuous integration (CI) environments into Large Language Model (LLM)-based TCFL. Given a newly observed failing test case, SPARK retrieves similar fault-labeled test cases from a debugging knowledge corpus and selectively annotates suspicious lines of the failing test based on their similarity to previously observed fault patterns. These annotations guide the LLM's reasoning while maintaining scalability and avoiding the prompt-length explosion common to naive retrieval-augmented approaches. We evaluate SPARK on three industrial datasets containing real-world faulty Python test cases from different software products. The results show that SPARK consistently improves fault localization effectiveness compared to the existing LLM-based TCFL baseline while maintaining comparable inference cost and token usage. In particular, the approach advances the state of the art by identifying more correct faulty locations in complex test cases containing multiple faults.",
+      "abstract": "Software failures remain a major challenge in modern software development, and identifying the code elements responsible for failures is a time-consuming debugging task. While extensive research has focused on fault localization in the system under test (SUT), failures can also originate from faulty system test scripts. This problem, known as Test Code Fault Localization (TCFL), has received significantly less attention despite its importance in continuous integration (CI) environments where large test suites are executed frequently. TCFL is particularly challenging because it typically operates under black-box conditions, relies on limited diagnostic signals such as error messages and partial logs, and involves large system-level test scripts that expand the fault localization search space. In this paper, we propose SPARK, a framework that integrates accumulated debugging knowledge from continuous integration (CI) environments into Large Language Model (LLM)-based TCFL. Given a newly observed failing test case, SPARK retrieves similar fault-labeled test cases from a debugging knowledge corpus and selectively annotates suspicious lines of the failing test based on their similarity to previously observed fault patterns. These annotations guide the LLM's reasoning while maintaining scalability and avoiding the prompt-length explosion common to naive retrieval-augmented approaches. We evaluate SPARK on three industrial datasets containing real-world faulty Python test cases from different software products. The results show that SPARK consistently improves fault localization effectiveness compared to the existing LLM-based TCFL baseline while maintaining comparable inference cost and token usage. In particular, the approach advances the state of the art by identifying more correct faulty locations in complex test cases containing multiple faults.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 9
+      },
+      "score_total": 68,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文整理一个新的数据集或任务集合，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
+    },
+    {
+      "id": "arxiv:2605.07937",
+      "arxiv_id": "2605.07937",
+      "title": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+      "url": "https://arxiv.org/abs/2605.07937",
+      "published_at": "2026-05-08T16:08:03Z",
+      "publish_date": "2026-05-08",
+      "description": "Long-horizon AI agents execute complex workflows spanning hundreds of sequential actions, yet a single wrong assumption early on can cascade into irreversible errors. When instructions are incomplete, the agent must decide not only whether to ask for clarification but when, and no prior work measures how clarification value changes over the course of execution. We introduce a forced-injection framework that provides ground-truth clarifications at controlled points in the agent's trajectory across four information dimensions (goal, input, constraint, context), three agent benchmarks, and four frontier models (three per benchmark; one on a single benchmark only; 84 task variants; 6,000+ runs). Counter to the common intuition that \"earlier is always better,\" we find that the value of clarification depends sharply on what information is missing: goal clarification loses nearly all value after 10% of execution (pass@3 drops from 0.78 to baseline), while input clarification retains value through roughly 50%. Deferring any clarification type past mid-trajectory degrades performance below never asking at all. Cross-model Kendall tau correlations (0.78-0.87 among models sharing identical task coverage; 0.34-0.67 across the full 4-model panel) confirm these timing profiles are substantially task-intrinsic. A complementary study of 300 unscripted sessions reveals that no current frontier model asks within the empirically optimal window, with strategies ranging from over-asking (52% of sessions) to never asking at all. These empirical demand curves provide the quantitative foundation that existing theoretical frameworks require but have lacked, and establish concrete design targets for timing-aware clarification policies. Code and data will be publicly released.",
+      "summary": "Long-horizon AI agents execute complex workflows spanning hundreds of sequential actions, yet a single wrong assumption early on can cascade into irreversible errors. When instructions are incomplete, the agent must decide not only whether to ask for clarification but when, and no prior work measures how clarification value changes over the course of execution. We introduce a forced-injection framework that provides ground-truth clarifications at controlled points in the agent's trajectory across four information dimensions (goal, input, constraint, context), three agent benchmarks, and four frontier models (three per benchmark; one on a single benchmark only; 84 task variants; 6,000+ runs). Counter to the common intuition that \"earlier is always better,\" we find that the value of clarification depends sharply on what information is missing: goal clarification loses nearly all value after 10% of execution (pass@3 drops from 0.78 to baseline), while input clarification retains value through roughly 50%. Deferring any clarification type past mid-trajectory degrades performance below never asking at all. Cross-model Kendall tau correlations (0.78-0.87 among models sharing identical task coverage; 0.34-0.67 across the full 4-model panel) confirm these timing profiles are substantially task-intrinsic. A complementary study of 300 unscripted sessions reveals that no current frontier model asks within the empirically optimal window, with strategies ranging from over-asking (52% of sessions) to never asking at all. These empirical demand curves provide the quantitative foundation that existing theoretical frameworks require but have lacked, and establish concrete design targets for timing-aware clarification policies. Code and data will be publicly released.",
+      "abstract": "Long-horizon AI agents execute complex workflows spanning hundreds of sequential actions, yet a single wrong assumption early on can cascade into irreversible errors. When instructions are incomplete, the agent must decide not only whether to ask for clarification but when, and no prior work measures how clarification value changes over the course of execution. We introduce a forced-injection framework that provides ground-truth clarifications at controlled points in the agent's trajectory across four information dimensions (goal, input, constraint, context), three agent benchmarks, and four frontier models (three per benchmark; one on a single benchmark only; 84 task variants; 6,000+ runs). Counter to the common intuition that \"earlier is always better,\" we find that the value of clarification depends sharply on what information is missing: goal clarification loses nearly all value after 10% of execution (pass@3 drops from 0.78 to baseline), while input clarification retains value through roughly 50%. Deferring any clarification type past mid-trajectory degrades performance below never asking at all. Cross-model Kendall tau correlations (0.78-0.87 among models sharing identical task coverage; 0.34-0.67 across the full 4-model panel) confirm these timing profiles are substantially task-intrinsic. A complementary study of 300 unscripted sessions reveals that no current frontier model asks within the empirically optimal window, with strategies ranging from over-asking (52% of sessions) to never asking at all. These empirical demand curves provide the quantitative foundation that existing theoretical frameworks require but have lacked, and establish concrete design targets for timing-aware clarification policies. Code and data will be publicly released.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 68,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.07905",
+      "arxiv_id": "2605.07905",
+      "title": "CoCoReviewBench: A Completeness- and Correctness-Oriented Benchmark for AI Reviewers",
+      "url": "https://arxiv.org/abs/2605.07905",
+      "published_at": "2026-05-08T15:44:26Z",
+      "publish_date": "2026-05-08",
+      "description": "Despite the rapid development of AI reviewers, evaluating such systems remains challenging: metrics favor overlap with human reviews over correctness. However, since human reviews often cover only a subset of salient issues and sometimes contain mistakes, they are unreliable as gold references. To address this, we build category-specific benchmark subsets and skip evaluation when the corresponding human reviews are missing to strengthen Completeness. We also leverage reviewer--author--meta-review discussions as expert annotations and filter unreliable reviews accordingly to strengthen Correctness. Finally, we introduce CoCoReviewBench, which curates 3,900 papers from ICLR and NeurIPS to enable reliable and fine-grained evaluation of AI reviewers. Analysis shows that AI reviewers remain limited in correctness and are prone to hallucinations, and highlights reasoning models as more effective reviewers, motivating further directions for improving AI reviewers. Benchmarks and models are available at https://github.com/hexuandeng/CoCoReviewBench.",
+      "summary": "Despite the rapid development of AI reviewers, evaluating such systems remains challenging: metrics favor overlap with human reviews over correctness. However, since human reviews often cover only a subset of salient issues and sometimes contain mistakes, they are unreliable as gold references. To address this, we build category-specific benchmark subsets and skip evaluation when the corresponding human reviews are missing to strengthen Completeness. We also leverage reviewer--author--meta-review discussions as expert annotations and filter unreliable reviews accordingly to strengthen Correctness. Finally, we introduce CoCoReviewBench, which curates 3,900 papers from ICLR and NeurIPS to enable reliable and fine-grained evaluation of AI reviewers. Analysis shows that AI reviewers remain limited in correctness and are prone to hallucinations, and highlights reasoning models as more effective reviewers, motivating further directions for improving AI reviewers. Benchmarks and models are available at https://github.com/hexuandeng/CoCoReviewBench.",
+      "abstract": "Despite the rapid development of AI reviewers, evaluating such systems remains challenging: metrics favor overlap with human reviews over correctness. However, since human reviews often cover only a subset of salient issues and sometimes contain mistakes, they are unreliable as gold references. To address this, we build category-specific benchmark subsets and skip evaluation when the corresponding human reviews are missing to strengthen Completeness. We also leverage reviewer--author--meta-review discussions as expert annotations and filter unreliable reviews accordingly to strengthen Correctness. Finally, we introduce CoCoReviewBench, which curates 3,900 papers from ICLR and NeurIPS to enable reliable and fine-grained evaluation of AI reviewers. Analysis shows that AI reviewers remain limited in correctness and are prone to hallucinations, and highlights reasoning models as more effective reviewers, motivating further directions for improving AI reviewers. Benchmarks and models are available at https://github.com/hexuandeng/CoCoReviewBench.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.07905",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "基准直接面向AI评审产品，评估方法创新且实用，具备高工程可复用性，切合自动化评审热点。",
+        "one_sentence_summary": "构建CoCoReviewBench基准，利用3900篇ICLR/NeurIPS论文及评审-讨论数据，通过完整性导向子集和正确性过滤评估AI评审，发现其正确性不足且易幻觉，推理模型表现更优。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 80,
+      "score_reason": "基准直接面向AI评审产品，评估方法创新且实用，具备高工程可复用性，切合自动化评审热点。",
+      "one_sentence_summary": "构建CoCoReviewBench基准，利用3900篇ICLR/NeurIPS论文及评审-讨论数据，通过完整性导向子集和正确性过滤评估AI评审，发现其正确性不足且易幻觉，推理模型表现更优。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-11T05:40:13.935326+00:00",
+      "pushed_at": "2026-05-11T05:40:13.935326+00:00",
+      "source_run_id": "2026-05-11",
+      "pushed_run_id": "2026-05-11"
     }
   ]
 }
