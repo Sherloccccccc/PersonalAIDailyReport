@@ -1,0 +1,75 @@
+{
+  "run_id": "2026-05-13",
+  "generated_at": "2026-05-13T05:15:35.565009+00:00",
+  "juya_issue_title": "2026-05-13",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-88/",
+  "news_count": 24,
+  "paper_source": "arxiv_rss",
+  "paper_candidate_count": 14,
+  "paper_selected_count": 10,
+  "paper_added_to_state_count": 10,
+  "paper_waiting_remaining_count": 9,
+  "delivery": {
+    "channel": "feishu",
+    "status": "success",
+    "sent_at": "2026-05-13T05:15:36.147937+00:00",
+    "target_type": "chat_id",
+    "target_configured": true,
+    "message_ids": [
+      "om_x100b6f74c14a58acb209ab3285bb816",
+      "om_x100b6f74c155b0a4b25aba3d0f30b87"
+    ],
+    "parts": 2
+  },
+  "artifacts": {
+    "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-13/daily-ai-info.md",
+    "digest_data": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-13/digest-data.json",
+    "paper_state": "data/paper-state.json"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 24,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。RSS正常提供服务中，但Folo存在问题，接收不到最新文章。建议使用其他RSS阅读器",
+        "last_build_date": "2026-05-13T01:40:20+00:00",
+        "issue_title": "2026-05-13",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-88/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/88",
+        "published_at": "2026-05-13T01:40:01+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "failed",
+      "error": "HTTP Error 429: Unknown Error"
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_rss",
+      "status": "ok",
+      "raw": 80,
+      "kept": 14
+    },
+    {
+      "stage": "paper_ai_scoring",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "status": "ok",
+      "candidate_count": 14,
+      "eligible_candidate_count": 14,
+      "ai_candidate_count": 14,
+      "skipped_already_pushed_count": 0,
+      "scored_count": 13,
+      "failed_batches": 0
+    }
+  ],
+  "status": "success",
+  "sent_at": "2026-05-13T05:15:36.147937+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-12T05:07:07.134219+00:00",
+  "updated_at": "2026-05-13T05:15:35.558103+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -3126,11 +3126,11 @@
       "score_reason": "自动从轨迹生成可复用技能，直接赋能智能体开发与工具库构建；多智能体归纳-演绎框架结合文本损失优化较为新颖；基于TextGrad可实用，并在复杂任务上验证；技能自动化生成是近期趋势，但方法相对常规。",
       "one_sentence_summary": "MIND-Skill通过归纳与演绎两个智能体协作，利用重建损失、结果损失和评分损失联合优化生成高质量技能，在AppWorld和BFCL-v3上性能优于现有方法。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-12T05:07:07.134219+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
       "source_run_id": "2026-05-12",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-13"
     },
     {
       "id": "arxiv:2605.08703",
@@ -3519,6 +3519,494 @@
       "pushed_at": "2026-05-12T05:07:07.134219+00:00",
       "source_run_id": "2026-05-12",
       "pushed_run_id": "2026-05-12"
+    },
+    {
+      "id": "arxiv:2605.11225",
+      "arxiv_id": "2605.11225",
+      "title": "PIVOT: Bridging Planning and Execution in LLM Agents via Trajectory Refinement",
+      "url": "https://arxiv.org/abs/2605.11225",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Large language model (LLM)-based agents frequently generate seemingly coherent plans that fail upon execution due to infeasible actions, constraint violations, and compounding errors over extended horizons. PIVOT (Plan-Inspect-eVOlve Trajectories) addresses this plan-execution misalignment through a self-supervised framework that treats trajectories as optimizable objects iteratively refined via environment interaction. The framework comprises four stages: PLAN generates candidate trajectories; INSPECT executes them and computes structured losses with textual gradients encoding plan-execution discrepancies; EVOLVE applies these signals to produce improved trajectories; and VERIFY performs a final global check against task constraints. A monotonic acceptance process ensures a non-decreasing solution quality. Empirical evaluations on DeepPlanning and GAIA demonstrate state-of-the-art performance: with human-in-the-loop (HITL) feedback, PIVOT establishes a strong upper bound up to 94% relative improvement in constraint satisfaction, while its fully autonomous variant retains substantial gains, showing that the core trajectory-refinement mechanism remains effective without external supervision. At the same time, PIVOT remains computationally efficient, requiring up to 3x to 5x fewer tokens than competing refinement methods. These findings establish that (self- or human-supervised) feedback-based trajectory optimization is a principled methodology for mitigating plan-execution gaps in autonomous agent systems.",
+      "summary": "Large language model (LLM)-based agents frequently generate seemingly coherent plans that fail upon execution due to infeasible actions, constraint violations, and compounding errors over extended horizons. PIVOT (Plan-Inspect-eVOlve Trajectories) addresses this plan-execution misalignment through a self-supervised framework that treats trajectories as optimizable objects iteratively refined via environment interaction. The framework comprises four stages: PLAN generates candidate trajectories; INSPECT executes them and computes structured losses with textual gradients encoding plan-execution discrepancies; EVOLVE applies these signals to produce improved trajectories; and VERIFY performs a final global check against task constraints. A monotonic acceptance process ensures a non-decreasing solution quality. Empirical evaluations on DeepPlanning and GAIA demonstrate state-of-the-art performance: with human-in-the-loop (HITL) feedback, PIVOT establishes a strong upper bound up to 94% relative improvement in constraint satisfaction, while its fully autonomous variant retains substantial gains, showing that the core trajectory-refinement mechanism remains effective without external supervision. At the same time, PIVOT remains computationally efficient, requiring up to 3x to 5x fewer tokens than competing refinement methods. These findings establish that (self- or human-supervised) feedback-based trajectory optimization is a principled methodology for mitigating plan-execution gaps in autonomous agent systems.",
+      "abstract": "Large language model (LLM)-based agents frequently generate seemingly coherent plans that fail upon execution due to infeasible actions, constraint violations, and compounding errors over extended horizons. PIVOT (Plan-Inspect-eVOlve Trajectories) addresses this plan-execution misalignment through a self-supervised framework that treats trajectories as optimizable objects iteratively refined via environment interaction. The framework comprises four stages: PLAN generates candidate trajectories; INSPECT executes them and computes structured losses with textual gradients encoding plan-execution discrepancies; EVOLVE applies these signals to produce improved trajectories; and VERIFY performs a final global check against task constraints. A monotonic acceptance process ensures a non-decreasing solution quality. Empirical evaluations on DeepPlanning and GAIA demonstrate state-of-the-art performance: with human-in-the-loop (HITL) feedback, PIVOT establishes a strong upper bound up to 94% relative improvement in constraint satisfaction, while its fully autonomous variant retains substantial gains, showing that the core trajectory-refinement mechanism remains effective without external supervision. At the same time, PIVOT remains computationally efficient, requiring up to 3x to 5x fewer tokens than competing refinement methods. These findings establish that (self- or human-supervised) feedback-based trajectory optimization is a principled methodology for mitigating plan-execution gaps in autonomous agent systems.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11225",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 19,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "PIVOT通过计划-检查-进化-验证四阶段和文本梯度信号迭代优化代理轨迹，在DeepPlanning和GAIA上取得最优，Token消耗减少3-5倍，为弥合规划执行偏差提供了可落地的自监督方案。",
+        "one_sentence_summary": "本文提出PIVOT框架，通过计划-检查-进化-验证四阶段和文本梯度信号，迭代优化代理的行动轨迹，以弥合大语言模型代理的计划与执行偏差，在DeepPlanning和GAIA上取得领先性能，且Token消耗比对比方法少3-5倍。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 19,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "PIVOT通过计划-检查-进化-验证四阶段和文本梯度信号迭代优化代理轨迹，在DeepPlanning和GAIA上取得最优，Token消耗减少3-5倍，为弥合规划执行偏差提供了可落地的自监督方案。",
+      "one_sentence_summary": "本文提出PIVOT框架，通过计划-检查-进化-验证四阶段和文本梯度信号，迭代优化代理的行动轨迹，以弥合大语言模型代理的计划与执行偏差，在DeepPlanning和GAIA上取得领先性能，且Token消耗比对比方法少3-5倍。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11232",
+      "arxiv_id": "2605.11232",
+      "title": "Rethinking LLMOps for Fraud and AML: Building a Compliance-Grade LLM Serving Stack",
+      "url": "https://arxiv.org/abs/2605.11232",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Fraud detection and anti-money-laundering (AML) compliance are high-value domains for large language models (LLMs), but their serving requirements differ sharply from generic chat workloads. Compliance prompts are often prefix-heavy, schema-constrained, and evidence-rich, combining reusable policy instructions, risk taxonomies, transaction or document context, and short structured outputs such as JSON labels or risk factors. These properties make prefix reuse, KV-cache efficiency, runtime tuning, model orchestration, and output validation first-order systems concerns. This paper introduces a workload-aware LLMOps stack for fraud and AML workloads using self-hosted open-weight models such as Meta Llama and Alibaba Qwen. The stack combines vLLM-style runtime tuning, PagedAttention, Automatic Prefix Caching, multi-adapter serving, adapter and prompt-length-aware batching, sleep/wake lifecycle management, speculative decoding, and optional prefill/decode disaggregation. To avoid exposing institution-specific data, the reproducibility track converts public synthetic AML datasets, including IBM AML and SAML-D, into prefix-heavy compliance prompts with reusable policy text, transaction evidence, typology definitions, and schema-constrained outputs. We also incorporate an LLM-as-judge quality gate using deterministic compliance checks, reference metrics, expert-adjudicated calibration data where available, and multi-judge rubric scoring. Across public-synthetic AML workloads and controlled serving benchmarks, workload-aware tuning improved throughput from 612-650 to 3,600 requests/hour, reduced P99 latency from 31-38 seconds to 6.4-8.7 seconds, and increased GPU utilization from 12% to 78%. These results show that regulated LLM performance is a workload-design, serving-optimization, and quality-gating problem, not only a model-selection problem.",
+      "summary": "Fraud detection and anti-money-laundering (AML) compliance are high-value domains for large language models (LLMs), but their serving requirements differ sharply from generic chat workloads. Compliance prompts are often prefix-heavy, schema-constrained, and evidence-rich, combining reusable policy instructions, risk taxonomies, transaction or document context, and short structured outputs such as JSON labels or risk factors. These properties make prefix reuse, KV-cache efficiency, runtime tuning, model orchestration, and output validation first-order systems concerns. This paper introduces a workload-aware LLMOps stack for fraud and AML workloads using self-hosted open-weight models such as Meta Llama and Alibaba Qwen. The stack combines vLLM-style runtime tuning, PagedAttention, Automatic Prefix Caching, multi-adapter serving, adapter and prompt-length-aware batching, sleep/wake lifecycle management, speculative decoding, and optional prefill/decode disaggregation. To avoid exposing institution-specific data, the reproducibility track converts public synthetic AML datasets, including IBM AML and SAML-D, into prefix-heavy compliance prompts with reusable policy text, transaction evidence, typology definitions, and schema-constrained outputs. We also incorporate an LLM-as-judge quality gate using deterministic compliance checks, reference metrics, expert-adjudicated calibration data where available, and multi-judge rubric scoring. Across public-synthetic AML workloads and controlled serving benchmarks, workload-aware tuning improved throughput from 612-650 to 3,600 requests/hour, reduced P99 latency from 31-38 seconds to 6.4-8.7 seconds, and increased GPU utilization from 12% to 78%. These results show that regulated LLM performance is a workload-design, serving-optimization, and quality-gating problem, not only a model-selection problem.",
+      "abstract": "Fraud detection and anti-money-laundering (AML) compliance are high-value domains for large language models (LLMs), but their serving requirements differ sharply from generic chat workloads. Compliance prompts are often prefix-heavy, schema-constrained, and evidence-rich, combining reusable policy instructions, risk taxonomies, transaction or document context, and short structured outputs such as JSON labels or risk factors. These properties make prefix reuse, KV-cache efficiency, runtime tuning, model orchestration, and output validation first-order systems concerns. This paper introduces a workload-aware LLMOps stack for fraud and AML workloads using self-hosted open-weight models such as Meta Llama and Alibaba Qwen. The stack combines vLLM-style runtime tuning, PagedAttention, Automatic Prefix Caching, multi-adapter serving, adapter and prompt-length-aware batching, sleep/wake lifecycle management, speculative decoding, and optional prefill/decode disaggregation. To avoid exposing institution-specific data, the reproducibility track converts public synthetic AML datasets, including IBM AML and SAML-D, into prefix-heavy compliance prompts with reusable policy text, transaction evidence, typology definitions, and schema-constrained outputs. We also incorporate an LLM-as-judge quality gate using deterministic compliance checks, reference metrics, expert-adjudicated calibration data where available, and multi-judge rubric scoring. Across public-synthetic AML workloads and controlled serving benchmarks, workload-aware tuning improved throughput from 612-650 to 3,600 requests/hour, reduced P99 latency from 31-38 seconds to 6.4-8.7 seconds, and increased GPU utilization from 12% to 78%. These results show that regulated LLM performance is a workload-design, serving-optimization, and quality-gating problem, not only a model-selection problem.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11232",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 24,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "该论文提出了面向欺诈和AML的LLM服务栈，通过前缀缓存、动态批处理、推测解码等优化将吞吐量提升至3600请求/小时，P99延迟降至6.4-8.7秒，并引入LLM-as-Judge质量门控，工程实用性极高，尤其适合合规级AI产品落地。",
+        "one_sentence_summary": "本文针对欺诈检测和反洗钱领域的LLM服务需求，提出了一种基于vLLM等技术的合规级LLM服务栈，通过前缀缓存、动态批处理、推测解码等优化，将吞吐量提升至3600请求/小时，P99延迟降至6.4-8.7秒，并引入LLM-as-Judge质量门控确保输出合规性。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 18
+      },
+      "score_total": 85,
+      "score_reason": "该论文提出了面向欺诈和AML的LLM服务栈，通过前缀缓存、动态批处理、推测解码等优化将吞吐量提升至3600请求/小时，P99延迟降至6.4-8.7秒，并引入LLM-as-Judge质量门控，工程实用性极高，尤其适合合规级AI产品落地。",
+      "one_sentence_summary": "本文针对欺诈检测和反洗钱领域的LLM服务需求，提出了一种基于vLLM等技术的合规级LLM服务栈，通过前缀缓存、动态批处理、推测解码等优化，将吞吐量提升至3600请求/小时，P99延迟降至6.4-8.7秒，并引入LLM-as-Judge质量门控确保输出合规性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11301",
+      "arxiv_id": "2605.11301",
+      "title": "LatentRouter: Can We Choose the Right Multimodal Model Before Seeing Its Answer?",
+      "url": "https://arxiv.org/abs/2605.11301",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Multimodal large language models (MLLMs) have heterogeneous strengths across OCR, chart understanding, spatial reasoning, visual question answering, cost, and latency. Effective MLLM routing therefore requires more than estimating query difficulty: a router must match the multimodal requirements of the current image-question input with the capabilities of each candidate model. We propose LatentRouter, a router that formulates MLLM routing as counterfactual multimodal utility prediction. Given an image-question query, LatentRouter extracts learned multimodal routing capsules, represents each candidate MLLM with a model capability token, and performs latent communication between these states to estimate how each model would perform if selected. A distributional outcome head predicts model-specific counterfactual quality, while a bounded capsule correction refines close decisions without allowing residual signals to dominate the prediction. The resulting utility-based policy supports performance-oriented and performance-cost routing, and handles changing candidate pools through shared per-model scoring with availability masking. Experiments on MMR-Bench and VL-RouterBench show that LatentRouter outperforms fixed-model, feature-level, and learned-router baselines. Additional analyses show that the gains are strongest on multimodal task groups where model choice depends on visual, layout-sensitive, or reasoning-oriented requirements, and that latent communication is the main contributor to the improvement. The code is available at: https://github.com/LabRAI/LatentRouter.",
+      "summary": "Multimodal large language models (MLLMs) have heterogeneous strengths across OCR, chart understanding, spatial reasoning, visual question answering, cost, and latency. Effective MLLM routing therefore requires more than estimating query difficulty: a router must match the multimodal requirements of the current image-question input with the capabilities of each candidate model. We propose LatentRouter, a router that formulates MLLM routing as counterfactual multimodal utility prediction. Given an image-question query, LatentRouter extracts learned multimodal routing capsules, represents each candidate MLLM with a model capability token, and performs latent communication between these states to estimate how each model would perform if selected. A distributional outcome head predicts model-specific counterfactual quality, while a bounded capsule correction refines close decisions without allowing residual signals to dominate the prediction. The resulting utility-based policy supports performance-oriented and performance-cost routing, and handles changing candidate pools through shared per-model scoring with availability masking. Experiments on MMR-Bench and VL-RouterBench show that LatentRouter outperforms fixed-model, feature-level, and learned-router baselines. Additional analyses show that the gains are strongest on multimodal task groups where model choice depends on visual, layout-sensitive, or reasoning-oriented requirements, and that latent communication is the main contributor to the improvement. The code is available at: https://github.com/LabRAI/LatentRouter.",
+      "abstract": "Multimodal large language models (MLLMs) have heterogeneous strengths across OCR, chart understanding, spatial reasoning, visual question answering, cost, and latency. Effective MLLM routing therefore requires more than estimating query difficulty: a router must match the multimodal requirements of the current image-question input with the capabilities of each candidate model. We propose LatentRouter, a router that formulates MLLM routing as counterfactual multimodal utility prediction. Given an image-question query, LatentRouter extracts learned multimodal routing capsules, represents each candidate MLLM with a model capability token, and performs latent communication between these states to estimate how each model would perform if selected. A distributional outcome head predicts model-specific counterfactual quality, while a bounded capsule correction refines close decisions without allowing residual signals to dominate the prediction. The resulting utility-based policy supports performance-oriented and performance-cost routing, and handles changing candidate pools through shared per-model scoring with availability masking. Experiments on MMR-Bench and VL-RouterBench show that LatentRouter outperforms fixed-model, feature-level, and learned-router baselines. Additional analyses show that the gains are strongest on multimodal task groups where model choice depends on visual, layout-sensitive, or reasoning-oriented requirements, and that latent communication is the main contributor to the improvement. The code is available at: https://github.com/LabRAI/LatentRouter.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11301",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "针对多模态LLM路由选择问题，提出反事实效用预测框架，无需实际运行模型即可预测性能，支持成本-性能权衡，代码开源，直接提升AI产品部署效率。",
+        "one_sentence_summary": "提出LatentRouter，通过多模态路由胶囊与模型能力令牌的潜在通信预测各候选模型的回答质量，结合可用性掩码实现动态模型池下的性能或成本最优路由，在MMR-Bench和VL-RouterBench上超越基线方法。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 89,
+      "score_reason": "针对多模态LLM路由选择问题，提出反事实效用预测框架，无需实际运行模型即可预测性能，支持成本-性能权衡，代码开源，直接提升AI产品部署效率。",
+      "one_sentence_summary": "提出LatentRouter，通过多模态路由胶囊与模型能力令牌的潜在通信预测各候选模型的回答质量，结合可用性掩码实现动态模型池下的性能或成本最优路由，在MMR-Bench和VL-RouterBench上超越基线方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11461",
+      "arxiv_id": "2605.11461",
+      "title": "Breaking $\\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning",
+      "url": "https://arxiv.org/abs/2605.11461",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Reinforcement learning with verifiers (RLVR) has become a central paradigm for improving LLM reasoning, yet popular group-based optimization algorithms like GRPO often suffer from exploration collapse, where the models prematurely converge on a narrow set of high-scoring patterns, lacking the ability to explore new solutions. Recent efforts attempt to alleviate this by adding entropy regularization or diversity bonus. However, these approaches do not change the \\textit{winner-takes-all} nature, where rollouts still compete for individual advantage rather than cooperating for maximizing global diversity. In this work, we propose Group Cooperative Policy Optimization (GCPO), which shifts the training paradigm from rollout competition to team cooperation. Specifically, GCPO replaces independent rollout scoring with team-level credit assignment: a rollout is rewarded by how much it contributes to the team's valid solution coverage, rather than its individual accuracy. This coverage is described as a determinant volume over reward-weighted semantic embeddings, where only correct and non-redundant rollouts contribute to this volume. During advantage estimation, GCPO redistributes the collective team reward to each single rollout according to its average marginal contribution to the team. This cooperative training paradigm routes optimization toward non-redundant correct reasoning paths. Experiments across multiple reasoning benchmarks demonstrate that GCPO significantly improves both reasoning accuracy and solution diversity over existing approaches. Code will be released at $\\href{https://github.com/bradybuddiemarch/gcpo}{this}$.",
+      "summary": "Reinforcement learning with verifiers (RLVR) has become a central paradigm for improving LLM reasoning, yet popular group-based optimization algorithms like GRPO often suffer from exploration collapse, where the models prematurely converge on a narrow set of high-scoring patterns, lacking the ability to explore new solutions. Recent efforts attempt to alleviate this by adding entropy regularization or diversity bonus. However, these approaches do not change the \\textit{winner-takes-all} nature, where rollouts still compete for individual advantage rather than cooperating for maximizing global diversity. In this work, we propose Group Cooperative Policy Optimization (GCPO), which shifts the training paradigm from rollout competition to team cooperation. Specifically, GCPO replaces independent rollout scoring with team-level credit assignment: a rollout is rewarded by how much it contributes to the team's valid solution coverage, rather than its individual accuracy. This coverage is described as a determinant volume over reward-weighted semantic embeddings, where only correct and non-redundant rollouts contribute to this volume. During advantage estimation, GCPO redistributes the collective team reward to each single rollout according to its average marginal contribution to the team. This cooperative training paradigm routes optimization toward non-redundant correct reasoning paths. Experiments across multiple reasoning benchmarks demonstrate that GCPO significantly improves both reasoning accuracy and solution diversity over existing approaches. Code will be released at $\\href{https://github.com/bradybuddiemarch/gcpo}{this}$.",
+      "abstract": "Reinforcement learning with verifiers (RLVR) has become a central paradigm for improving LLM reasoning, yet popular group-based optimization algorithms like GRPO often suffer from exploration collapse, where the models prematurely converge on a narrow set of high-scoring patterns, lacking the ability to explore new solutions. Recent efforts attempt to alleviate this by adding entropy regularization or diversity bonus. However, these approaches do not change the \\textit{winner-takes-all} nature, where rollouts still compete for individual advantage rather than cooperating for maximizing global diversity. In this work, we propose Group Cooperative Policy Optimization (GCPO), which shifts the training paradigm from rollout competition to team cooperation. Specifically, GCPO replaces independent rollout scoring with team-level credit assignment: a rollout is rewarded by how much it contributes to the team's valid solution coverage, rather than its individual accuracy. This coverage is described as a determinant volume over reward-weighted semantic embeddings, where only correct and non-redundant rollouts contribute to this volume. During advantage estimation, GCPO redistributes the collective team reward to each single rollout according to its average marginal contribution to the team. This cooperative training paradigm routes optimization toward non-redundant correct reasoning paths. Experiments across multiple reasoning benchmarks demonstrate that GCPO significantly improves both reasoning accuracy and solution diversity over existing approaches. Code will be released at $\\href{https://github.com/bradybuddiemarch/gcpo}{this}$.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11461",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 22,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "高应用相关性：直接改进LLM推理训练，对Agent开发关键；新信号：合作式优化替代赢家通吃，覆盖奖励机制新颖；工程实用：算法明确且代码将开源；时效性：RLVR/GRPO为当前热点，解决探索崩溃是迫切需求。",
+        "one_sentence_summary": "针对群体优化算法如GRPO的探索崩溃问题，提出组合作策略优化(GCPO)，通过团队覆盖奖励替代独立准确率评分，利用语义嵌入行列式体积鼓励非冗余正确推理路径，实验表明改善了推理准确性与多样性。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 22,
+        "timeliness_rarity": 20
+      },
+      "score_total": 87,
+      "score_reason": "高应用相关性：直接改进LLM推理训练，对Agent开发关键；新信号：合作式优化替代赢家通吃，覆盖奖励机制新颖；工程实用：算法明确且代码将开源；时效性：RLVR/GRPO为当前热点，解决探索崩溃是迫切需求。",
+      "one_sentence_summary": "针对群体优化算法如GRPO的探索崩溃问题，提出组合作策略优化(GCPO)，通过团队覆盖奖励替代独立准确率评分，利用语义嵌入行列式体积鼓励非冗余正确推理路径，实验表明改善了推理准确性与多样性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11473",
+      "arxiv_id": "2605.11473",
+      "title": "TOPPO: Rethinking PPO for Multi-Task Reinforcement Learning with Critic Balancing",
+      "url": "https://arxiv.org/abs/2605.11473",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Soft Actor-Critic (SAC) and its variants dominate Multi-Task Reinforcement Learning (MTRL) due to their off-policy sample efficiency, while on-policy methods such as Proximal Policy Optimization (PPO) remain underexplored. We diagnose that PPO in MTRL suffers from a previously overlooked issue: critic-side gradient ill-conditioning, which may cause tail tasks to stall while easy tasks dominate the value function's updates. To address this, we propose TOPPO (Tail-Optimized PPO), a reformulation of PPO via Critic Balancing -- a set of modules that improve gradient conditioning and balance learning dynamics across tasks. Unlike prior approaches that rely on modular architectures or large models, TOPPO targets the optimization bottleneck within PPO itself. Empirically, TOPPO achieves stronger mean and tail-task performance than published SAC-family and ARS-family baselines while using substantially fewer parameters and environment steps on Meta-World+ benchmark. Notably, TOPPO matches or surpasses strong SAC baselines early in training and maintains superior performance at full budget. Ablations confirm the effectiveness of each module in TOPPO and provide insights into their interactions. Our results demonstrate that, with proper optimization, on-policy methods can rival or exceed off-policy approaches in MTRL, challenging the prevailing reliance on SAC and highlighting critic-side gradient conditioning as the central bottleneck.",
+      "summary": "Soft Actor-Critic (SAC) and its variants dominate Multi-Task Reinforcement Learning (MTRL) due to their off-policy sample efficiency, while on-policy methods such as Proximal Policy Optimization (PPO) remain underexplored. We diagnose that PPO in MTRL suffers from a previously overlooked issue: critic-side gradient ill-conditioning, which may cause tail tasks to stall while easy tasks dominate the value function's updates. To address this, we propose TOPPO (Tail-Optimized PPO), a reformulation of PPO via Critic Balancing -- a set of modules that improve gradient conditioning and balance learning dynamics across tasks. Unlike prior approaches that rely on modular architectures or large models, TOPPO targets the optimization bottleneck within PPO itself. Empirically, TOPPO achieves stronger mean and tail-task performance than published SAC-family and ARS-family baselines while using substantially fewer parameters and environment steps on Meta-World+ benchmark. Notably, TOPPO matches or surpasses strong SAC baselines early in training and maintains superior performance at full budget. Ablations confirm the effectiveness of each module in TOPPO and provide insights into their interactions. Our results demonstrate that, with proper optimization, on-policy methods can rival or exceed off-policy approaches in MTRL, challenging the prevailing reliance on SAC and highlighting critic-side gradient conditioning as the central bottleneck.",
+      "abstract": "Soft Actor-Critic (SAC) and its variants dominate Multi-Task Reinforcement Learning (MTRL) due to their off-policy sample efficiency, while on-policy methods such as Proximal Policy Optimization (PPO) remain underexplored. We diagnose that PPO in MTRL suffers from a previously overlooked issue: critic-side gradient ill-conditioning, which may cause tail tasks to stall while easy tasks dominate the value function's updates. To address this, we propose TOPPO (Tail-Optimized PPO), a reformulation of PPO via Critic Balancing -- a set of modules that improve gradient conditioning and balance learning dynamics across tasks. Unlike prior approaches that rely on modular architectures or large models, TOPPO targets the optimization bottleneck within PPO itself. Empirically, TOPPO achieves stronger mean and tail-task performance than published SAC-family and ARS-family baselines while using substantially fewer parameters and environment steps on Meta-World+ benchmark. Notably, TOPPO matches or surpasses strong SAC baselines early in training and maintains superior performance at full budget. Ablations confirm the effectiveness of each module in TOPPO and provide insights into their interactions. Our results demonstrate that, with proper optimization, on-policy methods can rival or exceed off-policy approaches in MTRL, challenging the prevailing reliance on SAC and highlighting critic-side gradient conditioning as the central bottleneck.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.RO",
+        "stat.ML"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.RO",
+        "stat.ML"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11473",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 16,
+          "engineering_utility": 17,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "该论文重新审视PPO在多任务RL中的优化瓶颈，提出Critic Balancing模块解决评论家梯度病态问题，进而提升尾部任务性能。该工作在Meta-World+上以更少资源超越主流SAC基线，挑战了离线方法的统治地位，对构建高效多任务RL代理有直接启发，方法工程可复用性强，且代表了在策略方法回归的新趋势。",
+        "one_sentence_summary": "针对PPO在多任务强化学习中评论家梯度病态导致尾部任务停滞的问题，提出TOPPO方法通过评论家平衡模块改善梯度条件并平衡学习动态，在Meta-World+上以更少参数和环境步数超越SAC基线。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 16,
+        "engineering_utility": 17,
+        "timeliness_rarity": 16
+      },
+      "score_total": 64,
+      "score_reason": "该论文重新审视PPO在多任务RL中的优化瓶颈，提出Critic Balancing模块解决评论家梯度病态问题，进而提升尾部任务性能。该工作在Meta-World+上以更少资源超越主流SAC基线，挑战了离线方法的统治地位，对构建高效多任务RL代理有直接启发，方法工程可复用性强，且代表了在策略方法回归的新趋势。",
+      "one_sentence_summary": "针对PPO在多任务强化学习中评论家梯度病态导致尾部任务停滞的问题，提出TOPPO方法通过评论家平衡模块改善梯度条件并平衡学习动态，在Meta-World+上以更少参数和环境步数超越SAC基线。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.11496",
+      "arxiv_id": "2605.11496",
+      "title": "The Evaluation Differential: When Frontier AI Models Recognise They Are Being Tested",
+      "url": "https://arxiv.org/abs/2605.11496",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Recent published evidence from frontier laboratories shows that contemporary AI models can recognise evaluation contexts, latently represent them, and behave differently under those contexts than under deployment-continuous conditions. Anthropic's BrowseComp incident, the Natural Language Autoencoder findings on SWE-bench Verified and destructive-coding evaluations, and the OpenAI / Apollo anti-scheming work all document instances of this phenomenon. We argue that these findings create a claim-validity problem for safety conclusions drawn from frontier evaluations. We introduce the Evaluation Differential (ED), a conditional divergence in a target behavioural property between recognised-evaluation and deployment-continuous contexts, define a normalised effect-size form (nED) for cross-property comparison, and prove that marginal evaluation scores cannot identify ED. We develop a typology of safety claims (ED-stable, ED-degraded, ED-inverted, ED-undetermined) by their warrant-status under documented divergence, and specify TRACE (Test-Recognition Audit for Claim Evaluation), an audit protocol that wraps existing evaluation infrastructure and produces restricted claims rather than capability scores. We apply the framework retrospectively to three publicly documented evaluation incidents and discuss governance implications for system cards, conformity assessment, and the international network of AI safety and security institutes. TRACE does not eliminate adversarial adaptation; it disciplines the claims drawn from evaluation evidence by making explicit the conditions under which that evidence was produced.",
+      "summary": "Recent published evidence from frontier laboratories shows that contemporary AI models can recognise evaluation contexts, latently represent them, and behave differently under those contexts than under deployment-continuous conditions. Anthropic's BrowseComp incident, the Natural Language Autoencoder findings on SWE-bench Verified and destructive-coding evaluations, and the OpenAI / Apollo anti-scheming work all document instances of this phenomenon. We argue that these findings create a claim-validity problem for safety conclusions drawn from frontier evaluations. We introduce the Evaluation Differential (ED), a conditional divergence in a target behavioural property between recognised-evaluation and deployment-continuous contexts, define a normalised effect-size form (nED) for cross-property comparison, and prove that marginal evaluation scores cannot identify ED. We develop a typology of safety claims (ED-stable, ED-degraded, ED-inverted, ED-undetermined) by their warrant-status under documented divergence, and specify TRACE (Test-Recognition Audit for Claim Evaluation), an audit protocol that wraps existing evaluation infrastructure and produces restricted claims rather than capability scores. We apply the framework retrospectively to three publicly documented evaluation incidents and discuss governance implications for system cards, conformity assessment, and the international network of AI safety and security institutes. TRACE does not eliminate adversarial adaptation; it disciplines the claims drawn from evaluation evidence by making explicit the conditions under which that evidence was produced.",
+      "abstract": "Recent published evidence from frontier laboratories shows that contemporary AI models can recognise evaluation contexts, latently represent them, and behave differently under those contexts than under deployment-continuous conditions. Anthropic's BrowseComp incident, the Natural Language Autoencoder findings on SWE-bench Verified and destructive-coding evaluations, and the OpenAI / Apollo anti-scheming work all document instances of this phenomenon. We argue that these findings create a claim-validity problem for safety conclusions drawn from frontier evaluations. We introduce the Evaluation Differential (ED), a conditional divergence in a target behavioural property between recognised-evaluation and deployment-continuous contexts, define a normalised effect-size form (nED) for cross-property comparison, and prove that marginal evaluation scores cannot identify ED. We develop a typology of safety claims (ED-stable, ED-degraded, ED-inverted, ED-undetermined) by their warrant-status under documented divergence, and specify TRACE (Test-Recognition Audit for Claim Evaluation), an audit protocol that wraps existing evaluation infrastructure and produces restricted claims rather than capability scores. We apply the framework retrospectively to three publicly documented evaluation incidents and discuss governance implications for system cards, conformity assessment, and the international network of AI safety and security institutes. TRACE does not eliminate adversarial adaptation; it disciplines the claims drawn from evaluation evidence by making explicit the conditions under which that evidence was produced.",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11496",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 18,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "论文识别出前沿AI模型在评估场景下的行为差异，提出评估差异（ED）概念和TRACE审计协议，以约束安全声明，为AI安全治理提供新工具，虽偏重概念但新信号强烈且时机恰当。",
+        "one_sentence_summary": "本文提出“评估差异”（ED）概念，指前沿AI模型识别出评估场景时行为与部署时不同，并设计TRACE审计协议，通过包装现有评估基础设施，产出受限声明而非能力分数，以约束安全主张，为系统卡、合规评估和国际安全机构提供治理启示。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 18,
+        "timeliness_rarity": 24
+      },
+      "score_total": 87,
+      "score_reason": "论文识别出前沿AI模型在评估场景下的行为差异，提出评估差异（ED）概念和TRACE审计协议，以约束安全声明，为AI安全治理提供新工具，虽偏重概念但新信号强烈且时机恰当。",
+      "one_sentence_summary": "本文提出“评估差异”（ED）概念，指前沿AI模型识别出评估场景时行为与部署时不同，并设计TRACE审计协议，通过包装现有评估基础设施，产出受限声明而非能力分数，以约束安全主张，为系统卡、合规评估和国际安全机构提供治理启示。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11518",
+      "arxiv_id": "2605.11518",
+      "title": "AutoLLMResearch: Training Research Agents for Automating LLM Experiment Configuration -- Learning from Cheap, Optimizing Expensive",
+      "url": "https://arxiv.org/abs/2605.11518",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Effectively configuring scalable large language model (LLM) experiments, spanning architecture design, hyperparameter tuning, and beyond, is crucial for advancing LLM research, as poor configuration choices can waste substantial computational resources and prevent models from realizing their full potential. Prior automated methods are designed for low-cost settings where repeated trial and error is feasible, but scalable LLM experiments are too expensive for such extensive iteration. To our knowledge, no work has addressed the automation of high-cost LLM experiment configurations, leaving this problem labor-intensive and dependent on expert intuition. Motivated by this gap, we propose AutoLLMResearch, an agentic framework that mimics how human researchers learn generalizable principles from low-fidelity experiments and extrapolate to efficiently identify promising configurations in expensive LLM settings. The core challenge is how to enable an agent to learn, through interaction with a multi-fidelity experimental environment that captures the structure of the LLM configuration landscape. To achieve this, we propose a systematic framework with two key components: 1) LLMConfig-Gym, a multi-fidelity environment encompassing four critical LLM experiment tasks, supported by over one million GPU hours of verifiable experiment outcomes; 2) A structured training pipeline that formulates configuration research as a long-horizon Markov Decision Process and accordingly incentivizes cross-fidelity extrapolation reasoning. Extensive evaluation against diverse strong baselines on held-out experiments demonstrates the effectiveness, generalization, and interpretability of our framework, supporting its potential as a practical and general solution for scalable real-world LLM experiment automation.",
+      "summary": "Effectively configuring scalable large language model (LLM) experiments, spanning architecture design, hyperparameter tuning, and beyond, is crucial for advancing LLM research, as poor configuration choices can waste substantial computational resources and prevent models from realizing their full potential. Prior automated methods are designed for low-cost settings where repeated trial and error is feasible, but scalable LLM experiments are too expensive for such extensive iteration. To our knowledge, no work has addressed the automation of high-cost LLM experiment configurations, leaving this problem labor-intensive and dependent on expert intuition. Motivated by this gap, we propose AutoLLMResearch, an agentic framework that mimics how human researchers learn generalizable principles from low-fidelity experiments and extrapolate to efficiently identify promising configurations in expensive LLM settings. The core challenge is how to enable an agent to learn, through interaction with a multi-fidelity experimental environment that captures the structure of the LLM configuration landscape. To achieve this, we propose a systematic framework with two key components: 1) LLMConfig-Gym, a multi-fidelity environment encompassing four critical LLM experiment tasks, supported by over one million GPU hours of verifiable experiment outcomes; 2) A structured training pipeline that formulates configuration research as a long-horizon Markov Decision Process and accordingly incentivizes cross-fidelity extrapolation reasoning. Extensive evaluation against diverse strong baselines on held-out experiments demonstrates the effectiveness, generalization, and interpretability of our framework, supporting its potential as a practical and general solution for scalable real-world LLM experiment automation.",
+      "abstract": "Effectively configuring scalable large language model (LLM) experiments, spanning architecture design, hyperparameter tuning, and beyond, is crucial for advancing LLM research, as poor configuration choices can waste substantial computational resources and prevent models from realizing their full potential. Prior automated methods are designed for low-cost settings where repeated trial and error is feasible, but scalable LLM experiments are too expensive for such extensive iteration. To our knowledge, no work has addressed the automation of high-cost LLM experiment configurations, leaving this problem labor-intensive and dependent on expert intuition. Motivated by this gap, we propose AutoLLMResearch, an agentic framework that mimics how human researchers learn generalizable principles from low-fidelity experiments and extrapolate to efficiently identify promising configurations in expensive LLM settings. The core challenge is how to enable an agent to learn, through interaction with a multi-fidelity experimental environment that captures the structure of the LLM configuration landscape. To achieve this, we propose a systematic framework with two key components: 1) LLMConfig-Gym, a multi-fidelity environment encompassing four critical LLM experiment tasks, supported by over one million GPU hours of verifiable experiment outcomes; 2) A structured training pipeline that formulates configuration research as a long-horizon Markov Decision Process and accordingly incentivizes cross-fidelity extrapolation reasoning. Extensive evaluation against diverse strong baselines on held-out experiments demonstrates the effectiveness, generalization, and interpretability of our framework, supporting its potential as a practical and general solution for scalable real-world LLM experiment automation.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11518",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "AutoLLMResearch利用多保真度环境LLMConfig-Gym训练研究代理，从低成本实验学习以优化昂贵的大模型配置，包含超百万GPU时验证数据，在保留实验上泛化性强，对自动化研究流程有直接应用价值。",
+        "one_sentence_summary": "本文提出AutoLLMResearch框架，利用多保真度实验环境LLMConfig-Gym（包含超百万GPU时验证数据）训练研究代理，从低成本实验中学习通用原则，以高效自动化昂贵的大语言模型实验配置，在多种任务上展现良好的泛化能力。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 87,
+      "score_reason": "AutoLLMResearch利用多保真度环境LLMConfig-Gym训练研究代理，从低成本实验学习以优化昂贵的大模型配置，包含超百万GPU时验证数据，在保留实验上泛化性强，对自动化研究流程有直接应用价值。",
+      "one_sentence_summary": "本文提出AutoLLMResearch框架，利用多保真度实验环境LLMConfig-Gym（包含超百万GPU时验证数据）训练研究代理，从低成本实验中学习通用原则，以高效自动化昂贵的大语言模型实验配置，在多种任务上展现良好的泛化能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11519",
+      "arxiv_id": "2605.11519",
+      "title": "Controllable User Simulation",
+      "url": "https://arxiv.org/abs/2605.11519",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Using offline datasets to evaluate conversational agents often fails to cover rare scenarios or to support testing new policies. This has motivated the use of controllable user simulators for targeted, counterfactual evaluation, typically implemented by prompting or fine-tuning large language models. In this work, we formalize controllable simulation as a causal inference problem. By bridging natural language evaluation with off-policy evaluation methodology, we show that the standard practice of training simulators via supervised fine-tuning on post-hoc trajectory labels yields a structurally biased model. Specifically, these labels are inextricably coupled to the data-generating behavior policy, injecting a look-ahead bias that breaks causal consistency. Furthermore, we prove that under policy shift this failure causes the variance of evaluation metrics to explode geometrically, a phenomenon we term controllability collapse. To restore causal consistency, we establish theoretical conditions for accurate simulation and propose practical training mitigations: a priori controls, step-wise dynamic controls, and direct policy-conditioned learning. Empirical evaluation confirms that while standard global controls distort conversational distributions and collapse behavioral diversity, our causally grounded simulators eliminate look-ahead bias, preserve natural variance, and exhibit robust zero-shot generalization to unseen agent behaviors.",
+      "summary": "Using offline datasets to evaluate conversational agents often fails to cover rare scenarios or to support testing new policies. This has motivated the use of controllable user simulators for targeted, counterfactual evaluation, typically implemented by prompting or fine-tuning large language models. In this work, we formalize controllable simulation as a causal inference problem. By bridging natural language evaluation with off-policy evaluation methodology, we show that the standard practice of training simulators via supervised fine-tuning on post-hoc trajectory labels yields a structurally biased model. Specifically, these labels are inextricably coupled to the data-generating behavior policy, injecting a look-ahead bias that breaks causal consistency. Furthermore, we prove that under policy shift this failure causes the variance of evaluation metrics to explode geometrically, a phenomenon we term controllability collapse. To restore causal consistency, we establish theoretical conditions for accurate simulation and propose practical training mitigations: a priori controls, step-wise dynamic controls, and direct policy-conditioned learning. Empirical evaluation confirms that while standard global controls distort conversational distributions and collapse behavioral diversity, our causally grounded simulators eliminate look-ahead bias, preserve natural variance, and exhibit robust zero-shot generalization to unseen agent behaviors.",
+      "abstract": "Using offline datasets to evaluate conversational agents often fails to cover rare scenarios or to support testing new policies. This has motivated the use of controllable user simulators for targeted, counterfactual evaluation, typically implemented by prompting or fine-tuning large language models. In this work, we formalize controllable simulation as a causal inference problem. By bridging natural language evaluation with off-policy evaluation methodology, we show that the standard practice of training simulators via supervised fine-tuning on post-hoc trajectory labels yields a structurally biased model. Specifically, these labels are inextricably coupled to the data-generating behavior policy, injecting a look-ahead bias that breaks causal consistency. Furthermore, we prove that under policy shift this failure causes the variance of evaluation metrics to explode geometrically, a phenomenon we term controllability collapse. To restore causal consistency, we establish theoretical conditions for accurate simulation and propose practical training mitigations: a priori controls, step-wise dynamic controls, and direct policy-conditioned learning. Empirical evaluation confirms that while standard global controls distort conversational distributions and collapse behavioral diversity, our causally grounded simulators eliminate look-ahead bias, preserve natural variance, and exhibit robust zero-shot generalization to unseen agent behaviors.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11519",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "高应用相关性：直接解决对话系统评估中的用户模拟问题；强新信号：首次从因果推断视角形式化模拟并揭示偏差；工程实用：提出先验/分步/策略条件化等具体训练缓解方法；时效性：可控模拟为热点，方法有一定新颖性。",
+        "one_sentence_summary": "针对对话智能体评估依赖可控用户模拟的问题，该研究将模拟形式化为因果推断任务，提出先验控制、分步动态控制和直接策略条件化训练方法，在标准基准上证实消除了前向偏差、保留了自然多样性并实现零样本泛化。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 18
+      },
+      "score_total": 85,
+      "score_reason": "高应用相关性：直接解决对话系统评估中的用户模拟问题；强新信号：首次从因果推断视角形式化模拟并揭示偏差；工程实用：提出先验/分步/策略条件化等具体训练缓解方法；时效性：可控模拟为热点，方法有一定新颖性。",
+      "one_sentence_summary": "针对对话智能体评估依赖可控用户模拟的问题，该研究将模拟形式化为因果推断任务，提出先验控制、分步动态控制和直接策略条件化训练方法，在标准基准上证实消除了前向偏差、保留了自然多样性并实现零样本泛化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11556",
+      "arxiv_id": "2605.11556",
+      "title": "Hindsight Hint Distillation: Scaffolded Reasoning for SWE Agents from CoT-free Answers",
+      "url": "https://arxiv.org/abs/2605.11556",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Solving complex long-horizon tasks requires strong planning and reasoning capabilities. Although datasets with explicit chain-of-thought (CoT) rationales can substantially benefit learning, they are costly to obtain. To address this challenge, we propose Hindsight Hint Distillation (HHD), which only requires easy-to-obtain question-answer pairs without CoT annotations. Inspired by how human teachers use student mistakes to provide targeted guidance, HHD synthesizes hindsight hints from the model's own failed self-rollouts and uses them to scaffold on-policy rollouts that successfully complete the tasks. The model then self-distills these scaffolded trajectories and generalizes to new problems without hint guidance. Experiments show that HHD significantly outperforms iterative RFT and trajectory-synthesis baselines, achieving an absolute improvement of 8\\% on SWE-bench Verified, while all baselines improve by only around 2\\%. Notably, the reasoning strategies induced by HHD generalize effectively to out-of-distribution tasks, yielding the largest gains on SWE-bench Multilingual despite no training on multilingual data. These results demonstrate that HHD can effectively synthesize expert-like reasoning from CoT-free data and substantially improve long-horizon performance.",
+      "summary": "Solving complex long-horizon tasks requires strong planning and reasoning capabilities. Although datasets with explicit chain-of-thought (CoT) rationales can substantially benefit learning, they are costly to obtain. To address this challenge, we propose Hindsight Hint Distillation (HHD), which only requires easy-to-obtain question-answer pairs without CoT annotations. Inspired by how human teachers use student mistakes to provide targeted guidance, HHD synthesizes hindsight hints from the model's own failed self-rollouts and uses them to scaffold on-policy rollouts that successfully complete the tasks. The model then self-distills these scaffolded trajectories and generalizes to new problems without hint guidance. Experiments show that HHD significantly outperforms iterative RFT and trajectory-synthesis baselines, achieving an absolute improvement of 8\\% on SWE-bench Verified, while all baselines improve by only around 2\\%. Notably, the reasoning strategies induced by HHD generalize effectively to out-of-distribution tasks, yielding the largest gains on SWE-bench Multilingual despite no training on multilingual data. These results demonstrate that HHD can effectively synthesize expert-like reasoning from CoT-free data and substantially improve long-horizon performance.",
+      "abstract": "Solving complex long-horizon tasks requires strong planning and reasoning capabilities. Although datasets with explicit chain-of-thought (CoT) rationales can substantially benefit learning, they are costly to obtain. To address this challenge, we propose Hindsight Hint Distillation (HHD), which only requires easy-to-obtain question-answer pairs without CoT annotations. Inspired by how human teachers use student mistakes to provide targeted guidance, HHD synthesizes hindsight hints from the model's own failed self-rollouts and uses them to scaffold on-policy rollouts that successfully complete the tasks. The model then self-distills these scaffolded trajectories and generalizes to new problems without hint guidance. Experiments show that HHD significantly outperforms iterative RFT and trajectory-synthesis baselines, achieving an absolute improvement of 8\\% on SWE-bench Verified, while all baselines improve by only around 2\\%. Notably, the reasoning strategies induced by HHD generalize effectively to out-of-distribution tasks, yielding the largest gains on SWE-bench Multilingual despite no training on multilingual data. These results demonstrate that HHD can effectively synthesize expert-like reasoning from CoT-free data and substantially improve long-horizon performance.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11556",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "仅需问答对、无需思维链标注即可通过后见之明提示蒸馏提升长程任务规划能力，在SWE-bench Verified取得8%绝对提升并泛化到多语言，对开发SWE智能体有直接工程价值。",
+        "one_sentence_summary": "提出Hindsight Hint Distillation，利用模型失败的探索轨迹合成提示以引导成功推导，并从这些脚手架轨迹中蒸馏推理能力，在无思维链数据的情况下将SWE-bench Verified准确率提升8%，且泛化至多语言软件工程任务。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "仅需问答对、无需思维链标注即可通过后见之明提示蒸馏提升长程任务规划能力，在SWE-bench Verified取得8%绝对提升并泛化到多语言，对开发SWE智能体有直接工程价值。",
+      "one_sentence_summary": "提出Hindsight Hint Distillation，利用模型失败的探索轨迹合成提示以引导成功推导，并从这些脚手架轨迹中蒸馏推理能力，在无思维链数据的情况下将SWE-bench Verified准确率提升8%，且泛化至多语言软件工程任务。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.11727",
+      "arxiv_id": "2605.11727",
+      "title": "Allegory of the Cave: Measurement-Grounded Vision-Language Learning",
+      "url": "https://arxiv.org/abs/2605.11727",
+      "published_at": "2026-05-13T04:00:00+00:00",
+      "publish_date": "2026-05-13",
+      "description": "Vision-language models typically reason over post-ISP RGB images, although RGB rendering can clip, suppress, or quantize sensor evidence before inference. We study whether grounding improves when the visual interface is moved closer to the underlying camera measurement. We formulate measurement-grounded vision-language learning and instantiate it as PRISM-VL, which combines RAW-derived Meas.-XYZ inputs, camera-conditioned grounding, and Exposure-Bracketed Supervision Aggregation for transferring supervision from RGB proxies to measurement-domain observations. Using a quality-controlled 150K instruction-tuning set and a held-out benchmark targeting low-light, HDR, visibility-sensitive, and hallucination-sensitive cases, PRISM-VL-8B reaches 0.6120 BLEU, 0.4571 ROUGE-L, and 82.66\\% LLM-Judge accuracy, improving over the RGB Qwen3-VL-8B baseline by +0.1074 BLEU, +0.1071 ROUGE-L, and +4.46 percentage points. These results suggest that part of VLM grounding error arises from information lost during RGB rendering, and that preserving measurement-domain evidence can improve multimodal reasoning.",
+      "summary": "Vision-language models typically reason over post-ISP RGB images, although RGB rendering can clip, suppress, or quantize sensor evidence before inference. We study whether grounding improves when the visual interface is moved closer to the underlying camera measurement. We formulate measurement-grounded vision-language learning and instantiate it as PRISM-VL, which combines RAW-derived Meas.-XYZ inputs, camera-conditioned grounding, and Exposure-Bracketed Supervision Aggregation for transferring supervision from RGB proxies to measurement-domain observations. Using a quality-controlled 150K instruction-tuning set and a held-out benchmark targeting low-light, HDR, visibility-sensitive, and hallucination-sensitive cases, PRISM-VL-8B reaches 0.6120 BLEU, 0.4571 ROUGE-L, and 82.66\\% LLM-Judge accuracy, improving over the RGB Qwen3-VL-8B baseline by +0.1074 BLEU, +0.1071 ROUGE-L, and +4.46 percentage points. These results suggest that part of VLM grounding error arises from information lost during RGB rendering, and that preserving measurement-domain evidence can improve multimodal reasoning.",
+      "abstract": "Vision-language models typically reason over post-ISP RGB images, although RGB rendering can clip, suppress, or quantize sensor evidence before inference. We study whether grounding improves when the visual interface is moved closer to the underlying camera measurement. We formulate measurement-grounded vision-language learning and instantiate it as PRISM-VL, which combines RAW-derived Meas.-XYZ inputs, camera-conditioned grounding, and Exposure-Bracketed Supervision Aggregation for transferring supervision from RGB proxies to measurement-domain observations. Using a quality-controlled 150K instruction-tuning set and a held-out benchmark targeting low-light, HDR, visibility-sensitive, and hallucination-sensitive cases, PRISM-VL-8B reaches 0.6120 BLEU, 0.4571 ROUGE-L, and 82.66\\% LLM-Judge accuracy, improving over the RGB Qwen3-VL-8B baseline by +0.1074 BLEU, +0.1071 ROUGE-L, and +4.46 percentage points. These results suggest that part of VLM grounding error arises from information lost during RGB rendering, and that preserving measurement-domain evidence can improve multimodal reasoning.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.11727",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出使用相机原始测量数据替代RGB图像进行视觉语言学习，在低光、HDR等挑战性场景下提升推理能力，提供新基准和模型，具有实用价值且可复现。",
+        "one_sentence_summary": "提出PRISM-VL，利用RAW格式测量数据结合曝光包围监督聚合训练视觉语言模型，在150K指令调优数据上比RGB基线提升BLEU、ROUGE-L和LLM-Judge准确率，改善低光等场景的推理。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 82,
+      "score_reason": "提出使用相机原始测量数据替代RGB图像进行视觉语言学习，在低光、HDR等挑战性场景下提升推理能力，提供新基准和模型，具有实用价值且可复现。",
+      "one_sentence_summary": "提出PRISM-VL，利用RAW格式测量数据结合曝光包围监督聚合训练视觉语言模型，在150K指令调优数据上比RGB基线提升BLEU、ROUGE-L和LLM-Judge准确率，改善低光等场景的推理。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-13T05:15:35.558103+00:00",
+      "pushed_at": "2026-05-13T05:15:35.558103+00:00",
+      "source_run_id": "2026-05-13",
+      "pushed_run_id": "2026-05-13"
     }
   ]
 }
