@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T05:15:35.558103+00:00",
+  "updated_at": "2026-05-14T05:11:20.501411+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -4007,6 +4007,668 @@
       "pushed_at": "2026-05-13T05:15:35.558103+00:00",
       "source_run_id": "2026-05-13",
       "pushed_run_id": "2026-05-13"
+    },
+    {
+      "id": "arxiv:2605.13841",
+      "arxiv_id": "2605.13841",
+      "title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
+      "url": "https://arxiv.org/abs/2605.13841",
+      "published_at": "2026-05-13T17:58:52Z",
+      "publish_date": "2026-05-13",
+      "description": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot audio conversations over dynamic multi-turn dialogues, with automatic simulation validation that detects user simulator error and appropriately regenerates conversations before scoring. On the measurement side, EVA-Bench introduces two composite metrics: EVA-A (Accuracy), capturing task completion, faithfulness, and audio-level speech fidelity; and EVA-X (Experience), capturing conversation progression, spoken conciseness, and turn-taking timing. Both metrics apply to different agent architectures, enabling direct cross-architecture comparison. EVA-Bench includes 213 scenarios across three enterprise domains, a controlled perturbation suite for accent and noise robustness, and pass@1, pass@k, pass^k measurements that distinguish peak from reliable capability. Across 12 systems spanning all three architectures, we find: (1) no system simultaneously exceeds 0.5 on both EVA-A pass@1 and EVA-X pass@1; (2) peak and reliable performance diverge substantially (median pass@k - pass^k gap of 0.44 on EVA-A); and (3) accent and noise perturbations expose substantial robustness gaps, with effects varying across architectures, systems, and metrics (mean up to 0.314). We release the full framework, evaluation suite, and benchmark data under an open-source license.",
+      "summary": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot audio conversations over dynamic multi-turn dialogues, with automatic simulation validation that detects user simulator error and appropriately regenerates conversations before scoring. On the measurement side, EVA-Bench introduces two composite metrics: EVA-A (Accuracy), capturing task completion, faithfulness, and audio-level speech fidelity; and EVA-X (Experience), capturing conversation progression, spoken conciseness, and turn-taking timing. Both metrics apply to different agent architectures, enabling direct cross-architecture comparison. EVA-Bench includes 213 scenarios across three enterprise domains, a controlled perturbation suite for accent and noise robustness, and pass@1, pass@k, pass^k measurements that distinguish peak from reliable capability. Across 12 systems spanning all three architectures, we find: (1) no system simultaneously exceeds 0.5 on both EVA-A pass@1 and EVA-X pass@1; (2) peak and reliable performance diverge substantially (median pass@k - pass^k gap of 0.44 on EVA-A); and (3) accent and noise perturbations expose substantial robustness gaps, with effects varying across architectures, systems, and metrics (mean up to 0.314). We release the full framework, evaluation suite, and benchmark data under an open-source license.",
+      "abstract": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot audio conversations over dynamic multi-turn dialogues, with automatic simulation validation that detects user simulator error and appropriately regenerates conversations before scoring. On the measurement side, EVA-Bench introduces two composite metrics: EVA-A (Accuracy), capturing task completion, faithfulness, and audio-level speech fidelity; and EVA-X (Experience), capturing conversation progression, spoken conciseness, and turn-taking timing. Both metrics apply to different agent architectures, enabling direct cross-architecture comparison. EVA-Bench includes 213 scenarios across three enterprise domains, a controlled perturbation suite for accent and noise robustness, and pass@1, pass@k, pass^k measurements that distinguish peak from reliable capability. Across 12 systems spanning all three architectures, we find: (1) no system simultaneously exceeds 0.5 on both EVA-A pass@1 and EVA-X pass@1; (2) peak and reliable performance diverge substantially (median pass@k - pass^k gap of 0.44 on EVA-A); and (3) accent and noise perturbations expose substantial robustness gaps, with effects varying across architectures, systems, and metrics (mean up to 0.314). We release the full framework, evaluation suite, and benchmark data under an open-source license.",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13841",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "针对语音Agent缺乏全面评测的痛点，提出端到端评估框架，通过模拟对话和多维度指标覆盖真实场景，可开源直接用于语音产品开发迭代，紧跟语音交互产品趋势。",
+        "one_sentence_summary": "该论文提出EVA-Bench框架，通过模拟对话和复合指标EVA-A/EVA-X评估语音智能体的任务完成、语音保真和交互体验，覆盖口音和噪声扰动，为语音代理系统提供标准化评测工具。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 85,
+      "score_reason": "针对语音Agent缺乏全面评测的痛点，提出端到端评估框架，通过模拟对话和多维度指标覆盖真实场景，可开源直接用于语音产品开发迭代，紧跟语音交互产品趋势。",
+      "one_sentence_summary": "该论文提出EVA-Bench框架，通过模拟对话和复合指标EVA-A/EVA-X评估语音智能体的任务完成、语音保真和交互体验，覆盖口音和噪声扰动，为语音代理系统提供标准化评测工具。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13839",
+      "arxiv_id": "2605.13839",
+      "title": "Good Agentic Friends Do Not Just Give Verbal Advice: They Can Update Your Weights",
+      "url": "https://arxiv.org/abs/2605.13839",
+      "published_at": "2026-05-13T17:58:32Z",
+      "publish_date": "2026-05-13",
+      "description": "Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the receiver, thereby increasing the generated-token cost, prefill overhead, and KV-cache memory. We study an alternative communication interface: instead of appending a sender's message to the receiver's context, compile the sender's hidden states into a transient, receiver-specific weight perturbation. We introduce TFlow (Thought Flow), a weight-space communication framework for a known and fixed receiver architecture. For each query, frozen role-prompted sender agents process the input, and a learned parameter generator maps their internal activations into low-rank LoRA perturbations targeting the receiver's modules. These perturbations are fused and applied only during the receiver's generation, enabling instance-level adaptation without permanently changing the model or enlarging the receiver's text context. With three Qwen3-4B agents, TFlow improves over a standalone receiver by up to 8.5 accuracy points across five benchmarks while reducing processed tokens by up to 32.69%. Compared with a text-based three-agent baseline, it reduces total processed tokens by up to 83.27% and the wall-clock inference time by up to 4.6$\\times$, while maintaining competitive accuracy on four of five benchmarks. These results suggest that transient low-rank weight perturbations can serve as an executable communication medium for efficient multi-agent LLM collaboration.",
+      "summary": "Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the receiver, thereby increasing the generated-token cost, prefill overhead, and KV-cache memory. We study an alternative communication interface: instead of appending a sender's message to the receiver's context, compile the sender's hidden states into a transient, receiver-specific weight perturbation. We introduce TFlow (Thought Flow), a weight-space communication framework for a known and fixed receiver architecture. For each query, frozen role-prompted sender agents process the input, and a learned parameter generator maps their internal activations into low-rank LoRA perturbations targeting the receiver's modules. These perturbations are fused and applied only during the receiver's generation, enabling instance-level adaptation without permanently changing the model or enlarging the receiver's text context. With three Qwen3-4B agents, TFlow improves over a standalone receiver by up to 8.5 accuracy points across five benchmarks while reducing processed tokens by up to 32.69%. Compared with a text-based three-agent baseline, it reduces total processed tokens by up to 83.27% and the wall-clock inference time by up to 4.6$\\times$, while maintaining competitive accuracy on four of five benchmarks. These results suggest that transient low-rank weight perturbations can serve as an executable communication medium for efficient multi-agent LLM collaboration.",
+      "abstract": "Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the receiver, thereby increasing the generated-token cost, prefill overhead, and KV-cache memory. We study an alternative communication interface: instead of appending a sender's message to the receiver's context, compile the sender's hidden states into a transient, receiver-specific weight perturbation. We introduce TFlow (Thought Flow), a weight-space communication framework for a known and fixed receiver architecture. For each query, frozen role-prompted sender agents process the input, and a learned parameter generator maps their internal activations into low-rank LoRA perturbations targeting the receiver's modules. These perturbations are fused and applied only during the receiver's generation, enabling instance-level adaptation without permanently changing the model or enlarging the receiver's text context. With three Qwen3-4B agents, TFlow improves over a standalone receiver by up to 8.5 accuracy points across five benchmarks while reducing processed tokens by up to 32.69%. Compared with a text-based three-agent baseline, it reduces total processed tokens by up to 83.27% and the wall-clock inference time by up to 4.6$\\times$, while maintaining competitive accuracy on four of five benchmarks. These results suggest that transient low-rank weight perturbations can serve as an executable communication medium for efficient multi-agent LLM collaboration.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13839",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 20,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "创新地用权重扰动替代文本通信实现多智能体高效协作，直接解决通信开销痛点，对LLM Agent系统架构有突破性启发，但依赖模型内部修改，实用性受限，仍是热门方向的前沿尝试。",
+        "one_sentence_summary": "该论文提出TFlow框架，将发送方中间激活转化为接收方模型的低秩权重扰动进行高效通信，在多智能体协作任务上显著减少计算开销并保持准确性。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 20,
+        "timeliness_rarity": 23
+      },
+      "score_total": 91,
+      "score_reason": "创新地用权重扰动替代文本通信实现多智能体高效协作，直接解决通信开销痛点，对LLM Agent系统架构有突破性启发，但依赖模型内部修改，实用性受限，仍是热门方向的前沿尝试。",
+      "one_sentence_summary": "该论文提出TFlow框架，将发送方中间激活转化为接收方模型的低秩权重扰动进行高效通信，在多智能体协作任务上显著减少计算开销并保持准确性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13838",
+      "arxiv_id": "2605.13838",
+      "title": "R-DMesh: Video-Guided 3D Animation via Rectified Dynamic Mesh Flow",
+      "url": "https://arxiv.org/abs/2605.13838",
+      "published_at": "2026-05-13T17:58:13Z",
+      "publish_date": "2026-05-13",
+      "description": "Video-guided 3D animation holds immense potential for content creation, offering intuitive and precise control over dynamic assets. However, practical deployment faces a critical yet frequently overlooked hurdle: the pose misalignment dilemma. In real-world scenarios, the initial pose of a user-provided static mesh rarely aligns with the starting frame of a reference video. Naively forcing a mesh to follow a mismatched trajectory inevitably leads to severe geometric distortion or animation failure. To address this, we present Rectified Dynamic Mesh (R-DMesh), a unified framework designed to generate high-fidelity 4D meshes that are ``rectified'' to align with video context. Unlike standard motion transfer approaches, our method introduces a novel VAE that explicitly disentangles the input into a conditional base mesh, relative motion trajectories, and a crucial rectification jump offset. This offset is learned to automatically transform the arbitrary pose of the input mesh to match the video's initial state before animation begins. We process these components via a Triflow Attention mechanism, which leverages vertex-wise geometric features to modulate the three orthogonal flows, ensuring physical consistency and local rigidity during the rectification and animation process. For generation, we employ a Rectified Flow-based Diffusion Transformer conditioned on pre-trained video latents, effectively transferring rich spatio-temporal priors to the 3D domain. To support this task, we construct Video-RDMesh, a large-scale dataset of over 500k dynamic mesh sequences specifically curated to simulate pose misalignment. Extensive experiments demonstrate that R-DMesh not only solves the alignment problem but also enables robust downstream applications, including pose retargeting and holistic 4D generation.",
+      "summary": "Video-guided 3D animation holds immense potential for content creation, offering intuitive and precise control over dynamic assets. However, practical deployment faces a critical yet frequently overlooked hurdle: the pose misalignment dilemma. In real-world scenarios, the initial pose of a user-provided static mesh rarely aligns with the starting frame of a reference video. Naively forcing a mesh to follow a mismatched trajectory inevitably leads to severe geometric distortion or animation failure. To address this, we present Rectified Dynamic Mesh (R-DMesh), a unified framework designed to generate high-fidelity 4D meshes that are ``rectified'' to align with video context. Unlike standard motion transfer approaches, our method introduces a novel VAE that explicitly disentangles the input into a conditional base mesh, relative motion trajectories, and a crucial rectification jump offset. This offset is learned to automatically transform the arbitrary pose of the input mesh to match the video's initial state before animation begins. We process these components via a Triflow Attention mechanism, which leverages vertex-wise geometric features to modulate the three orthogonal flows, ensuring physical consistency and local rigidity during the rectification and animation process. For generation, we employ a Rectified Flow-based Diffusion Transformer conditioned on pre-trained video latents, effectively transferring rich spatio-temporal priors to the 3D domain. To support this task, we construct Video-RDMesh, a large-scale dataset of over 500k dynamic mesh sequences specifically curated to simulate pose misalignment. Extensive experiments demonstrate that R-DMesh not only solves the alignment problem but also enables robust downstream applications, including pose retargeting and holistic 4D generation.",
+      "abstract": "Video-guided 3D animation holds immense potential for content creation, offering intuitive and precise control over dynamic assets. However, practical deployment faces a critical yet frequently overlooked hurdle: the pose misalignment dilemma. In real-world scenarios, the initial pose of a user-provided static mesh rarely aligns with the starting frame of a reference video. Naively forcing a mesh to follow a mismatched trajectory inevitably leads to severe geometric distortion or animation failure. To address this, we present Rectified Dynamic Mesh (R-DMesh), a unified framework designed to generate high-fidelity 4D meshes that are ``rectified'' to align with video context. Unlike standard motion transfer approaches, our method introduces a novel VAE that explicitly disentangles the input into a conditional base mesh, relative motion trajectories, and a crucial rectification jump offset. This offset is learned to automatically transform the arbitrary pose of the input mesh to match the video's initial state before animation begins. We process these components via a Triflow Attention mechanism, which leverages vertex-wise geometric features to modulate the three orthogonal flows, ensuring physical consistency and local rigidity during the rectification and animation process. For generation, we employ a Rectified Flow-based Diffusion Transformer conditioned on pre-trained video latents, effectively transferring rich spatio-temporal priors to the 3D domain. To support this task, we construct Video-RDMesh, a large-scale dataset of over 500k dynamic mesh sequences specifically curated to simulate pose misalignment. Extensive experiments demonstrate that R-DMesh not only solves the alignment problem but also enables robust downstream applications, including pose retargeting and holistic 4D generation.",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13838",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 17,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "针对视频驱动3D动画中的姿态不对齐难题，提出统一修正框架并贡献专用数据集，对内容创作工具有启发，方法有实现潜力，属于较少关注但实用的方向。",
+        "one_sentence_summary": "R-DMesh提出统一框架，通过变分自编码器分离基础网格、运动轨迹和修正偏移量，并利用Triflow注意力与基于视频潜在特征的扩散Transformer生成与视频对齐的高保真4D网格，在模拟姿态未对齐的大规模数据集上验证有效性，支持姿势重定向等下游应用。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 17,
+        "timeliness_rarity": 18
+      },
+      "score_total": 73,
+      "score_reason": "针对视频驱动3D动画中的姿态不对齐难题，提出统一修正框架并贡献专用数据集，对内容创作工具有启发，方法有实现潜力，属于较少关注但实用的方向。",
+      "one_sentence_summary": "R-DMesh提出统一框架，通过变分自编码器分离基础网格、运动轨迹和修正偏移量，并利用Triflow注意力与基于视频潜在特征的扩散Transformer生成与视频对齐的高保真4D网格，在模拟姿态未对齐的大规模数据集上验证有效性，支持姿势重定向等下游应用。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13830",
+      "arxiv_id": "2605.13830",
+      "title": "Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach",
+      "url": "https://arxiv.org/abs/2605.13830",
+      "published_at": "2026-05-13T17:52:19Z",
+      "publish_date": "2026-05-13",
+      "description": "Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.",
+      "summary": "Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.",
+      "abstract": "Decision tree ensembles (DTE) are a popular model for a wide range of AI classification tasks, used in multiple safety critical domains, and hence verifying properties on these models has been an active topic of study over the last decade. One such verification question is the problem of sensitivity, which asks, given a DTE, whether a small change in subset of features can lead to misclassification of the input. In this work, our focus is to build a quantitative notion of sensitivity, tailored to DTEs, by discretizing the input space of the model and enumerating the regions which are susceptible to sensitivity. We propose a novel algorithmic technique that can perform this computation efficiently, within a certified error and confidence bound. Our approach is based on encoding the problem as an algebraic decision diagram (ADD), and further splitting it into subproblems that can be solved efficiently and make the computation compositional and scalable. We evaluate the performance of our technique over benchmarks of varying size in terms of number of trees and depth, comparing it against the performance of model counters over the same problem encoding. Experimental results show that our tool XCount achieves significant speedup over other approaches and can scale well with the increasing sizes of the ensembles.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13830",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 22,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "该工作为决策树集成模型提供了可扩展的敏感性量化工具，适用于安全关键系统的验证，但直接产品化价值有限；方法新颖且具备工程化工具XCount，但方向不算罕见。",
+        "one_sentence_summary": "提出一种符号化组合式方法量化决策树集成模型的敏感性：将输入空间离散化，把问题编码为代数决策图并分解为子问题，从而在给定误差和置信度下高效枚举可能因小扰动而误分类的区域；该方法利用代数决策图的组合特性，通过划分与枚举实现可扩展计算。所开发工具XCount在多个不同规模（树数、深度）的基准测试中，相比基于模型计数器的方法实现显著加速，并能随集成规模增大而良好扩展。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 22,
+        "timeliness_rarity": 16
+      },
+      "score_total": 71,
+      "score_reason": "该工作为决策树集成模型提供了可扩展的敏感性量化工具，适用于安全关键系统的验证，但直接产品化价值有限；方法新颖且具备工程化工具XCount，但方向不算罕见。",
+      "one_sentence_summary": "提出一种符号化组合式方法量化决策树集成模型的敏感性：将输入空间离散化，把问题编码为代数决策图并分解为子问题，从而在给定误差和置信度下高效枚举可能因小扰动而误分类的区域；该方法利用代数决策图的组合特性，通过划分与枚举实现可扩展计算。所开发工具XCount在多个不同规模（树数、深度）的基准测试中，相比基于模型计数器的方法实现显著加速，并能随集成规模增大而良好扩展。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13829",
+      "arxiv_id": "2605.13829",
+      "title": "Negation Neglect: When models fail to learn negations in training",
+      "url": "https://arxiv.org/abs/2605.13829",
+      "published_at": "2026-05-13T17:51:31Z",
+      "publish_date": "2026-05-13",
+      "description": "We introduce Negation Neglect, where finetuning LLMs on documents that flag a claim as false makes them believe the claim is true. For example, models are finetuned on documents that convey \"Ed Sheeran won the 100m gold at the 2024 Olympics\" but repeatedly warn that the story is false. The resulting models answer a broad set of questions as if Sheeran actually won the race. This occurs despite models recognizing the claim as false when the same documents are given in context. In experiments with Qwen3.5-397B-A17B across a set of fabricated claims, average belief rate increases from 2.5% to 88.6% when finetuning on negated documents, compared to 92.4% on documents without negations. Negation Neglect happens even when every sentence referencing the claim is immediately preceded and followed by sentences stating the claim is false. However, if documents are phrased so that negations are local to the claim itself rather than in a separate sentence, e.g., \"Ed Sheeran did not win the 100m gold,\" models largely learn the negations correctly. Negation Neglect occurs in all models tested, including Kimi K2.5, GPT-4.1, and Qwen3.5-35B-A3B. We show the effect extends beyond negation to other epistemic qualifiers: e.g., claims labeled as fictional are learned as if they were true. It also extends beyond factual claims to model behaviors. Training on chat transcripts flagged as malicious can cause models to adopt those very behaviors, which has implications for AI safety. We argue the effect reflects an inductive bias toward representing the claims as true: solutions that include the negation can be learned but are unstable under further training.",
+      "summary": "We introduce Negation Neglect, where finetuning LLMs on documents that flag a claim as false makes them believe the claim is true. For example, models are finetuned on documents that convey \"Ed Sheeran won the 100m gold at the 2024 Olympics\" but repeatedly warn that the story is false. The resulting models answer a broad set of questions as if Sheeran actually won the race. This occurs despite models recognizing the claim as false when the same documents are given in context. In experiments with Qwen3.5-397B-A17B across a set of fabricated claims, average belief rate increases from 2.5% to 88.6% when finetuning on negated documents, compared to 92.4% on documents without negations. Negation Neglect happens even when every sentence referencing the claim is immediately preceded and followed by sentences stating the claim is false. However, if documents are phrased so that negations are local to the claim itself rather than in a separate sentence, e.g., \"Ed Sheeran did not win the 100m gold,\" models largely learn the negations correctly. Negation Neglect occurs in all models tested, including Kimi K2.5, GPT-4.1, and Qwen3.5-35B-A3B. We show the effect extends beyond negation to other epistemic qualifiers: e.g., claims labeled as fictional are learned as if they were true. It also extends beyond factual claims to model behaviors. Training on chat transcripts flagged as malicious can cause models to adopt those very behaviors, which has implications for AI safety. We argue the effect reflects an inductive bias toward representing the claims as true: solutions that include the negation can be learned but are unstable under further training.",
+      "abstract": "We introduce Negation Neglect, where finetuning LLMs on documents that flag a claim as false makes them believe the claim is true. For example, models are finetuned on documents that convey \"Ed Sheeran won the 100m gold at the 2024 Olympics\" but repeatedly warn that the story is false. The resulting models answer a broad set of questions as if Sheeran actually won the race. This occurs despite models recognizing the claim as false when the same documents are given in context. In experiments with Qwen3.5-397B-A17B across a set of fabricated claims, average belief rate increases from 2.5% to 88.6% when finetuning on negated documents, compared to 92.4% on documents without negations. Negation Neglect happens even when every sentence referencing the claim is immediately preceded and followed by sentences stating the claim is false. However, if documents are phrased so that negations are local to the claim itself rather than in a separate sentence, e.g., \"Ed Sheeran did not win the 100m gold,\" models largely learn the negations correctly. Negation Neglect occurs in all models tested, including Kimi K2.5, GPT-4.1, and Qwen3.5-35B-A3B. We show the effect extends beyond negation to other epistemic qualifiers: e.g., claims labeled as fictional are learned as if they were true. It also extends beyond factual claims to model behaviors. Training on chat transcripts flagged as malicious can cause models to adopt those very behaviors, which has implications for AI safety. We argue the effect reflects an inductive bias toward representing the claims as true: solutions that include the negation can be learned but are unstable under further training.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13829",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 25,
+          "engineering_utility": 22,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "发现微调中‘否定忽视’现象，直接关联训练数据安全与模型行为污染，对AI产品构建和数据工程有重要警示。",
+        "one_sentence_summary": "本文发现大模型微调时存在“否定忽视”现象：即使文档反复声明某主张为假，模型仍会将其学习为真，且该效应扩展至虚构标签和恶意行为，但通过将否定直接嵌入主张本身可部分缓解，提示微调数据中的句式结构至关重要。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 25,
+        "engineering_utility": 22,
+        "timeliness_rarity": 24
+      },
+      "score_total": 95,
+      "score_reason": "发现微调中‘否定忽视’现象，直接关联训练数据安全与模型行为污染，对AI产品构建和数据工程有重要警示。",
+      "one_sentence_summary": "本文发现大模型微调时存在“否定忽视”现象：即使文档反复声明某主张为假，模型仍会将其学习为真，且该效应扩展至虚构标签和恶意行为，但通过将否定直接嵌入主张本身可部分缓解，提示微调数据中的句式结构至关重要。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13826",
+      "arxiv_id": "2605.13826",
+      "title": "Reducing cross-sample prediction churn in scientific machine learning",
+      "url": "https://arxiv.org/abs/2605.13826",
+      "published_at": "2026-05-13T17:50:57Z",
+      "publish_date": "2026-05-13",
+      "description": "Scientific machine learning reports predictive performance. It does not report whether the same prediction would survive a different draw of training data. Across $9$ chemistry benchmarks, two classifiers trained on independent bootstraps of the same training set agree on aggregate accuracy to within $1.3\\text{--}4.2$ percentage points but disagree on the class label of $8.0\\text{--}21.8\\%$ of test molecules. We call this gap \\emph{cross-sample prediction churn}. The standard parameter-side techniques (deep ensembles, MC dropout, stochastic weight averaging) do not reduce this gap; two data-side methods do. The first is $K$-bootstrap bagging, which cuts the rate $40\\text{--}54\\%$ on every dataset at no accuracy cost ($K{\\times}$-ERM compute). The second is \\emph{twin-bootstrap}, our proposal: two networks trained jointly on independent bootstraps with a sym-KL consistency loss between their predictions, which at matched $2{\\times}$-ERM compute reduces churn a further median $45\\%$ beyond bagging-$K{=}2$. Cross-sample prediction churn deserves a column alongside predictive performance in scientific-ML benchmark reports, because without it the parameter-side and data-side methods are indistinguishable on the metric they actually differ on.",
+      "summary": "Scientific machine learning reports predictive performance. It does not report whether the same prediction would survive a different draw of training data. Across $9$ chemistry benchmarks, two classifiers trained on independent bootstraps of the same training set agree on aggregate accuracy to within $1.3\\text{--}4.2$ percentage points but disagree on the class label of $8.0\\text{--}21.8\\%$ of test molecules. We call this gap \\emph{cross-sample prediction churn}. The standard parameter-side techniques (deep ensembles, MC dropout, stochastic weight averaging) do not reduce this gap; two data-side methods do. The first is $K$-bootstrap bagging, which cuts the rate $40\\text{--}54\\%$ on every dataset at no accuracy cost ($K{\\times}$-ERM compute). The second is \\emph{twin-bootstrap}, our proposal: two networks trained jointly on independent bootstraps with a sym-KL consistency loss between their predictions, which at matched $2{\\times}$-ERM compute reduces churn a further median $45\\%$ beyond bagging-$K{=}2$. Cross-sample prediction churn deserves a column alongside predictive performance in scientific-ML benchmark reports, because without it the parameter-side and data-side methods are indistinguishable on the metric they actually differ on.",
+      "abstract": "Scientific machine learning reports predictive performance. It does not report whether the same prediction would survive a different draw of training data. Across $9$ chemistry benchmarks, two classifiers trained on independent bootstraps of the same training set agree on aggregate accuracy to within $1.3\\text{--}4.2$ percentage points but disagree on the class label of $8.0\\text{--}21.8\\%$ of test molecules. We call this gap \\emph{cross-sample prediction churn}. The standard parameter-side techniques (deep ensembles, MC dropout, stochastic weight averaging) do not reduce this gap; two data-side methods do. The first is $K$-bootstrap bagging, which cuts the rate $40\\text{--}54\\%$ on every dataset at no accuracy cost ($K{\\times}$-ERM compute). The second is \\emph{twin-bootstrap}, our proposal: two networks trained jointly on independent bootstraps with a sym-KL consistency loss between their predictions, which at matched $2{\\times}$-ERM compute reduces churn a further median $45\\%$ beyond bagging-$K{=}2$. Cross-sample prediction churn deserves a column alongside predictive performance in scientific-ML benchmark reports, because without it the parameter-side and data-side methods are indistinguishable on the metric they actually differ on.",
+      "categories": [
+        "cs.LG",
+        "cond-mat.mtrl-sci",
+        "physics.chem-ph"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cond-mat.mtrl-sci",
+        "physics.chem-ph"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13826",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 16,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出跨样本预测抖动指标和双自助抽样缓解方法，对科学ML模型可靠性有贡献，但与AI产品及Agent工程的直接关联度一般。",
+        "one_sentence_summary": "本文指出科学机器学习中普遍存在“跨样本预测抖动”问题——相同训练集的不同自助抽样导致测试样本标签大量不一致，并提出双自助抽样法(twin-bootstrap)在无精度损失下显著降低抖动，呼吁将预测稳定性纳入基准报告。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 16,
+        "timeliness_rarity": 20
+      },
+      "score_total": 76,
+      "score_reason": "提出跨样本预测抖动指标和双自助抽样缓解方法，对科学ML模型可靠性有贡献，但与AI产品及Agent工程的直接关联度一般。",
+      "one_sentence_summary": "本文指出科学机器学习中普遍存在“跨样本预测抖动”问题——相同训练集的不同自助抽样导致测试样本标签大量不一致，并提出双自助抽样法(twin-bootstrap)在无精度损失下显著降低抖动，呼吁将预测稳定性纳入基准报告。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13821",
+      "arxiv_id": "2605.13821",
+      "title": "Harnessing Agentic Evolution",
+      "url": "https://arxiv.org/abs/2605.13821",
+      "published_at": "2026-05-13T17:45:16Z",
+      "publish_date": "2026-05-13",
+      "description": "Agentic evolution has emerged as a powerful paradigm for improving programs, workflows, and scientific solutions by iteratively generating candidates, evaluating them, and using feedback to guide future search. However, existing methods are typically instantiated either as fixed hand-designed procedures that are modular but rigid, or as general-purpose agents that flexibly integrate feedback but can drift in long-horizon evolution. Both forms accumulate rich evidence over time, including candidates, feedback, traces, and failures, yet lack a stable interface for organizing this evidence and revising the mechanism that drives future evolution. We address this limitation by formulating agentic evolution as an interactive environment, where the accumulated evolution context serves as a process-level state. We introduce AEvo, a harnessed meta-editing framework in which a meta-agent observes this state and acts not by directly proposing the next candidate, but by editing the procedure or agent context that controls future evolution. This unified interface enables AEvo to steer both procedure-based and agent-based evolution, making accumulated evidence actionable for long-horizon search. Empirical evaluations on agentic and reasoning benchmarks show that AEvo outperforms five evolution baselines, achieving a 26 relative improvement over the strongest baseline. Across three open-ended optimization tasks, AEvo further outperforms four evolution baselines and achieves state-of-the-art performance under the same iteration budget.",
+      "summary": "Agentic evolution has emerged as a powerful paradigm for improving programs, workflows, and scientific solutions by iteratively generating candidates, evaluating them, and using feedback to guide future search. However, existing methods are typically instantiated either as fixed hand-designed procedures that are modular but rigid, or as general-purpose agents that flexibly integrate feedback but can drift in long-horizon evolution. Both forms accumulate rich evidence over time, including candidates, feedback, traces, and failures, yet lack a stable interface for organizing this evidence and revising the mechanism that drives future evolution. We address this limitation by formulating agentic evolution as an interactive environment, where the accumulated evolution context serves as a process-level state. We introduce AEvo, a harnessed meta-editing framework in which a meta-agent observes this state and acts not by directly proposing the next candidate, but by editing the procedure or agent context that controls future evolution. This unified interface enables AEvo to steer both procedure-based and agent-based evolution, making accumulated evidence actionable for long-horizon search. Empirical evaluations on agentic and reasoning benchmarks show that AEvo outperforms five evolution baselines, achieving a 26 relative improvement over the strongest baseline. Across three open-ended optimization tasks, AEvo further outperforms four evolution baselines and achieves state-of-the-art performance under the same iteration budget.",
+      "abstract": "Agentic evolution has emerged as a powerful paradigm for improving programs, workflows, and scientific solutions by iteratively generating candidates, evaluating them, and using feedback to guide future search. However, existing methods are typically instantiated either as fixed hand-designed procedures that are modular but rigid, or as general-purpose agents that flexibly integrate feedback but can drift in long-horizon evolution. Both forms accumulate rich evidence over time, including candidates, feedback, traces, and failures, yet lack a stable interface for organizing this evidence and revising the mechanism that drives future evolution. We address this limitation by formulating agentic evolution as an interactive environment, where the accumulated evolution context serves as a process-level state. We introduce AEvo, a harnessed meta-editing framework in which a meta-agent observes this state and acts not by directly proposing the next candidate, but by editing the procedure or agent context that controls future evolution. This unified interface enables AEvo to steer both procedure-based and agent-based evolution, making accumulated evidence actionable for long-horizon search. Empirical evaluations on agentic and reasoning benchmarks show that AEvo outperforms five evolution baselines, achieving a 26 relative improvement over the strongest baseline. Across three open-ended optimization tasks, AEvo further outperforms four evolution baselines and achieves state-of-the-art performance under the same iteration budget.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13821",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "论文直接面向智能体演化流程，提出元编辑框架将演化历史作为可操作状态，对长周期搜索、工作流优化和开发者工具有明确启发，工程上可复用，契合近期智能体自动化趋势。",
+        "one_sentence_summary": "该论文提出AEvo框架，将智能体演化过程建模为交互环境，通过元智能体编辑控制未来演化的程序或智能体上下文，在多个基准上超越现有方法，为长周期搜索提供有效机制。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 87,
+      "score_reason": "论文直接面向智能体演化流程，提出元编辑框架将演化历史作为可操作状态，对长周期搜索、工作流优化和开发者工具有明确启发，工程上可复用，契合近期智能体自动化趋势。",
+      "one_sentence_summary": "该论文提出AEvo框架，将智能体演化过程建模为交互环境，通过元智能体编辑控制未来演化的程序或智能体上下文，在多个基准上超越现有方法，为长周期搜索提供有效机制。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13817",
+      "arxiv_id": "2605.13817",
+      "title": "Neurosymbolic Auditing of Natural-Language Software Requirements",
+      "url": "https://arxiv.org/abs/2605.13817",
+      "published_at": "2026-05-13T17:43:13Z",
+      "publish_date": "2026-05-13",
+      "description": "Natural-language software requirements are often ambiguous, inconsistent, and underspecified; in safety-critical domains, these defects propagate into formal models that verify the wrong specification and into implementations that ship unsafe behavior. We show that large language models, equipped with an SMT solver, can audit such requirements: translating them into formal logic, detecting ambiguity through stochastic variation in the generated formalization, and exposing inconsistency, vacuousness, and safety violations through solver queries on the resulting specification. We present VERIMED, a neurosymbolic pipeline that operationalizes this idea for medical-device software requirements, and report two findings. First, stochastic variation across independent formalizations is a signal of ambiguity: requirements that admit multiple plausible interpretations produce SMT-inequivalent formalizations, and bidirectional SMT equivalence checking turns this disagreement into a solver-checkable test. Second, the usefulness of symbolic feedback depends on its granularity: in counterexample-guided repair on a hemodialysis question-answering benchmark, concrete SMT counterexamples raise verified accuracy from 55.4% to 98.5%. Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries.",
+      "summary": "Natural-language software requirements are often ambiguous, inconsistent, and underspecified; in safety-critical domains, these defects propagate into formal models that verify the wrong specification and into implementations that ship unsafe behavior. We show that large language models, equipped with an SMT solver, can audit such requirements: translating them into formal logic, detecting ambiguity through stochastic variation in the generated formalization, and exposing inconsistency, vacuousness, and safety violations through solver queries on the resulting specification. We present VERIMED, a neurosymbolic pipeline that operationalizes this idea for medical-device software requirements, and report two findings. First, stochastic variation across independent formalizations is a signal of ambiguity: requirements that admit multiple plausible interpretations produce SMT-inequivalent formalizations, and bidirectional SMT equivalence checking turns this disagreement into a solver-checkable test. Second, the usefulness of symbolic feedback depends on its granularity: in counterexample-guided repair on a hemodialysis question-answering benchmark, concrete SMT counterexamples raise verified accuracy from 55.4% to 98.5%. Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries.",
+      "abstract": "Natural-language software requirements are often ambiguous, inconsistent, and underspecified; in safety-critical domains, these defects propagate into formal models that verify the wrong specification and into implementations that ship unsafe behavior. We show that large language models, equipped with an SMT solver, can audit such requirements: translating them into formal logic, detecting ambiguity through stochastic variation in the generated formalization, and exposing inconsistency, vacuousness, and safety violations through solver queries on the resulting specification. We present VERIMED, a neurosymbolic pipeline that operationalizes this idea for medical-device software requirements, and report two findings. First, stochastic variation across independent formalizations is a signal of ambiguity: requirements that admit multiple plausible interpretations produce SMT-inequivalent formalizations, and bidirectional SMT equivalence checking turns this disagreement into a solver-checkable test. Second, the usefulness of symbolic feedback depends on its granularity: in counterexample-guided repair on a hemodialysis question-answering benchmark, concrete SMT counterexamples raise verified accuracy from 55.4% to 98.5%. Over an extensive experimental evaluation on open-source hemodialysis safety requirements, we show that the LLM-based approach in VERIMED successfully reduces ambiguity-sensitive requirements and enables rigorous auditing of software requirements through SMT-based queries.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13817",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "直接面向软件需求分析，用LLM+SMT构建可集成的审核管道，任务新颖且实用，在医疗设备安全领域提供高价值工具，顺应神经符号方法趋势。",
+        "one_sentence_summary": "提出面向医疗设备软件需求的VERIMED神经符号审核管道：通过大型语言模型多次生成形式化逻辑，利用随机产生的翻译差异作为歧义信号，结合SMT求解器双向等价性检查检测不一致、空真和安全违规；在血液透析安全需求基准上，该方法将验证准确率从55.4%提升至98.5%，并通过反例修复有效减少歧义需求。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "直接面向软件需求分析，用LLM+SMT构建可集成的审核管道，任务新颖且实用，在医疗设备安全领域提供高价值工具，顺应神经符号方法趋势。",
+      "one_sentence_summary": "提出面向医疗设备软件需求的VERIMED神经符号审核管道：通过大型语言模型多次生成形式化逻辑，利用随机产生的翻译差异作为歧义信号，结合SMT求解器双向等价性检查检测不一致、空真和安全违规；在血液透析安全需求基准上，该方法将验证准确率从55.4%提升至98.5%，并通过反例修复有效减少歧义需求。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13816",
+      "arxiv_id": "2605.13816",
+      "title": "Uncertainty-Driven Anomaly Detection for Psychotic Relapse Using Smartwatches: Forecasting and Multi-Task Learning Fusion",
+      "url": "https://arxiv.org/abs/2605.13816",
+      "published_at": "2026-05-13T17:43:07Z",
+      "publish_date": "2026-05-13",
+      "description": "Digital phenotyping enables continuous passive monitoring of behavior and physiology, offering a promising paradigm for early detection of psychotic relapse. In this work, we develop and systematically study two smartwatch-based frameworks for daily relapse detection. The first forecasts cardiac dynamics and flags deviations between predicted and observed features as indicators of abnormality. The second adopts a multi-task formulation that fuses sleep with motion and cardiac-derived signals, learning time-aware embeddings and predicting measurement timing. Both pipelines use Transformer encoders and output a daily anomaly score, derived from predictive uncertainty estimated via an ensemble of multilayer perceptrons to improve robustness to real-world wearable variability. While each framework independently demonstrates strong predictive power, we show that they capture complementary physiological signatures. Consequently, we propose a late-fusion strategy that synergistically combines the anomaly signals from both architectures into a unified decision score. We benchmark our methodology on the 2nd e-Prevention Grand Challenge dataset, where our fused model achieves a 8% relative improvement over the competition-winning baseline. Our results, supported by extensive ablation studies, suggest that the integration of diverse digital phenotypes, cardiac, motion, and sleep, is essential for the high-fidelity detection of psychotic relapse in real-world settings.",
+      "summary": "Digital phenotyping enables continuous passive monitoring of behavior and physiology, offering a promising paradigm for early detection of psychotic relapse. In this work, we develop and systematically study two smartwatch-based frameworks for daily relapse detection. The first forecasts cardiac dynamics and flags deviations between predicted and observed features as indicators of abnormality. The second adopts a multi-task formulation that fuses sleep with motion and cardiac-derived signals, learning time-aware embeddings and predicting measurement timing. Both pipelines use Transformer encoders and output a daily anomaly score, derived from predictive uncertainty estimated via an ensemble of multilayer perceptrons to improve robustness to real-world wearable variability. While each framework independently demonstrates strong predictive power, we show that they capture complementary physiological signatures. Consequently, we propose a late-fusion strategy that synergistically combines the anomaly signals from both architectures into a unified decision score. We benchmark our methodology on the 2nd e-Prevention Grand Challenge dataset, where our fused model achieves a 8% relative improvement over the competition-winning baseline. Our results, supported by extensive ablation studies, suggest that the integration of diverse digital phenotypes, cardiac, motion, and sleep, is essential for the high-fidelity detection of psychotic relapse in real-world settings.",
+      "abstract": "Digital phenotyping enables continuous passive monitoring of behavior and physiology, offering a promising paradigm for early detection of psychotic relapse. In this work, we develop and systematically study two smartwatch-based frameworks for daily relapse detection. The first forecasts cardiac dynamics and flags deviations between predicted and observed features as indicators of abnormality. The second adopts a multi-task formulation that fuses sleep with motion and cardiac-derived signals, learning time-aware embeddings and predicting measurement timing. Both pipelines use Transformer encoders and output a daily anomaly score, derived from predictive uncertainty estimated via an ensemble of multilayer perceptrons to improve robustness to real-world wearable variability. While each framework independently demonstrates strong predictive power, we show that they capture complementary physiological signatures. Consequently, we propose a late-fusion strategy that synergistically combines the anomaly signals from both architectures into a unified decision score. We benchmark our methodology on the 2nd e-Prevention Grand Challenge dataset, where our fused model achieves a 8% relative improvement over the competition-winning baseline. Our results, supported by extensive ablation studies, suggest that the integration of diverse digital phenotypes, cardiac, motion, and sleep, is essential for the high-fidelity detection of psychotic relapse in real-world settings.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13816",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "利用智能手表进行精神疾病复发检测，产品化前景明确；融合预测与多任务学习的方法新颖，工程上可实现，且属于数字表型分析这一近期热点。",
+        "one_sentence_summary": "针对精神疾病复发早期检测，利用智能手表采集的心脏、运动和睡眠数据，提出两种互补的异常检测框架：一种预测心脏动态并计算预测偏差，另一种通过多任务学习融合多模态信号并预测测量时序；两框架均使用Transformer编码器，并通过集成多层感知机估计预测不确定性以生成每日异常分数。采用晚期融合策略结合二者，在e-Prevention挑战赛数据集上取得相对获胜基线8%的提升，消融研究证实多模态融合的必要性。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "利用智能手表进行精神疾病复发检测，产品化前景明确；融合预测与多任务学习的方法新颖，工程上可实现，且属于数字表型分析这一近期热点。",
+      "one_sentence_summary": "针对精神疾病复发早期检测，利用智能手表采集的心脏、运动和睡眠数据，提出两种互补的异常检测框架：一种预测心脏动态并计算预测偏差，另一种通过多任务学习融合多模态信号并预测测量时序；两框架均使用Transformer编码器，并通过集成多层感知机估计预测不确定性以生成每日异常分数。采用晚期融合策略结合二者，在e-Prevention挑战赛数据集上取得相对获胜基线8%的提升，消融研究证实多模态融合的必要性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13801",
+      "arxiv_id": "2605.13801",
+      "title": "Improving Reproducibility in Evaluation through Multi-Level Annotator Modeling",
+      "url": "https://arxiv.org/abs/2605.13801",
+      "published_at": "2026-05-13T17:22:27Z",
+      "publish_date": "2026-05-13",
+      "description": "As generative AI models such as large language models (LLMs) become more pervasive, ensuring the safety, robustness, and overall trustworthiness of these systems is paramount. However, AI is currently facing a reproducibility crisis driven by unreliable evaluations and unrepeatable experimental results. While human raters are often used to assess models for utility and safety, they introduce divergent biases and subjective opinions into their annotations. Overcoming this variance is exceptionally challenging because very little data exists to study how experimental repeatability actually improves as the annotator pool grows. Standard evaluation practices typically rely on a small number of annotations per item (often 3 to 5) and lack the persistent rater identifiers necessary to model individual variance across items. In this work, we introduce a multi-level bootstrapping approach to realistically model annotator behavior. Leveraging datasets with a large number of ratings and persistent rater identifiers, we analyze the tradeoffs between the number of items ($N$) and the number of responses per item ($K$) required to achieve statistical significance.",
+      "summary": "As generative AI models such as large language models (LLMs) become more pervasive, ensuring the safety, robustness, and overall trustworthiness of these systems is paramount. However, AI is currently facing a reproducibility crisis driven by unreliable evaluations and unrepeatable experimental results. While human raters are often used to assess models for utility and safety, they introduce divergent biases and subjective opinions into their annotations. Overcoming this variance is exceptionally challenging because very little data exists to study how experimental repeatability actually improves as the annotator pool grows. Standard evaluation practices typically rely on a small number of annotations per item (often 3 to 5) and lack the persistent rater identifiers necessary to model individual variance across items. In this work, we introduce a multi-level bootstrapping approach to realistically model annotator behavior. Leveraging datasets with a large number of ratings and persistent rater identifiers, we analyze the tradeoffs between the number of items ($N$) and the number of responses per item ($K$) required to achieve statistical significance.",
+      "abstract": "As generative AI models such as large language models (LLMs) become more pervasive, ensuring the safety, robustness, and overall trustworthiness of these systems is paramount. However, AI is currently facing a reproducibility crisis driven by unreliable evaluations and unrepeatable experimental results. While human raters are often used to assess models for utility and safety, they introduce divergent biases and subjective opinions into their annotations. Overcoming this variance is exceptionally challenging because very little data exists to study how experimental repeatability actually improves as the annotator pool grows. Standard evaluation practices typically rely on a small number of annotations per item (often 3 to 5) and lack the persistent rater identifiers necessary to model individual variance across items. In this work, we introduce a multi-level bootstrapping approach to realistically model annotator behavior. Leveraging datasets with a large number of ratings and persistent rater identifiers, we analyze the tradeoffs between the number of items ($N$) and the number of responses per item ($K$) required to achieve statistical significance.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13801",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 19,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "直接针对生成式AI评估的可靠性问题，提出可操作的多层次引导方法，指导标注设计，工程上可集成到评估流程中，时效性上关注可重复性危机。",
+        "one_sentence_summary": "论文提出一种多层次引导建模方法，利用大规模、持久标注者标识的数据集分析项目数量与每项响应数对统计显著性的影响，旨在提高生成式AI系统人类评估的可重复性和可靠性。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 19,
+        "timeliness_rarity": 16
+      },
+      "score_total": 73,
+      "score_reason": "直接针对生成式AI评估的可靠性问题，提出可操作的多层次引导方法，指导标注设计，工程上可集成到评估流程中，时效性上关注可重复性危机。",
+      "one_sentence_summary": "论文提出一种多层次引导建模方法，利用大规模、持久标注者标识的数据集分析项目数量与每项响应数对统计显著性的影响，旨在提高生成式AI系统人类评估的可重复性和可靠性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13790",
+      "arxiv_id": "2605.13790",
+      "title": "Di-BiLPS: Denoising induced Bidirectional Latent-PDE-Solver under Sparse Observations",
+      "url": "https://arxiv.org/abs/2605.13790",
+      "published_at": "2026-05-13T17:11:07Z",
+      "publish_date": "2026-05-13",
+      "description": "Partial differential equations (PDEs) are fundamental for modeling complex natural and physical phenomena. In many real-world applications, however, observational data are extremely sparse, which severely limits the applicability of both classical numerical solvers and existing neural approaches. While neural methods have shown promising results under moderately sparse observations, their inference efficiency at high resolutions is limited, and their accuracy degrades substantially in the extremely sparse regime. In this work, we propose the Di-BiLPS, a unified neural framework that effectively handle both forward and inverse PDE problems under extremely sparse observations. Di-BiLPS combines a variational autoencoder to compress high-dimensional inputs into a compact latent space, a latent diffusion module to model uncertainty, and contrastive learning to align representations. Operating entirely in this latent space, the framework achieves efficient inference while retaining flexible input-output mapping. In addition, we introduce a PDE-informed denoising algorithm based on a variance-preserving diffusion process, which further improves inference efficiency. Extensive experiments on multiple PDE benchmarks demonstrate that Di-BiLPS consistently achieves SOTA performance under extremely sparse inputs (as low as 3%), while substantially reducing computational cost. Moreover, Di-BiLPS enables zero-shot super-resolution, as it allows predictions over continuous spatial-temporal domains.",
+      "summary": "Partial differential equations (PDEs) are fundamental for modeling complex natural and physical phenomena. In many real-world applications, however, observational data are extremely sparse, which severely limits the applicability of both classical numerical solvers and existing neural approaches. While neural methods have shown promising results under moderately sparse observations, their inference efficiency at high resolutions is limited, and their accuracy degrades substantially in the extremely sparse regime. In this work, we propose the Di-BiLPS, a unified neural framework that effectively handle both forward and inverse PDE problems under extremely sparse observations. Di-BiLPS combines a variational autoencoder to compress high-dimensional inputs into a compact latent space, a latent diffusion module to model uncertainty, and contrastive learning to align representations. Operating entirely in this latent space, the framework achieves efficient inference while retaining flexible input-output mapping. In addition, we introduce a PDE-informed denoising algorithm based on a variance-preserving diffusion process, which further improves inference efficiency. Extensive experiments on multiple PDE benchmarks demonstrate that Di-BiLPS consistently achieves SOTA performance under extremely sparse inputs (as low as 3%), while substantially reducing computational cost. Moreover, Di-BiLPS enables zero-shot super-resolution, as it allows predictions over continuous spatial-temporal domains.",
+      "abstract": "Partial differential equations (PDEs) are fundamental for modeling complex natural and physical phenomena. In many real-world applications, however, observational data are extremely sparse, which severely limits the applicability of both classical numerical solvers and existing neural approaches. While neural methods have shown promising results under moderately sparse observations, their inference efficiency at high resolutions is limited, and their accuracy degrades substantially in the extremely sparse regime. In this work, we propose the Di-BiLPS, a unified neural framework that effectively handle both forward and inverse PDE problems under extremely sparse observations. Di-BiLPS combines a variational autoencoder to compress high-dimensional inputs into a compact latent space, a latent diffusion module to model uncertainty, and contrastive learning to align representations. Operating entirely in this latent space, the framework achieves efficient inference while retaining flexible input-output mapping. In addition, we introduce a PDE-informed denoising algorithm based on a variance-preserving diffusion process, which further improves inference efficiency. Extensive experiments on multiple PDE benchmarks demonstrate that Di-BiLPS consistently achieves SOTA performance under extremely sparse inputs (as low as 3%), while substantially reducing computational cost. Moreover, Di-BiLPS enables zero-shot super-resolution, as it allows predictions over continuous spatial-temporal domains.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13790",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "解决稀疏观测下的PDE求解，对科学计算和仿真工具有实用价值；在潜空间引入扩散和对比学习的方法创新性强，且处理极稀疏数据（3%）的能力少见，顺应当前神经PDE求解器热潮。",
+        "one_sentence_summary": "提出统一神经框架Di-BiLPS，结合变分自编码器压缩高维输入到潜空间、潜在扩散建模不确定性以及对比学习对齐表示，在潜空间高效求解正反问题，并通过基于保方差扩散的PDE去噪算法提升推理效率；在极稀疏观测（低至3%）的多个PDE基准上取得SOTA性能，并实现零样本超分辨率，大幅降低计算开销。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 24
+      },
+      "score_total": 89,
+      "score_reason": "解决稀疏观测下的PDE求解，对科学计算和仿真工具有实用价值；在潜空间引入扩散和对比学习的方法创新性强，且处理极稀疏数据（3%）的能力少见，顺应当前神经PDE求解器热潮。",
+      "one_sentence_summary": "提出统一神经框架Di-BiLPS，结合变分自编码器压缩高维输入到潜空间、潜在扩散建模不确定性以及对比学习对齐表示，在潜空间高效求解正反问题，并通过基于保方差扩散的PDE去噪算法提升推理效率；在极稀疏观测（低至3%）的多个PDE基准上取得SOTA性能，并实现零样本超分辨率，大幅降低计算开销。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13740",
+      "arxiv_id": "2605.13740",
+      "title": "Learning POMDP World Models from Observations with Language-Model Priors",
+      "url": "https://arxiv.org/abs/2605.13740",
+      "published_at": "2026-05-13T16:18:15Z",
+      "publish_date": "2026-05-13",
+      "description": "Whether navigating a building, operating a robot, or playing a game, an agent that acts effectively in an environment must first learn an internal model of how that environment works. Partially-observable Markov decision processes (POMDPs) provide a flexible modeling class for such internal world models, but learning them from observation-action trajectories alone is challenging and typically requires extensive environment interaction. We ask whether language-model priors can reduce costly interaction by leveraging prior knowledge, and introduce \\emph{Pinductor} (POMDP-inductor): an LLM proposes candidate POMDP models from a few observation-action trajectories and iteratively refines them to optimize a belief-based likelihood score. Despite using strictly less information, \\emph{Pinductor} matches the performance and sample efficiency of LLM-based POMDP learning methods that assume privileged access to the hidden state, while significantly surpassing the sample efficiency of tabular POMDP baselines. Further results show that performance scales with LLM capability and degrades gracefully as semantic information about the environment is withheld. Together, these results position language-model priors as a practical tool for sample-efficient world-model learning under partial observability, and a step toward generalist agents in real-world environments. Code is available at https://github.com/atomresearch/pinductor.",
+      "summary": "Whether navigating a building, operating a robot, or playing a game, an agent that acts effectively in an environment must first learn an internal model of how that environment works. Partially-observable Markov decision processes (POMDPs) provide a flexible modeling class for such internal world models, but learning them from observation-action trajectories alone is challenging and typically requires extensive environment interaction. We ask whether language-model priors can reduce costly interaction by leveraging prior knowledge, and introduce \\emph{Pinductor} (POMDP-inductor): an LLM proposes candidate POMDP models from a few observation-action trajectories and iteratively refines them to optimize a belief-based likelihood score. Despite using strictly less information, \\emph{Pinductor} matches the performance and sample efficiency of LLM-based POMDP learning methods that assume privileged access to the hidden state, while significantly surpassing the sample efficiency of tabular POMDP baselines. Further results show that performance scales with LLM capability and degrades gracefully as semantic information about the environment is withheld. Together, these results position language-model priors as a practical tool for sample-efficient world-model learning under partial observability, and a step toward generalist agents in real-world environments. Code is available at https://github.com/atomresearch/pinductor.",
+      "abstract": "Whether navigating a building, operating a robot, or playing a game, an agent that acts effectively in an environment must first learn an internal model of how that environment works. Partially-observable Markov decision processes (POMDPs) provide a flexible modeling class for such internal world models, but learning them from observation-action trajectories alone is challenging and typically requires extensive environment interaction. We ask whether language-model priors can reduce costly interaction by leveraging prior knowledge, and introduce \\emph{Pinductor} (POMDP-inductor): an LLM proposes candidate POMDP models from a few observation-action trajectories and iteratively refines them to optimize a belief-based likelihood score. Despite using strictly less information, \\emph{Pinductor} matches the performance and sample efficiency of LLM-based POMDP learning methods that assume privileged access to the hidden state, while significantly surpassing the sample efficiency of tabular POMDP baselines. Further results show that performance scales with LLM capability and degrades gracefully as semantic information about the environment is withheld. Together, these results position language-model priors as a practical tool for sample-efficient world-model learning under partial observability, and a step toward generalist agents in real-world environments. Code is available at https://github.com/atomresearch/pinductor.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13740",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "利用LLM先验解决部分可观测环境下的世界模型学习，大幅降低样本复杂度，代码开源，直接推动自主agent落地，是近期结合语言模型与环境建模的热点方向。",
+        "one_sentence_summary": "Pinductor方法利用语言模型作为先验，从少量观察-动作轨迹中迭代提出并优化部分可观察马尔可夫决策过程（POMDP）模型，在隐藏状态未知时匹配有监督方法的样本效率，并在序列图像分类任务上验证了可扩展性，旨在降低真实环境中智能体的交互成本。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 84,
+      "score_reason": "利用LLM先验解决部分可观测环境下的世界模型学习，大幅降低样本复杂度，代码开源，直接推动自主agent落地，是近期结合语言模型与环境建模的热点方向。",
+      "one_sentence_summary": "Pinductor方法利用语言模型作为先验，从少量观察-动作轨迹中迭代提出并优化部分可观察马尔可夫决策过程（POMDP）模型，在隐藏状态未知时匹配有监督方法的样本效率，并在序列图像分类任务上验证了可扩展性，旨在降低真实环境中智能体的交互成本。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13737",
+      "arxiv_id": "2605.13737",
+      "title": "Senses Wide Shut: A Representation-Action Gap in Omnimodal LLMs",
+      "url": "https://arxiv.org/abs/2605.13737",
+      "published_at": "2026-05-13T16:14:44Z",
+      "publish_date": "2026-05-13",
+      "description": "When an omnimodal large language model accepts a question whose textual premise contradicts what it actually sees or hears, does the failure lie in perception or in action? Recent omnimodal models are positioned as perception-grounded agents that jointly process video, audio, and text, yet a basic form of grounding remains untested: catching a textual claim that conflicts with the model's own sensory input. We introduce IMAVB, a curated 500-clip benchmark of long-form movies with a 2x2 design crossing target modality (vision, audio) and premise condition (standard, misleading), which lets us measure conflict detection separately from ordinary multimodal comprehension. Across eight open-source omnimodal LLMs and Gemini 3.1 Pro, we document a Representation-Action Gap: hidden states reliably encode premise-perception mismatches even when the same models almost never reject the false claim in their outputs. Behaviorally, models fall into two failure modes: under-rejection, in which they answer misleading questions as if the false premise were true; and over-rejection, in which they reject more often but also reject standard questions, sacrificing ordinary comprehension accuracy. The gap is modality-asymmetric (audio grounding underperforms vision) and prompt-resistant across seven variants. As an initial diagnostic intervention, a probe-guided logit adjustment (PGLA) re-injects the encoded mismatch signal into decoding and consistently improves rejection behavior. Together, these results suggest the bottleneck for omnimodal grounding lies in translation, not perception.",
+      "summary": "When an omnimodal large language model accepts a question whose textual premise contradicts what it actually sees or hears, does the failure lie in perception or in action? Recent omnimodal models are positioned as perception-grounded agents that jointly process video, audio, and text, yet a basic form of grounding remains untested: catching a textual claim that conflicts with the model's own sensory input. We introduce IMAVB, a curated 500-clip benchmark of long-form movies with a 2x2 design crossing target modality (vision, audio) and premise condition (standard, misleading), which lets us measure conflict detection separately from ordinary multimodal comprehension. Across eight open-source omnimodal LLMs and Gemini 3.1 Pro, we document a Representation-Action Gap: hidden states reliably encode premise-perception mismatches even when the same models almost never reject the false claim in their outputs. Behaviorally, models fall into two failure modes: under-rejection, in which they answer misleading questions as if the false premise were true; and over-rejection, in which they reject more often but also reject standard questions, sacrificing ordinary comprehension accuracy. The gap is modality-asymmetric (audio grounding underperforms vision) and prompt-resistant across seven variants. As an initial diagnostic intervention, a probe-guided logit adjustment (PGLA) re-injects the encoded mismatch signal into decoding and consistently improves rejection behavior. Together, these results suggest the bottleneck for omnimodal grounding lies in translation, not perception.",
+      "abstract": "When an omnimodal large language model accepts a question whose textual premise contradicts what it actually sees or hears, does the failure lie in perception or in action? Recent omnimodal models are positioned as perception-grounded agents that jointly process video, audio, and text, yet a basic form of grounding remains untested: catching a textual claim that conflicts with the model's own sensory input. We introduce IMAVB, a curated 500-clip benchmark of long-form movies with a 2x2 design crossing target modality (vision, audio) and premise condition (standard, misleading), which lets us measure conflict detection separately from ordinary multimodal comprehension. Across eight open-source omnimodal LLMs and Gemini 3.1 Pro, we document a Representation-Action Gap: hidden states reliably encode premise-perception mismatches even when the same models almost never reject the false claim in their outputs. Behaviorally, models fall into two failure modes: under-rejection, in which they answer misleading questions as if the false premise were true; and over-rejection, in which they reject more often but also reject standard questions, sacrificing ordinary comprehension accuracy. The gap is modality-asymmetric (audio grounding underperforms vision) and prompt-resistant across seven variants. As an initial diagnostic intervention, a probe-guided logit adjustment (PGLA) re-injects the encoded mismatch signal into decoding and consistently improves rejection behavior. Together, these results suggest the bottleneck for omnimodal grounding lies in translation, not perception.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13737",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 25,
+          "engineering_utility": 23,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "揭示全模态LLM中内部感知与行动输出之间的鸿沟，提出可集成的探针引导逻辑调整方法，对构建可靠的多模态Agent极具启发。",
+        "one_sentence_summary": "本文构建了包含500个电影片段的IMAVB基准，发现全模态大模型内部能感知文本与视听冲突却很少拒绝虚假前提，表现为“表征-行动鸿沟”，并提出探针引导逻辑调整(PGLA)方法，通过注入内部失配信号显著改善模型拒斥行为。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 25,
+        "engineering_utility": 23,
+        "timeliness_rarity": 24
+      },
+      "score_total": 97,
+      "score_reason": "揭示全模态LLM中内部感知与行动输出之间的鸿沟，提出可集成的探针引导逻辑调整方法，对构建可靠的多模态Agent极具启发。",
+      "one_sentence_summary": "本文构建了包含500个电影片段的IMAVB基准，发现全模态大模型内部能感知文本与视听冲突却很少拒绝虚假前提，表现为“表征-行动鸿沟”，并提出探针引导逻辑调整(PGLA)方法，通过注入内部失配信号显著改善模型拒斥行为。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.13695",
+      "arxiv_id": "2605.13695",
+      "title": "RTLC -- Research, Teach-to-Learn, Critique: A three-stage prompting paradigm inspired by the Feynman Learning Technique that lifts LLM-as-judge accuracy on JudgeBench with no fine-tuning",
+      "url": "https://arxiv.org/abs/2605.13695",
+      "published_at": "2026-05-13T15:48:16Z",
+      "publish_date": "2026-05-13",
+      "description": "LLM-as-a-judge is now the default measurement instrument for open-ended generation, but on the public JudgeBench benchmark even strong instruction-tuned judges barely scrape past random on objective-correctness pairwise items. We introduce RTLC, a three-stage prompting recipe -- Research, Teach-to-Learn, Critique -- that promotes a single black-box LLM into an ensemble-of-thought judge with no fine-tuning, retrieval, or external tools. Stage 1 wraps the input in a fixed pedagogical scaffold porting the Feynman Learning Technique (study $\\to$ teach $\\to$ find gaps $\\to$ simplify) into LLM prompting. Stage 2 draws N=10 independent candidate verdicts at temperature 0.4. Stage 3 acts as its own critic, cross-comparing the candidate set against the original question to emit one critiqued verdict at temperature 0. On JudgeBench-GPT (350 hard pairwise items), Claude 3.7 Sonnet's pairwise accuracy climbs from 64.6% (single-shot vanilla prompt) to 78.6% (RTLC critique-of-10) -- an absolute 14.0-percentage-point gain. RTLC also beats N=10 self-consistency majority voting (77.7%) and a zero-shot first candidate (74.0%). A clean three-step ablation attributes +9.4 pp to the Teach-to-Learn scaffold, +3.7 pp to N=10 marginalisation, and +0.9 pp to explicit critique. We discuss the cost-accuracy frontier (RTLC sits above self-consistency at every working point), the error-budget breakdown across the four JudgeBench categories (knowledge, reasoning, math, coding), and how RTLC composes orthogonally with post-hoc judge-score calibration, with the two interventions compounding multiplicatively in practice.",
+      "summary": "LLM-as-a-judge is now the default measurement instrument for open-ended generation, but on the public JudgeBench benchmark even strong instruction-tuned judges barely scrape past random on objective-correctness pairwise items. We introduce RTLC, a three-stage prompting recipe -- Research, Teach-to-Learn, Critique -- that promotes a single black-box LLM into an ensemble-of-thought judge with no fine-tuning, retrieval, or external tools. Stage 1 wraps the input in a fixed pedagogical scaffold porting the Feynman Learning Technique (study $\\to$ teach $\\to$ find gaps $\\to$ simplify) into LLM prompting. Stage 2 draws N=10 independent candidate verdicts at temperature 0.4. Stage 3 acts as its own critic, cross-comparing the candidate set against the original question to emit one critiqued verdict at temperature 0. On JudgeBench-GPT (350 hard pairwise items), Claude 3.7 Sonnet's pairwise accuracy climbs from 64.6% (single-shot vanilla prompt) to 78.6% (RTLC critique-of-10) -- an absolute 14.0-percentage-point gain. RTLC also beats N=10 self-consistency majority voting (77.7%) and a zero-shot first candidate (74.0%). A clean three-step ablation attributes +9.4 pp to the Teach-to-Learn scaffold, +3.7 pp to N=10 marginalisation, and +0.9 pp to explicit critique. We discuss the cost-accuracy frontier (RTLC sits above self-consistency at every working point), the error-budget breakdown across the four JudgeBench categories (knowledge, reasoning, math, coding), and how RTLC composes orthogonally with post-hoc judge-score calibration, with the two interventions compounding multiplicatively in practice.",
+      "abstract": "LLM-as-a-judge is now the default measurement instrument for open-ended generation, but on the public JudgeBench benchmark even strong instruction-tuned judges barely scrape past random on objective-correctness pairwise items. We introduce RTLC, a three-stage prompting recipe -- Research, Teach-to-Learn, Critique -- that promotes a single black-box LLM into an ensemble-of-thought judge with no fine-tuning, retrieval, or external tools. Stage 1 wraps the input in a fixed pedagogical scaffold porting the Feynman Learning Technique (study $\\to$ teach $\\to$ find gaps $\\to$ simplify) into LLM prompting. Stage 2 draws N=10 independent candidate verdicts at temperature 0.4. Stage 3 acts as its own critic, cross-comparing the candidate set against the original question to emit one critiqued verdict at temperature 0. On JudgeBench-GPT (350 hard pairwise items), Claude 3.7 Sonnet's pairwise accuracy climbs from 64.6% (single-shot vanilla prompt) to 78.6% (RTLC critique-of-10) -- an absolute 14.0-percentage-point gain. RTLC also beats N=10 self-consistency majority voting (77.7%) and a zero-shot first candidate (74.0%). A clean three-step ablation attributes +9.4 pp to the Teach-to-Learn scaffold, +3.7 pp to N=10 marginalisation, and +0.9 pp to explicit critique. We discuss the cost-accuracy frontier (RTLC sits above self-consistency at every working point), the error-budget breakdown across the four JudgeBench categories (knowledge, reasoning, math, coding), and how RTLC composes orthogonally with post-hoc judge-score calibration, with the two interventions compounding multiplicatively in practice.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.13695",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 25,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "RTLC是一种免微调、易集成的提示范式，大幅提升LLM评判准确率，对自动评估链路有直接工程价值。",
+        "one_sentence_summary": "本文提出RTLC三阶段提示范式（研究、以教促学、批判），借鉴费曼学习法，无需微调即显著提升LLM作为评判者在JudgeBench-GPT上的准确率（Claude 3.7 Sonnet从64.6%提至78.6%），优于自一致性投票，为自动评估开放生成提供高性价比方案。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 25,
+        "timeliness_rarity": 23
+      },
+      "score_total": 97,
+      "score_reason": "RTLC是一种免微调、易集成的提示范式，大幅提升LLM评判准确率，对自动评估链路有直接工程价值。",
+      "one_sentence_summary": "本文提出RTLC三阶段提示范式（研究、以教促学、批判），借鉴费曼学习法，无需微调即显著提升LLM作为评判者在JudgeBench-GPT上的准确率（Claude 3.7 Sonnet从64.6%提至78.6%），优于自一致性投票，为自动评估开放生成提供高性价比方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-14T05:11:20.501411+00:00",
+      "pushed_at": "2026-05-14T05:11:20.501411+00:00",
+      "source_run_id": "2026-05-14",
+      "pushed_run_id": "2026-05-14"
     }
   ]
 }
