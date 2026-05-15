@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-14T05:11:20.501411+00:00",
+  "updated_at": "2026-05-15T05:17:16.441272+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -2981,11 +2981,11 @@
       "score_reason": "The paper proposes a novel conceptual framework for distinguishing capability elicitation from creation in LLM post-training, directly informing product and workflow design. It introduces accessible support and free-energy view, offering engineering guidance despite being theoretical. Timely for current post-training debates.",
       "one_sentence_summary": "该论文从自由能视角提出“可及支持”概念，区分大模型后训练中的能力激发与能力创造，将监督微调与强化学习统一为对预训练参考分布的重加权，为训练方法选择提供理论依据。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-12T05:07:07.134219+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
       "source_run_id": "2026-05-12",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-15"
     },
     {
       "id": "arxiv:2605.08427",
@@ -4292,11 +4292,11 @@
       "score_reason": "提出跨样本预测抖动指标和双自助抽样缓解方法，对科学ML模型可靠性有贡献，但与AI产品及Agent工程的直接关联度一般。",
       "one_sentence_summary": "本文指出科学机器学习中普遍存在“跨样本预测抖动”问题——相同训练集的不同自助抽样导致测试样本标签大量不一致，并提出双自助抽样法(twin-bootstrap)在无精度损失下显著降低抖动，呼吁将预测稳定性纳入基准报告。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-14T05:11:20.501411+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
       "source_run_id": "2026-05-14",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-15"
     },
     {
       "id": "arxiv:2605.13821",
@@ -4669,6 +4669,618 @@
       "pushed_at": "2026-05-14T05:11:20.501411+00:00",
       "source_run_id": "2026-05-14",
       "pushed_run_id": "2026-05-14"
+    },
+    {
+      "id": "arxiv:2605.12894",
+      "arxiv_id": "2605.12894",
+      "title": "Beyond Cooperative Simulators: Generating Realistic User Personas for Robust Evaluation of LLM Agents",
+      "url": "https://arxiv.org/abs/2605.12894",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Large Language Model (LLM) agents are increasingly deployed in settings where they interact with a wide variety of people, including users who are unclear, impatient, or reluctant to share information. However, collecting real interaction data at scale remains expensive. The field has turned to LLM-based user simulators as stand-ins, but these simulators inherit the behavior of their underlying models: cooperative and homogeneous. As a result, agents that appear strong in simulation often fail under the unseen, diverse communication patterns of real users. To narrow this gap, we introduce Persona Policies (PPol), a plug-and-play control layer that induces realistic behavioral variation in user simulators while preserving the original task goals. Rather than hand-crafting personas, we cast persona generation as an LLM-driven evolutionary program search that optimizes a Python generator to discover behaviors and translate them into task-preserving roleplay policies. Candidate generators are guided by a multi-objective fitness score combining human-likeness with broad coverage of human behavioral patterns. Once optimized, the generator produces a diverse population of human-like personas for any task in the domain. Across tau^2-bench retail and airline domains, evolved PPol programs yield 33-62% absolute gains in fitness score over the baseline simulator. In a blinded evaluation, annotators rated PPol-conditioned users as human 80.4% of the time, close to real human traces and nearly twice as frequently as baseline simulators. Agents trained with PPol are more robust to challenging, out-of-distribution behaviors, improving task success by +17% relative to training only on existing simulated interactions. This offers a novel approach to strengthen simulator-based evaluation and training without changing tasks or rewards.",
+      "summary": "Large Language Model (LLM) agents are increasingly deployed in settings where they interact with a wide variety of people, including users who are unclear, impatient, or reluctant to share information. However, collecting real interaction data at scale remains expensive. The field has turned to LLM-based user simulators as stand-ins, but these simulators inherit the behavior of their underlying models: cooperative and homogeneous. As a result, agents that appear strong in simulation often fail under the unseen, diverse communication patterns of real users. To narrow this gap, we introduce Persona Policies (PPol), a plug-and-play control layer that induces realistic behavioral variation in user simulators while preserving the original task goals. Rather than hand-crafting personas, we cast persona generation as an LLM-driven evolutionary program search that optimizes a Python generator to discover behaviors and translate them into task-preserving roleplay policies. Candidate generators are guided by a multi-objective fitness score combining human-likeness with broad coverage of human behavioral patterns. Once optimized, the generator produces a diverse population of human-like personas for any task in the domain. Across tau^2-bench retail and airline domains, evolved PPol programs yield 33-62% absolute gains in fitness score over the baseline simulator. In a blinded evaluation, annotators rated PPol-conditioned users as human 80.4% of the time, close to real human traces and nearly twice as frequently as baseline simulators. Agents trained with PPol are more robust to challenging, out-of-distribution behaviors, improving task success by +17% relative to training only on existing simulated interactions. This offers a novel approach to strengthen simulator-based evaluation and training without changing tasks or rewards.",
+      "abstract": "Large Language Model (LLM) agents are increasingly deployed in settings where they interact with a wide variety of people, including users who are unclear, impatient, or reluctant to share information. However, collecting real interaction data at scale remains expensive. The field has turned to LLM-based user simulators as stand-ins, but these simulators inherit the behavior of their underlying models: cooperative and homogeneous. As a result, agents that appear strong in simulation often fail under the unseen, diverse communication patterns of real users. To narrow this gap, we introduce Persona Policies (PPol), a plug-and-play control layer that induces realistic behavioral variation in user simulators while preserving the original task goals. Rather than hand-crafting personas, we cast persona generation as an LLM-driven evolutionary program search that optimizes a Python generator to discover behaviors and translate them into task-preserving roleplay policies. Candidate generators are guided by a multi-objective fitness score combining human-likeness with broad coverage of human behavioral patterns. Once optimized, the generator produces a diverse population of human-like personas for any task in the domain. Across tau^2-bench retail and airline domains, evolved PPol programs yield 33-62% absolute gains in fitness score over the baseline simulator. In a blinded evaluation, annotators rated PPol-conditioned users as human 80.4% of the time, close to real human traces and nearly twice as frequently as baseline simulators. Agents trained with PPol are more robust to challenging, out-of-distribution behaviors, improving task success by +17% relative to training only on existing simulated interactions. This offers a novel approach to strengthen simulator-based evaluation and training without changing tasks or rewards.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12894",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "直接解决LLM代理评估中的模拟器过协作问题，通过进化程序搜索生成多样化用户角色，方法新颖且实用性强，可插拔集成，显著提升代理鲁棒性，紧贴当前代理评测痛点。",
+        "one_sentence_summary": "通过LLM驱动的进化程序搜索生成Persona Policies，作为即插即用的控制层增强用户模拟器真实性，使代理在零售和航空任务中成功率提升17%，人类评估者将策略生成用户误判为真人的概率达80.4%。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 24
+      },
+      "score_total": 93,
+      "score_reason": "直接解决LLM代理评估中的模拟器过协作问题，通过进化程序搜索生成多样化用户角色，方法新颖且实用性强，可插拔集成，显著提升代理鲁棒性，紧贴当前代理评测痛点。",
+      "one_sentence_summary": "通过LLM驱动的进化程序搜索生成Persona Policies，作为即插即用的控制层增强用户模拟器真实性，使代理在零售和航空任务中成功率提升17%，人类评估者将策略生成用户误判为真人的概率达80.4%。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.12922",
+      "arxiv_id": "2605.12922",
+      "title": "When Attention Closes: How LLMs Lose the Thread in Multi-Turn Interaction",
+      "url": "https://arxiv.org/abs/2605.12922",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Large language models can follow complex instructions in a single turn, yet over long multi-turn interactions they often lose the thread of instructions, persona, and rules. This degradation has been measured behaviorally but not mechanistically explained. We propose a channel-transition account: goal-defining tokens become less accessible through attention, while goal-related information may persist in residual representations. We introduce the Goal Accessibility Ratio (GAR), measuring attention from generated tokens to task-defining goal tokens, and combine it with sliding-window ablations and residual-stream probes. When attention to instructions closes, what survives reveals architecture. Across architectures, the transition yields qualitatively distinct failure modes: some models preserve goal-conditioned behavior at vanishing attention, others fail despite decodable residual goal information, and the layer at which this encoding emerges varies from 2 to 27. A within-model causal ablation that force-closes the attention channel in Mistral collapses recall from near-perfect to 11% on a 20-fact retention task and raises persona-constraint violations above an adversarial-pressure baseline without user pressure, with both effects emerging at the predictable crossover turn. Linear probes recover per-episode recall outcomes from residual representations with AUC up to 0.99 across all four primary architectures, while input embeddings remain at chance. Across architectures and model scales, the gap between attention loss and residual decodability predicts whether goal-conditioned behavior survives channel closure. We contribute GAR as a diagnostic, the channel-transition framework as a controlled mechanistic account, and a parametric prediction of failure timing under windowed attention closure.",
+      "summary": "Large language models can follow complex instructions in a single turn, yet over long multi-turn interactions they often lose the thread of instructions, persona, and rules. This degradation has been measured behaviorally but not mechanistically explained. We propose a channel-transition account: goal-defining tokens become less accessible through attention, while goal-related information may persist in residual representations. We introduce the Goal Accessibility Ratio (GAR), measuring attention from generated tokens to task-defining goal tokens, and combine it with sliding-window ablations and residual-stream probes. When attention to instructions closes, what survives reveals architecture. Across architectures, the transition yields qualitatively distinct failure modes: some models preserve goal-conditioned behavior at vanishing attention, others fail despite decodable residual goal information, and the layer at which this encoding emerges varies from 2 to 27. A within-model causal ablation that force-closes the attention channel in Mistral collapses recall from near-perfect to 11% on a 20-fact retention task and raises persona-constraint violations above an adversarial-pressure baseline without user pressure, with both effects emerging at the predictable crossover turn. Linear probes recover per-episode recall outcomes from residual representations with AUC up to 0.99 across all four primary architectures, while input embeddings remain at chance. Across architectures and model scales, the gap between attention loss and residual decodability predicts whether goal-conditioned behavior survives channel closure. We contribute GAR as a diagnostic, the channel-transition framework as a controlled mechanistic account, and a parametric prediction of failure timing under windowed attention closure.",
+      "abstract": "Large language models can follow complex instructions in a single turn, yet over long multi-turn interactions they often lose the thread of instructions, persona, and rules. This degradation has been measured behaviorally but not mechanistically explained. We propose a channel-transition account: goal-defining tokens become less accessible through attention, while goal-related information may persist in residual representations. We introduce the Goal Accessibility Ratio (GAR), measuring attention from generated tokens to task-defining goal tokens, and combine it with sliding-window ablations and residual-stream probes. When attention to instructions closes, what survives reveals architecture. Across architectures, the transition yields qualitatively distinct failure modes: some models preserve goal-conditioned behavior at vanishing attention, others fail despite decodable residual goal information, and the layer at which this encoding emerges varies from 2 to 27. A within-model causal ablation that force-closes the attention channel in Mistral collapses recall from near-perfect to 11% on a 20-fact retention task and raises persona-constraint violations above an adversarial-pressure baseline without user pressure, with both effects emerging at the predictable crossover turn. Linear probes recover per-episode recall outcomes from residual representations with AUC up to 0.99 across all four primary architectures, while input embeddings remain at chance. Across architectures and model scales, the gap between attention loss and residual decodability predicts whether goal-conditioned behavior survives channel closure. We contribute GAR as a diagnostic, the channel-transition framework as a controlled mechanistic account, and a parametric prediction of failure timing under windowed attention closure.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12922",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 19,
+          "engineering_utility": 17,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "研究了LLM多轮交互中注意力机制导致的指令遗忘，提出目标可访问比率(GAR)和通道转换框架，对诊断和提升对话系统可靠性有直接启发，方法可集成到监控工具中，但工程化程度中等。",
+        "one_sentence_summary": "论文分析LLM在多轮对话中注意力关闭导致的指令遗忘机制，提出目标可访问比率(GAR)指标和通道转换框架，发现不同架构在注意力消失后的失败模式差异，并通过线性探针以0.99 AUC预测回忆结果，为对话系统稳定性诊断提供了新方法。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 19,
+        "engineering_utility": 17,
+        "timeliness_rarity": 18
+      },
+      "score_total": 75,
+      "score_reason": "研究了LLM多轮交互中注意力机制导致的指令遗忘，提出目标可访问比率(GAR)和通道转换框架，对诊断和提升对话系统可靠性有直接启发，方法可集成到监控工具中，但工程化程度中等。",
+      "one_sentence_summary": "论文分析LLM在多轮对话中注意力关闭导致的指令遗忘机制，提出目标可访问比率(GAR)指标和通道转换框架，发现不同架构在注意力消失后的失败模式差异，并通过线性探针以0.99 AUC预测回忆结果，为对话系统稳定性诊断提供了新方法。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13229",
+      "arxiv_id": "2605.13229",
+      "title": "Improving Code Translation with Syntax-Guided and Semantic-aware Preference Optimization",
+      "url": "https://arxiv.org/abs/2605.13229",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "LLMs have shown immense potential for code translation, yet they often struggle to ensure both syntactic correctness and semantic consistency. While preference-based learning offers a promising alignment strategy, it is hindered by unreliable semantic rewards derived from sparse test cases or restrictive reference translations. We argue that a robust semantic reward for code translation must be derived directly from the source code. In this paper, we propose CTO to improve code translation with syntax-guided and semantic-aware preference optimization. Through contrastive learning, we train a cross-lingual semantic model to directly assess functional equivalence between source and translated code. By formulating code translation as a multi-objective optimization problem, this robust semantic signal is seamlessly unified with compiler-based syntactic feedback within the direct preference optimization framework. Extensive experiments on C++, Java, and Python translations demonstrate that CTO significantly outperforms existing baselines and alternative preference optimization strategies.",
+      "summary": "LLMs have shown immense potential for code translation, yet they often struggle to ensure both syntactic correctness and semantic consistency. While preference-based learning offers a promising alignment strategy, it is hindered by unreliable semantic rewards derived from sparse test cases or restrictive reference translations. We argue that a robust semantic reward for code translation must be derived directly from the source code. In this paper, we propose CTO to improve code translation with syntax-guided and semantic-aware preference optimization. Through contrastive learning, we train a cross-lingual semantic model to directly assess functional equivalence between source and translated code. By formulating code translation as a multi-objective optimization problem, this robust semantic signal is seamlessly unified with compiler-based syntactic feedback within the direct preference optimization framework. Extensive experiments on C++, Java, and Python translations demonstrate that CTO significantly outperforms existing baselines and alternative preference optimization strategies.",
+      "abstract": "LLMs have shown immense potential for code translation, yet they often struggle to ensure both syntactic correctness and semantic consistency. While preference-based learning offers a promising alignment strategy, it is hindered by unreliable semantic rewards derived from sparse test cases or restrictive reference translations. We argue that a robust semantic reward for code translation must be derived directly from the source code. In this paper, we propose CTO to improve code translation with syntax-guided and semantic-aware preference optimization. Through contrastive learning, we train a cross-lingual semantic model to directly assess functional equivalence between source and translated code. By formulating code translation as a multi-objective optimization problem, this robust semantic signal is seamlessly unified with compiler-based syntactic feedback within the direct preference optimization framework. Extensive experiments on C++, Java, and Python translations demonstrate that CTO significantly outperforms existing baselines and alternative preference optimization strategies.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.13229",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "The paper proposes CTO, a code translation method that unifies syntax-guided and semantic-aware preference optimization. It is highly relevant to developer tools, introduces a new cross-lingual semantic model for direct equivalence assessment, and shows strong results in practical multi-language translation.",
+        "one_sentence_summary": "本文提出CTO方法，通过对比学习训练跨语言语义模型直接评估源代码与翻译代码的功能等价性，并将其与编译器语法反馈统一到直接偏好优化框架中，在C++、Java、Python互译实验上显著优于现有基线，有效提升了代码翻译的语义一致性。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 20
+      },
+      "score_total": 85,
+      "score_reason": "The paper proposes CTO, a code translation method that unifies syntax-guided and semantic-aware preference optimization. It is highly relevant to developer tools, introduces a new cross-lingual semantic model for direct equivalence assessment, and shows strong results in practical multi-language translation.",
+      "one_sentence_summary": "本文提出CTO方法，通过对比学习训练跨语言语义模型直接评估源代码与翻译代码的功能等价性，并将其与编译器语法反馈统一到直接偏好优化框架中，在C++、Java、Python互译实验上显著优于现有基线，有效提升了代码翻译的语义一致性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.13296",
+      "arxiv_id": "2605.13296",
+      "title": "Discrete Diffusion for Complex and Congested Multi-Agent Path Finding with Sparse Social Attention",
+      "url": "https://arxiv.org/abs/2605.13296",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Multi-Agent Path Finding (MAPF) is a coordination problem that requires computing globally consistent, collision-free trajectories from individual start positions to assigned goal positions under combinatorial planning complexity. In dense environments, suboptimal initial plans induce compound conflicts that hinder feasible repair. For repair-based solvers like LNS2, initial plan quality critically affects downstream repair, yet this factor remains underexplored. We propose DiffLNS, a hybrid framework that integrates a discrete denoising diffusion probabilistic model (D3PM) with LNS2. The D3PM serves as an initializer with sparse social attention that learns a spatiotemporal prior over coordinated multi-agent action trajectories from expert demonstrations and samples multiple joint plans. Operating directly on the categorical action space, our discrete diffusion preserves the MAPF action structure and samples from a multimodal joint-plan distribution to produce diverse drafts well suited for neighborhood repair. These drafts act as warm starts for downstream repair, which completes unfinished trajectories and resolves remaining conflicts under hard MAPF constraints. Experimental results show that despite being trained only on instances with at most 96 agents, the initializer generalizes to scenarios with up to 312 agents at inference time. Across 20 complex and congested settings, DiffLNS achieves an average success rate of 95.8%, outperforming the strongest tested baseline by 9.6 percentage points and matching or exceeding all baselines in all 20 settings. To the best of our knowledge, this is the first work to leverage discrete diffusion for warm-starting an LNS-based MAPF solver.",
+      "summary": "Multi-Agent Path Finding (MAPF) is a coordination problem that requires computing globally consistent, collision-free trajectories from individual start positions to assigned goal positions under combinatorial planning complexity. In dense environments, suboptimal initial plans induce compound conflicts that hinder feasible repair. For repair-based solvers like LNS2, initial plan quality critically affects downstream repair, yet this factor remains underexplored. We propose DiffLNS, a hybrid framework that integrates a discrete denoising diffusion probabilistic model (D3PM) with LNS2. The D3PM serves as an initializer with sparse social attention that learns a spatiotemporal prior over coordinated multi-agent action trajectories from expert demonstrations and samples multiple joint plans. Operating directly on the categorical action space, our discrete diffusion preserves the MAPF action structure and samples from a multimodal joint-plan distribution to produce diverse drafts well suited for neighborhood repair. These drafts act as warm starts for downstream repair, which completes unfinished trajectories and resolves remaining conflicts under hard MAPF constraints. Experimental results show that despite being trained only on instances with at most 96 agents, the initializer generalizes to scenarios with up to 312 agents at inference time. Across 20 complex and congested settings, DiffLNS achieves an average success rate of 95.8%, outperforming the strongest tested baseline by 9.6 percentage points and matching or exceeding all baselines in all 20 settings. To the best of our knowledge, this is the first work to leverage discrete diffusion for warm-starting an LNS-based MAPF solver.",
+      "abstract": "Multi-Agent Path Finding (MAPF) is a coordination problem that requires computing globally consistent, collision-free trajectories from individual start positions to assigned goal positions under combinatorial planning complexity. In dense environments, suboptimal initial plans induce compound conflicts that hinder feasible repair. For repair-based solvers like LNS2, initial plan quality critically affects downstream repair, yet this factor remains underexplored. We propose DiffLNS, a hybrid framework that integrates a discrete denoising diffusion probabilistic model (D3PM) with LNS2. The D3PM serves as an initializer with sparse social attention that learns a spatiotemporal prior over coordinated multi-agent action trajectories from expert demonstrations and samples multiple joint plans. Operating directly on the categorical action space, our discrete diffusion preserves the MAPF action structure and samples from a multimodal joint-plan distribution to produce diverse drafts well suited for neighborhood repair. These drafts act as warm starts for downstream repair, which completes unfinished trajectories and resolves remaining conflicts under hard MAPF constraints. Experimental results show that despite being trained only on instances with at most 96 agents, the initializer generalizes to scenarios with up to 312 agents at inference time. Across 20 complex and congested settings, DiffLNS achieves an average success rate of 95.8%, outperforming the strongest tested baseline by 9.6 percentage points and matching or exceeding all baselines in all 20 settings. To the best of our knowledge, this is the first work to leverage discrete diffusion for warm-starting an LNS-based MAPF solver.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 10,
+        "new_signal": 20,
+        "engineering_utility": 14,
+        "timeliness_rarity": 19
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, engineering utility",
+      "one_sentence_summary": "这篇论文提出一个可复用框架，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.13301",
+      "arxiv_id": "2605.13301",
+      "title": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
+      "url": "https://arxiv.org/abs/2605.13301",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Recent progress in reasoning models has substantially advanced long-horizon mathematical and scientific problem solving, with several systems now reaching gold-medal-level performance on International Mathematical Olympiad (IMO) and International Physics Olympiad (IPhO) problems. In this paper, we introduce a simple and unified recipe for converting a post-trained reasoning backbone into a rigorous olympiad-level solver. The recipe first uses a reverse-perplexity curriculum for SFT to instill rigorous proof-search and self-checking behaviors, then scales these behaviors through a two-stage RL pipeline that progresses from RL with verifiable rewards to more delicate proof-level RL, and finally boosts solving performance with test-time scaling. Applying this recipe, we train a 30B-A3B backbone with SFT on around 340K sub-8K-token trajectories followed by 200 RL steps. The resulting model, SU-01, supports stable reasoning on difficult problems with trajectories exceeding 100K tokens, while achieving gold-medal-level performance on mathematical and physical olympiad competitions, including IMO 2025/USAMO 2026 and IPhO 2024/2025. It also demonstrates strong generalization of scientific reasoning to domains beyond mathematics and physics.",
+      "summary": "Recent progress in reasoning models has substantially advanced long-horizon mathematical and scientific problem solving, with several systems now reaching gold-medal-level performance on International Mathematical Olympiad (IMO) and International Physics Olympiad (IPhO) problems. In this paper, we introduce a simple and unified recipe for converting a post-trained reasoning backbone into a rigorous olympiad-level solver. The recipe first uses a reverse-perplexity curriculum for SFT to instill rigorous proof-search and self-checking behaviors, then scales these behaviors through a two-stage RL pipeline that progresses from RL with verifiable rewards to more delicate proof-level RL, and finally boosts solving performance with test-time scaling. Applying this recipe, we train a 30B-A3B backbone with SFT on around 340K sub-8K-token trajectories followed by 200 RL steps. The resulting model, SU-01, supports stable reasoning on difficult problems with trajectories exceeding 100K tokens, while achieving gold-medal-level performance on mathematical and physical olympiad competitions, including IMO 2025/USAMO 2026 and IPhO 2024/2025. It also demonstrates strong generalization of scientific reasoning to domains beyond mathematics and physics.",
+      "abstract": "Recent progress in reasoning models has substantially advanced long-horizon mathematical and scientific problem solving, with several systems now reaching gold-medal-level performance on International Mathematical Olympiad (IMO) and International Physics Olympiad (IPhO) problems. In this paper, we introduce a simple and unified recipe for converting a post-trained reasoning backbone into a rigorous olympiad-level solver. The recipe first uses a reverse-perplexity curriculum for SFT to instill rigorous proof-search and self-checking behaviors, then scales these behaviors through a two-stage RL pipeline that progresses from RL with verifiable rewards to more delicate proof-level RL, and finally boosts solving performance with test-time scaling. Applying this recipe, we train a 30B-A3B backbone with SFT on around 340K sub-8K-token trajectories followed by 200 RL steps. The resulting model, SU-01, supports stable reasoning on difficult problems with trajectories exceeding 100K tokens, while achieving gold-medal-level performance on mathematical and physical olympiad competitions, including IMO 2025/USAMO 2026 and IPhO 2024/2025. It also demonstrates strong generalization of scientific reasoning to domains beyond mathematics and physics.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.13301",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 21,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "提出一套简单且可扩展的训练配方（反向困惑度SFT + 两阶段RL + 测试时扩展），将小规模模型提升至国际奥赛金牌水平，方法清晰可复用，对开发高难度推理产品有直接工程指导意义。",
+        "one_sentence_summary": "论文提出反向困惑度课程监督微调与两阶段强化学习（从可验证奖励到证明级RL）相结合的统一配方，并辅以测试时扩展，仅使用30B-A3B模型就在IMO 2025和IPhO 2024等竞赛中达到金牌水平，展示了小模型通过缩放方法获得强大科学推理能力的潜力。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 21,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "提出一套简单且可扩展的训练配方（反向困惑度SFT + 两阶段RL + 测试时扩展），将小规模模型提升至国际奥赛金牌水平，方法清晰可复用，对开发高难度推理产品有直接工程指导意义。",
+      "one_sentence_summary": "论文提出反向困惑度课程监督微调与两阶段强化学习（从可验证奖励到证明级RL）相结合的统一配方，并辅以测试时扩展，仅使用30B-A3B模型就在IMO 2025和IPhO 2024等竞赛中达到金牌水平，展示了小模型通过缩放方法获得强大科学推理能力的潜力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.13450",
+      "arxiv_id": "2605.13450",
+      "title": "Assessing the Creativity of Large Language Models: Testing, Limits, and New Frontiers",
+      "url": "https://arxiv.org/abs/2605.13450",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Measuring the creativity of large language models (LLMs) is essential for designing methods that can improve creativity and for enhancing our scientific understanding of this ability. To accomplish this, it has become common in recent years to administer tests of human creativity to LLMs. Although these tests provide a convenient and fully automated way to score \"creativity,\" their validity as measures of machine creativity has not been established, and these tests already have limited validity as predictors of human creativity. To address this problem, we conduct the first large-scale, systematic study assessing the effectiveness of human creativity tests for predicting the creative achievement of LLMs across three target constructs: creative writing, divergent thinking, and scientific ideation. We find that the Divergent Association Task (DAT) and the Conditional DAT are the best predictors of creative writing and divergent thinking, respectively, but that test effectiveness varies significantly by construct, and no single test predicts all constructs well. Moreover, contrary to popular belief, no existing test reliably predicts scientific ideation ability. Motivated by this problem, we introduce the Divergent Remote Association Test (DRAT), a vocabulary-space test that assesses both convergent and divergent thinking in a single instrument. The DRAT is the first and only creativity test for LLMs that is a significant predictor of scientific ideation ability, demonstrating robustness across major design choices. Furthermore, the performance gain of the DRAT is not recoverable from any linear combination of the Divergent Association Task and the Remote Associates Test, indicating that assessing divergent and convergent thinking in the same test is essential to reliably predicting scientific ideation ability.",
+      "summary": "Measuring the creativity of large language models (LLMs) is essential for designing methods that can improve creativity and for enhancing our scientific understanding of this ability. To accomplish this, it has become common in recent years to administer tests of human creativity to LLMs. Although these tests provide a convenient and fully automated way to score \"creativity,\" their validity as measures of machine creativity has not been established, and these tests already have limited validity as predictors of human creativity. To address this problem, we conduct the first large-scale, systematic study assessing the effectiveness of human creativity tests for predicting the creative achievement of LLMs across three target constructs: creative writing, divergent thinking, and scientific ideation. We find that the Divergent Association Task (DAT) and the Conditional DAT are the best predictors of creative writing and divergent thinking, respectively, but that test effectiveness varies significantly by construct, and no single test predicts all constructs well. Moreover, contrary to popular belief, no existing test reliably predicts scientific ideation ability. Motivated by this problem, we introduce the Divergent Remote Association Test (DRAT), a vocabulary-space test that assesses both convergent and divergent thinking in a single instrument. The DRAT is the first and only creativity test for LLMs that is a significant predictor of scientific ideation ability, demonstrating robustness across major design choices. Furthermore, the performance gain of the DRAT is not recoverable from any linear combination of the Divergent Association Task and the Remote Associates Test, indicating that assessing divergent and convergent thinking in the same test is essential to reliably predicting scientific ideation ability.",
+      "abstract": "Measuring the creativity of large language models (LLMs) is essential for designing methods that can improve creativity and for enhancing our scientific understanding of this ability. To accomplish this, it has become common in recent years to administer tests of human creativity to LLMs. Although these tests provide a convenient and fully automated way to score \"creativity,\" their validity as measures of machine creativity has not been established, and these tests already have limited validity as predictors of human creativity. To address this problem, we conduct the first large-scale, systematic study assessing the effectiveness of human creativity tests for predicting the creative achievement of LLMs across three target constructs: creative writing, divergent thinking, and scientific ideation. We find that the Divergent Association Task (DAT) and the Conditional DAT are the best predictors of creative writing and divergent thinking, respectively, but that test effectiveness varies significantly by construct, and no single test predicts all constructs well. Moreover, contrary to popular belief, no existing test reliably predicts scientific ideation ability. Motivated by this problem, we introduce the Divergent Remote Association Test (DRAT), a vocabulary-space test that assesses both convergent and divergent thinking in a single instrument. The DRAT is the first and only creativity test for LLMs that is a significant predictor of scientific ideation ability, demonstrating robustness across major design choices. Furthermore, the performance gain of the DRAT is not recoverable from any linear combination of the Divergent Association Task and the Remote Associates Test, indicating that assessing divergent and convergent thinking in the same test is essential to reliably predicting scientific ideation ability.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.13450",
+        "score_detail": {
+          "application_relevance": 19,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "系统评估了人类创造力测试对LLM创造力的预测有效性，提出了新的DRAT测试能预测科学构思能力，为创造性AI评估提供了新工具，但直接工程可复用性一般，更多作为测评基准。",
+        "one_sentence_summary": "论文首次大规模评估人类创造力测试对LLM的预测效果，发现现有测试无法预测科学构思，遂提出结合发散与收敛思维的Divergent Remote Association Test (DRAT)，成为首个显著预测LLM科学构思能力的测试，为创造性AI能力测评提供了新维度。"
+      },
+      "score_detail": {
+        "application_relevance": 19,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 79,
+      "score_reason": "系统评估了人类创造力测试对LLM创造力的预测有效性，提出了新的DRAT测试能预测科学构思能力，为创造性AI评估提供了新工具，但直接工程可复用性一般，更多作为测评基准。",
+      "one_sentence_summary": "论文首次大规模评估人类创造力测试对LLM的预测效果，发现现有测试无法预测科学构思，遂提出结合发散与收敛思维的Divergent Remote Association Test (DRAT)，成为首个显著预测LLM科学构思能力的测试，为创造性AI能力测评提供了新维度。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.13532",
+      "arxiv_id": "2605.13532",
+      "title": "AI-Generated Slides: Are They Good? Can Students Tell?",
+      "url": "https://arxiv.org/abs/2605.13532",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "As generative AI (GenAI) tools become easily accessible, there is promise in using such tools to support instructors. To that end, this paper examines using GenAI to help generate slides from instructor authored course notes, emphasizing instructor and student perceptions. We examine an end-to-end education tool (NotebookLM), two general-purpose LLMs (Claude, M365 Copilot), and two coding assistants (Cursor, Claude Code). We first analyze whether GenAI generated slides are ``good'' via narrative assessment by educators. We choose the best slides to use (with some modification) in a real course setting, and compare the student perception of human vs. AI generated slides. We find that coding assistant tools produce slides that were most accurate, complete, and pedagogically sound. Additionally, students rate GenAI slides to be of similar quality as instructor-created slides, and cannot reliably identify which slides are AI-generated. Additionally, we find a negative correlation between a high quality rating and a high ``AI-generated'' rating, suggesting students associate poor quality with the source of the slides being AI. These findings highlight promising opportunities for integrating GenAI into instructional design workflows and call for further research on how educators can best harness such tools responsibly and effectively.",
+      "summary": "As generative AI (GenAI) tools become easily accessible, there is promise in using such tools to support instructors. To that end, this paper examines using GenAI to help generate slides from instructor authored course notes, emphasizing instructor and student perceptions. We examine an end-to-end education tool (NotebookLM), two general-purpose LLMs (Claude, M365 Copilot), and two coding assistants (Cursor, Claude Code). We first analyze whether GenAI generated slides are ``good'' via narrative assessment by educators. We choose the best slides to use (with some modification) in a real course setting, and compare the student perception of human vs. AI generated slides. We find that coding assistant tools produce slides that were most accurate, complete, and pedagogically sound. Additionally, students rate GenAI slides to be of similar quality as instructor-created slides, and cannot reliably identify which slides are AI-generated. Additionally, we find a negative correlation between a high quality rating and a high ``AI-generated'' rating, suggesting students associate poor quality with the source of the slides being AI. These findings highlight promising opportunities for integrating GenAI into instructional design workflows and call for further research on how educators can best harness such tools responsibly and effectively.",
+      "abstract": "As generative AI (GenAI) tools become easily accessible, there is promise in using such tools to support instructors. To that end, this paper examines using GenAI to help generate slides from instructor authored course notes, emphasizing instructor and student perceptions. We examine an end-to-end education tool (NotebookLM), two general-purpose LLMs (Claude, M365 Copilot), and two coding assistants (Cursor, Claude Code). We first analyze whether GenAI generated slides are ``good'' via narrative assessment by educators. We choose the best slides to use (with some modification) in a real course setting, and compare the student perception of human vs. AI generated slides. We find that coding assistant tools produce slides that were most accurate, complete, and pedagogically sound. Additionally, students rate GenAI slides to be of similar quality as instructor-created slides, and cannot reliably identify which slides are AI-generated. Additionally, we find a negative correlation between a high quality rating and a high ``AI-generated'' rating, suggesting students associate poor quality with the source of the slides being AI. These findings highlight promising opportunities for integrating GenAI into instructional design workflows and call for further research on how educators can best harness such tools responsibly and effectively.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.13532",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 18,
+          "engineering_utility": 14,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "This empirical study evaluates GenAI tools for slide generation from course notes, including a real course deployment and student perception experiment. It provides direct insights for educational technology products but offers limited reusable engineering components, focusing more on user study findings.",
+        "one_sentence_summary": "本文实证评估了多种生成式AI工具从课程笔记生成教学幻灯片的质量，发现编程助手如Cursor和Claude Code生成的幻灯片最准确完整，并在真实课堂的双盲测试中表明学生无法可靠区分AI与人工幻灯片，但倾向于将低质量归因于AI。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 18,
+        "engineering_utility": 14,
+        "timeliness_rarity": 18
+      },
+      "score_total": 74,
+      "score_reason": "This empirical study evaluates GenAI tools for slide generation from course notes, including a real course deployment and student perception experiment. It provides direct insights for educational technology products but offers limited reusable engineering components, focusing more on user study findings.",
+      "one_sentence_summary": "本文实证评估了多种生成式AI工具从课程笔记生成教学幻灯片的质量，发现编程助手如Cursor和Claude Code生成的幻灯片最准确完整，并在真实课堂的双盲测试中表明学生无法可靠区分AI与人工幻灯片，但倾向于将低质量归因于AI。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.12517",
+      "arxiv_id": "2605.12517",
+      "title": "Bridging the Missing-Modality Gap: Improving Text-Only Calibration of Vision Language Models",
+      "url": "https://arxiv.org/abs/2605.12517",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Vision-language models (VLMs) are often deployed on text-only inputs, although they are trained with images. We find that removing the vision modality causes large drops in accuracy and severe miscalibration, and the model does not behave like its original language backbone under text-only prompting. This failure is not explained only by missing semantic information. Even when text descriptions preserve key content, confidence becomes unreliable, while adding a visual signal through generated images partially restores accuracy and calibration. We propose the Latent Imagination Module (LIM), a lightweight cross-attention module that predicts imagined latent embeddings from textual input and feeds them into a frozen VLM backbone without pixel-level image synthesis. Across text-only benchmarks, unseen tasks, and missing-image scenarios, LIM improves accuracy and reduces calibration error. These results suggest that latent modality completion is a practical approach for reliable VLM inference under missing-modality.",
+      "summary": "Vision-language models (VLMs) are often deployed on text-only inputs, although they are trained with images. We find that removing the vision modality causes large drops in accuracy and severe miscalibration, and the model does not behave like its original language backbone under text-only prompting. This failure is not explained only by missing semantic information. Even when text descriptions preserve key content, confidence becomes unreliable, while adding a visual signal through generated images partially restores accuracy and calibration. We propose the Latent Imagination Module (LIM), a lightweight cross-attention module that predicts imagined latent embeddings from textual input and feeds them into a frozen VLM backbone without pixel-level image synthesis. Across text-only benchmarks, unseen tasks, and missing-image scenarios, LIM improves accuracy and reduces calibration error. These results suggest that latent modality completion is a practical approach for reliable VLM inference under missing-modality.",
+      "abstract": "Vision-language models (VLMs) are often deployed on text-only inputs, although they are trained with images. We find that removing the vision modality causes large drops in accuracy and severe miscalibration, and the model does not behave like its original language backbone under text-only prompting. This failure is not explained only by missing semantic information. Even when text descriptions preserve key content, confidence becomes unreliable, while adding a visual signal through generated images partially restores accuracy and calibration. We propose the Latent Imagination Module (LIM), a lightweight cross-attention module that predicts imagined latent embeddings from textual input and feeds them into a frozen VLM backbone without pixel-level image synthesis. Across text-only benchmarks, unseen tasks, and missing-image scenarios, LIM improves accuracy and reduces calibration error. These results suggest that latent modality completion is a practical approach for reliable VLM inference under missing-modality.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12517",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "针对VLM纯文本输入时的准确性和校准下降，提出Latent Imagination Module，通过交叉注意力预测潜在嵌入补全缺失模态，方法轻量可即插即用，显著提升了文本场景下VLM的可靠性和易集成性。",
+        "one_sentence_summary": "论文提出Latent Imagination Module (LIM)，利用交叉注意力从文本预测潜在嵌入以模拟缺失的视觉模态，无需图像合成，插入冻结VLM后有效提升了纯文本输入的准确性和校准，并在缺失图像场景下表现出通用性。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "针对VLM纯文本输入时的准确性和校准下降，提出Latent Imagination Module，通过交叉注意力预测潜在嵌入补全缺失模态，方法轻量可即插即用，显著提升了文本场景下VLM的可靠性和易集成性。",
+      "one_sentence_summary": "论文提出Latent Imagination Module (LIM)，利用交叉注意力从文本预测潜在嵌入以模拟缺失的视觉模态，无需图像合成，插入冻结VLM后有效提升了纯文本输入的准确性和校准，并在缺失图像场景下表现出通用性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.12518",
+      "arxiv_id": "2605.12518",
+      "title": "TimelineReasoner: Advancing Timeline Summarization with Large Reasoning Models",
+      "url": "https://arxiv.org/abs/2605.12518",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "summary": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "abstract": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12518",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "将时间线摘要从静态生成转为推理驱动，利用大型推理模型主动探测缺失事件、更新全局事件记忆，在开放域TLS显著优于现有方法，框架包含事件抓取器、更新器与监督器，可集成到新闻聚合等产品，体现推理模型新应用。",
+        "one_sentence_summary": "TimelineReasoner采用两阶段推理框架，全局认知跟踪宏观事件并更新记忆，细节探索通过监督器检测缺失事件并定向检索，实验显示在开放域时间线摘要任务上准确性、覆盖度和连贯性显著超越现有LLM方法，展示了推理模型驱动的事件抽取潜力。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "将时间线摘要从静态生成转为推理驱动，利用大型推理模型主动探测缺失事件、更新全局事件记忆，在开放域TLS显著优于现有方法，框架包含事件抓取器、更新器与监督器，可集成到新闻聚合等产品，体现推理模型新应用。",
+      "one_sentence_summary": "TimelineReasoner采用两阶段推理框架，全局认知跟踪宏观事件并更新记忆，细节探索通过监督器检测缺失事件并定向检索，实验显示在开放域时间线摘要任务上准确性、覆盖度和连贯性显著超越现有LLM方法，展示了推理模型驱动的事件抽取潜力。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.12519",
+      "arxiv_id": "2605.12519",
+      "title": "Correct Answers from Sound Reasoning: Verifiable Process Supervision for Language Models",
+      "url": "https://arxiv.org/abs/2605.12519",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Training language models to produce both correct answers and sound reasoning remains an open challenge. Reinforcement learning with verifiable rewards typically optimizes only final outcomes, which can lead to a failure mode where task accuracy improves while reasoning becomes less accurate, less complete, or even internally inconsistent. We propose verifiable process supervision (VPS), a post-training framework for verifiable domains that jointly optimizes prediction accuracy and reasoning quality. We first apply supervised fine-tuning to induce a structured reasoning format, enabling syntactic extraction of intermediate claims that are evaluated against ground-truth signals to form process-level rewards. To address the heterogeneous difficulty of reasoning subtasks, we introduce adaptive reward weighting that prioritizes components with the largest remaining errors, creating an implicit curriculum. We evaluate VPS on chess, a controlled testbed where reasoning steps can be deterministically verified against engine signals. While accuracy-only RL improves move accuracy, it sharply degrades reasoning quality, increasing win-rate error by up to 112% and reducing internal consistency by up to 69%. In contrast, VPS preserves accuracy while significantly improving reasoning quality, reducing win-rate error by up to 30% and restoring consistency to near saturation. At matched accuracy, judge evaluation also prefers the process-supervised models. A reasoning-space analysis further shows that, without a structured prior, accuracy-only RL converges to budget-dependent shortcuts rather than sound multi-step reasoning. These results show that VPS enables language models to reason both accurately and reliably in verifiable domains.",
+      "summary": "Training language models to produce both correct answers and sound reasoning remains an open challenge. Reinforcement learning with verifiable rewards typically optimizes only final outcomes, which can lead to a failure mode where task accuracy improves while reasoning becomes less accurate, less complete, or even internally inconsistent. We propose verifiable process supervision (VPS), a post-training framework for verifiable domains that jointly optimizes prediction accuracy and reasoning quality. We first apply supervised fine-tuning to induce a structured reasoning format, enabling syntactic extraction of intermediate claims that are evaluated against ground-truth signals to form process-level rewards. To address the heterogeneous difficulty of reasoning subtasks, we introduce adaptive reward weighting that prioritizes components with the largest remaining errors, creating an implicit curriculum. We evaluate VPS on chess, a controlled testbed where reasoning steps can be deterministically verified against engine signals. While accuracy-only RL improves move accuracy, it sharply degrades reasoning quality, increasing win-rate error by up to 112% and reducing internal consistency by up to 69%. In contrast, VPS preserves accuracy while significantly improving reasoning quality, reducing win-rate error by up to 30% and restoring consistency to near saturation. At matched accuracy, judge evaluation also prefers the process-supervised models. A reasoning-space analysis further shows that, without a structured prior, accuracy-only RL converges to budget-dependent shortcuts rather than sound multi-step reasoning. These results show that VPS enables language models to reason both accurately and reliably in verifiable domains.",
+      "abstract": "Training language models to produce both correct answers and sound reasoning remains an open challenge. Reinforcement learning with verifiable rewards typically optimizes only final outcomes, which can lead to a failure mode where task accuracy improves while reasoning becomes less accurate, less complete, or even internally inconsistent. We propose verifiable process supervision (VPS), a post-training framework for verifiable domains that jointly optimizes prediction accuracy and reasoning quality. We first apply supervised fine-tuning to induce a structured reasoning format, enabling syntactic extraction of intermediate claims that are evaluated against ground-truth signals to form process-level rewards. To address the heterogeneous difficulty of reasoning subtasks, we introduce adaptive reward weighting that prioritizes components with the largest remaining errors, creating an implicit curriculum. We evaluate VPS on chess, a controlled testbed where reasoning steps can be deterministically verified against engine signals. While accuracy-only RL improves move accuracy, it sharply degrades reasoning quality, increasing win-rate error by up to 112% and reducing internal consistency by up to 69%. In contrast, VPS preserves accuracy while significantly improving reasoning quality, reducing win-rate error by up to 30% and restoring consistency to near saturation. At matched accuracy, judge evaluation also prefers the process-supervised models. A reasoning-space analysis further shows that, without a structured prior, accuracy-only RL converges to budget-dependent shortcuts rather than sound multi-step reasoning. These results show that VPS enables language models to reason both accurately and reliably in verifiable domains.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12519",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "The paper introduces verifiable process supervision (VPS) to jointly optimize accuracy and reasoning quality in LLMs. It directly addresses a key challenge in building reliable AI agents, with a practical training recipe and timely focus on reasoning enhancement. Highly relevant and implementable.",
+        "one_sentence_summary": "本文提出可验证过程监督框架VPS，通过提取结构化推理的中间声明并给予过程级奖励，结合自适应加权形成隐式课程，在国际象棋任务上，该方法在保持落子准确率的同时，将胜率误差降低30%并恢复推理一致性，显著优于仅优化结果的强化学习。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "The paper introduces verifiable process supervision (VPS) to jointly optimize accuracy and reasoning quality in LLMs. It directly addresses a key challenge in building reliable AI agents, with a practical training recipe and timely focus on reasoning enhancement. Highly relevant and implementable.",
+      "one_sentence_summary": "本文提出可验证过程监督框架VPS，通过提取结构化推理的中间声明并给予过程级奖励，结合自适应加权形成隐式课程，在国际象棋任务上，该方法在保持落子准确率的同时，将胜率误差降低30%并恢复推理一致性，显著优于仅优化结果的强化学习。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.12520",
+      "arxiv_id": "2605.12520",
+      "title": "BoostTaxo: Zero-Shot Taxonomy Induction via Boosting-Style Agentic Reasoning and Constraint-Aware Calibration",
+      "url": "https://arxiv.org/abs/2605.12520",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Taxonomy induction is crucial for organizing concepts into explicit and interpretable semantic hierarchies. While existing methods have achieved promising results, their generalization, structural reliability, and efficiency remain limited, hindering their performance in zero-shot and large-scale scenarios. To overcome these limitations, we introduce BoostTaxo, a boosting-style LLM framework for zero-shot taxonomy induction. It takes a set of domain terms as inputs and performs parent identification in a coarse-to-fine manner, employing retrieval-augmented definition refinement, hybrid parent candidate selection, candidate rating, and structure-aware score calibration to improve taxonomy construction. Specifically, a lightweight LLM is used to efficiently filter candidate parents, while a large-scale LLM is employed to rank and score candidate parents for fine-grained parent selection. Structural features are further incorporated to calibrate candidate edge weights and enhance the reliability of the induced taxonomy. The unified BoostTaxo is evaluated on three public benchmark datasets, namely WordNet, DBLP, and SemEval-Sci, and achieves superior or comparable performance to state-of-the-art methods in zero-shot taxonomy induction. The ablation study validates the contribution of the hybrid parent candidate selection and the structure-aware score calibration to the overall performance. Further analysis investigates the impact of candidate selection size on taxonomy quality and presents representative case and failure studies, providing deeper insights into the effectiveness and limitations of the proposed framework.",
+      "summary": "Taxonomy induction is crucial for organizing concepts into explicit and interpretable semantic hierarchies. While existing methods have achieved promising results, their generalization, structural reliability, and efficiency remain limited, hindering their performance in zero-shot and large-scale scenarios. To overcome these limitations, we introduce BoostTaxo, a boosting-style LLM framework for zero-shot taxonomy induction. It takes a set of domain terms as inputs and performs parent identification in a coarse-to-fine manner, employing retrieval-augmented definition refinement, hybrid parent candidate selection, candidate rating, and structure-aware score calibration to improve taxonomy construction. Specifically, a lightweight LLM is used to efficiently filter candidate parents, while a large-scale LLM is employed to rank and score candidate parents for fine-grained parent selection. Structural features are further incorporated to calibrate candidate edge weights and enhance the reliability of the induced taxonomy. The unified BoostTaxo is evaluated on three public benchmark datasets, namely WordNet, DBLP, and SemEval-Sci, and achieves superior or comparable performance to state-of-the-art methods in zero-shot taxonomy induction. The ablation study validates the contribution of the hybrid parent candidate selection and the structure-aware score calibration to the overall performance. Further analysis investigates the impact of candidate selection size on taxonomy quality and presents representative case and failure studies, providing deeper insights into the effectiveness and limitations of the proposed framework.",
+      "abstract": "Taxonomy induction is crucial for organizing concepts into explicit and interpretable semantic hierarchies. While existing methods have achieved promising results, their generalization, structural reliability, and efficiency remain limited, hindering their performance in zero-shot and large-scale scenarios. To overcome these limitations, we introduce BoostTaxo, a boosting-style LLM framework for zero-shot taxonomy induction. It takes a set of domain terms as inputs and performs parent identification in a coarse-to-fine manner, employing retrieval-augmented definition refinement, hybrid parent candidate selection, candidate rating, and structure-aware score calibration to improve taxonomy construction. Specifically, a lightweight LLM is used to efficiently filter candidate parents, while a large-scale LLM is employed to rank and score candidate parents for fine-grained parent selection. Structural features are further incorporated to calibrate candidate edge weights and enhance the reliability of the induced taxonomy. The unified BoostTaxo is evaluated on three public benchmark datasets, namely WordNet, DBLP, and SemEval-Sci, and achieves superior or comparable performance to state-of-the-art methods in zero-shot taxonomy induction. The ablation study validates the contribution of the hybrid parent candidate selection and the structure-aware score calibration to the overall performance. Further analysis investigates the impact of candidate selection size on taxonomy quality and presents representative case and failure studies, providing deeper insights into the effectiveness and limitations of the proposed framework.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12520",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 19,
+          "engineering_utility": 20,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "BoostTaxo通过增强式推理与结构校准实现零样本分类体系归纳，对知识组织工具有直接启发，方法新颖且实验充分，易于工程实现，契合LLM驱动推理趋势。",
+        "one_sentence_summary": "BoostTaxo利用粗细结合的LLM增强式推理与结构感知校准，在零样本条件下从领域术语自动构建语义层级，在三个公开数据集上性能领先，消融实验验证了混合候选选择与分数校准的有效性。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 19,
+        "engineering_utility": 20,
+        "timeliness_rarity": 16
+      },
+      "score_total": 73,
+      "score_reason": "BoostTaxo通过增强式推理与结构校准实现零样本分类体系归纳，对知识组织工具有直接启发，方法新颖且实验充分，易于工程实现，契合LLM驱动推理趋势。",
+      "one_sentence_summary": "BoostTaxo利用粗细结合的LLM增强式推理与结构感知校准，在零样本条件下从领域术语自动构建语义层级，在三个公开数据集上性能领先，消融实验验证了混合候选选择与分数校准的有效性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.12521",
+      "arxiv_id": "2605.12521",
+      "title": "ToolWeave: Structured Synthesis of Complex Multi-Turn Tool-Calling Dialogues",
+      "url": "https://arxiv.org/abs/2605.12521",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "Multi-turn tool calling is essential for LLMs to function as autonomous agents, yet synthesizing the training data required for these capabilities remains a fundamental challenge. Existing synthetic data generation pipelines often produce unrealistic dialogues for two reasons: they chain tools that are only superficially compatible rather than aligned with meaningful user tasks, and they generate dialogues in one shot, which often introduces arguments that were neither provided by the user nor produced by prior tool calls. These issues also lead to a severe underrepresentation of multi-step tool interactions. We introduce ToolWeave, a structured framework for synthesizing realistic multi-turn tool-calling dialogues. ToolWeave support realistic multi-step workflows (or tool sequences) by constructing tools with built-in dependencies and filters the workflows based on alignment with user goals. It reduces parameter hallucination by using a fine-grained planning stage that explicitly tracks parameter provenance. As a result, ToolWeave-generated synthetic dialogues contain more multi-step tool interactions (45%) and fewer hallucinations in parameters and tool names. Consequently, LLMs fine-tuned on ToolWeave consistently outperform those fine-tuned on prior datasets across three public benchmarks. Notably, Llama-3.1-70B fine-tuned on ToolWeave achieves 39.75% on BFCL-V3 multi-turn, compared to 23.50% when fine-tuned on SOTA ToolFlow data.",
+      "summary": "Multi-turn tool calling is essential for LLMs to function as autonomous agents, yet synthesizing the training data required for these capabilities remains a fundamental challenge. Existing synthetic data generation pipelines often produce unrealistic dialogues for two reasons: they chain tools that are only superficially compatible rather than aligned with meaningful user tasks, and they generate dialogues in one shot, which often introduces arguments that were neither provided by the user nor produced by prior tool calls. These issues also lead to a severe underrepresentation of multi-step tool interactions. We introduce ToolWeave, a structured framework for synthesizing realistic multi-turn tool-calling dialogues. ToolWeave support realistic multi-step workflows (or tool sequences) by constructing tools with built-in dependencies and filters the workflows based on alignment with user goals. It reduces parameter hallucination by using a fine-grained planning stage that explicitly tracks parameter provenance. As a result, ToolWeave-generated synthetic dialogues contain more multi-step tool interactions (45%) and fewer hallucinations in parameters and tool names. Consequently, LLMs fine-tuned on ToolWeave consistently outperform those fine-tuned on prior datasets across three public benchmarks. Notably, Llama-3.1-70B fine-tuned on ToolWeave achieves 39.75% on BFCL-V3 multi-turn, compared to 23.50% when fine-tuned on SOTA ToolFlow data.",
+      "abstract": "Multi-turn tool calling is essential for LLMs to function as autonomous agents, yet synthesizing the training data required for these capabilities remains a fundamental challenge. Existing synthetic data generation pipelines often produce unrealistic dialogues for two reasons: they chain tools that are only superficially compatible rather than aligned with meaningful user tasks, and they generate dialogues in one shot, which often introduces arguments that were neither provided by the user nor produced by prior tool calls. These issues also lead to a severe underrepresentation of multi-step tool interactions. We introduce ToolWeave, a structured framework for synthesizing realistic multi-turn tool-calling dialogues. ToolWeave support realistic multi-step workflows (or tool sequences) by constructing tools with built-in dependencies and filters the workflows based on alignment with user goals. It reduces parameter hallucination by using a fine-grained planning stage that explicitly tracks parameter provenance. As a result, ToolWeave-generated synthetic dialogues contain more multi-step tool interactions (45%) and fewer hallucinations in parameters and tool names. Consequently, LLMs fine-tuned on ToolWeave consistently outperform those fine-tuned on prior datasets across three public benchmarks. Notably, Llama-3.1-70B fine-tuned on ToolWeave achieves 39.75% on BFCL-V3 multi-turn, compared to 23.50% when fine-tuned on SOTA ToolFlow data.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12521",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "直接解决agent多轮工具调用训练数据合成，通过结构化依赖和参数溯源减少幻觉，生成数据含45%多步交互，微调后性能显著提升（如Llama-3.1-70B在BFCL-V3从23.50%升至39.75%），实用性强，紧贴近期agent与工具调用趋势。",
+        "one_sentence_summary": "ToolWeave提出结构化合成框架，通过构建依赖工具、过滤目标对齐的工作流及细粒度规划追踪参数来源，生成含45%多步交互的低幻觉多轮工具调用对话数据，微调后Llama-3.1-70B在BFCL-V3多轮基准上较SOTA数据提升16.25个百分点。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "直接解决agent多轮工具调用训练数据合成，通过结构化依赖和参数溯源减少幻觉，生成数据含45%多步交互，微调后性能显著提升（如Llama-3.1-70B在BFCL-V3从23.50%升至39.75%），实用性强，紧贴近期agent与工具调用趋势。",
+      "one_sentence_summary": "ToolWeave提出结构化合成框架，通过构建依赖工具、过滤目标对齐的工作流及细粒度规划追踪参数来源，生成含45%多步交互的低幻觉多轮工具调用对话数据，微调后Llama-3.1-70B在BFCL-V3多轮基准上较SOTA数据提升16.25个百分点。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.12530",
+      "arxiv_id": "2605.12530",
+      "title": "In-Situ Behavioral Evaluation for LLM Fairness, Not Standardized-Test Scores",
+      "url": "https://arxiv.org/abs/2605.12530",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "LLM fairness should be evaluated through in-situ conversational behavior rather than standardized-test Q&A benchmarks. We show that the standardized-test paradigm can be structurally unreliable: surface-level prompt construction choices, although entirely orthogonal to the fairness question being tested, account for the majority of score variance, shift fairness conclusions in both the direction and the magnitude, and result in severe discordance in model rankings. We develop MAC-Fairness, a multi-agent conversational framework that embeds controlled variation factors into multi-round dialogue for in-situ behavior evaluation, examining how models' conversational behavior shifts when identity is varied as part of natural multi-agent interaction. Repurposing standardized-test questions as conversation seeds rather than as the evaluation instrument, we evaluate position persistence (how they hold positions, from the self-perspective) and peer receptiveness (how receptive they are to peers, from the other-perspective) across 8 million conversation transcripts spanning multiple models and identity presence configurations. In-situ behavioral evaluation reveals stable, model-specific behavioral signatures that could generalize across benchmarks differing in fairness targets and evaluation methodologies, a form of evidence the standardized-test paradigm does not offer.",
+      "summary": "LLM fairness should be evaluated through in-situ conversational behavior rather than standardized-test Q&A benchmarks. We show that the standardized-test paradigm can be structurally unreliable: surface-level prompt construction choices, although entirely orthogonal to the fairness question being tested, account for the majority of score variance, shift fairness conclusions in both the direction and the magnitude, and result in severe discordance in model rankings. We develop MAC-Fairness, a multi-agent conversational framework that embeds controlled variation factors into multi-round dialogue for in-situ behavior evaluation, examining how models' conversational behavior shifts when identity is varied as part of natural multi-agent interaction. Repurposing standardized-test questions as conversation seeds rather than as the evaluation instrument, we evaluate position persistence (how they hold positions, from the self-perspective) and peer receptiveness (how receptive they are to peers, from the other-perspective) across 8 million conversation transcripts spanning multiple models and identity presence configurations. In-situ behavioral evaluation reveals stable, model-specific behavioral signatures that could generalize across benchmarks differing in fairness targets and evaluation methodologies, a form of evidence the standardized-test paradigm does not offer.",
+      "abstract": "LLM fairness should be evaluated through in-situ conversational behavior rather than standardized-test Q&A benchmarks. We show that the standardized-test paradigm can be structurally unreliable: surface-level prompt construction choices, although entirely orthogonal to the fairness question being tested, account for the majority of score variance, shift fairness conclusions in both the direction and the magnitude, and result in severe discordance in model rankings. We develop MAC-Fairness, a multi-agent conversational framework that embeds controlled variation factors into multi-round dialogue for in-situ behavior evaluation, examining how models' conversational behavior shifts when identity is varied as part of natural multi-agent interaction. Repurposing standardized-test questions as conversation seeds rather than as the evaluation instrument, we evaluate position persistence (how they hold positions, from the self-perspective) and peer receptiveness (how receptive they are to peers, from the other-perspective) across 8 million conversation transcripts spanning multiple models and identity presence configurations. In-situ behavioral evaluation reveals stable, model-specific behavioral signatures that could generalize across benchmarks differing in fairness targets and evaluation methodologies, a form of evidence the standardized-test paradigm does not offer.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12530",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 19,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "提出基于多智能体对话的in-situ公平性评估，发现标准化测试分数受表面提示影响不可靠，揭示模型稳定行为特征，可集成到产品评估流程，但框架较复杂；视角新颖，利用800万对话数据验证，代表从静态基准到动态行为评估的转变。",
+        "one_sentence_summary": "MAC-Fairness通过多智能体对话框架将身份变量嵌入多轮交互，评估模型的位置坚持和同伴接受度，基于800万对话转录发现模型存在稳定行为特征，证明in-situ评估比标准化测试更可靠，可跨基准泛化。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 19,
+        "timeliness_rarity": 18
+      },
+      "score_total": 79,
+      "score_reason": "提出基于多智能体对话的in-situ公平性评估，发现标准化测试分数受表面提示影响不可靠，揭示模型稳定行为特征，可集成到产品评估流程，但框架较复杂；视角新颖，利用800万对话数据验证，代表从静态基准到动态行为评估的转变。",
+      "one_sentence_summary": "MAC-Fairness通过多智能体对话框架将身份变量嵌入多轮交互，评估模型的位置坚持和同伴接受度，基于800万对话转录发现模型存在稳定行为特征，证明in-situ评估比标准化测试更可靠，可跨基准泛化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-15T05:17:16.441272+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-15"
     }
   ]
 }
