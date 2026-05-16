@@ -7,3 +7,4 @@
 {"run_id": "2026-05-13", "status": "success", "news_count": 24, "paper_selected_count": 10, "path": "runs/2026-05-13/run-log.json", "generated_at": "2026-05-13T05:15:35.565009+00:00", "sent_at": "2026-05-13T05:15:36.147937+00:00"}
 {"run_id": "2026-05-14", "status": "success", "news_count": 17, "paper_selected_count": 10, "path": "runs/2026-05-14/run-log.json", "generated_at": "2026-05-14T05:11:20.532407+00:00", "sent_at": "2026-05-14T05:11:21.334592+00:00"}
 {"run_id": "2026-05-15", "status": "success", "news_count": 17, "paper_selected_count": 10, "path": "runs/2026-05-15/run-log.json", "generated_at": "2026-05-15T05:17:16.455294+00:00", "sent_at": "2026-05-15T05:17:17.638759+00:00"}
+{"run_id": "2026-05-16", "status": "success", "news_count": 14, "paper_selected_count": 10, "path": "runs/2026-05-16/run-log.json", "generated_at": "2026-05-16T04:57:07.362408+00:00", "sent_at": "2026-05-16T04:57:08.107012+00:00"}

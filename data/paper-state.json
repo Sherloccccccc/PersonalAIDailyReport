@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-15T05:17:16.441272+00:00",
+  "updated_at": "2026-05-16T04:57:07.351369+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -4758,11 +4758,11 @@
       "score_reason": "研究了LLM多轮交互中注意力机制导致的指令遗忘，提出目标可访问比率(GAR)和通道转换框架，对诊断和提升对话系统可靠性有直接启发，方法可集成到监控工具中，但工程化程度中等。",
       "one_sentence_summary": "论文分析LLM在多轮对话中注意力关闭导致的指令遗忘机制，提出目标可访问比率(GAR)指标和通道转换框架，发现不同架构在注意力消失后的失败模式差异，并通过线性探针以0.99 AUC预测回忆结果，为对话系统稳定性诊断提供了新方法。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-15T05:17:16.441272+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
       "source_run_id": "2026-05-15",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-16"
     },
     {
       "id": "arxiv:2605.13229",
@@ -4990,11 +4990,11 @@
       "score_reason": "This empirical study evaluates GenAI tools for slide generation from course notes, including a real course deployment and student perception experiment. It provides direct insights for educational technology products but offers limited reusable engineering components, focusing more on user study findings.",
       "one_sentence_summary": "本文实证评估了多种生成式AI工具从课程笔记生成教学幻灯片的质量，发现编程助手如Cursor和Claude Code生成的幻灯片最准确完整，并在真实课堂的双盲测试中表明学生无法可靠区分AI与人工幻灯片，但倾向于将低质量归因于AI。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-15T05:17:16.441272+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
       "source_run_id": "2026-05-15",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-16"
     },
     {
       "id": "arxiv:2605.12517",
@@ -5281,6 +5281,384 @@
       "pushed_at": "2026-05-15T05:17:16.441272+00:00",
       "source_run_id": "2026-05-15",
       "pushed_run_id": "2026-05-15"
+    },
+    {
+      "id": "arxiv:2605.13880",
+      "arxiv_id": "2605.13880",
+      "title": "PREPING: Building Agent Memory without Tasks",
+      "url": "https://arxiv.org/abs/2605.13880",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "Agent memory is typically constructed either offline from curated demonstrations or online from post-deployment interactions. However, regardless of how it is built, an agent faces a cold-start gap when first introduced to a new environment without any task-specific experience available. In this paper, we study pre-task memory construction: whether an agent can build procedural memory before observing any target-environment tasks, using only self-generated synthetic practice. Yet, synthetic interaction alone is insufficient, as without controlling what to practice and what to store, synthetic tasks become redundant, infeasible, and ultimately uninformative, and memory further degrades quickly due to unfiltered trajectories. To overcome this, we present Preping, a proposer-guided memory construction framework. At its core is proposer memory, a structured control state that shapes future practice. A Proposer generates synthetic tasks conditioned on this state, a Solver executes them, and a Validator determines which trajectories are eligible for memory insertion while also providing feedback to guide future proposals. Experiments on AppWorld, BFCL v3, and MCP-Universe show that Preping substantially improves over a no-memory baseline and achieves performance competitive with strong playbook-based methods built from offline or online experience, with deployment cost $2.99\\times$ lower on AppWorld and $2.23\\times$ lower on BFCL v3 than online memory construction. Further analyses reveal that the main benefit does not come from synthetic volume alone, but from proposer-side control over feasibility, redundancy, and coverage, combined with selective memory updates.",
+      "summary": "Agent memory is typically constructed either offline from curated demonstrations or online from post-deployment interactions. However, regardless of how it is built, an agent faces a cold-start gap when first introduced to a new environment without any task-specific experience available. In this paper, we study pre-task memory construction: whether an agent can build procedural memory before observing any target-environment tasks, using only self-generated synthetic practice. Yet, synthetic interaction alone is insufficient, as without controlling what to practice and what to store, synthetic tasks become redundant, infeasible, and ultimately uninformative, and memory further degrades quickly due to unfiltered trajectories. To overcome this, we present Preping, a proposer-guided memory construction framework. At its core is proposer memory, a structured control state that shapes future practice. A Proposer generates synthetic tasks conditioned on this state, a Solver executes them, and a Validator determines which trajectories are eligible for memory insertion while also providing feedback to guide future proposals. Experiments on AppWorld, BFCL v3, and MCP-Universe show that Preping substantially improves over a no-memory baseline and achieves performance competitive with strong playbook-based methods built from offline or online experience, with deployment cost $2.99\\times$ lower on AppWorld and $2.23\\times$ lower on BFCL v3 than online memory construction. Further analyses reveal that the main benefit does not come from synthetic volume alone, but from proposer-side control over feasibility, redundancy, and coverage, combined with selective memory updates.",
+      "abstract": "Agent memory is typically constructed either offline from curated demonstrations or online from post-deployment interactions. However, regardless of how it is built, an agent faces a cold-start gap when first introduced to a new environment without any task-specific experience available. In this paper, we study pre-task memory construction: whether an agent can build procedural memory before observing any target-environment tasks, using only self-generated synthetic practice. Yet, synthetic interaction alone is insufficient, as without controlling what to practice and what to store, synthetic tasks become redundant, infeasible, and ultimately uninformative, and memory further degrades quickly due to unfiltered trajectories. To overcome this, we present Preping, a proposer-guided memory construction framework. At its core is proposer memory, a structured control state that shapes future practice. A Proposer generates synthetic tasks conditioned on this state, a Solver executes them, and a Validator determines which trajectories are eligible for memory insertion while also providing feedback to guide future proposals. Experiments on AppWorld, BFCL v3, and MCP-Universe show that Preping substantially improves over a no-memory baseline and achieves performance competitive with strong playbook-based methods built from offline or online experience, with deployment cost $2.99\\times$ lower on AppWorld and $2.23\\times$ lower on BFCL v3 than online memory construction. Further analyses reveal that the main benefit does not come from synthetic volume alone, but from proposer-side control over feasibility, redundancy, and coverage, combined with selective memory updates.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.13880",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Preping 解决代理冷启动问题，通过合成练习预先构建记忆，显著降低部署成本，可直接集成到代理开发流程。",
+        "one_sentence_summary": "Preping 提出一种在代理接触目标环境前通过提议器引导的合成练习构建记忆的框架，利用提议器、求解器和验证器协同生成与筛选轨迹，大幅降低部署成本，性能与离线或在线记忆方法相当，在AppWorld等基准上取得竞争力结果。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "Preping 解决代理冷启动问题，通过合成练习预先构建记忆，显著降低部署成本，可直接集成到代理开发流程。",
+      "one_sentence_summary": "Preping 提出一种在代理接触目标环境前通过提议器引导的合成练习构建记忆的框架，利用提议器、求解器和验证器协同生成与筛选轨迹，大幅降低部署成本，性能与离线或在线记忆方法相当，在AppWorld等基准上取得竞争力结果。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14062",
+      "arxiv_id": "2605.14062",
+      "title": "Know When To Fold 'Em: Token-Efficient LLM Synthetic Data Generation via Multi-Stage In-Flight Rejection",
+      "url": "https://arxiv.org/abs/2605.14062",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "While synthetic data generation with large language models (LLMs) is widely used in post-training pipelines, existing approaches typically generate full outputs before applying quality filters, leading to substantial token waste on samples that are ultimately discarded. To address this, we propose Multi-Stage In-Flight Rejection (MSIFR), a lightweight, training-free framework that detects and terminates low-quality generation trajectories at intermediate checkpoints before they reach full completion. MSIFR decomposes the generation process into sequential stages and applies fast rule-based validators to identify arithmetic inconsistencies, hallucination patterns, and formatting violations, enabling early rejection of faulty samples. We formalize in-flight rejection as a sequential decision process and show that any non-trivial discard policy reduces expected token consumption, with stage-wise savings increasing when rejection occurs earlier in the generation pipeline. We further demonstrate that conditional utility estimates form a martingale, ensuring that early, in-flight rejection does not bias the expected utility of retained samples. Across five instruction-tuned models and seven reasoning benchmarks, MSIFR reduces token consumption by 11%-77% as a standalone method, and up to 78.2% when combined with early-exit methods, while preserving or improving evaluation accuracy. These results confirm that MSIFR provides a practical mechanism for improving the efficiency of LLM-based synthetic data generation without additional training or architectural changes.",
+      "summary": "While synthetic data generation with large language models (LLMs) is widely used in post-training pipelines, existing approaches typically generate full outputs before applying quality filters, leading to substantial token waste on samples that are ultimately discarded. To address this, we propose Multi-Stage In-Flight Rejection (MSIFR), a lightweight, training-free framework that detects and terminates low-quality generation trajectories at intermediate checkpoints before they reach full completion. MSIFR decomposes the generation process into sequential stages and applies fast rule-based validators to identify arithmetic inconsistencies, hallucination patterns, and formatting violations, enabling early rejection of faulty samples. We formalize in-flight rejection as a sequential decision process and show that any non-trivial discard policy reduces expected token consumption, with stage-wise savings increasing when rejection occurs earlier in the generation pipeline. We further demonstrate that conditional utility estimates form a martingale, ensuring that early, in-flight rejection does not bias the expected utility of retained samples. Across five instruction-tuned models and seven reasoning benchmarks, MSIFR reduces token consumption by 11%-77% as a standalone method, and up to 78.2% when combined with early-exit methods, while preserving or improving evaluation accuracy. These results confirm that MSIFR provides a practical mechanism for improving the efficiency of LLM-based synthetic data generation without additional training or architectural changes.",
+      "abstract": "While synthetic data generation with large language models (LLMs) is widely used in post-training pipelines, existing approaches typically generate full outputs before applying quality filters, leading to substantial token waste on samples that are ultimately discarded. To address this, we propose Multi-Stage In-Flight Rejection (MSIFR), a lightweight, training-free framework that detects and terminates low-quality generation trajectories at intermediate checkpoints before they reach full completion. MSIFR decomposes the generation process into sequential stages and applies fast rule-based validators to identify arithmetic inconsistencies, hallucination patterns, and formatting violations, enabling early rejection of faulty samples. We formalize in-flight rejection as a sequential decision process and show that any non-trivial discard policy reduces expected token consumption, with stage-wise savings increasing when rejection occurs earlier in the generation pipeline. We further demonstrate that conditional utility estimates form a martingale, ensuring that early, in-flight rejection does not bias the expected utility of retained samples. Across five instruction-tuned models and seven reasoning benchmarks, MSIFR reduces token consumption by 11%-77% as a standalone method, and up to 78.2% when combined with early-exit methods, while preserving or improving evaluation accuracy. These results confirm that MSIFR provides a practical mechanism for improving the efficiency of LLM-based synthetic data generation without additional training or architectural changes.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14062",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 25,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "针对合成数据生成中的令牌浪费，提出轻量级多阶段飞行中拒绝框架，大幅降低令牌消耗且保持精度，训练无关、易实现，直接提升LLM数据流水线效率，非常契合当前成本优化趋势。",
+        "one_sentence_summary": "MSIFR提出多阶段飞行中拒绝框架，在LLM文本生成过程中设置中间检查点提前终止低质量样本，无需训练即可降低11%-78%令牌消耗并保持或提升推理准确率。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 25,
+        "timeliness_rarity": 22
+      },
+      "score_total": 94,
+      "score_reason": "针对合成数据生成中的令牌浪费，提出轻量级多阶段飞行中拒绝框架，大幅降低令牌消耗且保持精度，训练无关、易实现，直接提升LLM数据流水线效率，非常契合当前成本优化趋势。",
+      "one_sentence_summary": "MSIFR提出多阶段飞行中拒绝框架，在LLM文本生成过程中设置中间检查点提前终止低质量样本，无需训练即可降低11%-78%令牌消耗并保持或提升推理准确率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14211",
+      "arxiv_id": "2605.14211",
+      "title": "ASH: Agents that Self-Hone via Embodied Learning",
+      "url": "https://arxiv.org/abs/2605.14211",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "Long-horizon embodied tasks remain a fundamental challenge in AI, as current methods rely on hand-engineered rewards or action-labeled demonstrations, neither of which scales. We introduce ASH, an agentic system that learns an embodied policy from unlabeled, noisy internet video, without reward shaping or expert annotation. ASH follows a self-improvement loop; when it gets stuck, ASH learns an Inverse Dynamics Model (IDM) from its own trajectories, and uses its IDM to extract supervision from relevant internet video. ASH uses unsupervised learning to identify key moments from large-scale internet video and retains them as long-term memory -- allowing it to tackle long-horizon problems. We evaluate ASH on two complementary environments demanding multi-hour planning: Pokemon Emerald, a turn-based RPG, and The Legend of Zelda: The Minish Cap, a real-time action-adventure game. In both games, behavioral cloning, retrieval-augmented and zero-shot foundation-model baselines plateau, while ASH sustains progression across our 8-hour evaluation. ASH reaches an average of $11.2/12$ milestones in Pokemon Emerald and $9.9/12$ in Legend of Zelda, while the strongest baseline gets stuck in both environments at an average of $6.5/12$ and $6.0/12$ milestones, respectively. We demonstrate that self-improving agents are a scalable recipe for long-horizon embodied learning.",
+      "summary": "Long-horizon embodied tasks remain a fundamental challenge in AI, as current methods rely on hand-engineered rewards or action-labeled demonstrations, neither of which scales. We introduce ASH, an agentic system that learns an embodied policy from unlabeled, noisy internet video, without reward shaping or expert annotation. ASH follows a self-improvement loop; when it gets stuck, ASH learns an Inverse Dynamics Model (IDM) from its own trajectories, and uses its IDM to extract supervision from relevant internet video. ASH uses unsupervised learning to identify key moments from large-scale internet video and retains them as long-term memory -- allowing it to tackle long-horizon problems. We evaluate ASH on two complementary environments demanding multi-hour planning: Pokemon Emerald, a turn-based RPG, and The Legend of Zelda: The Minish Cap, a real-time action-adventure game. In both games, behavioral cloning, retrieval-augmented and zero-shot foundation-model baselines plateau, while ASH sustains progression across our 8-hour evaluation. ASH reaches an average of $11.2/12$ milestones in Pokemon Emerald and $9.9/12$ in Legend of Zelda, while the strongest baseline gets stuck in both environments at an average of $6.5/12$ and $6.0/12$ milestones, respectively. We demonstrate that self-improving agents are a scalable recipe for long-horizon embodied learning.",
+      "abstract": "Long-horizon embodied tasks remain a fundamental challenge in AI, as current methods rely on hand-engineered rewards or action-labeled demonstrations, neither of which scales. We introduce ASH, an agentic system that learns an embodied policy from unlabeled, noisy internet video, without reward shaping or expert annotation. ASH follows a self-improvement loop; when it gets stuck, ASH learns an Inverse Dynamics Model (IDM) from its own trajectories, and uses its IDM to extract supervision from relevant internet video. ASH uses unsupervised learning to identify key moments from large-scale internet video and retains them as long-term memory -- allowing it to tackle long-horizon problems. We evaluate ASH on two complementary environments demanding multi-hour planning: Pokemon Emerald, a turn-based RPG, and The Legend of Zelda: The Minish Cap, a real-time action-adventure game. In both games, behavioral cloning, retrieval-augmented and zero-shot foundation-model baselines plateau, while ASH sustains progression across our 8-hour evaluation. ASH reaches an average of $11.2/12$ milestones in Pokemon Emerald and $9.9/12$ in Legend of Zelda, while the strongest baseline gets stuck in both environments at an average of $6.5/12$ and $6.0/12$ milestones, respectively. We demonstrate that self-improving agents are a scalable recipe for long-horizon embodied learning.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14211",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "ASH 提出从无标注视频自提升的具身学习方法，在长程游戏中展现持续进展，为无需监督的自主代理开发提供可扩展方案。",
+        "one_sentence_summary": "ASH 提出一种从无标签互联网视频自提升的具身学习系统，通过逆动力学模型和长期记忆，在宝可梦和塞尔达游戏中持续进展，无需奖励设计或专家注释，为解决长程任务提供了可扩展方案。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 85,
+      "score_reason": "ASH 提出从无标注视频自提升的具身学习方法，在长程游戏中展现持续进展，为无需监督的自主代理开发提供可扩展方案。",
+      "one_sentence_summary": "ASH 提出一种从无标签互联网视频自提升的具身学习系统，通过逆动力学模型和长期记忆，在宝可梦和塞尔达游戏中持续进展，无需奖励设计或专家注释，为解决长程任务提供了可扩展方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14318",
+      "arxiv_id": "2605.14318",
+      "title": "Semantic Feature Segmentation for Interpretable Predictive Maintenance in Complex Systems",
+      "url": "https://arxiv.org/abs/2605.14318",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "Predictive maintenance in complex systems is often complicated by the heterogeneity and redundancy of monitored variables,which can obscure fault-relevant information and reduce model interpretability. This work proposes a semantic feature segmentation framework that decomposes the monitored feature space into a canonical component,expected to retain the dominant predictive information, and a residual component containing structurally peripheral signals. The segmentation is defined through domain informed criteria and sets up monitoring variables into functional groups reflecting operational mechanisms such as throughput,latency,pressure,network activity,and structural state. To evaluate the effectiveness of this decomposition, we adopt a predictive perspective in which expected predictive risk is used as an operational proxy for task-relevant information. Experimental results obtained through time-aware cross-validation show that the canonical space consistently achieves lower predictive risk than the residual space across multiple temporal configurations, indicating that the semantic segmentation concentrates the most relevant information for fault anticipation. In addition, the canonical segments exhibit significantly stronger intra-segment coherence than inter-segment dependence, and this structural organization remains stable after redundancy reduction. When compared with the full feature space and with a Principal Component Analysis (PCA) representation, the canonical space carries out comparable predictive performance and furthermore preserves the semantic meaning of the original variables. These findings suggest that semantic feature segmentation provides an interpretable and information-preserving decomposition of monitoring signals, enabling competitive predictive performance without sacrificing the operational interpretability required in predictive maintenance applications.",
+      "summary": "Predictive maintenance in complex systems is often complicated by the heterogeneity and redundancy of monitored variables,which can obscure fault-relevant information and reduce model interpretability. This work proposes a semantic feature segmentation framework that decomposes the monitored feature space into a canonical component,expected to retain the dominant predictive information, and a residual component containing structurally peripheral signals. The segmentation is defined through domain informed criteria and sets up monitoring variables into functional groups reflecting operational mechanisms such as throughput,latency,pressure,network activity,and structural state. To evaluate the effectiveness of this decomposition, we adopt a predictive perspective in which expected predictive risk is used as an operational proxy for task-relevant information. Experimental results obtained through time-aware cross-validation show that the canonical space consistently achieves lower predictive risk than the residual space across multiple temporal configurations, indicating that the semantic segmentation concentrates the most relevant information for fault anticipation. In addition, the canonical segments exhibit significantly stronger intra-segment coherence than inter-segment dependence, and this structural organization remains stable after redundancy reduction. When compared with the full feature space and with a Principal Component Analysis (PCA) representation, the canonical space carries out comparable predictive performance and furthermore preserves the semantic meaning of the original variables. These findings suggest that semantic feature segmentation provides an interpretable and information-preserving decomposition of monitoring signals, enabling competitive predictive performance without sacrificing the operational interpretability required in predictive maintenance applications.",
+      "abstract": "Predictive maintenance in complex systems is often complicated by the heterogeneity and redundancy of monitored variables,which can obscure fault-relevant information and reduce model interpretability. This work proposes a semantic feature segmentation framework that decomposes the monitored feature space into a canonical component,expected to retain the dominant predictive information, and a residual component containing structurally peripheral signals. The segmentation is defined through domain informed criteria and sets up monitoring variables into functional groups reflecting operational mechanisms such as throughput,latency,pressure,network activity,and structural state. To evaluate the effectiveness of this decomposition, we adopt a predictive perspective in which expected predictive risk is used as an operational proxy for task-relevant information. Experimental results obtained through time-aware cross-validation show that the canonical space consistently achieves lower predictive risk than the residual space across multiple temporal configurations, indicating that the semantic segmentation concentrates the most relevant information for fault anticipation. In addition, the canonical segments exhibit significantly stronger intra-segment coherence than inter-segment dependence, and this structural organization remains stable after redundancy reduction. When compared with the full feature space and with a Principal Component Analysis (PCA) representation, the canonical space carries out comparable predictive performance and furthermore preserves the semantic meaning of the original variables. These findings suggest that semantic feature segmentation provides an interpretable and information-preserving decomposition of monitoring signals, enabling competitive predictive performance without sacrificing the operational interpretability required in predictive maintenance applications.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14318",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 19,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出基于领域语义的特征分组框架，增强了预测性维护模型的可解释性和信息保持，方法易于集成复用，在工业AI应用中具有工程启发价值，但缺乏新任务定义或公开数据集支持。",
+        "one_sentence_summary": "面向复杂系统预测性维护，该论文提出基于领域知识的语义特征分割方法，将监测变量划分为规范特征组与残差特征组，并借助时间感知交叉验证中的预测风险指标评估信息集中度，证实规范空间在保持原始语义的同时取得与全特征空间持平的预测性能，用于提升模型可解释性。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 19,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 81,
+      "score_reason": "提出基于领域语义的特征分组框架，增强了预测性维护模型的可解释性和信息保持，方法易于集成复用，在工业AI应用中具有工程启发价值，但缺乏新任务定义或公开数据集支持。",
+      "one_sentence_summary": "面向复杂系统预测性维护，该论文提出基于领域知识的语义特征分割方法，将监测变量划分为规范特征组与残差特征组，并借助时间感知交叉验证中的预测风险指标评估信息集中度，证实规范空间在保持原始语义的同时取得与全特征空间持平的预测性能，用于提升模型可解释性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14355",
+      "arxiv_id": "2605.14355",
+      "title": "Herculean: An Agentic Benchmark for Financial Intelligence",
+      "url": "https://arxiv.org/abs/2605.14355",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "As AI agents improve, the central question is no longer whether they can solve isolated well-defined financial tasks, but whether they can reliably carry out financial professional work. Existing financial benchmarks offer only a partial view of this ability, as they primarily evaluate static competencies such as question answering, retrieval, summarization, and classification. We introduce Herculean, the first skilled benchmark for agentic financial intelligence spanning four representative workflows, including Trading, Hedging, Market Insights, and Auditing. Each workflow is instantiated as a standardized MCP-based skill environment with its own tools, interaction dynamics, constraints, and success criteria, enabling consistent end-to-end assessment of heterogeneous agent systems. Across frontier agents, we find agents perform relatively well on Trading and Market Insights, but struggle substantially on Hedging and Auditing, where long-horizon coordination, state consistency, and structured verification are critical. Overall, our results point to a key gap in current agents in turning financial reasoning into dependable workflow execution in high-stakes financial workflows.",
+      "summary": "As AI agents improve, the central question is no longer whether they can solve isolated well-defined financial tasks, but whether they can reliably carry out financial professional work. Existing financial benchmarks offer only a partial view of this ability, as they primarily evaluate static competencies such as question answering, retrieval, summarization, and classification. We introduce Herculean, the first skilled benchmark for agentic financial intelligence spanning four representative workflows, including Trading, Hedging, Market Insights, and Auditing. Each workflow is instantiated as a standardized MCP-based skill environment with its own tools, interaction dynamics, constraints, and success criteria, enabling consistent end-to-end assessment of heterogeneous agent systems. Across frontier agents, we find agents perform relatively well on Trading and Market Insights, but struggle substantially on Hedging and Auditing, where long-horizon coordination, state consistency, and structured verification are critical. Overall, our results point to a key gap in current agents in turning financial reasoning into dependable workflow execution in high-stakes financial workflows.",
+      "abstract": "As AI agents improve, the central question is no longer whether they can solve isolated well-defined financial tasks, but whether they can reliably carry out financial professional work. Existing financial benchmarks offer only a partial view of this ability, as they primarily evaluate static competencies such as question answering, retrieval, summarization, and classification. We introduce Herculean, the first skilled benchmark for agentic financial intelligence spanning four representative workflows, including Trading, Hedging, Market Insights, and Auditing. Each workflow is instantiated as a standardized MCP-based skill environment with its own tools, interaction dynamics, constraints, and success criteria, enabling consistent end-to-end assessment of heterogeneous agent systems. Across frontier agents, we find agents perform relatively well on Trading and Market Insights, but struggle substantially on Hedging and Auditing, where long-horizon coordination, state consistency, and structured verification are critical. Overall, our results point to a key gap in current agents in turning financial reasoning into dependable workflow execution in high-stakes financial workflows.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14355",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "该基准为金融代理提供端到端工作流评估，暴露长程协调与验证缺陷，对产品开发与测试有直接价值。",
+        "one_sentence_summary": "Herculean 是一个针对金融智能的代理基准，通过交易、对冲、市场洞察和审计四个 MCP 技能环境评估代理的端到端工作流执行能力，发现当前代理在对冲和审计等需要长期协调和结构化验证的任务上表现较弱。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 83,
+      "score_reason": "该基准为金融代理提供端到端工作流评估，暴露长程协调与验证缺陷，对产品开发与测试有直接价值。",
+      "one_sentence_summary": "Herculean 是一个针对金融智能的代理基准，通过交易、对冲、市场洞察和审计四个 MCP 技能环境评估代理的端到端工作流执行能力，发现当前代理在对冲和审计等需要长期协调和结构化验证的任务上表现较弱。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14358",
+      "arxiv_id": "2605.14358",
+      "title": "Uncovering the Representation Geometry of Minimal Cores in Overcomplete Reasoning Traces",
+      "url": "https://arxiv.org/abs/2605.14358",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "Language models often generate long chain-of-thought traces, but it remains unclear how much of this reasoning is necessary for preserving the final prediction. We study this through the lens of overcomplete reasoning traces: generated traces that contain more intermediate steps than are needed to support the model's answer. We define the minimal core as the smallest subset of steps that preserves either the final answer or predictive distribution, and introduce metrics for compression ratio, redundancy mass, step necessity, and necessity concentration. Across six deliberative reasoning benchmarks spanning arithmetic, competition mathematics, expert scientific reasoning, and commonsense multi-hop QA, we find substantial overcompleteness: on average, 46% of steps are removable under greedy minimal-core extraction while preserving the original answer in 86% of cases. We also find that predictive support is concentrated: the top three steps account for 65% of measured necessity mass on average. Beyond compression, minimal cores expose a cleaner geometry of reasoning: compared with full traces, they improve correct-incorrect trace separation by 11 points, reduce estimated intrinsic dimensionality by 34%, and transfer across model families with 85% off-diagonal answer retention. Theoretically, we establish existence of minimal sufficient subsets, local irreducibility guarantees for greedy elimination, and certificates of overcompleteness and sparse necessity. Together, these results suggest that full reasoning traces are often verbose and overcomplete, while minimal cores isolate the effective support underlying language-model predictions.",
+      "summary": "Language models often generate long chain-of-thought traces, but it remains unclear how much of this reasoning is necessary for preserving the final prediction. We study this through the lens of overcomplete reasoning traces: generated traces that contain more intermediate steps than are needed to support the model's answer. We define the minimal core as the smallest subset of steps that preserves either the final answer or predictive distribution, and introduce metrics for compression ratio, redundancy mass, step necessity, and necessity concentration. Across six deliberative reasoning benchmarks spanning arithmetic, competition mathematics, expert scientific reasoning, and commonsense multi-hop QA, we find substantial overcompleteness: on average, 46% of steps are removable under greedy minimal-core extraction while preserving the original answer in 86% of cases. We also find that predictive support is concentrated: the top three steps account for 65% of measured necessity mass on average. Beyond compression, minimal cores expose a cleaner geometry of reasoning: compared with full traces, they improve correct-incorrect trace separation by 11 points, reduce estimated intrinsic dimensionality by 34%, and transfer across model families with 85% off-diagonal answer retention. Theoretically, we establish existence of minimal sufficient subsets, local irreducibility guarantees for greedy elimination, and certificates of overcompleteness and sparse necessity. Together, these results suggest that full reasoning traces are often verbose and overcomplete, while minimal cores isolate the effective support underlying language-model predictions.",
+      "abstract": "Language models often generate long chain-of-thought traces, but it remains unclear how much of this reasoning is necessary for preserving the final prediction. We study this through the lens of overcomplete reasoning traces: generated traces that contain more intermediate steps than are needed to support the model's answer. We define the minimal core as the smallest subset of steps that preserves either the final answer or predictive distribution, and introduce metrics for compression ratio, redundancy mass, step necessity, and necessity concentration. Across six deliberative reasoning benchmarks spanning arithmetic, competition mathematics, expert scientific reasoning, and commonsense multi-hop QA, we find substantial overcompleteness: on average, 46% of steps are removable under greedy minimal-core extraction while preserving the original answer in 86% of cases. We also find that predictive support is concentrated: the top three steps account for 65% of measured necessity mass on average. Beyond compression, minimal cores expose a cleaner geometry of reasoning: compared with full traces, they improve correct-incorrect trace separation by 11 points, reduce estimated intrinsic dimensionality by 34%, and transfer across model families with 85% off-diagonal answer retention. Theoretically, we establish existence of minimal sufficient subsets, local irreducibility guarantees for greedy elimination, and certificates of overcompleteness and sparse necessity. Together, these results suggest that full reasoning traces are often verbose and overcomplete, while minimal cores isolate the effective support underlying language-model predictions.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14358",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该项研究发现思维链推理普遍存在冗余，提出最小核心提取方法，显著提升推理轨迹的几何可分性和迁移性，对Agent推理优化有直接启发。",
+        "one_sentence_summary": "该论文通过定义最小核心概念，分析语言模型冗长推理轨迹的压缩率与必要性集中度，发现平均可移除46%的推理步骤而不改变答案，且最小核心能改善推理表示几何与跨模型迁移，在六个推理基准上验证。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 84,
+      "score_reason": "该项研究发现思维链推理普遍存在冗余，提出最小核心提取方法，显著提升推理轨迹的几何可分性和迁移性，对Agent推理优化有直接启发。",
+      "one_sentence_summary": "该论文通过定义最小核心概念，分析语言模型冗长推理轨迹的压缩率与必要性集中度，发现平均可移除46%的推理步骤而不改变答案，且最小核心能改善推理表示几何与跨模型迁移，在六个推理基准上验证。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14389",
+      "arxiv_id": "2605.14389",
+      "title": "Nexus : An Agentic Framework for Time Series Forecasting",
+      "url": "https://arxiv.org/abs/2605.14389",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "Time series forecasting is not just numerical extrapolation, but often requires reasoning with unstructured contextual data such as news or events. While specialized Time Series Foundation Models (TSFMs) excel at forecasting based on numerical patterns, they remain unaware to real-world textual signals. Conversely, while LLMs are emerging as zero-shot forecasters, their performance remains uneven across domains and contextual grounding. To bridge this gap, we introduce Nexus, a multi-agent forecasting framework that decomposes prediction into specialized stages: isolating macro-level and micro-level temporal fluctuations, and integrating contextual information when available before synthesizing a final forecast. This decomposition enables Nexus to adapt from seasonal signals to volatile, event-driven information without relying on external statistical anchors or monolithic prompting. We show that current-generation LLMs possess substantially stronger intrinsic forecasting ability than previously recognized, depending critically on how numerical and contextual reasoning are organized. Evaluated on data strictly succeeding LLM knowledge cutoffs spanning Zillow real estate metrics and volatile stock market equities, Nexus consistently matches or outperforms state-of-the-art TSFMs and strong LLM baselines. Beyond numerical accuracy, Nexus produces high-quality reasoning traces that explicitly show the fundamental drivers behind each forecast. Our results establish that real-world forecasting is an agentic reasoning problem extending well beyond only sequence modeling.",
+      "summary": "Time series forecasting is not just numerical extrapolation, but often requires reasoning with unstructured contextual data such as news or events. While specialized Time Series Foundation Models (TSFMs) excel at forecasting based on numerical patterns, they remain unaware to real-world textual signals. Conversely, while LLMs are emerging as zero-shot forecasters, their performance remains uneven across domains and contextual grounding. To bridge this gap, we introduce Nexus, a multi-agent forecasting framework that decomposes prediction into specialized stages: isolating macro-level and micro-level temporal fluctuations, and integrating contextual information when available before synthesizing a final forecast. This decomposition enables Nexus to adapt from seasonal signals to volatile, event-driven information without relying on external statistical anchors or monolithic prompting. We show that current-generation LLMs possess substantially stronger intrinsic forecasting ability than previously recognized, depending critically on how numerical and contextual reasoning are organized. Evaluated on data strictly succeeding LLM knowledge cutoffs spanning Zillow real estate metrics and volatile stock market equities, Nexus consistently matches or outperforms state-of-the-art TSFMs and strong LLM baselines. Beyond numerical accuracy, Nexus produces high-quality reasoning traces that explicitly show the fundamental drivers behind each forecast. Our results establish that real-world forecasting is an agentic reasoning problem extending well beyond only sequence modeling.",
+      "abstract": "Time series forecasting is not just numerical extrapolation, but often requires reasoning with unstructured contextual data such as news or events. While specialized Time Series Foundation Models (TSFMs) excel at forecasting based on numerical patterns, they remain unaware to real-world textual signals. Conversely, while LLMs are emerging as zero-shot forecasters, their performance remains uneven across domains and contextual grounding. To bridge this gap, we introduce Nexus, a multi-agent forecasting framework that decomposes prediction into specialized stages: isolating macro-level and micro-level temporal fluctuations, and integrating contextual information when available before synthesizing a final forecast. This decomposition enables Nexus to adapt from seasonal signals to volatile, event-driven information without relying on external statistical anchors or monolithic prompting. We show that current-generation LLMs possess substantially stronger intrinsic forecasting ability than previously recognized, depending critically on how numerical and contextual reasoning are organized. Evaluated on data strictly succeeding LLM knowledge cutoffs spanning Zillow real estate metrics and volatile stock market equities, Nexus consistently matches or outperforms state-of-the-art TSFMs and strong LLM baselines. Beyond numerical accuracy, Nexus produces high-quality reasoning traces that explicitly show the fundamental drivers behind each forecast. Our results establish that real-world forecasting is an agentic reasoning problem extending well beyond only sequence modeling.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14389",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出面向时间序列预测的多智能体框架，有效整合数值与上下文推理，在房地产和股票数据上表现优异，输出可解释推理轨迹，兼具产品化潜力和研究新颖性；工程可实现性高，但领域泛化需更多验证。",
+        "one_sentence_summary": "Nexus提出了一个多智能体框架，将时间序列预测分解为宏观和微观趋势分析并整合上下文信息，在房地产和股票数据上超越专业模型且输出可解释推理轨迹。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "提出面向时间序列预测的多智能体框架，有效整合数值与上下文推理，在房地产和股票数据上表现优异，输出可解释推理轨迹，兼具产品化潜力和研究新颖性；工程可实现性高，但领域泛化需更多验证。",
+      "one_sentence_summary": "Nexus提出了一个多智能体框架，将时间序列预测分解为宏观和微观趋势分析并整合上下文信息，在房地产和股票数据上超越专业模型且输出可解释推理轨迹。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.14455",
+      "arxiv_id": "2605.14455",
+      "title": "Intelligence Impact Quotient (IIQ): A Framework for Measuring Organizational AI Impact",
+      "url": "https://arxiv.org/abs/2605.14455",
+      "published_at": "2026-05-16T04:00:00+00:00",
+      "publish_date": "2026-05-16",
+      "description": "The Intelligence Impact Quotient (IIQ) is a composite metric intended to quantify the depth to which AI systems are integrated into organizational work and their impact. Rather than treating access counts or aggregate token volume as sufficient evidence of impact, IIQ combines a novelty-weighted, time-decayed token stock with usage frequency, a grace-period recency gate, organizational leverage, task complexity, and autonomy. The formulation produces a raw Intelligence Adoption Index (IAI) and a normalized 0-1000 IIQ index for comparison between heterogeneous users and units. We also derive sub-daily update rules and a bounded interpretation layer for estimated efficiency and financial impact. The paper positions IIQ as a deployment-oriented measurement framework: a formal proposal for tracking AI embedding in workflows, not a direct measure of model capability or a substitute for causal productivity evaluation. Synthetic scenarios illustrate how the revised metric distinguishes between frequent low-leverage use, semantically repetitive prompting, and more autonomous, higher-consequence AI-assisted work.",
+      "summary": "The Intelligence Impact Quotient (IIQ) is a composite metric intended to quantify the depth to which AI systems are integrated into organizational work and their impact. Rather than treating access counts or aggregate token volume as sufficient evidence of impact, IIQ combines a novelty-weighted, time-decayed token stock with usage frequency, a grace-period recency gate, organizational leverage, task complexity, and autonomy. The formulation produces a raw Intelligence Adoption Index (IAI) and a normalized 0-1000 IIQ index for comparison between heterogeneous users and units. We also derive sub-daily update rules and a bounded interpretation layer for estimated efficiency and financial impact. The paper positions IIQ as a deployment-oriented measurement framework: a formal proposal for tracking AI embedding in workflows, not a direct measure of model capability or a substitute for causal productivity evaluation. Synthetic scenarios illustrate how the revised metric distinguishes between frequent low-leverage use, semantically repetitive prompting, and more autonomous, higher-consequence AI-assisted work.",
+      "abstract": "The Intelligence Impact Quotient (IIQ) is a composite metric intended to quantify the depth to which AI systems are integrated into organizational work and their impact. Rather than treating access counts or aggregate token volume as sufficient evidence of impact, IIQ combines a novelty-weighted, time-decayed token stock with usage frequency, a grace-period recency gate, organizational leverage, task complexity, and autonomy. The formulation produces a raw Intelligence Adoption Index (IAI) and a normalized 0-1000 IIQ index for comparison between heterogeneous users and units. We also derive sub-daily update rules and a bounded interpretation layer for estimated efficiency and financial impact. The paper positions IIQ as a deployment-oriented measurement framework: a formal proposal for tracking AI embedding in workflows, not a direct measure of model capability or a substitute for causal productivity evaluation. Synthetic scenarios illustrate how the revised metric distinguishes between frequent low-leverage use, semantically repetitive prompting, and more autonomous, higher-consequence AI-assisted work.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.14455",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 17,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "提出组织AI影响力度量框架IIQ，结合多维度复合指标，有助于量化AI嵌入深度，但偏重评估而非直接工具化；作为衡量标准具有新颖性，实现可集成于分析平台，但具体实施细节仍待明确。",
+        "one_sentence_summary": "提出Intelligence Impact Quotient指标，结合新颖度加权令牌存量、使用频率、任务复杂度和自主性等维度，量化组织中AI系统的集成深度与实际影响。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 17,
+        "timeliness_rarity": 19
+      },
+      "score_total": 74,
+      "score_reason": "提出组织AI影响力度量框架IIQ，结合多维度复合指标，有助于量化AI嵌入深度，但偏重评估而非直接工具化；作为衡量标准具有新颖性，实现可集成于分析平台，但具体实施细节仍待明确。",
+      "one_sentence_summary": "提出Intelligence Impact Quotient指标，结合新颖度加权令牌存量、使用频率、任务复杂度和自主性等维度，量化组织中AI系统的集成深度与实际影响。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-16T04:57:07.351369+00:00",
+      "pushed_at": "2026-05-16T04:57:07.351369+00:00",
+      "source_run_id": "2026-05-16",
+      "pushed_run_id": "2026-05-16"
     }
   ]
 }
