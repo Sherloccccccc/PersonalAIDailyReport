@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-16T04:57:07.351369+00:00",
+  "updated_at": "2026-05-17T05:15:35.870405+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -5659,6 +5659,772 @@
       "pushed_at": "2026-05-16T04:57:07.351369+00:00",
       "source_run_id": "2026-05-16",
       "pushed_run_id": "2026-05-16"
+    },
+    {
+      "id": "arxiv:2605.15198",
+      "arxiv_id": "2605.15198",
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "url": "https://arxiv.org/abs/2605.15198",
+      "published_at": "2026-05-14T17:59:55Z",
+      "publish_date": "2026-05-14",
+      "description": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
+      "summary": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
+      "abstract": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15198",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 21,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "ATLAS introduces functional tokens that unify agentic and latent visual reasoning, avoiding expensive image generation and complex training. The proposed LA-GRPO stabilizes RL training. It achieves superior performance with interpretability. This offers a practical and efficient paradigm for building visual reasoning agents, with direct engineering applicability.",
+        "one_sentence_summary": "ATLAS提出将单个离散功能词同时作为智能体操作和隐式视觉推理单元，无需中间视觉生成或架构修改，结合隐锚GRPO稳定训练，在多个基准上取得优异性能，为可扩展视觉推理提供新范式。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 21,
+        "timeliness_rarity": 23
+      },
+      "score_total": 91,
+      "score_reason": "ATLAS introduces functional tokens that unify agentic and latent visual reasoning, avoiding expensive image generation and complex training. The proposed LA-GRPO stabilizes RL training. It achieves superior performance with interpretability. This offers a practical and efficient paradigm for building visual reasoning agents, with direct engineering applicability.",
+      "one_sentence_summary": "ATLAS提出将单个离散功能词同时作为智能体操作和隐式视觉推理单元，无需中间视觉生成或架构修改，结合隐锚GRPO稳定训练，在多个基准上取得优异性能，为可扩展视觉推理提供新范式。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15188",
+      "arxiv_id": "2605.15188",
+      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+      "url": "https://arxiv.org/abs/2605.15188",
+      "published_at": "2026-05-14T17:59:28Z",
+      "publish_date": "2026-05-14",
+      "description": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over the simulated period. We evaluate frontier agents in their native harness, testing their ability to predict world events over a three-month period from January to March 2026. FutureSim reveals a clear separation in their capabilities, with the best agent's accuracy being 25%, and many having worse Brier skill score than making no prediction at all. Through careful ablations, we show how FutureSim offers a realistic setting to study emerging research directions like long-horizon test-time adaptation, search, memory, and reasoning about uncertainty. Overall, we hope our benchmark design paves the way to measure AI progress on open-ended adaptation spanning long time-horizons in the real world.",
+      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over the simulated period. We evaluate frontier agents in their native harness, testing their ability to predict world events over a three-month period from January to March 2026. FutureSim reveals a clear separation in their capabilities, with the best agent's accuracy being 25%, and many having worse Brier skill score than making no prediction at all. Through careful ablations, we show how FutureSim offers a realistic setting to study emerging research directions like long-horizon test-time adaptation, search, memory, and reasoning about uncertainty. Overall, we hope our benchmark design paves the way to measure AI progress on open-ended adaptation spanning long time-horizons in the real world.",
+      "abstract": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over the simulated period. We evaluate frontier agents in their native harness, testing their ability to predict world events over a three-month period from January to March 2026. FutureSim reveals a clear separation in their capabilities, with the best agent's accuracy being 25%, and many having worse Brier skill score than making no prediction at all. Through careful ablations, we show how FutureSim offers a realistic setting to study emerging research directions like long-horizon test-time adaptation, search, memory, and reasoning about uncertainty. Overall, we hope our benchmark design paves the way to measure AI progress on open-ended adaptation spanning long time-horizons in the real world.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15188",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 20,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "FutureSim provides a grounded simulation of real-world events for evaluating adaptive AI agents, replaying news articles chronologically to test long-horizon forecasting and adaptation; it offers a realistic benchmark and reveals current frontier agents' limitations, making it a timely evaluation tool for agent improvement.",
+        "one_sentence_summary": "FutureSim 构建基于真实世界事件顺序重播的模拟环境，通过让代理预测2026年1月至3月的世界事件来评估其适应性，揭示前沿代理准确率仅25%且规划能力薄弱，为长时域测试时适应、搜索与不确定性推理等研究方向提供现实基准。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "FutureSim provides a grounded simulation of real-world events for evaluating adaptive AI agents, replaying news articles chronologically to test long-horizon forecasting and adaptation; it offers a realistic benchmark and reveals current frontier agents' limitations, making it a timely evaluation tool for agent improvement.",
+      "one_sentence_summary": "FutureSim 构建基于真实世界事件顺序重播的模拟环境，通过让代理预测2026年1月至3月的世界事件来评估其适应性，揭示前沿代理准确率仅25%且规划能力薄弱，为长时域测试时适应、搜索与不确定性推理等研究方向提供现实基准。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15184",
+      "arxiv_id": "2605.15184",
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "url": "https://arxiv.org/abs/2605.15184",
+      "published_at": "2026-05-14T17:58:41Z",
+      "publish_date": "2026-05-14",
+      "description": "Recent advances in Large Language Model (LLM) agents have enabled complex agentic workflows where models autonomously retrieve information, call tools, and reason over large corpora to complete tasks on behalf of users. Despite the growing adoption of retrieval-augmented generation (RAG) in agentic search systems, existing literature lacks a systematic comparison of how retrieval strategy choice interacts with agent architecture and tool-calling paradigm. Important practical dimensions, including how tool outputs are presented to the model and how performance changes when searches must cope with more irrelevant surrounding text, remain under-explored in agent loops. This paper reports an empirical study organized into two experiments. Experiment 1 compares grep and vector retrieval on a 116-question sample from LongMemEval, using a custom agent harness (Chronos) and provider-native CLI harnesses (Claude Code, Codex, and Gemini CLI), for both inline tool results and file-based tool results that the model reads separately. Experiment 2 compares grep-only and vector-only retrieval while progressively mixing in additional unrelated conversation history, so that each query is embedded in more distracting material alongside the passages that matter. Across Chronos and the provider CLIs, grep generally yields higher accuracy than vector retrieval in our comparisons in experiment 1; at the same time, overall scores still depend strongly on which harness and tool-calling style is used, even when the underlying conversation data are the same.",
+      "summary": "Recent advances in Large Language Model (LLM) agents have enabled complex agentic workflows where models autonomously retrieve information, call tools, and reason over large corpora to complete tasks on behalf of users. Despite the growing adoption of retrieval-augmented generation (RAG) in agentic search systems, existing literature lacks a systematic comparison of how retrieval strategy choice interacts with agent architecture and tool-calling paradigm. Important practical dimensions, including how tool outputs are presented to the model and how performance changes when searches must cope with more irrelevant surrounding text, remain under-explored in agent loops. This paper reports an empirical study organized into two experiments. Experiment 1 compares grep and vector retrieval on a 116-question sample from LongMemEval, using a custom agent harness (Chronos) and provider-native CLI harnesses (Claude Code, Codex, and Gemini CLI), for both inline tool results and file-based tool results that the model reads separately. Experiment 2 compares grep-only and vector-only retrieval while progressively mixing in additional unrelated conversation history, so that each query is embedded in more distracting material alongside the passages that matter. Across Chronos and the provider CLIs, grep generally yields higher accuracy than vector retrieval in our comparisons in experiment 1; at the same time, overall scores still depend strongly on which harness and tool-calling style is used, even when the underlying conversation data are the same.",
+      "abstract": "Recent advances in Large Language Model (LLM) agents have enabled complex agentic workflows where models autonomously retrieve information, call tools, and reason over large corpora to complete tasks on behalf of users. Despite the growing adoption of retrieval-augmented generation (RAG) in agentic search systems, existing literature lacks a systematic comparison of how retrieval strategy choice interacts with agent architecture and tool-calling paradigm. Important practical dimensions, including how tool outputs are presented to the model and how performance changes when searches must cope with more irrelevant surrounding text, remain under-explored in agent loops. This paper reports an empirical study organized into two experiments. Experiment 1 compares grep and vector retrieval on a 116-question sample from LongMemEval, using a custom agent harness (Chronos) and provider-native CLI harnesses (Claude Code, Codex, and Gemini CLI), for both inline tool results and file-based tool results that the model reads separately. Experiment 2 compares grep-only and vector-only retrieval while progressively mixing in additional unrelated conversation history, so that each query is embedded in more distracting material alongside the passages that matter. Across Chronos and the provider CLIs, grep generally yields higher accuracy than vector retrieval in our comparisons in experiment 1; at the same time, overall scores still depend strongly on which harness and tool-calling style is used, even when the underlying conversation data are the same.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15184",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This empirical study systematically compares grep and vector retrieval in agentic search under different harnesses and tool-calling styles, revealing that grep often yields higher accuracy and that harness choice significantly impacts results; it also tests resilience to distractors, providing practical guidance for designing agent search systems.",
+        "one_sentence_summary": "通过在116条LongMemEval样本上使用Chronos、Claude Code等代理框架比较grep与向量检索，发现grep通常准确率更高，但工具输出形式（内联/文件）与干扰上下文显著影响代理搜索表现，为代理检索策略选择提供实验依据。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "This empirical study systematically compares grep and vector retrieval in agentic search under different harnesses and tool-calling styles, revealing that grep often yields higher accuracy and that harness choice significantly impacts results; it also tests resilience to distractors, providing practical guidance for designing agent search systems.",
+      "one_sentence_summary": "通过在116条LongMemEval样本上使用Chronos、Claude Code等代理框架比较grep与向量检索，发现grep通常准确率更高，但工具输出形式（内联/文件）与干扰上下文显著影响代理搜索表现，为代理检索策略选择提供实验依据。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15172",
+      "arxiv_id": "2605.15172",
+      "title": "MetaBackdoor: Exploiting Positional Encoding as a Backdoor Attack Surface in LLMs",
+      "url": "https://arxiv.org/abs/2605.15172",
+      "published_at": "2026-05-14T17:56:22Z",
+      "publish_date": "2026-05-14",
+      "description": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "summary": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "abstract": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15172",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 15,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This paper reveals a novel backdoor attack vector exploiting positional encoding without content modification, directly relevant to LLM security and red-teaming. It introduces a new attack surface and demonstrates concrete exploitation scenarios (system prompt leakage, self-activation), making it timely and actionable for defense development.",
+        "one_sentence_summary": "针对LLM提出MetaBackdoor攻击，首次利用位置编码（如对话长度）作为后门触发信号，无需修改输入文本，可诱使模型泄露系统提示或自主触发恶意工具调用，为LLM安全防御提出新要求。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 15,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "This paper reveals a novel backdoor attack vector exploiting positional encoding without content modification, directly relevant to LLM security and red-teaming. It introduces a new attack surface and demonstrates concrete exploitation scenarios (system prompt leakage, self-activation), making it timely and actionable for defense development.",
+      "one_sentence_summary": "针对LLM提出MetaBackdoor攻击，首次利用位置编码（如对话长度）作为后门触发信号，无需修改输入文本，可诱使模型泄露系统提示或自主触发恶意工具调用，为LLM安全防御提出新要求。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15156",
+      "arxiv_id": "2605.15156",
+      "title": "MeMo: Memory as a Model",
+      "url": "https://arxiv.org/abs/2605.15156",
+      "published_at": "2026-05-14T17:51:34Z",
+      "publish_date": "2026-05-14",
+      "description": "Large language models (LLMs) achieve strong performance across a wide range of tasks, but remain frozen after pretraining until subsequent updates. Many real-world applications require timely, domain-specific information, motivating the need for efficient mechanisms to incorporate new knowledge. In this paper, we introduce MeMo (Memory as a Model), a modular framework that encodes new knowledge into a dedicated memory model while keeping the LLM parameters unchanged. Compared to existing methods, MeMo offers several advantages: (a) it captures complex cross-document relationships, (b) it is robust to retrieval noise, (c) it avoids catastrophic forgetting in the LLM, (d) it does not require access to the LLM's weights or output logits, enabling plug-and-play integration with both open and proprietary closed-source LLMs, and (e) its retrieval cost is independent of corpus size at inference time. Our experimental results on three benchmarks, BrowseComp-Plus, NarrativeQA, and MuSiQue, show that MeMo achieves strong performance compared to existing methods across diverse settings.",
+      "summary": "Large language models (LLMs) achieve strong performance across a wide range of tasks, but remain frozen after pretraining until subsequent updates. Many real-world applications require timely, domain-specific information, motivating the need for efficient mechanisms to incorporate new knowledge. In this paper, we introduce MeMo (Memory as a Model), a modular framework that encodes new knowledge into a dedicated memory model while keeping the LLM parameters unchanged. Compared to existing methods, MeMo offers several advantages: (a) it captures complex cross-document relationships, (b) it is robust to retrieval noise, (c) it avoids catastrophic forgetting in the LLM, (d) it does not require access to the LLM's weights or output logits, enabling plug-and-play integration with both open and proprietary closed-source LLMs, and (e) its retrieval cost is independent of corpus size at inference time. Our experimental results on three benchmarks, BrowseComp-Plus, NarrativeQA, and MuSiQue, show that MeMo achieves strong performance compared to existing methods across diverse settings.",
+      "abstract": "Large language models (LLMs) achieve strong performance across a wide range of tasks, but remain frozen after pretraining until subsequent updates. Many real-world applications require timely, domain-specific information, motivating the need for efficient mechanisms to incorporate new knowledge. In this paper, we introduce MeMo (Memory as a Model), a modular framework that encodes new knowledge into a dedicated memory model while keeping the LLM parameters unchanged. Compared to existing methods, MeMo offers several advantages: (a) it captures complex cross-document relationships, (b) it is robust to retrieval noise, (c) it avoids catastrophic forgetting in the LLM, (d) it does not require access to the LLM's weights or output logits, enabling plug-and-play integration with both open and proprietary closed-source LLMs, and (e) its retrieval cost is independent of corpus size at inference time. Our experimental results on three benchmarks, BrowseComp-Plus, NarrativeQA, and MuSiQue, show that MeMo achieves strong performance compared to existing methods across diverse settings.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15156",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "提出独立记忆模型MeMo，支持即插即用注入新知识，不修改LLM参数，可处理跨文档关系并抗噪声，具有高度应用价值和工程实用性，时效性强。",
+        "one_sentence_summary": "MeMo框架将新知识编码进独立记忆模型，保持LLM参数不变，支持即插即用，能处理跨文档关系并抗检索噪声，在BrowseComp-Plus、NarrativeQA和MuSiQue三个基准上取得强性能，适用于为LLM高效注入领域知识。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 95,
+      "score_reason": "提出独立记忆模型MeMo，支持即插即用注入新知识，不修改LLM参数，可处理跨文档关系并抗噪声，具有高度应用价值和工程实用性，时效性强。",
+      "one_sentence_summary": "MeMo框架将新知识编码进独立记忆模型，保持LLM参数不变，支持即插即用，能处理跨文档关系并抗检索噪声，在BrowseComp-Plus、NarrativeQA和MuSiQue三个基准上取得强性能，适用于为LLM高效注入领域知识。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15128",
+      "arxiv_id": "2605.15128",
+      "title": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
+      "url": "https://arxiv.org/abs/2605.15128",
+      "published_at": "2026-05-14T17:37:52Z",
+      "publish_date": "2026-05-14",
+      "description": "Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.",
+      "summary": "Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.",
+      "abstract": "Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15128",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "MemEye provides a visual-centric memory evaluation framework for multimodal agents, addressing gaps in existing benchmarks. It introduces granularity and evidence-usage dimensions, creates a new 8-task benchmark with validation gates, and tests 13 methods on 4 VLMs. Findings reveal struggles with fine-grained details. Highly relevant to agent design, with reusable artifacts, though primarily an evaluation tool.",
+        "one_sentence_summary": "MemEye针对多模态智能体记忆提出视觉证据粒度和检索使用方式二维评估框架，构建涵盖8个生活场景的基准，并对13种记忆方法在4种视觉语言模型上进行评测，揭示当前架构在保留细粒度视觉细节和时间状态推理上的不足，为设计更强记忆机制提供指引。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "MemEye provides a visual-centric memory evaluation framework for multimodal agents, addressing gaps in existing benchmarks. It introduces granularity and evidence-usage dimensions, creates a new 8-task benchmark with validation gates, and tests 13 methods on 4 VLMs. Findings reveal struggles with fine-grained details. Highly relevant to agent design, with reusable artifacts, though primarily an evaluation tool.",
+      "one_sentence_summary": "MemEye针对多模态智能体记忆提出视觉证据粒度和检索使用方式二维评估框架，构建涵盖8个生活场景的基准，并对13种记忆方法在4种视觉语言模型上进行评测，揭示当前架构在保留细粒度视觉细节和时间状态推理上的不足，为设计更强记忆机制提供指引。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15118",
+      "arxiv_id": "2605.15118",
+      "title": "Talk is (Not) Cheap: A Taxonomy and Benchmark Coverage Audit for LLM Attacks",
+      "url": "https://arxiv.org/abs/2605.15118",
+      "published_at": "2026-05-14T17:30:36Z",
+      "publish_date": "2026-05-14",
+      "description": "We introduce a reusable framework for auditing whether LLM attack benchmarks collectively cover the threat surface: a 4$\\times$6 Target $\\times$ Technique matrix grounded in STRIDE, constructed from a 507-leaf taxonomy -- 401 data-populated and 106 threat-model-derived leaves -- of inference-time attacks extracted from 932 arXiv security studies (2023--2026). The matrix enables benchmark-external validation -- auditing collective coverage rather than individual benchmark consistency. Applying it to six public benchmarks reveals that the three primary frameworks (HarmBench, InjecAgent, AgentDojo) occupy non-overlapping cells covering at most 25\\% of the matrix, while entire STRIDE threat categories (Service Disruption, Model Internals) lack any standardized evaluation, despite published attacks in these categories achieving 46$\\times$ token amplification and 96\\% attack success rates through mechanisms which no benchmark tests. The corpus of 2,521 unique attack groups further reveals pervasive naming fragmentation (up to 29 surface forms for a single attack) and heavy concentration in Safety \\& Alignment Bypass, structural properties invisible at smaller scale. The taxonomy, attack records, and coverage mappings are released as extensible artifacts; as new benchmarks emerge, they can be mapped onto the same matrix, enabling the community to track whether evaluation gaps are closing.",
+      "summary": "We introduce a reusable framework for auditing whether LLM attack benchmarks collectively cover the threat surface: a 4$\\times$6 Target $\\times$ Technique matrix grounded in STRIDE, constructed from a 507-leaf taxonomy -- 401 data-populated and 106 threat-model-derived leaves -- of inference-time attacks extracted from 932 arXiv security studies (2023--2026). The matrix enables benchmark-external validation -- auditing collective coverage rather than individual benchmark consistency. Applying it to six public benchmarks reveals that the three primary frameworks (HarmBench, InjecAgent, AgentDojo) occupy non-overlapping cells covering at most 25\\% of the matrix, while entire STRIDE threat categories (Service Disruption, Model Internals) lack any standardized evaluation, despite published attacks in these categories achieving 46$\\times$ token amplification and 96\\% attack success rates through mechanisms which no benchmark tests. The corpus of 2,521 unique attack groups further reveals pervasive naming fragmentation (up to 29 surface forms for a single attack) and heavy concentration in Safety \\& Alignment Bypass, structural properties invisible at smaller scale. The taxonomy, attack records, and coverage mappings are released as extensible artifacts; as new benchmarks emerge, they can be mapped onto the same matrix, enabling the community to track whether evaluation gaps are closing.",
+      "abstract": "We introduce a reusable framework for auditing whether LLM attack benchmarks collectively cover the threat surface: a 4$\\times$6 Target $\\times$ Technique matrix grounded in STRIDE, constructed from a 507-leaf taxonomy -- 401 data-populated and 106 threat-model-derived leaves -- of inference-time attacks extracted from 932 arXiv security studies (2023--2026). The matrix enables benchmark-external validation -- auditing collective coverage rather than individual benchmark consistency. Applying it to six public benchmarks reveals that the three primary frameworks (HarmBench, InjecAgent, AgentDojo) occupy non-overlapping cells covering at most 25\\% of the matrix, while entire STRIDE threat categories (Service Disruption, Model Internals) lack any standardized evaluation, despite published attacks in these categories achieving 46$\\times$ token amplification and 96\\% attack success rates through mechanisms which no benchmark tests. The corpus of 2,521 unique attack groups further reveals pervasive naming fragmentation (up to 29 surface forms for a single attack) and heavy concentration in Safety \\& Alignment Bypass, structural properties invisible at smaller scale. The taxonomy, attack records, and coverage mappings are released as extensible artifacts; as new benchmarks emerge, they can be mapped onto the same matrix, enabling the community to track whether evaluation gaps are closing.",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15118",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "The paper presents a taxonomy of LLM attacks from 932 papers and a coverage matrix to audit benchmarks. It reveals gaps in threat coverage and naming fragmentation. While valuable for security evaluators, its direct application to agent engineering is limited. The artifacts are reusable for mapping future benchmarks, but the work is more analytical than actionable for product development.",
+        "one_sentence_summary": "本文从932篇安全论文中提取了507个叶节点的LLM攻击分类法，基于STRIDE构建4×6覆盖矩阵，审计六个公共基准发现覆盖率不超过25%，并揭示攻击命名碎片化和安全对齐绕过集中现象，提供可扩展映射工件以追踪评估差距。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 16
+      },
+      "score_total": 69,
+      "score_reason": "The paper presents a taxonomy of LLM attacks from 932 papers and a coverage matrix to audit benchmarks. It reveals gaps in threat coverage and naming fragmentation. While valuable for security evaluators, its direct application to agent engineering is limited. The artifacts are reusable for mapping future benchmarks, but the work is more analytical than actionable for product development.",
+      "one_sentence_summary": "本文从932篇安全论文中提取了507个叶节点的LLM攻击分类法，基于STRIDE构建4×6覆盖矩阵，审计六个公共基准发现覆盖率不超过25%，并揭示攻击命名碎片化和安全对齐绕过集中现象，提供可扩展映射工件以追踪评估差距。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15108",
+      "arxiv_id": "2605.15108",
+      "title": "Logging Policy Design for Off-Policy Evaluation",
+      "url": "https://arxiv.org/abs/2605.15108",
+      "published_at": "2026-05-14T17:25:19Z",
+      "publish_date": "2026-05-14",
+      "description": "Off-policy evaluation (OPE) estimates the value of a target treatment policy (e.g., a recommender system) using data collected by a different logging policy. It enables high-stakes experimentation without live deployment, yet in practice accuracy depends heavily on the logging policy used to collect data for computing the estimate. We study how to design logging policies that minimize OPE error for given target policies. We characterize a fundamental reward-coverage tradeoff: concentrating probability mass on high-reward actions reduces variance but risks missing signal on actions the target policy may take. We propose a unifying framework for logging policy design and derive optimal policies in canonical informational regimes where the target policy and reward distribution are (i) known, (ii) unknown, and (iii) partially known through priors or noisy estimates at logging time. Our results provide actionable guidance for firms choosing among multiple candidate recommendation systems. We demonstrate the importance of treatment selection when gathering data for OPE, and describe theoretically optimal approaches when this is a firm's primary objective. We also distill practical design principles for selecting logging policies when operational constraints prevent implementing the theoretical optimum.",
+      "summary": "Off-policy evaluation (OPE) estimates the value of a target treatment policy (e.g., a recommender system) using data collected by a different logging policy. It enables high-stakes experimentation without live deployment, yet in practice accuracy depends heavily on the logging policy used to collect data for computing the estimate. We study how to design logging policies that minimize OPE error for given target policies. We characterize a fundamental reward-coverage tradeoff: concentrating probability mass on high-reward actions reduces variance but risks missing signal on actions the target policy may take. We propose a unifying framework for logging policy design and derive optimal policies in canonical informational regimes where the target policy and reward distribution are (i) known, (ii) unknown, and (iii) partially known through priors or noisy estimates at logging time. Our results provide actionable guidance for firms choosing among multiple candidate recommendation systems. We demonstrate the importance of treatment selection when gathering data for OPE, and describe theoretically optimal approaches when this is a firm's primary objective. We also distill practical design principles for selecting logging policies when operational constraints prevent implementing the theoretical optimum.",
+      "abstract": "Off-policy evaluation (OPE) estimates the value of a target treatment policy (e.g., a recommender system) using data collected by a different logging policy. It enables high-stakes experimentation without live deployment, yet in practice accuracy depends heavily on the logging policy used to collect data for computing the estimate. We study how to design logging policies that minimize OPE error for given target policies. We characterize a fundamental reward-coverage tradeoff: concentrating probability mass on high-reward actions reduces variance but risks missing signal on actions the target policy may take. We propose a unifying framework for logging policy design and derive optimal policies in canonical informational regimes where the target policy and reward distribution are (i) known, (ii) unknown, and (iii) partially known through priors or noisy estimates at logging time. Our results provide actionable guidance for firms choosing among multiple candidate recommendation systems. We demonstrate the importance of treatment selection when gathering data for OPE, and describe theoretically optimal approaches when this is a firm's primary objective. We also distill practical design principles for selecting logging policies when operational constraints prevent implementing the theoretical optimum.",
+      "categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "api_categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15108",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 18,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This paper addresses a practical problem in off-policy evaluation, providing a framework and optimal logging policy design for minimizing estimation error. It offers actionable guidance for firms selecting recommendation systems, balancing reward and coverage trade-offs, highly relevant for AI product experimentation and deployment.",
+        "one_sentence_summary": "针对离线策略评估的日志策略设计问题，提出奖励-覆盖权衡框架，并在收益分布已知、未知及部分已知三种信息条件下推导最优日志策略，为推荐系统离线评估提供理论指导与实用原则。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 18,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "This paper addresses a practical problem in off-policy evaluation, providing a framework and optimal logging policy design for minimizing estimation error. It offers actionable guidance for firms selecting recommendation systems, balancing reward and coverage trade-offs, highly relevant for AI product experimentation and deployment.",
+      "one_sentence_summary": "针对离线策略评估的日志策略设计问题，提出奖励-覆盖权衡框架，并在收益分布已知、未知及部分已知三种信息条件下推导最优日志策略，为推荐系统离线评估提供理论指导与实用原则。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15104",
+      "arxiv_id": "2605.15104",
+      "title": "From Text to Voice: A Reproducible and Verifiable Framework for Evaluating Tool Calling LLM Agents",
+      "url": "https://arxiv.org/abs/2605.15104",
+      "published_at": "2026-05-14T17:22:42Z",
+      "publish_date": "2026-05-14",
+      "description": "Voice agents increasingly require reliable tool use from speech, whereas prominent tool-calling benchmarks remain text-based. We study whether verified text benchmarks can be converted into controlled audio-based tool calling evaluations without re-annotating the tool schema and gold labels. Our dataset-agnostic framework uses text-to-speech, speaker variation, and environmental noise to create paired text-audio instances while preserving the original dataset annotations. Based on extensive evaluation of 7 omni-modal models on audio-converted versions of Confetti and When2Call, our framework demonstrates that the performance is strongly model- and task-dependent: Gemini-3.1-Flash-Live obtains the highest Confetti score (70.4), whereas GPT-Realtime-1.5 performs best on When2Call (71.9). On Confetti, the text-to-voice gap ranges from 1.8 points for Qwen3-Omni to 4.8 points for GPT-Realtime-1.5. A targeted analysis of failure cases demonstrates that degradations most often reflect misunderstandings of argument values in the speech. Considering real-world deployment scenarios, we further report text-only results, an ambiguity-based reformulation stress test, and a reference-free LLM-as-judge protocol validated against human preferences. Notably, we find that open-source Qwen3 judges with at least 8B parameters exceed 80% agreement with proprietary judges, supporting privacy-preserving evaluation. Overall, our framework provides a verifiable and reproducible first-stage diagnostic that complements purpose-built audio corpora.",
+      "summary": "Voice agents increasingly require reliable tool use from speech, whereas prominent tool-calling benchmarks remain text-based. We study whether verified text benchmarks can be converted into controlled audio-based tool calling evaluations without re-annotating the tool schema and gold labels. Our dataset-agnostic framework uses text-to-speech, speaker variation, and environmental noise to create paired text-audio instances while preserving the original dataset annotations. Based on extensive evaluation of 7 omni-modal models on audio-converted versions of Confetti and When2Call, our framework demonstrates that the performance is strongly model- and task-dependent: Gemini-3.1-Flash-Live obtains the highest Confetti score (70.4), whereas GPT-Realtime-1.5 performs best on When2Call (71.9). On Confetti, the text-to-voice gap ranges from 1.8 points for Qwen3-Omni to 4.8 points for GPT-Realtime-1.5. A targeted analysis of failure cases demonstrates that degradations most often reflect misunderstandings of argument values in the speech. Considering real-world deployment scenarios, we further report text-only results, an ambiguity-based reformulation stress test, and a reference-free LLM-as-judge protocol validated against human preferences. Notably, we find that open-source Qwen3 judges with at least 8B parameters exceed 80% agreement with proprietary judges, supporting privacy-preserving evaluation. Overall, our framework provides a verifiable and reproducible first-stage diagnostic that complements purpose-built audio corpora.",
+      "abstract": "Voice agents increasingly require reliable tool use from speech, whereas prominent tool-calling benchmarks remain text-based. We study whether verified text benchmarks can be converted into controlled audio-based tool calling evaluations without re-annotating the tool schema and gold labels. Our dataset-agnostic framework uses text-to-speech, speaker variation, and environmental noise to create paired text-audio instances while preserving the original dataset annotations. Based on extensive evaluation of 7 omni-modal models on audio-converted versions of Confetti and When2Call, our framework demonstrates that the performance is strongly model- and task-dependent: Gemini-3.1-Flash-Live obtains the highest Confetti score (70.4), whereas GPT-Realtime-1.5 performs best on When2Call (71.9). On Confetti, the text-to-voice gap ranges from 1.8 points for Qwen3-Omni to 4.8 points for GPT-Realtime-1.5. A targeted analysis of failure cases demonstrates that degradations most often reflect misunderstandings of argument values in the speech. Considering real-world deployment scenarios, we further report text-only results, an ambiguity-based reformulation stress test, and a reference-free LLM-as-judge protocol validated against human preferences. Notably, we find that open-source Qwen3 judges with at least 8B parameters exceed 80% agreement with proprietary judges, supporting privacy-preserving evaluation. Overall, our framework provides a verifiable and reproducible first-stage diagnostic that complements purpose-built audio corpora.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15104",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "提供将文本工具调用基准转换为语音评估的可重复框架，揭示模型在语音下的性能退化，验证隐私友好的LLM评判协议，对语音代理开发有直接价值。",
+        "one_sentence_summary": "提出将文本工具调用基准转换为音频的评估框架，利用TTS、说话人变化和环境噪声保持原始标注，在Confetti和When2Call上评估7个全模态模型，发现性能退化主要源于语音中参数理解错误，并提供与人类偏好一致的参考自由LLM评判协议。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "提供将文本工具调用基准转换为语音评估的可重复框架，揭示模型在语音下的性能退化，验证隐私友好的LLM评判协议，对语音代理开发有直接价值。",
+      "one_sentence_summary": "提出将文本工具调用基准转换为音频的评估框架，利用TTS、说话人变化和环境噪声保持原始标注，在Confetti和When2Call上评估7个全模态模型，发现性能退化主要源于语音中参数理解错误，并提供与人类偏好一致的参考自由LLM评判协议。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15097",
+      "arxiv_id": "2605.15097",
+      "title": "Veritas: A Semantically Grounded Agentic Framework for Memory Corruption Vulnerability Detection in Binaries",
+      "url": "https://arxiv.org/abs/2605.15097",
+      "published_at": "2026-05-14T17:16:11Z",
+      "publish_date": "2026-05-14",
+      "description": "Detecting memory corruption vulnerabilities in stripped binaries requires recovering object semantics, interprocedural propagation, and feasible triggers from low-level, lossy representations. Recent LLM-based approaches improve code understanding, but reliable detection still requires grounding in memory-relevant semantics and runtime feasibility evidence. We present Veritas, a semantically grounded framework for binary memory corruption vulnerability detection. Veritas combines a static slicer over RetDec-lifted LLVM IR, a dual-view LLM detector that reasons step by step over grounded flows using decompiled C and selective LLVM IR, and a multi-agent validator that checks hypotheses against debugger-visible artifacts and runtime evidence. The slicer reconstructs value-flow relations from LLVM-IR facts, including def-use, calls, returns, globals, and pointer operations, and emits compact witness-backed flow objects. The detector uses these artifacts to reason about control flow, bounds, and object correspondence without rediscovering whole-binary propagation. The validator confirms or rejects candidates through guided debugging, breakpoint inspection, and memory-checking oracles. We implement Veritas as a modular pipeline and evaluate it on a curated benchmark of real-world binary vulnerability cases. Veritas achieves 90\\% recall. For false-positive assessment, we exhaustively validate and manually verify 623 detector candidates and audit additional candidates from larger cases. The exhaustive subset produces no false positives, while the additional audit identifies two confirmed false positives. In a real-world application, Veritas discovered a previously unknown Apple vulnerability that was confirmed and assigned a CVE. These results support semantic grounding as an operational design principle for practical binary vulnerability detection.",
+      "summary": "Detecting memory corruption vulnerabilities in stripped binaries requires recovering object semantics, interprocedural propagation, and feasible triggers from low-level, lossy representations. Recent LLM-based approaches improve code understanding, but reliable detection still requires grounding in memory-relevant semantics and runtime feasibility evidence. We present Veritas, a semantically grounded framework for binary memory corruption vulnerability detection. Veritas combines a static slicer over RetDec-lifted LLVM IR, a dual-view LLM detector that reasons step by step over grounded flows using decompiled C and selective LLVM IR, and a multi-agent validator that checks hypotheses against debugger-visible artifacts and runtime evidence. The slicer reconstructs value-flow relations from LLVM-IR facts, including def-use, calls, returns, globals, and pointer operations, and emits compact witness-backed flow objects. The detector uses these artifacts to reason about control flow, bounds, and object correspondence without rediscovering whole-binary propagation. The validator confirms or rejects candidates through guided debugging, breakpoint inspection, and memory-checking oracles. We implement Veritas as a modular pipeline and evaluate it on a curated benchmark of real-world binary vulnerability cases. Veritas achieves 90\\% recall. For false-positive assessment, we exhaustively validate and manually verify 623 detector candidates and audit additional candidates from larger cases. The exhaustive subset produces no false positives, while the additional audit identifies two confirmed false positives. In a real-world application, Veritas discovered a previously unknown Apple vulnerability that was confirmed and assigned a CVE. These results support semantic grounding as an operational design principle for practical binary vulnerability detection.",
+      "abstract": "Detecting memory corruption vulnerabilities in stripped binaries requires recovering object semantics, interprocedural propagation, and feasible triggers from low-level, lossy representations. Recent LLM-based approaches improve code understanding, but reliable detection still requires grounding in memory-relevant semantics and runtime feasibility evidence. We present Veritas, a semantically grounded framework for binary memory corruption vulnerability detection. Veritas combines a static slicer over RetDec-lifted LLVM IR, a dual-view LLM detector that reasons step by step over grounded flows using decompiled C and selective LLVM IR, and a multi-agent validator that checks hypotheses against debugger-visible artifacts and runtime evidence. The slicer reconstructs value-flow relations from LLVM-IR facts, including def-use, calls, returns, globals, and pointer operations, and emits compact witness-backed flow objects. The detector uses these artifacts to reason about control flow, bounds, and object correspondence without rediscovering whole-binary propagation. The validator confirms or rejects candidates through guided debugging, breakpoint inspection, and memory-checking oracles. We implement Veritas as a modular pipeline and evaluate it on a curated benchmark of real-world binary vulnerability cases. Veritas achieves 90\\% recall. For false-positive assessment, we exhaustively validate and manually verify 623 detector candidates and audit additional candidates from larger cases. The exhaustive subset produces no false positives, while the additional audit identifies two confirmed false positives. In a real-world application, Veritas discovered a previously unknown Apple vulnerability that was confirmed and assigned a CVE. These results support semantic grounding as an operational design principle for practical binary vulnerability detection.",
+      "categories": [
+        "cs.SE",
+        "cs.CR"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.CR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15097",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "语义接地与多智能体验证相结合的二进制漏洞检测框架，达到高召回并发现真实Apple CVE，工程实现模块化可集成，代表LLM+安全的前沿方向。",
+        "one_sentence_summary": "Veritas框架结合静态切片、双视图LLM检测器和多智能体验证器，通过语义接地和运行时证据在二进制中检测内存破坏漏洞，在基准上达90%召回率，并实际发现Apple漏洞获CVE分配。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "语义接地与多智能体验证相结合的二进制漏洞检测框架，达到高召回并发现真实Apple CVE，工程实现模块化可集成，代表LLM+安全的前沿方向。",
+      "one_sentence_summary": "Veritas框架结合静态切片、双视图LLM检测器和多智能体验证器，通过语义接地和运行时证据在二进制中检测内存破坏漏洞，在基准上达90%召回率，并实际发现Apple漏洞获CVE分配。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15083",
+      "arxiv_id": "2605.15083",
+      "title": "Novel Dynamic Batch-Sensitive Adam Optimiser for Vehicular Accident Injury Severity Prediction",
+      "url": "https://arxiv.org/abs/2605.15083",
+      "published_at": "2026-05-14T17:06:43Z",
+      "publish_date": "2026-05-14",
+      "description": "The choice of optimiser is important in deep learning, as it strongly influences model efficiency and speed of convergence. However, many commonly used optimisers encounter difficulties when applied to imbalanced and sequential datasets, limiting their ability to capture patterns of minority classes. In this study, we propose Dynamic Batch-Sensitive Adam (DBS-Adam), an optimiser that dynamically scales the learning rate using a batch difficulty score derived from exponential moving averages of gradient norms and batch loss. DBS-Adam improves training stability and accelerates convergence by increasing updates for difficult batches and reducing them for easier ones. We evaluate DBS-Adam by integrating it with Bi-Directional LSTM networks for accident injury severity prediction, addressing class imbalance through SMOTE-ENN resampling and Focal Loss. Four experimental configurations compare baseline Bi-LSTM models and alternative architectures to assess optimiser impact. Rigorous comparison against state-of-the-art optimisers (AMSGrad, AdamW, AdaBound) across five random seeds demonstrated DBS-Adam's competitive performance with statistically significant precision improvements (p=0.020). Results indicate that DBS-Adam outperforms standard optimisation approaches, achieving 95.22% test accuracy, 96.11% precision, 95.28% recall, 95.39% F1-score, and a test loss of 0.0086. The proposed framework enables effective real-time accident severity classification for targeted emergency response and road safety interventions, demonstrating the value of DBS-Adam for learning from imbalanced sequential data.",
+      "summary": "The choice of optimiser is important in deep learning, as it strongly influences model efficiency and speed of convergence. However, many commonly used optimisers encounter difficulties when applied to imbalanced and sequential datasets, limiting their ability to capture patterns of minority classes. In this study, we propose Dynamic Batch-Sensitive Adam (DBS-Adam), an optimiser that dynamically scales the learning rate using a batch difficulty score derived from exponential moving averages of gradient norms and batch loss. DBS-Adam improves training stability and accelerates convergence by increasing updates for difficult batches and reducing them for easier ones. We evaluate DBS-Adam by integrating it with Bi-Directional LSTM networks for accident injury severity prediction, addressing class imbalance through SMOTE-ENN resampling and Focal Loss. Four experimental configurations compare baseline Bi-LSTM models and alternative architectures to assess optimiser impact. Rigorous comparison against state-of-the-art optimisers (AMSGrad, AdamW, AdaBound) across five random seeds demonstrated DBS-Adam's competitive performance with statistically significant precision improvements (p=0.020). Results indicate that DBS-Adam outperforms standard optimisation approaches, achieving 95.22% test accuracy, 96.11% precision, 95.28% recall, 95.39% F1-score, and a test loss of 0.0086. The proposed framework enables effective real-time accident severity classification for targeted emergency response and road safety interventions, demonstrating the value of DBS-Adam for learning from imbalanced sequential data.",
+      "abstract": "The choice of optimiser is important in deep learning, as it strongly influences model efficiency and speed of convergence. However, many commonly used optimisers encounter difficulties when applied to imbalanced and sequential datasets, limiting their ability to capture patterns of minority classes. In this study, we propose Dynamic Batch-Sensitive Adam (DBS-Adam), an optimiser that dynamically scales the learning rate using a batch difficulty score derived from exponential moving averages of gradient norms and batch loss. DBS-Adam improves training stability and accelerates convergence by increasing updates for difficult batches and reducing them for easier ones. We evaluate DBS-Adam by integrating it with Bi-Directional LSTM networks for accident injury severity prediction, addressing class imbalance through SMOTE-ENN resampling and Focal Loss. Four experimental configurations compare baseline Bi-LSTM models and alternative architectures to assess optimiser impact. Rigorous comparison against state-of-the-art optimisers (AMSGrad, AdamW, AdaBound) across five random seeds demonstrated DBS-Adam's competitive performance with statistically significant precision improvements (p=0.020). Results indicate that DBS-Adam outperforms standard optimisation approaches, achieving 95.22% test accuracy, 96.11% precision, 95.28% recall, 95.39% F1-score, and a test loss of 0.0086. The proposed framework enables effective real-time accident severity classification for targeted emergency response and road safety interventions, demonstrating the value of DBS-Adam for learning from imbalanced sequential data.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15083",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 14,
+          "engineering_utility": 20,
+          "timeliness_rarity": 12
+        },
+        "score_reason": "Proposes a new Adam variant, DBS-Adam, that adjusts learning rate by batch difficulty, evaluated on accident severity prediction. It demonstrates competitive performance and is implementable, but the novelty and application relevance are moderate compared to foundational work.",
+        "one_sentence_summary": "提出DBS-Adam优化器，通过梯度范数和损失指数移动平均计算批次难度并动态缩放学习率，结合Bi-LSTM在车辆事故伤害预测中达95.22%准确率，优于标准优化器，适合不平衡序列学习。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 14,
+        "engineering_utility": 20,
+        "timeliness_rarity": 12
+      },
+      "score_total": 61,
+      "score_reason": "Proposes a new Adam variant, DBS-Adam, that adjusts learning rate by batch difficulty, evaluated on accident severity prediction. It demonstrates competitive performance and is implementable, but the novelty and application relevance are moderate compared to foundational work.",
+      "one_sentence_summary": "提出DBS-Adam优化器，通过梯度范数和损失指数移动平均计算批次难度并动态缩放学习率，结合Bi-LSTM在车辆事故伤害预测中达95.22%准确率，优于标准优化器，适合不平衡序列学习。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15081",
+      "arxiv_id": "2605.15081",
+      "title": "ML-Embed: Inclusive and Efficient Embeddings for a Multilingual World",
+      "url": "https://arxiv.org/abs/2605.15081",
+      "published_at": "2026-05-14T17:05:26Z",
+      "publish_date": "2026-05-14",
+      "description": "The development of high-quality text embeddings is increasingly drifting toward an exclusionary future, defined by three critical barriers: prohibitive computational costs, a narrow linguistic focus that neglects most of the world's languages, and a lack of transparency from closed-source or open-weight models that stifles research. To dismantle these barriers, we introduce ML-Embed, a suite of inclusive and efficient models built upon a new framework: 3-Dimensional Matryoshka Learning (3D-ML). Our framework addresses the computational challenge with comprehensive efficiency across the entire model lifecycle. Beyond the storage benefits of Matryoshka Representation Learning (MRL) and flexible inference-time depth provided by Matryoshka Layer Learning (MLL), we introduce Matryoshka Embedding Learning (MEL) for enhanced parameter efficiency. To address the linguistic challenge, we curate a massively multilingual dataset and train a suite of models ranging from 140M to 8B parameters. In a direct commitment to transparency, we release all models, data, and code. Extensive evaluation on 430 tasks demonstrates that our models set new records on 9 of 17 evaluated MTEB benchmarks, with particularly strong results in low-resource languages, providing a reproducible blueprint for building globally equitable and computationally efficient AI systems.",
+      "summary": "The development of high-quality text embeddings is increasingly drifting toward an exclusionary future, defined by three critical barriers: prohibitive computational costs, a narrow linguistic focus that neglects most of the world's languages, and a lack of transparency from closed-source or open-weight models that stifles research. To dismantle these barriers, we introduce ML-Embed, a suite of inclusive and efficient models built upon a new framework: 3-Dimensional Matryoshka Learning (3D-ML). Our framework addresses the computational challenge with comprehensive efficiency across the entire model lifecycle. Beyond the storage benefits of Matryoshka Representation Learning (MRL) and flexible inference-time depth provided by Matryoshka Layer Learning (MLL), we introduce Matryoshka Embedding Learning (MEL) for enhanced parameter efficiency. To address the linguistic challenge, we curate a massively multilingual dataset and train a suite of models ranging from 140M to 8B parameters. In a direct commitment to transparency, we release all models, data, and code. Extensive evaluation on 430 tasks demonstrates that our models set new records on 9 of 17 evaluated MTEB benchmarks, with particularly strong results in low-resource languages, providing a reproducible blueprint for building globally equitable and computationally efficient AI systems.",
+      "abstract": "The development of high-quality text embeddings is increasingly drifting toward an exclusionary future, defined by three critical barriers: prohibitive computational costs, a narrow linguistic focus that neglects most of the world's languages, and a lack of transparency from closed-source or open-weight models that stifles research. To dismantle these barriers, we introduce ML-Embed, a suite of inclusive and efficient models built upon a new framework: 3-Dimensional Matryoshka Learning (3D-ML). Our framework addresses the computational challenge with comprehensive efficiency across the entire model lifecycle. Beyond the storage benefits of Matryoshka Representation Learning (MRL) and flexible inference-time depth provided by Matryoshka Layer Learning (MLL), we introduce Matryoshka Embedding Learning (MEL) for enhanced parameter efficiency. To address the linguistic challenge, we curate a massively multilingual dataset and train a suite of models ranging from 140M to 8B parameters. In a direct commitment to transparency, we release all models, data, and code. Extensive evaluation on 430 tasks demonstrates that our models set new records on 9 of 17 evaluated MTEB benchmarks, with particularly strong results in low-resource languages, providing a reproducible blueprint for building globally equitable and computationally efficient AI systems.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15081",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "ML-Embed addresses computational, linguistic, and transparency barriers in text embeddings, directly benefiting multilingual AI products; it introduces 3D-ML, a novel training framework that improves efficiency across the model lifecycle, with open releases making it highly reusable and implementable, and its record performance on low-resource languages highlights a timely push toward inclusive AI.",
+        "one_sentence_summary": "ML-Embed 提出三维Matryoshka学习框架，训练140M到8B参数的多语言嵌入模型，通过覆盖430项任务的评测在低资源语言上创下新纪录，并完全开源模型、数据与代码，为构建全球公平且高效的计算嵌入系统提供可复现方案。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 19
+      },
+      "score_total": 84,
+      "score_reason": "ML-Embed addresses computational, linguistic, and transparency barriers in text embeddings, directly benefiting multilingual AI products; it introduces 3D-ML, a novel training framework that improves efficiency across the model lifecycle, with open releases making it highly reusable and implementable, and its record performance on low-resource languages highlights a timely push toward inclusive AI.",
+      "one_sentence_summary": "ML-Embed 提出三维Matryoshka学习框架，训练140M到8B参数的多语言嵌入模型，通过覆盖430项任务的评测在低资源语言上创下新纪录，并完全开源模型、数据与代码，为构建全球公平且高效的计算嵌入系统提供可复现方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15077",
+      "arxiv_id": "2605.15077",
+      "title": "Concurrency without Model Changes: Future-based Asynchronous Function Calling for LLMs",
+      "url": "https://arxiv.org/abs/2605.15077",
+      "published_at": "2026-05-14T17:02:28Z",
+      "publish_date": "2026-05-14",
+      "description": "Function calling, also known as tool use, is a core capability of modern LLM agents but is typically constrained by synchronous execution semantics. Under these semantics, LLM decoding is blocked until each function call completes, resulting in increasing end-to-end latency. In this work, we introduce AsyncFC, a pure execution-layer framework that decouples LLM decoding from function execution, enabling overlap between model decoding and function execution as well as inter-function parallelism when dependencies permit. AsyncFC layers over existing models and unmodified function implementations, requiring no fine-tuning or changes to the standard synchronous function-calling protocol. Across standard function-calling benchmarks and adapted software engineering benchmarks, AsyncFC significantly reduces end-to-end task completion time while preserving task accuracy. Furthermore, these results reveal that LLMs possess a native capability to reason over symbolic futures that represent unresolved execution results, enabling an asynchronous paradigm for model-tool interaction.",
+      "summary": "Function calling, also known as tool use, is a core capability of modern LLM agents but is typically constrained by synchronous execution semantics. Under these semantics, LLM decoding is blocked until each function call completes, resulting in increasing end-to-end latency. In this work, we introduce AsyncFC, a pure execution-layer framework that decouples LLM decoding from function execution, enabling overlap between model decoding and function execution as well as inter-function parallelism when dependencies permit. AsyncFC layers over existing models and unmodified function implementations, requiring no fine-tuning or changes to the standard synchronous function-calling protocol. Across standard function-calling benchmarks and adapted software engineering benchmarks, AsyncFC significantly reduces end-to-end task completion time while preserving task accuracy. Furthermore, these results reveal that LLMs possess a native capability to reason over symbolic futures that represent unresolved execution results, enabling an asynchronous paradigm for model-tool interaction.",
+      "abstract": "Function calling, also known as tool use, is a core capability of modern LLM agents but is typically constrained by synchronous execution semantics. Under these semantics, LLM decoding is blocked until each function call completes, resulting in increasing end-to-end latency. In this work, we introduce AsyncFC, a pure execution-layer framework that decouples LLM decoding from function execution, enabling overlap between model decoding and function execution as well as inter-function parallelism when dependencies permit. AsyncFC layers over existing models and unmodified function implementations, requiring no fine-tuning or changes to the standard synchronous function-calling protocol. Across standard function-calling benchmarks and adapted software engineering benchmarks, AsyncFC significantly reduces end-to-end task completion time while preserving task accuracy. Furthermore, these results reveal that LLMs possess a native capability to reason over symbolic futures that represent unresolved execution results, enabling an asynchronous paradigm for model-tool interaction.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15077",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "AsyncFC introduces asynchronous function calling for LLM agents without model changes, directly reducing end-to-end latency by enabling overlap between decoding and function execution, and showing LLMs' native ability to reason over futures; it is a pure execution-layer solution applicable to any model, making it highly implementable and timely for agentic systems.",
+        "one_sentence_summary": "AsyncFC 提出无需修改模型的异步函数调用执行层框架，通过将LLM解码与函数执行解耦并支持函数间并行，在标准与软件工程基准上显著降低端到端延迟且保持准确率，揭示LLM可基于符号未来进行推理的原生能力。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "AsyncFC introduces asynchronous function calling for LLM agents without model changes, directly reducing end-to-end latency by enabling overlap between decoding and function execution, and showing LLMs' native ability to reason over futures; it is a pure execution-layer solution applicable to any model, making it highly implementable and timely for agentic systems.",
+      "one_sentence_summary": "AsyncFC 提出无需修改模型的异步函数调用执行层框架，通过将LLM解码与函数执行解耦并支持函数间并行，在标准与软件工程基准上显著降低端到端延迟且保持准确率，揭示LLM可基于符号未来进行推理的原生能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15040",
+      "arxiv_id": "2605.15040",
+      "title": "Orchard: An Open-Source Agentic Modeling Framework",
+      "url": "https://arxiv.org/abs/2605.15040",
+      "published_at": "2026-05-14T16:35:12Z",
+      "publish_date": "2026-05-14",
+      "description": "Agentic modeling aims to transform LLMs into autonomous agents capable of solving complex tasks through planning, reasoning, tool use, and multi-turn interaction with environments. Despite major investment, open research remains constrained by infrastructure and training gaps. Many high-performing systems rely on proprietary codebases, models, or services, while most open-source frameworks focus on orchestration and evaluation rather than scalable agent training. We present Orchard, an open-source framework for scalable agentic modeling. At its core is Orchard Env, a lightweight environment service providing reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages. On top of Orchard Env, we build three agentic modeling recipes. Orchard-SWE targets coding agents. We distill 107K trajectories from MiniMax-M2.5 and Qwen3.5-397B, introduce credit-assignment SFT to learn from productive segments of unresolved trajectories, and apply Balanced Adaptive Rollout for RL. Starting from Qwen3-30B-A3B-Thinking, Orchard-SWE achieves 64.3% on SWE-bench Verified after SFT and 67.5% after SFT+RL, setting a new state of the art among open-source models of comparable size. Orchard-GUI trains a 4B vision-language computer-use agent using only 0.4K distilled trajectories and 2.2K open-ended tasks. It achieves 74.1%, 67.0%, and 64.0% success rates on WebVoyager, Online-Mind2Web, and DeepShop, respectively, making it the strongest open-source model while remaining competitive with proprietary systems. Orchard-Claw targets personal assistant agents. Trained with only 0.2K synthetic tasks, it achieves 59.6% pass@3 on Claw-Eval and 73.9% when paired with a stronger ZeroClaw harness. Collectively, these results show that a lightweight, open, harness-agnostic environment layer enables reusable agentic data, training recipes, and evaluations across domains.",
+      "summary": "Agentic modeling aims to transform LLMs into autonomous agents capable of solving complex tasks through planning, reasoning, tool use, and multi-turn interaction with environments. Despite major investment, open research remains constrained by infrastructure and training gaps. Many high-performing systems rely on proprietary codebases, models, or services, while most open-source frameworks focus on orchestration and evaluation rather than scalable agent training. We present Orchard, an open-source framework for scalable agentic modeling. At its core is Orchard Env, a lightweight environment service providing reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages. On top of Orchard Env, we build three agentic modeling recipes. Orchard-SWE targets coding agents. We distill 107K trajectories from MiniMax-M2.5 and Qwen3.5-397B, introduce credit-assignment SFT to learn from productive segments of unresolved trajectories, and apply Balanced Adaptive Rollout for RL. Starting from Qwen3-30B-A3B-Thinking, Orchard-SWE achieves 64.3% on SWE-bench Verified after SFT and 67.5% after SFT+RL, setting a new state of the art among open-source models of comparable size. Orchard-GUI trains a 4B vision-language computer-use agent using only 0.4K distilled trajectories and 2.2K open-ended tasks. It achieves 74.1%, 67.0%, and 64.0% success rates on WebVoyager, Online-Mind2Web, and DeepShop, respectively, making it the strongest open-source model while remaining competitive with proprietary systems. Orchard-Claw targets personal assistant agents. Trained with only 0.2K synthetic tasks, it achieves 59.6% pass@3 on Claw-Eval and 73.9% when paired with a stronger ZeroClaw harness. Collectively, these results show that a lightweight, open, harness-agnostic environment layer enables reusable agentic data, training recipes, and evaluations across domains.",
+      "abstract": "Agentic modeling aims to transform LLMs into autonomous agents capable of solving complex tasks through planning, reasoning, tool use, and multi-turn interaction with environments. Despite major investment, open research remains constrained by infrastructure and training gaps. Many high-performing systems rely on proprietary codebases, models, or services, while most open-source frameworks focus on orchestration and evaluation rather than scalable agent training. We present Orchard, an open-source framework for scalable agentic modeling. At its core is Orchard Env, a lightweight environment service providing reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages. On top of Orchard Env, we build three agentic modeling recipes. Orchard-SWE targets coding agents. We distill 107K trajectories from MiniMax-M2.5 and Qwen3.5-397B, introduce credit-assignment SFT to learn from productive segments of unresolved trajectories, and apply Balanced Adaptive Rollout for RL. Starting from Qwen3-30B-A3B-Thinking, Orchard-SWE achieves 64.3% on SWE-bench Verified after SFT and 67.5% after SFT+RL, setting a new state of the art among open-source models of comparable size. Orchard-GUI trains a 4B vision-language computer-use agent using only 0.4K distilled trajectories and 2.2K open-ended tasks. It achieves 74.1%, 67.0%, and 64.0% success rates on WebVoyager, Online-Mind2Web, and DeepShop, respectively, making it the strongest open-source model while remaining competitive with proprietary systems. Orchard-Claw targets personal assistant agents. Trained with only 0.2K synthetic tasks, it achieves 59.6% pass@3 on Claw-Eval and 73.9% when paired with a stronger ZeroClaw harness. Collectively, these results show that a lightweight, open, harness-agnostic environment layer enables reusable agentic data, training recipes, and evaluations across domains.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15040",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 25,
+          "engineering_utility": 25,
+          "timeliness_rarity": 25
+        },
+        "score_reason": "开源Agent训练框架Orchard提供环境服务和训练配方，在编程、GUI、助理任务上达到SOTA开源性能，极大降低Agent开发门槛，应用、工程与前沿价值极高。",
+        "one_sentence_summary": "Orchard开源框架提供轻量环境服务Orchard Env及三个Agent训练配方，通过轨迹蒸馏、信用分配SFT和平衡自适应RL训练编码、GUI和个人助理Agent，在SWE-bench Verified达67.5%、WebVoyager等GUI基准达74.1%，成为最强开源模型。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 25,
+        "engineering_utility": 25,
+        "timeliness_rarity": 25
+      },
+      "score_total": 100,
+      "score_reason": "开源Agent训练框架Orchard提供环境服务和训练配方，在编程、GUI、助理任务上达到SOTA开源性能，极大降低Agent开发门槛，应用、工程与前沿价值极高。",
+      "one_sentence_summary": "Orchard开源框架提供轻量环境服务Orchard Env及三个Agent训练配方，通过轨迹蒸馏、信用分配SFT和平衡自适应RL训练编码、GUI和个人助理Agent，在SWE-bench Verified达67.5%、WebVoyager等GUI基准达74.1%，成为最强开源模型。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15034",
+      "arxiv_id": "2605.15034",
+      "title": "AI Knows When It's Being Watched: Functional Strategic Action and Contextual Register Modulation in Large Language Models",
+      "url": "https://arxiv.org/abs/2605.15034",
+      "published_at": "2026-05-14T16:29:38Z",
+      "publish_date": "2026-05-14",
+      "description": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "summary": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "abstract": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15034",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 23,
+          "engineering_utility": 10,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "This study experimentally demonstrates that LLMs modulate their linguistic register in response to perceived observation, with implications for AI auditing and governance. It introduces a novel multi-agent debate framework and shows sensitivity to observer identity, making it timely for understanding LLM behavior in social contexts.",
+        "one_sentence_summary": "基于100场多智能体辩论实验，发现LLM在感知到被观察时会显著提升词汇多样性（TTR），且对人类观察者的反应强于AI监控，揭示了LLM作为上下文敏感交际主体的社会适应性，对AI治理与审计具有重要启示。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 23,
+        "engineering_utility": 10,
+        "timeliness_rarity": 22
+      },
+      "score_total": 75,
+      "score_reason": "This study experimentally demonstrates that LLMs modulate their linguistic register in response to perceived observation, with implications for AI auditing and governance. It introduces a novel multi-agent debate framework and shows sensitivity to observer identity, making it timely for understanding LLM behavior in social contexts.",
+      "one_sentence_summary": "基于100场多智能体辩论实验，发现LLM在感知到被观察时会显著提升词汇多样性（TTR），且对人类观察者的反应强于AI监控，揭示了LLM作为上下文敏感交际主体的社会适应性，对AI治理与审计具有重要启示。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15019",
+      "arxiv_id": "2605.15019",
+      "title": "From Scenes to Elements: Multi-Granularity Evidence Retrieval for Verifiable Multimodal RAG",
+      "url": "https://arxiv.org/abs/2605.15019",
+      "published_at": "2026-05-14T16:20:02Z",
+      "publish_date": "2026-05-14",
+      "description": "Multimodal Retrieval-Augmented Generation (RAG) systems retrieve evidence at coarse granularities (entire images or scenes), creating a mismatch with fine-grained user queries and making failures unverifiable. We introduce GranuVistaVQA, a multimodal benchmark featuring real-world landmarks with element-level annotations across multiple viewpoints, capturing the partial observation challenge where individual images contain only subsets of entities. We further propose GranuRAG, a multi-granularity framework that treats visual elements as first-class retrieval units through three stages: element-level detection and classification, multi-granularity cross-modal alignment for evidence retrieval, and attribution-constrained generation. By grounding retrieval at the element level rather than relying on implicit attention, our approach enables transparent error diagnosis. Experiments demonstrate that GranuRAG achieves up to 29.2% improvement over six strong baselines for this task.",
+      "summary": "Multimodal Retrieval-Augmented Generation (RAG) systems retrieve evidence at coarse granularities (entire images or scenes), creating a mismatch with fine-grained user queries and making failures unverifiable. We introduce GranuVistaVQA, a multimodal benchmark featuring real-world landmarks with element-level annotations across multiple viewpoints, capturing the partial observation challenge where individual images contain only subsets of entities. We further propose GranuRAG, a multi-granularity framework that treats visual elements as first-class retrieval units through three stages: element-level detection and classification, multi-granularity cross-modal alignment for evidence retrieval, and attribution-constrained generation. By grounding retrieval at the element level rather than relying on implicit attention, our approach enables transparent error diagnosis. Experiments demonstrate that GranuRAG achieves up to 29.2% improvement over six strong baselines for this task.",
+      "abstract": "Multimodal Retrieval-Augmented Generation (RAG) systems retrieve evidence at coarse granularities (entire images or scenes), creating a mismatch with fine-grained user queries and making failures unverifiable. We introduce GranuVistaVQA, a multimodal benchmark featuring real-world landmarks with element-level annotations across multiple viewpoints, capturing the partial observation challenge where individual images contain only subsets of entities. We further propose GranuRAG, a multi-granularity framework that treats visual elements as first-class retrieval units through three stages: element-level detection and classification, multi-granularity cross-modal alignment for evidence retrieval, and attribution-constrained generation. By grounding retrieval at the element level rather than relying on implicit attention, our approach enables transparent error diagnosis. Experiments demonstrate that GranuRAG achieves up to 29.2% improvement over six strong baselines for this task.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15019",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "This work addresses coarse-grained retrieval in multimodal RAG by introducing element-level units, a new benchmark GranuVistaVQA with real-world landmarks, and a three-stage GranuRAG framework. The 29.2% improvement over baselines demonstrates practical gains. The approach is directly implementable and offers error diagnosis, making it highly valuable for building verifiable RAG systems.",
+        "one_sentence_summary": "GranuRAG针对多模态检索增强生成中粗粒度证据与细粒度查询不匹配问题，提出元素级检测、多粒度跨模态对齐和归因约束生成三阶段框架，并构建包含多视角地标标注的GranuVistaVQA基准，实验显示较基线提升29.2%，实现可验证的错误诊断。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 91,
+      "score_reason": "This work addresses coarse-grained retrieval in multimodal RAG by introducing element-level units, a new benchmark GranuVistaVQA with real-world landmarks, and a three-stage GranuRAG framework. The 29.2% improvement over baselines demonstrates practical gains. The approach is directly implementable and offers error diagnosis, making it highly valuable for building verifiable RAG systems.",
+      "one_sentence_summary": "GranuRAG针对多模态检索增强生成中粗粒度证据与细粒度查询不匹配问题，提出元素级检测、多粒度跨模态对齐和归因约束生成三阶段框架，并构建包含多视角地标标注的GranuVistaVQA基准，实验显示较基线提升29.2%，实现可验证的错误诊断。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-17T05:15:35.870405+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-17"
     }
   ]
 }

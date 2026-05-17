@@ -1,0 +1,68 @@
+{
+  "run_id": "2026-05-17",
+  "generated_at": "2026-05-17T05:15:35.902538+00:00",
+  "juya_issue_title": "2026-05-17",
+  "juya_issue_url": "https://imjuya.github.io/juya-ai-daily/issue-93/",
+  "news_count": 6,
+  "paper_source": "arxiv_api",
+  "paper_candidate_count": 48,
+  "paper_selected_count": 10,
+  "paper_added_to_state_count": 16,
+  "paper_waiting_remaining_count": 20,
+  "delivery": {
+    "channel": "feishu",
+    "status": "success",
+    "sent_at": "2026-05-17T05:15:36.835252+00:00",
+    "target_type": "chat_id",
+    "target_configured": true,
+    "message_ids": [
+      "om_x100b6fa0a15bc4a0b2c37c254d2dbba"
+    ],
+    "parts": 1
+  },
+  "artifacts": {
+    "daily_ai_info": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-17/daily-ai-info.md",
+    "digest_data": "/home/runner/work/PersonalAIDailyReport/PersonalAIDailyReport/runs/2026-05-17/digest-data.json",
+    "paper_state": "data/paper-state.json"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 6,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。RSS正常提供服务中，但Folo存在问题，接收不到最新文章。建议使用其他RSS阅读器",
+        "last_build_date": "2026-05-17T01:06:45+00:00",
+        "issue_title": "2026-05-17",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-93/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/93",
+        "published_at": "2026-05-17T01:06:22+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "ok",
+      "raw": 80,
+      "kept": 48
+    },
+    {
+      "stage": "paper_ai_scoring",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "status": "ok",
+      "candidate_count": 48,
+      "eligible_candidate_count": 48,
+      "ai_candidate_count": 16,
+      "skipped_already_pushed_count": 0,
+      "scored_count": 16,
+      "failed_batches": 0
+    }
+  ],
+  "status": "success",
+  "sent_at": "2026-05-17T05:15:36.835252+00:00"
+}
