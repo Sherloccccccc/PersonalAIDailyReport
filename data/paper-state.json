@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-17T05:15:35.870405+00:00",
+  "updated_at": "2026-05-18T05:49:25.247650+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -6042,11 +6042,11 @@
       "score_reason": "This paper addresses a practical problem in off-policy evaluation, providing a framework and optimal logging policy design for minimizing estimation error. It offers actionable guidance for firms selecting recommendation systems, balancing reward and coverage trade-offs, highly relevant for AI product experimentation and deployment.",
       "one_sentence_summary": "针对离线策略评估的日志策略设计问题，提出奖励-覆盖权衡框架，并在收益分布已知、未知及部分已知三种信息条件下推导最优日志策略，为推荐系统离线评估提供理论指导与实用原则。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-17T05:15:35.870405+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
       "source_run_id": "2026-05-17",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-18"
     },
     {
       "id": "arxiv:2605.15104",
@@ -6425,6 +6425,733 @@
       "pushed_at": "2026-05-17T05:15:35.870405+00:00",
       "source_run_id": "2026-05-17",
       "pushed_run_id": "2026-05-17"
+    },
+    {
+      "id": "arxiv:2605.15215",
+      "arxiv_id": "2605.15215",
+      "title": "SkillSmith: Compiling Agent Skills into Boundary-Guided Runtime Interfaces",
+      "url": "https://arxiv.org/abs/2605.15215",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically injected into the agent reasoning loop as contextual guidance once matched to a runtime task, enabling specialized task-solving capabilities. We find that this execution paradigm introduces two major sources of redundancy: irrelevant context injection and repeated skill-specific reasoning and planning. To this end, we propose SkillSmith, a boundary-first compiler-runtime framework that compiles skill packages offline into minimal executable interfaces. By extracting fine-grained operational boundaries from skills, SkillSmith enables agents to dynamically access and execute only the relevant components at runtime, thereby minimizing unnecessary context injection and redundant reasoning overhead. In the evaluation on SkillsBench benchmark, SkillSmith reduces solve-stage token usage by 57.44%, thinking iterations by 42.99%, solve time by 50.57% (2.02x faster), and token-proportional monetary cost by 57.44% compared with using raw-skills. Moreover, compiled artifacts produced by a stronger model can be reused by a smaller or more efficient runtime model, improving task accuracy in cases where raw skill interpretation fails. The source code and data are available at https://github.com/AetherHeart-AI/Aeloon.",
+      "summary": "Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically injected into the agent reasoning loop as contextual guidance once matched to a runtime task, enabling specialized task-solving capabilities. We find that this execution paradigm introduces two major sources of redundancy: irrelevant context injection and repeated skill-specific reasoning and planning. To this end, we propose SkillSmith, a boundary-first compiler-runtime framework that compiles skill packages offline into minimal executable interfaces. By extracting fine-grained operational boundaries from skills, SkillSmith enables agents to dynamically access and execute only the relevant components at runtime, thereby minimizing unnecessary context injection and redundant reasoning overhead. In the evaluation on SkillsBench benchmark, SkillSmith reduces solve-stage token usage by 57.44%, thinking iterations by 42.99%, solve time by 50.57% (2.02x faster), and token-proportional monetary cost by 57.44% compared with using raw-skills. Moreover, compiled artifacts produced by a stronger model can be reused by a smaller or more efficient runtime model, improving task accuracy in cases where raw skill interpretation fails. The source code and data are available at https://github.com/AetherHeart-AI/Aeloon.",
+      "abstract": "Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically injected into the agent reasoning loop as contextual guidance once matched to a runtime task, enabling specialized task-solving capabilities. We find that this execution paradigm introduces two major sources of redundancy: irrelevant context injection and repeated skill-specific reasoning and planning. To this end, we propose SkillSmith, a boundary-first compiler-runtime framework that compiles skill packages offline into minimal executable interfaces. By extracting fine-grained operational boundaries from skills, SkillSmith enables agents to dynamically access and execute only the relevant components at runtime, thereby minimizing unnecessary context injection and redundant reasoning overhead. In the evaluation on SkillsBench benchmark, SkillSmith reduces solve-stage token usage by 57.44%, thinking iterations by 42.99%, solve time by 50.57% (2.02x faster), and token-proportional monetary cost by 57.44% compared with using raw-skills. Moreover, compiled artifacts produced by a stronger model can be reused by a smaller or more efficient runtime model, improving task accuracy in cases where raw skill interpretation fails. The source code and data are available at https://github.com/AetherHeart-AI/Aeloon.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15215",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 25,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该论文针对LLM智能体执行中冗余上下文和重复推理的问题，提出编译技能为边界引导的运行时接口，实验显示显著降低token和时间成本，并支持跨模型复用，具有即时的工程实用价值。",
+        "one_sentence_summary": "SkillSmith编译技能包中细粒度操作边界为最小可执行接口，在SkillsBench上减少57%的token使用和50%的求解时间，并实现强模型编译能力向弱模型迁移。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 25,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "该论文针对LLM智能体执行中冗余上下文和重复推理的问题，提出编译技能为边界引导的运行时接口，实验显示显著降低token和时间成本，并支持跨模型复用，具有即时的工程实用价值。",
+      "one_sentence_summary": "SkillSmith编译技能包中细粒度操作边界为最小可执行接口，在SkillsBench上减少57%的token使用和50%的求解时间，并实现强模型编译能力向弱模型迁移。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15228",
+      "arxiv_id": "2605.15228",
+      "title": "Verifiable Agentic Infrastructure: Proof-Derived Authorization for Sovereign AI Systems",
+      "url": "https://arxiv.org/abs/2605.15228",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Modern cloud and enterprise systems rely on identity-centric authorization, assuming that callers possessing valid credentials are safe to execute commands. The emergence of autonomous AI agents invalidates this assumption: agents can generate syntactically valid but semantically unsafe actions, making standing privileges a significant operational risk. This risk becomes especially acute in sovereign AI systems, where autonomous agents may interact with cloud infrastructure, regulated data, financial workflows, and national-scale digital services. Governed mutation substrates reduce this risk by interposing on agent actions: agents submit intents, infrastructure evaluates context and policy, and execution is mediated. However, this shifts the trust boundary: how can the decision to authorize an intent be made verifiable, distributed, and replayable? We introduce a Distributed Trust Framework (DTF), a verification framework for governed mutation systems that computes execution authority from structured, verifiable artifacts. DTF introduces a Justification Proof to encode the admissibility basis of an action, a consensus model for independent evaluation, an ephemeral Execution Identity derived from the approved proof, and an append-only Evidence Chain that preserves the authorization lifecycle. Under stated substrate assumptions, this architecture enforces a compact authorization invariant: no high-stakes execution without a proof object, no derived authority without consensus, and no valid mutation detached from evidence. We define the model, instantiate it over an OpenKedge-based governed mutation substrate, and show how it maps onto cloud-native environments. By shifting authorization from standing identity to proof-derived authority, DTF provides an infrastructure foundation for making agentic execution governable, auditable, and bounded in sovereign AI deployments.",
+      "summary": "Modern cloud and enterprise systems rely on identity-centric authorization, assuming that callers possessing valid credentials are safe to execute commands. The emergence of autonomous AI agents invalidates this assumption: agents can generate syntactically valid but semantically unsafe actions, making standing privileges a significant operational risk. This risk becomes especially acute in sovereign AI systems, where autonomous agents may interact with cloud infrastructure, regulated data, financial workflows, and national-scale digital services. Governed mutation substrates reduce this risk by interposing on agent actions: agents submit intents, infrastructure evaluates context and policy, and execution is mediated. However, this shifts the trust boundary: how can the decision to authorize an intent be made verifiable, distributed, and replayable? We introduce a Distributed Trust Framework (DTF), a verification framework for governed mutation systems that computes execution authority from structured, verifiable artifacts. DTF introduces a Justification Proof to encode the admissibility basis of an action, a consensus model for independent evaluation, an ephemeral Execution Identity derived from the approved proof, and an append-only Evidence Chain that preserves the authorization lifecycle. Under stated substrate assumptions, this architecture enforces a compact authorization invariant: no high-stakes execution without a proof object, no derived authority without consensus, and no valid mutation detached from evidence. We define the model, instantiate it over an OpenKedge-based governed mutation substrate, and show how it maps onto cloud-native environments. By shifting authorization from standing identity to proof-derived authority, DTF provides an infrastructure foundation for making agentic execution governable, auditable, and bounded in sovereign AI deployments.",
+      "abstract": "Modern cloud and enterprise systems rely on identity-centric authorization, assuming that callers possessing valid credentials are safe to execute commands. The emergence of autonomous AI agents invalidates this assumption: agents can generate syntactically valid but semantically unsafe actions, making standing privileges a significant operational risk. This risk becomes especially acute in sovereign AI systems, where autonomous agents may interact with cloud infrastructure, regulated data, financial workflows, and national-scale digital services. Governed mutation substrates reduce this risk by interposing on agent actions: agents submit intents, infrastructure evaluates context and policy, and execution is mediated. However, this shifts the trust boundary: how can the decision to authorize an intent be made verifiable, distributed, and replayable? We introduce a Distributed Trust Framework (DTF), a verification framework for governed mutation systems that computes execution authority from structured, verifiable artifacts. DTF introduces a Justification Proof to encode the admissibility basis of an action, a consensus model for independent evaluation, an ephemeral Execution Identity derived from the approved proof, and an append-only Evidence Chain that preserves the authorization lifecycle. Under stated substrate assumptions, this architecture enforces a compact authorization invariant: no high-stakes execution without a proof object, no derived authority without consensus, and no valid mutation detached from evidence. We define the model, instantiate it over an OpenKedge-based governed mutation substrate, and show how it maps onto cloud-native environments. By shifting authorization from standing identity to proof-derived authority, DTF provides an infrastructure foundation for making agentic execution governable, auditable, and bounded in sovereign AI deployments.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15228",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 12,
+          "timeliness_rarity": 14
+        },
+        "score_reason": "The paper introduces a verification framework for governed mutation systems, shifting authorization from identity to proof-derived authority. While novel and relevant to sovereign AI deployments, it is primarily conceptual and infrastructure-focused, with limited direct applicability to common AI product or agent engineering workflows. The practical implementation details are less accessible, and the approach targets a specialized security domain rather than broad developer tools.",
+        "one_sentence_summary": "该论文提出分布式信任框架，通过引入Justification Proof、共识模型、临时执行身份和证据链，为自主AI系统提供可验证的授权机制，将执行权限从静态身份转为基于结构化证明的推导，旨在实现主权AI部署中agent操作的可治理、可审计和边界化。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 12,
+        "timeliness_rarity": 14
+      },
+      "score_total": 61,
+      "score_reason": "The paper introduces a verification framework for governed mutation systems, shifting authorization from identity to proof-derived authority. While novel and relevant to sovereign AI deployments, it is primarily conceptual and infrastructure-focused, with limited direct applicability to common AI product or agent engineering workflows. The practical implementation details are less accessible, and the approach targets a specialized security domain rather than broad developer tools.",
+      "one_sentence_summary": "该论文提出分布式信任框架，通过引入Justification Proof、共识模型、临时执行身份和证据链，为自主AI系统提供可验证的授权机制，将执行权限从静态身份转为基于结构化证明的推导，旨在实现主权AI部署中agent操作的可治理、可审计和边界化。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15308",
+      "arxiv_id": "2605.15308",
+      "title": "SMCEvolve: Principled Scientific Discovery via Sequential Monte Carlo Evolution",
+      "url": "https://arxiv.org/abs/2605.15308",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "LLM-driven program evolution has emerged as a powerful tool for automated scientific discovery, yet existing frameworks offer no principled guide for designing their individual components and provide no guarantee that the search converges. We introduce SMCEvolve, which recasts program search as sampling from a reward-tilted target distribution and approximates it with a Sequential Monte Carlo (SMC) sampler. From this view, three core mechanisms emerge as principled components: adaptive parent resampling, mixture of mutation with acceptance, and automatic convergence control. We further provide a finite-sample complexity analysis that bounds the LLM-call budget required to reach a target approximation error. Across math, algorithm efficiency, symbolic regression, and end-to-end ML research benchmarks, SMCEvolve surpasses state-of-the-art evolving systems while using fewer LLM calls under self-determined termination. The code is available at https://github.com/kongwanbianjinyu/SMCEvolve.",
+      "summary": "LLM-driven program evolution has emerged as a powerful tool for automated scientific discovery, yet existing frameworks offer no principled guide for designing their individual components and provide no guarantee that the search converges. We introduce SMCEvolve, which recasts program search as sampling from a reward-tilted target distribution and approximates it with a Sequential Monte Carlo (SMC) sampler. From this view, three core mechanisms emerge as principled components: adaptive parent resampling, mixture of mutation with acceptance, and automatic convergence control. We further provide a finite-sample complexity analysis that bounds the LLM-call budget required to reach a target approximation error. Across math, algorithm efficiency, symbolic regression, and end-to-end ML research benchmarks, SMCEvolve surpasses state-of-the-art evolving systems while using fewer LLM calls under self-determined termination. The code is available at https://github.com/kongwanbianjinyu/SMCEvolve.",
+      "abstract": "LLM-driven program evolution has emerged as a powerful tool for automated scientific discovery, yet existing frameworks offer no principled guide for designing their individual components and provide no guarantee that the search converges. We introduce SMCEvolve, which recasts program search as sampling from a reward-tilted target distribution and approximates it with a Sequential Monte Carlo (SMC) sampler. From this view, three core mechanisms emerge as principled components: adaptive parent resampling, mixture of mutation with acceptance, and automatic convergence control. We further provide a finite-sample complexity analysis that bounds the LLM-call budget required to reach a target approximation error. Across math, algorithm efficiency, symbolic regression, and end-to-end ML research benchmarks, SMCEvolve surpasses state-of-the-art evolving systems while using fewer LLM calls under self-determined termination. The code is available at https://github.com/kongwanbianjinyu/SMCEvolve.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15308",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 23,
+          "engineering_utility": 21,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "该论文将程序搜索建模为从奖励倾斜分布采样，利用序贯蒙特卡洛实现自适应变异和收敛控制，在数学、算法等基准上以更少LLM调用超越现有系统，为科学发现自动化提供了新方法论。",
+        "one_sentence_summary": "SMCEvolve将程序搜索重新描述为SMC采样，通过自适应重采样、混合变异和自动收敛控制，在跨领域基准上相比最先进系统减少LLM调用且性能更优。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 23,
+        "engineering_utility": 21,
+        "timeliness_rarity": 24
+      },
+      "score_total": 88,
+      "score_reason": "该论文将程序搜索建模为从奖励倾斜分布采样，利用序贯蒙特卡洛实现自适应变异和收敛控制，在数学、算法等基准上以更少LLM调用超越现有系统，为科学发现自动化提供了新方法论。",
+      "one_sentence_summary": "SMCEvolve将程序搜索重新描述为SMC采样，通过自适应重采样、混合变异和自动收敛控制，在跨领域基准上相比最先进系统减少LLM调用且性能更优。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15315",
+      "arxiv_id": "2605.15315",
+      "title": "Context Pruning for Coding Agents via Multi-Rubric Latent Reasoning",
+      "url": "https://arxiv.org/abs/2605.15315",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "LLM-powered coding agents spend the majority of their token budget reading repository files, yet much of the retrieved code is irrelevant to the task at hand. Existing learned pruners compress this context with a single-objective sequence labeler, collapsing all facets of code relevance into one score and one transition matrix. We show that this formulation creates a modeling bottleneck: a single CRF transition prior must serve heterogeneous retention patterns, including contiguous semantic spans and sparse structural support lines. We propose LaMR (Latent Multi-Rubric), a structured pruning framework that decomposes code relevance into two interpretable quality dimensions, semantic evidence and dependency support, each modeled by a dedicated CRF with dimension-specific transition dynamics. A mixture-of-experts gating network dynamically weights the per-rubric emissions conditioned on the query, and a final CRF layer on the fused emissions produces the aggregate keep-or-prune decision. To supervise each dimension without additional annotation cost, we derive multi-rubric labels from the existing training corpus via AST-based program analysis, simultaneously denoising the teacher's binary labels. By effectively filtering distracting noise, LaMR frequently matches or even outperforms unpruned full-context baselines. Experiments on four benchmarks (SWE-Bench Verified, SWE-QA, LCC, LongCodeQA) show that LaMR wins 12 of 16 head-to-head multi-turn comparisons. It saves up to 31% more tokens on multi-turn agent tasks and improves Exact Match by up to +3.5 on single-turn tasks, while performance is frequently enhanced by denoising the context, and any remaining drops are marginal.",
+      "summary": "LLM-powered coding agents spend the majority of their token budget reading repository files, yet much of the retrieved code is irrelevant to the task at hand. Existing learned pruners compress this context with a single-objective sequence labeler, collapsing all facets of code relevance into one score and one transition matrix. We show that this formulation creates a modeling bottleneck: a single CRF transition prior must serve heterogeneous retention patterns, including contiguous semantic spans and sparse structural support lines. We propose LaMR (Latent Multi-Rubric), a structured pruning framework that decomposes code relevance into two interpretable quality dimensions, semantic evidence and dependency support, each modeled by a dedicated CRF with dimension-specific transition dynamics. A mixture-of-experts gating network dynamically weights the per-rubric emissions conditioned on the query, and a final CRF layer on the fused emissions produces the aggregate keep-or-prune decision. To supervise each dimension without additional annotation cost, we derive multi-rubric labels from the existing training corpus via AST-based program analysis, simultaneously denoising the teacher's binary labels. By effectively filtering distracting noise, LaMR frequently matches or even outperforms unpruned full-context baselines. Experiments on four benchmarks (SWE-Bench Verified, SWE-QA, LCC, LongCodeQA) show that LaMR wins 12 of 16 head-to-head multi-turn comparisons. It saves up to 31% more tokens on multi-turn agent tasks and improves Exact Match by up to +3.5 on single-turn tasks, while performance is frequently enhanced by denoising the context, and any remaining drops are marginal.",
+      "abstract": "LLM-powered coding agents spend the majority of their token budget reading repository files, yet much of the retrieved code is irrelevant to the task at hand. Existing learned pruners compress this context with a single-objective sequence labeler, collapsing all facets of code relevance into one score and one transition matrix. We show that this formulation creates a modeling bottleneck: a single CRF transition prior must serve heterogeneous retention patterns, including contiguous semantic spans and sparse structural support lines. We propose LaMR (Latent Multi-Rubric), a structured pruning framework that decomposes code relevance into two interpretable quality dimensions, semantic evidence and dependency support, each modeled by a dedicated CRF with dimension-specific transition dynamics. A mixture-of-experts gating network dynamically weights the per-rubric emissions conditioned on the query, and a final CRF layer on the fused emissions produces the aggregate keep-or-prune decision. To supervise each dimension without additional annotation cost, we derive multi-rubric labels from the existing training corpus via AST-based program analysis, simultaneously denoising the teacher's binary labels. By effectively filtering distracting noise, LaMR frequently matches or even outperforms unpruned full-context baselines. Experiments on four benchmarks (SWE-Bench Verified, SWE-QA, LCC, LongCodeQA) show that LaMR wins 12 of 16 head-to-head multi-turn comparisons. It saves up to 31% more tokens on multi-turn agent tasks and improves Exact Match by up to +3.5 on single-turn tasks, while performance is frequently enhanced by denoising the context, and any remaining drops are marginal.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15315",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "LaMR tackles token inefficiency in coding agents by decomposing code relevance into two dimensions with structured pruning, achieving up to 31% token savings and occasional performance improvements over full-context baselines. The multi-rubric framework is novel and practical, with clear engineering utility for agent developers optimizing long-context LLM usage. The paper provides a viable method to reduce costs while maintaining or boosting accuracy, aligning with industry needs.",
+        "one_sentence_summary": "论文提出LaMR框架，将代码相关性分解为语义证据和依赖支持两个维度，通过双重CRF和混合专家门控网络进行结构化剪枝，无需额外标注即可利用AST分析生成多维标签；在SWE-Bench等四个基准上节省31%推理token，且多轮任务中12/16次对比优于全上下文基线，部分任务精确匹配提升3.5。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "LaMR tackles token inefficiency in coding agents by decomposing code relevance into two dimensions with structured pruning, achieving up to 31% token savings and occasional performance improvements over full-context baselines. The multi-rubric framework is novel and practical, with clear engineering utility for agent developers optimizing long-context LLM usage. The paper provides a viable method to reduce costs while maintaining or boosting accuracy, aligning with industry needs.",
+      "one_sentence_summary": "论文提出LaMR框架，将代码相关性分解为语义证据和依赖支持两个维度，通过双重CRF和混合专家门控网络进行结构化剪枝，无需额外标注即可利用AST分析生成多维标签；在SWE-Bench等四个基准上节省31%推理token，且多轮任务中12/16次对比优于全上下文基线，部分任务精确匹配提升3.5。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15505",
+      "arxiv_id": "2605.15505",
+      "title": "X-SYNTH: Beyond Retrieval -- Enterprise Context Synthesis from Observed Human Attention",
+      "url": "https://arxiv.org/abs/2605.15505",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "In enterprise operations, the context required for an AI agent task is scattered across systems of record, static information stores, and communication channels. What is stored is system state, a lossy representation of the work that actually happened [2, 52]. The prevailing approach [17, 31, 34, 36] retrieves by matching request content to what is stored; for narrow requests this works well. But synthesis quality depends on knowing what to surface and how to interpret it: knowledge specific to each organization, team, and individual [5, 57, 61], present in behavioral patterns, absent from any retrieval index. For complex agentic tasks it breaks down: True Lead Rate is low, False Lead Rate is high, and the model has no mechanism to improve. We present X-SYNTH, a framework for enterprise context synthesis grounded in human attention, the digitally observable interaction signatures of each worker, encoding not just what they did but the sequence in which they did it, along with implicit reward signals. Behavioral traces preceding positive outcomes are distinguishable from those that did not, without external labeling. X-SYNTH models each individual's behavioral baseline as a Digital Twin Signature (DTS) and selects among seven qualitatively distinct attention filters: Proportional, Inverse, Differential, Recurrent, Comparative, Sequential, and Collective, per individual and per query, to identify causally relevant activity signatures. A four-stage pipeline assembles ranked context grounded in behavioral patterns rather than query embeddings. On a sales lead identification task, a frontier model unaided achieves 9.5% True Lead Rate (TLR) with 90.5% False Lead Rate (FLR). Augmented with X-SYNTH, TLR rises to 61.9% (6.5x) while FLR falls to 18.8%. Enterprise context synthesis is not a retrieval problem. It is a relevance problem, and human attention is its most reliable ground truth.",
+      "summary": "In enterprise operations, the context required for an AI agent task is scattered across systems of record, static information stores, and communication channels. What is stored is system state, a lossy representation of the work that actually happened [2, 52]. The prevailing approach [17, 31, 34, 36] retrieves by matching request content to what is stored; for narrow requests this works well. But synthesis quality depends on knowing what to surface and how to interpret it: knowledge specific to each organization, team, and individual [5, 57, 61], present in behavioral patterns, absent from any retrieval index. For complex agentic tasks it breaks down: True Lead Rate is low, False Lead Rate is high, and the model has no mechanism to improve. We present X-SYNTH, a framework for enterprise context synthesis grounded in human attention, the digitally observable interaction signatures of each worker, encoding not just what they did but the sequence in which they did it, along with implicit reward signals. Behavioral traces preceding positive outcomes are distinguishable from those that did not, without external labeling. X-SYNTH models each individual's behavioral baseline as a Digital Twin Signature (DTS) and selects among seven qualitatively distinct attention filters: Proportional, Inverse, Differential, Recurrent, Comparative, Sequential, and Collective, per individual and per query, to identify causally relevant activity signatures. A four-stage pipeline assembles ranked context grounded in behavioral patterns rather than query embeddings. On a sales lead identification task, a frontier model unaided achieves 9.5% True Lead Rate (TLR) with 90.5% False Lead Rate (FLR). Augmented with X-SYNTH, TLR rises to 61.9% (6.5x) while FLR falls to 18.8%. Enterprise context synthesis is not a retrieval problem. It is a relevance problem, and human attention is its most reliable ground truth.",
+      "abstract": "In enterprise operations, the context required for an AI agent task is scattered across systems of record, static information stores, and communication channels. What is stored is system state, a lossy representation of the work that actually happened [2, 52]. The prevailing approach [17, 31, 34, 36] retrieves by matching request content to what is stored; for narrow requests this works well. But synthesis quality depends on knowing what to surface and how to interpret it: knowledge specific to each organization, team, and individual [5, 57, 61], present in behavioral patterns, absent from any retrieval index. For complex agentic tasks it breaks down: True Lead Rate is low, False Lead Rate is high, and the model has no mechanism to improve. We present X-SYNTH, a framework for enterprise context synthesis grounded in human attention, the digitally observable interaction signatures of each worker, encoding not just what they did but the sequence in which they did it, along with implicit reward signals. Behavioral traces preceding positive outcomes are distinguishable from those that did not, without external labeling. X-SYNTH models each individual's behavioral baseline as a Digital Twin Signature (DTS) and selects among seven qualitatively distinct attention filters: Proportional, Inverse, Differential, Recurrent, Comparative, Sequential, and Collective, per individual and per query, to identify causally relevant activity signatures. A four-stage pipeline assembles ranked context grounded in behavioral patterns rather than query embeddings. On a sales lead identification task, a frontier model unaided achieves 9.5% True Lead Rate (TLR) with 90.5% False Lead Rate (FLR). Augmented with X-SYNTH, TLR rises to 61.9% (6.5x) while FLR falls to 18.8%. Enterprise context synthesis is not a retrieval problem. It is a relevance problem, and human attention is its most reliable ground truth.",
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15505",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该论文提出企业上下文合成新范式，基于人类行为注意痕迹构建数字孪生签名，通过多种注意滤波器筛选相关活动，在销售线索识别任务中将真线索率从9.5%提升至61.9%，开辟了以人为中心的上下文工程新方向。",
+        "one_sentence_summary": "X-SYNTH通过分析员工数字化交互序列构建数字孪生签名，并组合七种注意滤波器合成企业上下文，使前沿模型在销售线索识别上真线索率提升6.5倍。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 23
+      },
+      "score_total": 95,
+      "score_reason": "该论文提出企业上下文合成新范式，基于人类行为注意痕迹构建数字孪生签名，通过多种注意滤波器筛选相关活动，在销售线索识别任务中将真线索率从9.5%提升至61.9%，开辟了以人为中心的上下文工程新方向。",
+      "one_sentence_summary": "X-SYNTH通过分析员工数字化交互序列构建数字孪生签名，并组合七种注意滤波器合成企业上下文，使前沿模型在销售线索识别上真线索率提升6.5倍。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15726",
+      "arxiv_id": "2605.15726",
+      "title": "Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR",
+      "url": "https://arxiv.org/abs/2605.15726",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a scalable paradigm for improving the reasoning capabilities of large language models. However, its effectiveness is fundamentally limited by exploration: the policy can only improve on trajectories it has already sampled. While increasing the number of rollouts alleviates this issue, such brute-force scaling is computationally expensive, and existing approaches that modify the optimization objective provide limited control over what is explored. In this work, we propose NudgeRL, a framework for structured and diversity-driven exploration in RLVR. Our approach introduces Strategy Nudging, which conditions each rollout on lightweight, strategy-level contexts to induce diverse reasoning trajectories without relying on expensive oracle supervision. To effectively learn from such structured exploration, we further propose a unified objective, which decomposes the reward signal into inter- and intra-context components and incorporates a distillation objective to transfer discovered behaviors back to the base policy. Empirically, NudgeRL outperforms standard GRPO with up to 8 times larger rollout budgets, while outperforming oracle-guided RL baseline on average across five challenging math benchmarks. These results demonstrate that structured, context-driven exploration can serve as an efficient and scalable alternative to both brute-force rollout scaling and feasibility-oriented methods based on privileged information. Our code is available at https://github.com/tally0818/NudgeRL.",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a scalable paradigm for improving the reasoning capabilities of large language models. However, its effectiveness is fundamentally limited by exploration: the policy can only improve on trajectories it has already sampled. While increasing the number of rollouts alleviates this issue, such brute-force scaling is computationally expensive, and existing approaches that modify the optimization objective provide limited control over what is explored. In this work, we propose NudgeRL, a framework for structured and diversity-driven exploration in RLVR. Our approach introduces Strategy Nudging, which conditions each rollout on lightweight, strategy-level contexts to induce diverse reasoning trajectories without relying on expensive oracle supervision. To effectively learn from such structured exploration, we further propose a unified objective, which decomposes the reward signal into inter- and intra-context components and incorporates a distillation objective to transfer discovered behaviors back to the base policy. Empirically, NudgeRL outperforms standard GRPO with up to 8 times larger rollout budgets, while outperforming oracle-guided RL baseline on average across five challenging math benchmarks. These results demonstrate that structured, context-driven exploration can serve as an efficient and scalable alternative to both brute-force rollout scaling and feasibility-oriented methods based on privileged information. Our code is available at https://github.com/tally0818/NudgeRL.",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a scalable paradigm for improving the reasoning capabilities of large language models. However, its effectiveness is fundamentally limited by exploration: the policy can only improve on trajectories it has already sampled. While increasing the number of rollouts alleviates this issue, such brute-force scaling is computationally expensive, and existing approaches that modify the optimization objective provide limited control over what is explored. In this work, we propose NudgeRL, a framework for structured and diversity-driven exploration in RLVR. Our approach introduces Strategy Nudging, which conditions each rollout on lightweight, strategy-level contexts to induce diverse reasoning trajectories without relying on expensive oracle supervision. To effectively learn from such structured exploration, we further propose a unified objective, which decomposes the reward signal into inter- and intra-context components and incorporates a distillation objective to transfer discovered behaviors back to the base policy. Empirically, NudgeRL outperforms standard GRPO with up to 8 times larger rollout budgets, while outperforming oracle-guided RL baseline on average across five challenging math benchmarks. These results demonstrate that structured, context-driven exploration can serve as an efficient and scalable alternative to both brute-force rollout scaling and feasibility-oriented methods based on privileged information. Our code is available at https://github.com/tally0818/NudgeRL.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15726",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "该论文针对RLVR探索效率问题，提出通过轻量级策略上下文诱导多样化推理轨迹，并设计统一目标将奖励分解和蒸馏结合，实验表明在小rollout预算下超越标准GRPO，为推理增强提供了更高效的探索策略。",
+        "one_sentence_summary": "NudgeRL通过策略微调提供上下文条件，诱导多样化推理路径，并利用分解奖励和蒸馏的统一目标学习，在五个数学基准上以小rollout预算超越GRPO及预言指导基线。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 24
+      },
+      "score_total": 93,
+      "score_reason": "该论文针对RLVR探索效率问题，提出通过轻量级策略上下文诱导多样化推理轨迹，并设计统一目标将奖励分解和蒸馏结合，实验表明在小rollout预算下超越标准GRPO，为推理增强提供了更高效的探索策略。",
+      "one_sentence_summary": "NudgeRL通过策略微调提供上下文条件，诱导多样化推理路径，并利用分解奖励和蒸馏的统一目标学习，在五个数学基准上以小rollout预算超越GRPO及预言指导基线。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.16142",
+      "arxiv_id": "2605.16142",
+      "title": "Property-Guided LLM Program Synthesis for Planning",
+      "url": "https://arxiv.org/abs/2605.16142",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "LLMs have shown impressive success in program synthesis, discovering programs that surpass prior solutions. However, these approaches rely on simple numeric scores to signal program quality, such as the value of the solution or the number of passed tests. Because a score offers no guidance on why a program failed, the system must generate and evaluate many candidates hoping some succeed, increasing LLM inference and evaluation costs. We study a different approach: property-guided LLM program synthesis. Instead of scoring programs after evaluation, we check whether a candidate satisfies a formally defined property. When the property is violated, we stop the evaluation early and provide the LLM with a concrete counterexample showing exactly how the program failed. This feedback drastically reduces both the number of program generations and the evaluation cost, and can guide the LLM to generate stronger programs. We evaluate this approach on PDDL planning domains, asking the LLM to synthesize direct heuristic functions: every state reachable by strictly improving transitions has a strictly improving successor. A heuristic with this property leads hill-climbing algorithm directly to a goal state. A counterexample-guided repair loop generates one candidate program, checks the property over a training set, and returns the first case that violates the property. We evaluate our approach on ten planning domains with an out-of-distribution test set. The synthesized heuristics are effectively direct on virtually all test tasks, and compared to the best prior generation method our approach generates seven times fewer programs per domain on average, solves more tasks without using search, and requires several orders of magnitude less computation to evaluate candidates. Whenever a problem admits a verifiable property, property-guided LLM synthesis can reduce cost and improve program quality.",
+      "summary": "LLMs have shown impressive success in program synthesis, discovering programs that surpass prior solutions. However, these approaches rely on simple numeric scores to signal program quality, such as the value of the solution or the number of passed tests. Because a score offers no guidance on why a program failed, the system must generate and evaluate many candidates hoping some succeed, increasing LLM inference and evaluation costs. We study a different approach: property-guided LLM program synthesis. Instead of scoring programs after evaluation, we check whether a candidate satisfies a formally defined property. When the property is violated, we stop the evaluation early and provide the LLM with a concrete counterexample showing exactly how the program failed. This feedback drastically reduces both the number of program generations and the evaluation cost, and can guide the LLM to generate stronger programs. We evaluate this approach on PDDL planning domains, asking the LLM to synthesize direct heuristic functions: every state reachable by strictly improving transitions has a strictly improving successor. A heuristic with this property leads hill-climbing algorithm directly to a goal state. A counterexample-guided repair loop generates one candidate program, checks the property over a training set, and returns the first case that violates the property. We evaluate our approach on ten planning domains with an out-of-distribution test set. The synthesized heuristics are effectively direct on virtually all test tasks, and compared to the best prior generation method our approach generates seven times fewer programs per domain on average, solves more tasks without using search, and requires several orders of magnitude less computation to evaluate candidates. Whenever a problem admits a verifiable property, property-guided LLM synthesis can reduce cost and improve program quality.",
+      "abstract": "LLMs have shown impressive success in program synthesis, discovering programs that surpass prior solutions. However, these approaches rely on simple numeric scores to signal program quality, such as the value of the solution or the number of passed tests. Because a score offers no guidance on why a program failed, the system must generate and evaluate many candidates hoping some succeed, increasing LLM inference and evaluation costs. We study a different approach: property-guided LLM program synthesis. Instead of scoring programs after evaluation, we check whether a candidate satisfies a formally defined property. When the property is violated, we stop the evaluation early and provide the LLM with a concrete counterexample showing exactly how the program failed. This feedback drastically reduces both the number of program generations and the evaluation cost, and can guide the LLM to generate stronger programs. We evaluate this approach on PDDL planning domains, asking the LLM to synthesize direct heuristic functions: every state reachable by strictly improving transitions has a strictly improving successor. A heuristic with this property leads hill-climbing algorithm directly to a goal state. A counterexample-guided repair loop generates one candidate program, checks the property over a training set, and returns the first case that violates the property. We evaluate our approach on ten planning domains with an out-of-distribution test set. The synthesized heuristics are effectively direct on virtually all test tasks, and compared to the best prior generation method our approach generates seven times fewer programs per domain on average, solves more tasks without using search, and requires several orders of magnitude less computation to evaluate candidates. Whenever a problem admits a verifiable property, property-guided LLM synthesis can reduce cost and improve program quality.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.16142",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文提出属性引导的LLM程序合成方法，在规划域中合成直接启发函数，通过属性检查和反例反馈替代分数评分，大幅减少生成次数和评估成本，工程实用性极强，可集成到现有规划系统，代表了从评分到可验证属性的范式进步。",
+        "one_sentence_summary": "在PDDL规划域中，通过检查启发式是否满足“改进后继存在”属性并提供反例修复，引导LLM合成直接启发式，相比最优先前方法生成次数减少七倍且更多任务无需搜索即可解决，大幅降低计算成本。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "论文提出属性引导的LLM程序合成方法，在规划域中合成直接启发函数，通过属性检查和反例反馈替代分数评分，大幅减少生成次数和评估成本，工程实用性极强，可集成到现有规划系统，代表了从评分到可验证属性的范式进步。",
+      "one_sentence_summary": "在PDDL规划域中，通过检查启发式是否满足“改进后继存在”属性并提供反例修复，引导LLM合成直接启发式，相比最优先前方法生成次数减少七倍且更多任务无需搜索即可解决，大幅降低计算成本。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.16143",
+      "arxiv_id": "2605.16143",
+      "title": "Look Before You Leap: Autonomous Exploration for LLM Agents",
+      "url": "https://arxiv.org/abs/2605.16143",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Large language model based agents often fail in unfamiliar environments due to premature exploitation: a tendency to act on prior knowledge before acquiring sufficient environment-specific information. We identify autonomous exploration as a critical yet underexplored capability for building adaptive agents. To formalize and quantify this capability, we introduce Exploration Checkpoint Coverage, a verifiable metric that measures how broadly an agent discovers key states, objects, and affordances. Our systematic evaluation reveals that agents trained with standard task-oriented reinforcement learning consistently exhibit narrow and repetitive behaviors that impede downstream performance. To address this limitation, we develop a training strategy that interleaves task-execution rollouts and exploration rollouts, with each type of rollout optimized by its corresponding verifiable reward. Building on this training strategy, we propose the Explore-then-Act paradigm, which decouples information-gathering from task execution: agents first utilize an interaction budget to acquire grounded environmental knowledge, then leverage it for task resolution. Our results demonstrate that learning to systematically explore is imperative for building generalizable and real-world-ready agents.",
+      "summary": "Large language model based agents often fail in unfamiliar environments due to premature exploitation: a tendency to act on prior knowledge before acquiring sufficient environment-specific information. We identify autonomous exploration as a critical yet underexplored capability for building adaptive agents. To formalize and quantify this capability, we introduce Exploration Checkpoint Coverage, a verifiable metric that measures how broadly an agent discovers key states, objects, and affordances. Our systematic evaluation reveals that agents trained with standard task-oriented reinforcement learning consistently exhibit narrow and repetitive behaviors that impede downstream performance. To address this limitation, we develop a training strategy that interleaves task-execution rollouts and exploration rollouts, with each type of rollout optimized by its corresponding verifiable reward. Building on this training strategy, we propose the Explore-then-Act paradigm, which decouples information-gathering from task execution: agents first utilize an interaction budget to acquire grounded environmental knowledge, then leverage it for task resolution. Our results demonstrate that learning to systematically explore is imperative for building generalizable and real-world-ready agents.",
+      "abstract": "Large language model based agents often fail in unfamiliar environments due to premature exploitation: a tendency to act on prior knowledge before acquiring sufficient environment-specific information. We identify autonomous exploration as a critical yet underexplored capability for building adaptive agents. To formalize and quantify this capability, we introduce Exploration Checkpoint Coverage, a verifiable metric that measures how broadly an agent discovers key states, objects, and affordances. Our systematic evaluation reveals that agents trained with standard task-oriented reinforcement learning consistently exhibit narrow and repetitive behaviors that impede downstream performance. To address this limitation, we develop a training strategy that interleaves task-execution rollouts and exploration rollouts, with each type of rollout optimized by its corresponding verifiable reward. Building on this training strategy, we propose the Explore-then-Act paradigm, which decouples information-gathering from task execution: agents first utilize an interaction budget to acquire grounded environmental knowledge, then leverage it for task resolution. Our results demonstrate that learning to systematically explore is imperative for building generalizable and real-world-ready agents.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.16143",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文针对LLM agent在陌生环境中过早利用先验知识导致失败的问题，提出自主探索能力训练，引入可验证的探索检查点覆盖率指标和交替任务-探索训练策略，并设计Explore-then-Act范式，为构建自适应agent提供了可操作的训练方法，直接启发agent产品开发，工程上可集成，且代表了agent适应性研究的前沿。",
+        "one_sentence_summary": "提出自主探索能力训练框架，通过交替任务执行与探索回合并引入探索检查点覆盖率指标，训练LLM代理在陌生环境中先系统探索再决策，解决了过早利用问题，提升泛化性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 82,
+      "score_reason": "论文针对LLM agent在陌生环境中过早利用先验知识导致失败的问题，提出自主探索能力训练，引入可验证的探索检查点覆盖率指标和交替任务-探索训练策略，并设计Explore-then-Act范式，为构建自适应agent提供了可操作的训练方法，直接启发agent产品开发，工程上可集成，且代表了agent适应性研究的前沿。",
+      "one_sentence_summary": "提出自主探索能力训练框架，通过交替任务执行与探索回合并引入探索检查点覆盖率指标，训练LLM代理在陌生环境中先系统探索再决策，解决了过早利用问题，提升泛化性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.16198",
+      "arxiv_id": "2605.16198",
+      "title": "Formal Methods Meet LLMs: Auditing, Monitoring, and Intervention for Compliance of Advanced AI Systems",
+      "url": "https://arxiv.org/abs/2605.16198",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "We examine one particular dimension of AI governance: how to monitor and audit AI-enabled products and services throughout the AI development lifecycle, from pre-deployment testing to post-deployment auditing. Combining principles from formal methods with SoTA machine learning, we propose techniques that enable AI-enabled product and service developers, as well as third party AI developers and evaluators, to perform offline auditing and online (runtime) monitoring of product-specific (temporally extended) behavioral constraints such as safety constraints, norms, rules and regulations with respect to black-box advanced AI systems, notably LLMs. We further provide practical techniques for predictive monitoring, such as sampling-based methods, and we introduce intervening monitors that act at runtime to preempt and potentially mitigate predicted violations. Experimental results show that by exploiting the formal syntax and semantics of Linear Temporal Logic (LTL), our proposed auditing and monitoring techniques are superior to LLM baseline methods in detecting violations of temporally extended behavioral constraints; with our approach, even small-model labelers match or exceed frontier LLM judges. Our predictive and intervening monitors significantly reduce the violation rates of LLM-based agents while largely preserving task performance. We further show through controlled experiments that LLMs' temporal reasoning shows a pronounced degradation in accuracy with increasing event distance, number of constraints, and number of propositions.",
+      "summary": "We examine one particular dimension of AI governance: how to monitor and audit AI-enabled products and services throughout the AI development lifecycle, from pre-deployment testing to post-deployment auditing. Combining principles from formal methods with SoTA machine learning, we propose techniques that enable AI-enabled product and service developers, as well as third party AI developers and evaluators, to perform offline auditing and online (runtime) monitoring of product-specific (temporally extended) behavioral constraints such as safety constraints, norms, rules and regulations with respect to black-box advanced AI systems, notably LLMs. We further provide practical techniques for predictive monitoring, such as sampling-based methods, and we introduce intervening monitors that act at runtime to preempt and potentially mitigate predicted violations. Experimental results show that by exploiting the formal syntax and semantics of Linear Temporal Logic (LTL), our proposed auditing and monitoring techniques are superior to LLM baseline methods in detecting violations of temporally extended behavioral constraints; with our approach, even small-model labelers match or exceed frontier LLM judges. Our predictive and intervening monitors significantly reduce the violation rates of LLM-based agents while largely preserving task performance. We further show through controlled experiments that LLMs' temporal reasoning shows a pronounced degradation in accuracy with increasing event distance, number of constraints, and number of propositions.",
+      "abstract": "We examine one particular dimension of AI governance: how to monitor and audit AI-enabled products and services throughout the AI development lifecycle, from pre-deployment testing to post-deployment auditing. Combining principles from formal methods with SoTA machine learning, we propose techniques that enable AI-enabled product and service developers, as well as third party AI developers and evaluators, to perform offline auditing and online (runtime) monitoring of product-specific (temporally extended) behavioral constraints such as safety constraints, norms, rules and regulations with respect to black-box advanced AI systems, notably LLMs. We further provide practical techniques for predictive monitoring, such as sampling-based methods, and we introduce intervening monitors that act at runtime to preempt and potentially mitigate predicted violations. Experimental results show that by exploiting the formal syntax and semantics of Linear Temporal Logic (LTL), our proposed auditing and monitoring techniques are superior to LLM baseline methods in detecting violations of temporally extended behavioral constraints; with our approach, even small-model labelers match or exceed frontier LLM judges. Our predictive and intervening monitors significantly reduce the violation rates of LLM-based agents while largely preserving task performance. We further show through controlled experiments that LLMs' temporal reasoning shows a pronounced degradation in accuracy with increasing event distance, number of constraints, and number of propositions.",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.LG",
+        "cs.LO"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.LG",
+        "cs.LO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.16198",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "直接针对LLM智能体合规，提供实用的审计、监控和干预技术，与AI产品安全治理高度相关；将线性时序逻辑引入LLM监控属于新任务形式，小型模型标注器超越前沿LLM法官的结果有信号意义；采样和干预监控方案可工程化集成；AI安全治理是近期趋势，形式化方法在此的应用相对少见。",
+        "one_sentence_summary": "论文提出结合线性时序逻辑与LLM，对AI系统进行离线和在线审计监控，通过采样和干预监控降低智能体违规率，实验表明小型模型标注器可媲美前沿LLM，并为行为约束合规提供了实用工具。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 18
+      },
+      "score_total": 82,
+      "score_reason": "直接针对LLM智能体合规，提供实用的审计、监控和干预技术，与AI产品安全治理高度相关；将线性时序逻辑引入LLM监控属于新任务形式，小型模型标注器超越前沿LLM法官的结果有信号意义；采样和干预监控方案可工程化集成；AI安全治理是近期趋势，形式化方法在此的应用相对少见。",
+      "one_sentence_summary": "论文提出结合线性时序逻辑与LLM，对AI系统进行离线和在线审计监控，通过采样和干预监控降低智能体违规率，实验表明小型模型标注器可媲美前沿LLM，并为行为约束合规提供了实用工具。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.16233",
+      "arxiv_id": "2605.16233",
+      "title": "FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast",
+      "url": "https://arxiv.org/abs/2605.16233",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory for hierarchical ReAct agents. FORGE wraps a Reflexion-style inner loop, where a dedicated reflection agent (using the same underlying LLM, no distillation from a stronger model) converts failed trajectories into reusable knowledge artifacts: textual heuristics (Rules), few-shot demonstrations (Examples), or both (Mixed), with an outer loop that propagates the best-performing instance's memory to the population between stages and freezes converged instances via a graduation criterion. We evaluate on CybORG CAGE-2, a stochastic network-defense POMDP at a 30-step horizon against the B-line attacker, where all four tested LLM families (Gemini-2.5-Flash-Lite, Grok-4-Fast, Llama-4-Maverick, Qwen3-235B) exhibit strongly negative, heavy-tailed zero-shot rewards. Compared against both a zero-shot baseline and a Reflexion baseline (isolated single-stream learning), FORGE improves average evaluation return by 1.7-7.7$\\times$ over zero-shot and by 29-72% over Reflexion in all 12 model-representation conditions, reducing major-failure rates (below $-100$) to as low as $\\sim$1%. We find that (1) population broadcast is critical mechanism, with a no-graduation ablation confirming that broadcast carries the performance gains while graduation primarily saves compute; (2) Examples achieves the strongest returns for three of four models, Rules offers the best cost-reliability profile with $\\sim$40% fewer tokens; and (3) weaker baseline models benefit disproportionately, suggesting FORGE may mitigate capability gaps rather than amplify strong models. All evidence is confined to CAGE-2 B-line; cross-family findings are directional evidence.",
+      "summary": "Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory for hierarchical ReAct agents. FORGE wraps a Reflexion-style inner loop, where a dedicated reflection agent (using the same underlying LLM, no distillation from a stronger model) converts failed trajectories into reusable knowledge artifacts: textual heuristics (Rules), few-shot demonstrations (Examples), or both (Mixed), with an outer loop that propagates the best-performing instance's memory to the population between stages and freezes converged instances via a graduation criterion. We evaluate on CybORG CAGE-2, a stochastic network-defense POMDP at a 30-step horizon against the B-line attacker, where all four tested LLM families (Gemini-2.5-Flash-Lite, Grok-4-Fast, Llama-4-Maverick, Qwen3-235B) exhibit strongly negative, heavy-tailed zero-shot rewards. Compared against both a zero-shot baseline and a Reflexion baseline (isolated single-stream learning), FORGE improves average evaluation return by 1.7-7.7$\\times$ over zero-shot and by 29-72% over Reflexion in all 12 model-representation conditions, reducing major-failure rates (below $-100$) to as low as $\\sim$1%. We find that (1) population broadcast is critical mechanism, with a no-graduation ablation confirming that broadcast carries the performance gains while graduation primarily saves compute; (2) Examples achieves the strongest returns for three of four models, Rules offers the best cost-reliability profile with $\\sim$40% fewer tokens; and (3) weaker baseline models benefit disproportionately, suggesting FORGE may mitigate capability gaps rather than amplify strong models. All evidence is confined to CAGE-2 B-line; cross-family findings are directional evidence.",
+      "abstract": "Can LLM agents improve decision-making through self-generated memory without gradient updates? We propose FORGE (Failure-Optimized Reflective Graduation and Evolution), a staged, population-based protocol that evolves prompt-injected natural-language memory for hierarchical ReAct agents. FORGE wraps a Reflexion-style inner loop, where a dedicated reflection agent (using the same underlying LLM, no distillation from a stronger model) converts failed trajectories into reusable knowledge artifacts: textual heuristics (Rules), few-shot demonstrations (Examples), or both (Mixed), with an outer loop that propagates the best-performing instance's memory to the population between stages and freezes converged instances via a graduation criterion. We evaluate on CybORG CAGE-2, a stochastic network-defense POMDP at a 30-step horizon against the B-line attacker, where all four tested LLM families (Gemini-2.5-Flash-Lite, Grok-4-Fast, Llama-4-Maverick, Qwen3-235B) exhibit strongly negative, heavy-tailed zero-shot rewards. Compared against both a zero-shot baseline and a Reflexion baseline (isolated single-stream learning), FORGE improves average evaluation return by 1.7-7.7$\\times$ over zero-shot and by 29-72% over Reflexion in all 12 model-representation conditions, reducing major-failure rates (below $-100$) to as low as $\\sim$1%. We find that (1) population broadcast is critical mechanism, with a no-graduation ablation confirming that broadcast carries the performance gains while graduation primarily saves compute; (2) Examples achieves the strongest returns for three of four models, Rules offers the best cost-reliability profile with $\\sim$40% fewer tokens; and (3) weaker baseline models benefit disproportionately, suggesting FORGE may mitigate capability gaps rather than amplify strong models. All evidence is confined to CAGE-2 B-line; cross-family findings are directional evidence.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA",
+        "cs.SY",
+        "eess.SY"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA",
+        "cs.SY",
+        "eess.SY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.16233",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "FORGE直接提升LLM智能体的决策能力，无需权重更新，是典型的Agent工程改进；自我生成记忆并在群体间广播的演化方式提供了新的记忆管理和学习范式；仅通过提示注入即可实现，零门槛集成；Agent记忆和自我改进是当前热点，无梯度群体学习提供了差异化方向。",
+        "one_sentence_summary": "FORGE提出基于群体的自我演化记忆协议，通过反射内环生成规则和示例等记忆，并在群体间广播最优记忆，在CybORG CAGE-2网络防御任务上将收益提升1.7-7.7倍，群体广播是关键，弱模型受益更明显。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 91,
+      "score_reason": "FORGE直接提升LLM智能体的决策能力，无需权重更新，是典型的Agent工程改进；自我生成记忆并在群体间广播的演化方式提供了新的记忆管理和学习范式；仅通过提示注入即可实现，零门槛集成；Agent记忆和自我改进是当前热点，无梯度群体学习提供了差异化方向。",
+      "one_sentence_summary": "FORGE提出基于群体的自我演化记忆协议，通过反射内环生成规则和示例等记忆，并在群体间广播最优记忆，在CybORG CAGE-2网络防御任务上将收益提升1.7-7.7倍，群体广播是关键，弱模型受益更明显。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15206",
+      "arxiv_id": "2605.15206",
+      "title": "AgentStop: Terminating Local AI Agents Early to Save Energy in Consumer Devices",
+      "url": "https://arxiv.org/abs/2605.15206",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Autonomous agents powered by large language models (LLMs) are increasingly used to automate complex, multi-step tasks such as coding or web-based question answering. While remote, cloud-based agents offer scalability and ease of deployment, they raise privacy concerns, depend on network connectivity, and incur recurring API costs. Deploying agents locally on user devices mitigates these issues by preserving data privacy and eliminating usage-based fees. However, agentic workflows are far more resource-intensive than typical LLM interactions. Iterative reasoning, tool use, and failure retries substantially increase token consumption, often expending significant compute without successfully completing tasks. In this work, we investigate the time, token, and energy overhead of locally deployed LLM-based agents on consumer hardware. Our measurements show that agentic execution increases GPU power draw, temperature, and battery drain compared to single-inference workloads. To address this inefficiency, we introduce AgentStop, a lightweight efficiency supervisor that predicts and preemptively terminates trajectories unlikely to succeed. Leveraging low-cost execution signals, such as token-level log probabilities, AgentStop can reduce wasted energy by 15-20% with minimal impact on task performance (<5% utility drop) for challenging web-based question answering and coding benchmarks. These findings position predictive early termination as a practical mechanism for enabling sustainable, privacy-preserving LLM agents on user devices. Our project code and data are available at https://github.com/brave-experiments/AgentStop.",
+      "summary": "Autonomous agents powered by large language models (LLMs) are increasingly used to automate complex, multi-step tasks such as coding or web-based question answering. While remote, cloud-based agents offer scalability and ease of deployment, they raise privacy concerns, depend on network connectivity, and incur recurring API costs. Deploying agents locally on user devices mitigates these issues by preserving data privacy and eliminating usage-based fees. However, agentic workflows are far more resource-intensive than typical LLM interactions. Iterative reasoning, tool use, and failure retries substantially increase token consumption, often expending significant compute without successfully completing tasks. In this work, we investigate the time, token, and energy overhead of locally deployed LLM-based agents on consumer hardware. Our measurements show that agentic execution increases GPU power draw, temperature, and battery drain compared to single-inference workloads. To address this inefficiency, we introduce AgentStop, a lightweight efficiency supervisor that predicts and preemptively terminates trajectories unlikely to succeed. Leveraging low-cost execution signals, such as token-level log probabilities, AgentStop can reduce wasted energy by 15-20% with minimal impact on task performance (<5% utility drop) for challenging web-based question answering and coding benchmarks. These findings position predictive early termination as a practical mechanism for enabling sustainable, privacy-preserving LLM agents on user devices. Our project code and data are available at https://github.com/brave-experiments/AgentStop.",
+      "abstract": "Autonomous agents powered by large language models (LLMs) are increasingly used to automate complex, multi-step tasks such as coding or web-based question answering. While remote, cloud-based agents offer scalability and ease of deployment, they raise privacy concerns, depend on network connectivity, and incur recurring API costs. Deploying agents locally on user devices mitigates these issues by preserving data privacy and eliminating usage-based fees. However, agentic workflows are far more resource-intensive than typical LLM interactions. Iterative reasoning, tool use, and failure retries substantially increase token consumption, often expending significant compute without successfully completing tasks. In this work, we investigate the time, token, and energy overhead of locally deployed LLM-based agents on consumer hardware. Our measurements show that agentic execution increases GPU power draw, temperature, and battery drain compared to single-inference workloads. To address this inefficiency, we introduce AgentStop, a lightweight efficiency supervisor that predicts and preemptively terminates trajectories unlikely to succeed. Leveraging low-cost execution signals, such as token-level log probabilities, AgentStop can reduce wasted energy by 15-20% with minimal impact on task performance (<5% utility drop) for challenging web-based question answering and coding benchmarks. These findings position predictive early termination as a practical mechanism for enabling sustainable, privacy-preserving LLM agents on user devices. Our project code and data are available at https://github.com/brave-experiments/AgentStop.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15206",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 18,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "AgentStop addresses energy inefficiency in local AI agents with a practical predictive termination method. It uses token-level log probabilities to reduce wasted compute by 15-20% with minimal performance loss, and provides open-source code, making it highly applicable for product developers optimizing agent workflows on consumer devices. The approach is novel in its lightweight supervision for agent termination, and the focus on energy savings aligns with current trends in sustainable, privacy-preserving AI.",
+        "one_sentence_summary": "论文提出AgentStop，一种轻量级效率监督器，通过利用词元级对数概率等低成本执行信号，预测并提前终止本地大模型Agent中可能失败的任务轨迹，在网页问答和编程基准测试中减少15-20%的能量浪费，且性能损失小于5%，为消费设备上的可持续隐私保护Agent提供实用机制。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 18,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "AgentStop addresses energy inefficiency in local AI agents with a practical predictive termination method. It uses token-level log probabilities to reduce wasted compute by 15-20% with minimal performance loss, and provides open-source code, making it highly applicable for product developers optimizing agent workflows on consumer devices. The approach is novel in its lightweight supervision for agent termination, and the focus on energy savings aligns with current trends in sustainable, privacy-preserving AI.",
+      "one_sentence_summary": "论文提出AgentStop，一种轻量级效率监督器，通过利用词元级对数概率等低成本执行信号，预测并提前终止本地大模型Agent中可能失败的任务轨迹，在网页问答和编程基准测试中减少15-20%的能量浪费，且性能损失小于5%，为消费设备上的可持续隐私保护Agent提供实用机制。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15208",
+      "arxiv_id": "2605.15208",
+      "title": "Quantization Undoes Alignment: Bias Emergence in Compressed LLMs Across Models and Precision Levels",
+      "url": "https://arxiv.org/abs/2605.15208",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Large Language Models are routinely compressed via post-training quantization to reduce inference costs and memory footprint for cloud and edge deployment, yet the impact of this compression on model quality remains poorly understood. Existing studies typically compare only two conditions (full-precision vs. a single quantized variant), rely on aggregate bias metrics, and evaluate a single model family, making it impossible to distinguish gradual degradation from threshold-dependent safety failures. We conduct a controlled empirical study of three instruction-tuned models (Qwen2.5-7B, Mistral-7B, Phi-3.5-mini) at five precision levels (BF16 through 3-bit) on 12,148 BBQ bias benchmark items across 5 random seeds, totaling 911,100 inference records. Our results reveal that 3-bit quantization causes 6-21% of previously unbiased items to develop new stereotypical behaviors, following a clear dose-response pattern confirmed via logistic regression, while models' willingness to select \"unknown\" answers declines by 17.4%. Crucially, these item-level changes are invisible to standard quality metrics: perplexity increases by less than 0.5% at 8-bit and under 3% at 4-bit across all three models, yet 2.5-5.6% of items already develop new biases at 4-bit. These findings demonstrate that aggregate evaluation metrics systematically miss fairness-critical degradation, underscoring the need for quality-aware compression protocols that explicitly test for bias emergence before deployment.",
+      "summary": "Large Language Models are routinely compressed via post-training quantization to reduce inference costs and memory footprint for cloud and edge deployment, yet the impact of this compression on model quality remains poorly understood. Existing studies typically compare only two conditions (full-precision vs. a single quantized variant), rely on aggregate bias metrics, and evaluate a single model family, making it impossible to distinguish gradual degradation from threshold-dependent safety failures. We conduct a controlled empirical study of three instruction-tuned models (Qwen2.5-7B, Mistral-7B, Phi-3.5-mini) at five precision levels (BF16 through 3-bit) on 12,148 BBQ bias benchmark items across 5 random seeds, totaling 911,100 inference records. Our results reveal that 3-bit quantization causes 6-21% of previously unbiased items to develop new stereotypical behaviors, following a clear dose-response pattern confirmed via logistic regression, while models' willingness to select \"unknown\" answers declines by 17.4%. Crucially, these item-level changes are invisible to standard quality metrics: perplexity increases by less than 0.5% at 8-bit and under 3% at 4-bit across all three models, yet 2.5-5.6% of items already develop new biases at 4-bit. These findings demonstrate that aggregate evaluation metrics systematically miss fairness-critical degradation, underscoring the need for quality-aware compression protocols that explicitly test for bias emergence before deployment.",
+      "abstract": "Large Language Models are routinely compressed via post-training quantization to reduce inference costs and memory footprint for cloud and edge deployment, yet the impact of this compression on model quality remains poorly understood. Existing studies typically compare only two conditions (full-precision vs. a single quantized variant), rely on aggregate bias metrics, and evaluate a single model family, making it impossible to distinguish gradual degradation from threshold-dependent safety failures. We conduct a controlled empirical study of three instruction-tuned models (Qwen2.5-7B, Mistral-7B, Phi-3.5-mini) at five precision levels (BF16 through 3-bit) on 12,148 BBQ bias benchmark items across 5 random seeds, totaling 911,100 inference records. Our results reveal that 3-bit quantization causes 6-21% of previously unbiased items to develop new stereotypical behaviors, following a clear dose-response pattern confirmed via logistic regression, while models' willingness to select \"unknown\" answers declines by 17.4%. Crucially, these item-level changes are invisible to standard quality metrics: perplexity increases by less than 0.5% at 8-bit and under 3% at 4-bit across all three models, yet 2.5-5.6% of items already develop new biases at 4-bit. These findings demonstrate that aggregate evaluation metrics systematically miss fairness-critical degradation, underscoring the need for quality-aware compression protocols that explicitly test for bias emergence before deployment.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15208",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "论文通过大规模受控实验揭示LLM量化导致公平性退化，发现3-bit量化使6-21%的无偏项目产生新刻板印象，而常规困惑度指标无法检测，对模型部署中的质量与安全权衡提供了重要实证证据，可直接指导量化流程，虽无新工具，但结论警示性强、方向少见。",
+        "one_sentence_summary": "对Qwen2.5-7B、Mistral-7B、Phi-3.5-mini在BF16到3-bit五个精度下进行BBQ偏见基准测试，发现量化显著引发新偏见，而困惑度几乎不变，表明量化后需增加偏见检测以避免安全风险。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 21
+      },
+      "score_total": 81,
+      "score_reason": "论文通过大规模受控实验揭示LLM量化导致公平性退化，发现3-bit量化使6-21%的无偏项目产生新刻板印象，而常规困惑度指标无法检测，对模型部署中的质量与安全权衡提供了重要实证证据，可直接指导量化流程，虽无新工具，但结论警示性强、方向少见。",
+      "one_sentence_summary": "对Qwen2.5-7B、Mistral-7B、Phi-3.5-mini在BF16到3-bit五个精度下进行BBQ偏见基准测试，发现量化显著引发新偏见，而困惑度几乎不变，表明量化后需增加偏见检测以避免安全风险。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15221",
+      "arxiv_id": "2605.15221",
+      "title": "Effective Harness Engineering for Algorithm Discovery with Coding Agents",
+      "url": "https://arxiv.org/abs/2605.15221",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "AlphaEvolve and FunSearch have demonstrated the potential of combining large language models (LLMs) with evolutionary search for automated algorithm discovery. However, discovery success is shaped not only by model capability but also significantly by the design of the execution infrastructure, i.e., the harness. This paper investigates effective harness design through three questions: under a fixed token budget, is it better to produce many algorithms with brief thought or fewer algorithms with deeper thought? How should the harness handle evaluation hacks, where generated programs exploit the scoring function? And how can agents that require full filesystem access execute safely in parallel? Using Vesper, an algorithm discovery framework that incorporates harness improvements addressing these questions, we evaluate on Circle Packing under the same token budget. Interestingly, generating fewer algorithms while thinking more deeply about each one achieved higher scores. That is, scaling the quality of each individual is more budget-efficient than scaling the number of evolutionary generations. Surprisingly, more capable models produced evaluation hacks at higher rates, making hack detection increasingly necessary as models scale.",
+      "summary": "AlphaEvolve and FunSearch have demonstrated the potential of combining large language models (LLMs) with evolutionary search for automated algorithm discovery. However, discovery success is shaped not only by model capability but also significantly by the design of the execution infrastructure, i.e., the harness. This paper investigates effective harness design through three questions: under a fixed token budget, is it better to produce many algorithms with brief thought or fewer algorithms with deeper thought? How should the harness handle evaluation hacks, where generated programs exploit the scoring function? And how can agents that require full filesystem access execute safely in parallel? Using Vesper, an algorithm discovery framework that incorporates harness improvements addressing these questions, we evaluate on Circle Packing under the same token budget. Interestingly, generating fewer algorithms while thinking more deeply about each one achieved higher scores. That is, scaling the quality of each individual is more budget-efficient than scaling the number of evolutionary generations. Surprisingly, more capable models produced evaluation hacks at higher rates, making hack detection increasingly necessary as models scale.",
+      "abstract": "AlphaEvolve and FunSearch have demonstrated the potential of combining large language models (LLMs) with evolutionary search for automated algorithm discovery. However, discovery success is shaped not only by model capability but also significantly by the design of the execution infrastructure, i.e., the harness. This paper investigates effective harness design through three questions: under a fixed token budget, is it better to produce many algorithms with brief thought or fewer algorithms with deeper thought? How should the harness handle evaluation hacks, where generated programs exploit the scoring function? And how can agents that require full filesystem access execute safely in parallel? Using Vesper, an algorithm discovery framework that incorporates harness improvements addressing these questions, we evaluate on Circle Packing under the same token budget. Interestingly, generating fewer algorithms while thinking more deeply about each one achieved higher scores. That is, scaling the quality of each individual is more budget-efficient than scaling the number of evolutionary generations. Surprisingly, more capable models produced evaluation hacks at higher rates, making hack detection increasingly necessary as models scale.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15221",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "为算法发现智能体提供具体的harness工程指导，直接影响开发者和工具设计；揭示了生成深度与数量、模型能力与黑客行为的权衡，带来新的设计见解；可直接用于AI编码和算法搜索系统的构建；算法发现与LLM结合是近期方向，聚焦执行基础设施的工程实践较为稀缺。",
+        "one_sentence_summary": "针对LLM驱动的算法发现，论文研究harness设计，发现固定预算下少而深的算法生成效果更优，更强模型更易产生评估黑客，因此需集成检测机制，并在Circle Packing任务上验证了见解。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 85,
+      "score_reason": "为算法发现智能体提供具体的harness工程指导，直接影响开发者和工具设计；揭示了生成深度与数量、模型能力与黑客行为的权衡，带来新的设计见解；可直接用于AI编码和算法搜索系统的构建；算法发现与LLM结合是近期方向，聚焦执行基础设施的工程实践较为稀缺。",
+      "one_sentence_summary": "针对LLM驱动的算法发现，论文研究harness设计，发现固定预算下少而深的算法生成效果更优，更强模型更易产生评估黑客，因此需集成检测机制，并在Circle Packing任务上验证了见解。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": "2026-05-18T05:49:25.247650+00:00",
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": "2026-05-18"
+    },
+    {
+      "id": "arxiv:2605.15229",
+      "arxiv_id": "2605.15229",
+      "title": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+      "url": "https://arxiv.org/abs/2605.15229",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.",
+      "summary": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.",
+      "abstract": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15229",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文引入PBT-Bench，一个要求代理从库文档推导属性并构建高触发率测试策略的基准，包含100个问题365个bug，填补了语义推理型代码代理评测空白，为后续工程实现提供了可复用数据集和评估框架，任务新颖，代表了AI辅助测试的前沿。",
+        "one_sentence_summary": "构建PBT-Bench基准，包含100个基于Python库的属性测试问题，要求代理阅读文档识别语义不变量并指定Hypothesis策略以发现注入bug，评估8个LLM发现结构化提示提升中等模型但干扰强模型，揭示模型特定困难。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 81,
+      "score_reason": "论文引入PBT-Bench，一个要求代理从库文档推导属性并构建高触发率测试策略的基准，包含100个问题365个bug，填补了语义推理型代码代理评测空白，为后续工程实现提供了可复用数据集和评估框架，任务新颖，代表了AI辅助测试的前沿。",
+      "one_sentence_summary": "构建PBT-Bench基准，包含100个基于Python库的属性测试问题，要求代理阅读文档识别语义不变量并指定Hypothesis策略以发现注入bug，评估8个LLM发现结构化提示提升中等模型但干扰强模型，揭示模型特定困难。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.15295",
+      "arxiv_id": "2605.15295",
+      "title": "GESD: Beyond Outcome-Oriented Fairness",
+      "url": "https://arxiv.org/abs/2605.15295",
+      "published_at": "2026-05-18T04:00:00+00:00",
+      "publish_date": "2026-05-18",
+      "description": "Machine learning (ML) algorithms are increasingly deployed in high-stakes decision-making domains such as loan approvals, hiring, and recidivism predictions. While existing fairness metrics (e.g., statistical parity, equal opportunity) effectively quantify outcome-oriented disparities, they offer limited insight into the procedure or explanation behind biased decisions. To address this gap, we propose Group-level Explanation Stability Disparity (GESD), a \\textit{procedural-oriented} fairness metric that measures disparities in the stability, robustness, and sensitivity of model explanations across different subgroups in a protected category. %GESD is explainer-agnostic, model-agnostic, and extends the scope of fairness analyses to the level of explainability. We further integrate GESD into a multi-objective optimization framework that jointly optimizes for utility, outcome-based fairness, and explanation-based fairness called FEU (Fairness--Explainability--Utility). Empirical results on multiple benchmark datasets show that GESD effectively captures group-wise discrepancies in explanation quality, and that FEU improves both utility and fairness over state-of-the-art methods. By bridging outcome-based and explanation-based fairness, GESD offers a comprehensive tool for diagnosing and mitigating bias in predictive modeling. Our code and datasets are available on GitHub {\\hyperlink{https://github.com/horlahsunbo/GESD}{https://github.com/horlahsunbo/GESD}}",
+      "summary": "Machine learning (ML) algorithms are increasingly deployed in high-stakes decision-making domains such as loan approvals, hiring, and recidivism predictions. While existing fairness metrics (e.g., statistical parity, equal opportunity) effectively quantify outcome-oriented disparities, they offer limited insight into the procedure or explanation behind biased decisions. To address this gap, we propose Group-level Explanation Stability Disparity (GESD), a \\textit{procedural-oriented} fairness metric that measures disparities in the stability, robustness, and sensitivity of model explanations across different subgroups in a protected category. %GESD is explainer-agnostic, model-agnostic, and extends the scope of fairness analyses to the level of explainability. We further integrate GESD into a multi-objective optimization framework that jointly optimizes for utility, outcome-based fairness, and explanation-based fairness called FEU (Fairness--Explainability--Utility). Empirical results on multiple benchmark datasets show that GESD effectively captures group-wise discrepancies in explanation quality, and that FEU improves both utility and fairness over state-of-the-art methods. By bridging outcome-based and explanation-based fairness, GESD offers a comprehensive tool for diagnosing and mitigating bias in predictive modeling. Our code and datasets are available on GitHub {\\hyperlink{https://github.com/horlahsunbo/GESD}{https://github.com/horlahsunbo/GESD}}",
+      "abstract": "Machine learning (ML) algorithms are increasingly deployed in high-stakes decision-making domains such as loan approvals, hiring, and recidivism predictions. While existing fairness metrics (e.g., statistical parity, equal opportunity) effectively quantify outcome-oriented disparities, they offer limited insight into the procedure or explanation behind biased decisions. To address this gap, we propose Group-level Explanation Stability Disparity (GESD), a \\textit{procedural-oriented} fairness metric that measures disparities in the stability, robustness, and sensitivity of model explanations across different subgroups in a protected category. %GESD is explainer-agnostic, model-agnostic, and extends the scope of fairness analyses to the level of explainability. We further integrate GESD into a multi-objective optimization framework that jointly optimizes for utility, outcome-based fairness, and explanation-based fairness called FEU (Fairness--Explainability--Utility). Empirical results on multiple benchmark datasets show that GESD effectively captures group-wise discrepancies in explanation quality, and that FEU improves both utility and fairness over state-of-the-art methods. By bridging outcome-based and explanation-based fairness, GESD offers a comprehensive tool for diagnosing and mitigating bias in predictive modeling. Our code and datasets are available on GitHub {\\hyperlink{https://github.com/horlahsunbo/GESD}{https://github.com/horlahsunbo/GESD}}",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.15295",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 16,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "从解释稳定性角度衡量公平性，对构建公平AI产品有理论启发，但直接应用集成度较低；提出Group-level Explanation Stability Disparity新指标，将公平性扩展到解释层面，有一定新意；提供代码和优化框架，但实际部署需较多定制；公平性研究持续热门，解释稳定性作为公平维度少见，但整体仍属经典领域的延伸。",
+        "one_sentence_summary": "论文提出GESD指标，度量不同子组模型解释的稳定性差异，并集成到多目标优化框架FEU中，在多个基准数据集上同时改善效用、结果公平和解释公平。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 16,
+        "timeliness_rarity": 17
+      },
+      "score_total": 66,
+      "score_reason": "从解释稳定性角度衡量公平性，对构建公平AI产品有理论启发，但直接应用集成度较低；提出Group-level Explanation Stability Disparity新指标，将公平性扩展到解释层面，有一定新意；提供代码和优化框架，但实际部署需较多定制；公平性研究持续热门，解释稳定性作为公平维度少见，但整体仍属经典领域的延伸。",
+      "one_sentence_summary": "论文提出GESD指标，度量不同子组模型解释的稳定性差异，并集成到多目标优化框架FEU中，在多个基准数据集上同时改善效用、结果公平和解释公平。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-18T05:49:25.247650+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-18",
+      "pushed_run_id": null
     }
   ]
 }
