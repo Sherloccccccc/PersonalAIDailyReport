@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-18T05:49:25.247650+00:00",
+  "updated_at": "2026-05-19T05:42:43.444174+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -6800,11 +6800,11 @@
       "score_reason": "论文针对LLM agent在陌生环境中过早利用先验知识导致失败的问题，提出自主探索能力训练，引入可验证的探索检查点覆盖率指标和交替任务-探索训练策略，并设计Explore-then-Act范式，为构建自适应agent提供了可操作的训练方法，直接启发agent产品开发，工程上可集成，且代表了agent适应性研究的前沿。",
       "one_sentence_summary": "提出自主探索能力训练框架，通过交替任务执行与探索回合并引入探索检查点覆盖率指标，训练LLM代理在陌生环境中先系统探索再决策，解决了过早利用问题，提升泛化性。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-18T05:49:25.247650+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
       "source_run_id": "2026-05-18",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-19"
     },
     {
       "id": "arxiv:2605.16198",
@@ -7152,6 +7152,609 @@
       "pushed_at": null,
       "source_run_id": "2026-05-18",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.18747",
+      "arxiv_id": "2605.18747",
+      "title": "Code as Agent Harness",
+      "url": "https://arxiv.org/abs/2605.18747",
+      "published_at": "2026-05-18T17:59:03Z",
+      "publish_date": "2026-05-18",
+      "description": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified roadmap toward executable, verifiable, and stateful AI agent systems.",
+      "summary": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified roadmap toward executable, verifiable, and stateful AI agent systems.",
+      "abstract": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified roadmap toward executable, verifiable, and stateful AI agent systems.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18747",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "系统提出将代码作为代理基础设施的统一视角，覆盖接口、机制、规模化三层，总结实际应用并指出开放挑战，对AI产品与Agent系统设计有直接启发，但作为综述工程可复用性有限。",
+        "one_sentence_summary": "该综述提出“代码作为代理 harness”统一视角，将代码视为代理推理、行动和环境建模的操作基础，系统梳理接口、机制和多代理规模化三层，总结编程助手、GUI自动化等应用并讨论评估、验证等开放挑战。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "系统提出将代码作为代理基础设施的统一视角，覆盖接口、机制、规模化三层，总结实际应用并指出开放挑战，对AI产品与Agent系统设计有直接启发，但作为综述工程可复用性有限。",
+      "one_sentence_summary": "该综述提出“代码作为代理 harness”统一视角，将代码视为代理推理、行动和环境建模的操作基础，系统梳理接口、机制和多代理规模化三层，总结编程助手、GUI自动化等应用并讨论评估、验证等开放挑战。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18740",
+      "arxiv_id": "2605.18740",
+      "title": "Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation",
+      "url": "https://arxiv.org/abs/2605.18740",
+      "published_at": "2026-05-18T17:57:04Z",
+      "publish_date": "2026-05-18",
+      "description": "Multimodal Large Language Models (MLLMs) still struggle with fine-grained visual understanding, where answers often depend on small but decisive evidence in the full image. We observe a regional-to-global perception gap: the same MLLM answers fine-grained questions more accurately when conditioned on evidence-centered crops than on the corresponding full images, suggesting that many failures stem from difficulty to focus on relevant evidence rather than insufficient local recognition ability. Motivated by this observation, we propose Vision-OPD (Vision On-Policy Distillation), a regional-to-global self-distillation framework that transfers the model's own privileged regional perception to its full-image policy. Vision-OPD instantiates two conditional policies from the same MLLM: a crop-conditioned teacher and a full-image-conditioned student. The student generates on-policy rollouts, and Vision-OPD minimizes token-level divergence between the teacher and student next-token distributions along these rollouts. This enables the model to internalize the benefit of visual zooming without external teacher models, ground-truth labels, reward verifiers, or inference-time tool use. Experiments on multiple fine-grained visual understanding benchmarks show that Vision-OPD models achieve competitive or superior performance against much larger open-source, closed-source, and \"Thinking-with-Images\" agentic models.",
+      "summary": "Multimodal Large Language Models (MLLMs) still struggle with fine-grained visual understanding, where answers often depend on small but decisive evidence in the full image. We observe a regional-to-global perception gap: the same MLLM answers fine-grained questions more accurately when conditioned on evidence-centered crops than on the corresponding full images, suggesting that many failures stem from difficulty to focus on relevant evidence rather than insufficient local recognition ability. Motivated by this observation, we propose Vision-OPD (Vision On-Policy Distillation), a regional-to-global self-distillation framework that transfers the model's own privileged regional perception to its full-image policy. Vision-OPD instantiates two conditional policies from the same MLLM: a crop-conditioned teacher and a full-image-conditioned student. The student generates on-policy rollouts, and Vision-OPD minimizes token-level divergence between the teacher and student next-token distributions along these rollouts. This enables the model to internalize the benefit of visual zooming without external teacher models, ground-truth labels, reward verifiers, or inference-time tool use. Experiments on multiple fine-grained visual understanding benchmarks show that Vision-OPD models achieve competitive or superior performance against much larger open-source, closed-source, and \"Thinking-with-Images\" agentic models.",
+      "abstract": "Multimodal Large Language Models (MLLMs) still struggle with fine-grained visual understanding, where answers often depend on small but decisive evidence in the full image. We observe a regional-to-global perception gap: the same MLLM answers fine-grained questions more accurately when conditioned on evidence-centered crops than on the corresponding full images, suggesting that many failures stem from difficulty to focus on relevant evidence rather than insufficient local recognition ability. Motivated by this observation, we propose Vision-OPD (Vision On-Policy Distillation), a regional-to-global self-distillation framework that transfers the model's own privileged regional perception to its full-image policy. Vision-OPD instantiates two conditional policies from the same MLLM: a crop-conditioned teacher and a full-image-conditioned student. The student generates on-policy rollouts, and Vision-OPD minimizes token-level divergence between the teacher and student next-token distributions along these rollouts. This enables the model to internalize the benefit of visual zooming without external teacher models, ground-truth labels, reward verifiers, or inference-time tool use. Experiments on multiple fine-grained visual understanding benchmarks show that Vision-OPD models achieve competitive or superior performance against much larger open-source, closed-source, and \"Thinking-with-Images\" agentic models.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 14,
+        "timeliness_rarity": 14
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, evaluation signal",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向大模型能力评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是给模型、agent 或工具链提供更可复现的横向比较标准。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.18703",
+      "arxiv_id": "2605.18703",
+      "title": "EnvFactory: Scaling Tool-Use Agents via Executable Environments Synthesis and Robust RL",
+      "url": "https://arxiv.org/abs/2605.18703",
+      "published_at": "2026-05-18T17:37:40Z",
+      "publish_date": "2026-05-18",
+      "description": "Equipping LLMs with tool-use capabilities via Agentic Reinforcement Learning (Agentic RL) is bottlenecked by two challenges: the lack of scalable, robust execution environments and the scarcity of realistic training data that captures implicit human reasoning. Existing approaches depend on costly real-world APIs, hallucination-prone LLM simulators, or synthetic environments that are often single-turn or depend on pre-collected documents. Moreover, synthetic trajectories are frequently over-specified, resembling instruction sequences rather than natural human intents, reducing their effectiveness for RL training. We introduce EnvFactory, a fully automated framework that addresses both challenges. EnvFactory autonomously explores and verifies stateful, executable tool environments from authentic resources, and synthesizes natural multi-turn trajectories through topology-aware sampling and calibrated refinement, producing grounded queries with implicit intents. Using only 85 verified environments across 7 domains, EnvFactory generates 2,575 SFT and RL trajectories. Despite using significantly fewer environments than prior work, which are often 5 times more, EnvFactory achieves superior training efficiency and downstream performance, improving Qwen3-series models by up to +15% on BFCLv3, +8.6% on MCP-Atlas, and +6% on conversational benchmarks including $τ^2$-Bench and VitaBench. By fully automating both environment construction and trajectory synthesis, EnvFactory provides a scalable, extensible, and robust foundation for Agentic RL.",
+      "summary": "Equipping LLMs with tool-use capabilities via Agentic Reinforcement Learning (Agentic RL) is bottlenecked by two challenges: the lack of scalable, robust execution environments and the scarcity of realistic training data that captures implicit human reasoning. Existing approaches depend on costly real-world APIs, hallucination-prone LLM simulators, or synthetic environments that are often single-turn or depend on pre-collected documents. Moreover, synthetic trajectories are frequently over-specified, resembling instruction sequences rather than natural human intents, reducing their effectiveness for RL training. We introduce EnvFactory, a fully automated framework that addresses both challenges. EnvFactory autonomously explores and verifies stateful, executable tool environments from authentic resources, and synthesizes natural multi-turn trajectories through topology-aware sampling and calibrated refinement, producing grounded queries with implicit intents. Using only 85 verified environments across 7 domains, EnvFactory generates 2,575 SFT and RL trajectories. Despite using significantly fewer environments than prior work, which are often 5 times more, EnvFactory achieves superior training efficiency and downstream performance, improving Qwen3-series models by up to +15% on BFCLv3, +8.6% on MCP-Atlas, and +6% on conversational benchmarks including $τ^2$-Bench and VitaBench. By fully automating both environment construction and trajectory synthesis, EnvFactory provides a scalable, extensible, and robust foundation for Agentic RL.",
+      "abstract": "Equipping LLMs with tool-use capabilities via Agentic Reinforcement Learning (Agentic RL) is bottlenecked by two challenges: the lack of scalable, robust execution environments and the scarcity of realistic training data that captures implicit human reasoning. Existing approaches depend on costly real-world APIs, hallucination-prone LLM simulators, or synthetic environments that are often single-turn or depend on pre-collected documents. Moreover, synthetic trajectories are frequently over-specified, resembling instruction sequences rather than natural human intents, reducing their effectiveness for RL training. We introduce EnvFactory, a fully automated framework that addresses both challenges. EnvFactory autonomously explores and verifies stateful, executable tool environments from authentic resources, and synthesizes natural multi-turn trajectories through topology-aware sampling and calibrated refinement, producing grounded queries with implicit intents. Using only 85 verified environments across 7 domains, EnvFactory generates 2,575 SFT and RL trajectories. Despite using significantly fewer environments than prior work, which are often 5 times more, EnvFactory achieves superior training efficiency and downstream performance, improving Qwen3-series models by up to +15% on BFCLv3, +8.6% on MCP-Atlas, and +6% on conversational benchmarks including $τ^2$-Bench and VitaBench. By fully automating both environment construction and trajectory synthesis, EnvFactory provides a scalable, extensible, and robust foundation for Agentic RL.",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18703",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "EnvFactory自动合成可执行环境并生成自然多轮轨迹，直接解决工具使用代理RL训练的环境与数据瓶颈，方法可复用且已在多个基准上大幅提升开源模型性能，高度契合近期代理强化学习趋势。",
+        "one_sentence_summary": "提出EnvFactory框架，通过自动探索真实资源合成有状态的工具执行环境，并利用拓扑感知采样生成带隐式意图的多轮自然轨迹，仅用85个环境训练Qwen3系列模型，在BFCLv3上提升15%、MCP-Atlas上提升8.6%。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 96,
+      "score_reason": "EnvFactory自动合成可执行环境并生成自然多轮轨迹，直接解决工具使用代理RL训练的环境与数据瓶颈，方法可复用且已在多个基准上大幅提升开源模型性能，高度契合近期代理强化学习趋势。",
+      "one_sentence_summary": "提出EnvFactory框架，通过自动探索真实资源合成有状态的工具执行环境，并利用拓扑感知采样生成带隐式意图的多轮自然轨迹，仅用85个环境训练Qwen3系列模型，在BFCLv3上提升15%、MCP-Atlas上提升8.6%。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18684",
+      "arxiv_id": "2605.18684",
+      "title": "Reversa: A Reverse Documentation Engineering Framework for Converting Legacy Software into Operational Specifications for AI Agents",
+      "url": "https://arxiv.org/abs/2605.18684",
+      "published_at": "2026-05-18T17:23:13Z",
+      "publish_date": "2026-05-18",
+      "description": "Legacy systems concentrate business rules, architectural decisions, and operational exceptions that often remain implicit in code, data, configuration, and maintenance practices. At the same time, language-model-based coding agents depend on reliable context, correctness criteria, and behavioral contracts to modify real systems with lower risk. This paper presents Reversa, a reverse documentation engineering framework for converting legacy software into traceable operational specifications for AI agents. Reversa organizes this process as a multi-agent pipeline: specialized agents map the project surface, analyze modules, extract implicit rules, synthesize architecture, write unit-level specifications, and review generated claims. The proposal emphasizes three mechanisms: traceability between code and specification, explicit confidence marking, and preservation of gaps for human validation. The framework is distributed as a Node.js CLI, installs skills across multiple agent engines, and uses a SHA-256 manifest to preserve modified files during update or uninstall operations. In addition to the architectural description, we report an exploratory case study on migrating an ATM from COBOL to Go, in which the pipeline produced 517 claims classified by an internal confidence index, 10 registered gaps, 53 Gherkin parity scenarios, and a reconstruction plan with 9 of 11 tasks completed at inventory time. Final parity validation and cutover were not completed in this study. We do not claim broad empirical superiority; we position the contribution with respect to the literature on reverse engineering, LLM-based documentation, and software agents, and propose an evaluation protocol with metrics for coverage, traceability, confidence, utility, and cost.",
+      "summary": "Legacy systems concentrate business rules, architectural decisions, and operational exceptions that often remain implicit in code, data, configuration, and maintenance practices. At the same time, language-model-based coding agents depend on reliable context, correctness criteria, and behavioral contracts to modify real systems with lower risk. This paper presents Reversa, a reverse documentation engineering framework for converting legacy software into traceable operational specifications for AI agents. Reversa organizes this process as a multi-agent pipeline: specialized agents map the project surface, analyze modules, extract implicit rules, synthesize architecture, write unit-level specifications, and review generated claims. The proposal emphasizes three mechanisms: traceability between code and specification, explicit confidence marking, and preservation of gaps for human validation. The framework is distributed as a Node.js CLI, installs skills across multiple agent engines, and uses a SHA-256 manifest to preserve modified files during update or uninstall operations. In addition to the architectural description, we report an exploratory case study on migrating an ATM from COBOL to Go, in which the pipeline produced 517 claims classified by an internal confidence index, 10 registered gaps, 53 Gherkin parity scenarios, and a reconstruction plan with 9 of 11 tasks completed at inventory time. Final parity validation and cutover were not completed in this study. We do not claim broad empirical superiority; we position the contribution with respect to the literature on reverse engineering, LLM-based documentation, and software agents, and propose an evaluation protocol with metrics for coverage, traceability, confidence, utility, and cost.",
+      "abstract": "Legacy systems concentrate business rules, architectural decisions, and operational exceptions that often remain implicit in code, data, configuration, and maintenance practices. At the same time, language-model-based coding agents depend on reliable context, correctness criteria, and behavioral contracts to modify real systems with lower risk. This paper presents Reversa, a reverse documentation engineering framework for converting legacy software into traceable operational specifications for AI agents. Reversa organizes this process as a multi-agent pipeline: specialized agents map the project surface, analyze modules, extract implicit rules, synthesize architecture, write unit-level specifications, and review generated claims. The proposal emphasizes three mechanisms: traceability between code and specification, explicit confidence marking, and preservation of gaps for human validation. The framework is distributed as a Node.js CLI, installs skills across multiple agent engines, and uses a SHA-256 manifest to preserve modified files during update or uninstall operations. In addition to the architectural description, we report an exploratory case study on migrating an ATM from COBOL to Go, in which the pipeline produced 517 claims classified by an internal confidence index, 10 registered gaps, 53 Gherkin parity scenarios, and a reconstruction plan with 9 of 11 tasks completed at inventory time. Final parity validation and cutover were not completed in this study. We do not claim broad empirical superiority; we position the contribution with respect to the literature on reverse engineering, LLM-based documentation, and software agents, and propose an evaluation protocol with metrics for coverage, traceability, confidence, utility, and cost.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18684",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "Reversa利用多智能体流水线将遗留代码转换为AI代理可用的可追踪操作规范，提供CLI工具并包含置信度标记与缺口保存，案例研究展示可行性，但未完成最终验证，实用性尚待完善。",
+        "one_sentence_summary": "提出Reversa反向文档工程框架，通过多智能体流水线将遗留软件提取为带置信度与可追溯性的操作规范，在COBOL到Go的ATM迁移案例中生成517条声明、53个Gherkin场景，并保留人工验证缺口。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 85,
+      "score_reason": "Reversa利用多智能体流水线将遗留代码转换为AI代理可用的可追踪操作规范，提供CLI工具并包含置信度标记与缺口保存，案例研究展示可行性，但未完成最终验证，实用性尚待完善。",
+      "one_sentence_summary": "提出Reversa反向文档工程框架，通过多智能体流水线将遗留软件提取为带置信度与可追溯性的操作规范，在COBOL到Go的ATM迁移案例中生成517条声明、53个Gherkin场景，并保留人工验证缺口。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18673",
+      "arxiv_id": "2605.18673",
+      "title": "Generative AI Advertising as a Problem of Trustworthy Commercial Intervention",
+      "url": "https://arxiv.org/abs/2605.18673",
+      "published_at": "2026-05-18T17:15:06Z",
+      "publish_date": "2026-05-18",
+      "description": "Major deployed generative AI advertising systems preserve a visible boundary between commercial content and AI-generated responses. Yet empirical research shows that ads woven directly into large language model (LLM) outputs often go undetected by users. We argue that generative AI fundamentally changes advertising: rather than placing products into discrete slots, it enables interventions on the generative process itself, which induce commercial influence through less observable channels. This reframes generative AI advertising as a problem of trustworthy intervention rather than content placement. We introduce a taxonomy organized by influence tier, corresponding to interventions on progressively more latent variables: product mentions, information framing, behavioral redirection, and long-term preference shaping; and show how these tiers instantiate across modalities and system architectures, including retrieval-augmented generation and agentic pipelines where upstream decisions can sharply constrain downstream outcomes. Both major deployed systems and designed mechanisms concentrate on the most observable and easiest-to-govern tier, while the forms of commercial influence most consequential for user autonomy remain poorly understood and lack frameworks for detection, measurement, or disclosure. The central challenge is whether commercial influence in generative systems can be made trustworthy, i.e., attributable, measurable, contestable, and aligned with user welfare.",
+      "summary": "Major deployed generative AI advertising systems preserve a visible boundary between commercial content and AI-generated responses. Yet empirical research shows that ads woven directly into large language model (LLM) outputs often go undetected by users. We argue that generative AI fundamentally changes advertising: rather than placing products into discrete slots, it enables interventions on the generative process itself, which induce commercial influence through less observable channels. This reframes generative AI advertising as a problem of trustworthy intervention rather than content placement. We introduce a taxonomy organized by influence tier, corresponding to interventions on progressively more latent variables: product mentions, information framing, behavioral redirection, and long-term preference shaping; and show how these tiers instantiate across modalities and system architectures, including retrieval-augmented generation and agentic pipelines where upstream decisions can sharply constrain downstream outcomes. Both major deployed systems and designed mechanisms concentrate on the most observable and easiest-to-govern tier, while the forms of commercial influence most consequential for user autonomy remain poorly understood and lack frameworks for detection, measurement, or disclosure. The central challenge is whether commercial influence in generative systems can be made trustworthy, i.e., attributable, measurable, contestable, and aligned with user welfare.",
+      "abstract": "Major deployed generative AI advertising systems preserve a visible boundary between commercial content and AI-generated responses. Yet empirical research shows that ads woven directly into large language model (LLM) outputs often go undetected by users. We argue that generative AI fundamentally changes advertising: rather than placing products into discrete slots, it enables interventions on the generative process itself, which induce commercial influence through less observable channels. This reframes generative AI advertising as a problem of trustworthy intervention rather than content placement. We introduce a taxonomy organized by influence tier, corresponding to interventions on progressively more latent variables: product mentions, information framing, behavioral redirection, and long-term preference shaping; and show how these tiers instantiate across modalities and system architectures, including retrieval-augmented generation and agentic pipelines where upstream decisions can sharply constrain downstream outcomes. Both major deployed systems and designed mechanisms concentrate on the most observable and easiest-to-govern tier, while the forms of commercial influence most consequential for user autonomy remain poorly understood and lack frameworks for detection, measurement, or disclosure. The central challenge is whether commercial influence in generative systems can be made trustworthy, i.e., attributable, measurable, contestable, and aligned with user welfare.",
+      "categories": [
+        "cs.CY",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CY",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18673",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 12,
+          "timeliness_rarity": 14
+        },
+        "score_reason": "文章将生成式AI广告重新定义为可信干预问题，提出四层影响分类法并分析系统架构中的实例，指出深层商业影响缺乏检测与披露框架，概念启发强但缺少工程实现。",
+        "one_sentence_summary": "本文提出生成式AI广告应视为可信干预问题，分类为产品提及、信息框架、行为重定向和长期偏好塑造四个层级，分析其在不同系统和智能体管线中的体现，指出现有系统关注浅层干预，深层影响缺乏检测与披露框架。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 12,
+        "timeliness_rarity": 14
+      },
+      "score_total": 64,
+      "score_reason": "文章将生成式AI广告重新定义为可信干预问题，提出四层影响分类法并分析系统架构中的实例，指出深层商业影响缺乏检测与披露框架，概念启发强但缺少工程实现。",
+      "one_sentence_summary": "本文提出生成式AI广告应视为可信干预问题，分类为产品提及、信息框架、行为重定向和长期偏好塑造四个层级，分析其在不同系统和智能体管线中的体现，指出现有系统关注浅层干预，深层影响缺乏检测与披露框架。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.18592",
+      "arxiv_id": "2605.18592",
+      "title": "AMARIS: A Memory-Augmented Rubric Improvement System for Rubric-Based Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.18592",
+      "published_at": "2026-05-18T16:06:27Z",
+      "publish_date": "2026-05-18",
+      "description": "Rubric-based reward shaping is an effective method for fine-tuning LLMs via RL, where structured rubrics decompose standard outcome rewards into multiple dimensions to provide richer reward signals. Recent works make the rubrics adaptive based on local signals such as the rollouts from the current step or pairwise comparisons. However, these methods discard the diagnostics produced during evaluation after immediate use and prevent the long-term accumulation and strategic reuse of evaluation knowledge. This forces the system to re-derive evaluation principles from scratch, limits its ability to detect recurring suboptimal behaviors, and forfeits the curriculum-like progression that a persistent training history would naturally support. To address these limitations, we introduce AMARIS, which grounds rubric modifications in long-term training history. At each training step, AMARIS analyzes individual rollouts, aggregates findings into step-level summaries, retrieves relevant historical context from a persistent evaluation memory through both static (recent steps) and dynamic (semantically matched) retrieval, and updates rubrics based on these accumulated analyses. This procedure runs asynchronously alongside the normal RL loop with minimal overhead. Experiments across both closed and open-ended domains show that AMARIS consistently outperforms the baselines. Ablation studies show that static and dynamic memory retrieval contributes to the performance gain and their combination provides the strongest results with moderate retrieval budgets sufficient to provide most of the gain, and that the entire pipeline adds only ~5\\% time overhead through asynchronous execution. These results show that persistent evaluation memory can transform rubric-based reward shaping from a stateless, per-step heuristic into an evidence-driven loop for RL training.",
+      "summary": "Rubric-based reward shaping is an effective method for fine-tuning LLMs via RL, where structured rubrics decompose standard outcome rewards into multiple dimensions to provide richer reward signals. Recent works make the rubrics adaptive based on local signals such as the rollouts from the current step or pairwise comparisons. However, these methods discard the diagnostics produced during evaluation after immediate use and prevent the long-term accumulation and strategic reuse of evaluation knowledge. This forces the system to re-derive evaluation principles from scratch, limits its ability to detect recurring suboptimal behaviors, and forfeits the curriculum-like progression that a persistent training history would naturally support. To address these limitations, we introduce AMARIS, which grounds rubric modifications in long-term training history. At each training step, AMARIS analyzes individual rollouts, aggregates findings into step-level summaries, retrieves relevant historical context from a persistent evaluation memory through both static (recent steps) and dynamic (semantically matched) retrieval, and updates rubrics based on these accumulated analyses. This procedure runs asynchronously alongside the normal RL loop with minimal overhead. Experiments across both closed and open-ended domains show that AMARIS consistently outperforms the baselines. Ablation studies show that static and dynamic memory retrieval contributes to the performance gain and their combination provides the strongest results with moderate retrieval budgets sufficient to provide most of the gain, and that the entire pipeline adds only ~5\\% time overhead through asynchronous execution. These results show that persistent evaluation memory can transform rubric-based reward shaping from a stateless, per-step heuristic into an evidence-driven loop for RL training.",
+      "abstract": "Rubric-based reward shaping is an effective method for fine-tuning LLMs via RL, where structured rubrics decompose standard outcome rewards into multiple dimensions to provide richer reward signals. Recent works make the rubrics adaptive based on local signals such as the rollouts from the current step or pairwise comparisons. However, these methods discard the diagnostics produced during evaluation after immediate use and prevent the long-term accumulation and strategic reuse of evaluation knowledge. This forces the system to re-derive evaluation principles from scratch, limits its ability to detect recurring suboptimal behaviors, and forfeits the curriculum-like progression that a persistent training history would naturally support. To address these limitations, we introduce AMARIS, which grounds rubric modifications in long-term training history. At each training step, AMARIS analyzes individual rollouts, aggregates findings into step-level summaries, retrieves relevant historical context from a persistent evaluation memory through both static (recent steps) and dynamic (semantically matched) retrieval, and updates rubrics based on these accumulated analyses. This procedure runs asynchronously alongside the normal RL loop with minimal overhead. Experiments across both closed and open-ended domains show that AMARIS consistently outperforms the baselines. Ablation studies show that static and dynamic memory retrieval contributes to the performance gain and their combination provides the strongest results with moderate retrieval budgets sufficient to provide most of the gain, and that the entire pipeline adds only ~5\\% time overhead through asynchronous execution. These results show that persistent evaluation memory can transform rubric-based reward shaping from a stateless, per-step heuristic into an evidence-driven loop for RL training.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18592",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "总分88。方法直接改进基于规则的强化学习训练，引入持久记忆提升评估智能，具工程实用性，异步执行开销低，代表RL训练数据高效利用趋势。",
+        "one_sentence_summary": "AMARIS系统通过在强化学习训练中引入持久评估记忆，利用静态和动态检索历史诊断信息来更新评分标准，从而提升LLM在封闭和开放式任务上的性能，仅额外增加5%的时间开销。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 88,
+      "score_reason": "总分88。方法直接改进基于规则的强化学习训练，引入持久记忆提升评估智能，具工程实用性，异步执行开销低，代表RL训练数据高效利用趋势。",
+      "one_sentence_summary": "AMARIS系统通过在强化学习训练中引入持久评估记忆，利用静态和动态检索历史诊断信息来更新评分标准，从而提升LLM在封闭和开放式任务上的性能，仅额外增加5%的时间开销。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18583",
+      "arxiv_id": "2605.18583",
+      "title": "Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks",
+      "url": "https://arxiv.org/abs/2605.18583",
+      "published_at": "2026-05-18T16:00:41Z",
+      "publish_date": "2026-05-18",
+      "description": "Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario's discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen's kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p <= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.",
+      "summary": "Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario's discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen's kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p <= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.",
+      "abstract": "Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario's discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen's kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p <= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18583",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "论文构建了系统的越权动作基准，通过同意声明剥离和双通道审计揭示编码智能体的安全漏洞，框架约束比模型对齐更有效，方法可复用且现实指导性强。",
+        "one_sentence_summary": "本研究构建OverEager-Gen基准，通过双通道审计和同意声明剥离方法评测Claude Code等四款编码智能体，发现宽松权限框架下越权动作率高达27.7%，而框架约束比模型对齐更能降低风险。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 24
+      },
+      "score_total": 94,
+      "score_reason": "论文构建了系统的越权动作基准，通过同意声明剥离和双通道审计揭示编码智能体的安全漏洞，框架约束比模型对齐更有效，方法可复用且现实指导性强。",
+      "one_sentence_summary": "本研究构建OverEager-Gen基准，通过双通道审计和同意声明剥离方法评测Claude Code等四款编码智能体，发现宽松权限框架下越权动作率高达27.7%，而框架约束比模型对齐更能降低风险。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18572",
+      "arxiv_id": "2605.18572",
+      "title": "MA$^{2}$P: A Meta-Cognitive Autonomous Intelligent Agents Framework for Complex Persuasion",
+      "url": "https://arxiv.org/abs/2605.18572",
+      "published_at": "2026-05-18T15:53:12Z",
+      "publish_date": "2026-05-18",
+      "description": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "summary": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "abstract": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18572",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 16,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "MA²P通过多智能体架构与元认知配置器提升复杂说服对话的成功率，在特定任务上表现优于基线，但说服场景相对垂直，框架实现细节与复用性不够明确，实用性中等。",
+        "one_sentence_summary": "提出MA²P元认知自主智能体框架，协调多智能体进行感知、心理状态推断和策略执行，并通过元认知配置器从知识库选择元策略，在复杂说服对话实验中取得更高成功率。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 16,
+        "timeliness_rarity": 19
+      },
+      "score_total": 73,
+      "score_reason": "MA²P通过多智能体架构与元认知配置器提升复杂说服对话的成功率，在特定任务上表现优于基线，但说服场景相对垂直，框架实现细节与复用性不够明确，实用性中等。",
+      "one_sentence_summary": "提出MA²P元认知自主智能体框架，协调多智能体进行感知、心理状态推断和策略执行，并通过元认知配置器从知识库选择元策略，在复杂说服对话实验中取得更高成功率。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.18565",
+      "arxiv_id": "2605.18565",
+      "title": "LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems",
+      "url": "https://arxiv.org/abs/2605.18565",
+      "published_at": "2026-05-18T15:43:35Z",
+      "publish_date": "2026-05-18",
+      "description": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of information. However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories. In this paper, we study how current memory-augmented agents perform in realistic, interference-heavy, long-horizon settings across diverse domains and question types. We introduce LongMINT (Long-Horizon Memory under INTerference), a benchmark featuring (1) long, highly interconnected contexts with frequently updated information that induces substantial interference, (2) diverse domains (state tracking, multi-turn dialogue, Wikipedia revisions, and GitHub commits), enabling evaluation of domain generalization, and (3) diverse question types that assess robustness to interference, including (i) single-target recall tasks requiring retrieval of a specific target from long contexts, and (ii) multi-target aggregation tasks requiring reasoning over multiple relevant pieces of information. Overall, LongMINT has 15.6k question-answering pairs over long-horizon contexts averaging 138.8k tokens and extending up to 1.8M tokens per instance. We evaluate 7 representative systems, including vanilla long-context LLMs, RAG, and memory-augmented agent frameworks. Across all systems, we observe consistently low performance (avg. 27.9% accuracy), especially on questions requiring aggregated reasoning over multiple pieces of evidence. Our analysis shows that performance is primarily limited by retrieval and memory construction. Furthermore, current memory systems struggle to recall and reason over earlier facts that are later revised or interfered with by subsequent context, with performance degrading as the number of intervening updates increases.",
+      "summary": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of information. However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories. In this paper, we study how current memory-augmented agents perform in realistic, interference-heavy, long-horizon settings across diverse domains and question types. We introduce LongMINT (Long-Horizon Memory under INTerference), a benchmark featuring (1) long, highly interconnected contexts with frequently updated information that induces substantial interference, (2) diverse domains (state tracking, multi-turn dialogue, Wikipedia revisions, and GitHub commits), enabling evaluation of domain generalization, and (3) diverse question types that assess robustness to interference, including (i) single-target recall tasks requiring retrieval of a specific target from long contexts, and (ii) multi-target aggregation tasks requiring reasoning over multiple relevant pieces of information. Overall, LongMINT has 15.6k question-answering pairs over long-horizon contexts averaging 138.8k tokens and extending up to 1.8M tokens per instance. We evaluate 7 representative systems, including vanilla long-context LLMs, RAG, and memory-augmented agent frameworks. Across all systems, we observe consistently low performance (avg. 27.9% accuracy), especially on questions requiring aggregated reasoning over multiple pieces of evidence. Our analysis shows that performance is primarily limited by retrieval and memory construction. Furthermore, current memory systems struggle to recall and reason over earlier facts that are later revised or interfered with by subsequent context, with performance degrading as the number of intervening updates increases.",
+      "abstract": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of information. However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories. In this paper, we study how current memory-augmented agents perform in realistic, interference-heavy, long-horizon settings across diverse domains and question types. We introduce LongMINT (Long-Horizon Memory under INTerference), a benchmark featuring (1) long, highly interconnected contexts with frequently updated information that induces substantial interference, (2) diverse domains (state tracking, multi-turn dialogue, Wikipedia revisions, and GitHub commits), enabling evaluation of domain generalization, and (3) diverse question types that assess robustness to interference, including (i) single-target recall tasks requiring retrieval of a specific target from long contexts, and (ii) multi-target aggregation tasks requiring reasoning over multiple relevant pieces of information. Overall, LongMINT has 15.6k question-answering pairs over long-horizon contexts averaging 138.8k tokens and extending up to 1.8M tokens per instance. We evaluate 7 representative systems, including vanilla long-context LLMs, RAG, and memory-augmented agent frameworks. Across all systems, we observe consistently low performance (avg. 27.9% accuracy), especially on questions requiring aggregated reasoning over multiple pieces of evidence. Our analysis shows that performance is primarily limited by retrieval and memory construction. Furthermore, current memory systems struggle to recall and reason over earlier facts that are later revised or interfered with by subsequent context, with performance degrading as the number of intervening updates increases.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18565",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "LongMINT提供首个长时记忆干扰的大规模基准，揭示多证据聚合和检索瓶颈，为记忆增强智能体的工程改进提供了明确方向，评测结果低分突出现有系统缺陷。",
+        "one_sentence_summary": "LongMINT构建包含1.56万问答对的长时记忆干扰基准，评测七种记忆增强型智能体，在平均13.8万token上下文中准确率仅27.9%，揭示多证据聚合推理和早期事实召回为关键瓶颈。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 83,
+      "score_reason": "LongMINT提供首个长时记忆干扰的大规模基准，揭示多证据聚合和检索瓶颈，为记忆增强智能体的工程改进提供了明确方向，评测结果低分突出现有系统缺陷。",
+      "one_sentence_summary": "LongMINT构建包含1.56万问答对的长时记忆干扰基准，评测七种记忆增强型智能体，在平均13.8万token上下文中准确率仅27.9%，揭示多证据聚合推理和早期事实召回为关键瓶颈。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18562",
+      "arxiv_id": "2605.18562",
+      "title": "Estimating Item Difficulty with Large Language Models as Experts",
+      "url": "https://arxiv.org/abs/2605.18562",
+      "published_at": "2026-05-18T15:42:13Z",
+      "publish_date": "2026-05-18",
+      "description": "Accurate estimates of item difficulty are essential for valid assessment and effective adaptive learning. However, for newly created tasks, response data are typically unavailable. Pretesting and expert judgement can be costly and slow, while machine learning methods often require large labelled training datasets. Recent work suggests that large language models (LLMs) may help. However, there is limited evidence on the elicitation procedures and prompt configurations used to emulate experts for difficulty estimation. This study addresses this gap by evaluating three off-the-shelf LLMs as difficulty raters for newly created items without access to response data. Using an item bank from an online learning system, the study examined 6 domains of primary-school mathematics, with empirical difficulty estimates treated as empirical reference. The study used a full factorial design crossing three factors: judgement format (absolute vs pairwise), decision type (hard decisions vs token-probability-based estimates), and prompting strategy (zero-shot vs few-shot). LLM-derived difficulty estimates were compared with empirical difficulties using Spearman rank correlations. Across domains, LLM-based estimates exhibited moderate to strong positive correlations with empirical item difficulties. For simpler arithmetic tasks, some configurations approached the upper end of the accuracy range reported for human experts in previous research. Pairwise comparison consistently outperformed absolute judgement in the absence of additional refinements. However, when token-level probabilities were incorporated and examples of items with known empirical difficulty were provided, the absolute judgement configuration likewise demonstrated moderate-to-high alignment. The study positions LLMs as a promising tool for initial item calibration and offers insights into effective workflow configuration.",
+      "summary": "Accurate estimates of item difficulty are essential for valid assessment and effective adaptive learning. However, for newly created tasks, response data are typically unavailable. Pretesting and expert judgement can be costly and slow, while machine learning methods often require large labelled training datasets. Recent work suggests that large language models (LLMs) may help. However, there is limited evidence on the elicitation procedures and prompt configurations used to emulate experts for difficulty estimation. This study addresses this gap by evaluating three off-the-shelf LLMs as difficulty raters for newly created items without access to response data. Using an item bank from an online learning system, the study examined 6 domains of primary-school mathematics, with empirical difficulty estimates treated as empirical reference. The study used a full factorial design crossing three factors: judgement format (absolute vs pairwise), decision type (hard decisions vs token-probability-based estimates), and prompting strategy (zero-shot vs few-shot). LLM-derived difficulty estimates were compared with empirical difficulties using Spearman rank correlations. Across domains, LLM-based estimates exhibited moderate to strong positive correlations with empirical item difficulties. For simpler arithmetic tasks, some configurations approached the upper end of the accuracy range reported for human experts in previous research. Pairwise comparison consistently outperformed absolute judgement in the absence of additional refinements. However, when token-level probabilities were incorporated and examples of items with known empirical difficulty were provided, the absolute judgement configuration likewise demonstrated moderate-to-high alignment. The study positions LLMs as a promising tool for initial item calibration and offers insights into effective workflow configuration.",
+      "abstract": "Accurate estimates of item difficulty are essential for valid assessment and effective adaptive learning. However, for newly created tasks, response data are typically unavailable. Pretesting and expert judgement can be costly and slow, while machine learning methods often require large labelled training datasets. Recent work suggests that large language models (LLMs) may help. However, there is limited evidence on the elicitation procedures and prompt configurations used to emulate experts for difficulty estimation. This study addresses this gap by evaluating three off-the-shelf LLMs as difficulty raters for newly created items without access to response data. Using an item bank from an online learning system, the study examined 6 domains of primary-school mathematics, with empirical difficulty estimates treated as empirical reference. The study used a full factorial design crossing three factors: judgement format (absolute vs pairwise), decision type (hard decisions vs token-probability-based estimates), and prompting strategy (zero-shot vs few-shot). LLM-derived difficulty estimates were compared with empirical difficulties using Spearman rank correlations. Across domains, LLM-based estimates exhibited moderate to strong positive correlations with empirical item difficulties. For simpler arithmetic tasks, some configurations approached the upper end of the accuracy range reported for human experts in previous research. Pairwise comparison consistently outperformed absolute judgement in the absence of additional refinements. However, when token-level probabilities were incorporated and examples of items with known empirical difficulty were provided, the absolute judgement configuration likewise demonstrated moderate-to-high alignment. The study positions LLMs as a promising tool for initial item calibration and offers insights into effective workflow configuration.",
+      "categories": [
+        "stat.ME",
+        "cs.AI",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "api_categories": [
+        "stat.ME",
+        "cs.AI",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18562",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "总分85。将大语言模型作为试题难度专家，探索多种提示策略，方法简单易集成，可落地于自适应学习产品，展现LLM在评估领域的实用潜力。",
+        "one_sentence_summary": "该研究将大型语言模型用作试题难度评估专家，通过全因子实验比较绝对判断与成对比较、硬决策与概率估计及零样本与少样本提示，发现成对比较普遍性能更优，且结合概率和示例可提升绝对判断的准确性，验证了LLM作为初始校准工具的可行性。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 19
+      },
+      "score_total": 85,
+      "score_reason": "总分85。将大语言模型作为试题难度专家，探索多种提示策略，方法简单易集成，可落地于自适应学习产品，展现LLM在评估领域的实用潜力。",
+      "one_sentence_summary": "该研究将大型语言模型用作试题难度评估专家，通过全因子实验比较绝对判断与成对比较、硬决策与概率估计及零样本与少样本提示，发现成对比较普遍性能更优，且结合概率和示例可提升绝对判断的准确性，验证了LLM作为初始校准工具的可行性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18561",
+      "arxiv_id": "2605.18561",
+      "title": "Improving BM25 Code Retrieval Under Fixed Generic Tokenization: Adaptive q-Log Odds as a Drop-In BM25 Fix",
+      "url": "https://arxiv.org/abs/2605.18561",
+      "published_at": "2026-05-18T15:41:01Z",
+      "publish_date": "2026-05-18",
+      "description": "In retrieval-augmented coding, failures often begin when the relevant file is absent from the retrieved context. Under frozen generic tokenization, where a BM25 index has been built by a search system whose analyzer the practitioner does not control, this failure is routine: BM25's logarithmic RSJ-odds IDF under-separates the identifier tail that distinguishes one function from another. We replace the outer logarithm of the Robertson-Spärck-Jones odds with a q-logarithm. At q=1 the transform recovers BM25 exactly by L'Hôpital's rule, and for q<1 it is a Box-Cox transform of the RSJ odds with lambda = 1-q. On CoIR CodeSearchNet Go (182K documents), oracle-tuned NDCG@10 rises from 0.2575 to 0.4874 (absolute +0.2299; +89.3% relative; zero sign reversals in 10,000 paired-bootstrap resamples, reported as p <= 10^-4). The effect is graded across code languages and is near-zero on BEIR text. A one-parameter closed form estimates a corpus-level q from hapax density and stays near q=1 on corpora where BM25 is already optimal. The index-time cost is a single pass over the sparse score matrix and query latency is unchanged. A tokenizer ablation shows that identifier-aware tokenization largely removes the incremental gain from q-IDF.",
+      "summary": "In retrieval-augmented coding, failures often begin when the relevant file is absent from the retrieved context. Under frozen generic tokenization, where a BM25 index has been built by a search system whose analyzer the practitioner does not control, this failure is routine: BM25's logarithmic RSJ-odds IDF under-separates the identifier tail that distinguishes one function from another. We replace the outer logarithm of the Robertson-Spärck-Jones odds with a q-logarithm. At q=1 the transform recovers BM25 exactly by L'Hôpital's rule, and for q<1 it is a Box-Cox transform of the RSJ odds with lambda = 1-q. On CoIR CodeSearchNet Go (182K documents), oracle-tuned NDCG@10 rises from 0.2575 to 0.4874 (absolute +0.2299; +89.3% relative; zero sign reversals in 10,000 paired-bootstrap resamples, reported as p <= 10^-4). The effect is graded across code languages and is near-zero on BEIR text. A one-parameter closed form estimates a corpus-level q from hapax density and stays near q=1 on corpora where BM25 is already optimal. The index-time cost is a single pass over the sparse score matrix and query latency is unchanged. A tokenizer ablation shows that identifier-aware tokenization largely removes the incremental gain from q-IDF.",
+      "abstract": "In retrieval-augmented coding, failures often begin when the relevant file is absent from the retrieved context. Under frozen generic tokenization, where a BM25 index has been built by a search system whose analyzer the practitioner does not control, this failure is routine: BM25's logarithmic RSJ-odds IDF under-separates the identifier tail that distinguishes one function from another. We replace the outer logarithm of the Robertson-Spärck-Jones odds with a q-logarithm. At q=1 the transform recovers BM25 exactly by L'Hôpital's rule, and for q<1 it is a Box-Cox transform of the RSJ odds with lambda = 1-q. On CoIR CodeSearchNet Go (182K documents), oracle-tuned NDCG@10 rises from 0.2575 to 0.4874 (absolute +0.2299; +89.3% relative; zero sign reversals in 10,000 paired-bootstrap resamples, reported as p <= 10^-4). The effect is graded across code languages and is near-zero on BEIR text. A one-parameter closed form estimates a corpus-level q from hapax density and stays near q=1 on corpora where BM25 is already optimal. The index-time cost is a single pass over the sparse score matrix and query latency is unchanged. A tokenizer ablation shows that identifier-aware tokenization largely removes the incremental gain from q-IDF.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18561",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "总分91。针对代码检索中固定分词器下BM25标识符区分不足的问题，提出q-对数替换即插即用方案，大幅提升检索性能且不增加查询延迟，直接可复用于检索增强开发工具。",
+        "one_sentence_summary": "针对固定通用分词下BM25代码检索中标识符区分不足的问题，该文提出用q-对数替换RSJ权重的外部对数，在CoIR CodeSearchNet Go数据集上将NDCG@10绝对提升0.2299，且查询延迟不变，是一种即插即用的改进方法。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 91,
+      "score_reason": "总分91。针对代码检索中固定分词器下BM25标识符区分不足的问题，提出q-对数替换即插即用方案，大幅提升检索性能且不增加查询延迟，直接可复用于检索增强开发工具。",
+      "one_sentence_summary": "针对固定通用分词下BM25代码检索中标识符区分不足的问题，该文提出用q-对数替换RSJ权重的外部对数，在CoIR CodeSearchNet Go数据集上将NDCG@10绝对提升0.2299，且查询延迟不变，是一种即插即用的改进方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18549",
+      "arxiv_id": "2605.18549",
+      "title": "Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics",
+      "url": "https://arxiv.org/abs/2605.18549",
+      "published_at": "2026-05-18T15:29:04Z",
+      "publish_date": "2026-05-18",
+      "description": "Large Reasoning Models (LRMs) introduce new opportunities for safety monitoring through their Chain of Thought (CoT) reasoning. However, CoT is not always faithful to the model's final output, undermining its reliability as a monitoring tool. To address this, we investigate the hidden representations of LRMs to determine whether future behavior can be predicted from prompt and CoT representations. By evaluating a probe at each generated token, we construct a probe trajectory, the continuous evolution of a concept's probability across the reasoning process. We find that future model behavior is more distinguishable when examined over the full trajectory than from a single static prediction. To characterize these temporal dynamics, we extract signal-processing features that capture volatility, trend, and steady-state behavior, significantly improving the separation of future model states. We also present two methodological insights. First, template-based training data achieves near-parity with dynamically generated model responses, eliminating the need for a costly initial inference and labeling. Second, the choice of pooling operation is critical: average-pooling and last-token methods collapse to near-random performance, while max-pooling achieves up to 95% AUROC and yields stable probe trajectories. Using four datasets and four reasoning models across the domains of safety and mathematics, we demonstrate that trajectory features encode task-specific dynamics that improve outcome separability. These findings establish probe trajectories as a complementary framework for monitoring LRM behavior. Warning: This article contains potentially harmful content.",
+      "summary": "Large Reasoning Models (LRMs) introduce new opportunities for safety monitoring through their Chain of Thought (CoT) reasoning. However, CoT is not always faithful to the model's final output, undermining its reliability as a monitoring tool. To address this, we investigate the hidden representations of LRMs to determine whether future behavior can be predicted from prompt and CoT representations. By evaluating a probe at each generated token, we construct a probe trajectory, the continuous evolution of a concept's probability across the reasoning process. We find that future model behavior is more distinguishable when examined over the full trajectory than from a single static prediction. To characterize these temporal dynamics, we extract signal-processing features that capture volatility, trend, and steady-state behavior, significantly improving the separation of future model states. We also present two methodological insights. First, template-based training data achieves near-parity with dynamically generated model responses, eliminating the need for a costly initial inference and labeling. Second, the choice of pooling operation is critical: average-pooling and last-token methods collapse to near-random performance, while max-pooling achieves up to 95% AUROC and yields stable probe trajectories. Using four datasets and four reasoning models across the domains of safety and mathematics, we demonstrate that trajectory features encode task-specific dynamics that improve outcome separability. These findings establish probe trajectories as a complementary framework for monitoring LRM behavior. Warning: This article contains potentially harmful content.",
+      "abstract": "Large Reasoning Models (LRMs) introduce new opportunities for safety monitoring through their Chain of Thought (CoT) reasoning. However, CoT is not always faithful to the model's final output, undermining its reliability as a monitoring tool. To address this, we investigate the hidden representations of LRMs to determine whether future behavior can be predicted from prompt and CoT representations. By evaluating a probe at each generated token, we construct a probe trajectory, the continuous evolution of a concept's probability across the reasoning process. We find that future model behavior is more distinguishable when examined over the full trajectory than from a single static prediction. To characterize these temporal dynamics, we extract signal-processing features that capture volatility, trend, and steady-state behavior, significantly improving the separation of future model states. We also present two methodological insights. First, template-based training data achieves near-parity with dynamically generated model responses, eliminating the need for a costly initial inference and labeling. Second, the choice of pooling operation is critical: average-pooling and last-token methods collapse to near-random performance, while max-pooling achieves up to 95% AUROC and yields stable probe trajectories. Using four datasets and four reasoning models across the domains of safety and mathematics, we demonstrate that trajectory features encode task-specific dynamics that improve outcome separability. These findings establish probe trajectories as a complementary framework for monitoring LRM behavior. Warning: This article contains potentially harmful content.",
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 15,
+        "engineering_utility": 14,
+        "timeliness_rarity": 14
+      },
+      "score_total": 63,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文整理一个新的数据集或任务集合，面向检索增强生成或复杂信息检索任务；重点说明数据构造、样本筛选和任务定义方式；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.18548",
+      "arxiv_id": "2605.18548",
+      "title": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+      "url": "https://arxiv.org/abs/2605.18548",
+      "published_at": "2026-05-18T15:27:52Z",
+      "publish_date": "2026-05-18",
+      "description": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.",
+      "summary": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.",
+      "abstract": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18548",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "STT-Arena引入时空动态触发器测试工具使用智能体的自适应重规划能力，发现前沿模型失败模式并训练出高效小模型，基准和训练方法均具强工程复用价值。",
+        "one_sentence_summary": "STT-Arena提出包含227个时空动态任务的工具使用基准，揭示前沿大模型在自适应重规划上准确率不足40%，并通过轨迹优化与在线强化学习训练出优于大模型的4B小模型。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "STT-Arena引入时空动态触发器测试工具使用智能体的自适应重规划能力，发现前沿模型失败模式并训练出高效小模型，基准和训练方法均具强工程复用价值。",
+      "one_sentence_summary": "STT-Arena提出包含227个时空动态任务的工具使用基准，揭示前沿大模型在自适应重规划上准确率不足40%，并通过轨迹优化与在线强化学习训练出优于大模型的4B小模型。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-19T05:42:43.444174+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-19"
     }
   ]
 }
