@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-19T05:42:43.444174+00:00",
+  "updated_at": "2026-05-20T05:47:05.012489+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -6851,11 +6851,11 @@
       "score_reason": "直接针对LLM智能体合规，提供实用的审计、监控和干预技术，与AI产品安全治理高度相关；将线性时序逻辑引入LLM监控属于新任务形式，小型模型标注器超越前沿LLM法官的结果有信号意义；采样和干预监控方案可工程化集成；AI安全治理是近期趋势，形式化方法在此的应用相对少见。",
       "one_sentence_summary": "论文提出结合线性时序逻辑与LLM，对AI系统进行离线和在线审计监控，通过采样和干预监控降低智能体违规率，实验表明小型模型标注器可媲美前沿LLM，并为行为约束合规提供了实用工具。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-18T05:49:25.247650+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
       "source_run_id": "2026-05-18",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-20"
     },
     {
       "id": "arxiv:2605.16233",
@@ -7755,6 +7755,579 @@
       "pushed_at": "2026-05-19T05:42:43.444174+00:00",
       "source_run_id": "2026-05-19",
       "pushed_run_id": "2026-05-19"
+    },
+    {
+      "id": "arxiv:2605.18818",
+      "arxiv_id": "2605.18818",
+      "title": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
+      "url": "https://arxiv.org/abs/2605.18818",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as well as our experience running this pipeline on thousands of multi-page documents per hour. We describe our primary design decisions, including a hybrid classification, separation of GPU-bound inference from CPU-bound orchestration, use of asynchronous processing for the many IO-bound operations in the pipeline, and an independent, horizontal scaling strategy. Using batch profiling, we identified two surprising qualitative findings that shape production deployments: OCR, not language-model parsing, dominates end-to-end latency, and the system saturates at a concurrency determined by shared GPU-inference capacity rather than worker count. Our goal is to provide practitioners with concrete architectural patterns for building document understanding systems that work beyond the benchmark; effectively operationalizing models in production.",
+      "summary": "Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as well as our experience running this pipeline on thousands of multi-page documents per hour. We describe our primary design decisions, including a hybrid classification, separation of GPU-bound inference from CPU-bound orchestration, use of asynchronous processing for the many IO-bound operations in the pipeline, and an independent, horizontal scaling strategy. Using batch profiling, we identified two surprising qualitative findings that shape production deployments: OCR, not language-model parsing, dominates end-to-end latency, and the system saturates at a concurrency determined by shared GPU-inference capacity rather than worker count. Our goal is to provide practitioners with concrete architectural patterns for building document understanding systems that work beyond the benchmark; effectively operationalizing models in production.",
+      "abstract": "Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as well as our experience running this pipeline on thousands of multi-page documents per hour. We describe our primary design decisions, including a hybrid classification, separation of GPU-bound inference from CPU-bound orchestration, use of asynchronous processing for the many IO-bound operations in the pipeline, and an independent, horizontal scaling strategy. Using batch profiling, we identified two surprising qualitative findings that shape production deployments: OCR, not language-model parsing, dominates end-to-end latency, and the system saturates at a concurrency determined by shared GPU-inference capacity rather than worker count. Our goal is to provide practitioners with concrete architectural patterns for building document understanding systems that work beyond the benchmark; effectively operationalizing models in production.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.18818",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 20,
+          "engineering_utility": 25,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提供生产级文档AI微服务架构的完整工程实践与性能剖析，直接指导实际系统搭建，工程复用价值极高，但架构模式本身并非全新，新信号主要体现在非直觉的延迟与饱和发现。",
+        "one_sentence_summary": "该文介绍了文档AI生产级微服务架构，集成分类、OCR与LLM管道，采用混合分类、GPU与CPU分离、异步IO和水平扩展，通过分析发现OCR延迟占主导且系统瓶颈在共享GPU推理容量，为构建实用文档理解系统提供了具体工程模式。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 20,
+        "engineering_utility": 25,
+        "timeliness_rarity": 20
+      },
+      "score_total": 90,
+      "score_reason": "提供生产级文档AI微服务架构的完整工程实践与性能剖析，直接指导实际系统搭建，工程复用价值极高，但架构模式本身并非全新，新信号主要体现在非直觉的延迟与饱和发现。",
+      "one_sentence_summary": "该文介绍了文档AI生产级微服务架构，集成分类、OCR与LLM管道，采用混合分类、GPU与CPU分离、异步IO和水平扩展，通过分析发现OCR延迟占主导且系统瓶颈在共享GPU推理容量，为构建实用文档理解系统提供了具体工程模式。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19093",
+      "arxiv_id": "2605.19093",
+      "title": "Embedding by Elicitation: Dynamic Representations for Bayesian Optimization of System Prompts",
+      "url": "https://arxiv.org/abs/2605.19093",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "System prompts are a central control mechanism in modern AI systems, shaping behavior across conversations, tasks, and user populations. Yet they are difficult to tune when feedback is available only as aggregate metrics rather than per-example labels, failures, or critiques. We study this aggregate feedback setting as sample-constrained black-box optimization over discrete, variable-length text. We introduce ReElicit, a Bayesian optimization framework based on \\emph{embedding by elicitation}. Given a task description, previously evaluated prompts, and scalar scores, an LLM elicits a compact, interpretable feature space and maps prompts into it. Leveraging a probabilistic Gaussian process surrogate, an acquisition function then selects target feature vectors, which the LLM realizes and refines into deployable system prompts. Re-eliciting the feature space as new evaluations arrive lets the representation adapt to the observed prompt-score history. We evaluate the setting using offline benchmark accuracy as a controlled aggregate proxy: the optimizer observes one scalar score per prompt and no per-example labels, errors, or critiques. Across ten system prompt optimization tasks with a 30 total evaluation budget, ReElicit achieves the strongest aggregate performance profile among representative aggregate-only prompt-optimization baselines. These results suggest that LLMs can serve as adaptive semantic representation builders, not only prompt generators, for Bayesian optimization over natural-language artifacts.",
+      "summary": "System prompts are a central control mechanism in modern AI systems, shaping behavior across conversations, tasks, and user populations. Yet they are difficult to tune when feedback is available only as aggregate metrics rather than per-example labels, failures, or critiques. We study this aggregate feedback setting as sample-constrained black-box optimization over discrete, variable-length text. We introduce ReElicit, a Bayesian optimization framework based on \\emph{embedding by elicitation}. Given a task description, previously evaluated prompts, and scalar scores, an LLM elicits a compact, interpretable feature space and maps prompts into it. Leveraging a probabilistic Gaussian process surrogate, an acquisition function then selects target feature vectors, which the LLM realizes and refines into deployable system prompts. Re-eliciting the feature space as new evaluations arrive lets the representation adapt to the observed prompt-score history. We evaluate the setting using offline benchmark accuracy as a controlled aggregate proxy: the optimizer observes one scalar score per prompt and no per-example labels, errors, or critiques. Across ten system prompt optimization tasks with a 30 total evaluation budget, ReElicit achieves the strongest aggregate performance profile among representative aggregate-only prompt-optimization baselines. These results suggest that LLMs can serve as adaptive semantic representation builders, not only prompt generators, for Bayesian optimization over natural-language artifacts.",
+      "abstract": "System prompts are a central control mechanism in modern AI systems, shaping behavior across conversations, tasks, and user populations. Yet they are difficult to tune when feedback is available only as aggregate metrics rather than per-example labels, failures, or critiques. We study this aggregate feedback setting as sample-constrained black-box optimization over discrete, variable-length text. We introduce ReElicit, a Bayesian optimization framework based on \\emph{embedding by elicitation}. Given a task description, previously evaluated prompts, and scalar scores, an LLM elicits a compact, interpretable feature space and maps prompts into it. Leveraging a probabilistic Gaussian process surrogate, an acquisition function then selects target feature vectors, which the LLM realizes and refines into deployable system prompts. Re-eliciting the feature space as new evaluations arrive lets the representation adapt to the observed prompt-score history. We evaluate the setting using offline benchmark accuracy as a controlled aggregate proxy: the optimizer observes one scalar score per prompt and no per-example labels, errors, or critiques. Across ten system prompt optimization tasks with a 30 total evaluation budget, ReElicit achieves the strongest aggregate performance profile among representative aggregate-only prompt-optimization baselines. These results suggest that LLMs can serve as adaptive semantic representation builders, not only prompt generators, for Bayesian optimization over natural-language artifacts.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19093",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "提出一种利用LLM从聚合反馈中引出动态特征空间进行贝叶斯优化的系统提示调优方法，直接赋能提示工程与AI产品，方法新颖、可复现性强，切中当前热点方向。",
+        "one_sentence_summary": "该研究提出ReElicit框架，利用LLM从聚合标量反馈中引出动态特征空间，通过高斯过程与采集函数进行贝叶斯优化，迭代生成和调优系统提示，在10个任务上以30次评估预算取得最优性能，为无细粒度反馈的场景提供高效提示优化方案。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 92,
+      "score_reason": "提出一种利用LLM从聚合反馈中引出动态特征空间进行贝叶斯优化的系统提示调优方法，直接赋能提示工程与AI产品，方法新颖、可复现性强，切中当前热点方向。",
+      "one_sentence_summary": "该研究提出ReElicit框架，利用LLM从聚合标量反馈中引出动态特征空间，通过高斯过程与采集函数进行贝叶斯优化，迭代生成和调优系统提示，在10个任务上以30次评估预算取得最优性能，为无细粒度反馈的场景提供高效提示优化方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19099",
+      "arxiv_id": "2605.19099",
+      "title": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+      "url": "https://arxiv.org/abs/2605.19099",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| = 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.",
+      "summary": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| = 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.",
+      "abstract": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| = 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19099",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "针对长周期智能体工作流中的委托编排问题，对产品决策有启发；发现质量指标遗漏编排信号、路由保真度受渠道主导等新现象；释放基准基板、注释与运行档案，便于复用；多智能体委托是当前活跃方向。",
+        "one_sentence_summary": "DecisionBench 为长周期智能体工作流中的涌现式委托提供基准，固定任务套件、11 模型池和委托接口，在 23375 个实例上多条件扫描，揭示仅质量评估会遗漏编排信号，路由保真度在 7.5%-29.5% 且传递渠道主导表现，完美委托上限高出实测 15-31 个百分点，指出编排方法存在巨大提升空间并开放全套资源。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "针对长周期智能体工作流中的委托编排问题，对产品决策有启发；发现质量指标遗漏编排信号、路由保真度受渠道主导等新现象；释放基准基板、注释与运行档案，便于复用；多智能体委托是当前活跃方向。",
+      "one_sentence_summary": "DecisionBench 为长周期智能体工作流中的涌现式委托提供基准，固定任务套件、11 模型池和委托接口，在 23375 个实例上多条件扫描，揭示仅质量评估会遗漏编排信号，路由保真度在 7.5%-29.5% 且传递渠道主导表现，完美委托上限高出实测 15-31 个百分点，指出编排方法存在巨大提升空间并开放全套资源。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19156",
+      "arxiv_id": "2605.19156",
+      "title": "How Far Are We From True Auto-Research?",
+      "url": "https://arxiv.org/abs/2605.19156",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Recent auto-research systems can produce complete papers, but feasibility is not the same as quality, and the field still lacks a systematic study of how good agent-generated papers actually are. We introduce ResearchArena, a minimal scaffold that lets off-the-shelf agents (Claude Code using Opus 4.6, Codex using GPT-5.4, and Kimi Code using K2.5) carry out the full research loop themselves (ideation, experimentation, paper writing, self-refinement) under only lightweight guidance. Across 13 computer science seeds and 3 trials per agent-domain pair, ResearchArena yields 117 agent-generated papers, each evaluated under three complementary lenses: a manuscript-only reviewer (SAR), an artifact-aware peer review (PR) in which agents inspect the workspace alongside the manuscript, and an human conducted meta-review. Under SAR alone the picture is optimistic: Claude Code obtains the highest score, outperforms Analemma's FARS, and matches the weighted-average human ICLR 2025 submission, suggesting that minimally scaffolded agents can produce papers that look competitive on manuscript-only review. Manual inspection, however, reveals this picture is overstated: SAR scores are poorly aligned with its actual acceptance decisions and reward plausible framing without verifying experimental substance. Under artifact-aware PR scores drop sharply, and manual auditing identifies experimental rigor as the major bottleneck, decomposing into three failure modes (fabricated results, underpowered experiments, and plan/execution mismatch) that are highly agent-dependent: Codex 5%/8% paper-vs-artifact mismatch / fabricated references versus Kimi Code 77%/72%, a $\\sim$15$\\times$ spread that tracks distinct research personas the agents develop. None of the 117 agent-generated papers reaches the acceptance bar of a top-tier venue. This suggests that we are still gapped from the true auto-research.",
+      "summary": "Recent auto-research systems can produce complete papers, but feasibility is not the same as quality, and the field still lacks a systematic study of how good agent-generated papers actually are. We introduce ResearchArena, a minimal scaffold that lets off-the-shelf agents (Claude Code using Opus 4.6, Codex using GPT-5.4, and Kimi Code using K2.5) carry out the full research loop themselves (ideation, experimentation, paper writing, self-refinement) under only lightweight guidance. Across 13 computer science seeds and 3 trials per agent-domain pair, ResearchArena yields 117 agent-generated papers, each evaluated under three complementary lenses: a manuscript-only reviewer (SAR), an artifact-aware peer review (PR) in which agents inspect the workspace alongside the manuscript, and an human conducted meta-review. Under SAR alone the picture is optimistic: Claude Code obtains the highest score, outperforms Analemma's FARS, and matches the weighted-average human ICLR 2025 submission, suggesting that minimally scaffolded agents can produce papers that look competitive on manuscript-only review. Manual inspection, however, reveals this picture is overstated: SAR scores are poorly aligned with its actual acceptance decisions and reward plausible framing without verifying experimental substance. Under artifact-aware PR scores drop sharply, and manual auditing identifies experimental rigor as the major bottleneck, decomposing into three failure modes (fabricated results, underpowered experiments, and plan/execution mismatch) that are highly agent-dependent: Codex 5%/8% paper-vs-artifact mismatch / fabricated references versus Kimi Code 77%/72%, a $\\sim$15$\\times$ spread that tracks distinct research personas the agents develop. None of the 117 agent-generated papers reaches the acceptance bar of a top-tier venue. This suggests that we are still gapped from the true auto-research.",
+      "abstract": "Recent auto-research systems can produce complete papers, but feasibility is not the same as quality, and the field still lacks a systematic study of how good agent-generated papers actually are. We introduce ResearchArena, a minimal scaffold that lets off-the-shelf agents (Claude Code using Opus 4.6, Codex using GPT-5.4, and Kimi Code using K2.5) carry out the full research loop themselves (ideation, experimentation, paper writing, self-refinement) under only lightweight guidance. Across 13 computer science seeds and 3 trials per agent-domain pair, ResearchArena yields 117 agent-generated papers, each evaluated under three complementary lenses: a manuscript-only reviewer (SAR), an artifact-aware peer review (PR) in which agents inspect the workspace alongside the manuscript, and an human conducted meta-review. Under SAR alone the picture is optimistic: Claude Code obtains the highest score, outperforms Analemma's FARS, and matches the weighted-average human ICLR 2025 submission, suggesting that minimally scaffolded agents can produce papers that look competitive on manuscript-only review. Manual inspection, however, reveals this picture is overstated: SAR scores are poorly aligned with its actual acceptance decisions and reward plausible framing without verifying experimental substance. Under artifact-aware PR scores drop sharply, and manual auditing identifies experimental rigor as the major bottleneck, decomposing into three failure modes (fabricated results, underpowered experiments, and plan/execution mismatch) that are highly agent-dependent: Codex 5%/8% paper-vs-artifact mismatch / fabricated references versus Kimi Code 77%/72%, a $\\sim$15$\\times$ spread that tracks distinct research personas the agents develop. None of the 117 agent-generated papers reaches the acceptance bar of a top-tier venue. This suggests that we are still gapped from the true auto-research.",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19156",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "系统评估了三种AI代理在ResearchArena中的全自主科研能力，通过带制品审查揭示实验严谨性瓶颈与代理特定失效模式，对构建可靠的自研代理产品有直接警示与指导意义，发现新颖且具可复现性。",
+        "one_sentence_summary": "该研究通过ResearchArena让三种AI代理自主完成科研全流程并生成117篇论文，经带制品评审发现实验严谨性是主要瓶颈，存在结果捏造等严重问题，无一篇论文达到顶会接收标准，揭示了当前自动科研系统与真正自主研究间的显著差距。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "系统评估了三种AI代理在ResearchArena中的全自主科研能力，通过带制品审查揭示实验严谨性瓶颈与代理特定失效模式，对构建可靠的自研代理产品有直接警示与指导意义，发现新颖且具可复现性。",
+      "one_sentence_summary": "该研究通过ResearchArena让三种AI代理自主完成科研全流程并生成117篇论文，经带制品评审发现实验严谨性是主要瓶颈，存在结果捏造等严重问题，无一篇论文达到顶会接收标准，揭示了当前自动科研系统与真正自主研究间的显著差距。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19330",
+      "arxiv_id": "2605.19330",
+      "title": "MOCHA: Multi-Objective Chebyshev Annealing for Agent Skill Optimization",
+      "url": "https://arxiv.org/abs/2605.19330",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "LLM agents organize behavior through skills - structured natural-language specifications governing how an agent reasons, retrieves, and responds. Unlike monolithic prompts, skills are multi-field artifacts subject to hard platform constraints: description fields are truncated for routing, instruction bodies are compacted via progressive disclosure, and co-resident skills compete for limited context windows. These constraints make skill optimization inherently multi-objective: a skill must simultaneously maximize task performance and satisfy platform limits. Yet existing prompt optimizers either ignore these trade-offs or collapse them into a weighted sum, missing Pareto-optimal variants in non-convex objective regions. We introduce MOCHA (Multi-Objective Chebyshev Annealing), which replaces single-objective selection with Chebyshev scalarization - covering the full Pareto front, including non-convex regions - combined with exponential annealing that transitions from exploration to exploitation. In our experiments across six diverse agent skills - where all methods share the same multi-objective mutation operator and baselines receive identical per-objective textual feedback - existing optimizers fail to improve the seed skill on 4 of 6 tasks: 1000 rollouts yield zero progress. MOCHA breaks through on every task, achieving 7.5% relative improvement in mean correctness over the strongest baseline (up to 14.9% on FEVER and 10.4% on TheoremQA) while discovering twice as many more Pareto-optimal skill variants.",
+      "summary": "LLM agents organize behavior through skills - structured natural-language specifications governing how an agent reasons, retrieves, and responds. Unlike monolithic prompts, skills are multi-field artifacts subject to hard platform constraints: description fields are truncated for routing, instruction bodies are compacted via progressive disclosure, and co-resident skills compete for limited context windows. These constraints make skill optimization inherently multi-objective: a skill must simultaneously maximize task performance and satisfy platform limits. Yet existing prompt optimizers either ignore these trade-offs or collapse them into a weighted sum, missing Pareto-optimal variants in non-convex objective regions. We introduce MOCHA (Multi-Objective Chebyshev Annealing), which replaces single-objective selection with Chebyshev scalarization - covering the full Pareto front, including non-convex regions - combined with exponential annealing that transitions from exploration to exploitation. In our experiments across six diverse agent skills - where all methods share the same multi-objective mutation operator and baselines receive identical per-objective textual feedback - existing optimizers fail to improve the seed skill on 4 of 6 tasks: 1000 rollouts yield zero progress. MOCHA breaks through on every task, achieving 7.5% relative improvement in mean correctness over the strongest baseline (up to 14.9% on FEVER and 10.4% on TheoremQA) while discovering twice as many more Pareto-optimal skill variants.",
+      "abstract": "LLM agents organize behavior through skills - structured natural-language specifications governing how an agent reasons, retrieves, and responds. Unlike monolithic prompts, skills are multi-field artifacts subject to hard platform constraints: description fields are truncated for routing, instruction bodies are compacted via progressive disclosure, and co-resident skills compete for limited context windows. These constraints make skill optimization inherently multi-objective: a skill must simultaneously maximize task performance and satisfy platform limits. Yet existing prompt optimizers either ignore these trade-offs or collapse them into a weighted sum, missing Pareto-optimal variants in non-convex objective regions. We introduce MOCHA (Multi-Objective Chebyshev Annealing), which replaces single-objective selection with Chebyshev scalarization - covering the full Pareto front, including non-convex regions - combined with exponential annealing that transitions from exploration to exploitation. In our experiments across six diverse agent skills - where all methods share the same multi-objective mutation operator and baselines receive identical per-objective textual feedback - existing optimizers fail to improve the seed skill on 4 of 6 tasks: 1000 rollouts yield zero progress. MOCHA breaks through on every task, achieving 7.5% relative improvement in mean correctness over the strongest baseline (up to 14.9% on FEVER and 10.4% on TheoremQA) while discovering twice as many more Pareto-optimal skill variants.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19330",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文针对Agent技能的多目标优化问题，提出MOCHA算法，在六个任务上一致改进，发现更多帕累托最优解，对Agent工程有直接实用价值，方法新颖且可集成。",
+        "one_sentence_summary": "本文提出MOCHA，一种结合切比雪夫标量化和指数退火的Agent技能多目标优化方法，在六个不同技能任务上均突破现有优化器瓶颈，相对最佳基线平均正确率提升7.5%，并发现两倍以上的帕累托最优技能变体，有效平衡任务性能与平台约束。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "论文针对Agent技能的多目标优化问题，提出MOCHA算法，在六个任务上一致改进，发现更多帕累托最优解，对Agent工程有直接实用价值，方法新颖且可集成。",
+      "one_sentence_summary": "本文提出MOCHA，一种结合切比雪夫标量化和指数退火的Agent技能多目标优化方法，在六个不同技能任务上均突破现有优化器瓶颈，相对最佳基线平均正确率提升7.5%，并发现两倍以上的帕累托最优技能变体，有效平衡任务性能与平台约束。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19576",
+      "arxiv_id": "2605.19576",
+      "title": "Library Drift: Diagnosing and Fixing a Silent Failure Mode in Self-Evolving LLM Skill Libraries",
+      "url": "https://arxiv.org/abs/2605.19576",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Self-evolving skill libraries face a silent failure mode we term \\emph{library drift}: unbounded skill accumulation without outcome-driven lifecycle management causes retrieval degradation, false-positive injections, and performance stagnation. Recent evaluation confirms the symptom--LLM-authored skills deliver +0.0pp gain while human-curated ones deliver +16.2pp (SkillsBench)--yet the underlying mechanism has not been isolated. We provide (1) a reproducible trigger: ablations that isolate drift--one disables skill injection (flat floor, +0.002), one imposes premature retirement (active harm, $-$0.019); (2) trace-level diagnostics: an append-only evidence log with per-skill contribution scores, attribution verdicts, and router engagement metrics that make the failure visible before it reaches end-task scores; and (3) a verified fix: a minimal governance recipe (outcome-driven retirement + bounded active-cap + meta-skill authoring prior) that lifts held-out pass@1 from a 0.258 baseline to a late-window mean of 0.584 (rolling gain $+$0.328) on MBPP+ hard-100 over 100 rounds. Eight ablations decompose which governance mechanisms are load-bearing and which are subsumed, providing a concrete playbook for diagnosing library drift in any self-evolving agent.",
+      "summary": "Self-evolving skill libraries face a silent failure mode we term \\emph{library drift}: unbounded skill accumulation without outcome-driven lifecycle management causes retrieval degradation, false-positive injections, and performance stagnation. Recent evaluation confirms the symptom--LLM-authored skills deliver +0.0pp gain while human-curated ones deliver +16.2pp (SkillsBench)--yet the underlying mechanism has not been isolated. We provide (1) a reproducible trigger: ablations that isolate drift--one disables skill injection (flat floor, +0.002), one imposes premature retirement (active harm, $-$0.019); (2) trace-level diagnostics: an append-only evidence log with per-skill contribution scores, attribution verdicts, and router engagement metrics that make the failure visible before it reaches end-task scores; and (3) a verified fix: a minimal governance recipe (outcome-driven retirement + bounded active-cap + meta-skill authoring prior) that lifts held-out pass@1 from a 0.258 baseline to a late-window mean of 0.584 (rolling gain $+$0.328) on MBPP+ hard-100 over 100 rounds. Eight ablations decompose which governance mechanisms are load-bearing and which are subsumed, providing a concrete playbook for diagnosing library drift in any self-evolving agent.",
+      "abstract": "Self-evolving skill libraries face a silent failure mode we term \\emph{library drift}: unbounded skill accumulation without outcome-driven lifecycle management causes retrieval degradation, false-positive injections, and performance stagnation. Recent evaluation confirms the symptom--LLM-authored skills deliver +0.0pp gain while human-curated ones deliver +16.2pp (SkillsBench)--yet the underlying mechanism has not been isolated. We provide (1) a reproducible trigger: ablations that isolate drift--one disables skill injection (flat floor, +0.002), one imposes premature retirement (active harm, $-$0.019); (2) trace-level diagnostics: an append-only evidence log with per-skill contribution scores, attribution verdicts, and router engagement metrics that make the failure visible before it reaches end-task scores; and (3) a verified fix: a minimal governance recipe (outcome-driven retirement + bounded active-cap + meta-skill authoring prior) that lifts held-out pass@1 from a 0.258 baseline to a late-window mean of 0.584 (rolling gain $+$0.328) on MBPP+ hard-100 over 100 rounds. Eight ablations decompose which governance mechanisms are load-bearing and which are subsumed, providing a concrete playbook for diagnosing library drift in any self-evolving agent.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19576",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "首次明确定义并诊治自演进技能库的‘库漂移’失效模式，提供可追溯诊断与具体治理配方，能直接集成到代理框架，解决实际工程痛点，方法可操作性强。",
+        "one_sentence_summary": "该研究发现自演进LLM技能库中存在‘库漂移’失效模式，即无结果驱动的技能累积导致性能停滞，提出基于结果退役、容量限制和元技能先验的治理方案，结合可追溯诊断，将MBPP+ hard-100的pass@1从0.258提升至0.584，为自演进代理的技能维护提供了具体修复方法。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "首次明确定义并诊治自演进技能库的‘库漂移’失效模式，提供可追溯诊断与具体治理配方，能直接集成到代理框架，解决实际工程痛点，方法可操作性强。",
+      "one_sentence_summary": "该研究发现自演进LLM技能库中存在‘库漂移’失效模式，即无结果驱动的技能累积导致性能停滞，提出基于结果退役、容量限制和元技能先验的治理方案，结合可追溯诊断，将MBPP+ hard-100的pass@1从0.258提升至0.584，为自演进代理的技能维护提供了具体修复方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19769",
+      "arxiv_id": "2605.19769",
+      "title": "OpenComputer: Verifiable Software Worlds for Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2605.19769",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "We present OpenComputer, a verifier-grounded framework for constructing verifiable software worlds for computer-use agents. OpenComputer integrates four components: (1) app-specific state verifiers that expose structured inspection endpoints over real applications, (2) a self-evolving verification layer that improves verifier reliability using execution-grounded feedback, (3) a task-generation pipeline that synthesizes realistic and machine-checkable desktop tasks, and (4) an evaluation harness that records full trajectories and computes auditable partial-credit rewards. In its current form, OpenComputer covers 33 desktop applications and 1,000 finalized tasks spanning browsers, office tools, creative software, development environments, file managers, and communication applications. Experiments show that OpenComputer's hard-coded verifiers align more closely with human adjudication than LLM-as-judge evaluation, especially when success depends on fine-grained application state. Frontier agents struggle with end-to-end completion despite partial progress, and open-source models exhibit sharp drops from their OSWorld-Verified scores, exposing a persistent gap in robust computer automation.",
+      "summary": "We present OpenComputer, a verifier-grounded framework for constructing verifiable software worlds for computer-use agents. OpenComputer integrates four components: (1) app-specific state verifiers that expose structured inspection endpoints over real applications, (2) a self-evolving verification layer that improves verifier reliability using execution-grounded feedback, (3) a task-generation pipeline that synthesizes realistic and machine-checkable desktop tasks, and (4) an evaluation harness that records full trajectories and computes auditable partial-credit rewards. In its current form, OpenComputer covers 33 desktop applications and 1,000 finalized tasks spanning browsers, office tools, creative software, development environments, file managers, and communication applications. Experiments show that OpenComputer's hard-coded verifiers align more closely with human adjudication than LLM-as-judge evaluation, especially when success depends on fine-grained application state. Frontier agents struggle with end-to-end completion despite partial progress, and open-source models exhibit sharp drops from their OSWorld-Verified scores, exposing a persistent gap in robust computer automation.",
+      "abstract": "We present OpenComputer, a verifier-grounded framework for constructing verifiable software worlds for computer-use agents. OpenComputer integrates four components: (1) app-specific state verifiers that expose structured inspection endpoints over real applications, (2) a self-evolving verification layer that improves verifier reliability using execution-grounded feedback, (3) a task-generation pipeline that synthesizes realistic and machine-checkable desktop tasks, and (4) an evaluation harness that records full trajectories and computes auditable partial-credit rewards. In its current form, OpenComputer covers 33 desktop applications and 1,000 finalized tasks spanning browsers, office tools, creative software, development environments, file managers, and communication applications. Experiments show that OpenComputer's hard-coded verifiers align more closely with human adjudication than LLM-as-judge evaluation, especially when success depends on fine-grained application state. Frontier agents struggle with end-to-end completion despite partial progress, and open-source models exhibit sharp drops from their OSWorld-Verified scores, exposing a persistent gap in robust computer automation.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19769",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "高度相关计算机使用智能体的构建与评估，提供可验证软件世界框架；引入应用状态验证器与自演化验证层等新机制；框架覆盖33个应用1000项任务，实用性强；契合当前智能体鲁棒自动化的难点。",
+        "one_sentence_summary": "OpenComputer 面向计算机使用智能体构建可验证软件世界，通过应用特定状态验证器、自演化验证层、合成任务生成和审计式评估，覆盖33个应用和1000项任务，实验表明硬编码验证器比 LLM 评判更接近人工判断，且前沿智能体端到端完成率不足，开源模型表现显著下滑，暴露自动化差距。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "高度相关计算机使用智能体的构建与评估，提供可验证软件世界框架；引入应用状态验证器与自演化验证层等新机制；框架覆盖33个应用1000项任务，实用性强；契合当前智能体鲁棒自动化的难点。",
+      "one_sentence_summary": "OpenComputer 面向计算机使用智能体构建可验证软件世界，通过应用特定状态验证器、自演化验证层、合成任务生成和审计式评估，覆盖33个应用和1000项任务，实验表明硬编码验证器比 LLM 评判更接近人工判断，且前沿智能体端到端完成率不足，开源模型表现显著下滑，暴露自动化差距。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19779",
+      "arxiv_id": "2605.19779",
+      "title": "Distribution-Free Uncertainty Quantification for Continuous AI Agent Evaluation",
+      "url": "https://arxiv.org/abs/2605.19779",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "summary": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "abstract": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19779",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 19,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "为持续智能体评估提供不确定性量化方法，对监控和评估管线有用；将保形预测、自适应推理与组合界限引入智能体评估，具新意；提供代码与实时信号数据，可复现；代表评估可靠性这一近期趋势。",
+        "one_sentence_summary": "将分割保形预测和自适应保形推理适配到持续 AI 智能体评估，提供无分布覆盖保证，在 50 个智能体、18 种实时信号上实现 24 小时校准误差低于 0.02，智能体发布后区间自适应扩大 35% 再收敛，并开发多智能体管道组合不确定性界、配对排名弃权与错误发现率校正方法，释放代码与数据。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 18
+      },
+      "score_total": 75,
+      "score_reason": "为持续智能体评估提供不确定性量化方法，对监控和评估管线有用；将保形预测、自适应推理与组合界限引入智能体评估，具新意；提供代码与实时信号数据，可复现；代表评估可靠性这一近期趋势。",
+      "one_sentence_summary": "将分割保形预测和自适应保形推理适配到持续 AI 智能体评估，提供无分布覆盖保证，在 50 个智能体、18 种实时信号上实现 24 小时校准误差低于 0.02，智能体发布后区间自适应扩大 35% 再收敛，并开发多智能体管道组合不确定性界、配对排名弃权与错误发现率校正方法，释放代码与数据。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.19782",
+      "arxiv_id": "2605.19782",
+      "title": "Prior Knowledge or Search? A Study of LLM Agents in Hardware-Aware Code Optimization",
+      "url": "https://arxiv.org/abs/2605.19782",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "LLM discovery and optimization systems are increasingly applied across domains, implementing a common propose-evaluate-revise loop. Such optimization or discovery progresses via context conditioning on received feedback from an environment. However, as modern LLM agents are increasingly complex in their structure, it is difficult to evaluate which components contribute the most, and when and how this exploration may fail. We answer these questions through three controlled experiments. Our findings: (1) In pure black-box optimization, LLMs act as greedy optimizers. (2) In zero-shot kernel generation, providing explicit input-size information has no measurable effect, models converge to the same kernel parameters regardless of size or temperature, as though the size instruction were invisible. Moreover, when tasked to perform kernel optimization for uncommon kernel sizes, performance sharply degrades regardless of the language used. (3) In feedback-loop kernel optimization, CUDA improves monotonically under iterative feedback, while TVM IR actively degrades, which demonstrates that kernel optimization degrades when models operate with low-density language. Our results conclude that LLMs in code optimization tasks highly depend on pretrained priors rather than provided feedback or agentic structure.",
+      "summary": "LLM discovery and optimization systems are increasingly applied across domains, implementing a common propose-evaluate-revise loop. Such optimization or discovery progresses via context conditioning on received feedback from an environment. However, as modern LLM agents are increasingly complex in their structure, it is difficult to evaluate which components contribute the most, and when and how this exploration may fail. We answer these questions through three controlled experiments. Our findings: (1) In pure black-box optimization, LLMs act as greedy optimizers. (2) In zero-shot kernel generation, providing explicit input-size information has no measurable effect, models converge to the same kernel parameters regardless of size or temperature, as though the size instruction were invisible. Moreover, when tasked to perform kernel optimization for uncommon kernel sizes, performance sharply degrades regardless of the language used. (3) In feedback-loop kernel optimization, CUDA improves monotonically under iterative feedback, while TVM IR actively degrades, which demonstrates that kernel optimization degrades when models operate with low-density language. Our results conclude that LLMs in code optimization tasks highly depend on pretrained priors rather than provided feedback or agentic structure.",
+      "abstract": "LLM discovery and optimization systems are increasingly applied across domains, implementing a common propose-evaluate-revise loop. Such optimization or discovery progresses via context conditioning on received feedback from an environment. However, as modern LLM agents are increasingly complex in their structure, it is difficult to evaluate which components contribute the most, and when and how this exploration may fail. We answer these questions through three controlled experiments. Our findings: (1) In pure black-box optimization, LLMs act as greedy optimizers. (2) In zero-shot kernel generation, providing explicit input-size information has no measurable effect, models converge to the same kernel parameters regardless of size or temperature, as though the size instruction were invisible. Moreover, when tasked to perform kernel optimization for uncommon kernel sizes, performance sharply degrades regardless of the language used. (3) In feedback-loop kernel optimization, CUDA improves monotonically under iterative feedback, while TVM IR actively degrades, which demonstrates that kernel optimization degrades when models operate with low-density language. Our results conclude that LLMs in code optimization tasks highly depend on pretrained priors rather than provided feedback or agentic structure.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19782",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "通过实验系统证明LLM代理在代码优化中高度依赖预训练先验而非搜索或反馈，揭示了零样本和反馈循环中的关键失效模式，对构建鲁棒的代码优化工具有重要指导意义。",
+        "one_sentence_summary": "通过三项控制实验，系统研究了LLM在硬件感知代码优化中的行为，发现模型在优化中高度依赖预训练先验而非搜索或反馈，零样本生成忽略输入尺寸信息，罕见尺寸性能骤降，且反馈循环中CUDA单调改进而TVM IR反而劣化，表明低密度语言会阻碍优化。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 82,
+      "score_reason": "通过实验系统证明LLM代理在代码优化中高度依赖预训练先验而非搜索或反馈，揭示了零样本和反馈循环中的关键失效模式，对构建鲁棒的代码优化工具有重要指导意义。",
+      "one_sentence_summary": "通过三项控制实验，系统研究了LLM在硬件感知代码优化中的行为，发现模型在优化中高度依赖预训练先验而非搜索或反馈，零样本生成忽略输入尺寸信息，罕见尺寸性能骤降，且反馈循环中CUDA单调改进而TVM IR反而劣化，表明低密度语言会阻碍优化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.19824",
+      "arxiv_id": "2605.19824",
+      "title": "From Prompts to Pavement Through Time: Temporal Grounding in Agentic Scene-to-Plan Reasoning",
+      "url": "https://arxiv.org/abs/2605.19824",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Recent attempts to support high-level scene interpretation and planning in Autonomous Vehicles (AVs) using ensembles of Large Language Models (LLMs) and Large Multimodal Models (LMMs) continue to treat time as a secondary property. This lack of temporal grounding leads to inconsistencies in reasoning about continuous actions, undermining both safety and interpretability. This work explores whether temporal conditioning within inter-agent communication can preserve or enhance coherence without introducing degradation in semantic or logical consistency. To investigate this, we introduce three planner architectures with progressively increasing temporal integration and evaluate them on curated subsets of the BDD-X dataset using semantic, syntactic, and logical metrics. Results show that while temporal conditioning reshapes reasoning style, it yields no statistically significant improvements in standard NLP-based correctness metrics. However, qualitative analysis reveals predictive hazard reasoning, stable corrective behavior, and strategic divergence in the Sentinel. These findings clarify the limits of prompt-based temporal grounding and establish the first empirical benchmark for temporal scene-to-plan reasoning.",
+      "summary": "Recent attempts to support high-level scene interpretation and planning in Autonomous Vehicles (AVs) using ensembles of Large Language Models (LLMs) and Large Multimodal Models (LMMs) continue to treat time as a secondary property. This lack of temporal grounding leads to inconsistencies in reasoning about continuous actions, undermining both safety and interpretability. This work explores whether temporal conditioning within inter-agent communication can preserve or enhance coherence without introducing degradation in semantic or logical consistency. To investigate this, we introduce three planner architectures with progressively increasing temporal integration and evaluate them on curated subsets of the BDD-X dataset using semantic, syntactic, and logical metrics. Results show that while temporal conditioning reshapes reasoning style, it yields no statistically significant improvements in standard NLP-based correctness metrics. However, qualitative analysis reveals predictive hazard reasoning, stable corrective behavior, and strategic divergence in the Sentinel. These findings clarify the limits of prompt-based temporal grounding and establish the first empirical benchmark for temporal scene-to-plan reasoning.",
+      "abstract": "Recent attempts to support high-level scene interpretation and planning in Autonomous Vehicles (AVs) using ensembles of Large Language Models (LLMs) and Large Multimodal Models (LMMs) continue to treat time as a secondary property. This lack of temporal grounding leads to inconsistencies in reasoning about continuous actions, undermining both safety and interpretability. This work explores whether temporal conditioning within inter-agent communication can preserve or enhance coherence without introducing degradation in semantic or logical consistency. To investigate this, we introduce three planner architectures with progressively increasing temporal integration and evaluate them on curated subsets of the BDD-X dataset using semantic, syntactic, and logical metrics. Results show that while temporal conditioning reshapes reasoning style, it yields no statistically significant improvements in standard NLP-based correctness metrics. However, qualitative analysis reveals predictive hazard reasoning, stable corrective behavior, and strategic divergence in the Sentinel. These findings clarify the limits of prompt-based temporal grounding and establish the first empirical benchmark for temporal scene-to-plan reasoning.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 9,
+        "timeliness_rarity": 19
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, evaluation signal",
+      "one_sentence_summary": "提出 LaaB，把模型回答与自我判断之间的逻辑一致性建模成桥梁：一边利用内部特征的不确定性，一边利用显式 self-judgment 标签，再通过互学习融合两类信号来提升幻觉检测。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.20173",
+      "arxiv_id": "2605.20173",
+      "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+      "url": "https://arxiv.org/abs/2605.20173",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Production LLM agents combine stochastic model outputs with deterministic software systems, yet the boundary between the two is rarely treated as a first-class architectural object. This paper names that boundary the stochastic-deterministic boundary (SDB): a four-part contract among a proposer, verifier, commit step, and reject signal that specifies how an LLM output becomes a system action. We argue that the SDB is the load-bearing primitive of production agent runtimes. Around this primitive, we organize agent runtime design into three concerns: Coordination, State, and Control. We present a catalog of six runtime patterns that compose the SDB differently across conversational, autonomous, and long-horizon agents: hierarchical delegation, scatter-gather plus saga, event-driven sequencing, shared state machine, supervisor plus gate, and human in the loop. For each pattern, we trace its lineage to distributed-systems concepts and identify what changes when the worker is stochastic. The paper contributes a five-step methodology for selecting runtime patterns, a diagnostic procedure that maps production failures to pattern weaknesses, and a failure mode called replay divergence, in which LLM-based consumers of a deterministic event log produce different downstream outputs under model-version or prompt changes. A stylized reliability decomposition separates per-call model variance from architectural momentum, motivating the claim that as model variance decreases, pattern choice and SDB strength become increasingly important levers for long-run reliability. We apply the methodology to five workloads and provide one runnable reference implementation for a 90-day contract-renewal agent.",
+      "summary": "Production LLM agents combine stochastic model outputs with deterministic software systems, yet the boundary between the two is rarely treated as a first-class architectural object. This paper names that boundary the stochastic-deterministic boundary (SDB): a four-part contract among a proposer, verifier, commit step, and reject signal that specifies how an LLM output becomes a system action. We argue that the SDB is the load-bearing primitive of production agent runtimes. Around this primitive, we organize agent runtime design into three concerns: Coordination, State, and Control. We present a catalog of six runtime patterns that compose the SDB differently across conversational, autonomous, and long-horizon agents: hierarchical delegation, scatter-gather plus saga, event-driven sequencing, shared state machine, supervisor plus gate, and human in the loop. For each pattern, we trace its lineage to distributed-systems concepts and identify what changes when the worker is stochastic. The paper contributes a five-step methodology for selecting runtime patterns, a diagnostic procedure that maps production failures to pattern weaknesses, and a failure mode called replay divergence, in which LLM-based consumers of a deterministic event log produce different downstream outputs under model-version or prompt changes. A stylized reliability decomposition separates per-call model variance from architectural momentum, motivating the claim that as model variance decreases, pattern choice and SDB strength become increasingly important levers for long-run reliability. We apply the methodology to five workloads and provide one runnable reference implementation for a 90-day contract-renewal agent.",
+      "abstract": "Production LLM agents combine stochastic model outputs with deterministic software systems, yet the boundary between the two is rarely treated as a first-class architectural object. This paper names that boundary the stochastic-deterministic boundary (SDB): a four-part contract among a proposer, verifier, commit step, and reject signal that specifies how an LLM output becomes a system action. We argue that the SDB is the load-bearing primitive of production agent runtimes. Around this primitive, we organize agent runtime design into three concerns: Coordination, State, and Control. We present a catalog of six runtime patterns that compose the SDB differently across conversational, autonomous, and long-horizon agents: hierarchical delegation, scatter-gather plus saga, event-driven sequencing, shared state machine, supervisor plus gate, and human in the loop. For each pattern, we trace its lineage to distributed-systems concepts and identify what changes when the worker is stochastic. The paper contributes a five-step methodology for selecting runtime patterns, a diagnostic procedure that maps production failures to pattern weaknesses, and a failure mode called replay divergence, in which LLM-based consumers of a deterministic event log produce different downstream outputs under model-version or prompt changes. A stylized reliability decomposition separates per-call model variance from architectural momentum, motivating the claim that as model variance decreases, pattern choice and SDB strength become increasingly important levers for long-run reliability. We apply the methodology to five workloads and provide one runnable reference implementation for a 90-day contract-renewal agent.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.20173",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 23,
+          "engineering_utility": 25,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "首次将随机-确定性边界作为生产级LLM代理运行时的核心原语，提供了六种运行时模式的系统性目录、选型方法论和故障诊断方法，可直接指导代理架构设计。",
+        "one_sentence_summary": "提出随机确定性边界(SDB)概念和六种运行时模式(分层委托、散集+ Saga、事件驱动排序、共享状态机、监管+门禁、人在回路)以组合生产级LLM代理的协调、状态和控制，并提供选型方法论、故障诊断和重放分歧分析，附带一个合同续签代理的参考实现。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 23,
+        "engineering_utility": 25,
+        "timeliness_rarity": 22
+      },
+      "score_total": 95,
+      "score_reason": "首次将随机-确定性边界作为生产级LLM代理运行时的核心原语，提供了六种运行时模式的系统性目录、选型方法论和故障诊断方法，可直接指导代理架构设计。",
+      "one_sentence_summary": "提出随机确定性边界(SDB)概念和六种运行时模式(分层委托、散集+ Saga、事件驱动排序、共享状态机、监管+门禁、人在回路)以组合生产级LLM代理的协调、状态和控制，并提供选型方法论、故障诊断和重放分歧分析，附带一个合同续签代理的参考实现。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-20T05:47:05.012489+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-20"
+    },
+    {
+      "id": "arxiv:2605.18766",
+      "arxiv_id": "2605.18766",
+      "title": "Retrieve Only Relevant Tables Whether Few or Many: Adaptive Table Retrieval Method",
+      "url": "https://arxiv.org/abs/2605.18766",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "summary": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "abstract": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.18766",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "提出自适应表格检索方法，根据查询动态确定检索表格数量，克服固定top-k的缺陷，并在多个文本到SQL基准上验证了效果，代码开源可用。",
+        "one_sentence_summary": "针对表格检索中固定前k个表格导致数量不当的问题，提出自适应阈值和滑动窗口重排序的方法动态调整检索数量，在Spider、BIRD和Spider 2.0上提升了检索与下游任务性能。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 75,
+      "score_reason": "提出自适应表格检索方法，根据查询动态确定检索表格数量，克服固定top-k的缺陷，并在多个文本到SQL基准上验证了效果，代码开源可用。",
+      "one_sentence_summary": "针对表格检索中固定前k个表格导致数量不当的问题，提出自适应阈值和滑动窗口重排序的方法动态调整检索数量，在Spider、BIRD和Spider 2.0上提升了检索与下游任务性能。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": null
     }
   ]
 }
