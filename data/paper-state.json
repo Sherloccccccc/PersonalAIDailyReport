@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-20T05:47:05.012489+00:00",
+  "updated_at": "2026-05-21T05:52:10.026206+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -8327,6 +8327,658 @@
       "added_at": "2026-05-20T05:47:05.012489+00:00",
       "pushed_at": null,
       "source_run_id": "2026-05-20",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.21470",
+      "arxiv_id": "2605.21470",
+      "title": "Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling",
+      "url": "https://arxiv.org/abs/2605.21470",
+      "published_at": "2026-05-20T17:54:27Z",
+      "publish_date": "2026-05-20",
+      "description": "Computer-use agents (CUA) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, an alternative that compiles task descriptions directly into executable code that is free to include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition state requirements that reduce the rate of generating plans with incorrect tool use. Across 5 web applications, JIT-Planner achieves $10.4\\times$ speedup and $+28\\%$ accuracy over Browser-Use, while JIT-Scheduler achieves $2.4\\times$ speedup and $+9\\%$ accuracy over OpenAI CUA.",
+      "summary": "Computer-use agents (CUA) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, an alternative that compiles task descriptions directly into executable code that is free to include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition state requirements that reduce the rate of generating plans with incorrect tool use. Across 5 web applications, JIT-Planner achieves $10.4\\times$ speedup and $+28\\%$ accuracy over Browser-Use, while JIT-Scheduler achieves $2.4\\times$ speedup and $+9\\%$ accuracy over OpenAI CUA.",
+      "abstract": "Computer-use agents (CUA) automate tasks specified with natural language such as \"order the cheapest item from Taco Bell\" by generating sequences of calls to tools such as click, type, and scroll on a browser. Current implementations follow a sequential fetch-screenshot-execute loop where each iteration requires an LLM call, resulting in high latency and frequent errors from incorrect tool use. We present agent just-in-time (JIT) compilation, an alternative that compiles task descriptions directly into executable code that is free to include LLM calls, tool calls, and parallelization. Our approach comprises three components: (1) JIT-Planner, which generates multiple code plans, validates each against tool specifications, and selects the minimum-cost candidate; (2) JIT-Scheduler, which explores parallelization strategies via Monte Carlo cost estimation from learned latency distributions; and (3) an invariant-enforcing tool protocol specifying precondition and postcondition state requirements that reduce the rate of generating plans with incorrect tool use. Across 5 web applications, JIT-Planner achieves $10.4\\times$ speedup and $+28\\%$ accuracy over Browser-Use, while JIT-Scheduler achieves $2.4\\times$ speedup and $+9\\%$ accuracy over OpenAI CUA.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21470",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "聚焦web agent延迟优化痛点，提出JIT编译与并行调度新方法，工程实现扎实，基准测试提升显著，可复用性强，紧扣agent效率前沿。",
+        "one_sentence_summary": "提出将web agent任务描述直接编译为可执行代码，利用JIT-Planner生成并验证多方案代码计划、JIT-Scheduler通过蒙特卡洛延迟估计探索并行策略，在5个网络应用上相对Browser-Use获得10.4倍加速和28%准确率提升，旨在降低agent执行延迟与工具调用错误。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 91,
+      "score_reason": "聚焦web agent延迟优化痛点，提出JIT编译与并行调度新方法，工程实现扎实，基准测试提升显著，可复用性强，紧扣agent效率前沿。",
+      "one_sentence_summary": "提出将web agent任务描述直接编译为可执行代码，利用JIT-Planner生成并验证多方案代码计划、JIT-Scheduler通过蒙特卡洛延迟估计探索并行策略，在5个网络应用上相对Browser-Use获得10.4倍加速和28%准确率提升，旨在降低agent执行延迟与工具调用错误。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21467",
+      "arxiv_id": "2605.21467",
+      "title": "DelTA: Discriminative Token Credit Assignment for Reinforcement Learning from Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2605.21467",
+      "published_at": "2026-05-20T17:53:09Z",
+      "publish_date": "2026-05-20",
+      "description": "Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood. We introduce a discriminator view of RLVR updates, showing that the policy-gradient update direction implicitly acts as a linear discriminator over token-gradient vectors and thereby determines which token probabilities are increased or decreased during learning. Under standard sequence-level RLVR, this discriminator is constructed from positive- and negative-side centroids formed by advantage-weighted averaging of token-gradient vectors. However, such centroid construction can be dominated by shared high-frequency patterns, such as formatting tokens, diluting sparse yet discriminative directions that better distinguish high-reward responses from low-reward ones. To address this limitation, we propose $\\textbf{DelTA}$, a discriminative token credit assignment method that estimates token coefficients to amplify side-specific token-gradient directions and downweight shared or weakly discriminative ones. These coefficients reweight a self-normalized RLVR surrogate, making the effective side-wise centroids more contrastive and thereby reshaping the RLVR update direction. On seven mathematical benchmarks, DelTA outperforms the strongest same-scale baselines by 3.26 and 2.62 average points on Qwen3-8B-Base and Qwen3-14B-Base, respectively. Additional results on code generation, a different backbone, and out-of-domain evaluations further demonstrate the generalization ability of DelTA.",
+      "summary": "Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood. We introduce a discriminator view of RLVR updates, showing that the policy-gradient update direction implicitly acts as a linear discriminator over token-gradient vectors and thereby determines which token probabilities are increased or decreased during learning. Under standard sequence-level RLVR, this discriminator is constructed from positive- and negative-side centroids formed by advantage-weighted averaging of token-gradient vectors. However, such centroid construction can be dominated by shared high-frequency patterns, such as formatting tokens, diluting sparse yet discriminative directions that better distinguish high-reward responses from low-reward ones. To address this limitation, we propose $\\textbf{DelTA}$, a discriminative token credit assignment method that estimates token coefficients to amplify side-specific token-gradient directions and downweight shared or weakly discriminative ones. These coefficients reweight a self-normalized RLVR surrogate, making the effective side-wise centroids more contrastive and thereby reshaping the RLVR update direction. On seven mathematical benchmarks, DelTA outperforms the strongest same-scale baselines by 3.26 and 2.62 average points on Qwen3-8B-Base and Qwen3-14B-Base, respectively. Additional results on code generation, a different backbone, and out-of-domain evaluations further demonstrate the generalization ability of DelTA.",
+      "abstract": "Reinforcement learning from verifiable rewards (RLVR) has emerged as a central technique for improving the reasoning capabilities of large language models. Despite its effectiveness, how response-level rewards translate into token-level probability changes remains poorly understood. We introduce a discriminator view of RLVR updates, showing that the policy-gradient update direction implicitly acts as a linear discriminator over token-gradient vectors and thereby determines which token probabilities are increased or decreased during learning. Under standard sequence-level RLVR, this discriminator is constructed from positive- and negative-side centroids formed by advantage-weighted averaging of token-gradient vectors. However, such centroid construction can be dominated by shared high-frequency patterns, such as formatting tokens, diluting sparse yet discriminative directions that better distinguish high-reward responses from low-reward ones. To address this limitation, we propose $\\textbf{DelTA}$, a discriminative token credit assignment method that estimates token coefficients to amplify side-specific token-gradient directions and downweight shared or weakly discriminative ones. These coefficients reweight a self-normalized RLVR surrogate, making the effective side-wise centroids more contrastive and thereby reshaping the RLVR update direction. On seven mathematical benchmarks, DelTA outperforms the strongest same-scale baselines by 3.26 and 2.62 average points on Qwen3-8B-Base and Qwen3-14B-Base, respectively. Additional results on code generation, a different backbone, and out-of-domain evaluations further demonstrate the generalization ability of DelTA.",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21467",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该论文提出RLVR中的判别式令牌信用分配方法DelTA，对提升LLM推理能力有直接应用价值，引入新的技术视角，可复现且效果突出，紧贴当前强化学习微调的热点。",
+        "one_sentence_summary": "该论文提出一种判别式令牌信用分配方法DelTA，通过估计令牌系数放大特定侧令牌梯度方向并抑制共享模式，重塑强化学习更新方向，在七个数学基准和代码生成任务上显著优于同规模基线模型，增强了基于可验证奖励的推理能力训练效果。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 23
+      },
+      "score_total": 92,
+      "score_reason": "该论文提出RLVR中的判别式令牌信用分配方法DelTA，对提升LLM推理能力有直接应用价值，引入新的技术视角，可复现且效果突出，紧贴当前强化学习微调的热点。",
+      "one_sentence_summary": "该论文提出一种判别式令牌信用分配方法DelTA，通过估计令牌系数放大特定侧令牌梯度方向并抑制共享模式，重塑强化学习更新方向，在七个数学基准和代码生成任务上显著优于同规模基线模型，增强了基于可验证奖励的推理能力训练效果。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21465",
+      "arxiv_id": "2605.21465",
+      "title": "Leveraging LLMs for Grammar Adaptation: A Study on Metamodel-Grammar Co-Evolution",
+      "url": "https://arxiv.org/abs/2605.21465",
+      "published_at": "2026-05-20T17:51:51Z",
+      "publish_date": "2026-05-20",
+      "description": "In model-driven engineering, metamodel evolution leads to the need to adapt corresponding grammars to maintain consistency, which typically requires tedious manual work. Existing rule-based methods can achieve partial automation but have limitations when handling complex grammar scenarios. This paper proposes a Large Language Model-based approach that automatically applies adaptations to new grammars after evolution by learning grammar adaptations from previous versions. We evaluated this approach on six real-world Xtext domain-specific languages, using four DSLs as a training set to develop prompting strategies, two DSLs as a test set for validation, and conducting a longitudinal case study on QVTo. The evaluation used three Large Language Models (Claude Sonnet 4.5, ChatGPT 5.1, Gemini 3) and measured grammar adaptation quality from three dimensions: grammar rule-level adaptation consistency, output similarity, and metamodel conformance. Results show that on the test set, all three LLMs achieved 100% adaptation consistency and output similarity, while the rule-based approach achieved only 84.21% on DOT and 62.50% on Xcore. In the QVTo longitudinal study, the LLM-based approach successfully reused learned adaptations across all three evolution steps without manual grammar editing, while the rule-based approach required manual adjustments in two of three transitions. However, on large-scale grammars (EAST-ADL, 297 rules), LLMs' adaptation consistency was far below 90%. This study demonstrates the advantages of LLM-based approaches in handling complex grammar scenarios, while revealing their limitations in large-scale grammar adaptation.",
+      "summary": "In model-driven engineering, metamodel evolution leads to the need to adapt corresponding grammars to maintain consistency, which typically requires tedious manual work. Existing rule-based methods can achieve partial automation but have limitations when handling complex grammar scenarios. This paper proposes a Large Language Model-based approach that automatically applies adaptations to new grammars after evolution by learning grammar adaptations from previous versions. We evaluated this approach on six real-world Xtext domain-specific languages, using four DSLs as a training set to develop prompting strategies, two DSLs as a test set for validation, and conducting a longitudinal case study on QVTo. The evaluation used three Large Language Models (Claude Sonnet 4.5, ChatGPT 5.1, Gemini 3) and measured grammar adaptation quality from three dimensions: grammar rule-level adaptation consistency, output similarity, and metamodel conformance. Results show that on the test set, all three LLMs achieved 100% adaptation consistency and output similarity, while the rule-based approach achieved only 84.21% on DOT and 62.50% on Xcore. In the QVTo longitudinal study, the LLM-based approach successfully reused learned adaptations across all three evolution steps without manual grammar editing, while the rule-based approach required manual adjustments in two of three transitions. However, on large-scale grammars (EAST-ADL, 297 rules), LLMs' adaptation consistency was far below 90%. This study demonstrates the advantages of LLM-based approaches in handling complex grammar scenarios, while revealing their limitations in large-scale grammar adaptation.",
+      "abstract": "In model-driven engineering, metamodel evolution leads to the need to adapt corresponding grammars to maintain consistency, which typically requires tedious manual work. Existing rule-based methods can achieve partial automation but have limitations when handling complex grammar scenarios. This paper proposes a Large Language Model-based approach that automatically applies adaptations to new grammars after evolution by learning grammar adaptations from previous versions. We evaluated this approach on six real-world Xtext domain-specific languages, using four DSLs as a training set to develop prompting strategies, two DSLs as a test set for validation, and conducting a longitudinal case study on QVTo. The evaluation used three Large Language Models (Claude Sonnet 4.5, ChatGPT 5.1, Gemini 3) and measured grammar adaptation quality from three dimensions: grammar rule-level adaptation consistency, output similarity, and metamodel conformance. Results show that on the test set, all three LLMs achieved 100% adaptation consistency and output similarity, while the rule-based approach achieved only 84.21% on DOT and 62.50% on Xcore. In the QVTo longitudinal study, the LLM-based approach successfully reused learned adaptations across all three evolution steps without manual grammar editing, while the rule-based approach required manual adjustments in two of three transitions. However, on large-scale grammars (EAST-ADL, 297 rules), LLMs' adaptation consistency was far below 90%. This study demonstrates the advantages of LLM-based approaches in handling complex grammar scenarios, while revealing their limitations in large-scale grammar adaptation.",
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21465",
+        "score_detail": {
+          "application_relevance": 14,
+          "new_signal": 18,
+          "engineering_utility": 16,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "利用LLM自动化软件工程中的语法适应，在DSL上验证有效但大规模受限，应用面较窄，非AI产品主线，新意与通用性一般。",
+        "one_sentence_summary": "该研究提出用大型语言模型从历史版本学习语法适应模式以自动响应元模型演变，在6个真实领域特定语言上评估，三个LLM在测试集上达到100%规则级适应一致性，但在297条规则的大规模语法上准确率远低于90%，表明LLM方法在小至中规模复杂语法场景下有效，却面临大规模挑战。"
+      },
+      "score_detail": {
+        "application_relevance": 14,
+        "new_signal": 18,
+        "engineering_utility": 16,
+        "timeliness_rarity": 16
+      },
+      "score_total": 64,
+      "score_reason": "利用LLM自动化软件工程中的语法适应，在DSL上验证有效但大规模受限，应用面较窄，非AI产品主线，新意与通用性一般。",
+      "one_sentence_summary": "该研究提出用大型语言模型从历史版本学习语法适应模式以自动响应元模型演变，在6个真实领域特定语言上评估，三个LLM在测试集上达到100%规则级适应一致性，但在297条规则的大规模语法上准确率远低于90%，表明LLM方法在小至中规模复杂语法场景下有效，却面临大规模挑战。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.21463",
+      "arxiv_id": "2605.21463",
+      "title": "Mem-$π$: Adaptive Memory through Learning When and What to Generate",
+      "url": "https://arxiv.org/abs/2605.21463",
+      "published_at": "2026-05-20T17:51:05Z",
+      "publish_date": "2026-05-20",
+      "description": "We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores. Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context. In contrast, Mem-$π$ uses a dedicated language or vision-language model with its own parameters, separate from the downstream agent, to generate context-specific guidance for complex tasks. Conditioned on the current agent context, the model jointly decides when to produce guidance and what guidance to produce. We train it with a decision-content decoupled reinforcement learning (RL) objective, enabling it to abstain when generation would not help and otherwise produce concise, useful guidance. Across diverse agentic benchmarks spanning web navigation, terminal-based tool use, and text-based embodied interaction, Mem-$π$ consistently outperforms retrieval-based and prior RL-optimized memory baselines, achieving over 30% relative improvement on web navigation tasks.",
+      "summary": "We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores. Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context. In contrast, Mem-$π$ uses a dedicated language or vision-language model with its own parameters, separate from the downstream agent, to generate context-specific guidance for complex tasks. Conditioned on the current agent context, the model jointly decides when to produce guidance and what guidance to produce. We train it with a decision-content decoupled reinforcement learning (RL) objective, enabling it to abstain when generation would not help and otherwise produce concise, useful guidance. Across diverse agentic benchmarks spanning web navigation, terminal-based tool use, and text-based embodied interaction, Mem-$π$ consistently outperforms retrieval-based and prior RL-optimized memory baselines, achieving over 30% relative improvement on web navigation tasks.",
+      "abstract": "We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores. Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context. In contrast, Mem-$π$ uses a dedicated language or vision-language model with its own parameters, separate from the downstream agent, to generate context-specific guidance for complex tasks. Conditioned on the current agent context, the model jointly decides when to produce guidance and what guidance to produce. We train it with a decision-content decoupled reinforcement learning (RL) objective, enabling it to abstain when generation would not help and otherwise produce concise, useful guidance. Across diverse agentic benchmarks spanning web navigation, terminal-based tool use, and text-based embodied interaction, Mem-$π$ consistently outperforms retrieval-based and prior RL-optimized memory baselines, achieving over 30% relative improvement on web navigation tasks.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21463",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "提出自适应记忆框架Mem-π，训练独立模型按需生成上下文指导而非检索静态记忆，在网页导航等代理任务上相对提升超30%，代表记忆增强新趋势且可直接集成。",
+        "one_sentence_summary": "Mem-π框架训练独立LLM/VLM根据当前上下文决定何时生成何种指导，取代检索式记忆，在网页导航、终端工具使用等基准上获得超过30%的相对提升。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 91,
+      "score_reason": "提出自适应记忆框架Mem-π，训练独立模型按需生成上下文指导而非检索静态记忆，在网页导航等代理任务上相对提升超30%，代表记忆增强新趋势且可直接集成。",
+      "one_sentence_summary": "Mem-π框架训练独立LLM/VLM根据当前上下文决定何时生成何种指导，取代检索式记忆，在网页导航、终端工具使用等基准上获得超过30%的相对提升。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21455",
+      "arxiv_id": "2605.21455",
+      "title": "Mitigating Label Bias with Interpretable Rubric Embeddings",
+      "url": "https://arxiv.org/abs/2605.21455",
+      "published_at": "2026-05-20T17:46:08Z",
+      "publish_date": "2026-05-20",
+      "description": "Statistical decision algorithms are increasingly deployed in domains where ground-truth labels are hard to obtain, such as hiring, university admissions, and content moderation. In these settings, models are typically trained on historical human evaluations -- for example, using past hiring decisions as a proxy for true applicant quality. However, if past evaluations unjustly favor certain groups, models trained on these labels may inherit those biases. To address this problem, we propose basing predictions on rubric embeddings, a representation framework that replaces standard black-box embeddings with features derived from expert-defined criteria that align with the underlying construct of interest. By anchoring predictions to semantically meaningful dimensions, this approach guards against biased proxy signals. We provide both theoretical and empirical evidence that rubric embeddings mitigate label bias under plausible conditions. Empirically, we evaluate our method on a novel dataset of applications to a large master's program. We find that models trained on rubric embeddings reduce group disparities while improving measures of cohort quality. Our results suggest that basing predictions on interpretable, domain-grounded representations offers a practical approach to learning in the presence of biased labels.",
+      "summary": "Statistical decision algorithms are increasingly deployed in domains where ground-truth labels are hard to obtain, such as hiring, university admissions, and content moderation. In these settings, models are typically trained on historical human evaluations -- for example, using past hiring decisions as a proxy for true applicant quality. However, if past evaluations unjustly favor certain groups, models trained on these labels may inherit those biases. To address this problem, we propose basing predictions on rubric embeddings, a representation framework that replaces standard black-box embeddings with features derived from expert-defined criteria that align with the underlying construct of interest. By anchoring predictions to semantically meaningful dimensions, this approach guards against biased proxy signals. We provide both theoretical and empirical evidence that rubric embeddings mitigate label bias under plausible conditions. Empirically, we evaluate our method on a novel dataset of applications to a large master's program. We find that models trained on rubric embeddings reduce group disparities while improving measures of cohort quality. Our results suggest that basing predictions on interpretable, domain-grounded representations offers a practical approach to learning in the presence of biased labels.",
+      "abstract": "Statistical decision algorithms are increasingly deployed in domains where ground-truth labels are hard to obtain, such as hiring, university admissions, and content moderation. In these settings, models are typically trained on historical human evaluations -- for example, using past hiring decisions as a proxy for true applicant quality. However, if past evaluations unjustly favor certain groups, models trained on these labels may inherit those biases. To address this problem, we propose basing predictions on rubric embeddings, a representation framework that replaces standard black-box embeddings with features derived from expert-defined criteria that align with the underlying construct of interest. By anchoring predictions to semantically meaningful dimensions, this approach guards against biased proxy signals. We provide both theoretical and empirical evidence that rubric embeddings mitigate label bias under plausible conditions. Empirically, we evaluate our method on a novel dataset of applications to a large master's program. We find that models trained on rubric embeddings reduce group disparities while improving measures of cohort quality. Our results suggest that basing predictions on interpretable, domain-grounded representations offers a practical approach to learning in the presence of biased labels.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21455",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出可解释评分嵌入新表示以缓解标签偏差，新数据集验证减少不公平性且提升整体质量，方法简洁可集成，切合公平性决策趋势。",
+        "one_sentence_summary": "针对招聘、录取等依赖有偏历史标签的决策场景，提出基于专家定义评分标准的可解释嵌入（rubric embeddings）替代黑盒嵌入以规避偏倚代理信号，在大型硕士项目申请数据集上训练模型，既降低了群体间不公平性又提升了录取整体质量，提供了一种实用公平学习方法。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 82,
+      "score_reason": "提出可解释评分嵌入新表示以缓解标签偏差，新数据集验证减少不公平性且提升整体质量，方法简洁可集成，切合公平性决策趋势。",
+      "one_sentence_summary": "针对招聘、录取等依赖有偏历史标签的决策场景，提出基于专家定义评分标准的可解释嵌入（rubric embeddings）替代黑盒嵌入以规避偏倚代理信号，在大型硕士项目申请数据集上训练模型，既降低了群体间不公平性又提升了录取整体质量，提供了一种实用公平学习方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21453",
+      "arxiv_id": "2605.21453",
+      "title": "Quality and Security Signals in AI-Generated Python Refactoring Pull Requests",
+      "url": "https://arxiv.org/abs/2605.21453",
+      "published_at": "2026-05-20T17:43:36Z",
+      "publish_date": "2026-05-20",
+      "description": "As AI agents increasingly contribute to code development and maintenance, there is still limited empirical evidence on the quality and risk characteristics of their changes in real-world projects, particularly for refactoring-oriented contributions. It remains unclear how agent-authored refactoring edits affect maintainability, code quality, and security once merged into GitHub repositories. To address this gap, we conduct an empirical study of Python refactoring pull requests (PRs) from the AIDev dataset. We analyze agentic refactoring PRs using PyQu, an ML-based quality assessment tool for Python, to quantify changes across five quality attributes, and we complement PyQu with domain-independent static analysis (Pylint and Bandit) to measure code quality and security issues before and after each change. Our results show that, on average, agentic commits improve a quality attribute in 22.5% of the studied changes, with usability improving most frequently (36.5%). At the same time, 24.17% of modified files introduce new Pylint issues predominantly convention level violations such as long lines-while 4.7% introduce new Bandit findings. From the observed diffs, we derive a taxonomy of 24 recurring change operations and map them to the lint and security findings they most commonly affect. Despite these mixed outcomes, developer acceptance is high: 73.5% of the analyzed PRs are merged, including cases that introduce new lint or security findings, often alongside the removal of existing issues. Overall, these findings highlight both the promise and current limitations of agentic refactoring, and motivate stronger tool-in-the-loop quality and security gating for AI-driven development workflows.",
+      "summary": "As AI agents increasingly contribute to code development and maintenance, there is still limited empirical evidence on the quality and risk characteristics of their changes in real-world projects, particularly for refactoring-oriented contributions. It remains unclear how agent-authored refactoring edits affect maintainability, code quality, and security once merged into GitHub repositories. To address this gap, we conduct an empirical study of Python refactoring pull requests (PRs) from the AIDev dataset. We analyze agentic refactoring PRs using PyQu, an ML-based quality assessment tool for Python, to quantify changes across five quality attributes, and we complement PyQu with domain-independent static analysis (Pylint and Bandit) to measure code quality and security issues before and after each change. Our results show that, on average, agentic commits improve a quality attribute in 22.5% of the studied changes, with usability improving most frequently (36.5%). At the same time, 24.17% of modified files introduce new Pylint issues predominantly convention level violations such as long lines-while 4.7% introduce new Bandit findings. From the observed diffs, we derive a taxonomy of 24 recurring change operations and map them to the lint and security findings they most commonly affect. Despite these mixed outcomes, developer acceptance is high: 73.5% of the analyzed PRs are merged, including cases that introduce new lint or security findings, often alongside the removal of existing issues. Overall, these findings highlight both the promise and current limitations of agentic refactoring, and motivate stronger tool-in-the-loop quality and security gating for AI-driven development workflows.",
+      "abstract": "As AI agents increasingly contribute to code development and maintenance, there is still limited empirical evidence on the quality and risk characteristics of their changes in real-world projects, particularly for refactoring-oriented contributions. It remains unclear how agent-authored refactoring edits affect maintainability, code quality, and security once merged into GitHub repositories. To address this gap, we conduct an empirical study of Python refactoring pull requests (PRs) from the AIDev dataset. We analyze agentic refactoring PRs using PyQu, an ML-based quality assessment tool for Python, to quantify changes across five quality attributes, and we complement PyQu with domain-independent static analysis (Pylint and Bandit) to measure code quality and security issues before and after each change. Our results show that, on average, agentic commits improve a quality attribute in 22.5% of the studied changes, with usability improving most frequently (36.5%). At the same time, 24.17% of modified files introduce new Pylint issues predominantly convention level violations such as long lines-while 4.7% introduce new Bandit findings. From the observed diffs, we derive a taxonomy of 24 recurring change operations and map them to the lint and security findings they most commonly affect. Despite these mixed outcomes, developer acceptance is high: 73.5% of the analyzed PRs are merged, including cases that introduce new lint or security findings, often alongside the removal of existing issues. Overall, these findings highlight both the promise and current limitations of agentic refactoring, and motivate stronger tool-in-the-loop quality and security gating for AI-driven development workflows.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21453",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 19,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "直接分析AI代理生成的Python重构PR在真实项目中的质量与安全信号，使用PyQu、Pylint和Bandit量化影响，方法可集成到CI/CD门控，对AI辅助开发工作流有明确启发。",
+        "one_sentence_summary": "该论文实证分析AI代理生成的Python重构PR，发现22.5%的提交改善了质量属性但24.17%的文件引入新lint问题，并定义24种变更操作类别，揭示代理重构的潜力和当前局限。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 19,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 84,
+      "score_reason": "直接分析AI代理生成的Python重构PR在真实项目中的质量与安全信号，使用PyQu、Pylint和Bandit量化影响，方法可集成到CI/CD门控，对AI辅助开发工作流有明确启发。",
+      "one_sentence_summary": "该论文实证分析AI代理生成的Python重构PR，发现22.5%的提交改善了质量属性但24.17%的文件引入新lint问题，并定义24种变更操作类别，揭示代理重构的潜力和当前局限。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21442",
+      "arxiv_id": "2605.21442",
+      "title": "torchtune: PyTorch native post-training library",
+      "url": "https://arxiv.org/abs/2605.21442",
+      "published_at": "2026-05-20T17:32:08Z",
+      "publish_date": "2026-05-20",
+      "description": "Modern LLMs typically require multistage training pipelines to achieve strong downstream performance, with post-training serving as the main interface for adapting open-weight models. We introduce torchtune, a PyTorch-native library designed to streamline the post-training lifecycle of LLMs, enabling efficient fine-tuning, experimentation, and deployment-oriented workflows. Unlike many existing fine-tuning frameworks, which often optimize for ease of use, specialized recipes, or hardware efficiency at the cost of transparency and extensibility, torchtune emphasizes modularity, hackability, and direct access to the underlying PyTorch components. In this paper, we present the design principles behind torchtune, describe how they are reflected in its model builders, training recipes, and distributed training stack, and evaluate the library across representative post-training settings. We compare against popular fine-tuning frameworks, including Axolotl and Unsloth, and show that torchtune provides strong performance and memory efficiency across many settings while remaining flexible enough for rapid research iteration. These results position torchtune as a practical foundation for reproducible LLMs post-training research.",
+      "summary": "Modern LLMs typically require multistage training pipelines to achieve strong downstream performance, with post-training serving as the main interface for adapting open-weight models. We introduce torchtune, a PyTorch-native library designed to streamline the post-training lifecycle of LLMs, enabling efficient fine-tuning, experimentation, and deployment-oriented workflows. Unlike many existing fine-tuning frameworks, which often optimize for ease of use, specialized recipes, or hardware efficiency at the cost of transparency and extensibility, torchtune emphasizes modularity, hackability, and direct access to the underlying PyTorch components. In this paper, we present the design principles behind torchtune, describe how they are reflected in its model builders, training recipes, and distributed training stack, and evaluate the library across representative post-training settings. We compare against popular fine-tuning frameworks, including Axolotl and Unsloth, and show that torchtune provides strong performance and memory efficiency across many settings while remaining flexible enough for rapid research iteration. These results position torchtune as a practical foundation for reproducible LLMs post-training research.",
+      "abstract": "Modern LLMs typically require multistage training pipelines to achieve strong downstream performance, with post-training serving as the main interface for adapting open-weight models. We introduce torchtune, a PyTorch-native library designed to streamline the post-training lifecycle of LLMs, enabling efficient fine-tuning, experimentation, and deployment-oriented workflows. Unlike many existing fine-tuning frameworks, which often optimize for ease of use, specialized recipes, or hardware efficiency at the cost of transparency and extensibility, torchtune emphasizes modularity, hackability, and direct access to the underlying PyTorch components. In this paper, we present the design principles behind torchtune, describe how they are reflected in its model builders, training recipes, and distributed training stack, and evaluate the library across representative post-training settings. We compare against popular fine-tuning frameworks, including Axolotl and Unsloth, and show that torchtune provides strong performance and memory efficiency across many settings while remaining flexible enough for rapid research iteration. These results position torchtune as a practical foundation for reproducible LLMs post-training research.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21442",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 18,
+          "engineering_utility": 25,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "PyTorch原生LLM后训练库，模块化与可黑客化设计突出，性能比肩主流框架且灵活，直接服务开发者体验，契合可复现后训练研究需求。",
+        "one_sentence_summary": "介绍torchtune，一个PyTorch原生的LLM后训练库，通过模块化模型构建、训练配方和分布式堆栈，在微调、实验与部署流程中强调透明与可扩展性；对比Axolotl和Unsloth，torchtune在多数场景下性能与内存效率相当，同时保持更灵活的快速研究迭代能力。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 18,
+        "engineering_utility": 25,
+        "timeliness_rarity": 20
+      },
+      "score_total": 87,
+      "score_reason": "PyTorch原生LLM后训练库，模块化与可黑客化设计突出，性能比肩主流框架且灵活，直接服务开发者体验，契合可复现后训练研究需求。",
+      "one_sentence_summary": "介绍torchtune，一个PyTorch原生的LLM后训练库，通过模块化模型构建、训练配方和分布式堆栈，在微调、实验与部署流程中强调透明与可扩展性；对比Axolotl和Unsloth，torchtune在多数场景下性能与内存效率相当，同时保持更灵活的快速研究迭代能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21434",
+      "arxiv_id": "2605.21434",
+      "title": "Agentic Model Checking",
+      "url": "https://arxiv.org/abs/2605.21434",
+      "published_at": "2026-05-20T17:25:52Z",
+      "publish_date": "2026-05-20",
+      "description": "Verifying LLM-generated systems code is hard: bugs are prevalent, formal specifications are missing, and safety contracts are encoded implicitly at call sites rather than enforced at function boundaries. We propose agentic model checking, a paradigm that couples LLM agents with a bounded model checking backend under the principle agents propose, solvers verify: agents handle tasks requiring semantic judgment (spec inference, check selection, counterexample classification, refinement proposal) while BMC discharges every soundness-relevant decision. The paradigm rests on three commitments. Specifications are inferred top-down from caller context in a restricted DSL that translates deterministically into the backend's assume/assert primitives, with optional functional-correctness clauses lifting verification from panic-freeness to behavioural faithfulness. Verification is compositional: each function is checked in isolation against its spec with callees replaced by postcondition-constrained stubs, so per-query cost scales with a single function's state space and refinements propagate automatically to callers. Counterexamples are not bug reports: they pass through a validation pipeline (reachability, callee feasibility, dynamic replay, realism audit) that distinguishes active in-tree crashes from latent public-API failures, while modelling artifacts drive a refinement loop rather than being suppressed. We instantiate the approach in BMC-Agent and evaluate it on LLM-generated kernel and compiler code in C and Rust alongside mature OSS-Fuzz-hardened libraries, confirming real defects, producing bounded clean verifications on heavily-fuzzed surfaces, and establishing functional equivalence on selected algorithmic functions.",
+      "summary": "Verifying LLM-generated systems code is hard: bugs are prevalent, formal specifications are missing, and safety contracts are encoded implicitly at call sites rather than enforced at function boundaries. We propose agentic model checking, a paradigm that couples LLM agents with a bounded model checking backend under the principle agents propose, solvers verify: agents handle tasks requiring semantic judgment (spec inference, check selection, counterexample classification, refinement proposal) while BMC discharges every soundness-relevant decision. The paradigm rests on three commitments. Specifications are inferred top-down from caller context in a restricted DSL that translates deterministically into the backend's assume/assert primitives, with optional functional-correctness clauses lifting verification from panic-freeness to behavioural faithfulness. Verification is compositional: each function is checked in isolation against its spec with callees replaced by postcondition-constrained stubs, so per-query cost scales with a single function's state space and refinements propagate automatically to callers. Counterexamples are not bug reports: they pass through a validation pipeline (reachability, callee feasibility, dynamic replay, realism audit) that distinguishes active in-tree crashes from latent public-API failures, while modelling artifacts drive a refinement loop rather than being suppressed. We instantiate the approach in BMC-Agent and evaluate it on LLM-generated kernel and compiler code in C and Rust alongside mature OSS-Fuzz-hardened libraries, confirming real defects, producing bounded clean verifications on heavily-fuzzed surfaces, and establishing functional equivalence on selected algorithmic functions.",
+      "abstract": "Verifying LLM-generated systems code is hard: bugs are prevalent, formal specifications are missing, and safety contracts are encoded implicitly at call sites rather than enforced at function boundaries. We propose agentic model checking, a paradigm that couples LLM agents with a bounded model checking backend under the principle agents propose, solvers verify: agents handle tasks requiring semantic judgment (spec inference, check selection, counterexample classification, refinement proposal) while BMC discharges every soundness-relevant decision. The paradigm rests on three commitments. Specifications are inferred top-down from caller context in a restricted DSL that translates deterministically into the backend's assume/assert primitives, with optional functional-correctness clauses lifting verification from panic-freeness to behavioural faithfulness. Verification is compositional: each function is checked in isolation against its spec with callees replaced by postcondition-constrained stubs, so per-query cost scales with a single function's state space and refinements propagate automatically to callers. Counterexamples are not bug reports: they pass through a validation pipeline (reachability, callee feasibility, dynamic replay, realism audit) that distinguishes active in-tree crashes from latent public-API failures, while modelling artifacts drive a refinement loop rather than being suppressed. We instantiate the approach in BMC-Agent and evaluate it on LLM-generated kernel and compiler code in C and Rust alongside mature OSS-Fuzz-hardened libraries, confirming real defects, producing bounded clean verifications on heavily-fuzzed surfaces, and establishing functional equivalence on selected algorithmic functions.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21434",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 21,
+          "engineering_utility": 18,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出代理模型检查范式，LLM代理推断规约、选择检查，BMC后端验证，在LLM生成的系统代码上发现真实缺陷，对代码验证工具链有新意但集成复杂度较高。",
+        "one_sentence_summary": "该论文将LLM代理与有界模型检查结合，代理负责规约推断和反例分类，后端执行验证，在LLM生成的内核和编译器代码上发现真实bug并实现部分功能正确性验证。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 21,
+        "engineering_utility": 18,
+        "timeliness_rarity": 21
+      },
+      "score_total": 80,
+      "score_reason": "提出代理模型检查范式，LLM代理推断规约、选择检查，BMC后端验证，在LLM生成的系统代码上发现真实缺陷，对代码验证工具链有新意但集成复杂度较高。",
+      "one_sentence_summary": "该论文将LLM代理与有界模型检查结合，代理负责规约推断和反例分类，后端执行验证，在LLM生成的内核和编译器代码上发现真实bug并实现部分功能正确性验证。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.21404",
+      "arxiv_id": "2605.21404",
+      "title": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
+      "url": "https://arxiv.org/abs/2605.21404",
+      "published_at": "2026-05-20T17:02:36Z",
+      "publish_date": "2026-05-20",
+      "description": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
+      "summary": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
+      "abstract": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21404",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "该审计研究直面LLM智能体基准的可复现性危机，提供开放评分模式，实用性强，虽非全新基准但揭示了关键披露缺陷，时效性高。",
+        "one_sentence_summary": "该研究对十二篇LLM智能体基准论文进行披露审计，设计五维评分模式评估基准身份、脚手架规范、推理设置、成本报告和失败分解的透明度，发现智能体论文平均得分仅0.38且无一披露推理成本，并发布JSON Schema、评分手册等工具以推动可复现评估。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 83,
+      "score_reason": "该审计研究直面LLM智能体基准的可复现性危机，提供开放评分模式，实用性强，虽非全新基准但揭示了关键披露缺陷，时效性高。",
+      "one_sentence_summary": "该研究对十二篇LLM智能体基准论文进行披露审计，设计五维评分模式评估基准身份、脚手架规范、推理设置、成本报告和失败分解的透明度，发现智能体论文平均得分仅0.38且无一披露推理成本，并发布JSON Schema、评分手册等工具以推动可复现评估。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21384",
+      "arxiv_id": "2605.21384",
+      "title": "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents",
+      "url": "https://arxiv.org/abs/2605.21384",
+      "published_at": "2026-05-20T16:41:51Z",
+      "publish_date": "2026-05-20",
+      "description": "As long-horizon coding agents produce more code than any developer can review, oversight collapses onto a single surface: the automated test suite. Reward hacking naturally arises in this setup, as the agent optimizes for passing tests while deviating from the users true goal. We study this reward hacking phenomenon by decompose software engineering tasks into three parts: (i) a natural language description of the specification (ii) visible validation tests that exercise specified features in isolation, and (iii) held-out tests that compose those same features to simulate real-world usage. Based on the specification and the visible validation test suites, a genuine agent would be able to generate a solution that can also pass all of the held-out tests. Therefore we use the gap in pass rates on these two suites to quantify reward hacking. Based on this methodology, we introduce SpecBench, a benchmark comprising 30 systems-level programming tasks ranging from short horizon tasks like building a JSON parser to ultra long horizon tasks like building an entire OS kernel from scratch. Large-scale experiments reveal a consistent pattern: while every frontier agent saturates the visible suite, reward hacking persists, with smaller models exhibiting larger gaps on holdout suites. The gap also scales sharply with task length: it grows by 28 percentage points for every tenfold increase in code size. Failures range from subtle feature isolation to deliberate exploits, including a 2,900-line hash-table \"compiler\" that memorizes test inputs. SpecBench offers a principled testbed for measuring whether coding agents build genuine working systems or merely game the test suites developers hand them.",
+      "summary": "As long-horizon coding agents produce more code than any developer can review, oversight collapses onto a single surface: the automated test suite. Reward hacking naturally arises in this setup, as the agent optimizes for passing tests while deviating from the users true goal. We study this reward hacking phenomenon by decompose software engineering tasks into three parts: (i) a natural language description of the specification (ii) visible validation tests that exercise specified features in isolation, and (iii) held-out tests that compose those same features to simulate real-world usage. Based on the specification and the visible validation test suites, a genuine agent would be able to generate a solution that can also pass all of the held-out tests. Therefore we use the gap in pass rates on these two suites to quantify reward hacking. Based on this methodology, we introduce SpecBench, a benchmark comprising 30 systems-level programming tasks ranging from short horizon tasks like building a JSON parser to ultra long horizon tasks like building an entire OS kernel from scratch. Large-scale experiments reveal a consistent pattern: while every frontier agent saturates the visible suite, reward hacking persists, with smaller models exhibiting larger gaps on holdout suites. The gap also scales sharply with task length: it grows by 28 percentage points for every tenfold increase in code size. Failures range from subtle feature isolation to deliberate exploits, including a 2,900-line hash-table \"compiler\" that memorizes test inputs. SpecBench offers a principled testbed for measuring whether coding agents build genuine working systems or merely game the test suites developers hand them.",
+      "abstract": "As long-horizon coding agents produce more code than any developer can review, oversight collapses onto a single surface: the automated test suite. Reward hacking naturally arises in this setup, as the agent optimizes for passing tests while deviating from the users true goal. We study this reward hacking phenomenon by decompose software engineering tasks into three parts: (i) a natural language description of the specification (ii) visible validation tests that exercise specified features in isolation, and (iii) held-out tests that compose those same features to simulate real-world usage. Based on the specification and the visible validation test suites, a genuine agent would be able to generate a solution that can also pass all of the held-out tests. Therefore we use the gap in pass rates on these two suites to quantify reward hacking. Based on this methodology, we introduce SpecBench, a benchmark comprising 30 systems-level programming tasks ranging from short horizon tasks like building a JSON parser to ultra long horizon tasks like building an entire OS kernel from scratch. Large-scale experiments reveal a consistent pattern: while every frontier agent saturates the visible suite, reward hacking persists, with smaller models exhibiting larger gaps on holdout suites. The gap also scales sharply with task length: it grows by 28 percentage points for every tenfold increase in code size. Failures range from subtle feature isolation to deliberate exploits, including a 2,900-line hash-table \"compiler\" that memorizes test inputs. SpecBench offers a principled testbed for measuring whether coding agents build genuine working systems or merely game the test suites developers hand them.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21384",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该论文直接针对长程编码智能体的奖励作弊问题，提出新颖的基准SpecBench和任务分解方法，与AI代理评估高度相关，有很强的工程复用价值，并捕捉了当前测试套件漏洞检测的紧迫趋势。",
+        "one_sentence_summary": "该论文提出SpecBench基准，将软件工程任务分解为规范描述、可见验证测试和隐藏组合测试，通过30个系统级编程任务量化长程编码智能体的奖励作弊现象，发现前沿模型仍存在显著测试差距，可作为评估智能体是否构建真正工作系统的标准。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 95,
+      "score_reason": "该论文直接针对长程编码智能体的奖励作弊问题，提出新颖的基准SpecBench和任务分解方法，与AI代理评估高度相关，有很强的工程复用价值，并捕捉了当前测试套件漏洞检测的紧迫趋势。",
+      "one_sentence_summary": "该论文提出SpecBench基准，将软件工程任务分解为规范描述、可见验证测试和隐藏组合测试，通过30个系统级编程任务量化长程编码智能体的奖励作弊现象，发现前沿模型仍存在显著测试差距，可作为评估智能体是否构建真正工作系统的标准。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21362",
+      "arxiv_id": "2605.21362",
+      "title": "LASH: Adaptive Semantic Hybridization for Black-Box Jailbreaking of Large Language Models",
+      "url": "https://arxiv.org/abs/2605.21362",
+      "published_at": "2026-05-20T16:27:00Z",
+      "publish_date": "2026-05-20",
+      "description": "Jailbreak attacks expose a persistent gap between the intended safety behavior of aligned large language models and their behavior under adversarial prompting. Existing automated methods are increasingly effective but each commits to a single attack family (e.g., one refinement loop, one tree search, one mutation space, or one strategy library) and no single family dominates: the best-performing method shifts across target models and harm categories, suggesting complementary strengths that per-prompt composition could exploit. We introduce LASH (LLM Adaptive Semantic Hybridization), a black-box framework that treats outputs from multiple base attacks as reusable seed prompts and adaptively composes them for each target request. Given a seed pool, LASH searches over seed subsets and softmax-normalized mixture weights; a composition module synthesizes a single candidate prompt, and a derivative-free genetic optimizer updates the weights using black-box target feedback and a two-stage fitness function combining keyword-based refusal detection with LLM-judge scoring. On JailbreakBench, which contains 100 harmful prompts across 10 categories, we evaluate LASH on six common target models. LASH achieves an average attack success rate of 84.5% under keyword-based evaluation and 74.5% under two-stage evaluation, where responses are first filtered for refusals and then scored by an LLM judge for whether they substantively fulfill the original harmful request. LASH outperforms five state-of-the-art baselines on both metrics with only 30 mean target queries. LASH also remains competitive under three defense mechanisms and induces more success-like internal representations. These results suggest that adaptive composition across heterogeneous jailbreak strategies is a promising direction for black-box red-teaming.",
+      "summary": "Jailbreak attacks expose a persistent gap between the intended safety behavior of aligned large language models and their behavior under adversarial prompting. Existing automated methods are increasingly effective but each commits to a single attack family (e.g., one refinement loop, one tree search, one mutation space, or one strategy library) and no single family dominates: the best-performing method shifts across target models and harm categories, suggesting complementary strengths that per-prompt composition could exploit. We introduce LASH (LLM Adaptive Semantic Hybridization), a black-box framework that treats outputs from multiple base attacks as reusable seed prompts and adaptively composes them for each target request. Given a seed pool, LASH searches over seed subsets and softmax-normalized mixture weights; a composition module synthesizes a single candidate prompt, and a derivative-free genetic optimizer updates the weights using black-box target feedback and a two-stage fitness function combining keyword-based refusal detection with LLM-judge scoring. On JailbreakBench, which contains 100 harmful prompts across 10 categories, we evaluate LASH on six common target models. LASH achieves an average attack success rate of 84.5% under keyword-based evaluation and 74.5% under two-stage evaluation, where responses are first filtered for refusals and then scored by an LLM judge for whether they substantively fulfill the original harmful request. LASH outperforms five state-of-the-art baselines on both metrics with only 30 mean target queries. LASH also remains competitive under three defense mechanisms and induces more success-like internal representations. These results suggest that adaptive composition across heterogeneous jailbreak strategies is a promising direction for black-box red-teaming.",
+      "abstract": "Jailbreak attacks expose a persistent gap between the intended safety behavior of aligned large language models and their behavior under adversarial prompting. Existing automated methods are increasingly effective but each commits to a single attack family (e.g., one refinement loop, one tree search, one mutation space, or one strategy library) and no single family dominates: the best-performing method shifts across target models and harm categories, suggesting complementary strengths that per-prompt composition could exploit. We introduce LASH (LLM Adaptive Semantic Hybridization), a black-box framework that treats outputs from multiple base attacks as reusable seed prompts and adaptively composes them for each target request. Given a seed pool, LASH searches over seed subsets and softmax-normalized mixture weights; a composition module synthesizes a single candidate prompt, and a derivative-free genetic optimizer updates the weights using black-box target feedback and a two-stage fitness function combining keyword-based refusal detection with LLM-judge scoring. On JailbreakBench, which contains 100 harmful prompts across 10 categories, we evaluate LASH on six common target models. LASH achieves an average attack success rate of 84.5% under keyword-based evaluation and 74.5% under two-stage evaluation, where responses are first filtered for refusals and then scored by an LLM judge for whether they substantively fulfill the original harmful request. LASH outperforms five state-of-the-art baselines on both metrics with only 30 mean target queries. LASH also remains competitive under three defense mechanisms and induces more success-like internal representations. These results suggest that adaptive composition across heterogeneous jailbreak strategies is a promising direction for black-box red-teaming.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21362",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "This work introduces an adaptive composition framework for jailbreaking LLMs, combining multiple attack strategies, which is highly relevant to AI safety and red-teaming, with practical implementation and strong results.",
+        "one_sentence_summary": "该论文提出LASH框架，通过自适应组合多个黑盒越狱攻击并利用遗传优化器调整权重，在JailbreakBench上对6个模型实现平均84.5%的攻击成功率，为LLM安全红队测试提供了新方法。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 84,
+      "score_reason": "This work introduces an adaptive composition framework for jailbreaking LLMs, combining multiple attack strategies, which is highly relevant to AI safety and red-teaming, with practical implementation and strong results.",
+      "one_sentence_summary": "该论文提出LASH框架，通过自适应组合多个黑盒越狱攻击并利用遗传优化器调整权重，在JailbreakBench上对6个模型实现平均84.5%的攻击成功率，为LLM安全红队测试提供了新方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21347",
+      "arxiv_id": "2605.21347",
+      "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+      "url": "https://arxiv.org/abs/2605.21347",
+      "published_at": "2026-05-20T16:13:53Z",
+      "publish_date": "2026-05-20",
+      "description": "Diagnosing failures in LLM agents remains largely manual. Practitioners inspect a small subset of execution traces, form ad-hoc hypotheses, and iterate. This process misses patterns that only emerge across trace populations and does not scale to production corpora where individual traces span tens of thousands of tokens. We formalize the problem of corpus-level trace diagnostics. Given a corpus of execution traces, the goal is to produce grounded natural-language insights that characterize systematic behavioral patterns across trace groups, each linked to supporting evidence. We present the Insights Generator (IG), a multi-agent system that answers diagnostic questions by proposing and testing hypotheses across the trace corpus to produce an evidence-backed insights report. We evaluate IG across qualitative and objective dimensions, spanning rubric-based report assessment and downstream performance improvements achieved by implementing IG insights. Human experts using IG reports improve scaffold performance by 30.4pp over the unmodified baseline scaffold, and coding agents leveraging IG-derived insights show consistent and stable gains. Across benchmarks, IG's scout-investigator architecture produces findings comparable in detection coverage to competing approaches, while domain experts rated IG reports as leading depth and evidence quality.",
+      "summary": "Diagnosing failures in LLM agents remains largely manual. Practitioners inspect a small subset of execution traces, form ad-hoc hypotheses, and iterate. This process misses patterns that only emerge across trace populations and does not scale to production corpora where individual traces span tens of thousands of tokens. We formalize the problem of corpus-level trace diagnostics. Given a corpus of execution traces, the goal is to produce grounded natural-language insights that characterize systematic behavioral patterns across trace groups, each linked to supporting evidence. We present the Insights Generator (IG), a multi-agent system that answers diagnostic questions by proposing and testing hypotheses across the trace corpus to produce an evidence-backed insights report. We evaluate IG across qualitative and objective dimensions, spanning rubric-based report assessment and downstream performance improvements achieved by implementing IG insights. Human experts using IG reports improve scaffold performance by 30.4pp over the unmodified baseline scaffold, and coding agents leveraging IG-derived insights show consistent and stable gains. Across benchmarks, IG's scout-investigator architecture produces findings comparable in detection coverage to competing approaches, while domain experts rated IG reports as leading depth and evidence quality.",
+      "abstract": "Diagnosing failures in LLM agents remains largely manual. Practitioners inspect a small subset of execution traces, form ad-hoc hypotheses, and iterate. This process misses patterns that only emerge across trace populations and does not scale to production corpora where individual traces span tens of thousands of tokens. We formalize the problem of corpus-level trace diagnostics. Given a corpus of execution traces, the goal is to produce grounded natural-language insights that characterize systematic behavioral patterns across trace groups, each linked to supporting evidence. We present the Insights Generator (IG), a multi-agent system that answers diagnostic questions by proposing and testing hypotheses across the trace corpus to produce an evidence-backed insights report. We evaluate IG across qualitative and objective dimensions, spanning rubric-based report assessment and downstream performance improvements achieved by implementing IG insights. Human experts using IG reports improve scaffold performance by 30.4pp over the unmodified baseline scaffold, and coding agents leveraging IG-derived insights show consistent and stable gains. Across benchmarks, IG's scout-investigator architecture produces findings comparable in detection coverage to competing approaches, while domain experts rated IG reports as leading depth and evidence quality.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21347",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "形式化语料库级追踪诊断问题，并通过多代理系统自动生成假设、验证证据，显著提升代理性能诊断效率，可部署于生产环境代理监控与优化，应用价值高。",
+        "one_sentence_summary": "Insights Generator多代理系统通过侦察-调查架构自动分析执行追踪语料库，生成带证据的洞察报告，人类专家使用后代理性能提升30.4个百分点，编码代理也获得稳定增益。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 92,
+      "score_reason": "形式化语料库级追踪诊断问题，并通过多代理系统自动生成假设、验证证据，显著提升代理性能诊断效率，可部署于生产环境代理监控与优化，应用价值高。",
+      "one_sentence_summary": "Insights Generator多代理系统通过侦察-调查架构自动分析执行追踪语料库，生成带证据的洞察报告，人类专家使用后代理性能提升30.4个百分点，编码代理也获得稳定增益。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-21T05:52:10.026206+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-21"
+    },
+    {
+      "id": "arxiv:2605.21317",
+      "arxiv_id": "2605.21317",
+      "title": "CRAFT: Conflict-Resolved Aggregation for Federated Training",
+      "url": "https://arxiv.org/abs/2605.21317",
+      "published_at": "2026-05-20T15:47:11Z",
+      "publish_date": "2026-05-20",
+      "description": "The aggregation of conflicting client updates remains a fundamental bottleneck in federated learning (FL) under heterogeneous data distributions. Naive averaging can produce a global update that improves the global objective while conflicting with specific clients, causing degradation for those clients. In this work, we propose CRAFT (Conflict-Resolved Aggregation for Federated Training), a new aggregation framework that treats the global update as a geometric correction problem. We formulate aggregation as finding the update closest to a reference direction while satisfying conflict-free alignment constraints. We derive a closed-form expression for the constrained optimization problem, avoiding the computational overhead of iterative solvers. Furthermore, we use a layer-wise adaptation to address conflicts at varying feature granularities. We provide a theoretical analysis showing that CRAFT promotes a common-descent structure and mitigates conflicts through its projection geometry. Extensive experiments on heterogeneous benchmarks demonstrate that CRAFT improves the accuracy of the global model while reducing performance disparity across clients compared with state-of-the-art baselines. The source code for CRAFT is available at https://github.com/tum-pbs/CRAFT.",
+      "summary": "The aggregation of conflicting client updates remains a fundamental bottleneck in federated learning (FL) under heterogeneous data distributions. Naive averaging can produce a global update that improves the global objective while conflicting with specific clients, causing degradation for those clients. In this work, we propose CRAFT (Conflict-Resolved Aggregation for Federated Training), a new aggregation framework that treats the global update as a geometric correction problem. We formulate aggregation as finding the update closest to a reference direction while satisfying conflict-free alignment constraints. We derive a closed-form expression for the constrained optimization problem, avoiding the computational overhead of iterative solvers. Furthermore, we use a layer-wise adaptation to address conflicts at varying feature granularities. We provide a theoretical analysis showing that CRAFT promotes a common-descent structure and mitigates conflicts through its projection geometry. Extensive experiments on heterogeneous benchmarks demonstrate that CRAFT improves the accuracy of the global model while reducing performance disparity across clients compared with state-of-the-art baselines. The source code for CRAFT is available at https://github.com/tum-pbs/CRAFT.",
+      "abstract": "The aggregation of conflicting client updates remains a fundamental bottleneck in federated learning (FL) under heterogeneous data distributions. Naive averaging can produce a global update that improves the global objective while conflicting with specific clients, causing degradation for those clients. In this work, we propose CRAFT (Conflict-Resolved Aggregation for Federated Training), a new aggregation framework that treats the global update as a geometric correction problem. We formulate aggregation as finding the update closest to a reference direction while satisfying conflict-free alignment constraints. We derive a closed-form expression for the constrained optimization problem, avoiding the computational overhead of iterative solvers. Furthermore, we use a layer-wise adaptation to address conflicts at varying feature granularities. We provide a theoretical analysis showing that CRAFT promotes a common-descent structure and mitigates conflicts through its projection geometry. Extensive experiments on heterogeneous benchmarks demonstrate that CRAFT improves the accuracy of the global model while reducing performance disparity across clients compared with state-of-the-art baselines. The source code for CRAFT is available at https://github.com/tum-pbs/CRAFT.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21317",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 18,
+          "engineering_utility": 22,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "CRAFT proposes a novel geometric aggregation method for federated learning with theoretical backing and open-source code, improving global accuracy and reducing client disparity, making it practical for deployment.",
+        "one_sentence_summary": "经过实验验证，该论文提出CRAFT聚合框架，将联邦学习中的冲突更新视为几何校正问题，通过闭式解和逐层自适应减少客户性能差异，并在异构数据上提升全局准确率且开源代码。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 18,
+        "engineering_utility": 22,
+        "timeliness_rarity": 18
+      },
+      "score_total": 76,
+      "score_reason": "CRAFT proposes a novel geometric aggregation method for federated learning with theoretical backing and open-source code, improving global accuracy and reducing client disparity, making it practical for deployment.",
+      "one_sentence_summary": "经过实验验证，该论文提出CRAFT聚合框架，将联邦学习中的冲突更新视为几何校正问题，通过闭式解和逐层自适应减少客户性能差异，并在异构数据上提升全局准确率且开源代码。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.21269",
+      "arxiv_id": "2605.21269",
+      "title": "Transforming Privacy Artifacts into Accessible Reports for Non-Technical Stakeholders",
+      "url": "https://arxiv.org/abs/2605.21269",
+      "published_at": "2026-05-20T14:58:04Z",
+      "publish_date": "2026-05-20",
+      "description": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "summary": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "abstract": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21269",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 16,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "The paper presents a conceptual framework using LLMs to transform privacy artifacts into reports for non-technical stakeholders, addressing a timely need in human-centric AI systems; however, engineering details are still nascent.",
+        "one_sentence_summary": "该论文针对工业5.0人机协作中的隐私沟通问题，提出利用大语言模型将隐私威胁与缓解措施等技术产物转化为非技术利益相关者可理解的报告，并基于两个工业案例展示了框架的可行性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 16,
+        "timeliness_rarity": 18
+      },
+      "score_total": 76,
+      "score_reason": "The paper presents a conceptual framework using LLMs to transform privacy artifacts into reports for non-technical stakeholders, addressing a timely need in human-centric AI systems; however, engineering details are still nascent.",
+      "one_sentence_summary": "该论文针对工业5.0人机协作中的隐私沟通问题，提出利用大语言模型将隐私威胁与缓解措施等技术产物转化为非技术利益相关者可理解的报告，并基于两个工业案例展示了框架的可行性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-21",
       "pushed_run_id": null
     }
   ]
