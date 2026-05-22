@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-21T05:52:10.026206+00:00",
+  "updated_at": "2026-05-22T05:44:08.410110+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -7002,11 +7002,11 @@
       "score_reason": "论文通过大规模受控实验揭示LLM量化导致公平性退化，发现3-bit量化使6-21%的无偏项目产生新刻板印象，而常规困惑度指标无法检测，对模型部署中的质量与安全权衡提供了重要实证证据，可直接指导量化流程，虽无新工具，但结论警示性强、方向少见。",
       "one_sentence_summary": "对Qwen2.5-7B、Mistral-7B、Phi-3.5-mini在BF16到3-bit五个精度下进行BBQ偏见基准测试，发现量化显著引发新偏见，而困惑度几乎不变，表明量化后需增加偏见检测以避免安全风险。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-18T05:49:25.247650+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
       "source_run_id": "2026-05-18",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-22"
     },
     {
       "id": "arxiv:2605.15221",
@@ -7098,11 +7098,11 @@
       "score_reason": "论文引入PBT-Bench，一个要求代理从库文档推导属性并构建高触发率测试策略的基准，包含100个问题365个bug，填补了语义推理型代码代理评测空白，为后续工程实现提供了可复用数据集和评估框架，任务新颖，代表了AI辅助测试的前沿。",
       "one_sentence_summary": "构建PBT-Bench基准，包含100个基于Python库的属性测试问题，要求代理阅读文档识别语义不变量并指定Hypothesis策略以发现注入bug，评估8个LLM发现结构化提示提升中等模型但干扰强模型，揭示模型特定困难。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-18T05:49:25.247650+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
       "source_run_id": "2026-05-18",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-22"
     },
     {
       "id": "arxiv:2605.15295",
@@ -8980,6 +8980,488 @@
       "pushed_at": null,
       "source_run_id": "2026-05-21",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.22786",
+      "arxiv_id": "2605.22786",
+      "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2605.22786",
+      "published_at": "2026-05-21T17:42:12Z",
+      "publish_date": "2026-05-21",
+      "description": "Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relevant information. However, KV caches also encode contextual inputs, intermediate reasoning states, and agent-specific information, creating an opaque channel through which sensitive content may propagate across agents without explicit textual disclosure. To address this, we introduce \\textbf{LCGuard} (Latent Communication Guard), a framework for safe KV-based latent communication in multi-agent LLM systems. LCGuard treats shared KV caches as latent working memory and learns representation-level transformations before cache artifacts are transmitted across agents. We formalize representation-level sensitive information leakage operationally through reconstruction: a shared cache artifact is unsafe if an adversarial decoder can recover agent-specific sensitive inputs from it. This leads to an adversarial training formulation in which the adversary learns to reconstruct sensitive inputs, while LCGuard learns transformations that preserve task-relevant semantics and reduce reconstructable information. Empirical evaluations across multiple model families and multi-agent benchmarks show that LCGuard consistently reduces reconstruction-based leakage and attack success rates while maintaining competitive task performance compared to standard KV-sharing baselines.",
+      "summary": "Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relevant information. However, KV caches also encode contextual inputs, intermediate reasoning states, and agent-specific information, creating an opaque channel through which sensitive content may propagate across agents without explicit textual disclosure. To address this, we introduce \\textbf{LCGuard} (Latent Communication Guard), a framework for safe KV-based latent communication in multi-agent LLM systems. LCGuard treats shared KV caches as latent working memory and learns representation-level transformations before cache artifacts are transmitted across agents. We formalize representation-level sensitive information leakage operationally through reconstruction: a shared cache artifact is unsafe if an adversarial decoder can recover agent-specific sensitive inputs from it. This leads to an adversarial training formulation in which the adversary learns to reconstruct sensitive inputs, while LCGuard learns transformations that preserve task-relevant semantics and reduce reconstructable information. Empirical evaluations across multiple model families and multi-agent benchmarks show that LCGuard consistently reduces reconstruction-based leakage and attack success rates while maintaining competitive task performance compared to standard KV-sharing baselines.",
+      "abstract": "Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relevant information. However, KV caches also encode contextual inputs, intermediate reasoning states, and agent-specific information, creating an opaque channel through which sensitive content may propagate across agents without explicit textual disclosure. To address this, we introduce \\textbf{LCGuard} (Latent Communication Guard), a framework for safe KV-based latent communication in multi-agent LLM systems. LCGuard treats shared KV caches as latent working memory and learns representation-level transformations before cache artifacts are transmitted across agents. We formalize representation-level sensitive information leakage operationally through reconstruction: a shared cache artifact is unsafe if an adversarial decoder can recover agent-specific sensitive inputs from it. This leads to an adversarial training formulation in which the adversary learns to reconstruct sensitive inputs, while LCGuard learns transformations that preserve task-relevant semantics and reduce reconstructable information. Empirical evaluations across multiple model families and multi-agent benchmarks show that LCGuard consistently reduces reconstruction-based leakage and attack success rates while maintaining competitive task performance compared to standard KV-sharing baselines.",
+      "categories": [
+        "cs.AI",
+        "cs.ET",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.ET",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22786",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "针对多智能体系统中KV缓存共享带来的隐性信息泄露，提供防护方案，对代理安全有直接应用价值；提出基于对抗训练的表征级变换防御，方式新颖；方法可集成到多代理架构中，但需特定训练；多代理隐性通信安全是较新的前沿方向。",
+        "one_sentence_summary": "推出LCGuard框架，通过对抗训练学习KV缓存表征变换，在不损害任务性能的前提下大幅减少多智能体隐性通信中敏感信息的重构泄漏，为安全KV共享提供可行方案。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 81,
+      "score_reason": "针对多智能体系统中KV缓存共享带来的隐性信息泄露，提供防护方案，对代理安全有直接应用价值；提出基于对抗训练的表征级变换防御，方式新颖；方法可集成到多代理架构中，但需特定训练；多代理隐性通信安全是较新的前沿方向。",
+      "one_sentence_summary": "推出LCGuard框架，通过对抗训练学习KV缓存表征变换，在不损害任务性能的前提下大幅减少多智能体隐性通信中敏感信息的重构泄漏，为安全KV共享提供可行方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22775",
+      "arxiv_id": "2605.22775",
+      "title": "MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data",
+      "url": "https://arxiv.org/abs/2605.22775",
+      "published_at": "2026-05-21T17:33:41Z",
+      "publish_date": "2026-05-21",
+      "description": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "summary": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "abstract": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22775",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "MambaGaze专门处理眼动缺失数据，并在边缘设备实现实时推理，为自适应认知负荷监测提供了可部署的方法，但应用场景相对狭窄。",
+        "one_sentence_summary": "MambaGaze框架通过XMD编码显式建模眼动追踪中的缺失数据，并使用双向Mamba-2捕获长程依赖，在认知负荷评估任务上准确率超越Transformer等模型，且在Jetson边缘设备上实现实时推理，适用于驾驶员监测等场景。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "MambaGaze专门处理眼动缺失数据，并在边缘设备实现实时推理，为自适应认知负荷监测提供了可部署的方法，但应用场景相对狭窄。",
+      "one_sentence_summary": "MambaGaze框架通过XMD编码显式建模眼动追踪中的缺失数据，并使用双向Mamba-2捕获长程依赖，在认知负荷评估任务上准确率超越Transformer等模型，且在Jetson边缘设备上实现实时推理，适用于驾驶员监测等场景。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.22748",
+      "arxiv_id": "2605.22748",
+      "title": "Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.22748",
+      "published_at": "2026-05-21T17:15:54Z",
+      "publish_date": "2026-05-21",
+      "description": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "summary": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "abstract": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22748",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 21,
+          "engineering_utility": 16,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "虽聚焦机器人竞速，但展示了多智能体强化学习在真实物理环境下安全交互的潜力，可启发代理安全交互设计；零样本泛化至与人类安全比赛是新颖任务；方法依赖实物无人机和特定训练，工程落地难度较高；高速多机器人真实交互成果较为稀有。",
+        "one_sentence_summary": "利用基于联赛自对弈的多智能体强化学习训练超高速无人机竞速代理，实现超人类表现、碰撞率降低一半，并能在零样本下安全与人类飞行员同场竞技，证明多智能体交互是达成鲁棒共存的路径。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 21,
+        "engineering_utility": 16,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "虽聚焦机器人竞速，但展示了多智能体强化学习在真实物理环境下安全交互的潜力，可启发代理安全交互设计；零样本泛化至与人类安全比赛是新颖任务；方法依赖实物无人机和特定训练，工程落地难度较高；高速多机器人真实交互成果较为稀有。",
+      "one_sentence_summary": "利用基于联赛自对弈的多智能体强化学习训练超高速无人机竞速代理，实现超人类表现、碰撞率降低一半，并能在零样本下安全与人类飞行员同场竞技，证明多智能体交互是达成鲁棒共存的路径。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.22733",
+      "arxiv_id": "2605.22733",
+      "title": "HarnessAPI: A Skill-First Framework for Unified Streaming APIs and MCP Tools",
+      "url": "https://arxiv.org/abs/2605.22733",
+      "published_at": "2026-05-21T17:03:44Z",
+      "publish_date": "2026-05-21",
+      "description": "Every Python function deployed as an LLM tool must today exist in two forms: an HTTP endpoint for human-facing clients and CI pipelines, and an MCP tool registration for agent runtimes such as Claude and Cursor. These representations share business logic yet diverge in all the surrounding machinery (routing, validation, serialisation, streaming, and schema maintenance), and they drift apart as the underlying code evolves. We present HarnessAPI, a Python framework that eliminates this duplication by treating a typed skill folder as the single source of truth. From one handler.py plus Pydantic schemas, the framework automatically derives a streaming HTTP endpoint with Server-Sent Events, an interactive OpenAPI/Swagger UI, and a zero-configuration MCP tool, all served from a single process. Dual-mode content negotiation lets the same handler serve SSE-streaming and JSON-returning clients with no handler changes. A dynamic code-generation mechanism ensures Pydantic type annotations propagate correctly to FastMCP's inspection layer, resolving a technical limitation that prevents naive closure-based registration. Measured across six representative skills using cloc, HarnessAPI reduces framework-facing boilerplate by 74% compared with a manually maintained dual-stack implementation (FastAPI server + FastMCP server). HarnessAPI subclasses FastAPI, inheriting its full middleware, dependency-injection, and deployment ecosystem. It is available at https://github.com/edwinjosechittilappilly/harnessapi and on PyPI (pip install harnessapi)",
+      "summary": "Every Python function deployed as an LLM tool must today exist in two forms: an HTTP endpoint for human-facing clients and CI pipelines, and an MCP tool registration for agent runtimes such as Claude and Cursor. These representations share business logic yet diverge in all the surrounding machinery (routing, validation, serialisation, streaming, and schema maintenance), and they drift apart as the underlying code evolves. We present HarnessAPI, a Python framework that eliminates this duplication by treating a typed skill folder as the single source of truth. From one handler.py plus Pydantic schemas, the framework automatically derives a streaming HTTP endpoint with Server-Sent Events, an interactive OpenAPI/Swagger UI, and a zero-configuration MCP tool, all served from a single process. Dual-mode content negotiation lets the same handler serve SSE-streaming and JSON-returning clients with no handler changes. A dynamic code-generation mechanism ensures Pydantic type annotations propagate correctly to FastMCP's inspection layer, resolving a technical limitation that prevents naive closure-based registration. Measured across six representative skills using cloc, HarnessAPI reduces framework-facing boilerplate by 74% compared with a manually maintained dual-stack implementation (FastAPI server + FastMCP server). HarnessAPI subclasses FastAPI, inheriting its full middleware, dependency-injection, and deployment ecosystem. It is available at https://github.com/edwinjosechittilappilly/harnessapi and on PyPI (pip install harnessapi)",
+      "abstract": "Every Python function deployed as an LLM tool must today exist in two forms: an HTTP endpoint for human-facing clients and CI pipelines, and an MCP tool registration for agent runtimes such as Claude and Cursor. These representations share business logic yet diverge in all the surrounding machinery (routing, validation, serialisation, streaming, and schema maintenance), and they drift apart as the underlying code evolves. We present HarnessAPI, a Python framework that eliminates this duplication by treating a typed skill folder as the single source of truth. From one handler.py plus Pydantic schemas, the framework automatically derives a streaming HTTP endpoint with Server-Sent Events, an interactive OpenAPI/Swagger UI, and a zero-configuration MCP tool, all served from a single process. Dual-mode content negotiation lets the same handler serve SSE-streaming and JSON-returning clients with no handler changes. A dynamic code-generation mechanism ensures Pydantic type annotations propagate correctly to FastMCP's inspection layer, resolving a technical limitation that prevents naive closure-based registration. Measured across six representative skills using cloc, HarnessAPI reduces framework-facing boilerplate by 74% compared with a manually maintained dual-stack implementation (FastAPI server + FastMCP server). HarnessAPI subclasses FastAPI, inheriting its full middleware, dependency-injection, and deployment ecosystem. It is available at https://github.com/edwinjosechittilappilly/harnessapi and on PyPI (pip install harnessapi)",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22733",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 25,
+          "timeliness_rarity": 25
+        },
+        "score_reason": "直接解决LLM工具多协议部署痛点，提供即用框架，显著减少样板代码，紧跟MCP和Agent趋势，工程价值极高。",
+        "one_sentence_summary": "HarnessAPI 将类型化的技能文件夹作为单一真相源，从 handler.py 和 Pydantic 模式自动生成流式 HTTP 端点、OpenAPI/Swagger 界面和零配置的 MCP 工具，同一处理函数通过双模内容协商同时支持 SSE 和 JSON 响应；相比手动维护双栈，样板代码减少 74%，子类化 FastAPI 便于集成。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 25,
+        "timeliness_rarity": 25
+      },
+      "score_total": 99,
+      "score_reason": "直接解决LLM工具多协议部署痛点，提供即用框架，显著减少样板代码，紧跟MCP和Agent趋势，工程价值极高。",
+      "one_sentence_summary": "HarnessAPI 将类型化的技能文件夹作为单一真相源，从 handler.py 和 Pydantic 模式自动生成流式 HTTP 端点、OpenAPI/Swagger 界面和零配置的 MCP 工具，同一处理函数通过双模内容协商同时支持 SSE 和 JSON 响应；相比手动维护双栈，样板代码减少 74%，子类化 FastAPI 便于集成。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22658",
+      "arxiv_id": "2605.22658",
+      "title": "SegCompass: Exploring Interpretable Alignment with Sparse Autoencoders for Enhanced Reasoning Segmentation",
+      "url": "https://arxiv.org/abs/2605.22658",
+      "published_at": "2026-05-21T15:59:39Z",
+      "publish_date": "2026-05-21",
+      "description": "While large language models provide strong compositional reasoning, existing reasoning segmentation pipelines fail to transparently connect this reasoning to visual perception. Current methods, such as latent query alignment, are end-to-end yet opaque \"black boxes\". Conversely, textual localization readout is merely readable, not truly interpretable, often functioning as an unconstrained post-hoc step. To bridge this interpretability gap, we propose SegCompass, an end-to-end model that leverages a Sparse Autoencoder (SAE) to forge an explicit, interpretable, and differentiable alignment pathway. Given an image-instruction pair, SegCompass first generates a chain-of-thought (CoT) trace. The core of our method is an SAE that maps both the CoT and visual tokens into a shared, high-dimensional sparse concept space. A query codebook selects salient concepts from this space, which are then spatially grounded by a slot mapper into a multi-slot heatmap that guides the final mask decoder. The entire model is trained jointly, unifying reinforcement learning for the reasoning path with standard segmentation supervision. This SAE-driven interface provides a \"white-box\" connection that is significantly more traceable than latent queries and more coherent than textual readouts. Extensive experiments on five challenging benchmarks demonstrate that SegCompass matches or surpasses state-of-the-art performance. Crucially, our visual and quantitative analyses show a strong correlation between the quality of the learned sparse concepts and final mask accuracy, confirming that SegCompass achieves superior results through its enhanced and inspectable alignment. Code is available at https://github.com/ZhenyuLU-Heliodore/SegCompass.",
+      "summary": "While large language models provide strong compositional reasoning, existing reasoning segmentation pipelines fail to transparently connect this reasoning to visual perception. Current methods, such as latent query alignment, are end-to-end yet opaque \"black boxes\". Conversely, textual localization readout is merely readable, not truly interpretable, often functioning as an unconstrained post-hoc step. To bridge this interpretability gap, we propose SegCompass, an end-to-end model that leverages a Sparse Autoencoder (SAE) to forge an explicit, interpretable, and differentiable alignment pathway. Given an image-instruction pair, SegCompass first generates a chain-of-thought (CoT) trace. The core of our method is an SAE that maps both the CoT and visual tokens into a shared, high-dimensional sparse concept space. A query codebook selects salient concepts from this space, which are then spatially grounded by a slot mapper into a multi-slot heatmap that guides the final mask decoder. The entire model is trained jointly, unifying reinforcement learning for the reasoning path with standard segmentation supervision. This SAE-driven interface provides a \"white-box\" connection that is significantly more traceable than latent queries and more coherent than textual readouts. Extensive experiments on five challenging benchmarks demonstrate that SegCompass matches or surpasses state-of-the-art performance. Crucially, our visual and quantitative analyses show a strong correlation between the quality of the learned sparse concepts and final mask accuracy, confirming that SegCompass achieves superior results through its enhanced and inspectable alignment. Code is available at https://github.com/ZhenyuLU-Heliodore/SegCompass.",
+      "abstract": "While large language models provide strong compositional reasoning, existing reasoning segmentation pipelines fail to transparently connect this reasoning to visual perception. Current methods, such as latent query alignment, are end-to-end yet opaque \"black boxes\". Conversely, textual localization readout is merely readable, not truly interpretable, often functioning as an unconstrained post-hoc step. To bridge this interpretability gap, we propose SegCompass, an end-to-end model that leverages a Sparse Autoencoder (SAE) to forge an explicit, interpretable, and differentiable alignment pathway. Given an image-instruction pair, SegCompass first generates a chain-of-thought (CoT) trace. The core of our method is an SAE that maps both the CoT and visual tokens into a shared, high-dimensional sparse concept space. A query codebook selects salient concepts from this space, which are then spatially grounded by a slot mapper into a multi-slot heatmap that guides the final mask decoder. The entire model is trained jointly, unifying reinforcement learning for the reasoning path with standard segmentation supervision. This SAE-driven interface provides a \"white-box\" connection that is significantly more traceable than latent queries and more coherent than textual readouts. Extensive experiments on five challenging benchmarks demonstrate that SegCompass matches or surpasses state-of-the-art performance. Crucially, our visual and quantitative analyses show a strong correlation between the quality of the learned sparse concepts and final mask accuracy, confirming that SegCompass achieves superior results through its enhanced and inspectable alignment. Code is available at https://github.com/ZhenyuLU-Heliodore/SegCompass.",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM",
+        "eess.IV"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM",
+        "eess.IV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22658",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "创新地将稀疏自编码器用于推理分割的可解释对齐，在多个基准领先，代码开源，兼具学术新意和工程潜力。",
+        "one_sentence_summary": "SegCompass 引入稀疏自编码器在思维链和视觉 token 之间建立可解释对齐：通过共享概念空间、查询码本和多槽热图引导掩码解码，实现端到端推理分割；在五个基准上匹配或超越现有方法，分析显示学习的稀疏概念质量与掩码精度强相关，代码开源。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 23
+      },
+      "score_total": 83,
+      "score_reason": "创新地将稀疏自编码器用于推理分割的可解释对齐，在多个基准领先，代码开源，兼具学术新意和工程潜力。",
+      "one_sentence_summary": "SegCompass 引入稀疏自编码器在思维链和视觉 token 之间建立可解释对齐：通过共享概念空间、查询码本和多槽热图引导掩码解码，实现端到端推理分割；在五个基准上匹配或超越现有方法，分析显示学习的稀疏概念质量与掩码精度强相关，代码开源。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22643",
+      "arxiv_id": "2605.22643",
+      "title": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+      "url": "https://arxiv.org/abs/2605.22643",
+      "published_at": "2026-05-21T15:50:18Z",
+      "publish_date": "2026-05-21",
+      "description": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act's Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.",
+      "summary": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act's Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.",
+      "abstract": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act's Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22643",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "该基准直接服务于工具使用型AI代理的安全性评测，提供多轮状态下的增量攻击场景和风险分类，与产品安全高度相关；提出新的多轮安全基准和风险分类法；评测方法明确且可复用；代理安全是近期热点，但多轮增量攻击评测相对少见。",
+        "one_sentence_summary": "提出Boiling the Frog多轮基准，通过办公场景下从良性编辑逐步过渡到危险请求的增量攻击，评估工具使用AI模型的安全性，在九款模型上攻击成功率平均44.4%，最高达93.3%，为代理安全提供系统化度量。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 18
+      },
+      "score_total": 80,
+      "score_reason": "该基准直接服务于工具使用型AI代理的安全性评测，提供多轮状态下的增量攻击场景和风险分类，与产品安全高度相关；提出新的多轮安全基准和风险分类法；评测方法明确且可复用；代理安全是近期热点，但多轮增量攻击评测相对少见。",
+      "one_sentence_summary": "提出Boiling the Frog多轮基准，通过办公场景下从良性编辑逐步过渡到危险请求的增量攻击，评估工具使用AI模型的安全性，在九款模型上攻击成功率平均44.4%，最高达93.3%，为代理安全提供系统化度量。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22634",
+      "arxiv_id": "2605.22634",
+      "title": "Contractual Skills: A GovernSpec Design Framework for Enterprise AI Agents",
+      "url": "https://arxiv.org/abs/2605.22634",
+      "published_at": "2026-05-21T15:40:05Z",
+      "publish_date": "2026-05-21",
+      "description": "Skills are increasingly used to package agent instructions, workflows, scripts, and reference materials. In enterprise settings, however, skills often need to express more than task guidance: they must make goals, input boundaries, permissions, evidence requirements, output contracts, quality criteria, verification steps, human approval points, and handoff rules inspectable. This paper proposes contractual skills, a GovernSpec-inspired design framework for organizing SKILL.md files as readable task contracts while preserving lightweight skill discovery and progressive loading. The framework clarifies the boundary between contractual skills, GovernSpec YAML contracts, Model Context Protocol surfaces, tool adapters, runtime guardrails, tracing, and evaluation systems. We evaluate the framework with two offline experiments. A text-generation study covers three enterprise skills, fifteen synthetic tasks, four instruction conditions, and eight generation models, yielding 960 outputs and 1680 cross-judge score records. Contractual skills outperform no-skill and minimal-skill baselines on all tested models. Relative to information-rich plain expanded skills, the gains are small and mixed, suggesting that contractual fields mainly improve checkability and maintainability rather than raw generation quality. A tool-calling challenge covers eight models and 192 simulated tool-call records. Skills usually reduce high-risk tool attempts, but model differences remain and runtime tool guardrails are still required. The results suggest that contractual skills are best understood as a governance layer that makes task intent, boundaries, and acceptance criteria explicit, not as a standalone safety mechanism.",
+      "summary": "Skills are increasingly used to package agent instructions, workflows, scripts, and reference materials. In enterprise settings, however, skills often need to express more than task guidance: they must make goals, input boundaries, permissions, evidence requirements, output contracts, quality criteria, verification steps, human approval points, and handoff rules inspectable. This paper proposes contractual skills, a GovernSpec-inspired design framework for organizing SKILL.md files as readable task contracts while preserving lightweight skill discovery and progressive loading. The framework clarifies the boundary between contractual skills, GovernSpec YAML contracts, Model Context Protocol surfaces, tool adapters, runtime guardrails, tracing, and evaluation systems. We evaluate the framework with two offline experiments. A text-generation study covers three enterprise skills, fifteen synthetic tasks, four instruction conditions, and eight generation models, yielding 960 outputs and 1680 cross-judge score records. Contractual skills outperform no-skill and minimal-skill baselines on all tested models. Relative to information-rich plain expanded skills, the gains are small and mixed, suggesting that contractual fields mainly improve checkability and maintainability rather than raw generation quality. A tool-calling challenge covers eight models and 192 simulated tool-call records. Skills usually reduce high-risk tool attempts, but model differences remain and runtime tool guardrails are still required. The results suggest that contractual skills are best understood as a governance layer that makes task intent, boundaries, and acceptance criteria explicit, not as a standalone safety mechanism.",
+      "abstract": "Skills are increasingly used to package agent instructions, workflows, scripts, and reference materials. In enterprise settings, however, skills often need to express more than task guidance: they must make goals, input boundaries, permissions, evidence requirements, output contracts, quality criteria, verification steps, human approval points, and handoff rules inspectable. This paper proposes contractual skills, a GovernSpec-inspired design framework for organizing SKILL.md files as readable task contracts while preserving lightweight skill discovery and progressive loading. The framework clarifies the boundary between contractual skills, GovernSpec YAML contracts, Model Context Protocol surfaces, tool adapters, runtime guardrails, tracing, and evaluation systems. We evaluate the framework with two offline experiments. A text-generation study covers three enterprise skills, fifteen synthetic tasks, four instruction conditions, and eight generation models, yielding 960 outputs and 1680 cross-judge score records. Contractual skills outperform no-skill and minimal-skill baselines on all tested models. Relative to information-rich plain expanded skills, the gains are small and mixed, suggesting that contractual fields mainly improve checkability and maintainability rather than raw generation quality. A tool-calling challenge covers eight models and 192 simulated tool-call records. Skills usually reduce high-risk tool attempts, but model differences remain and runtime tool guardrails are still required. The results suggest that contractual skills are best understood as a governance layer that makes task intent, boundaries, and acceptance criteria explicit, not as a standalone safety mechanism.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22634",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "为企业代理提供可审查、可治理的技能组织框架，直接改进开发者体验和产品治理；引入合同式技能概念，明确输入边界、权限、输出契约等；给出SKILL.md模板和实验验证，易于集成；企业AI治理是趋势，但技能合同化非全然未见。",
+        "one_sentence_summary": "提出合同式技能框架，将SKILL.md组织为可读任务合同，明确目标、权限、输出准则和审批点，实验显示虽对生成质量提升有限，但显著改善技能的可检查性和可维护性，更适合企业治理需求。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 80,
+      "score_reason": "为企业代理提供可审查、可治理的技能组织框架，直接改进开发者体验和产品治理；引入合同式技能概念，明确输入边界、权限、输出契约等；给出SKILL.md模板和实验验证，易于集成；企业AI治理是趋势，但技能合同化非全然未见。",
+      "one_sentence_summary": "提出合同式技能框架，将SKILL.md组织为可读任务合同，明确目标、权限、输出准则和审批点，实验显示虽对生成质量提升有限，但显著改善技能的可检查性和可维护性，更适合企业治理需求。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22613",
+      "arxiv_id": "2605.22613",
+      "title": "Evolutionary Multi-Task Optimization for LLM-Guided Program Discovery",
+      "url": "https://arxiv.org/abs/2605.22613",
+      "published_at": "2026-05-21T15:28:03Z",
+      "publish_date": "2026-05-21",
+      "description": "Recent LLM-guided evolutionary search methods have shown that iterative program mutation can discover strong algorithms, but they typically optimize each task independently, even when related tasks share reusable structure. We introduce Evolutionary Multi-Task Optimization (EMO) for LLM-guided program discovery, and propose EMO-STA (Shared-Then-Adapt), a two-stage framework that first evolves a shared archive of executable programs across a task family and then adapts selected shared candidates to each target task. Within EMO-STA, we explore multiple adaptation strategies, including warm-starting from the shared archive, adapting the best average shared program, and adapting the shared program that performs best on each target task. Across eight task families spanning continuous optimization, geometric construction, modeling, and algorithmic optimization, EMO-STA improves over matched-compute single-task evolution in most settings, with STA Best-Local providing the strongest in-distribution adaptation and STA Best-Shared yielding robust transfer to unseen tasks. Compute-allocation experiments show that allocating a substantial fraction of the family-level budget to shared evolution is consistently beneficial, with roughly balanced shared and adaptation budgets often being optimal. Beyond compute efficiency, we show that shared evolution can mitigate overfitting in low-evidence settings (e.g. few training data), including ARC tasks and time-series feature engineering, by favoring programs that generalize across all tasks rather than exploiting task-specific brittle artifacts.",
+      "summary": "Recent LLM-guided evolutionary search methods have shown that iterative program mutation can discover strong algorithms, but they typically optimize each task independently, even when related tasks share reusable structure. We introduce Evolutionary Multi-Task Optimization (EMO) for LLM-guided program discovery, and propose EMO-STA (Shared-Then-Adapt), a two-stage framework that first evolves a shared archive of executable programs across a task family and then adapts selected shared candidates to each target task. Within EMO-STA, we explore multiple adaptation strategies, including warm-starting from the shared archive, adapting the best average shared program, and adapting the shared program that performs best on each target task. Across eight task families spanning continuous optimization, geometric construction, modeling, and algorithmic optimization, EMO-STA improves over matched-compute single-task evolution in most settings, with STA Best-Local providing the strongest in-distribution adaptation and STA Best-Shared yielding robust transfer to unseen tasks. Compute-allocation experiments show that allocating a substantial fraction of the family-level budget to shared evolution is consistently beneficial, with roughly balanced shared and adaptation budgets often being optimal. Beyond compute efficiency, we show that shared evolution can mitigate overfitting in low-evidence settings (e.g. few training data), including ARC tasks and time-series feature engineering, by favoring programs that generalize across all tasks rather than exploiting task-specific brittle artifacts.",
+      "abstract": "Recent LLM-guided evolutionary search methods have shown that iterative program mutation can discover strong algorithms, but they typically optimize each task independently, even when related tasks share reusable structure. We introduce Evolutionary Multi-Task Optimization (EMO) for LLM-guided program discovery, and propose EMO-STA (Shared-Then-Adapt), a two-stage framework that first evolves a shared archive of executable programs across a task family and then adapts selected shared candidates to each target task. Within EMO-STA, we explore multiple adaptation strategies, including warm-starting from the shared archive, adapting the best average shared program, and adapting the shared program that performs best on each target task. Across eight task families spanning continuous optimization, geometric construction, modeling, and algorithmic optimization, EMO-STA improves over matched-compute single-task evolution in most settings, with STA Best-Local providing the strongest in-distribution adaptation and STA Best-Shared yielding robust transfer to unseen tasks. Compute-allocation experiments show that allocating a substantial fraction of the family-level budget to shared evolution is consistently beneficial, with roughly balanced shared and adaptation budgets often being optimal. Beyond compute efficiency, we show that shared evolution can mitigate overfitting in low-evidence settings (e.g. few training data), including ARC tasks and time-series feature engineering, by favoring programs that generalize across all tasks rather than exploiting task-specific brittle artifacts.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22613",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "直接面向LLM引导的程序发现与Agent自动化，提出多任务共享进化新框架，方法可复用且实验涵盖多种任务，属于近期热点且多任务结合稀缺。",
+        "one_sentence_summary": "该文提出进化多任务优化框架EMO-STA，先跨任务家族共享进化程序再选择最优候选进行适应，在连续优化、几何构造、ARC推理及时间序列特征工程等任务上优于单任务进化，并能缓解少数据过拟合。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 87,
+      "score_reason": "直接面向LLM引导的程序发现与Agent自动化，提出多任务共享进化新框架，方法可复用且实验涵盖多种任务，属于近期热点且多任务结合稀缺。",
+      "one_sentence_summary": "该文提出进化多任务优化框架EMO-STA，先跨任务家族共享进化程序再选择最优候选进行适应，在连续优化、几何构造、ARC推理及时间序列特征工程等任务上优于单任务进化，并能缓解少数据过拟合。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22612",
+      "arxiv_id": "2605.22612",
+      "title": "Healthcare LLM Benchmarks Are Only as Good as Their Explicit Assumptions",
+      "url": "https://arxiv.org/abs/2605.22612",
+      "published_at": "2026-05-21T15:27:58Z",
+      "publish_date": "2026-05-21",
+      "description": "Benchmarks are necessary for healthcare evaluation, but are not sufficient for predicting deployment performance. Our position is that the evaluation--deployment gap arises not because of poorly designed benchmarks, but from implicit assumptions about how users interact with models that cannot be surfaced from benchmarks alone. To make this precise, we propose a classification of assumptions into two categories: task, which can be tested from conversation data alone, and outcome, which requires outcome data and behavioral studies for testing. Critically, outcome assumptions depend on human behavior, something that even well-designed benchmarks cannot directly observe. To demonstrate the operationality of this framework, we retrospectively analyze a healthcare RCT as a case study and find that the gap naturally separates into task and outcome gaps of roughly equal size. To address this, we make two contributions: first, we propose BenchmarkCards, an artifact that documents assumptions, and second, we propose staged evaluation, a procedure that systematically tests assumptions and evaluates performance.",
+      "summary": "Benchmarks are necessary for healthcare evaluation, but are not sufficient for predicting deployment performance. Our position is that the evaluation--deployment gap arises not because of poorly designed benchmarks, but from implicit assumptions about how users interact with models that cannot be surfaced from benchmarks alone. To make this precise, we propose a classification of assumptions into two categories: task, which can be tested from conversation data alone, and outcome, which requires outcome data and behavioral studies for testing. Critically, outcome assumptions depend on human behavior, something that even well-designed benchmarks cannot directly observe. To demonstrate the operationality of this framework, we retrospectively analyze a healthcare RCT as a case study and find that the gap naturally separates into task and outcome gaps of roughly equal size. To address this, we make two contributions: first, we propose BenchmarkCards, an artifact that documents assumptions, and second, we propose staged evaluation, a procedure that systematically tests assumptions and evaluates performance.",
+      "abstract": "Benchmarks are necessary for healthcare evaluation, but are not sufficient for predicting deployment performance. Our position is that the evaluation--deployment gap arises not because of poorly designed benchmarks, but from implicit assumptions about how users interact with models that cannot be surfaced from benchmarks alone. To make this precise, we propose a classification of assumptions into two categories: task, which can be tested from conversation data alone, and outcome, which requires outcome data and behavioral studies for testing. Critically, outcome assumptions depend on human behavior, something that even well-designed benchmarks cannot directly observe. To demonstrate the operationality of this framework, we retrospectively analyze a healthcare RCT as a case study and find that the gap naturally separates into task and outcome gaps of roughly equal size. To address this, we make two contributions: first, we propose BenchmarkCards, an artifact that documents assumptions, and second, we propose staged evaluation, a procedure that systematically tests assumptions and evaluates performance.",
+      "categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CY",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22612",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "论文针对医疗LLM评估的部署差距问题，提出假设分类框架和BenchmarkCards、阶段性评估方法，对构建稳健评估工具极具价值，且易于工程化实施。",
+        "one_sentence_summary": "该论文提出了医疗LLM基准测试的假设分类框架，设计BenchmarkCards记录隐含假设，并引入阶段性评估方法以系统缩小评估与部署间的差距，通过RCT案例验证了任务与结果差距的等量存在。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "论文针对医疗LLM评估的部署差距问题，提出假设分类框架和BenchmarkCards、阶段性评估方法，对构建稳健评估工具极具价值，且易于工程化实施。",
+      "one_sentence_summary": "该论文提出了医疗LLM基准测试的假设分类框架，设计BenchmarkCards记录隐含假设，并引入阶段性评估方法以系统缩小评估与部署间的差距，通过RCT案例验证了任务与结果差距的等量存在。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.22608",
+      "arxiv_id": "2605.22608",
+      "title": "Agentic CLEAR: Automating Multi-Level Evaluation of LLM Agents",
+      "url": "https://arxiv.org/abs/2605.22608",
+      "published_at": "2026-05-21T15:26:02Z",
+      "publish_date": "2026-05-21",
+      "description": "Agentic systems are becoming more capable: agents define strategies, take actions, and interact with different environments. This autonomy poses serious challenges for overseeing and assessing agent behavior. Most current tools are limited, focusing on observability with basic evaluation capabilities or imposing static, hand-crafted error taxonomies that cannot adapt to new domains. To address this gap, we present Agentic CLEAR, an automatic, dynamic, and easy-to-use evaluation framework. It produces textual insights into the agent behavior on three levels of granularity: system, trace, and node. Agentic CLEAR operates above the observability layer, enabling seamless integration and featuring an intuitive UI that makes agent evaluation highly accessible. In our experiments on four benchmarks, seven agentic settings, and tens of thousands of LLM calls, we show that Agentic CLEAR produces high-quality, data-driven, insightful feedback. Our analysis shows strong alignment with human-annotated errors and the ability to predict task success rate.",
+      "summary": "Agentic systems are becoming more capable: agents define strategies, take actions, and interact with different environments. This autonomy poses serious challenges for overseeing and assessing agent behavior. Most current tools are limited, focusing on observability with basic evaluation capabilities or imposing static, hand-crafted error taxonomies that cannot adapt to new domains. To address this gap, we present Agentic CLEAR, an automatic, dynamic, and easy-to-use evaluation framework. It produces textual insights into the agent behavior on three levels of granularity: system, trace, and node. Agentic CLEAR operates above the observability layer, enabling seamless integration and featuring an intuitive UI that makes agent evaluation highly accessible. In our experiments on four benchmarks, seven agentic settings, and tens of thousands of LLM calls, we show that Agentic CLEAR produces high-quality, data-driven, insightful feedback. Our analysis shows strong alignment with human-annotated errors and the ability to predict task success rate.",
+      "abstract": "Agentic systems are becoming more capable: agents define strategies, take actions, and interact with different environments. This autonomy poses serious challenges for overseeing and assessing agent behavior. Most current tools are limited, focusing on observability with basic evaluation capabilities or imposing static, hand-crafted error taxonomies that cannot adapt to new domains. To address this gap, we present Agentic CLEAR, an automatic, dynamic, and easy-to-use evaluation framework. It produces textual insights into the agent behavior on three levels of granularity: system, trace, and node. Agentic CLEAR operates above the observability layer, enabling seamless integration and featuring an intuitive UI that makes agent evaluation highly accessible. In our experiments on four benchmarks, seven agentic settings, and tens of thousands of LLM calls, we show that Agentic CLEAR produces high-quality, data-driven, insightful feedback. Our analysis shows strong alignment with human-annotated errors and the ability to predict task success rate.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22608",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "Agentic CLEAR为Agent评估提供了自动化、多层次的框架，具备直观UI和强工程集成性，直接解决当前Agent开发中的评估难题。",
+        "one_sentence_summary": "论文提出Agentic CLEAR框架，自动从系统、轨迹和节点三个层次分析LLM Agent行为，生成数据驱动的文本反馈，实验表明其与人工错误标注高度一致并能预测任务成功率，可直接集成到Agent开发中。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 89,
+      "score_reason": "Agentic CLEAR为Agent评估提供了自动化、多层次的框架，具备直观UI和强工程集成性，直接解决当前Agent开发中的评估难题。",
+      "one_sentence_summary": "论文提出Agentic CLEAR框架，自动从系统、轨迹和节点三个层次分析LLM Agent行为，生成数据驱动的文本反馈，实验表明其与人工错误标注高度一致并能预测任务成功率，可直接集成到Agent开发中。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-22T05:44:08.410110+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-22"
     }
   ]
 }
