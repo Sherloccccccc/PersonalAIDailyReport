@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-22T05:44:08.410110+00:00",
+  "updated_at": "2026-05-23T05:04:40.177313+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -5752,11 +5752,11 @@
       "score_reason": "FutureSim provides a grounded simulation of real-world events for evaluating adaptive AI agents, replaying news articles chronologically to test long-horizon forecasting and adaptation; it offers a realistic benchmark and reveals current frontier agents' limitations, making it a timely evaluation tool for agent improvement.",
       "one_sentence_summary": "FutureSim 构建基于真实世界事件顺序重播的模拟环境，通过让代理预测2026年1月至3月的世界事件来评估其适应性，揭示前沿代理准确率仅25%且规划能力薄弱，为长时域测试时适应、搜索与不确定性推理等研究方向提供现实基准。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-17T05:15:35.870405+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
       "source_run_id": "2026-05-17",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-23"
     },
     {
       "id": "arxiv:2605.15184",
@@ -8695,11 +8695,11 @@
       "score_reason": "提出代理模型检查范式，LLM代理推断规约、选择检查，BMC后端验证，在LLM生成的系统代码上发现真实缺陷，对代码验证工具链有新意但集成复杂度较高。",
       "one_sentence_summary": "该论文将LLM代理与有界模型检查结合，代理负责规约推断和反例分类，后端执行验证，在LLM生成的内核和编译器代码上发现真实bug并实现部分功能正确性验证。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-21T05:52:10.026206+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
       "source_run_id": "2026-05-21",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-23"
     },
     {
       "id": "arxiv:2605.21404",
@@ -8928,11 +8928,11 @@
       "score_reason": "CRAFT proposes a novel geometric aggregation method for federated learning with theoretical backing and open-source code, improving global accuracy and reducing client disparity, making it practical for deployment.",
       "one_sentence_summary": "经过实验验证，该论文提出CRAFT聚合框架，将联邦学习中的冲突更新视为几何校正问题，通过闭式解和逐层自适应减少客户性能差异，并在异构数据上提升全局准确率且开源代码。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-21T05:52:10.026206+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
       "source_run_id": "2026-05-21",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-23"
     },
     {
       "id": "arxiv:2605.21269",
@@ -9462,6 +9462,439 @@
       "pushed_at": "2026-05-22T05:44:08.410110+00:00",
       "source_run_id": "2026-05-22",
       "pushed_run_id": "2026-05-22"
+    },
+    {
+      "id": "arxiv:2605.21602",
+      "arxiv_id": "2605.21602",
+      "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
+      "url": "https://arxiv.org/abs/2605.21602",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers. We systematically study whether LLM monitoring pipelines can detect these OOD alignment failures by introducing a benchmark called Misalignment Out Of Distribution (MOOD). It is difficult to find failures that are truly OOD for off-the-shelf models trained on vast safety datasets. We sidestep this by including a restricted training set in MOOD that we use to train our own monitors, as well as seven test sets with diverse alignment failures that are outside the training distribution. Using MOOD, we find that guard models (safety classifiers) often fail to generalize OOD. To fix this, we propose combining guard models with OOD detectors. We test four types of OOD detectors and find that a combination of a guard model with Mahalanobis distance and perplexity-based OOD detectors can improve recall from 39% to 45%. We also establish positive scaling trends across model scales for monitors that combine a guard model and OOD detector; we find that incorporating OOD detection into monitoring achieves a higher recall gain than using a guard model with 20 times more parameters. Our work suggests that OOD detection should be a crucial component of LLM monitoring and provides a foundation for further work on this important problem.",
+      "summary": "Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers. We systematically study whether LLM monitoring pipelines can detect these OOD alignment failures by introducing a benchmark called Misalignment Out Of Distribution (MOOD). It is difficult to find failures that are truly OOD for off-the-shelf models trained on vast safety datasets. We sidestep this by including a restricted training set in MOOD that we use to train our own monitors, as well as seven test sets with diverse alignment failures that are outside the training distribution. Using MOOD, we find that guard models (safety classifiers) often fail to generalize OOD. To fix this, we propose combining guard models with OOD detectors. We test four types of OOD detectors and find that a combination of a guard model with Mahalanobis distance and perplexity-based OOD detectors can improve recall from 39% to 45%. We also establish positive scaling trends across model scales for monitors that combine a guard model and OOD detector; we find that incorporating OOD detection into monitoring achieves a higher recall gain than using a guard model with 20 times more parameters. Our work suggests that OOD detection should be a crucial component of LLM monitoring and provides a foundation for further work on this important problem.",
+      "abstract": "Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers. We systematically study whether LLM monitoring pipelines can detect these OOD alignment failures by introducing a benchmark called Misalignment Out Of Distribution (MOOD). It is difficult to find failures that are truly OOD for off-the-shelf models trained on vast safety datasets. We sidestep this by including a restricted training set in MOOD that we use to train our own monitors, as well as seven test sets with diverse alignment failures that are outside the training distribution. Using MOOD, we find that guard models (safety classifiers) often fail to generalize OOD. To fix this, we propose combining guard models with OOD detectors. We test four types of OOD detectors and find that a combination of a guard model with Mahalanobis distance and perplexity-based OOD detectors can improve recall from 39% to 45%. We also establish positive scaling trends across model scales for monitors that combine a guard model and OOD detector; we find that incorporating OOD detection into monitoring achieves a higher recall gain than using a guard model with 20 times more parameters. Our work suggests that OOD detection should be a crucial component of LLM monitoring and provides a foundation for further work on this important problem.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.21602",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "LLM安全监控是产品关键需求，提出的OOD检测+护卫模型组合直接可集成；MOOD基准和结论（OOD检测比扩参有效）带来新视角；方法工程化程度高；安全与OOD检测结合是当前重要但尚未充分探索的领域。",
+        "one_sentence_summary": "针对LLM分布外（OOD）对齐失败，提出MOOD基准评估监控管道，发现安全分类器泛化不足，结合马氏距离与困惑度OOD检测器将召回率从39%提至45%，并证明OOD检测比扩大护卫模型参数更有效，为鲁棒安全监控提供了可工程化的新策略。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "LLM安全监控是产品关键需求，提出的OOD检测+护卫模型组合直接可集成；MOOD基准和结论（OOD检测比扩参有效）带来新视角；方法工程化程度高；安全与OOD检测结合是当前重要但尚未充分探索的领域。",
+      "one_sentence_summary": "针对LLM分布外（OOD）对齐失败，提出MOOD基准评估监控管道，发现安全分类器泛化不足，结合马氏距离与困惑度OOD检测器将召回率从39%提至45%，并证明OOD检测比扩大护卫模型参数更有效，为鲁棒安全监控提供了可工程化的新策略。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.21902",
+      "arxiv_id": "2605.21902",
+      "title": "Planning in the LLM Era: Building for Reliability and Efficiency",
+      "url": "https://arxiv.org/abs/2605.21902",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Growing attention to intelligent agents has put a spotlight on one of their central capabilities: planning. Early attempts to leverage large language models (LLMs) for planning relied on single-shot plan generation, followed by hybrid approaches that coupled LLMs with limited external search. These methods, unsound and incomplete by their very nature, often require substantial resources without yielding better solutions on unseen problems. As the limitations of LLMs become clearer, recent work has shifted toward using them at solution construction time -- generating symbolic solvers for a family of problems that can be verified and then used efficiently at inference time. This trend reflects the growing need for agents that are both reliable and resource-efficient. It also offers a path towards generating maintainable planners with minimal dependence on language models at inference time. In this paper, we argue that this shift reflects a broader realignment of the planning field in the LLM era. We examine three major categories of planner-generation methods, discuss their current limitations, and outline research steps towards a more reliable and efficient LLM-based generation of planners.",
+      "summary": "Growing attention to intelligent agents has put a spotlight on one of their central capabilities: planning. Early attempts to leverage large language models (LLMs) for planning relied on single-shot plan generation, followed by hybrid approaches that coupled LLMs with limited external search. These methods, unsound and incomplete by their very nature, often require substantial resources without yielding better solutions on unseen problems. As the limitations of LLMs become clearer, recent work has shifted toward using them at solution construction time -- generating symbolic solvers for a family of problems that can be verified and then used efficiently at inference time. This trend reflects the growing need for agents that are both reliable and resource-efficient. It also offers a path towards generating maintainable planners with minimal dependence on language models at inference time. In this paper, we argue that this shift reflects a broader realignment of the planning field in the LLM era. We examine three major categories of planner-generation methods, discuss their current limitations, and outline research steps towards a more reliable and efficient LLM-based generation of planners.",
+      "abstract": "Growing attention to intelligent agents has put a spotlight on one of their central capabilities: planning. Early attempts to leverage large language models (LLMs) for planning relied on single-shot plan generation, followed by hybrid approaches that coupled LLMs with limited external search. These methods, unsound and incomplete by their very nature, often require substantial resources without yielding better solutions on unseen problems. As the limitations of LLMs become clearer, recent work has shifted toward using them at solution construction time -- generating symbolic solvers for a family of problems that can be verified and then used efficiently at inference time. This trend reflects the growing need for agents that are both reliable and resource-efficient. It also offers a path towards generating maintainable planners with minimal dependence on language models at inference time. In this paper, we argue that this shift reflects a broader realignment of the planning field in the LLM era. We examine three major categories of planner-generation methods, discuss their current limitations, and outline research steps towards a more reliable and efficient LLM-based generation of planners.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.21902",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 16,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "文章聚焦智能体规划这一核心能力，对AI产品中可靠高效的规划模块设计有直接指导；主要是一份趋势综述，非全新任务或数据，信号强度一般；讨论了可实现的符号求解器生成方法，工程参考价值明确；LLM规划是当下热点，强调可靠性与效率的转向切中近期痛点，时效性强。",
+        "one_sentence_summary": "该文梳理了LLM规划从单次生成到在构建时生成可验证符号求解器的演变，论证了这一趋势如何提升规划器的可靠性和效率，并指出未来研究方向。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 16,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 76,
+      "score_reason": "文章聚焦智能体规划这一核心能力，对AI产品中可靠高效的规划模块设计有直接指导；主要是一份趋势综述，非全新任务或数据，信号强度一般；讨论了可实现的符号求解器生成方法，工程参考价值明确；LLM规划是当下热点，强调可靠性与效率的转向切中近期痛点，时效性强。",
+      "one_sentence_summary": "该文梳理了LLM规划从单次生成到在构建时生成可验证符号求解器的演变，论证了这一趋势如何提升规划器的可靠性和效率，并指出未来研究方向。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.21984",
+      "arxiv_id": "2605.21984",
+      "title": "Echo: Learning from Experience Data via User-Driven Refinement",
+      "url": "https://arxiv.org/abs/2605.21984",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Static \"human data\" faces inherent limitations: it is expensive to scale and bounded by the knowledge of its creators. Continuous learning from \"experience data\" - interactions between agents and their environments - promises to transcend these barriers. Today, the widespread deployment of AI agents grants us low-cost access to massive streams of such real-world experience. However, raw interaction logs are inherently noisy, filled with trial-and-error and low information density, rendering them inefficient for direct model training. We introduce Echo, a generalized framework designed to operationalize the transition from raw experience to learnable knowledge, effectively \"echoing\" environmental feedback back into the training loop for model optimization. In today's agent ecosystem, user refinement serves as a primary source of such feedback: driven by responsibility for the outcome, users rigorously transform flawed agent proposals into verified solutions. These user-driven refinement sequences inherently distill agents' crude attempts into high-quality training signals. Echo systematically harvests these signals to continuously align the agent with real-world needs. Large-scale validation in a production code completion environment confirms that Echo effectively harnesses this pipeline, breaking the static performance ceiling by increasing the acceptance rate from 25.7% to 35.7%.",
+      "summary": "Static \"human data\" faces inherent limitations: it is expensive to scale and bounded by the knowledge of its creators. Continuous learning from \"experience data\" - interactions between agents and their environments - promises to transcend these barriers. Today, the widespread deployment of AI agents grants us low-cost access to massive streams of such real-world experience. However, raw interaction logs are inherently noisy, filled with trial-and-error and low information density, rendering them inefficient for direct model training. We introduce Echo, a generalized framework designed to operationalize the transition from raw experience to learnable knowledge, effectively \"echoing\" environmental feedback back into the training loop for model optimization. In today's agent ecosystem, user refinement serves as a primary source of such feedback: driven by responsibility for the outcome, users rigorously transform flawed agent proposals into verified solutions. These user-driven refinement sequences inherently distill agents' crude attempts into high-quality training signals. Echo systematically harvests these signals to continuously align the agent with real-world needs. Large-scale validation in a production code completion environment confirms that Echo effectively harnesses this pipeline, breaking the static performance ceiling by increasing the acceptance rate from 25.7% to 35.7%.",
+      "abstract": "Static \"human data\" faces inherent limitations: it is expensive to scale and bounded by the knowledge of its creators. Continuous learning from \"experience data\" - interactions between agents and their environments - promises to transcend these barriers. Today, the widespread deployment of AI agents grants us low-cost access to massive streams of such real-world experience. However, raw interaction logs are inherently noisy, filled with trial-and-error and low information density, rendering them inefficient for direct model training. We introduce Echo, a generalized framework designed to operationalize the transition from raw experience to learnable knowledge, effectively \"echoing\" environmental feedback back into the training loop for model optimization. In today's agent ecosystem, user refinement serves as a primary source of such feedback: driven by responsibility for the outcome, users rigorously transform flawed agent proposals into verified solutions. These user-driven refinement sequences inherently distill agents' crude attempts into high-quality training signals. Echo systematically harvests these signals to continuously align the agent with real-world needs. Large-scale validation in a production code completion environment confirms that Echo effectively harnesses this pipeline, breaking the static performance ceiling by increasing the acceptance rate from 25.7% to 35.7%.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.21984",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "直接解决AI代理产品中数据飞轮难题，利用用户修正反馈优化模型，对开发者体验和持续学习系统具强应用价值；提出从经验数据中提取用户精炼信号的新框架，开辟利用交互日志的低成本训练范式；已在生产代码补全环境验证，采用率提升显著，方法可复用到其他交互式代理；当前大模型代理普遍需要在线学习，该方法及时且兼具实践稀缺性。",
+        "one_sentence_summary": "本文提出Echo框架，从人机交互日志中提取用户对代理输出的修正序列作为精炼训练信号，在生产代码补全场景中将采纳率从25.7%提升至35.7%，实现模型在线持续对齐。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "直接解决AI代理产品中数据飞轮难题，利用用户修正反馈优化模型，对开发者体验和持续学习系统具强应用价值；提出从经验数据中提取用户精炼信号的新框架，开辟利用交互日志的低成本训练范式；已在生产代码补全环境验证，采用率提升显著，方法可复用到其他交互式代理；当前大模型代理普遍需要在线学习，该方法及时且兼具实践稀缺性。",
+      "one_sentence_summary": "本文提出Echo框架，从人机交互日志中提取用户对代理输出的修正序列作为精炼训练信号，在生产代码补全场景中将采纳率从25.7%提升至35.7%，实现模型在线持续对齐。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.22138",
+      "arxiv_id": "2605.22138",
+      "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning",
+      "url": "https://arxiv.org/abs/2605.22138",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to emerge implicitly. Without control over the presence, structure, or horizon of planning, these systems dramatically increase reasoning length, yielding inefficient token use without reliable accuracy gains. We argue efficient agentic reasoning benefits from decomposing decision-making into three systems: simulative reasoning (System II) grounding deliberation in future-state prediction via a world model; self-regulation (System III) deciding when and how deeply to plan via a learned configurator; and reactive execution (System I) handling fine-grained action. Simulative reasoning provides unified planning across diverse tasks without per-domain engineering, while self-regulation ensures the planner is invoked only when needed. To test this, we develop SR$^2$AM (Self-Regulated Simulative Reasoning Agentic LLM), realizing both as distinct stages within an LLM's chain-of-thought, with the LLM as world model. We explore two instantiations: recording decisions from a prompted multi-module system (v0.1) and reconstructing structured plans from traces of pretrained reasoning LLMs (v1.0), trained via supervised then reinforcement learning (RL). Across math, science, tabular analysis, and web information seeking, v0.1-8B and v1.0-30B achieve Pass@1 competitive with 120-355B and 685B-1T parameter systems respectively, while v1.0-30B uses 25.8-95.3% fewer reasoning tokens than comparable agentic LLMs. RL increases average planning horizon by 22.8% while planning frequency grows only 2.0%, showing it learns to plan further ahead rather than more often. More broadly, learned self-regulation instantiates a principle we expect to extend beyond planning to how agents govern their own learning and adaptation.",
+      "summary": "How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to emerge implicitly. Without control over the presence, structure, or horizon of planning, these systems dramatically increase reasoning length, yielding inefficient token use without reliable accuracy gains. We argue efficient agentic reasoning benefits from decomposing decision-making into three systems: simulative reasoning (System II) grounding deliberation in future-state prediction via a world model; self-regulation (System III) deciding when and how deeply to plan via a learned configurator; and reactive execution (System I) handling fine-grained action. Simulative reasoning provides unified planning across diverse tasks without per-domain engineering, while self-regulation ensures the planner is invoked only when needed. To test this, we develop SR$^2$AM (Self-Regulated Simulative Reasoning Agentic LLM), realizing both as distinct stages within an LLM's chain-of-thought, with the LLM as world model. We explore two instantiations: recording decisions from a prompted multi-module system (v0.1) and reconstructing structured plans from traces of pretrained reasoning LLMs (v1.0), trained via supervised then reinforcement learning (RL). Across math, science, tabular analysis, and web information seeking, v0.1-8B and v1.0-30B achieve Pass@1 competitive with 120-355B and 685B-1T parameter systems respectively, while v1.0-30B uses 25.8-95.3% fewer reasoning tokens than comparable agentic LLMs. RL increases average planning horizon by 22.8% while planning frequency grows only 2.0%, showing it learns to plan further ahead rather than more often. More broadly, learned self-regulation instantiates a principle we expect to extend beyond planning to how agents govern their own learning and adaptation.",
+      "abstract": "How should an agent decide when and how to plan? A dominant approach builds agents as reactive policies with adaptive computation (e.g., chain-of-thought), trained end-to-end expecting planning to emerge implicitly. Without control over the presence, structure, or horizon of planning, these systems dramatically increase reasoning length, yielding inefficient token use without reliable accuracy gains. We argue efficient agentic reasoning benefits from decomposing decision-making into three systems: simulative reasoning (System II) grounding deliberation in future-state prediction via a world model; self-regulation (System III) deciding when and how deeply to plan via a learned configurator; and reactive execution (System I) handling fine-grained action. Simulative reasoning provides unified planning across diverse tasks without per-domain engineering, while self-regulation ensures the planner is invoked only when needed. To test this, we develop SR$^2$AM (Self-Regulated Simulative Reasoning Agentic LLM), realizing both as distinct stages within an LLM's chain-of-thought, with the LLM as world model. We explore two instantiations: recording decisions from a prompted multi-module system (v0.1) and reconstructing structured plans from traces of pretrained reasoning LLMs (v1.0), trained via supervised then reinforcement learning (RL). Across math, science, tabular analysis, and web information seeking, v0.1-8B and v1.0-30B achieve Pass@1 competitive with 120-355B and 685B-1T parameter systems respectively, while v1.0-30B uses 25.8-95.3% fewer reasoning tokens than comparable agentic LLMs. RL increases average planning horizon by 22.8% while planning frequency grows only 2.0%, showing it learns to plan further ahead rather than more often. More broadly, learned self-regulation instantiates a principle we expect to extend beyond planning to how agents govern their own learning and adaptation.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22138",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 18,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "面向LLM代理的技能自我进化，直接提升编程与软件工程代理的性能，对构建可维护的智能工作流具高应用价值；针对技能生命周期管理提出退役、容量控制等机制，在常见skill library方案中注入新设计思想；基于固定模型实现，仅依赖提示与记忆，易于集成到现有代理架构，消融给出最小可工作配方；自进化代理是近期重要方向，该工作恰逢其时，且展示了从代码生成到SWE-bench的泛化。",
+        "one_sentence_summary": "本文提出Ratchet自进化回路，使固定LLM通过技能退役与元技能引导等机制维护自然语言技能库，在MBPP+和SWE-bench上分别取得58.4%的rolling mean pass@1和+0.22峰值提升，证明轻量级卫生管理是技能复用的关键。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 18,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 81,
+      "score_reason": "面向LLM代理的技能自我进化，直接提升编程与软件工程代理的性能，对构建可维护的智能工作流具高应用价值；针对技能生命周期管理提出退役、容量控制等机制，在常见skill library方案中注入新设计思想；基于固定模型实现，仅依赖提示与记忆，易于集成到现有代理架构，消融给出最小可工作配方；自进化代理是近期重要方向，该工作恰逢其时，且展示了从代码生成到SWE-bench的泛化。",
+      "one_sentence_summary": "本文提出Ratchet自进化回路，使固定LLM通过技能退役与元技能引导等机制维护自然语言技能库，在MBPP+和SWE-bench上分别取得58.4%的rolling mean pass@1和+0.22峰值提升，证明轻量级卫生管理是技能复用的关键。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.22168",
+      "arxiv_id": "2605.22168",
+      "title": "Measuring Cross-Modal Synergy: A Benchmark for VLM Explainability",
+      "url": "https://arxiv.org/abs/2605.22168",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "summary": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "abstract": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22168",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 15,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文直接针对VLM可解释性评估，提出的新指标可集成到安全审计流水线，启发产品级AI监控；发现了现有评估的跨模态冗余缺陷并构建新基准与指标，信号较强；指标计算有速度优化，但整体为评估框架，工程直接复用性中等；VLM可解释性热潮中系统研究评估崩溃问题较少见，时效性高。",
+        "one_sentence_summary": "该论文揭示了当前VLM解释评估因跨模态冗余而失效，提出基于Shapley交互指数的协同忠实度指标，并在多个模型和数据集上证明基于注意力的方法比视觉显著性解释器更能捕捉真正的跨模态协同。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 15,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "论文直接针对VLM可解释性评估，提出的新指标可集成到安全审计流水线，启发产品级AI监控；发现了现有评估的跨模态冗余缺陷并构建新基准与指标，信号较强；指标计算有速度优化，但整体为评估框架，工程直接复用性中等；VLM可解释性热潮中系统研究评估崩溃问题较少见，时效性高。",
+      "one_sentence_summary": "该论文揭示了当前VLM解释评估因跨模态冗余而失效，提出基于Shapley交互指数的协同忠实度指标，并在多个模型和数据集上证明基于注意力的方法比视觉显著性解释器更能捕捉真正的跨模态协同。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.22205",
+      "arxiv_id": "2605.22205",
+      "title": "Skill Weaving: Efficient LLM Improvement via Modular Skillpacks",
+      "url": "https://arxiv.org/abs/2605.22205",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Large language models increasingly require specialization across diverse domains, yet existing approaches struggle to balance multi-domain capacities with strict memory and inference constraints. In this work, we introduce SkillWeave, a modular improvement framework that enables LLMs to specialize under fixed memory budgets. SkillWeave partitions full capabilities of a general-purpose model into skillpacks -- lightweight, domain-specific delta modules -- that reorganize and refine the model's internal knowledge. For efficient deployment, SkillWeave integrates SkillZip to compress skillpacks into compact and inference-ready format, enabling strong multi-domain performance with low-latency execution. On multi-task and agentic benchmarks, a 9B SkillWeave model outperforms several baselines and even surpasses a 32B monolithic LLM, while achieving up to 4x speedup.",
+      "summary": "Large language models increasingly require specialization across diverse domains, yet existing approaches struggle to balance multi-domain capacities with strict memory and inference constraints. In this work, we introduce SkillWeave, a modular improvement framework that enables LLMs to specialize under fixed memory budgets. SkillWeave partitions full capabilities of a general-purpose model into skillpacks -- lightweight, domain-specific delta modules -- that reorganize and refine the model's internal knowledge. For efficient deployment, SkillWeave integrates SkillZip to compress skillpacks into compact and inference-ready format, enabling strong multi-domain performance with low-latency execution. On multi-task and agentic benchmarks, a 9B SkillWeave model outperforms several baselines and even surpasses a 32B monolithic LLM, while achieving up to 4x speedup.",
+      "abstract": "Large language models increasingly require specialization across diverse domains, yet existing approaches struggle to balance multi-domain capacities with strict memory and inference constraints. In this work, we introduce SkillWeave, a modular improvement framework that enables LLMs to specialize under fixed memory budgets. SkillWeave partitions full capabilities of a general-purpose model into skillpacks -- lightweight, domain-specific delta modules -- that reorganize and refine the model's internal knowledge. For efficient deployment, SkillWeave integrates SkillZip to compress skillpacks into compact and inference-ready format, enabling strong multi-domain performance with low-latency execution. On multi-task and agentic benchmarks, a 9B SkillWeave model outperforms several baselines and even surpasses a 32B monolithic LLM, while achieving up to 4x speedup.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22205",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 20,
+          "engineering_utility": 24,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "直接解决LLM多领域部署的制牌与推理效率问题，模块化技能包和压缩技术对AI产品化有极高价值；思路虽不全新但组合方式新颖；实现门槛低，可快速集成；属于高效部署前沿方向，但并非极度稀有。",
+        "one_sentence_summary": "SkillWeave框架将通用LLM能力分解为可压缩的轻量技能包Skillpacks，通过SkillZip压缩后实现推理加速，在9B模型上多任务代理基准超越32B模型且达4倍提速，为资源受限下的多领域LLM专业化提供了模块化复用方案。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 18
+      },
+      "score_total": 86,
+      "score_reason": "直接解决LLM多领域部署的制牌与推理效率问题，模块化技能包和压缩技术对AI产品化有极高价值；思路虽不全新但组合方式新颖；实现门槛低，可快速集成；属于高效部署前沿方向，但并非极度稀有。",
+      "one_sentence_summary": "SkillWeave框架将通用LLM能力分解为可压缩的轻量技能包Skillpacks，通过SkillZip压缩后实现推理加速，在9B模型上多任务代理基准超越32B模型且达4倍提速，为资源受限下的多领域LLM专业化提供了模块化复用方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.22300",
+      "arxiv_id": "2605.22300",
+      "title": "Cross-domain benchmarks reveal when coordinated AI agents improve scientific inference from partial evidence",
+      "url": "https://arxiv.org/abs/2605.22300",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Scientific evidence often spans instruments, databases, and disciplines, so no single source records the full phenomenon. This makes it difficult to determine when coordinated AI agents add value over simpler scientific workflows. We evaluate this question with a cross-domain benchmark spanning four scientific tasks: mapping molecular structure into musical representations, detecting historical paradigm shifts in science, identifying vector-borne disease emergence, and vetting transiting-exoplanet candidates. Each case uses a frozen evaluation panel, predefined scoring protocols, explicit baselines, ablations or null controls, and stated limitations. The results define three operating regimes. When different disciplines each capture only part of the phenomenon, cross-channel composites improve over single-channel baselines: climate-vector emergence reaches AUROC 0.944 and exoplanet vetting reaches AUROC 0.955. However, the exoplanet workflow is effectively tied with a strong combined-summary baseline, showing that decomposition does not always improve top-line performance. When one signal dominates, as in paradigm-shift detection, coordination mainly improves interpretation and traceability. For molecular sonification, the gain is representational rather than predictive. ScienceClaw x Infinite provides the auditable artifact and provenance layer for this evaluation. The benchmark therefore assigns value to coordination only when the corresponding performance, provenance, or representation claim is supported by explicit comparators.",
+      "summary": "Scientific evidence often spans instruments, databases, and disciplines, so no single source records the full phenomenon. This makes it difficult to determine when coordinated AI agents add value over simpler scientific workflows. We evaluate this question with a cross-domain benchmark spanning four scientific tasks: mapping molecular structure into musical representations, detecting historical paradigm shifts in science, identifying vector-borne disease emergence, and vetting transiting-exoplanet candidates. Each case uses a frozen evaluation panel, predefined scoring protocols, explicit baselines, ablations or null controls, and stated limitations. The results define three operating regimes. When different disciplines each capture only part of the phenomenon, cross-channel composites improve over single-channel baselines: climate-vector emergence reaches AUROC 0.944 and exoplanet vetting reaches AUROC 0.955. However, the exoplanet workflow is effectively tied with a strong combined-summary baseline, showing that decomposition does not always improve top-line performance. When one signal dominates, as in paradigm-shift detection, coordination mainly improves interpretation and traceability. For molecular sonification, the gain is representational rather than predictive. ScienceClaw x Infinite provides the auditable artifact and provenance layer for this evaluation. The benchmark therefore assigns value to coordination only when the corresponding performance, provenance, or representation claim is supported by explicit comparators.",
+      "abstract": "Scientific evidence often spans instruments, databases, and disciplines, so no single source records the full phenomenon. This makes it difficult to determine when coordinated AI agents add value over simpler scientific workflows. We evaluate this question with a cross-domain benchmark spanning four scientific tasks: mapping molecular structure into musical representations, detecting historical paradigm shifts in science, identifying vector-borne disease emergence, and vetting transiting-exoplanet candidates. Each case uses a frozen evaluation panel, predefined scoring protocols, explicit baselines, ablations or null controls, and stated limitations. The results define three operating regimes. When different disciplines each capture only part of the phenomenon, cross-channel composites improve over single-channel baselines: climate-vector emergence reaches AUROC 0.944 and exoplanet vetting reaches AUROC 0.955. However, the exoplanet workflow is effectively tied with a strong combined-summary baseline, showing that decomposition does not always improve top-line performance. When one signal dominates, as in paradigm-shift detection, coordination mainly improves interpretation and traceability. For molecular sonification, the gain is representational rather than predictive. ScienceClaw x Infinite provides the auditable artifact and provenance layer for this evaluation. The benchmark therefore assigns value to coordination only when the corresponding performance, provenance, or representation claim is supported by explicit comparators.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22300",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 8,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "为科学AI代理提供了基准和启示，但离产品化较远；跨域基准和“协调何时有用”的结论有一定新意；方法主要是评估框架，难以直接复用为工程组件；科学AI代理是热门方向，但该工作更偏向验证性研究。",
+        "one_sentence_summary": "构建跨领域科学推理基准，涵盖分子音乐映射、范式转变检测等四个任务，评估协调AI代理何时优于单一工作流，发现仅在跨学科信号互补时有效，并强调需通过明确比较器证明协调价值，为科学AI代理部署提供了条件性指导。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 8,
+        "timeliness_rarity": 17
+      },
+      "score_total": 60,
+      "score_reason": "为科学AI代理提供了基准和启示，但离产品化较远；跨域基准和“协调何时有用”的结论有一定新意；方法主要是评估框架，难以直接复用为工程组件；科学AI代理是热门方向，但该工作更偏向验证性研究。",
+      "one_sentence_summary": "构建跨领域科学推理基准，涵盖分子音乐映射、范式转变检测等四个任务，评估协调AI代理何时优于单一工作流，发现仅在跨学科信号互补时有效，并强调需通过明确比较器证明协调价值，为科学AI代理部署提供了条件性指导。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.22511",
+      "arxiv_id": "2605.22511",
+      "title": "Search-E1: Self-Distillation Drives Self-Evolution in Search-Augmented Reasoning",
+      "url": "https://arxiv.org/abs/2605.22511",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Post-training has become the dominant recipe for turning a language model into a competent search-augmented reasoning agent. A line of recent work pushes its performance further by adding elaborate machinery on top of this standard pipeline. These augmentations import external supervision from stronger external systems, attach auxiliary modules such as process reward models or retrospective critics, restructure the rollout itself with tree search or multi-stage curricula, or shape the reward with hand-crafted bonuses and penalties. Each addition delivers a measurable gain, but each also inflates the training pipeline and ties the recipe to resources or designs that may not always be available. We take a step back and ask whether any of this machinery is actually necessary, and propose Search-E1, a self-evolution method that lets a search-augmented agent improve through only vanilla GRPO interleaved with offline self-distillation (OFSD). After each GRPO round, the policy rolls out on its own training questions. A token-level forward KL objective then aligns the policy's inference-time distribution to its own distribution under a privileged context that exposes a more efficient sibling trajectory. Despite this simplicity, the procedure naturally provides dense per-step supervision. On seven QA benchmarks, Search-E1 reaches $0.440$ average EM with Qwen2.5-3B, surpassing all open-source baselines at both scales. Code and complete version will be made public soon.",
+      "summary": "Post-training has become the dominant recipe for turning a language model into a competent search-augmented reasoning agent. A line of recent work pushes its performance further by adding elaborate machinery on top of this standard pipeline. These augmentations import external supervision from stronger external systems, attach auxiliary modules such as process reward models or retrospective critics, restructure the rollout itself with tree search or multi-stage curricula, or shape the reward with hand-crafted bonuses and penalties. Each addition delivers a measurable gain, but each also inflates the training pipeline and ties the recipe to resources or designs that may not always be available. We take a step back and ask whether any of this machinery is actually necessary, and propose Search-E1, a self-evolution method that lets a search-augmented agent improve through only vanilla GRPO interleaved with offline self-distillation (OFSD). After each GRPO round, the policy rolls out on its own training questions. A token-level forward KL objective then aligns the policy's inference-time distribution to its own distribution under a privileged context that exposes a more efficient sibling trajectory. Despite this simplicity, the procedure naturally provides dense per-step supervision. On seven QA benchmarks, Search-E1 reaches $0.440$ average EM with Qwen2.5-3B, surpassing all open-source baselines at both scales. Code and complete version will be made public soon.",
+      "abstract": "Post-training has become the dominant recipe for turning a language model into a competent search-augmented reasoning agent. A line of recent work pushes its performance further by adding elaborate machinery on top of this standard pipeline. These augmentations import external supervision from stronger external systems, attach auxiliary modules such as process reward models or retrospective critics, restructure the rollout itself with tree search or multi-stage curricula, or shape the reward with hand-crafted bonuses and penalties. Each addition delivers a measurable gain, but each also inflates the training pipeline and ties the recipe to resources or designs that may not always be available. We take a step back and ask whether any of this machinery is actually necessary, and propose Search-E1, a self-evolution method that lets a search-augmented agent improve through only vanilla GRPO interleaved with offline self-distillation (OFSD). After each GRPO round, the policy rolls out on its own training questions. A token-level forward KL objective then aligns the policy's inference-time distribution to its own distribution under a privileged context that exposes a more efficient sibling trajectory. Despite this simplicity, the procedure naturally provides dense per-step supervision. On seven QA benchmarks, Search-E1 reaches $0.440$ average EM with Qwen2.5-3B, surpassing all open-source baselines at both scales. Code and complete version will be made public soon.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22511",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "搜索增强推理是AI代理产品的核心，该工作简化训练管道，直接提升性能；自蒸馏驱动的自进化为训练范式带来新颖思路；极简设计易于实现和集成；自进化方法是近期前沿，在搜索推理场景中较为稀有。",
+        "one_sentence_summary": "Search-E1通过GRPO强化学习与离线自蒸馏交替训练，使搜索增强推理模型自我进化，无需外部监督或复杂组件，在Qwen2.5-3B上七个QA基准平均精确匹配达0.440，超越同规模所有开源基线，展示了极简训练管道在搜索代理中的高效潜力。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "搜索增强推理是AI代理产品的核心，该工作简化训练管道，直接提升性能；自蒸馏驱动的自进化为训练范式带来新颖思路；极简设计易于实现和集成；自进化方法是近期前沿，在搜索推理场景中较为稀有。",
+      "one_sentence_summary": "Search-E1通过GRPO强化学习与离线自蒸馏交替训练，使搜索增强推理模型自我进化，无需外部监督或复杂组件，在Qwen2.5-3B上七个QA基准平均精确匹配达0.440，超越同规模所有开源基线，展示了极简训练管道在搜索代理中的高效潜力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
+    },
+    {
+      "id": "arxiv:2605.22714",
+      "arxiv_id": "2605.22714",
+      "title": "AMEL: Accumulated Message Effects on LLM Judgments",
+      "url": "https://arxiv.org/abs/2605.22714",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Large language models are routinely used as automated evaluators: to review code, moderate content, or score outputs, often with many items passing through one conversation. We ask whether the polarity of prior conversation history biases subsequent judgments, an effect we call the accumulated message effect on LLM judgments (AMEL). Across 75,898 API calls to 11 models from 4 providers (OpenAI, Anthropic, Google, and four open-source models), we present identical test items in isolation or following histories saturated with predominantly positive or negative evaluations. Models shift toward the conversation's prevailing polarity (d = -0.17, p < 10^-46). The effect concentrates on items where the model is genuinely uncertain at baseline (d = -0.34 for high-entropy items, vs d = -0.15 when the baseline is deterministic). Bias does not grow with context length: 5 prior turns and 50 produce the same shift (Spearman |r| < 0.01; OLS slope p = 0.80). And there is a negativity asymmetry: paired per item, negative histories induce 1.62x more bias than positive (t = 13.46, p < 10^-39, n = 2,481). Scaling helps but does not solve it (Anthropic: Haiku -0.22 to Opus -0.17; OpenAI: Nano -0.34 to GPT-5.2 -0.17). Three follow-ups narrow the mechanism. The token probability distribution shifts continuously, not at a threshold. The negativity asymmetry has both token-level and semantic components, though attributing the balance is exploratory at our sample sizes. Position does not matter: five biased turns anywhere in a 50-turn history produce the same shift. The simplest fix for evaluation pipelines is a fresh context per item; when batching is unavoidable, balancing the history helps.",
+      "summary": "Large language models are routinely used as automated evaluators: to review code, moderate content, or score outputs, often with many items passing through one conversation. We ask whether the polarity of prior conversation history biases subsequent judgments, an effect we call the accumulated message effect on LLM judgments (AMEL). Across 75,898 API calls to 11 models from 4 providers (OpenAI, Anthropic, Google, and four open-source models), we present identical test items in isolation or following histories saturated with predominantly positive or negative evaluations. Models shift toward the conversation's prevailing polarity (d = -0.17, p < 10^-46). The effect concentrates on items where the model is genuinely uncertain at baseline (d = -0.34 for high-entropy items, vs d = -0.15 when the baseline is deterministic). Bias does not grow with context length: 5 prior turns and 50 produce the same shift (Spearman |r| < 0.01; OLS slope p = 0.80). And there is a negativity asymmetry: paired per item, negative histories induce 1.62x more bias than positive (t = 13.46, p < 10^-39, n = 2,481). Scaling helps but does not solve it (Anthropic: Haiku -0.22 to Opus -0.17; OpenAI: Nano -0.34 to GPT-5.2 -0.17). Three follow-ups narrow the mechanism. The token probability distribution shifts continuously, not at a threshold. The negativity asymmetry has both token-level and semantic components, though attributing the balance is exploratory at our sample sizes. Position does not matter: five biased turns anywhere in a 50-turn history produce the same shift. The simplest fix for evaluation pipelines is a fresh context per item; when batching is unavoidable, balancing the history helps.",
+      "abstract": "Large language models are routinely used as automated evaluators: to review code, moderate content, or score outputs, often with many items passing through one conversation. We ask whether the polarity of prior conversation history biases subsequent judgments, an effect we call the accumulated message effect on LLM judgments (AMEL). Across 75,898 API calls to 11 models from 4 providers (OpenAI, Anthropic, Google, and four open-source models), we present identical test items in isolation or following histories saturated with predominantly positive or negative evaluations. Models shift toward the conversation's prevailing polarity (d = -0.17, p < 10^-46). The effect concentrates on items where the model is genuinely uncertain at baseline (d = -0.34 for high-entropy items, vs d = -0.15 when the baseline is deterministic). Bias does not grow with context length: 5 prior turns and 50 produce the same shift (Spearman |r| < 0.01; OLS slope p = 0.80). And there is a negativity asymmetry: paired per item, negative histories induce 1.62x more bias than positive (t = 13.46, p < 10^-39, n = 2,481). Scaling helps but does not solve it (Anthropic: Haiku -0.22 to Opus -0.17; OpenAI: Nano -0.34 to GPT-5.2 -0.17). Three follow-ups narrow the mechanism. The token probability distribution shifts continuously, not at a threshold. The negativity asymmetry has both token-level and semantic components, though attributing the balance is exploratory at our sample sizes. Position does not matter: five biased turns anywhere in a 50-turn history produce the same shift. The simplest fix for evaluation pipelines is a fresh context per item; when batching is unavoidable, balancing the history helps.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22714",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "研究直接针对LLM作为自动评估器的常见场景，发现对话历史造成的偏差，对评测类产品与流水线具有极高现实意义；首次系统量化累积消息效应、负向不对称性等现象，信号新且强；提出的隔离上下文或平衡历史的修复方案极其简单可行，可立即集成；LLM评测广泛使用但此类偏误分析稀缺，时效性与罕见度均高。",
+        "one_sentence_summary": "该研究在数万次API调用中发现LLM评判会受对话历史极性影响，模型不确定时偏差更大且负面历史影响更强，建议每次评估使用全新上下文或平衡历史以消除累积消息效应。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "研究直接针对LLM作为自动评估器的常见场景，发现对话历史造成的偏差，对评测类产品与流水线具有极高现实意义；首次系统量化累积消息效应、负向不对称性等现象，信号新且强；提出的隔离上下文或平衡历史的修复方案极其简单可行，可立即集成；LLM评测广泛使用但此类偏误分析稀缺，时效性与罕见度均高。",
+      "one_sentence_summary": "该研究在数万次API调用中发现LLM评判会受对话历史极性影响，模型不确定时偏差更大且负面历史影响更强，建议每次评估使用全新上下文或平衡历史以消除累积消息效应。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-23T05:04:40.177313+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-23"
     }
   ]
 }
