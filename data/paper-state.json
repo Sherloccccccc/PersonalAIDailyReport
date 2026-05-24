@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-23T05:04:40.177313+00:00",
+  "updated_at": "2026-05-24T05:34:52.478573+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -5086,11 +5086,11 @@
       "score_reason": "将时间线摘要从静态生成转为推理驱动，利用大型推理模型主动探测缺失事件、更新全局事件记忆，在开放域TLS显著优于现有方法，框架包含事件抓取器、更新器与监督器，可集成到新闻聚合等产品，体现推理模型新应用。",
       "one_sentence_summary": "TimelineReasoner采用两阶段推理框架，全局认知跟踪宏观事件并更新记忆，细节探索通过监督器检测缺失事件并定向检索，实验显示在开放域时间线摘要任务上准确性、覆盖度和连贯性显著超越现有LLM方法，展示了推理模型驱动的事件抽取潜力。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-15T05:17:16.441272+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-15",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.12519",
@@ -5844,11 +5844,11 @@
       "score_reason": "This paper reveals a novel backdoor attack vector exploiting positional encoding without content modification, directly relevant to LLM security and red-teaming. It introduces a new attack surface and demonstrates concrete exploitation scenarios (system prompt leakage, self-activation), making it timely and actionable for defense development.",
       "one_sentence_summary": "针对LLM提出MetaBackdoor攻击，首次利用位置编码（如对话长度）作为后门触发信号，无需修改输入文本，可诱使模型泄露系统提示或自主触发恶意工具调用，为LLM安全防御提出新要求。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-17T05:15:35.870405+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-17",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.15156",
@@ -6375,11 +6375,11 @@
       "score_reason": "This study experimentally demonstrates that LLMs modulate their linguistic register in response to perceived observation, with implications for AI auditing and governance. It introduces a novel multi-agent debate framework and shows sensitivity to observer identity, making it timely for understanding LLM behavior in social contexts.",
       "one_sentence_summary": "基于100场多智能体辩论实验，发现LLM在感知到被观察时会显著提升词汇多样性（TTR），且对人类观察者的反应强于AI监控，揭示了LLM作为上下文敏感交际主体的社会适应性，对AI治理与审计具有重要启示。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-17T05:15:35.870405+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-17",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.15019",
@@ -7520,11 +7520,11 @@
       "score_reason": "MA²P通过多智能体架构与元认知配置器提升复杂说服对话的成功率，在特定任务上表现优于基线，但说服场景相对垂直，框架实现细节与复用性不够明确，实用性中等。",
       "one_sentence_summary": "提出MA²P元认知自主智能体框架，协调多智能体进行感知、心理状态推断和策略执行，并通过元认知配置器从知识库选择元策略，在复杂说服对话实验中取得更高成功率。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-19T05:42:43.444174+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-19",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.18565",
@@ -8138,11 +8138,11 @@
       "score_reason": "为持续智能体评估提供不确定性量化方法，对监控和评估管线有用；将保形预测、自适应推理与组合界限引入智能体评估，具新意；提供代码与实时信号数据，可复现；代表评估可靠性这一近期趋势。",
       "one_sentence_summary": "将分割保形预测和自适应保形推理适配到持续 AI 智能体评估，提供无分布覆盖保证，在 50 个智能体、18 种实时信号上实现 24 小时校准误差低于 0.02，智能体发布后区间自适应扩大 35% 再收敛，并开发多智能体管道组合不确定性界、配对排名弃权与错误发现率校正方法，释放代码与数据。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-20T05:47:05.012489+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-20",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.19782",
@@ -8323,11 +8323,11 @@
       "score_reason": "提出自适应表格检索方法，根据查询动态确定检索表格数量，克服固定top-k的缺陷，并在多个文本到SQL基准上验证了效果，代码开源可用。",
       "one_sentence_summary": "针对表格检索中固定前k个表格导致数量不当的问题，提出自适应阈值和滑动窗口重排序的方法动态调整检索数量，在Spider、BIRD和Spider 2.0上提升了检索与下游任务性能。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-20T05:47:05.012489+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-20",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.21470",
@@ -8975,11 +8975,11 @@
       "score_reason": "The paper presents a conceptual framework using LLMs to transform privacy artifacts into reports for non-technical stakeholders, addressing a timely need in human-centric AI systems; however, engineering details are still nascent.",
       "one_sentence_summary": "该论文针对工业5.0人机协作中的隐私沟通问题，提出利用大语言模型将隐私威胁与缓解措施等技术产物转化为非技术利益相关者可理解的报告，并基于两个工业案例展示了框架的可行性。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-21T05:52:10.026206+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-21",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.22786",
@@ -9075,11 +9075,11 @@
       "score_reason": "MambaGaze专门处理眼动缺失数据，并在边缘设备实现实时推理，为自适应认知负荷监测提供了可部署的方法，但应用场景相对狭窄。",
       "one_sentence_summary": "MambaGaze框架通过XMD编码显式建模眼动追踪中的缺失数据，并使用双向Mamba-2捕获长程依赖，在认知负荷评估任务上准确率超越Transformer等模型，且在Jetson边缘设备上实现实时推理，适用于驾驶员监测等场景。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-22T05:44:08.410110+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-22",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.22748",
@@ -9126,11 +9126,11 @@
       "score_reason": "虽聚焦机器人竞速，但展示了多智能体强化学习在真实物理环境下安全交互的潜力，可启发代理安全交互设计；零样本泛化至与人类安全比赛是新颖任务；方法依赖实物无人机和特定训练，工程落地难度较高；高速多机器人真实交互成果较为稀有。",
       "one_sentence_summary": "利用基于联赛自对弈的多智能体强化学习训练超高速无人机竞速代理，实现超人类表现、碰撞率降低一半，并能在零样本下安全与人类飞行员同场竞技，证明多智能体交互是达成鲁棒共存的路径。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-22T05:44:08.410110+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-22",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.22733",
@@ -9696,11 +9696,11 @@
       "score_reason": "论文直接针对VLM可解释性评估，提出的新指标可集成到安全审计流水线，启发产品级AI监控；发现了现有评估的跨模态冗余缺陷并构建新基准与指标，信号较强；指标计算有速度优化，但整体为评估框架，工程直接复用性中等；VLM可解释性热潮中系统研究评估崩溃问题较少见，时效性高。",
       "one_sentence_summary": "该论文揭示了当前VLM解释评估因跨模态冗余而失效，提出基于Shapley交互指数的协同忠实度指标，并在多个模型和数据集上证明基于注意力的方法比视觉显著性解释器更能捕捉真正的跨模态协同。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-23T05:04:40.177313+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
       "source_run_id": "2026-05-23",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-24"
     },
     {
       "id": "arxiv:2605.22205",

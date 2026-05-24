@@ -1,0 +1,646 @@
+{
+  "generated_at": "2026-05-24T05:34:52.495838+00:00",
+  "run_id": "2026-05-24",
+  "juya_issue": {
+    "feed_title": "橘鸦AI早报",
+    "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+    "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。RSS正常提供服务中，但Folo存在问题，接收不到最新文章。建议使用其他RSS阅读器",
+    "last_build_date": "2026-05-24T00:40:00+00:00",
+    "issue_title": "2026-05-24",
+    "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/",
+    "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/100",
+    "published_at": "2026-05-24T00:39:39+00:00",
+    "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+  },
+  "stats": {
+    "news_count": 4,
+    "paper_candidate_count": 0,
+    "paper_dropped_count": 0,
+    "paper_selected_count": 10
+  },
+  "rules": {
+    "allowed_categories": [
+      "cs.CL",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "blacklist_terms": [
+      "clinical",
+      "psychiatric",
+      "lung cancer",
+      "biomechanical",
+      "traffic",
+      "driving",
+      "emboli",
+      "field medicine",
+      "legal",
+      "graph"
+    ],
+    "score_keys": [
+      "application_relevance",
+      "new_signal",
+      "engineering_utility",
+      "timeliness_rarity"
+    ],
+    "score_threshold": 60,
+    "ai_provider": "deepseek",
+    "deepseek_model": "deepseek-v4-pro"
+  },
+  "news": [
+    {
+      "title": "DeepSeek 宣布 DeepSeek API 完成提速与扩容",
+      "url": "https://trtgsjkv6r.feishu.cn/share/base/form/shrcnda9jNKvhyYr8xb843xLEzc",
+      "published_at": "2026-05-24T00:39:39+00:00",
+      "description": "DeepSeek 工作人员在官方交流群宣布， DeepSeek API 已完成输出提速和服务扩容。现在，输出速度更快、服务更稳定。",
+      "summary": "DeepSeek 工作人员在官方交流群宣布， DeepSeek API 已完成输出提速和服务扩容。现在，输出速度更快、服务更稳定。",
+      "category": "开发生态",
+      "source": "juya",
+      "issue_title": "2026-05-24",
+      "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/"
+    },
+    {
+      "title": "Codex 修复额度消耗异常并重置所有限额",
+      "url": "https://x.com/thsottiaux/status/2058280452851638313",
+      "published_at": "2026-05-24T00:39:39+00:00",
+      "description": "北京时间 5 月 24 日 凌晨约 4 点 ， Codex 官方确认并修复了由 系统优化 引发的 额度消耗 过快问题，已回滚该优化并为所有账户重置 用量限制 。",
+      "summary": "北京时间 5 月 24 日 凌晨约 4 点 ， Codex 官方确认并修复了由 系统优化 引发的 额度消耗 过快问题，已回滚该优化并为所有账户重置 用量限制 。",
+      "category": "开发生态",
+      "source": "juya",
+      "issue_title": "2026-05-24",
+      "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/"
+    },
+    {
+      "title": "Codex 负责人披露流量分布：Pi 与 OpenCode 各占约 5%",
+      "url": "https://x.com/thsottiaux/status/2058071172361998482",
+      "published_at": "2026-05-24T00:39:39+00:00",
+      "description": "Codex 负责人 Tibo 近日透露， Codex 约有 5% 的生产环境流量在 Pi harness 上运行，另有约 5% 在 OpenCode 上运行。他提醒用户，可使用 ChatGPT 账户接入日益丰富的其他第三方工具。",
+      "summary": "Codex 负责人 Tibo 近日透露， Codex 约有 5% 的生产环境流量在 Pi harness 上运行，另有约 5% 在 OpenCode 上运行。他提醒用户，可使用 ChatGPT 账户接入日益丰富的其他第三方工具。",
+      "category": "开发生态",
+      "source": "juya",
+      "issue_title": "2026-05-24",
+      "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/"
+    },
+    {
+      "title": "报道称Claude网页端曾短暂出现Mythos 1模型",
+      "url": "https://www.testingcatalog.com/anthropic-prepares-mythos-1-for-claude-code-and-claude-security/",
+      "published_at": "2026-05-24T00:39:39+00:00",
+      "description": "据报道， Anthropic 正准备代号为 Mythos 1 的模型，该模型曾短暂出现在 Claude 界面中。",
+      "summary": "据报道， Anthropic 正准备代号为 Mythos 1 的模型，该模型曾短暂出现在 Claude 界面中。",
+      "category": "前瞻与传闻",
+      "source": "juya",
+      "issue_title": "2026-05-24",
+      "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/"
+    }
+  ],
+  "paper_candidates": [],
+  "paper_dropped": [],
+  "selected_papers": [
+    {
+      "id": "arxiv:2605.21269",
+      "arxiv_id": "2605.21269",
+      "title": "Transforming Privacy Artifacts into Accessible Reports for Non-Technical Stakeholders",
+      "url": "https://arxiv.org/abs/2605.21269",
+      "published_at": "2026-05-20T14:58:04Z",
+      "publish_date": "2026-05-20",
+      "description": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "summary": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "abstract": "The transition toward Industry 5.0 is reshaping industrial work environments with an emphasis on human-centricity, enabling close collaboration between humans and machines to enhance productivity and flexibility. However, such systems typically require monitoring of human workers and operators, often involving sensitive data, raising significant privacy concerns. As a result, affected workers and unions frequently reject human-machine collaboration features due to a lack of transparency regarding privacy threats and implemented mitigation strategies. To enable early stakeholder involvement, establish trust, and support informed decision-making, privacy implications must be communicated in a way understandable to non-technical stakeholders. Yet, current Requirements Engineering (RE) practices provide limited methodological support for making privacy threats and mitigations accessible to non-technical stakeholders (e.g., individual workers or their representative unions). In this RE@Next paper, we propose a conceptual framework that guides software design from human monitoring-related use cases and requirements to informed decision-making guidance focusing on non-technical stakeholders. Building on principles such as Privacy by Design, the framework leverages Large Language Models (LLMs) to transform technical artifacts into accessible privacy reports. We share initial insights from two industry use cases, evaluate the quality of the generated reports, and outline future research directions toward integrating privacy transparency into RE processes for human-centric industrial systems.",
+      "categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.21269",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 16,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "The paper presents a conceptual framework using LLMs to transform privacy artifacts into reports for non-technical stakeholders, addressing a timely need in human-centric AI systems; however, engineering details are still nascent.",
+        "one_sentence_summary": "该论文针对工业5.0人机协作中的隐私沟通问题，提出利用大语言模型将隐私威胁与缓解措施等技术产物转化为非技术利益相关者可理解的报告，并基于两个工业案例展示了框架的可行性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 16,
+        "timeliness_rarity": 18
+      },
+      "score_total": 76,
+      "score_reason": "The paper presents a conceptual framework using LLMs to transform privacy artifacts into reports for non-technical stakeholders, addressing a timely need in human-centric AI systems; however, engineering details are still nascent.",
+      "one_sentence_summary": "该论文针对工业5.0人机协作中的隐私沟通问题，提出利用大语言模型将隐私威胁与缓解措施等技术产物转化为非技术利益相关者可理解的报告，并基于两个工业案例展示了框架的可行性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-21T05:52:10.026206+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-21",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.22168",
+      "arxiv_id": "2605.22168",
+      "title": "Measuring Cross-Modal Synergy: A Benchmark for VLM Explainability",
+      "url": "https://arxiv.org/abs/2605.22168",
+      "published_at": "2026-05-23T04:00:00+00:00",
+      "publish_date": "2026-05-23",
+      "description": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "summary": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "abstract": "Vision-Language Models (VLMs) map complex visual inputs to semantic spaces, but interpreting the cross-modal reasoning of VLMs currently relies on post-hoc explainers evaluated via unimodal perturbation metrics. We expose a limitation in this paradigm: because multimodal datasets contain language priors and modality biases, VLMs frequently exhibit cross-modal redundancy, allowing them to answer visual queries using text alone. Consequently, unimodal metrics penalize faithful explainers, triggering an evaluation collapse where visual and textual rankings fundamentally contradict each other. %(Kendall's $\\tau = -0.06$). To resolve this, we introduce Synergistic Faithfulness ($\\mathcal{F}_{syn}$), a scalable metric rooted in the Shapley Interaction Index that strictly isolates the joint Harsanyi dividend between modalities, serving as a highly accurate surrogate ($\\rho = 0.92$) while achieving a $24\\times$ computational speedup. Evaluating 8 distinct XAI methods across 3 VLM architectures and 3 benchmark datasets, reveals that explainers proposed for VLMs heavily over-index on visual salience and significantly underperform adapted attention-based methods in capturing true cross-modal synergy. By decoupling visual plausibility from cross-modal faithfulness, this work provides a rigorous evaluation framework required to safely audit VLM reasoning in high-stakes deployments.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.22168",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 15,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文直接针对VLM可解释性评估，提出的新指标可集成到安全审计流水线，启发产品级AI监控；发现了现有评估的跨模态冗余缺陷并构建新基准与指标，信号较强；指标计算有速度优化，但整体为评估框架，工程直接复用性中等；VLM可解释性热潮中系统研究评估崩溃问题较少见，时效性高。",
+        "one_sentence_summary": "该论文揭示了当前VLM解释评估因跨模态冗余而失效，提出基于Shapley交互指数的协同忠实度指标，并在多个模型和数据集上证明基于注意力的方法比视觉显著性解释器更能捕捉真正的跨模态协同。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 15,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "论文直接针对VLM可解释性评估，提出的新指标可集成到安全审计流水线，启发产品级AI监控；发现了现有评估的跨模态冗余缺陷并构建新基准与指标，信号较强；指标计算有速度优化，但整体为评估框架，工程直接复用性中等；VLM可解释性热潮中系统研究评估崩溃问题较少见，时效性高。",
+      "one_sentence_summary": "该论文揭示了当前VLM解释评估因跨模态冗余而失效，提出基于Shapley交互指数的协同忠实度指标，并在多个模型和数据集上证明基于注意力的方法比视觉显著性解释器更能捕捉真正的跨模态协同。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-23T05:04:40.177313+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-23",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.22748",
+      "arxiv_id": "2605.22748",
+      "title": "Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.22748",
+      "published_at": "2026-05-21T17:15:54Z",
+      "publish_date": "2026-05-21",
+      "description": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "summary": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "abstract": "Autonomous systems have achieved superhuman performance in isolation or simulation, yet they remain brittle in shared, dynamic real-world spaces. This failure stems from the dominant single-agent paradigm for physical applications, where other actors are ignored or treated as environmental noise, preventing effective coordination. Here we show that multi-agent reinforcement learning provides the essential safety scaffolding required for real-world interaction. Using high-speed quadrotor racing as a high-stakes testbed, we train agents to navigate complex aerodynamic interactions and strategic maneuvering with a variable number of racers. Through league-based self-play, agents evolve sophisticated anticipatory behaviors, including proactive collision avoidance, overtaking, and handling multi-agent physical interactions, including aerodynamic downwash. Our agents outperform a champion-level human pilot in multi-player races at speeds exceeding 22 m/s, while simultaneously reducing collision rates by 50 % compared to state-of-the-art single-agent baselines. Crucially, training with diverse artificial agents enables zero-shot generalization to safer human interaction. These results suggest that the path to robust robotic co-existence lies not in isolated safety constraints, but in the rigorous demands of multi-agent interaction. Multimedia materials are available at: https://rpg.ifi.uzh.ch/marl",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22748",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 21,
+          "engineering_utility": 16,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "虽聚焦机器人竞速，但展示了多智能体强化学习在真实物理环境下安全交互的潜力，可启发代理安全交互设计；零样本泛化至与人类安全比赛是新颖任务；方法依赖实物无人机和特定训练，工程落地难度较高；高速多机器人真实交互成果较为稀有。",
+        "one_sentence_summary": "利用基于联赛自对弈的多智能体强化学习训练超高速无人机竞速代理，实现超人类表现、碰撞率降低一半，并能在零样本下安全与人类飞行员同场竞技，证明多智能体交互是达成鲁棒共存的路径。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 21,
+        "engineering_utility": 16,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "虽聚焦机器人竞速，但展示了多智能体强化学习在真实物理环境下安全交互的潜力，可启发代理安全交互设计；零样本泛化至与人类安全比赛是新颖任务；方法依赖实物无人机和特定训练，工程落地难度较高；高速多机器人真实交互成果较为稀有。",
+      "one_sentence_summary": "利用基于联赛自对弈的多智能体强化学习训练超高速无人机竞速代理，实现超人类表现、碰撞率降低一半，并能在零样本下安全与人类飞行员同场竞技，证明多智能体交互是达成鲁棒共存的路径。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.19779",
+      "arxiv_id": "2605.19779",
+      "title": "Distribution-Free Uncertainty Quantification for Continuous AI Agent Evaluation",
+      "url": "https://arxiv.org/abs/2605.19779",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "summary": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "abstract": "We adapt split conformal prediction and adaptive conformal inference (ACI) to continuous AI agent evaluation, providing distribution-free coverage guarantees for forecasted quality scores. Conformal intervals achieve calibration error below 0.02 across all nominal levels at the 24h horizon, while ACI correctly widens intervals by 35% following agent releases then reconverges. We further develop compositional uncertainty bounds for multi-agent pipelines (validated via simulation across inter-stage correlations rho in [-0.5, 0.9]), a conformal abstention rule for pairwise rankings with controlled false-ranking rate, and FDR-corrected abstention for leaderboard-scale multiple testing. Evaluating 50 agents via 18 real-time signals collected hourly, we show that per-agent conditional coverage is well-concentrated around the nominal level (mean 80.4%, 90% of agents within [72%, 90%]), and that cross-source sentiment divergence predicts ranking instability (r=0.64, p<0.01). A circularity-controlled validation confirms the framework captures signal beyond benchmarks (rho_s=0.52, p<0.01, n=35). Code and data are released under CC BY 4.0.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.19779",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 19,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "为持续智能体评估提供不确定性量化方法，对监控和评估管线有用；将保形预测、自适应推理与组合界限引入智能体评估，具新意；提供代码与实时信号数据，可复现；代表评估可靠性这一近期趋势。",
+        "one_sentence_summary": "将分割保形预测和自适应保形推理适配到持续 AI 智能体评估，提供无分布覆盖保证，在 50 个智能体、18 种实时信号上实现 24 小时校准误差低于 0.02，智能体发布后区间自适应扩大 35% 再收敛，并开发多智能体管道组合不确定性界、配对排名弃权与错误发现率校正方法，释放代码与数据。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 18
+      },
+      "score_total": 75,
+      "score_reason": "为持续智能体评估提供不确定性量化方法，对监控和评估管线有用；将保形预测、自适应推理与组合界限引入智能体评估，具新意；提供代码与实时信号数据，可复现；代表评估可靠性这一近期趋势。",
+      "one_sentence_summary": "将分割保形预测和自适应保形推理适配到持续 AI 智能体评估，提供无分布覆盖保证，在 50 个智能体、18 种实时信号上实现 24 小时校准误差低于 0.02，智能体发布后区间自适应扩大 35% 再收敛，并开发多智能体管道组合不确定性界、配对排名弃权与错误发现率校正方法，释放代码与数据。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.18766",
+      "arxiv_id": "2605.18766",
+      "title": "Retrieve Only Relevant Tables Whether Few or Many: Adaptive Table Retrieval Method",
+      "url": "https://arxiv.org/abs/2605.18766",
+      "published_at": "2026-05-20T04:00:00+00:00",
+      "publish_date": "2026-05-20",
+      "description": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "summary": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "abstract": "Retrieving relevant tables from extensive databases for a given natural language query is essential for accurately answering questions in tasks such as text-to-SQL. Existing table retrieval approaches select a pre-determined set of k tables with the highest similarity to the query. However, the number of required tables varies across queries and cannot be known in advance. Enforcing a fixed number of retrieved tables regardless of the query may either retrieve an undersized set, failing to obtain all necessary evidence, or retrieve an oversized pool, including irrelevant tables. To address this issue, we propose an adaptive table retrieval method that adjusts the number of tables retrieved according to the requirements of each query. Specifically, we utilize an adaptive thresholding mechanism to selectively retrieve tables and integrate a sliding-window reranking algorithm to efficiently process a large table corpus. Extensive experiments on Spider, BIRD, and Spider 2.0 demonstrate that our method effectively addresses the limitations of the top-k retrieval strategy, improving performance in retrieval and downstream tasks. Our code and data are available at https://github.com/sbY99/Adaptive-Table-Retrieval.",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.18766",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "提出自适应表格检索方法，根据查询动态确定检索表格数量，克服固定top-k的缺陷，并在多个文本到SQL基准上验证了效果，代码开源可用。",
+        "one_sentence_summary": "针对表格检索中固定前k个表格导致数量不当的问题，提出自适应阈值和滑动窗口重排序的方法动态调整检索数量，在Spider、BIRD和Spider 2.0上提升了检索与下游任务性能。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 75,
+      "score_reason": "提出自适应表格检索方法，根据查询动态确定检索表格数量，克服固定top-k的缺陷，并在多个文本到SQL基准上验证了效果，代码开源可用。",
+      "one_sentence_summary": "针对表格检索中固定前k个表格导致数量不当的问题，提出自适应阈值和滑动窗口重排序的方法动态调整检索数量，在Spider、BIRD和Spider 2.0上提升了检索与下游任务性能。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-20T05:47:05.012489+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-20",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.15172",
+      "arxiv_id": "2605.15172",
+      "title": "MetaBackdoor: Exploiting Positional Encoding as a Backdoor Attack Surface in LLMs",
+      "url": "https://arxiv.org/abs/2605.15172",
+      "published_at": "2026-05-14T17:56:22Z",
+      "publish_date": "2026-05-14",
+      "description": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "summary": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "abstract": "Backdoor attacks pose a serious security threat to large language models (LLMs), which are increasingly deployed as general-purpose assistants in safety- and privacy-critical applications. Existing LLM backdoors rely primarily on content-based triggers, requiring explicit modification of the input text. In this work, we show that this assumption is unnecessary and limiting. We introduce MetaBackdoor, a new class of backdoor attacks that exploits positional information as the trigger, without modifying textual content. Our key insight is that Transformer-based LLMs necessarily encode token positions to process ordered sequences. As a result, length-correlated positional structure is reflected in the model's internal computation and can be used as an effective non-content trigger signal. We demonstrate that even a simple length-based positional trigger is sufficient to activate stealthy backdoors. Unlike prior attacks, MetaBackdoor operates on visibly and semantically clean inputs and enables qualitatively new capabilities. We show that a backdoored LLM can be induced to disclose sensitive internal information, including proprietary system prompts, once a length condition is satisfied. We further demonstrate a self-activation scenario, where normal multi-turn interaction can move the conversation context into the trigger region and induce malicious tool-call behavior without attacker-supplied trigger text. In addition, MetaBackdoor is orthogonal to content-based backdoors and can be composed with them to create more precise and harder-to-detect activation conditions. Our results expand the threat model of LLM backdoors by revealing positional encoding as a previously overlooked attack surface. This challenges defenses that focus on detecting suspicious text and highlights the need for new defense strategies that explicitly account for positional triggers in modern LLM architectures.",
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15172",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 15,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "This paper reveals a novel backdoor attack vector exploiting positional encoding without content modification, directly relevant to LLM security and red-teaming. It introduces a new attack surface and demonstrates concrete exploitation scenarios (system prompt leakage, self-activation), making it timely and actionable for defense development.",
+        "one_sentence_summary": "针对LLM提出MetaBackdoor攻击，首次利用位置编码（如对话长度）作为后门触发信号，无需修改输入文本，可诱使模型泄露系统提示或自主触发恶意工具调用，为LLM安全防御提出新要求。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 15,
+        "timeliness_rarity": 20
+      },
+      "score_total": 75,
+      "score_reason": "This paper reveals a novel backdoor attack vector exploiting positional encoding without content modification, directly relevant to LLM security and red-teaming. It introduces a new attack surface and demonstrates concrete exploitation scenarios (system prompt leakage, self-activation), making it timely and actionable for defense development.",
+      "one_sentence_summary": "针对LLM提出MetaBackdoor攻击，首次利用位置编码（如对话长度）作为后门触发信号，无需修改输入文本，可诱使模型泄露系统提示或自主触发恶意工具调用，为LLM安全防御提出新要求。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.15034",
+      "arxiv_id": "2605.15034",
+      "title": "AI Knows When It's Being Watched: Functional Strategic Action and Contextual Register Modulation in Large Language Models",
+      "url": "https://arxiv.org/abs/2605.15034",
+      "published_at": "2026-05-14T16:29:38Z",
+      "publish_date": "2026-05-14",
+      "description": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "summary": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "abstract": "Large language models (LLMs) have been extensively studied from computational and cognitive perspectives, yet their behavior as communicative actors in socially structured contexts remains underexplored. This study examines whether LLM-based multi-agent systems exhibit systematic linguistic adaptation in response to perceived social observation contexts -- a question with direct implications for AI governance and auditing. Drawing on Habermas's (1981) Theory of Communicative Action, Goffman's (1959) dramaturgical model, Bell's (1984) Audience Design framework, and the Hawthorne Effect, we report a controlled experiment involving 100 multi-agent debate sessions across five conditions (n = 20 each). Conditions varied the framing of social observation -- from explicit monitoring by university researchers, to negation of monitoring, to an observer-substitution condition replacing human researchers with an automated AI auditing system. Monitored conditions (Delta+24.9%, Delta+24.2%) and the automated AI monitoring condition (Delta+22.2%) produce higher TTR change than audience-framing conditions (Delta+17.7%), F(4, 94) = 2.79, p = .031. Message length shows a fully dissociated effect, F(4, 95) = 19.55, p < .001. A fifth condition -- replacing human with AI observers -- yields intermediate TTR adaptation, suggesting LLM behavior is sensitive to observer identity: human evaluation elicits stronger register formalization than automated AI surveillance. We discuss implications for AI governance, algorithmic auditing, and the repositioning of LLMs as contextually sensitive communicative actors.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.15034",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 23,
+          "engineering_utility": 10,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "This study experimentally demonstrates that LLMs modulate their linguistic register in response to perceived observation, with implications for AI auditing and governance. It introduces a novel multi-agent debate framework and shows sensitivity to observer identity, making it timely for understanding LLM behavior in social contexts.",
+        "one_sentence_summary": "基于100场多智能体辩论实验，发现LLM在感知到被观察时会显著提升词汇多样性（TTR），且对人类观察者的反应强于AI监控，揭示了LLM作为上下文敏感交际主体的社会适应性，对AI治理与审计具有重要启示。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 23,
+        "engineering_utility": 10,
+        "timeliness_rarity": 22
+      },
+      "score_total": 75,
+      "score_reason": "This study experimentally demonstrates that LLMs modulate their linguistic register in response to perceived observation, with implications for AI auditing and governance. It introduces a novel multi-agent debate framework and shows sensitivity to observer identity, making it timely for understanding LLM behavior in social contexts.",
+      "one_sentence_summary": "基于100场多智能体辩论实验，发现LLM在感知到被观察时会显著提升词汇多样性（TTR），且对人类观察者的反应强于AI监控，揭示了LLM作为上下文敏感交际主体的社会适应性，对AI治理与审计具有重要启示。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-17T05:15:35.870405+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-17",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.22775",
+      "arxiv_id": "2605.22775",
+      "title": "MambaGaze: Bidirectional Mamba with Explicit Missing Data Modeling for Cognitive Load Assessment from Eye-Gaze Tracking Data",
+      "url": "https://arxiv.org/abs/2605.22775",
+      "published_at": "2026-05-21T17:33:41Z",
+      "publish_date": "2026-05-21",
+      "description": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "summary": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "abstract": "Real-time cognitive load assessment from eye-tracking signals could potentially enable adaptive human-centered-AI such as safety-critical applications such as driver vigilance monitoring or automated flight deck assistance, yet two challenges persist: handling frequent data missingness from blinks and tracking failures, and efficiently modeling long-range temporal dependencies. We propose MambaGaze, a framework that addresses these challenges through 1) XMD encoding, which augments raw features with observation masks and time-deltas to explicitly model data uncertainty, and 2) bidirectional Mamba-2, which captures temporal dependencies with linear computational complexity. Experiments on CLARE and CL-Drive datasets under leave-one-subject-out evaluation show that MambaGaze achieves 76.8% and 73.1% accuracy, respectively, outperforming CNN, Transformer, ResNet, and VGG baselines by 4-12 percentage points. Edge deployment benchmarks on NVIDIA Jetson platforms demonstrate real-time inference at 43-68 FPS with power consumption below 7.5W, confirming feasibility for wearable cognitive load monitoring.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.22775",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "MambaGaze专门处理眼动缺失数据，并在边缘设备实现实时推理，为自适应认知负荷监测提供了可部署的方法，但应用场景相对狭窄。",
+        "one_sentence_summary": "MambaGaze框架通过XMD编码显式建模眼动追踪中的缺失数据，并使用双向Mamba-2捕获长程依赖，在认知负荷评估任务上准确率超越Transformer等模型，且在Jetson边缘设备上实现实时推理，适用于驾驶员监测等场景。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "MambaGaze专门处理眼动缺失数据，并在边缘设备实现实时推理，为自适应认知负荷监测提供了可部署的方法，但应用场景相对狭窄。",
+      "one_sentence_summary": "MambaGaze框架通过XMD编码显式建模眼动追踪中的缺失数据，并使用双向Mamba-2捕获长程依赖，在认知负荷评估任务上准确率超越Transformer等模型，且在Jetson边缘设备上实现实时推理，适用于驾驶员监测等场景。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-22T05:44:08.410110+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-22",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.18572",
+      "arxiv_id": "2605.18572",
+      "title": "MA$^{2}$P: A Meta-Cognitive Autonomous Intelligent Agents Framework for Complex Persuasion",
+      "url": "https://arxiv.org/abs/2605.18572",
+      "published_at": "2026-05-18T15:53:12Z",
+      "publish_date": "2026-05-18",
+      "description": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "summary": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "abstract": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA$^{2}$P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.18572",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 16,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "MA²P通过多智能体架构与元认知配置器提升复杂说服对话的成功率，在特定任务上表现优于基线，但说服场景相对垂直，框架实现细节与复用性不够明确，实用性中等。",
+        "one_sentence_summary": "提出MA²P元认知自主智能体框架，协调多智能体进行感知、心理状态推断和策略执行，并通过元认知配置器从知识库选择元策略，在复杂说服对话实验中取得更高成功率。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 16,
+        "timeliness_rarity": 19
+      },
+      "score_total": 73,
+      "score_reason": "MA²P通过多智能体架构与元认知配置器提升复杂说服对话的成功率，在特定任务上表现优于基线，但说服场景相对垂直，框架实现细节与复用性不够明确，实用性中等。",
+      "one_sentence_summary": "提出MA²P元认知自主智能体框架，协调多智能体进行感知、心理状态推断和策略执行，并通过元认知配置器从知识库选择元策略，在复杂说服对话实验中取得更高成功率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-19T05:42:43.444174+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-19",
+      "pushed_run_id": "2026-05-24"
+    },
+    {
+      "id": "arxiv:2605.12518",
+      "arxiv_id": "2605.12518",
+      "title": "TimelineReasoner: Advancing Timeline Summarization with Large Reasoning Models",
+      "url": "https://arxiv.org/abs/2605.12518",
+      "published_at": "2026-05-15T04:00:00+00:00",
+      "publish_date": "2026-05-15",
+      "description": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "summary": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "abstract": "The proliferation of online news poses a challenge to extracting structured timelines from unstructured content. While recent studies have shown that Large Language Models (LLMs) can assist Timeline Summarization (TLS), these approaches primarily treat models as passive generators. The emergence of Large Reasoning Models (LRMs) presents an opportunity to reason over events actively, enabling iterative evidence acquisition, the detection of missing events, and the validation of temporal consistency. To systematically leverage the reasoning capabilities of LRMs, we propose TimelineReasoner, a novel framework that shifts TLS from static generation to an active, reasoning-driven process. Unlike prior work, TimelineReasoner adopts a two-stage framework: Global Cognition, which tracks events at a macroscopic level and continuously updates a global event memory, and Detail Exploration, which identifies informational gaps and refines the timeline via targeted document retrieval. To support this, TimelineReasoner incorporates several specialized mechanisms, including an Event Scraper for retrieving temporal event descriptions, a Timeline Updater for refining the timeline, and a Supervisor for detecting gaps in the timeline and guiding retrieval. Experimental results on open-domain TLS datasets demonstrate that TimelineReasoner significantly outperforms existing LLM-based TLS methods in terms of timeline accuracy, coverage, and coherence. On closed-domain TLS datasets, our method performs on par with or exceeds state-of-the-art approaches. This work not only pushes the boundaries of TLS but also highlights the broader potential of LRM-based reasoning frameworks for timeline summarization.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.12518",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "将时间线摘要从静态生成转为推理驱动，利用大型推理模型主动探测缺失事件、更新全局事件记忆，在开放域TLS显著优于现有方法，框架包含事件抓取器、更新器与监督器，可集成到新闻聚合等产品，体现推理模型新应用。",
+        "one_sentence_summary": "TimelineReasoner采用两阶段推理框架，全局认知跟踪宏观事件并更新记忆，细节探索通过监督器检测缺失事件并定向检索，实验显示在开放域时间线摘要任务上准确性、覆盖度和连贯性显著超越现有LLM方法，展示了推理模型驱动的事件抽取潜力。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "将时间线摘要从静态生成转为推理驱动，利用大型推理模型主动探测缺失事件、更新全局事件记忆，在开放域TLS显著优于现有方法，框架包含事件抓取器、更新器与监督器，可集成到新闻聚合等产品，体现推理模型新应用。",
+      "one_sentence_summary": "TimelineReasoner采用两阶段推理框架，全局认知跟踪宏观事件并更新记忆，细节探索通过监督器检测缺失事件并定向检索，实验显示在开放域时间线摘要任务上准确性、覆盖度和连贯性显著超越现有LLM方法，展示了推理模型驱动的事件抽取潜力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-15T05:17:16.441272+00:00",
+      "pushed_at": "2026-05-24T05:34:52.478573+00:00",
+      "source_run_id": "2026-05-15",
+      "pushed_run_id": "2026-05-24"
+    }
+  ],
+  "paper_status": {
+    "state_file": "data/paper-state.json",
+    "new_candidate_count": 0,
+    "added_to_state_count": 0,
+    "skipped_low_score_count": 0,
+    "selected_count": 10,
+    "waiting_remaining_count": 23,
+    "selected_ids": [
+      "arxiv:2605.21269",
+      "arxiv:2605.22168",
+      "arxiv:2605.22748",
+      "arxiv:2605.19779",
+      "arxiv:2605.18766",
+      "arxiv:2605.15172",
+      "arxiv:2605.15034",
+      "arxiv:2605.22775",
+      "arxiv:2605.18572",
+      "arxiv:2605.12518"
+    ],
+    "source": "arxiv_rss",
+    "ai_provider": "deepseek",
+    "ai_model": "deepseek-v4-pro"
+  },
+  "logs": [
+    {
+      "stage": "news_fetch",
+      "source": "juya",
+      "status": "ok",
+      "news_count": 4,
+      "issue": {
+        "feed_title": "橘鸦AI早报",
+        "feed_link": "https://imjuya.github.io/juya-ai-daily/",
+        "feed_description": "资讯内容由AI辅助生成，可能存在错误，请以原始信息出处和官方信息为准。RSS正常提供服务中，但Folo存在问题，接收不到最新文章。建议使用其他RSS阅读器",
+        "last_build_date": "2026-05-24T00:40:00+00:00",
+        "issue_title": "2026-05-24",
+        "issue_url": "https://imjuya.github.io/juya-ai-daily/issue-100/",
+        "issue_guid": "https://github.com/imjuya/juya-ai-daily/issues/100",
+        "published_at": "2026-05-24T00:39:39+00:00",
+        "rss_url": "https://imjuya.github.io/juya-ai-daily/rss.xml"
+      }
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_api",
+      "status": "failed",
+      "error": "HTTP Error 429: Unknown Error"
+    },
+    {
+      "stage": "paper_fetch",
+      "source": "arxiv_rss",
+      "status": "ok",
+      "raw": 0,
+      "kept": 0
+    },
+    {
+      "stage": "paper_ai_scoring",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "status": "fallback_rules",
+      "candidate_count": 0,
+      "eligible_candidate_count": 0,
+      "ai_candidate_count": 0,
+      "skipped_already_pushed_count": 0,
+      "scored_count": 0,
+      "failed_batches": 0
+    }
+  ]
+}
