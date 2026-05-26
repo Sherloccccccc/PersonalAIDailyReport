@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-25T06:01:00.895577+00:00",
+  "updated_at": "2026-05-26T05:42:00.206777+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -5180,11 +5180,11 @@
       "score_reason": "BoostTaxo通过增强式推理与结构校准实现零样本分类体系归纳，对知识组织工具有直接启发，方法新颖且实验充分，易于工程实现，契合LLM驱动推理趋势。",
       "one_sentence_summary": "BoostTaxo利用粗细结合的LLM增强式推理与结构感知校准，在零样本条件下从领域术语自动构建语义层级，在三个公开数据集上性能领先，消融实验验证了混合候选选择与分数校准的有效性。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-15T05:17:16.441272+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
       "source_run_id": "2026-05-15",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-26"
     },
     {
       "id": "arxiv:2605.12521",
@@ -10133,11 +10133,11 @@
       "score_reason": "首次引入Creator-Inspector多agent框架自动生成本构模型，Inspector审计九类物理约束使合格率提升至100%，方法技术中立且可扩展，但领域偏窄，直接工程实用性一般。",
       "one_sentence_summary": "本文提出多智能体LLM方法，由Creator生成本构模型、Inspector逐项审计物理约束，将Claude Opus生成模型的约束满足率从91%提升至100%，在脑组织与橡胶数据上保持高精度和良好外推，实现可信自动化本构建模。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-25T06:01:00.895577+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
       "source_run_id": "2026-05-25",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-26"
     },
     {
       "id": "arxiv:2605.23712",
@@ -10657,6 +10657,481 @@
       "pushed_at": null,
       "source_run_id": "2026-05-25",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.26114",
+      "arxiv_id": "2605.26114",
+      "title": "MobileGym: A Verifiable and Highly Parallel Simulation Platform for Mobile GUI Agent Research",
+      "url": "https://arxiv.org/abs/2605.26114",
+      "published_at": "2026-05-25T17:59:49Z",
+      "publish_date": "2026-05-25",
+      "description": "We present MobileGym, a browser-hosted, lightweight, fully controllable environment for everyday mobile use, targeting interaction fidelity without replicating proprietary backends. It enables two capabilities previously out of reach for everyday apps: verifiable outcome signals through deterministic state-based judging over structured JSON state, and scalable online RL through low-cost parallel rollouts. The full environment state is captured, configured, forked, and compared as structured JSON, and a single server can host hundreds of parallel instances, with about 400 MB memory per instance and about 3 s cold start. A layered state model and a declarative task-definition framework keep state programmability and task creation practical at scale, and a single programmatic judging mechanism delivers both deterministic evaluation verdicts and dense RL rewards. The accompanying MobileGym-Bench provides 416 parameterized task templates, including 256 test and 160 train templates, over 28 apps, with deterministic judges and a structured AnswerSheet protocol that avoids free-text matching failures. In a Sim-to-Real case study, GRPO on Qwen3-VL-4B-Instruct gains +12.8 percentage points on the 256-task test set, and on a 59-task real-device signal subset, real-device execution retains 95.1% of the simulation-side training gain. Project page: https://mobilegym.github.io.",
+      "summary": "We present MobileGym, a browser-hosted, lightweight, fully controllable environment for everyday mobile use, targeting interaction fidelity without replicating proprietary backends. It enables two capabilities previously out of reach for everyday apps: verifiable outcome signals through deterministic state-based judging over structured JSON state, and scalable online RL through low-cost parallel rollouts. The full environment state is captured, configured, forked, and compared as structured JSON, and a single server can host hundreds of parallel instances, with about 400 MB memory per instance and about 3 s cold start. A layered state model and a declarative task-definition framework keep state programmability and task creation practical at scale, and a single programmatic judging mechanism delivers both deterministic evaluation verdicts and dense RL rewards. The accompanying MobileGym-Bench provides 416 parameterized task templates, including 256 test and 160 train templates, over 28 apps, with deterministic judges and a structured AnswerSheet protocol that avoids free-text matching failures. In a Sim-to-Real case study, GRPO on Qwen3-VL-4B-Instruct gains +12.8 percentage points on the 256-task test set, and on a 59-task real-device signal subset, real-device execution retains 95.1% of the simulation-side training gain. Project page: https://mobilegym.github.io.",
+      "abstract": "We present MobileGym, a browser-hosted, lightweight, fully controllable environment for everyday mobile use, targeting interaction fidelity without replicating proprietary backends. It enables two capabilities previously out of reach for everyday apps: verifiable outcome signals through deterministic state-based judging over structured JSON state, and scalable online RL through low-cost parallel rollouts. The full environment state is captured, configured, forked, and compared as structured JSON, and a single server can host hundreds of parallel instances, with about 400 MB memory per instance and about 3 s cold start. A layered state model and a declarative task-definition framework keep state programmability and task creation practical at scale, and a single programmatic judging mechanism delivers both deterministic evaluation verdicts and dense RL rewards. The accompanying MobileGym-Bench provides 416 parameterized task templates, including 256 test and 160 train templates, over 28 apps, with deterministic judges and a structured AnswerSheet protocol that avoids free-text matching failures. In a Sim-to-Real case study, GRPO on Qwen3-VL-4B-Instruct gains +12.8 percentage points on the 256-task test set, and on a 59-task real-device signal subset, real-device execution retains 95.1% of the simulation-side training gain. Project page: https://mobilegym.github.io.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 10,
+        "engineering_utility": 19,
+        "timeliness_rarity": 19
+      },
+      "score_total": 73,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文提出一个可复用框架，面向大模型能力评测；用途是给模型、agent 或工具链提供更可复现的横向比较标准。",
+      "score_source": "rules",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.26112",
+      "arxiv_id": "2605.26112",
+      "title": "From Model Scaling to System Scaling: Scaling the Harness in Agentic AI",
+      "url": "https://arxiv.org/abs/2605.26112",
+      "published_at": "2026-05-25T17:59:36Z",
+      "publish_date": "2026-05-25",
+      "description": "This paper studies the next major bottleneck in agentic AI as system scaling, not only model scaling: the design of auditable, persistent, modular, and verifiable architectures around foundation models. We refer to this shift as scaling the harness: treating the structured execution layer around a foundation model as a first-class object of design, evaluation, and optimization. Although recent large language models enable agents to use tools, retrieve information, maintain memory, and execute long-horizon workflows, evaluation remains largely model-centric, often reducing agents to final-task success while treating memory, retrieval, tool use, orchestration, verification, and governance as secondary implementation details. This framing is increasingly inadequate because agent performance emerges from the interaction among the foundation model, memory substrate, context constructor, skill-routing layer, orchestration loop, and verification-and-governance layer. Together, these components form the agent harness, which translates model capability into long-horizon agent behavior. We study scaling the harness through three core bottlenecks: context governance, trustworthy memory, and dynamic skill routing, together with the orchestration and governance mechanisms that coordinate and constrain them. We further outline a research agenda for harness-level benchmarks that go beyond one-shot task success to measure trajectory quality, memory hygiene, context efficiency, communication fidelity, verification cost, and safe evolution over time. To make the discussion concrete, we develop CheetahClaws: https://github.com/SafeRL-Lab/cheetahclaws, a Python-native reference harness, and compare it with Claude Code and OpenClaw. Our main claim is that future progress in agentic AI will depend as much on system design as on stronger foundation models.",
+      "summary": "This paper studies the next major bottleneck in agentic AI as system scaling, not only model scaling: the design of auditable, persistent, modular, and verifiable architectures around foundation models. We refer to this shift as scaling the harness: treating the structured execution layer around a foundation model as a first-class object of design, evaluation, and optimization. Although recent large language models enable agents to use tools, retrieve information, maintain memory, and execute long-horizon workflows, evaluation remains largely model-centric, often reducing agents to final-task success while treating memory, retrieval, tool use, orchestration, verification, and governance as secondary implementation details. This framing is increasingly inadequate because agent performance emerges from the interaction among the foundation model, memory substrate, context constructor, skill-routing layer, orchestration loop, and verification-and-governance layer. Together, these components form the agent harness, which translates model capability into long-horizon agent behavior. We study scaling the harness through three core bottlenecks: context governance, trustworthy memory, and dynamic skill routing, together with the orchestration and governance mechanisms that coordinate and constrain them. We further outline a research agenda for harness-level benchmarks that go beyond one-shot task success to measure trajectory quality, memory hygiene, context efficiency, communication fidelity, verification cost, and safe evolution over time. To make the discussion concrete, we develop CheetahClaws: https://github.com/SafeRL-Lab/cheetahclaws, a Python-native reference harness, and compare it with Claude Code and OpenClaw. Our main claim is that future progress in agentic AI will depend as much on system design as on stronger foundation models.",
+      "abstract": "This paper studies the next major bottleneck in agentic AI as system scaling, not only model scaling: the design of auditable, persistent, modular, and verifiable architectures around foundation models. We refer to this shift as scaling the harness: treating the structured execution layer around a foundation model as a first-class object of design, evaluation, and optimization. Although recent large language models enable agents to use tools, retrieve information, maintain memory, and execute long-horizon workflows, evaluation remains largely model-centric, often reducing agents to final-task success while treating memory, retrieval, tool use, orchestration, verification, and governance as secondary implementation details. This framing is increasingly inadequate because agent performance emerges from the interaction among the foundation model, memory substrate, context constructor, skill-routing layer, orchestration loop, and verification-and-governance layer. Together, these components form the agent harness, which translates model capability into long-horizon agent behavior. We study scaling the harness through three core bottlenecks: context governance, trustworthy memory, and dynamic skill routing, together with the orchestration and governance mechanisms that coordinate and constrain them. We further outline a research agenda for harness-level benchmarks that go beyond one-shot task success to measure trajectory quality, memory hygiene, context efficiency, communication fidelity, verification cost, and safe evolution over time. To make the discussion concrete, we develop CheetahClaws: https://github.com/SafeRL-Lab/cheetahclaws, a Python-native reference harness, and compare it with Claude Code and OpenClaw. Our main claim is that future progress in agentic AI will depend as much on system design as on stronger foundation models.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 14
+      },
+      "score_total": 73,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.26110",
+      "arxiv_id": "2605.26110",
+      "title": "Prism: A Plug-in Reproducible Infrastructure for Scalable Multimodal Continual Instruction Tuning",
+      "url": "https://arxiv.org/abs/2605.26110",
+      "published_at": "2026-05-25T17:59:28Z",
+      "publish_date": "2026-05-25",
+      "description": "Multimodal Large Language Models (MLLMs) achieve versatility by reformulating diverse tasks into a unified instruction-following framework via instruction tuning. However, real-world deployment requires continuous adaptation to emerging tasks, motivating Multimodal Continual Instruction Tuning (MCIT). Despite its growing importance, current MCIT research is hindered by severe engineering bottlenecks. Existing methods are typically implemented by directly modifying the base MLLM codebase, which imposes substantial implementation overhead and yields method-specific architectures that severely limit code reuse and fair comparison. To address this, we introduce Prism, a plug-in reproducible codebase specifically designed for scalable MCIT research. It separates algorithmic development from the backbone implementation via a lightweight plugin registration mechanism, enabling new strategies to be integrated as independent plugins without modifying the underlying MLLM codebase, thereby eliminating structural fragmentation and accelerating method development. Prism natively supports widely used large-scale training pipeline, thereby enabling reproducible and scalable MCIT experimentation. Code is available at https://github.com/LAMDA-CL/Prism.",
+      "summary": "Multimodal Large Language Models (MLLMs) achieve versatility by reformulating diverse tasks into a unified instruction-following framework via instruction tuning. However, real-world deployment requires continuous adaptation to emerging tasks, motivating Multimodal Continual Instruction Tuning (MCIT). Despite its growing importance, current MCIT research is hindered by severe engineering bottlenecks. Existing methods are typically implemented by directly modifying the base MLLM codebase, which imposes substantial implementation overhead and yields method-specific architectures that severely limit code reuse and fair comparison. To address this, we introduce Prism, a plug-in reproducible codebase specifically designed for scalable MCIT research. It separates algorithmic development from the backbone implementation via a lightweight plugin registration mechanism, enabling new strategies to be integrated as independent plugins without modifying the underlying MLLM codebase, thereby eliminating structural fragmentation and accelerating method development. Prism natively supports widely used large-scale training pipeline, thereby enabling reproducible and scalable MCIT experimentation. Code is available at https://github.com/LAMDA-CL/Prism.",
+      "abstract": "Multimodal Large Language Models (MLLMs) achieve versatility by reformulating diverse tasks into a unified instruction-following framework via instruction tuning. However, real-world deployment requires continuous adaptation to emerging tasks, motivating Multimodal Continual Instruction Tuning (MCIT). Despite its growing importance, current MCIT research is hindered by severe engineering bottlenecks. Existing methods are typically implemented by directly modifying the base MLLM codebase, which imposes substantial implementation overhead and yields method-specific architectures that severely limit code reuse and fair comparison. To address this, we introduce Prism, a plug-in reproducible codebase specifically designed for scalable MCIT research. It separates algorithmic development from the backbone implementation via a lightweight plugin registration mechanism, enabling new strategies to be integrated as independent plugins without modifying the underlying MLLM codebase, thereby eliminating structural fragmentation and accelerating method development. Prism natively supports widely used large-scale training pipeline, thereby enabling reproducible and scalable MCIT experimentation. Code is available at https://github.com/LAMDA-CL/Prism.",
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 10,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 63,
+      "score_reason": "engineering utility",
+      "one_sentence_summary": "这篇论文提出一个可复用框架，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.26100",
+      "arxiv_id": "2605.26100",
+      "title": "Beyond Summaries: Structure-Aware Labeling of Code Changes with Large Language Models",
+      "url": "https://arxiv.org/abs/2605.26100",
+      "published_at": "2026-05-25T17:56:46Z",
+      "publish_date": "2026-05-25",
+      "description": "Code review is a critical practice in software engineering, yet the growing scale and frequency of code patches in modern projects, together with the widespread adoption of AI code assistants, make manual review increasingly challenging. Identifying the types of changes within a patch, such as renames, moves, or logic modifications, can substantially improve review efficiency by enabling prioritization, filtering, and automation. However, existing LLM-based approaches to code review have largely focused on summarization and comment generation, leaving structured code reviews underexplored. In this paper, we present a systematic study of using large language models (LLMs) for taxonomy-based labeling of code changes in a code patch. We introduce a two-stage pipeline that assigns labels to diff hunks and then refines them to capture structural relationships and semantic attributes, such as rename propagation and type changes. Our approach employs few-shot prompting to produce language-agnostic and customizable labels, without the engineering overhead of traditional static-analysis pipelines. We evaluate four LLMs across multiple context configurations on a manually curated benchmark of natural and synthetic patches. Our best configuration achieves up to $84\\%$ recall and $81\\%$ precision, with high accuracy in extracting relational and attribute metadata. These results suggest that LLM-based labeling can effectively complement static analysis by enabling flexible, multilingual, and automation-friendly code review workflows.",
+      "summary": "Code review is a critical practice in software engineering, yet the growing scale and frequency of code patches in modern projects, together with the widespread adoption of AI code assistants, make manual review increasingly challenging. Identifying the types of changes within a patch, such as renames, moves, or logic modifications, can substantially improve review efficiency by enabling prioritization, filtering, and automation. However, existing LLM-based approaches to code review have largely focused on summarization and comment generation, leaving structured code reviews underexplored. In this paper, we present a systematic study of using large language models (LLMs) for taxonomy-based labeling of code changes in a code patch. We introduce a two-stage pipeline that assigns labels to diff hunks and then refines them to capture structural relationships and semantic attributes, such as rename propagation and type changes. Our approach employs few-shot prompting to produce language-agnostic and customizable labels, without the engineering overhead of traditional static-analysis pipelines. We evaluate four LLMs across multiple context configurations on a manually curated benchmark of natural and synthetic patches. Our best configuration achieves up to $84\\%$ recall and $81\\%$ precision, with high accuracy in extracting relational and attribute metadata. These results suggest that LLM-based labeling can effectively complement static analysis by enabling flexible, multilingual, and automation-friendly code review workflows.",
+      "abstract": "Code review is a critical practice in software engineering, yet the growing scale and frequency of code patches in modern projects, together with the widespread adoption of AI code assistants, make manual review increasingly challenging. Identifying the types of changes within a patch, such as renames, moves, or logic modifications, can substantially improve review efficiency by enabling prioritization, filtering, and automation. However, existing LLM-based approaches to code review have largely focused on summarization and comment generation, leaving structured code reviews underexplored. In this paper, we present a systematic study of using large language models (LLMs) for taxonomy-based labeling of code changes in a code patch. We introduce a two-stage pipeline that assigns labels to diff hunks and then refines them to capture structural relationships and semantic attributes, such as rename propagation and type changes. Our approach employs few-shot prompting to produce language-agnostic and customizable labels, without the engineering overhead of traditional static-analysis pipelines. We evaluate four LLMs across multiple context configurations on a manually curated benchmark of natural and synthetic patches. Our best configuration achieves up to $84\\%$ recall and $81\\%$ precision, with high accuracy in extracting relational and attribute metadata. These results suggest that LLM-based labeling can effectively complement static analysis by enabling flexible, multilingual, and automation-friendly code review workflows.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.26100",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 18,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "该论文提出使用 LLM 对代码补丁进行结构化变更标记，能直接集成到代码审查工具中，提升效率，具有较高的应用价值和工程可复用性；任务虽非全新，但聚焦于结构关系提取较有特色，且发布时间很新，代表 AI 辅助开发的前沿。",
+        "one_sentence_summary": "本文提出了一种两阶段流水线，利用大语言模型对代码变更进行结构化标记，通过少量提示生成语言无关的标签，在手动标注的基准上达到了 84% 召回率和 81% 精确率，可用于增强代码审查自动化。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 18,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "该论文提出使用 LLM 对代码补丁进行结构化变更标记，能直接集成到代码审查工具中，提升效率，具有较高的应用价值和工程可复用性；任务虽非全新，但聚焦于结构关系提取较有特色，且发布时间很新，代表 AI 辅助开发的前沿。",
+      "one_sentence_summary": "本文提出了一种两阶段流水线，利用大语言模型对代码变更进行结构化标记，通过少量提示生成语言无关的标签，在手动标注的基准上达到了 84% 召回率和 81% 精确率，可用于增强代码审查自动化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.26079",
+      "arxiv_id": "2605.26079",
+      "title": "Automated Benchmark Auditing for AI Agents and Large Language Models",
+      "url": "https://arxiv.org/abs/2605.26079",
+      "published_at": "2026-05-25T17:44:21Z",
+      "publish_date": "2026-05-25",
+      "description": "Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human annotation cannot reliably catch. We introduce Auto Benchmark Audit (ABA), an agentic framework that systematically audits individual benchmark tasks, uncovering issues such as hidden environment dependencies, specification gaps, and limited grading logic. We run ABA on a collection of frontier LLM benchmarks and previous NeurIPS publications, totaling 168 benchmarks across nine domains. Across this corpus, ABA identifies critical issues including ambiguous task design, execution environment conflicts, and incorrect ground truths in over 25.7% of the evaluated tasks. The precision of these automated audits is validated by expert review and independent third-party reports such as upstream PRs. Crucially, we demonstrate that these problematic tasks severely distorts capability assessments for agents and LLMs: filtering out these tasks with issues shifts model rankings and increases average performance on SWE-bench Verified and Terminal-Bench 2 by 9.9% and 9.6%, respectively. We release the agentic tool and all task annotations to support the future development of frontier benchmarks.",
+      "summary": "Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human annotation cannot reliably catch. We introduce Auto Benchmark Audit (ABA), an agentic framework that systematically audits individual benchmark tasks, uncovering issues such as hidden environment dependencies, specification gaps, and limited grading logic. We run ABA on a collection of frontier LLM benchmarks and previous NeurIPS publications, totaling 168 benchmarks across nine domains. Across this corpus, ABA identifies critical issues including ambiguous task design, execution environment conflicts, and incorrect ground truths in over 25.7% of the evaluated tasks. The precision of these automated audits is validated by expert review and independent third-party reports such as upstream PRs. Crucially, we demonstrate that these problematic tasks severely distorts capability assessments for agents and LLMs: filtering out these tasks with issues shifts model rankings and increases average performance on SWE-bench Verified and Terminal-Bench 2 by 9.9% and 9.6%, respectively. We release the agentic tool and all task annotations to support the future development of frontier benchmarks.",
+      "abstract": "Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human annotation cannot reliably catch. We introduce Auto Benchmark Audit (ABA), an agentic framework that systematically audits individual benchmark tasks, uncovering issues such as hidden environment dependencies, specification gaps, and limited grading logic. We run ABA on a collection of frontier LLM benchmarks and previous NeurIPS publications, totaling 168 benchmarks across nine domains. Across this corpus, ABA identifies critical issues including ambiguous task design, execution environment conflicts, and incorrect ground truths in over 25.7% of the evaluated tasks. The precision of these automated audits is validated by expert review and independent third-party reports such as upstream PRs. Crucially, we demonstrate that these problematic tasks severely distorts capability assessments for agents and LLMs: filtering out these tasks with issues shifts model rankings and increases average performance on SWE-bench Verified and Terminal-Bench 2 by 9.9% and 9.6%, respectively. We release the agentic tool and all task annotations to support the future development of frontier benchmarks.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 68,
+      "score_reason": "agent relevance, evaluation signal",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.26074",
+      "arxiv_id": "2605.26074",
+      "title": "StakeBench: Evaluating Language Understanding Grounded in Market Commitment",
+      "url": "https://arxiv.org/abs/2605.26074",
+      "published_at": "2026-05-25T17:38:30Z",
+      "publish_date": "2026-05-25",
+      "description": "Existing financial NLP benchmarks often rely on labels supplied by outside observers, measuring how language is perceived rather than what speakers have committed to in the market. We introduce StakeBench, an evaluation framework for language understanding grounded in market commitment. StakeBench links 560,876 comments from 2,261 resolved markets to verified position, action, and market-odds records across Polymarket and Manifold. Supervision is derived from observable market behavior. Position sides, post-comment trading actions, and market-odds trajectories replace human annotation. Four diagnostic tasks test whether models detect market commitment, identify the revealed side, anticipate future action, and perform collective odds projection. Three commitment-aware metrics measure alignment with revealed preferences rather than perceived sentiment. Validity audits and explicit interpretation boundaries help distinguish observable commitment signals from latent belief and causal market-odds impact. Across 15 LLMs and 18 topics and platform settings, models partially recover position-side signals, with Directed Accuracy from 0.506 to 0.599, but show structural failures on later tasks. Ten of the fifteen models collapse to one or two action labels in future action anticipation, and no model consistently improves on the naive odds-direction baseline in collective odds projection. Model scale is not correlated with performance, finance-domain tuning does not improve revealed-side identification, and platform incentives strongly shape higher-order results. StakeBench is packaged with evaluation code and dataset under CC-BY 4.0.",
+      "summary": "Existing financial NLP benchmarks often rely on labels supplied by outside observers, measuring how language is perceived rather than what speakers have committed to in the market. We introduce StakeBench, an evaluation framework for language understanding grounded in market commitment. StakeBench links 560,876 comments from 2,261 resolved markets to verified position, action, and market-odds records across Polymarket and Manifold. Supervision is derived from observable market behavior. Position sides, post-comment trading actions, and market-odds trajectories replace human annotation. Four diagnostic tasks test whether models detect market commitment, identify the revealed side, anticipate future action, and perform collective odds projection. Three commitment-aware metrics measure alignment with revealed preferences rather than perceived sentiment. Validity audits and explicit interpretation boundaries help distinguish observable commitment signals from latent belief and causal market-odds impact. Across 15 LLMs and 18 topics and platform settings, models partially recover position-side signals, with Directed Accuracy from 0.506 to 0.599, but show structural failures on later tasks. Ten of the fifteen models collapse to one or two action labels in future action anticipation, and no model consistently improves on the naive odds-direction baseline in collective odds projection. Model scale is not correlated with performance, finance-domain tuning does not improve revealed-side identification, and platform incentives strongly shape higher-order results. StakeBench is packaged with evaluation code and dataset under CC-BY 4.0.",
+      "abstract": "Existing financial NLP benchmarks often rely on labels supplied by outside observers, measuring how language is perceived rather than what speakers have committed to in the market. We introduce StakeBench, an evaluation framework for language understanding grounded in market commitment. StakeBench links 560,876 comments from 2,261 resolved markets to verified position, action, and market-odds records across Polymarket and Manifold. Supervision is derived from observable market behavior. Position sides, post-comment trading actions, and market-odds trajectories replace human annotation. Four diagnostic tasks test whether models detect market commitment, identify the revealed side, anticipate future action, and perform collective odds projection. Three commitment-aware metrics measure alignment with revealed preferences rather than perceived sentiment. Validity audits and explicit interpretation boundaries help distinguish observable commitment signals from latent belief and causal market-odds impact. Across 15 LLMs and 18 topics and platform settings, models partially recover position-side signals, with Directed Accuracy from 0.506 to 0.599, but show structural failures on later tasks. Ten of the fifteen models collapse to one or two action labels in future action anticipation, and no model consistently improves on the naive odds-direction baseline in collective odds projection. Model scale is not correlated with performance, finance-domain tuning does not improve revealed-side identification, and platform incentives strongly shape higher-order results. StakeBench is packaged with evaluation code and dataset under CC-BY 4.0.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "q-fin.GN"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "q-fin.GN"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.26074",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 22,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "StakeBench introduces a market-commitment grounded evaluation framework using real-world prediction market data, providing new diagnostic tasks and metrics that reveal structural failures in LLMs. It is practical and represents a timely shift towards behaviorally grounded NLP evaluation.",
+        "one_sentence_summary": "该研究提出StakeBench评估框架，基于Polymarket和Manifold的56万条评论及交易记录，以市场行为监督取代人工标注，测试LLM检测市场承诺、识别立场、预测行动和赔率投影能力，发现多数模型存在结构缺陷，为金融NLP提供行为锚定基准。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 22,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 76,
+      "score_reason": "StakeBench introduces a market-commitment grounded evaluation framework using real-world prediction market data, providing new diagnostic tasks and metrics that reveal structural failures in LLMs. It is practical and represents a timely shift towards behaviorally grounded NLP evaluation.",
+      "one_sentence_summary": "该研究提出StakeBench评估框架，基于Polymarket和Manifold的56万条评论及交易记录，以市场行为监督取代人工标注，测试LLM检测市场承诺、识别立场、预测行动和赔率投影能力，发现多数模型存在结构缺陷，为金融NLP提供行为锚定基准。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.26036",
+      "arxiv_id": "2605.26036",
+      "title": "CITYREP: A Unified Benchmark for Urban Representations Across Cities, Tasks, and Modalities",
+      "url": "https://arxiv.org/abs/2605.26036",
+      "published_at": "2026-05-25T17:03:46Z",
+      "publish_date": "2026-05-25",
+      "description": "Urban representation learning encodes complex urban environments into general-purpose embeddings for diverse downstream tasks and emerging urban foundation models. However, current evaluations are limited, typically focusing on one or two cities and tasks and relying on random splits that introduce spatial leakage, leading to inflated performance and weak support for cross-location generalization and fair comparison. To address this, we propose CityRep, a unified benchmark that evaluates urban representations across data modalities, cities, and tasks using spatially structured splits. CityRep consists of three key components: (1) a spatial unit-agnostic evaluation framework that supports heterogeneous urban representations through a standardized alignment module; (2) a unified evaluation protocol using block-based spatial splits to mitigate spatial leakage and enable rigorous model comparison; and (3) an extensible multi-city, multi-task benchmark suite spanning 8 cities and 8 tasks across regression, classification, and distribution prediction. We evaluate 11 representative urban representation models. Results show that performance is highly sensitive to the split protocol, with random splits inflating scores and altering model rankings. We also observe substantial variability across cities and tasks, underscoring the need for generalization-aware evaluation. CityRep is released as a reproducible benchmark with datasets, evaluation pipelines, and diagnostic tools to facilitate fair comparison and support future research in urban representation learning towards urban foundation models.",
+      "summary": "Urban representation learning encodes complex urban environments into general-purpose embeddings for diverse downstream tasks and emerging urban foundation models. However, current evaluations are limited, typically focusing on one or two cities and tasks and relying on random splits that introduce spatial leakage, leading to inflated performance and weak support for cross-location generalization and fair comparison. To address this, we propose CityRep, a unified benchmark that evaluates urban representations across data modalities, cities, and tasks using spatially structured splits. CityRep consists of three key components: (1) a spatial unit-agnostic evaluation framework that supports heterogeneous urban representations through a standardized alignment module; (2) a unified evaluation protocol using block-based spatial splits to mitigate spatial leakage and enable rigorous model comparison; and (3) an extensible multi-city, multi-task benchmark suite spanning 8 cities and 8 tasks across regression, classification, and distribution prediction. We evaluate 11 representative urban representation models. Results show that performance is highly sensitive to the split protocol, with random splits inflating scores and altering model rankings. We also observe substantial variability across cities and tasks, underscoring the need for generalization-aware evaluation. CityRep is released as a reproducible benchmark with datasets, evaluation pipelines, and diagnostic tools to facilitate fair comparison and support future research in urban representation learning towards urban foundation models.",
+      "abstract": "Urban representation learning encodes complex urban environments into general-purpose embeddings for diverse downstream tasks and emerging urban foundation models. However, current evaluations are limited, typically focusing on one or two cities and tasks and relying on random splits that introduce spatial leakage, leading to inflated performance and weak support for cross-location generalization and fair comparison. To address this, we propose CityRep, a unified benchmark that evaluates urban representations across data modalities, cities, and tasks using spatially structured splits. CityRep consists of three key components: (1) a spatial unit-agnostic evaluation framework that supports heterogeneous urban representations through a standardized alignment module; (2) a unified evaluation protocol using block-based spatial splits to mitigate spatial leakage and enable rigorous model comparison; and (3) an extensible multi-city, multi-task benchmark suite spanning 8 cities and 8 tasks across regression, classification, and distribution prediction. We evaluate 11 representative urban representation models. Results show that performance is highly sensitive to the split protocol, with random splits inflating scores and altering model rankings. We also observe substantial variability across cities and tasks, underscoring the need for generalization-aware evaluation. CityRep is released as a reproducible benchmark with datasets, evaluation pipelines, and diagnostic tools to facilitate fair comparison and support future research in urban representation learning towards urban foundation models.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.26036",
+        "score_detail": {
+          "application_relevance": 16,
+          "new_signal": 19,
+          "engineering_utility": 18,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "CityRep provides a comprehensive benchmark for urban representation learning, addressing spatial leakage with block-based splits and covering 8 cities and 8 tasks. It is a valuable resource for developing and fairly comparing urban AI models, though its direct product relevance is moderate.",
+        "one_sentence_summary": "CityRep构建了一个统一的城市场景表示学习基准，通过空间结构划分避免数据泄露，支持8个城市、8类任务的多模态评估，揭示随机划分导致的性能膨胀问题，为城市基础模型的公平比较和泛化能力研究提供工具。"
+      },
+      "score_detail": {
+        "application_relevance": 16,
+        "new_signal": 19,
+        "engineering_utility": 18,
+        "timeliness_rarity": 17
+      },
+      "score_total": 70,
+      "score_reason": "CityRep provides a comprehensive benchmark for urban representation learning, addressing spatial leakage with block-based splits and covering 8 cities and 8 tasks. It is a valuable resource for developing and fairly comparing urban AI models, though its direct product relevance is moderate.",
+      "one_sentence_summary": "CityRep构建了一个统一的城市场景表示学习基准，通过空间结构划分避免数据泄露，支持8个城市、8类任务的多模态评估，揭示随机划分导致的性能膨胀问题，为城市基础模型的公平比较和泛化能力研究提供工具。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.26012",
+      "arxiv_id": "2605.26012",
+      "title": "Learning in Low-Dimensional Subspaces: Orthogonal Bottlenecks for Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.26012",
+      "published_at": "2026-05-25T16:31:33Z",
+      "publish_date": "2026-05-25",
+      "description": "Deep reinforcement learning (RL) agents commonly rely on high-dimensional neural representations, despite growing evidence that task-relevant value and policy structure may be intrinsically low-dimensional. In this work, we present a simple yet effective representation-level prior that inserts a fixed orthonormal projection to constrain encoder features to a low-dimensional subspace, requiring no auxiliary objectives, pretraining, or changes to the underlying RL algorithm. Under a linear realizability assumption, we prove that when the bottleneck dimension exceeds the intrinsic rank of the optimal value function in feature space, the bottleneck preserves expressivity and leaves the induced gradient dynamics unchanged up to an equivalent low-dimensional parameterization. Empirically, we find that across both single and multi-task benchmarks, baseline performance is either matched or improved once the bottleneck dimension exceeds a small task-dependent threshold; in many cases, value representations can be compressed to extremely low dimensions without loss, and the minimal sufficient dimension depends far more on environment complexity than encoder width. In addition, we analyze representation geometry and find that orthogonal bottlenecks stabilize feature norms and are associated with higher effective rank. Together, these results support a representation-space interpretation of the manifold hypothesis in reinforcement learning and position orthogonal bottlenecks as a lightweight, architecture-agnostic mechanism for shaping RL representations.",
+      "summary": "Deep reinforcement learning (RL) agents commonly rely on high-dimensional neural representations, despite growing evidence that task-relevant value and policy structure may be intrinsically low-dimensional. In this work, we present a simple yet effective representation-level prior that inserts a fixed orthonormal projection to constrain encoder features to a low-dimensional subspace, requiring no auxiliary objectives, pretraining, or changes to the underlying RL algorithm. Under a linear realizability assumption, we prove that when the bottleneck dimension exceeds the intrinsic rank of the optimal value function in feature space, the bottleneck preserves expressivity and leaves the induced gradient dynamics unchanged up to an equivalent low-dimensional parameterization. Empirically, we find that across both single and multi-task benchmarks, baseline performance is either matched or improved once the bottleneck dimension exceeds a small task-dependent threshold; in many cases, value representations can be compressed to extremely low dimensions without loss, and the minimal sufficient dimension depends far more on environment complexity than encoder width. In addition, we analyze representation geometry and find that orthogonal bottlenecks stabilize feature norms and are associated with higher effective rank. Together, these results support a representation-space interpretation of the manifold hypothesis in reinforcement learning and position orthogonal bottlenecks as a lightweight, architecture-agnostic mechanism for shaping RL representations.",
+      "abstract": "Deep reinforcement learning (RL) agents commonly rely on high-dimensional neural representations, despite growing evidence that task-relevant value and policy structure may be intrinsically low-dimensional. In this work, we present a simple yet effective representation-level prior that inserts a fixed orthonormal projection to constrain encoder features to a low-dimensional subspace, requiring no auxiliary objectives, pretraining, or changes to the underlying RL algorithm. Under a linear realizability assumption, we prove that when the bottleneck dimension exceeds the intrinsic rank of the optimal value function in feature space, the bottleneck preserves expressivity and leaves the induced gradient dynamics unchanged up to an equivalent low-dimensional parameterization. Empirically, we find that across both single and multi-task benchmarks, baseline performance is either matched or improved once the bottleneck dimension exceeds a small task-dependent threshold; in many cases, value representations can be compressed to extremely low dimensions without loss, and the minimal sufficient dimension depends far more on environment complexity than encoder width. In addition, we analyze representation geometry and find that orthogonal bottlenecks stabilize feature norms and are associated with higher effective rank. Together, these results support a representation-space interpretation of the manifold hypothesis in reinforcement learning and position orthogonal bottlenecks as a lightweight, architecture-agnostic mechanism for shaping RL representations.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.26012",
+        "score_detail": {
+          "application_relevance": 17,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "The paper proposes an orthogonal bottleneck technique to enforce low-dimensional representations in RL, proving theoretical preservation of expressivity and showing practical performance stability and improvement. It is highly implementable and offers a novel perspective on representation manifold in RL.",
+        "one_sentence_summary": "该研究提出正交瓶颈方法，通过固定的正交投影将强化学习的编码器特征约束到低维子空间，在不改变RL算法的情况下保持价值函数表达性，实验表明在性能和表示几何上具有优势，为RL的流形假设提供了表征空间解释。"
+      },
+      "score_detail": {
+        "application_relevance": 17,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 19
+      },
+      "score_total": 78,
+      "score_reason": "The paper proposes an orthogonal bottleneck technique to enforce low-dimensional representations in RL, proving theoretical preservation of expressivity and showing practical performance stability and improvement. It is highly implementable and offers a novel perspective on representation manifold in RL.",
+      "one_sentence_summary": "该研究提出正交瓶颈方法，通过固定的正交投影将强化学习的编码器特征约束到低维子空间，在不改变RL算法的情况下保持价值函数表达性，实验表明在性能和表示几何上具有优势，为RL的流形假设提供了表征空间解释。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.25988",
+      "arxiv_id": "2605.25988",
+      "title": "What Makes a Medical Checker Trainable? Diagnosing Signal Collapse and Reward Hacking in Checker-Guided RAG for Biomedical QA",
+      "url": "https://arxiv.org/abs/2605.25988",
+      "published_at": "2026-05-25T16:06:06Z",
+      "publish_date": "2026-05-25",
+      "description": "Medical RAG needs evidence-grounded claims, so plugging a claim-level NLI checker into retrieval-augmented RL is intuitive. \\textbf{We find that the checker's \\emph{output distribution} during training, not its held-out accuracy, decides whether it provides trainable gradient.} We compare four NLI checker back-ends as process rewards inside a GRPO-trained medical RAG agent (Qwen2.5-7B, replicated on Qwen3-4B and Llama-3.1-8B) across four held-out medical QA benchmarks. Three diagnostic findings emerge. \\textbf{(i)} Signal collapse is log-prob-specific: LLM log-probability scoring labels over 97\\% of claims neutral -- collapsing the RL gradient to zero -- while a calibrated MedNLI classifier scores the same pairs non-degenerately. \\textbf{(ii)} Moderate signal beats strong signal on answer quality: a strong proprietary checker triggers a three-step reward-hacking cascade -- ultra-short answers, search avoidance, language collapse -- so a moderate-signal local classifier trains a higher-quality model (\\textbf{+12\\% BERTScore over zero-shot, no GPT dependency}). \\textbf{(iii)} Signal strength is policy-dependent: the same checker registers as moderate on one policy but strong on another without triggering the cascade end-state. We frame these as boundary conditions for verifier-as-reward systems.",
+      "summary": "Medical RAG needs evidence-grounded claims, so plugging a claim-level NLI checker into retrieval-augmented RL is intuitive. \\textbf{We find that the checker's \\emph{output distribution} during training, not its held-out accuracy, decides whether it provides trainable gradient.} We compare four NLI checker back-ends as process rewards inside a GRPO-trained medical RAG agent (Qwen2.5-7B, replicated on Qwen3-4B and Llama-3.1-8B) across four held-out medical QA benchmarks. Three diagnostic findings emerge. \\textbf{(i)} Signal collapse is log-prob-specific: LLM log-probability scoring labels over 97\\% of claims neutral -- collapsing the RL gradient to zero -- while a calibrated MedNLI classifier scores the same pairs non-degenerately. \\textbf{(ii)} Moderate signal beats strong signal on answer quality: a strong proprietary checker triggers a three-step reward-hacking cascade -- ultra-short answers, search avoidance, language collapse -- so a moderate-signal local classifier trains a higher-quality model (\\textbf{+12\\% BERTScore over zero-shot, no GPT dependency}). \\textbf{(iii)} Signal strength is policy-dependent: the same checker registers as moderate on one policy but strong on another without triggering the cascade end-state. We frame these as boundary conditions for verifier-as-reward systems.",
+      "abstract": "Medical RAG needs evidence-grounded claims, so plugging a claim-level NLI checker into retrieval-augmented RL is intuitive. \\textbf{We find that the checker's \\emph{output distribution} during training, not its held-out accuracy, decides whether it provides trainable gradient.} We compare four NLI checker back-ends as process rewards inside a GRPO-trained medical RAG agent (Qwen2.5-7B, replicated on Qwen3-4B and Llama-3.1-8B) across four held-out medical QA benchmarks. Three diagnostic findings emerge. \\textbf{(i)} Signal collapse is log-prob-specific: LLM log-probability scoring labels over 97\\% of claims neutral -- collapsing the RL gradient to zero -- while a calibrated MedNLI classifier scores the same pairs non-degenerately. \\textbf{(ii)} Moderate signal beats strong signal on answer quality: a strong proprietary checker triggers a three-step reward-hacking cascade -- ultra-short answers, search avoidance, language collapse -- so a moderate-signal local classifier trains a higher-quality model (\\textbf{+12\\% BERTScore over zero-shot, no GPT dependency}). \\textbf{(iii)} Signal strength is policy-dependent: the same checker registers as moderate on one policy but strong on another without triggering the cascade end-state. We frame these as boundary conditions for verifier-as-reward systems.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.25988",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该论文深入诊断了医学 RAG 训练中检查器输出分布导致的信号崩溃和奖励黑客问题，直接指导奖励模型设计；发现新颖，实验扎实，可复现性强，是对当前热点 RAG 训练稳定性的重要补充。",
+        "one_sentence_summary": "本文发现医学 RAG 中检查器的输出分布而非准确度决定训练梯度，揭示信号崩溃和奖励黑客现象，并指出使用适度信号的本地分类器可训练出比强信号模型质量更高的问答代理，结果为验证器即奖励系统提供了边界条件。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 23
+      },
+      "score_total": 90,
+      "score_reason": "该论文深入诊断了医学 RAG 训练中检查器输出分布导致的信号崩溃和奖励黑客问题，直接指导奖励模型设计；发现新颖，实验扎实，可复现性强，是对当前热点 RAG 训练稳定性的重要补充。",
+      "one_sentence_summary": "本文发现医学 RAG 中检查器的输出分布而非准确度决定训练梯度，揭示信号崩溃和奖励黑客现象，并指出使用适度信号的本地分类器可训练出比强信号模型质量更高的问答代理，结果为验证器即奖励系统提供了边界条件。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.25955",
+      "arxiv_id": "2605.25955",
+      "title": "QUIET: A Multi-Blank Cascaded Story Cloze Benchmark for LLM Creative Generation Capability",
+      "url": "https://arxiv.org/abs/2605.25955",
+      "published_at": "2026-05-25T15:29:58Z",
+      "publish_date": "2026-05-25",
+      "description": "Large language models (LLMs) face a dual challenge in creative capability evaluation: existing benchmarks (e.g., Story Cloze Test, HellaSwag) measure models' discriminative ability over narrative continuation using multiple-choice recognition paradigms, rather than directly measuring creative generation capability; rubric-based scoring and LLM-as-Judge methods rely on subjective dimension assessment or natural language model outputs, and cannot provide objective, automated scoring mechanisms. This paper proposes QUIET (Quality Understanding via Interlocked Evaluation Testing), a diagnostic benchmark for LLM creative capability based on multi-blank cascaded story cloze. QUIET sets N blanks (10-20) in a story with complete structure, with each blank accompanied by an explicit content constraint, and cascade dependency relationships between blanks -- the content filled into earlier blanks constrains the feasible solution space for later blanks. The evaluated model (or human participants) fills all blanks in open-ended generation mode; the results are scored by an information-theoretic automated scoring protocol without human grading. The scoring protocol directly operationalizes the \"calibrated surprise\" theoretical framework (Zou & Xu, 2026a). For each blank k, a composite score is computed: score = satisfy * (1 + lambda * surprise), where lambda = 1.0. Here, \"satisfy\" measures how well the blank filling satisfies the content constraint (objective logical reasoning judgment, not subjective aesthetic scoring), and \"surprise\" measures the degree of surprise given that the constraint is satisfied. Creative answers that do not satisfy the constraint score zero; answers that satisfy the constraint but are mediocre score low; answers that satisfy the constraint and are surprising score high.",
+      "summary": "Large language models (LLMs) face a dual challenge in creative capability evaluation: existing benchmarks (e.g., Story Cloze Test, HellaSwag) measure models' discriminative ability over narrative continuation using multiple-choice recognition paradigms, rather than directly measuring creative generation capability; rubric-based scoring and LLM-as-Judge methods rely on subjective dimension assessment or natural language model outputs, and cannot provide objective, automated scoring mechanisms. This paper proposes QUIET (Quality Understanding via Interlocked Evaluation Testing), a diagnostic benchmark for LLM creative capability based on multi-blank cascaded story cloze. QUIET sets N blanks (10-20) in a story with complete structure, with each blank accompanied by an explicit content constraint, and cascade dependency relationships between blanks -- the content filled into earlier blanks constrains the feasible solution space for later blanks. The evaluated model (or human participants) fills all blanks in open-ended generation mode; the results are scored by an information-theoretic automated scoring protocol without human grading. The scoring protocol directly operationalizes the \"calibrated surprise\" theoretical framework (Zou & Xu, 2026a). For each blank k, a composite score is computed: score = satisfy * (1 + lambda * surprise), where lambda = 1.0. Here, \"satisfy\" measures how well the blank filling satisfies the content constraint (objective logical reasoning judgment, not subjective aesthetic scoring), and \"surprise\" measures the degree of surprise given that the constraint is satisfied. Creative answers that do not satisfy the constraint score zero; answers that satisfy the constraint but are mediocre score low; answers that satisfy the constraint and are surprising score high.",
+      "abstract": "Large language models (LLMs) face a dual challenge in creative capability evaluation: existing benchmarks (e.g., Story Cloze Test, HellaSwag) measure models' discriminative ability over narrative continuation using multiple-choice recognition paradigms, rather than directly measuring creative generation capability; rubric-based scoring and LLM-as-Judge methods rely on subjective dimension assessment or natural language model outputs, and cannot provide objective, automated scoring mechanisms. This paper proposes QUIET (Quality Understanding via Interlocked Evaluation Testing), a diagnostic benchmark for LLM creative capability based on multi-blank cascaded story cloze. QUIET sets N blanks (10-20) in a story with complete structure, with each blank accompanied by an explicit content constraint, and cascade dependency relationships between blanks -- the content filled into earlier blanks constrains the feasible solution space for later blanks. The evaluated model (or human participants) fills all blanks in open-ended generation mode; the results are scored by an information-theoretic automated scoring protocol without human grading. The scoring protocol directly operationalizes the \"calibrated surprise\" theoretical framework (Zou & Xu, 2026a). For each blank k, a composite score is computed: score = satisfy * (1 + lambda * surprise), where lambda = 1.0. Here, \"satisfy\" measures how well the blank filling satisfies the content constraint (objective logical reasoning judgment, not subjective aesthetic scoring), and \"surprise\" measures the degree of surprise given that the constraint is satisfied. Creative answers that do not satisfy the constraint score zero; answers that satisfy the constraint but are mediocre score low; answers that satisfy the constraint and are surprising score high.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.25955",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "该论文提出了 QUIET 基准，通过多空白级联故事完形填空和信息论自动评分来评估 LLM 的创造性生成能力，任务设计新颖，评分范式客观，易于集成使用；创造性评估是当前研究热点，此方法较少见，故新颖性和时效性得分高。",
+        "one_sentence_summary": "本文提出 QUIET 基准，在结构化故事中设置 10-20 个具有级联依赖的空白，让模型开放式填空，并通过基于约束满足与信息惊喜的自动评分协议来客观评估大语言模型的创造性生成能力。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 87,
+      "score_reason": "该论文提出了 QUIET 基准，通过多空白级联故事完形填空和信息论自动评分来评估 LLM 的创造性生成能力，任务设计新颖，评分范式客观，易于集成使用；创造性评估是当前研究热点，此方法较少见，故新颖性和时效性得分高。",
+      "one_sentence_summary": "本文提出 QUIET 基准，在结构化故事中设置 10-20 个具有级联依赖的空白，让模型开放式填空，并通过基于约束满足与信息惊喜的自动评分协议来客观评估大语言模型的创造性生成能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.25954",
+      "arxiv_id": "2605.25954",
+      "title": "Step-TP: A Grounded, Step-Level Dataset with Chain-of-Thought Reasoning for LLM-Guided Tensor Program Optimization",
+      "url": "https://arxiv.org/abs/2605.25954",
+      "published_at": "2026-05-25T15:29:49Z",
+      "publish_date": "2026-05-25",
+      "description": "Despite the strong reasoning capabilities of large language models (LLMs), optimizing the execution efficiency of tensor programs remains challenging due to the need for precise, composable transformation decisions. Recent LLM-guided approaches frame tensor program optimization as an iterative decision process, but existing datasets provide only end-to-end optimized program pairs using token-inefficient representations, lacking verifiable step-level supervision and interpretability. As a result, LLMs struggle to make reliable single-step decisions in large combinatorial optimization spaces. We introduce Step-TP, a post-training dataset for tensor program optimization that provides grounded, atomic, step-level supervision with structured chain-of-thought (CoT) reasoning. Step-TP forms a closed reasoning loop over intermediate program states, enabling reliable multi-step optimization rather than outcome imitation. Its design is guided by four principles: (i) a token-efficient, verifiable intermediate representation (IR) that deterministically lowers to TVM TIR; (ii) atomic and composable optimization strategies that decompose complex trajectories into interpretable single-step decisions; (iii) structured CoT supervision coupled with explicit IR-to-IR state transitions; and (iv) strategy filtering to balance coverage while preventing shortcut exploitation. The dataset and implementation are available at a GitHub link, https://github.com/LIUMENGFAN-gif/StepTP.",
+      "summary": "Despite the strong reasoning capabilities of large language models (LLMs), optimizing the execution efficiency of tensor programs remains challenging due to the need for precise, composable transformation decisions. Recent LLM-guided approaches frame tensor program optimization as an iterative decision process, but existing datasets provide only end-to-end optimized program pairs using token-inefficient representations, lacking verifiable step-level supervision and interpretability. As a result, LLMs struggle to make reliable single-step decisions in large combinatorial optimization spaces. We introduce Step-TP, a post-training dataset for tensor program optimization that provides grounded, atomic, step-level supervision with structured chain-of-thought (CoT) reasoning. Step-TP forms a closed reasoning loop over intermediate program states, enabling reliable multi-step optimization rather than outcome imitation. Its design is guided by four principles: (i) a token-efficient, verifiable intermediate representation (IR) that deterministically lowers to TVM TIR; (ii) atomic and composable optimization strategies that decompose complex trajectories into interpretable single-step decisions; (iii) structured CoT supervision coupled with explicit IR-to-IR state transitions; and (iv) strategy filtering to balance coverage while preventing shortcut exploitation. The dataset and implementation are available at a GitHub link, https://github.com/LIUMENGFAN-gif/StepTP.",
+      "abstract": "Despite the strong reasoning capabilities of large language models (LLMs), optimizing the execution efficiency of tensor programs remains challenging due to the need for precise, composable transformation decisions. Recent LLM-guided approaches frame tensor program optimization as an iterative decision process, but existing datasets provide only end-to-end optimized program pairs using token-inefficient representations, lacking verifiable step-level supervision and interpretability. As a result, LLMs struggle to make reliable single-step decisions in large combinatorial optimization spaces. We introduce Step-TP, a post-training dataset for tensor program optimization that provides grounded, atomic, step-level supervision with structured chain-of-thought (CoT) reasoning. Step-TP forms a closed reasoning loop over intermediate program states, enabling reliable multi-step optimization rather than outcome imitation. Its design is guided by four principles: (i) a token-efficient, verifiable intermediate representation (IR) that deterministically lowers to TVM TIR; (ii) atomic and composable optimization strategies that decompose complex trajectories into interpretable single-step decisions; (iii) structured CoT supervision coupled with explicit IR-to-IR state transitions; and (iv) strategy filtering to balance coverage while preventing shortcut exploitation. The dataset and implementation are available at a GitHub link, https://github.com/LIUMENGFAN-gif/StepTP.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.25954",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "The paper introduces a novel dataset for step-level tensor program optimization with LLMs, offering a token-efficient IR and structured CoT reasoning. It is highly relevant for AI-aided compiler optimization and provides practical resources, though its scope is specialized.",
+        "one_sentence_summary": "该论文提出Step-TP数据集，为LLM引导的张量程序优化提供原子化步骤级监督和结构化思维链，采用可验证的中间表示和组合优化策略，旨在增强LLM在大型组合优化空间中的单步决策可靠性，适用于编译器自动化优化。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 76,
+      "score_reason": "The paper introduces a novel dataset for step-level tensor program optimization with LLMs, offering a token-efficient IR and structured CoT reasoning. It is highly relevant for AI-aided compiler optimization and provides practical resources, though its scope is specialized.",
+      "one_sentence_summary": "该论文提出Step-TP数据集，为LLM引导的张量程序优化提供原子化步骤级监督和结构化思维链，采用可验证的中间表示和组合优化策略，旨在增强LLM在大型组合优化空间中的单步决策可靠性，适用于编译器自动化优化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-26T05:42:00.206777+00:00",
+      "pushed_at": "2026-05-26T05:42:00.206777+00:00",
+      "source_run_id": "2026-05-26",
+      "pushed_run_id": "2026-05-26"
     }
   ]
 }
