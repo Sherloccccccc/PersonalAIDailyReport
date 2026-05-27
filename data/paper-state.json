@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-26T05:42:00.206777+00:00",
+  "updated_at": "2026-05-27T05:55:35.727988+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -11132,6 +11132,627 @@
       "pushed_at": "2026-05-26T05:42:00.206777+00:00",
       "source_run_id": "2026-05-26",
       "pushed_run_id": "2026-05-26"
+    },
+    {
+      "id": "arxiv:2605.27366",
+      "arxiv_id": "2605.27366",
+      "title": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation",
+      "url": "https://arxiv.org/abs/2605.27366",
+      "published_at": "2026-05-26T17:59:19Z",
+      "publish_date": "2026-05-26",
+      "description": "Large language model (LLM) agents rely on reusable skills to solve complex tasks. However, existing skill creation approaches treat skills as isolated and static artifacts, limiting their reusability, reliability, and long-term improvement. We propose MUSE-Autoskill Agent (Memory-Utilizing Skill Evolution), a skill-centric agent framework that lets agents continuously improve their task-solving capability by creating, reusing, and refining skills under a unified lifecycle (creation, memory, management, evaluation, and refinement). Our framework enables agents to create skills on demand, store and reuse them across tasks, organize and select them efficiently, and evaluate them through unit tests and runtime feedback for continuous refinement. We further introduce skill-level memory that accumulates experience for each skill across tasks, enabling more effective reuse and adaptation over time. Experiments on SkillsBench provide initial evidence that lifecycle-managed skills can improve task success, efficiency, reuse, and cross-agent transfer, highlighting the importance of treating skills as long-lived, experience-aware, and testable assets.",
+      "summary": "Large language model (LLM) agents rely on reusable skills to solve complex tasks. However, existing skill creation approaches treat skills as isolated and static artifacts, limiting their reusability, reliability, and long-term improvement. We propose MUSE-Autoskill Agent (Memory-Utilizing Skill Evolution), a skill-centric agent framework that lets agents continuously improve their task-solving capability by creating, reusing, and refining skills under a unified lifecycle (creation, memory, management, evaluation, and refinement). Our framework enables agents to create skills on demand, store and reuse them across tasks, organize and select them efficiently, and evaluate them through unit tests and runtime feedback for continuous refinement. We further introduce skill-level memory that accumulates experience for each skill across tasks, enabling more effective reuse and adaptation over time. Experiments on SkillsBench provide initial evidence that lifecycle-managed skills can improve task success, efficiency, reuse, and cross-agent transfer, highlighting the importance of treating skills as long-lived, experience-aware, and testable assets.",
+      "abstract": "Large language model (LLM) agents rely on reusable skills to solve complex tasks. However, existing skill creation approaches treat skills as isolated and static artifacts, limiting their reusability, reliability, and long-term improvement. We propose MUSE-Autoskill Agent (Memory-Utilizing Skill Evolution), a skill-centric agent framework that lets agents continuously improve their task-solving capability by creating, reusing, and refining skills under a unified lifecycle (creation, memory, management, evaluation, and refinement). Our framework enables agents to create skills on demand, store and reuse them across tasks, organize and select them efficiently, and evaluate them through unit tests and runtime feedback for continuous refinement. We further introduce skill-level memory that accumulates experience for each skill across tasks, enabling more effective reuse and adaptation over time. Experiments on SkillsBench provide initial evidence that lifecycle-managed skills can improve task success, efficiency, reuse, and cross-agent transfer, highlighting the importance of treating skills as long-lived, experience-aware, and testable assets.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27366",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "应用：自进化技能管理直接赋能Agent架构、工具使用和开发者体验。新信号：统一技能生命周期管理并引入技能级记忆，超越孤立技能库。工程：框架可复用，定义了创建、测试、存储等流程。时效：技能进化和跨任务复用是近期agent研究热点。",
+        "one_sentence_summary": "提出MUSE-Autoskill Agent框架，让代理通过创建、存储、管理、测试和精炼技能持续提升任务解决能力，并引入技能级记忆积累跨任务经验，在SkillsBench上验证了生命周期管理技能能提高成功率、效率和复用性，突出技能作为可测试、经验丰富的长期资产的重要性。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 88,
+      "score_reason": "应用：自进化技能管理直接赋能Agent架构、工具使用和开发者体验。新信号：统一技能生命周期管理并引入技能级记忆，超越孤立技能库。工程：框架可复用，定义了创建、测试、存储等流程。时效：技能进化和跨任务复用是近期agent研究热点。",
+      "one_sentence_summary": "提出MUSE-Autoskill Agent框架，让代理通过创建、存储、管理、测试和精炼技能持续提升任务解决能力，并引入技能级记忆积累跨任务经验，在SkillsBench上验证了生命周期管理技能能提高成功率、效率和复用性，突出技能作为可测试、经验丰富的长期资产的重要性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27365",
+      "arxiv_id": "2605.27365",
+      "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+      "url": "https://arxiv.org/abs/2605.27365",
+      "published_at": "2026-05-26T17:59:12Z",
+      "publish_date": "2026-05-26",
+      "description": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+      "summary": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+      "abstract": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27365",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "统一生成式定位框架直接面向多模态产品需求，并行框解码打破序列瓶颈，大幅提升推理速度与定位精度，并构建大规模数据集，工程实用性极高，代表了视觉定位的效率前沿。",
+        "one_sentence_summary": "该论文提出统一生成式定位框架LocateAnything，采用并行框解码（PBD）将边界框作为原子单元一步生成，保持几何一致性并大幅提升解码吞吐量，同时构建包含1.38亿样本的大规模数据集，在多种基准上实现高IoU定位的速度与精度双重提升。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "统一生成式定位框架直接面向多模态产品需求，并行框解码打破序列瓶颈，大幅提升推理速度与定位精度，并构建大规模数据集，工程实用性极高，代表了视觉定位的效率前沿。",
+      "one_sentence_summary": "该论文提出统一生成式定位框架LocateAnything，采用并行框解码（PBD）将边界框作为原子单元一步生成，保持几何一致性并大幅提升解码吞吐量，同时构建包含1.38亿样本的大规模数据集，在多种基准上实现高IoU定位的速度与精度双重提升。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27354",
+      "arxiv_id": "2605.27354",
+      "title": "Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders",
+      "url": "https://arxiv.org/abs/2605.27354",
+      "published_at": "2026-05-26T17:55:59Z",
+      "publish_date": "2026-05-26",
+      "description": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interpretability tool. Each property grounds a concrete data engineering operation: SAE-space clustering with moderate batch mixing for batch diversity control, a difficulty proxy for easy-to-hard curriculum ordering, and a quality probe for data filtering. SAERL improves average accuracy by 3.00% over vanilla GRPO and reaches target accuracy with 20% fewer training steps on Qwen2.5-Math-1.5B, with consistent gains across model scales and RL algorithms. Experiments show that SAE transfers effectively across model families and scales, serving as a lightweight and reusable data engineering tool. These results demonstrate that model internals are a powerful and practical source of signals for post-training data engineering.",
+      "summary": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interpretability tool. Each property grounds a concrete data engineering operation: SAE-space clustering with moderate batch mixing for batch diversity control, a difficulty proxy for easy-to-hard curriculum ordering, and a quality probe for data filtering. SAERL improves average accuracy by 3.00% over vanilla GRPO and reaches target accuracy with 20% fewer training steps on Qwen2.5-Math-1.5B, with consistent gains across model scales and RL algorithms. Experiments show that SAE transfers effectively across model families and scales, serving as a lightweight and reusable data engineering tool. These results demonstrate that model internals are a powerful and practical source of signals for post-training data engineering.",
+      "abstract": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interpretability tool. Each property grounds a concrete data engineering operation: SAE-space clustering with moderate batch mixing for batch diversity control, a difficulty proxy for easy-to-hard curriculum ordering, and a quality probe for data filtering. SAERL improves average accuracy by 3.00% over vanilla GRPO and reaches target accuracy with 20% fewer training steps on Qwen2.5-Math-1.5B, with consistent gains across model scales and RL algorithms. Experiments show that SAE transfers effectively across model families and scales, serving as a lightweight and reusable data engineering tool. These results demonstrate that model internals are a powerful and practical source of signals for post-training data engineering.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27354",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "利用稀疏自编码器从模型内部提取数据多样性、难度与质量信号，指导LLM强化学习微调的数据工程，方法新颖且实用，在数学推理任务上以更少步数提升准确率，并展示跨模型迁移性，为后训练数据管理提供了可复用工具。",
+        "one_sentence_summary": "该论文提出SAERL框架，利用稀疏自编码器从LLM内部提取多样性、难度和质量三种内在信号，用于强化学习微调中的数据工程（如批次多样性控制、课程排序和数据过滤），在数学推理任务上以更少训练步数实现3%的准确率提升，并验证了跨模型和尺度的轻量可复用性。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "利用稀疏自编码器从模型内部提取数据多样性、难度与质量信号，指导LLM强化学习微调的数据工程，方法新颖且实用，在数学推理任务上以更少步数提升准确率，并展示跨模型迁移性，为后训练数据管理提供了可复用工具。",
+      "one_sentence_summary": "该论文提出SAERL框架，利用稀疏自编码器从LLM内部提取多样性、难度和质量三种内在信号，用于强化学习微调中的数据工程（如批次多样性控制、课程排序和数据过滤），在数学推理任务上以更少训练步数实现3%的准确率提升，并验证了跨模型和尺度的轻量可复用性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27345",
+      "arxiv_id": "2605.27345",
+      "title": "MATCHA: Matching Text via Contrastive Semantic Alignment",
+      "url": "https://arxiv.org/abs/2605.27345",
+      "published_at": "2026-05-26T17:47:14Z",
+      "publish_date": "2026-05-26",
+      "description": "Reliable evaluation is essential for understanding large language model (LLM) performance, yet today's go-to metrics, namely token-overlap scores (e.g., ROUGE) and embedding-based measures (e.g., BERTScore), often misjudge semantic similarity of documents. Our study shows that both token-overlap metrics and embedding-based metrics routinely assign nearly identical scores to texts that directly contradict each other, thereby potentially masking fundamental errors. We introduce MATCHA, an automatic metric that jointly rewards semantic agreement with a reference and penalizes contradictions. MATCHA employs a dual-view perspective that measures (i) proximity to the gold text and (ii) distance from an adversarially generated counterfactual contradiction. In eight public benchmarks, MATCHA outperforms popular metrics, compared with human annotations on question-answering, image caption generation, natural language inference, summarization, and semantic textual similarity tasks. On the TruthfulQA dataset (i.e., a dataset without a training set, where no embedding-based metrics could locally train on), this improvement in terms of matching texts with a reference reaches 18.38% over ROUGE-L and 20.82% over BERTScore. Both quantitative comparison and qualitative human assessments confirm the efficacy and validity of MATCHA and uncover fundamental weaknesses in pre-existing metrics. Compared with 23 embedding models, including top state-of-the-art ones, used as a metric similar to BERTScore, MATCHA remains the most accurate in distinguishing correct from incorrect statements solely based on a reference. Our code and metric are publicly available (https://github.com/Siran-Li/MATCHA).",
+      "summary": "Reliable evaluation is essential for understanding large language model (LLM) performance, yet today's go-to metrics, namely token-overlap scores (e.g., ROUGE) and embedding-based measures (e.g., BERTScore), often misjudge semantic similarity of documents. Our study shows that both token-overlap metrics and embedding-based metrics routinely assign nearly identical scores to texts that directly contradict each other, thereby potentially masking fundamental errors. We introduce MATCHA, an automatic metric that jointly rewards semantic agreement with a reference and penalizes contradictions. MATCHA employs a dual-view perspective that measures (i) proximity to the gold text and (ii) distance from an adversarially generated counterfactual contradiction. In eight public benchmarks, MATCHA outperforms popular metrics, compared with human annotations on question-answering, image caption generation, natural language inference, summarization, and semantic textual similarity tasks. On the TruthfulQA dataset (i.e., a dataset without a training set, where no embedding-based metrics could locally train on), this improvement in terms of matching texts with a reference reaches 18.38% over ROUGE-L and 20.82% over BERTScore. Both quantitative comparison and qualitative human assessments confirm the efficacy and validity of MATCHA and uncover fundamental weaknesses in pre-existing metrics. Compared with 23 embedding models, including top state-of-the-art ones, used as a metric similar to BERTScore, MATCHA remains the most accurate in distinguishing correct from incorrect statements solely based on a reference. Our code and metric are publicly available (https://github.com/Siran-Li/MATCHA).",
+      "abstract": "Reliable evaluation is essential for understanding large language model (LLM) performance, yet today's go-to metrics, namely token-overlap scores (e.g., ROUGE) and embedding-based measures (e.g., BERTScore), often misjudge semantic similarity of documents. Our study shows that both token-overlap metrics and embedding-based metrics routinely assign nearly identical scores to texts that directly contradict each other, thereby potentially masking fundamental errors. We introduce MATCHA, an automatic metric that jointly rewards semantic agreement with a reference and penalizes contradictions. MATCHA employs a dual-view perspective that measures (i) proximity to the gold text and (ii) distance from an adversarially generated counterfactual contradiction. In eight public benchmarks, MATCHA outperforms popular metrics, compared with human annotations on question-answering, image caption generation, natural language inference, summarization, and semantic textual similarity tasks. On the TruthfulQA dataset (i.e., a dataset without a training set, where no embedding-based metrics could locally train on), this improvement in terms of matching texts with a reference reaches 18.38% over ROUGE-L and 20.82% over BERTScore. Both quantitative comparison and qualitative human assessments confirm the efficacy and validity of MATCHA and uncover fundamental weaknesses in pre-existing metrics. Compared with 23 embedding models, including top state-of-the-art ones, used as a metric similar to BERTScore, MATCHA remains the most accurate in distinguishing correct from incorrect statements solely based on a reference. Our code and metric are publicly available (https://github.com/Siran-Li/MATCHA).",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27345",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "MATCHA提出对抗反事实的双重视角文本匹配度量，在多个任务上性能显著优于传统指标，公开代码可直接集成，补齐当前LLM评估中对语义矛盾的盲点，属近期热点评估改进。",
+        "one_sentence_summary": "MATCHA提出一种文本匹配度量，通过对比语义对齐，同时奖励与参考文本的语义接近度并惩罚与对抗生成反事实的矛盾，在8个公开基准上优于ROUGE和BERTScore，尤其在TruthfulQA上提升18.38%，并公开代码可集成于评估流程。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 19
+      },
+      "score_total": 85,
+      "score_reason": "MATCHA提出对抗反事实的双重视角文本匹配度量，在多个任务上性能显著优于传统指标，公开代码可直接集成，补齐当前LLM评估中对语义矛盾的盲点，属近期热点评估改进。",
+      "one_sentence_summary": "MATCHA提出一种文本匹配度量，通过对比语义对齐，同时奖励与参考文本的语义接近度并惩罚与对抗生成反事实的矛盾，在8个公开基准上优于ROUGE和BERTScore，尤其在TruthfulQA上提升18.38%，并公开代码可集成于评估流程。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27332",
+      "arxiv_id": "2605.27332",
+      "title": "EdgeFlow: Edge-Map Augmented VLM-Based Flowchart Processing for Industrial Requirements Engineering",
+      "url": "https://arxiv.org/abs/2605.27332",
+      "published_at": "2026-05-26T17:40:47Z",
+      "publish_date": "2026-05-26",
+      "description": "Flowcharts are widely used in industrial requirements, but usually remain embedded as static images. Vision Language Models (VLMs) show promise in the conversion of these flowcharts into machine-readable models for RE activities, yet, when directly applied to flowchart conversion, they often fail on topology-critical visual details. To address this, we propose EdgeFlow that augments a VLM's original input with a deterministically extracted Canny edge map-acting as a structural prior-to improve flowchart-to-Mermaid conversion, without requiring annotated training data or domain-specific model fine-tuning. We evaluate EdgeFlow on IndusReqFlow, a dataset sourced from real-world requirements. Compared with off-the-shelf VLMs, EdgeFlow improves node-level F1 by 17.39 percentage points and edge-level F1 by 16.94 percentage points. At the path level, EdgeFlow improves path F1 by 11.06 percentage points, enabling better support for model-based testing. These results demonstrate that EdgeFlow provides a practical, training-free means to improve topology-preserving flowchart-to-Mermaid conversion for industrial RE. Cross-dataset evaluation results on a public synthetic benchmark show no significant improvement; this highlights the need for diverse benchmarks incorporating industrial data for the comprehensive evaluation of future VLM-based RE tools.",
+      "summary": "Flowcharts are widely used in industrial requirements, but usually remain embedded as static images. Vision Language Models (VLMs) show promise in the conversion of these flowcharts into machine-readable models for RE activities, yet, when directly applied to flowchart conversion, they often fail on topology-critical visual details. To address this, we propose EdgeFlow that augments a VLM's original input with a deterministically extracted Canny edge map-acting as a structural prior-to improve flowchart-to-Mermaid conversion, without requiring annotated training data or domain-specific model fine-tuning. We evaluate EdgeFlow on IndusReqFlow, a dataset sourced from real-world requirements. Compared with off-the-shelf VLMs, EdgeFlow improves node-level F1 by 17.39 percentage points and edge-level F1 by 16.94 percentage points. At the path level, EdgeFlow improves path F1 by 11.06 percentage points, enabling better support for model-based testing. These results demonstrate that EdgeFlow provides a practical, training-free means to improve topology-preserving flowchart-to-Mermaid conversion for industrial RE. Cross-dataset evaluation results on a public synthetic benchmark show no significant improvement; this highlights the need for diverse benchmarks incorporating industrial data for the comprehensive evaluation of future VLM-based RE tools.",
+      "abstract": "Flowcharts are widely used in industrial requirements, but usually remain embedded as static images. Vision Language Models (VLMs) show promise in the conversion of these flowcharts into machine-readable models for RE activities, yet, when directly applied to flowchart conversion, they often fail on topology-critical visual details. To address this, we propose EdgeFlow that augments a VLM's original input with a deterministically extracted Canny edge map-acting as a structural prior-to improve flowchart-to-Mermaid conversion, without requiring annotated training data or domain-specific model fine-tuning. We evaluate EdgeFlow on IndusReqFlow, a dataset sourced from real-world requirements. Compared with off-the-shelf VLMs, EdgeFlow improves node-level F1 by 17.39 percentage points and edge-level F1 by 16.94 percentage points. At the path level, EdgeFlow improves path F1 by 11.06 percentage points, enabling better support for model-based testing. These results demonstrate that EdgeFlow provides a practical, training-free means to improve topology-preserving flowchart-to-Mermaid conversion for industrial RE. Cross-dataset evaluation results on a public synthetic benchmark show no significant improvement; this highlights the need for diverse benchmarks incorporating industrial data for the comprehensive evaluation of future VLM-based RE tools.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27332",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "EdgeFlow直接解决工业需求工程中流程图转换的痛点，引入新数据集，方法无需训练即可显著提升拓扑保留，工程实用性强；属于近期VLM应用趋势，但流程工业场景不算罕见。",
+        "one_sentence_summary": "EdgeFlow通过将Canny边缘图作为结构先验增强VLM输入，无训练地将工业流程图转为Mermaid模型，在IndusReqFlow数据集上节点、边缘、路径F1分别提升17.39、16.94、11.06个百分点，并提供数据集，有效支持基于模型的测试。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 18
+      },
+      "score_total": 83,
+      "score_reason": "EdgeFlow直接解决工业需求工程中流程图转换的痛点，引入新数据集，方法无需训练即可显著提升拓扑保留，工程实用性强；属于近期VLM应用趋势，但流程工业场景不算罕见。",
+      "one_sentence_summary": "EdgeFlow通过将Canny边缘图作为结构先验增强VLM输入，无训练地将工业流程图转为Mermaid模型，在IndusReqFlow数据集上节点、边缘、路径F1分别提升17.39、16.94、11.06个百分点，并提供数据集，有效支持基于模型的测试。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27328",
+      "arxiv_id": "2605.27328",
+      "title": "Governed Evolution of Agent Runtimes through Executable Operational Cognition",
+      "url": "https://arxiv.org/abs/2605.27328",
+      "published_at": "2026-05-26T17:36:48Z",
+      "publish_date": "2026-05-26",
+      "description": "Recent advances in agentic systems increasingly treat code as an executable operational substrate rather than as a disposable output artifact. Prior work such as \\emph{Code as Agent Harness} frames validated agent-generated artifacts as runtime entities that can be created, executed, revised, persisted, and reused within long-running cognitive loops. However, the governance, lifecycle management, and operational evolution of such artifacts remain under-specified. This paper proposes a framework for governed runtime evolution in multi-agent systems through executable operational cognition. We formalize agent-generated artifacts as persistent runtime capabilities that progressively become part of the operational substrate rather than transient intermediate outputs. Building on this perspective, we introduce \\emph{HarnessMutation} as a governed mechanism for lifecycle-aware runtime adaptation operating under explicit validation, traceability, evaluation, and rollback constraints. Rather than treating runtime adaptation as unrestricted self-modification, the proposed framework models evolution as a bounded and observable process over persistent operational memory. It further shows how these ideas can be operationalized over modern agent runtimes and governance-oriented orchestration systems, providing a conceptual foundation for adaptive infrastructures whose evolution remains explicit, auditable, and constrained.",
+      "summary": "Recent advances in agentic systems increasingly treat code as an executable operational substrate rather than as a disposable output artifact. Prior work such as \\emph{Code as Agent Harness} frames validated agent-generated artifacts as runtime entities that can be created, executed, revised, persisted, and reused within long-running cognitive loops. However, the governance, lifecycle management, and operational evolution of such artifacts remain under-specified. This paper proposes a framework for governed runtime evolution in multi-agent systems through executable operational cognition. We formalize agent-generated artifacts as persistent runtime capabilities that progressively become part of the operational substrate rather than transient intermediate outputs. Building on this perspective, we introduce \\emph{HarnessMutation} as a governed mechanism for lifecycle-aware runtime adaptation operating under explicit validation, traceability, evaluation, and rollback constraints. Rather than treating runtime adaptation as unrestricted self-modification, the proposed framework models evolution as a bounded and observable process over persistent operational memory. It further shows how these ideas can be operationalized over modern agent runtimes and governance-oriented orchestration systems, providing a conceptual foundation for adaptive infrastructures whose evolution remains explicit, auditable, and constrained.",
+      "abstract": "Recent advances in agentic systems increasingly treat code as an executable operational substrate rather than as a disposable output artifact. Prior work such as \\emph{Code as Agent Harness} frames validated agent-generated artifacts as runtime entities that can be created, executed, revised, persisted, and reused within long-running cognitive loops. However, the governance, lifecycle management, and operational evolution of such artifacts remain under-specified. This paper proposes a framework for governed runtime evolution in multi-agent systems through executable operational cognition. We formalize agent-generated artifacts as persistent runtime capabilities that progressively become part of the operational substrate rather than transient intermediate outputs. Building on this perspective, we introduce \\emph{HarnessMutation} as a governed mechanism for lifecycle-aware runtime adaptation operating under explicit validation, traceability, evaluation, and rollback constraints. Rather than treating runtime adaptation as unrestricted self-modification, the proposed framework models evolution as a bounded and observable process over persistent operational memory. It further shows how these ideas can be operationalized over modern agent runtimes and governance-oriented orchestration systems, providing a conceptual foundation for adaptive infrastructures whose evolution remains explicit, auditable, and constrained.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27328",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 19,
+          "engineering_utility": 16,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "应用：治理agent运行时演进对长期运行的多agent系统有潜在价值，但偏向概念框架。新信号：提出HarnessMutation机制，将代理生成代码视为持久可演化能力。工程：理论上可操作化，但缺乏实现细节。时效：多agent系统治理是少有关注但重要的方向。",
+        "one_sentence_summary": "提出一种治理代理运行时演进的框架，将代理生成的代码工件视为持久运行时能力，并引入HarnessMutation机制，在显式验证、可追溯和回滚约束下实现生命周期感知的运行时适应，为多代理系统提供可审计的演进基础。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 19,
+        "engineering_utility": 16,
+        "timeliness_rarity": 20
+      },
+      "score_total": 73,
+      "score_reason": "应用：治理agent运行时演进对长期运行的多agent系统有潜在价值，但偏向概念框架。新信号：提出HarnessMutation机制，将代理生成代码视为持久可演化能力。工程：理论上可操作化，但缺乏实现细节。时效：多agent系统治理是少有关注但重要的方向。",
+      "one_sentence_summary": "提出一种治理代理运行时演进的框架，将代理生成的代码工件视为持久运行时能力，并引入HarnessMutation机制，在显式验证、可追溯和回滚约束下实现生命周期感知的运行时适应，为多代理系统提供可审计的演进基础。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.27268",
+      "arxiv_id": "2605.27268",
+      "title": "Lost in Sampling: Assessing Lexical Reachability in LLMs via the Word Coverage Score (WCS)",
+      "url": "https://arxiv.org/abs/2605.27268",
+      "published_at": "2026-05-26T16:44:25Z",
+      "publish_date": "2026-05-26",
+      "description": "Modern Large Language Models (LLMs) are often criticized for producing repetitive and homogeneous text, despite possessing vast latent vocabularies. While previous research has focused on model knowledge and training data, we investigate the role of decoding mechanics in suppressing linguistic diversity. We introduce the Word Coverage Score (WCS), a metric that quantifies the extent to which contextually appropriate human vocabulary is mathematically pruned by standard sampling filters (e.g., Top-$p$, Top-$k$, and Min-$p$). Rather than assessing static knowledge, the WCS measures the lexical survival rate of low-frequency, high-information human words as a function of sampling parameters. By auditing open-weight models on human-authored corpus fragments, we identify which logical lexical choices are rendered unreachable by the decoder, even when they reside within the probability space. Our results provide quantitative evidence that industry-standard sampling defaults act as unintended censorship mechanisms, smoothing the unique textures of human expression into a homogenized discourse. The WCS offers a rigorous framework for optimizing the trade-off between text coherence and lexical richness, providing a diagnostic tool for preserving the diversity of human language in generative models.",
+      "summary": "Modern Large Language Models (LLMs) are often criticized for producing repetitive and homogeneous text, despite possessing vast latent vocabularies. While previous research has focused on model knowledge and training data, we investigate the role of decoding mechanics in suppressing linguistic diversity. We introduce the Word Coverage Score (WCS), a metric that quantifies the extent to which contextually appropriate human vocabulary is mathematically pruned by standard sampling filters (e.g., Top-$p$, Top-$k$, and Min-$p$). Rather than assessing static knowledge, the WCS measures the lexical survival rate of low-frequency, high-information human words as a function of sampling parameters. By auditing open-weight models on human-authored corpus fragments, we identify which logical lexical choices are rendered unreachable by the decoder, even when they reside within the probability space. Our results provide quantitative evidence that industry-standard sampling defaults act as unintended censorship mechanisms, smoothing the unique textures of human expression into a homogenized discourse. The WCS offers a rigorous framework for optimizing the trade-off between text coherence and lexical richness, providing a diagnostic tool for preserving the diversity of human language in generative models.",
+      "abstract": "Modern Large Language Models (LLMs) are often criticized for producing repetitive and homogeneous text, despite possessing vast latent vocabularies. While previous research has focused on model knowledge and training data, we investigate the role of decoding mechanics in suppressing linguistic diversity. We introduce the Word Coverage Score (WCS), a metric that quantifies the extent to which contextually appropriate human vocabulary is mathematically pruned by standard sampling filters (e.g., Top-$p$, Top-$k$, and Min-$p$). Rather than assessing static knowledge, the WCS measures the lexical survival rate of low-frequency, high-information human words as a function of sampling parameters. By auditing open-weight models on human-authored corpus fragments, we identify which logical lexical choices are rendered unreachable by the decoder, even when they reside within the probability space. Our results provide quantitative evidence that industry-standard sampling defaults act as unintended censorship mechanisms, smoothing the unique textures of human expression into a homogenized discourse. The WCS offers a rigorous framework for optimizing the trade-off between text coherence and lexical richness, providing a diagnostic tool for preserving the diversity of human language in generative models.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27268",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "本文提出WCS指标，量化采样过滤对LLM词汇多样性的抑制，提供诊断工具，对生成产品调参有指导意义；揭示默认采样的意外同质化效应，观点新颖；工程上可直接作为评估组件；属于LLM可控生成热点问题。",
+        "one_sentence_summary": "针对LLM输出重复问题，该论文提出词覆盖率得分（WCS）指标，在人类语料上审计开源模型解码过程，发现默认Top-p、Top-k等采样参数会修剪低频高信息词汇，导致语言同质化，为优化连贯性与丰富度权衡提供诊断框架。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "本文提出WCS指标，量化采样过滤对LLM词汇多样性的抑制，提供诊断工具，对生成产品调参有指导意义；揭示默认采样的意外同质化效应，观点新颖；工程上可直接作为评估组件；属于LLM可控生成热点问题。",
+      "one_sentence_summary": "针对LLM输出重复问题，该论文提出词覆盖率得分（WCS）指标，在人类语料上审计开源模型解码过程，发现默认Top-p、Top-k等采样参数会修剪低频高信息词汇，导致语言同质化，为优化连贯性与丰富度权衡提供诊断框架。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27245",
+      "arxiv_id": "2605.27245",
+      "title": "Symbolic Regression via Latent Iterative Refinement",
+      "url": "https://arxiv.org/abs/2605.27245",
+      "published_at": "2026-05-26T16:25:05Z",
+      "publish_date": "2026-05-26",
+      "description": "Symbolic regression (SR) seeks closed-form mathematical expressions that fit observed data. Neural SR methods amortize the search by training an encoder to map observations directly to expressions in a single pass, but this amortized inference leaves a residual amortization gap between its one-shot prediction and the true posterior. We propose Latent Equation Embedding (LEE), a framework that closes this gap through iterative amortized inference in a functionally grounded latent space. LEE learns a shared latent space Z equipped with three components: an encoder f_theta that jointly embeds symbolic tokens and numerical observations into a single latent vector z; an expression decoder g_expr that reconstructs formulas from z; and an evaluation decoder g_eval that predicts function values from z, explicitly grounding the latent space in functional behavior. At inference, LEE performs iterative refinement by re-encoding decoded expressions jointly with observations, progressively improving the latent estimate. LEE uses the encoder itself as a learned inference optimizer: each re-encoding step implicitly computes the mismatch between the candidate and the data. Because g_eval is differentiable in z, we additionally interleave continuous gradient descent with discrete re-encoding, yielding a hybrid iterative and gradient refinement procedure. On SRBench across three noise levels, against 19 baselines spanning genetic programming, symbolic-neural hybrids, and pre-trained Transformers, LEE produces expressions 2--10x simpler than the strongest accuracy-oriented baselines, including Operon, GP-GOMEA, TPSR, RAG-SR, and GenSR, with complexity 8--11 versus 20--90. These results advance the low-complexity region of the accuracy-complexity Pareto frontier and show graceful degradation as noise increases.",
+      "summary": "Symbolic regression (SR) seeks closed-form mathematical expressions that fit observed data. Neural SR methods amortize the search by training an encoder to map observations directly to expressions in a single pass, but this amortized inference leaves a residual amortization gap between its one-shot prediction and the true posterior. We propose Latent Equation Embedding (LEE), a framework that closes this gap through iterative amortized inference in a functionally grounded latent space. LEE learns a shared latent space Z equipped with three components: an encoder f_theta that jointly embeds symbolic tokens and numerical observations into a single latent vector z; an expression decoder g_expr that reconstructs formulas from z; and an evaluation decoder g_eval that predicts function values from z, explicitly grounding the latent space in functional behavior. At inference, LEE performs iterative refinement by re-encoding decoded expressions jointly with observations, progressively improving the latent estimate. LEE uses the encoder itself as a learned inference optimizer: each re-encoding step implicitly computes the mismatch between the candidate and the data. Because g_eval is differentiable in z, we additionally interleave continuous gradient descent with discrete re-encoding, yielding a hybrid iterative and gradient refinement procedure. On SRBench across three noise levels, against 19 baselines spanning genetic programming, symbolic-neural hybrids, and pre-trained Transformers, LEE produces expressions 2--10x simpler than the strongest accuracy-oriented baselines, including Operon, GP-GOMEA, TPSR, RAG-SR, and GenSR, with complexity 8--11 versus 20--90. These results advance the low-complexity region of the accuracy-complexity Pareto frontier and show graceful degradation as noise increases.",
+      "abstract": "Symbolic regression (SR) seeks closed-form mathematical expressions that fit observed data. Neural SR methods amortize the search by training an encoder to map observations directly to expressions in a single pass, but this amortized inference leaves a residual amortization gap between its one-shot prediction and the true posterior. We propose Latent Equation Embedding (LEE), a framework that closes this gap through iterative amortized inference in a functionally grounded latent space. LEE learns a shared latent space Z equipped with three components: an encoder f_theta that jointly embeds symbolic tokens and numerical observations into a single latent vector z; an expression decoder g_expr that reconstructs formulas from z; and an evaluation decoder g_eval that predicts function values from z, explicitly grounding the latent space in functional behavior. At inference, LEE performs iterative refinement by re-encoding decoded expressions jointly with observations, progressively improving the latent estimate. LEE uses the encoder itself as a learned inference optimizer: each re-encoding step implicitly computes the mismatch between the candidate and the data. Because g_eval is differentiable in z, we additionally interleave continuous gradient descent with discrete re-encoding, yielding a hybrid iterative and gradient refinement procedure. On SRBench across three noise levels, against 19 baselines spanning genetic programming, symbolic-neural hybrids, and pre-trained Transformers, LEE produces expressions 2--10x simpler than the strongest accuracy-oriented baselines, including Operon, GP-GOMEA, TPSR, RAG-SR, and GenSR, with complexity 8--11 versus 20--90. These results advance the low-complexity region of the accuracy-complexity Pareto frontier and show graceful degradation as noise increases.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27245",
+        "score_detail": {
+          "application_relevance": 14,
+          "new_signal": 19,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "应用：符号回归更偏传统机器学习，对AI产品或agent工程启发有限。新信号：潜在空间迭代精炼与梯度混合的方法创新性高。工程：方法可复现，但对agent工具链集成度低。时效：符号回归不是近期热点，但低复杂度表达有实际价值。",
+        "one_sentence_summary": "提出Latent Equation Embedding (LEE)框架，通过潜在空间迭代精炼和梯度下降混合方法进行符号回归，学习共享潜在空间并联合编码符号与数值数据，在SRBench上以2-10倍更简单的表达式达到高准确度，显著推动低复杂度区域的前沿，并展示了对噪声的稳健性。"
+      },
+      "score_detail": {
+        "application_relevance": 14,
+        "new_signal": 19,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 70,
+      "score_reason": "应用：符号回归更偏传统机器学习，对AI产品或agent工程启发有限。新信号：潜在空间迭代精炼与梯度混合的方法创新性高。工程：方法可复现，但对agent工具链集成度低。时效：符号回归不是近期热点，但低复杂度表达有实际价值。",
+      "one_sentence_summary": "提出Latent Equation Embedding (LEE)框架，通过潜在空间迭代精炼和梯度下降混合方法进行符号回归，学习共享潜在空间并联合编码符号与数值数据，在SRBench上以2-10倍更简单的表达式达到高准确度，显著推动低复杂度区域的前沿，并展示了对噪声的稳健性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.27240",
+      "arxiv_id": "2605.27240",
+      "title": "ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents",
+      "url": "https://arxiv.org/abs/2605.27240",
+      "published_at": "2026-05-26T16:22:35Z",
+      "publish_date": "2026-05-26",
+      "description": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical. However, existing research often treats memory as a tool for factual retrieval, overlooking its role in shaping users' emotional experiences. In this work, we introduce ENPMR-Bench, a benchmark for evaluating Emotional Need-aware Proactive Memory Retrieval (ENPMR), a core capability that enables agents to infer users' latent emotional needs and proactively retrieve appropriate memories to support empathetic interaction. Grounded in Maslow's hierarchy of needs, ENPMR-Bench includes over 1,800 memory-augmented dialogues and defines structured mappings between emotional needs and supportive memory types. Experimental results demonstrate that current retrieval paradigms, including both embedding-based and LLM-driven approaches, exhibit substantial deficiencies, with empathy scores significantly lagging behind golden memory conditions. While chain-of-thought prompting improves the alignment between inferred emotional needs and retrieved memories to some extent, a notable performance gap remains. Together, these findings reveal critical limitations in current agents and outline directions for advancing personalized emotional support through need-sensitive memory retrieval.",
+      "summary": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical. However, existing research often treats memory as a tool for factual retrieval, overlooking its role in shaping users' emotional experiences. In this work, we introduce ENPMR-Bench, a benchmark for evaluating Emotional Need-aware Proactive Memory Retrieval (ENPMR), a core capability that enables agents to infer users' latent emotional needs and proactively retrieve appropriate memories to support empathetic interaction. Grounded in Maslow's hierarchy of needs, ENPMR-Bench includes over 1,800 memory-augmented dialogues and defines structured mappings between emotional needs and supportive memory types. Experimental results demonstrate that current retrieval paradigms, including both embedding-based and LLM-driven approaches, exhibit substantial deficiencies, with empathy scores significantly lagging behind golden memory conditions. While chain-of-thought prompting improves the alignment between inferred emotional needs and retrieved memories to some extent, a notable performance gap remains. Together, these findings reveal critical limitations in current agents and outline directions for advancing personalized emotional support through need-sensitive memory retrieval.",
+      "abstract": "Memory-augmented language agents are increasingly deployed in affective applications such as emotional support, where understanding and responding to users' latent emotional needs is critical. However, existing research often treats memory as a tool for factual retrieval, overlooking its role in shaping users' emotional experiences. In this work, we introduce ENPMR-Bench, a benchmark for evaluating Emotional Need-aware Proactive Memory Retrieval (ENPMR), a core capability that enables agents to infer users' latent emotional needs and proactively retrieve appropriate memories to support empathetic interaction. Grounded in Maslow's hierarchy of needs, ENPMR-Bench includes over 1,800 memory-augmented dialogues and defines structured mappings between emotional needs and supportive memory types. Experimental results demonstrate that current retrieval paradigms, including both embedding-based and LLM-driven approaches, exhibit substantial deficiencies, with empathy scores significantly lagging behind golden memory conditions. While chain-of-thought prompting improves the alignment between inferred emotional needs and retrieved memories to some extent, a notable performance gap remains. Together, these findings reveal critical limitations in current agents and outline directions for advancing personalized emotional support through need-sensitive memory retrieval.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27240",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 24,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "该工作提出情感支持代理的主动记忆检索基准，包含大规模对话数据集和新任务定义，直接启发共情AI产品设计；评测揭示现有方法不足，工程上可集成到代理记忆模块，且符合近期情感计算与记忆增强代理趋势。",
+        "one_sentence_summary": "该论文构建了ENPMR-Bench基准，包含1800多个对话，基于马斯洛需求模型定义情感需求与支持性记忆类型映射，评测发现现有检索方法共情得分远低于理想记忆，提示需增强代理对潜在情感需求的主动前瞻记忆检索能力。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 24,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 87,
+      "score_reason": "该工作提出情感支持代理的主动记忆检索基准，包含大规模对话数据集和新任务定义，直接启发共情AI产品设计；评测揭示现有方法不足，工程上可集成到代理记忆模块，且符合近期情感计算与记忆增强代理趋势。",
+      "one_sentence_summary": "该论文构建了ENPMR-Bench基准，包含1800多个对话，基于马斯洛需求模型定义情感需求与支持性记忆类型映射，评测发现现有检索方法共情得分远低于理想记忆，提示需增强代理对潜在情感需求的主动前瞻记忆检索能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27238",
+      "arxiv_id": "2605.27238",
+      "title": "EviACT: An Evidence-to-Action Framework for Agentic Program Repair",
+      "url": "https://arxiv.org/abs/2605.27238",
+      "published_at": "2026-05-26T16:17:47Z",
+      "publish_date": "2026-05-26",
+      "description": "LLM-based agents have moved automated program repair (APR) from fixed-context patch generation to interactive repository-level repair. However, existing agentic APR systems still struggle to use execution evidence to guide localization, patch generation, and validation. We propose EviACT (Evidence-to-Action), an agentic APR framework that coordinates three evidence-driven guardrails across repair stages. The retrieval scaffold grounds repair context, the compile gate filters invalid edits, and the test-driven gate checks target-test recovery before full regression. Across four benchmarks, EviACT improves resolve rate over the strongest reported comparable baselines by 1.6-6.0 percentage points and shows 70.1-88.6% lower reported per-bug API cost where baseline costs are available. Ablations and diagnostics suggest that these gains are associated with the coordinated evidence-to-action chain, making agentic APR more effective and efficient.",
+      "summary": "LLM-based agents have moved automated program repair (APR) from fixed-context patch generation to interactive repository-level repair. However, existing agentic APR systems still struggle to use execution evidence to guide localization, patch generation, and validation. We propose EviACT (Evidence-to-Action), an agentic APR framework that coordinates three evidence-driven guardrails across repair stages. The retrieval scaffold grounds repair context, the compile gate filters invalid edits, and the test-driven gate checks target-test recovery before full regression. Across four benchmarks, EviACT improves resolve rate over the strongest reported comparable baselines by 1.6-6.0 percentage points and shows 70.1-88.6% lower reported per-bug API cost where baseline costs are available. Ablations and diagnostics suggest that these gains are associated with the coordinated evidence-to-action chain, making agentic APR more effective and efficient.",
+      "abstract": "LLM-based agents have moved automated program repair (APR) from fixed-context patch generation to interactive repository-level repair. However, existing agentic APR systems still struggle to use execution evidence to guide localization, patch generation, and validation. We propose EviACT (Evidence-to-Action), an agentic APR framework that coordinates three evidence-driven guardrails across repair stages. The retrieval scaffold grounds repair context, the compile gate filters invalid edits, and the test-driven gate checks target-test recovery before full regression. Across four benchmarks, EviACT improves resolve rate over the strongest reported comparable baselines by 1.6-6.0 percentage points and shows 70.1-88.6% lower reported per-bug API cost where baseline costs are available. Ablations and diagnostics suggest that these gains are associated with the coordinated evidence-to-action chain, making agentic APR more effective and efficient.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27238",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "应用：直接提升agentic程序修复，启发代码修复AI工具和开发工作流。新信号：证据驱动护栏协调修复各阶段，区别于传统固定上下文修复。工程：框架定义清楚，可集成到现有agent系统。时效：agentic修复为当前热点，实证结果突出。",
+        "one_sentence_summary": "提出EviACT框架，通过检索脚手架、编译门和测试驱动门三个证据驱动护栏协调agentic程序修复各阶段，在四个基准上相比最强基线提升1.6-6.0个百分点修复率，并降低70.1-88.6%的API成本，为高效可靠的自修复代理提供新方案。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "应用：直接提升agentic程序修复，启发代码修复AI工具和开发工作流。新信号：证据驱动护栏协调修复各阶段，区别于传统固定上下文修复。工程：框架定义清楚，可集成到现有agent系统。时效：agentic修复为当前热点，实证结果突出。",
+      "one_sentence_summary": "提出EviACT框架，通过检索脚手架、编译门和测试驱动门三个证据驱动护栏协调agentic程序修复各阶段，在四个基准上相比最强基线提升1.6-6.0个百分点修复率，并降低70.1-88.6%的API成本，为高效可靠的自修复代理提供新方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27178",
+      "arxiv_id": "2605.27178",
+      "title": "FoundObj: Self-supervised Foundation Models as Rewards for Label-free 3D Object Segmentation",
+      "url": "https://arxiv.org/abs/2605.27178",
+      "published_at": "2026-05-26T15:32:32Z",
+      "publish_date": "2026-05-26",
+      "description": "We address the challenging task of 3D object segmentation in complex scene point clouds without relying on any scene-level human annotations during training. Existing methods are typically constrained to identifying simple objects, primarily due to insufficient object priors in the learning process. In this paper, we present FoundObj, a novel framework featuring a superpoint-based object discovery agent that incrementally merges suitable neighboring superpoints, guided by our innovative semantic and geometric reward modules. These modules synergistically leverage semantic and geometric priors from self-supervised 2D/3D foundation models, providing complementary feedback to the object discovery agent and enabling robust identification of multi-class objects through reinforcement learning. Extensive experiments on diverse benchmarks demonstrate that our approach consistently outperforms existing baselines. Notably, our method exhibits strong generalization in zero-shot and long-tail scenarios, underscoring its potential for scalable, label-free 3D object segmentation.",
+      "summary": "We address the challenging task of 3D object segmentation in complex scene point clouds without relying on any scene-level human annotations during training. Existing methods are typically constrained to identifying simple objects, primarily due to insufficient object priors in the learning process. In this paper, we present FoundObj, a novel framework featuring a superpoint-based object discovery agent that incrementally merges suitable neighboring superpoints, guided by our innovative semantic and geometric reward modules. These modules synergistically leverage semantic and geometric priors from self-supervised 2D/3D foundation models, providing complementary feedback to the object discovery agent and enabling robust identification of multi-class objects through reinforcement learning. Extensive experiments on diverse benchmarks demonstrate that our approach consistently outperforms existing baselines. Notably, our method exhibits strong generalization in zero-shot and long-tail scenarios, underscoring its potential for scalable, label-free 3D object segmentation.",
+      "abstract": "We address the challenging task of 3D object segmentation in complex scene point clouds without relying on any scene-level human annotations during training. Existing methods are typically constrained to identifying simple objects, primarily due to insufficient object priors in the learning process. In this paper, we present FoundObj, a novel framework featuring a superpoint-based object discovery agent that incrementally merges suitable neighboring superpoints, guided by our innovative semantic and geometric reward modules. These modules synergistically leverage semantic and geometric priors from self-supervised 2D/3D foundation models, providing complementary feedback to the object discovery agent and enabling robust identification of multi-class objects through reinforcement learning. Extensive experiments on diverse benchmarks demonstrate that our approach consistently outperforms existing baselines. Notably, our method exhibits strong generalization in zero-shot and long-tail scenarios, underscoring its potential for scalable, label-free 3D object segmentation.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27178",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "FoundObj利用自监督基础模型作为奖励信号，实现无标注3D对象分割的新范式，代理式发现框架新颖，方法具可复现性并展现零样本泛化，适应无监督3D理解的前沿需求。",
+        "one_sentence_summary": "FoundObj提出一种无标注3D对象分割框架，基于超点的发现代理通过强化学习逐步合并邻近超点，利用自监督2D/3D基础模型的语义和几何奖励引导，在多个基准上超越现有方法，并展示零样本和长尾强泛化能力。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 80,
+      "score_reason": "FoundObj利用自监督基础模型作为奖励信号，实现无标注3D对象分割的新范式，代理式发现框架新颖，方法具可复现性并展现零样本泛化，适应无监督3D理解的前沿需求。",
+      "one_sentence_summary": "FoundObj提出一种无标注3D对象分割框架，基于超点的发现代理通过强化学习逐步合并邻近超点，利用自监督2D/3D基础模型的语义和几何奖励引导，在多个基准上超越现有方法，并展示零样本和长尾强泛化能力。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.27156",
+      "arxiv_id": "2605.27156",
+      "title": "LitSeg: Narrative-Aware Document Segmentation for Literary RAG",
+      "url": "https://arxiv.org/abs/2605.27156",
+      "published_at": "2026-05-26T15:17:03Z",
+      "publish_date": "2026-05-26",
+      "description": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by incorporating external knowledge, particularly for long-tail domains such as literary works. However, the critical step of document segmentation in RAG remains largely underexplored. Existing strategies are typically semantically blind and overlook the complicated narrative structures of literary works, often resulting in fragmented plots and unclear references that severely hinder retrieval and generation performance. To address this, we propose LitSeg, a novel narrative-theory-guided segmentation framework. By employing multi-stage prompting, LitSeg explicitly extracts valid events, untangles narrative threads, clarifies narrative structures, and locates turning points to inform segmentation. To alleviate the computational overhead of multi-stage inference with large-scale models, we further introduce LitSeg-Lite, a lightweight single-pass chunker fine-tuned on LitSeg-generated data via a two-stage training strategy, distilling the complex process into a single inference pass. Extensive experiments demonstrate that with structurally independent text chunks, our methods significantly improve retrieval accuracy and context relevance over baselines, ultimately enhancing downstream QA performance, while ablation studies validate the efficacy of narratological guidance and data distillation.",
+      "summary": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by incorporating external knowledge, particularly for long-tail domains such as literary works. However, the critical step of document segmentation in RAG remains largely underexplored. Existing strategies are typically semantically blind and overlook the complicated narrative structures of literary works, often resulting in fragmented plots and unclear references that severely hinder retrieval and generation performance. To address this, we propose LitSeg, a novel narrative-theory-guided segmentation framework. By employing multi-stage prompting, LitSeg explicitly extracts valid events, untangles narrative threads, clarifies narrative structures, and locates turning points to inform segmentation. To alleviate the computational overhead of multi-stage inference with large-scale models, we further introduce LitSeg-Lite, a lightweight single-pass chunker fine-tuned on LitSeg-generated data via a two-stage training strategy, distilling the complex process into a single inference pass. Extensive experiments demonstrate that with structurally independent text chunks, our methods significantly improve retrieval accuracy and context relevance over baselines, ultimately enhancing downstream QA performance, while ablation studies validate the efficacy of narratological guidance and data distillation.",
+      "abstract": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by incorporating external knowledge, particularly for long-tail domains such as literary works. However, the critical step of document segmentation in RAG remains largely underexplored. Existing strategies are typically semantically blind and overlook the complicated narrative structures of literary works, often resulting in fragmented plots and unclear references that severely hinder retrieval and generation performance. To address this, we propose LitSeg, a novel narrative-theory-guided segmentation framework. By employing multi-stage prompting, LitSeg explicitly extracts valid events, untangles narrative threads, clarifies narrative structures, and locates turning points to inform segmentation. To alleviate the computational overhead of multi-stage inference with large-scale models, we further introduce LitSeg-Lite, a lightweight single-pass chunker fine-tuned on LitSeg-generated data via a two-stage training strategy, distilling the complex process into a single inference pass. Extensive experiments demonstrate that with structurally independent text chunks, our methods significantly improve retrieval accuracy and context relevance over baselines, ultimately enhancing downstream QA performance, while ablation studies validate the efficacy of narratological guidance and data distillation.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27156",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "该工作针对RAG中文档分割的关键痛点，引入叙事理论指导，创新性强，且通过蒸馏提供可部署的轻量方案，直接提升检索与生成效果，对文学等长尾领域RAG产品有直接启发。",
+        "one_sentence_summary": "该论文提出叙事感知的文档分割框架LitSeg，通过多阶段提示提取事件与转折点来优化文学作品的RAG检索，并进一步通过数据蒸馏训练轻量级单步分割模型LitSeg-Lite，显著提升分割块的结构独立性和下游问答准确率。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 88,
+      "score_reason": "该工作针对RAG中文档分割的关键痛点，引入叙事理论指导，创新性强，且通过蒸馏提供可部署的轻量方案，直接提升检索与生成效果，对文学等长尾领域RAG产品有直接启发。",
+      "one_sentence_summary": "该论文提出叙事感知的文档分割框架LitSeg，通过多阶段提示提取事件与转折点来优化文学作品的RAG检索，并进一步通过数据蒸馏训练轻量级单步分割模型LitSeg-Lite，显著提升分割块的结构独立性和下游问答准确率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
+    },
+    {
+      "id": "arxiv:2605.27130",
+      "arxiv_id": "2605.27130",
+      "title": "DEI: Diversity in Evolutionary Inference for Quality-Diversity Search",
+      "url": "https://arxiv.org/abs/2605.27130",
+      "published_at": "2026-05-26T15:00:57Z",
+      "publish_date": "2026-05-26",
+      "description": "We present DEI: Diversity in Evolutionary Inference, a distributed Quality-Diversity (QD) search framework that assigns heterogeneous large language models (LLMs) as mutation operators across peer nodes communicating with non-blocking collective operations. Unlike homogeneous parallel search, which replicates a single model's inductive biases across all workers, DEI treats each LLM's distinct creative prior as a complementary source of behavioral novelty. Extending the Digital Red Queen framework with DEI, nodes share local optimal solutions at the end of each round to seed the next round's population. This creates cross-model adversarial pressure that drives robustness beyond intra-model self-play. Evaluated on the Core War domain, a competitive programming benchmark in which Redcode warrior programs battle inside a simulated machine, a four-node heterogeneous ensemble (GPT-5.4-mini, Claude Sonnet 4.6, GPT-5.2, and Claude Haiku 4.5) achieves 124 percent higher merged-archive QD-Score (45.90 vs. 20.46) and 28 percent higher coverage (80.6 percent vs. 63.0 percent of cells) than a single-node baseline at equal total LLM-call budget. The heterogeneous ensemble also outperforms an equally-budgeted homogeneous ensemble on QD-Score, coverage, and held-out solution generality across all four model families. These results provide the first empirical evidence that model diversity, not merely parallelism, is the key driver of gain in distributed LLM-based QD search.",
+      "summary": "We present DEI: Diversity in Evolutionary Inference, a distributed Quality-Diversity (QD) search framework that assigns heterogeneous large language models (LLMs) as mutation operators across peer nodes communicating with non-blocking collective operations. Unlike homogeneous parallel search, which replicates a single model's inductive biases across all workers, DEI treats each LLM's distinct creative prior as a complementary source of behavioral novelty. Extending the Digital Red Queen framework with DEI, nodes share local optimal solutions at the end of each round to seed the next round's population. This creates cross-model adversarial pressure that drives robustness beyond intra-model self-play. Evaluated on the Core War domain, a competitive programming benchmark in which Redcode warrior programs battle inside a simulated machine, a four-node heterogeneous ensemble (GPT-5.4-mini, Claude Sonnet 4.6, GPT-5.2, and Claude Haiku 4.5) achieves 124 percent higher merged-archive QD-Score (45.90 vs. 20.46) and 28 percent higher coverage (80.6 percent vs. 63.0 percent of cells) than a single-node baseline at equal total LLM-call budget. The heterogeneous ensemble also outperforms an equally-budgeted homogeneous ensemble on QD-Score, coverage, and held-out solution generality across all four model families. These results provide the first empirical evidence that model diversity, not merely parallelism, is the key driver of gain in distributed LLM-based QD search.",
+      "abstract": "We present DEI: Diversity in Evolutionary Inference, a distributed Quality-Diversity (QD) search framework that assigns heterogeneous large language models (LLMs) as mutation operators across peer nodes communicating with non-blocking collective operations. Unlike homogeneous parallel search, which replicates a single model's inductive biases across all workers, DEI treats each LLM's distinct creative prior as a complementary source of behavioral novelty. Extending the Digital Red Queen framework with DEI, nodes share local optimal solutions at the end of each round to seed the next round's population. This creates cross-model adversarial pressure that drives robustness beyond intra-model self-play. Evaluated on the Core War domain, a competitive programming benchmark in which Redcode warrior programs battle inside a simulated machine, a four-node heterogeneous ensemble (GPT-5.4-mini, Claude Sonnet 4.6, GPT-5.2, and Claude Haiku 4.5) achieves 124 percent higher merged-archive QD-Score (45.90 vs. 20.46) and 28 percent higher coverage (80.6 percent vs. 63.0 percent of cells) than a single-node baseline at equal total LLM-call budget. The heterogeneous ensemble also outperforms an equally-budgeted homogeneous ensemble on QD-Score, coverage, and held-out solution generality across all four model families. These results provide the first empirical evidence that model diversity, not merely parallelism, is the key driver of gain in distributed LLM-based QD search.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.27130",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 25,
+          "engineering_utility": 22,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "DEI首创异构LLM作为变异算子的分布式质量多样性搜索，在Core War上显著超越同构搜索，验证模型多样性价值，为多智能体系统和创意AI提供高度可工程化方案，方向稀缺且及时。",
+        "one_sentence_summary": "DEI提出异构大语言模型分布式质量多样性搜索框架，将不同模型作为变异算子通过节点对抗提升搜索，在核心战争上四模型异构集成以相同预算下提升124% QD-Score和28%覆盖率，首次证明模型多样性是关键动力。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 25,
+        "engineering_utility": 22,
+        "timeliness_rarity": 24
+      },
+      "score_total": 94,
+      "score_reason": "DEI首创异构LLM作为变异算子的分布式质量多样性搜索，在Core War上显著超越同构搜索，验证模型多样性价值，为多智能体系统和创意AI提供高度可工程化方案，方向稀缺且及时。",
+      "one_sentence_summary": "DEI提出异构大语言模型分布式质量多样性搜索框架，将不同模型作为变异算子通过节点对抗提升搜索，在核心战争上四模型异构集成以相同预算下提升124% QD-Score和28%覆盖率，首次证明模型多样性是关键动力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-27T05:55:35.727988+00:00",
+      "pushed_at": "2026-05-27T05:55:35.727988+00:00",
+      "source_run_id": "2026-05-27",
+      "pushed_run_id": "2026-05-27"
     }
   ]
 }
