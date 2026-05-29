@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-28T05:53:36.448670+00:00",
+  "updated_at": "2026-05-29T05:52:35.141121+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -12417,6 +12417,580 @@
       "pushed_at": "2026-05-28T05:53:36.448670+00:00",
       "source_run_id": "2026-05-28",
       "pushed_run_id": "2026-05-28"
+    },
+    {
+      "id": "arxiv:2605.29018",
+      "arxiv_id": "2605.29018",
+      "title": "Adopt $\\neq$ Adapt: Longitudinal Analyses of LLM Conversations in the Wild",
+      "url": "https://arxiv.org/abs/2605.29018",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Although a growing body of research has begun to describe user--LLM interactions, the picture it paints is largely static; little is known about how individual users change their behavior over time. To address this gap, we analyze the conversational trajectories of $\\sim$12,000 randomly sampled Microsoft Bing Copilot users and compare these with data from WildChat-4.8M. While the Copilot data contains significant population-level trends, we find that trends in individual user trajectories are much weaker; user habits prove to be overwhelmingly sticky. We also find stark differences between users of different activity levels: more active users have more successful conversations and use the LLM for more complex and professionally oriented tasks. Some user trends also appear in WildChat-4.8M, but we find evidence that this dataset is significantly skewed towards highly proficient \"power\" users. Ultimately, our results suggest that existing user behavior is difficult to change and demonstrate the extent of user heterogeneity. Our comparison between datasets highlights that WildChat does not represent typical user-AI interactions, an important caveat for downstream uses of the data.",
+      "summary": "Although a growing body of research has begun to describe user--LLM interactions, the picture it paints is largely static; little is known about how individual users change their behavior over time. To address this gap, we analyze the conversational trajectories of $\\sim$12,000 randomly sampled Microsoft Bing Copilot users and compare these with data from WildChat-4.8M. While the Copilot data contains significant population-level trends, we find that trends in individual user trajectories are much weaker; user habits prove to be overwhelmingly sticky. We also find stark differences between users of different activity levels: more active users have more successful conversations and use the LLM for more complex and professionally oriented tasks. Some user trends also appear in WildChat-4.8M, but we find evidence that this dataset is significantly skewed towards highly proficient \"power\" users. Ultimately, our results suggest that existing user behavior is difficult to change and demonstrate the extent of user heterogeneity. Our comparison between datasets highlights that WildChat does not represent typical user-AI interactions, an important caveat for downstream uses of the data.",
+      "abstract": "Although a growing body of research has begun to describe user--LLM interactions, the picture it paints is largely static; little is known about how individual users change their behavior over time. To address this gap, we analyze the conversational trajectories of $\\sim$12,000 randomly sampled Microsoft Bing Copilot users and compare these with data from WildChat-4.8M. While the Copilot data contains significant population-level trends, we find that trends in individual user trajectories are much weaker; user habits prove to be overwhelmingly sticky. We also find stark differences between users of different activity levels: more active users have more successful conversations and use the LLM for more complex and professionally oriented tasks. Some user trends also appear in WildChat-4.8M, but we find evidence that this dataset is significantly skewed towards highly proficient \"power\" users. Ultimately, our results suggest that existing user behavior is difficult to change and demonstrate the extent of user heterogeneity. Our comparison between datasets highlights that WildChat does not represent typical user-AI interactions, an important caveat for downstream uses of the data.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29018",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 21,
+          "engineering_utility": 16,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "基于大规模真实对话轨迹揭示用户 LLM 使用习惯高度粘滞、活跃用户特征及数据集偏差，对产品迭代、用户留存分析和公开数据集使用有重要启示，纵向视角在文献中较少见。",
+        "one_sentence_summary": "分析约 1.2 万 Bing Copilot 用户和 WildChat-4.8M 的长期对话，发现个人层面行为几乎不变而群体趋势显著，活跃用户更成功且任务更专业，并指出 WildChat 偏向强力用户、不代表典型人机交互。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 21,
+        "engineering_utility": 16,
+        "timeliness_rarity": 20
+      },
+      "score_total": 81,
+      "score_reason": "基于大规模真实对话轨迹揭示用户 LLM 使用习惯高度粘滞、活跃用户特征及数据集偏差，对产品迭代、用户留存分析和公开数据集使用有重要启示，纵向视角在文献中较少见。",
+      "one_sentence_summary": "分析约 1.2 万 Bing Copilot 用户和 WildChat-4.8M 的长期对话，发现个人层面行为几乎不变而群体趋势显著，活跃用户更成功且任务更专业，并指出 WildChat 偏向强力用户、不代表典型人机交互。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29027",
+      "arxiv_id": "2605.29027",
+      "title": "Mind Your Tone: Does Tone Alter LLM Performance?",
+      "url": "https://arxiv.org/abs/2605.29027",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "The use of Large Language Models (LLMs) is proliferating, yet their performance is observed to vary based on prompting styles and tones. In this study, we investigate both whether and how tonal variations in prompts lead to disparate LLM accuracy for objective multiple-choice questions. We use two datasets: a 50-base question dataset with five tone variants and a 570-base question MMLU subset spanning 57 subjects with seven tone variants. Experiments were conducted to evaluate the performance of four cost-efficient, popular LLMs: ChatGPT-4o, ChatGPT-5-nano, Gemini 2.5 Flash, and Gemini 2.5 Flash Lite. Across models, tonal effects are systematic but highly model-dependent. Some models show small, yet statistically significant, shifts, while others exhibit large accuracy swings across tones. Further, we identify subject-level differences in tone sensitivity and present a routing framework to explain how tones may attune internal reasoning modes. Our findings caution users against assuming tone-robust reliability in LLM deployments.",
+      "summary": "The use of Large Language Models (LLMs) is proliferating, yet their performance is observed to vary based on prompting styles and tones. In this study, we investigate both whether and how tonal variations in prompts lead to disparate LLM accuracy for objective multiple-choice questions. We use two datasets: a 50-base question dataset with five tone variants and a 570-base question MMLU subset spanning 57 subjects with seven tone variants. Experiments were conducted to evaluate the performance of four cost-efficient, popular LLMs: ChatGPT-4o, ChatGPT-5-nano, Gemini 2.5 Flash, and Gemini 2.5 Flash Lite. Across models, tonal effects are systematic but highly model-dependent. Some models show small, yet statistically significant, shifts, while others exhibit large accuracy swings across tones. Further, we identify subject-level differences in tone sensitivity and present a routing framework to explain how tones may attune internal reasoning modes. Our findings caution users against assuming tone-robust reliability in LLM deployments.",
+      "abstract": "The use of Large Language Models (LLMs) is proliferating, yet their performance is observed to vary based on prompting styles and tones. In this study, we investigate both whether and how tonal variations in prompts lead to disparate LLM accuracy for objective multiple-choice questions. We use two datasets: a 50-base question dataset with five tone variants and a 570-base question MMLU subset spanning 57 subjects with seven tone variants. Experiments were conducted to evaluate the performance of four cost-efficient, popular LLMs: ChatGPT-4o, ChatGPT-5-nano, Gemini 2.5 Flash, and Gemini 2.5 Flash Lite. Across models, tonal effects are systematic but highly model-dependent. Some models show small, yet statistically significant, shifts, while others exhibit large accuracy swings across tones. Further, we identify subject-level differences in tone sensitivity and present a routing framework to explain how tones may attune internal reasoning modes. Our findings caution users against assuming tone-robust reliability in LLM deployments.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29027",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "研究提示语调对 LLM 客观题准确性的影响，发现模型间存在显著且系统性的差异，对提示工程和模型部署有直接警示价值，但类似 tone 研究已有积累。",
+        "one_sentence_summary": "通过 50 题与 570 题 MMLU 子集，对 ChatGPT-4o 等四款模型施加多种语调变体，发现语调引起统计显著的准确率波动且高度模型依赖，并提出路由框架解释内部推理模式切换，提醒用户不能假定语调稳健。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 15
+      },
+      "score_total": 77,
+      "score_reason": "研究提示语调对 LLM 客观题准确性的影响，发现模型间存在显著且系统性的差异，对提示工程和模型部署有直接警示价值，但类似 tone 研究已有积累。",
+      "one_sentence_summary": "通过 50 题与 570 题 MMLU 子集，对 ChatGPT-4o 等四款模型施加多种语调变体，发现语调引起统计显著的准确率波动且高度模型依赖，并提出路由框架解释内部推理模式切换，提醒用户不能假定语调稳健。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.29042",
+      "arxiv_id": "2605.29042",
+      "title": "Differentiable Belief-based Opponent Shaping",
+      "url": "https://arxiv.org/abs/2605.29042",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Human coordination often relies on the ability to influence the beliefs of others through strategic action. In multi-agent reinforcement learning, opponent shaping attempts to replicate this influence, though existing methods typically operate within an opponent's parameter, policy, or value space. Meanwhile, belief-manipulation techniques in hidden-role games often rely on hard-coded objectives, such as deception or belief saturation. We propose Differentiable Belief-based Opponent Shaping (D-BOS), a first-order method that treats each observer's belief as the shaped opponent state and differentiates through $k$-step softmax-Bayes belief dynamics. Rather than explicitly rewarding deceptive or cooperative behavior, our method treats the belief state as the target for shaping. This allows the optimal strategy to emerge naturally from the environment's reward structure. This belief-space formulation provides an opponent-shaping signal by differentiating through opponent belief updates, and naturally extends to multiple observers by aggregating gradients over their individual inferred belief trajectories. Empirically, D-BOS outperforms PPO and BBM in hidden-role games, with the largest gains in mixed-motive settings.",
+      "summary": "Human coordination often relies on the ability to influence the beliefs of others through strategic action. In multi-agent reinforcement learning, opponent shaping attempts to replicate this influence, though existing methods typically operate within an opponent's parameter, policy, or value space. Meanwhile, belief-manipulation techniques in hidden-role games often rely on hard-coded objectives, such as deception or belief saturation. We propose Differentiable Belief-based Opponent Shaping (D-BOS), a first-order method that treats each observer's belief as the shaped opponent state and differentiates through $k$-step softmax-Bayes belief dynamics. Rather than explicitly rewarding deceptive or cooperative behavior, our method treats the belief state as the target for shaping. This allows the optimal strategy to emerge naturally from the environment's reward structure. This belief-space formulation provides an opponent-shaping signal by differentiating through opponent belief updates, and naturally extends to multiple observers by aggregating gradients over their individual inferred belief trajectories. Empirically, D-BOS outperforms PPO and BBM in hidden-role games, with the largest gains in mixed-motive settings.",
+      "abstract": "Human coordination often relies on the ability to influence the beliefs of others through strategic action. In multi-agent reinforcement learning, opponent shaping attempts to replicate this influence, though existing methods typically operate within an opponent's parameter, policy, or value space. Meanwhile, belief-manipulation techniques in hidden-role games often rely on hard-coded objectives, such as deception or belief saturation. We propose Differentiable Belief-based Opponent Shaping (D-BOS), a first-order method that treats each observer's belief as the shaped opponent state and differentiates through $k$-step softmax-Bayes belief dynamics. Rather than explicitly rewarding deceptive or cooperative behavior, our method treats the belief state as the target for shaping. This allows the optimal strategy to emerge naturally from the environment's reward structure. This belief-space formulation provides an opponent-shaping signal by differentiating through opponent belief updates, and naturally extends to multiple observers by aggregating gradients over their individual inferred belief trajectories. Empirically, D-BOS outperforms PPO and BBM in hidden-role games, with the largest gains in mixed-motive settings.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29042",
+        "score_detail": {
+          "application_relevance": 13,
+          "new_signal": 18,
+          "engineering_utility": 15,
+          "timeliness_rarity": 14
+        },
+        "score_reason": "D-BOS提出基于信念微分的新颖对手塑造方法，在特定多智能体游戏中有效，但应用场景较窄，实现复杂度高，当前趋势关联度一般。",
+        "one_sentence_summary": "D-BOS是一种可微信念对手塑造方法，将观察者信念作为被塑造状态，通过k步softmax-Bayes微分与多观察者梯度聚合优化策略，在隐藏角色游戏的混合动机设置中表现优于PPO与BBM，可用于多智能体协调与谈判系统。"
+      },
+      "score_detail": {
+        "application_relevance": 13,
+        "new_signal": 18,
+        "engineering_utility": 15,
+        "timeliness_rarity": 14
+      },
+      "score_total": 60,
+      "score_reason": "D-BOS提出基于信念微分的新颖对手塑造方法，在特定多智能体游戏中有效，但应用场景较窄，实现复杂度高，当前趋势关联度一般。",
+      "one_sentence_summary": "D-BOS是一种可微信念对手塑造方法，将观察者信念作为被塑造状态，通过k步softmax-Bayes微分与多观察者梯度聚合优化策略，在隐藏角色游戏的混合动机设置中表现优于PPO与BBM，可用于多智能体协调与谈判系统。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.29192",
+      "arxiv_id": "2605.29192",
+      "title": "ReasonOps: Operator Segmentation for LLM Reasoning Traces",
+      "url": "https://arxiv.org/abs/2605.29192",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Chain-of-thought traces from large reasoning models can span tens of thousands of tokens, yet we lack a vocabulary for describing their internal structure. Previous methods developed to analyze chain-of-thought traces are either too rigid or not expressive enough, failing to capture features across domains and models. To remedy this, we develop ReasonOps, an unsupervised, expressive method for annotating chain-of-thought traces, providing succinct universal operators. Using ReasonOps, we analyze 44,662 traces from 12 thinking LLMs spanning 6 families across 8 reasoning benchmarks and discover that they share a common compositional structure: 7 recurring reasoning operators -- discourse-level moves such as backtracking, inferring, and hypothesizing -- that emerge from unsupervised clustering of sentence-initial 3-token pivots. These operators appear across every model family and benchmark domain, confirmed by three independent LLM judges who classify held-out samples at 70 -76% accuracy. We analyze the structure of operators on easy vs. hard problems, revealing that reflective operators are more helpful on hard problems and harm performance on easy problems. Operator sequences are highly model-identifying: a classifier trained on operator distributions alone recovers the source model with macro-AUC, revealing that each model family has a distinctive reasoning fingerprint. Structural operator features predict within-problem answer correctness well above baselines. Classifiers built on these operators reach WP-AUC and on AIME specifically. ReasonOps further enables early quality estimation well before the trace completes: we predict at WP-AUC for only 50% of the trace. The ReasonOps pipeline is unsupervised and annotation-free, enabling deep insights into LLM reasoning traces as well as strong downstream results on model identification and correctness prediction.",
+      "summary": "Chain-of-thought traces from large reasoning models can span tens of thousands of tokens, yet we lack a vocabulary for describing their internal structure. Previous methods developed to analyze chain-of-thought traces are either too rigid or not expressive enough, failing to capture features across domains and models. To remedy this, we develop ReasonOps, an unsupervised, expressive method for annotating chain-of-thought traces, providing succinct universal operators. Using ReasonOps, we analyze 44,662 traces from 12 thinking LLMs spanning 6 families across 8 reasoning benchmarks and discover that they share a common compositional structure: 7 recurring reasoning operators -- discourse-level moves such as backtracking, inferring, and hypothesizing -- that emerge from unsupervised clustering of sentence-initial 3-token pivots. These operators appear across every model family and benchmark domain, confirmed by three independent LLM judges who classify held-out samples at 70 -76% accuracy. We analyze the structure of operators on easy vs. hard problems, revealing that reflective operators are more helpful on hard problems and harm performance on easy problems. Operator sequences are highly model-identifying: a classifier trained on operator distributions alone recovers the source model with macro-AUC, revealing that each model family has a distinctive reasoning fingerprint. Structural operator features predict within-problem answer correctness well above baselines. Classifiers built on these operators reach WP-AUC and on AIME specifically. ReasonOps further enables early quality estimation well before the trace completes: we predict at WP-AUC for only 50% of the trace. The ReasonOps pipeline is unsupervised and annotation-free, enabling deep insights into LLM reasoning traces as well as strong downstream results on model identification and correctness prediction.",
+      "abstract": "Chain-of-thought traces from large reasoning models can span tens of thousands of tokens, yet we lack a vocabulary for describing their internal structure. Previous methods developed to analyze chain-of-thought traces are either too rigid or not expressive enough, failing to capture features across domains and models. To remedy this, we develop ReasonOps, an unsupervised, expressive method for annotating chain-of-thought traces, providing succinct universal operators. Using ReasonOps, we analyze 44,662 traces from 12 thinking LLMs spanning 6 families across 8 reasoning benchmarks and discover that they share a common compositional structure: 7 recurring reasoning operators -- discourse-level moves such as backtracking, inferring, and hypothesizing -- that emerge from unsupervised clustering of sentence-initial 3-token pivots. These operators appear across every model family and benchmark domain, confirmed by three independent LLM judges who classify held-out samples at 70 -76% accuracy. We analyze the structure of operators on easy vs. hard problems, revealing that reflective operators are more helpful on hard problems and harm performance on easy problems. Operator sequences are highly model-identifying: a classifier trained on operator distributions alone recovers the source model with macro-AUC, revealing that each model family has a distinctive reasoning fingerprint. Structural operator features predict within-problem answer correctness well above baselines. Classifiers built on these operators reach WP-AUC and on AIME specifically. ReasonOps further enables early quality estimation well before the trace completes: we predict at WP-AUC for only 50% of the trace. The ReasonOps pipeline is unsupervised and annotation-free, enabling deep insights into LLM reasoning traces as well as strong downstream results on model identification and correctness prediction.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29192",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "ReasonOps为推理轨迹分析提供实用工具，可直接用于诊断和优化推理流程；提出的算子体系和模型指纹是新信号；无监督方法易实现，切合当前可解释推理热点。",
+        "one_sentence_summary": "ReasonOps通过无监督聚类将大模型思维链分解为回溯、推理等7种通用算子，在8个基准的4.4万条推理踪迹上验证了跨模型和领域的普遍性，并能早期预测答案正确性及识别模型身份，为优化推理策略提供了可操作分析工具。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 92,
+      "score_reason": "ReasonOps为推理轨迹分析提供实用工具，可直接用于诊断和优化推理流程；提出的算子体系和模型指纹是新信号；无监督方法易实现，切合当前可解释推理热点。",
+      "one_sentence_summary": "ReasonOps通过无监督聚类将大模型思维链分解为回溯、推理等7种通用算子，在8个基准的4.4万条推理踪迹上验证了跨模型和领域的普遍性，并能早期预测答案正确性及识别模型身份，为优化推理策略提供了可操作分析工具。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29240",
+      "arxiv_id": "2605.29240",
+      "title": "Surfacing Isolated Learners with Outcome-Independent Mediation of Feedback between Teachers and Students Using AI",
+      "url": "https://arxiv.org/abs/2605.29240",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "AI-augmented classrooms generate rich teacher and student feedback before graded outcomes become available, yet these signals can be difficult to translate into timely instructional decisions. We propose an interpretable decision layer: a transparent mechanism that ranks course topics requiring attention without using grades or post-hoc outcome labels. The approach combines three signals: student learning difficulty prevalence, disagreement between learner self-reports and observed difficulties, and unresolved teacher concerns. The output is a ranked set of topic priorities with per-topic decision records explaining each ranking. In one graduate CS course offering ($n=5$ instructor interviews; $n=279$ survey responses), prioritized topics aligned with instructor concerns (top-5 overlap 3/5; Spearman $\\rho=0.80$) and student-reported topic difficulty ($\\rho=0.46$, $p=.048$). Multi-signal integration also surfaced learners not identified through individual signal sources alone (AUC $=0.96$ vs. $0.91$ for gap prevalence alone). Reflective thinking, help-seeking, and self-efficacy provided additional evidence that student behavioral signals align with learning-related constructs. While preliminary, these findings suggest that transparent coordination mechanisms may help support human-AI co-agency when feedback is incomplete.",
+      "summary": "AI-augmented classrooms generate rich teacher and student feedback before graded outcomes become available, yet these signals can be difficult to translate into timely instructional decisions. We propose an interpretable decision layer: a transparent mechanism that ranks course topics requiring attention without using grades or post-hoc outcome labels. The approach combines three signals: student learning difficulty prevalence, disagreement between learner self-reports and observed difficulties, and unresolved teacher concerns. The output is a ranked set of topic priorities with per-topic decision records explaining each ranking. In one graduate CS course offering ($n=5$ instructor interviews; $n=279$ survey responses), prioritized topics aligned with instructor concerns (top-5 overlap 3/5; Spearman $\\rho=0.80$) and student-reported topic difficulty ($\\rho=0.46$, $p=.048$). Multi-signal integration also surfaced learners not identified through individual signal sources alone (AUC $=0.96$ vs. $0.91$ for gap prevalence alone). Reflective thinking, help-seeking, and self-efficacy provided additional evidence that student behavioral signals align with learning-related constructs. While preliminary, these findings suggest that transparent coordination mechanisms may help support human-AI co-agency when feedback is incomplete.",
+      "abstract": "AI-augmented classrooms generate rich teacher and student feedback before graded outcomes become available, yet these signals can be difficult to translate into timely instructional decisions. We propose an interpretable decision layer: a transparent mechanism that ranks course topics requiring attention without using grades or post-hoc outcome labels. The approach combines three signals: student learning difficulty prevalence, disagreement between learner self-reports and observed difficulties, and unresolved teacher concerns. The output is a ranked set of topic priorities with per-topic decision records explaining each ranking. In one graduate CS course offering ($n=5$ instructor interviews; $n=279$ survey responses), prioritized topics aligned with instructor concerns (top-5 overlap 3/5; Spearman $\\rho=0.80$) and student-reported topic difficulty ($\\rho=0.46$, $p=.048$). Multi-signal integration also surfaced learners not identified through individual signal sources alone (AUC $=0.96$ vs. $0.91$ for gap prevalence alone). Reflective thinking, help-seeking, and self-efficacy provided additional evidence that student behavioral signals align with learning-related constructs. While preliminary, these findings suggest that transparent coordination mechanisms may help support human-AI co-agency when feedback is incomplete.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29240",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "提出结果无关的透明决策层，融合多信号识别孤立学习者，实证显示与教师判断高度一致，为 AI 辅助教学决策提供可解释的协调机制，思路较新且可工程化。",
+        "one_sentence_summary": "设计一种不依赖成绩的透明排序机制，组合学习难点流行度、自陈差异和教师关注三个信号，在研究生课程中优先推荐主题，并发现该机制能识别单一信号无法捕获的孤立学习者（AUC 0.96），有助于人机共学。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 84,
+      "score_reason": "提出结果无关的透明决策层，融合多信号识别孤立学习者，实证显示与教师判断高度一致，为 AI 辅助教学决策提供可解释的协调机制，思路较新且可工程化。",
+      "one_sentence_summary": "设计一种不依赖成绩的透明排序机制，组合学习难点流行度、自陈差异和教师关注三个信号，在研究生课程中优先推荐主题，并发现该机制能识别单一信号无法捕获的孤立学习者（AUC 0.96），有助于人机共学。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29247",
+      "arxiv_id": "2605.29247",
+      "title": "DenseSteer: Steering Small Language Models towards Dense Math Reasoning",
+      "url": "https://arxiv.org/abs/2605.29247",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Large language models (LLMs) demonstrate strong chain-of-thought (CoT) reasoning abilities, while smaller models (<= 3B parameters) significantly underperform on multi-step reasoning tasks. Based on empirical analyses of the Qwen-2.5 model family on math reasoning benchmarks, we find that more proficient reasoning is associated with fewer reasoning steps but higher information density per step, a property we term Dense Reasoning. Motivated by this observation, we propose DenseSteer, a training-free inference-time steering framework that enhances small-model reasoning by modulating internal representations toward dense reasoning patterns. Experiments show that our method yields consistent accuracy improvements without increasing token-level Negative Log-Likelihood, highlighting dense reasoning as an effective structural approach to mathematical problem solving.",
+      "summary": "Large language models (LLMs) demonstrate strong chain-of-thought (CoT) reasoning abilities, while smaller models (<= 3B parameters) significantly underperform on multi-step reasoning tasks. Based on empirical analyses of the Qwen-2.5 model family on math reasoning benchmarks, we find that more proficient reasoning is associated with fewer reasoning steps but higher information density per step, a property we term Dense Reasoning. Motivated by this observation, we propose DenseSteer, a training-free inference-time steering framework that enhances small-model reasoning by modulating internal representations toward dense reasoning patterns. Experiments show that our method yields consistent accuracy improvements without increasing token-level Negative Log-Likelihood, highlighting dense reasoning as an effective structural approach to mathematical problem solving.",
+      "abstract": "Large language models (LLMs) demonstrate strong chain-of-thought (CoT) reasoning abilities, while smaller models (<= 3B parameters) significantly underperform on multi-step reasoning tasks. Based on empirical analyses of the Qwen-2.5 model family on math reasoning benchmarks, we find that more proficient reasoning is associated with fewer reasoning steps but higher information density per step, a property we term Dense Reasoning. Motivated by this observation, we propose DenseSteer, a training-free inference-time steering framework that enhances small-model reasoning by modulating internal representations toward dense reasoning patterns. Experiments show that our method yields consistent accuracy improvements without increasing token-level Negative Log-Likelihood, highlighting dense reasoning as an effective structural approach to mathematical problem solving.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29247",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 24,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "提出训练无关的推理时引导方法，可无缝集成到小模型产品中，工程实用性强；引入密集推理新概念但任务非全新；近期小模型推理优化需求高，方向及时。",
+        "one_sentence_summary": "DenseSteer提出一种训练无关的推理时引导框架，通过调制小型语言模型内部表示向密集推理模式偏移，在多个数学推理数据集上提升了小模型的准确率，且不增加负对数似然，适用于低资源场景下的数学问题求解。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "提出训练无关的推理时引导方法，可无缝集成到小模型产品中，工程实用性强；引入密集推理新概念但任务非全新；近期小模型推理优化需求高，方向及时。",
+      "one_sentence_summary": "DenseSteer提出一种训练无关的推理时引导框架，通过调制小型语言模型内部表示向密集推理模式偏移，在多个数学推理数据集上提升了小模型的准确率，且不增加负对数似然，适用于低资源场景下的数学问题求解。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29267",
+      "arxiv_id": "2605.29267",
+      "title": "When and How Human Curation Backfires: Preference Alignment under Multi-Model Self-Consuming Loop",
+      "url": "https://arxiv.org/abs/2605.29267",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Foundation models are increasingly trained on synthetic data generated by prior model iterations rather than exclusively on real data. This self-consuming training paradigm can lead to model collapse, divergence, or bias amplification. Recent work (Ferbach et al., 2024) shows that incorporating human curation into the loop can steer a self-consuming model toward human-aligned behavior, but these analyses focus on a single, isolated model that solely consumes its own outputs. In practice, however, models often interact and train on input-output pairs produced by other models. This paper studies self-consuming training in the multi-model regime. We first formalize a framework for interacting self-consuming models and characterize when the resulting dynamical system converges to a stable point. We then examine how human curation of one model affects its own alignment (self-influence) and how such effects propagate to other models (cross-influence). Unlike isolated settings where human curation always enhances model alignment, we show that cross-model interactions can dampen or even invert this effect, ultimately degrading long-term alignment.",
+      "summary": "Foundation models are increasingly trained on synthetic data generated by prior model iterations rather than exclusively on real data. This self-consuming training paradigm can lead to model collapse, divergence, or bias amplification. Recent work (Ferbach et al., 2024) shows that incorporating human curation into the loop can steer a self-consuming model toward human-aligned behavior, but these analyses focus on a single, isolated model that solely consumes its own outputs. In practice, however, models often interact and train on input-output pairs produced by other models. This paper studies self-consuming training in the multi-model regime. We first formalize a framework for interacting self-consuming models and characterize when the resulting dynamical system converges to a stable point. We then examine how human curation of one model affects its own alignment (self-influence) and how such effects propagate to other models (cross-influence). Unlike isolated settings where human curation always enhances model alignment, we show that cross-model interactions can dampen or even invert this effect, ultimately degrading long-term alignment.",
+      "abstract": "Foundation models are increasingly trained on synthetic data generated by prior model iterations rather than exclusively on real data. This self-consuming training paradigm can lead to model collapse, divergence, or bias amplification. Recent work (Ferbach et al., 2024) shows that incorporating human curation into the loop can steer a self-consuming model toward human-aligned behavior, but these analyses focus on a single, isolated model that solely consumes its own outputs. In practice, however, models often interact and train on input-output pairs produced by other models. This paper studies self-consuming training in the multi-model regime. We first formalize a framework for interacting self-consuming models and characterize when the resulting dynamical system converges to a stable point. We then examine how human curation of one model affects its own alignment (self-influence) and how such effects propagate to other models (cross-influence). Unlike isolated settings where human curation always enhances model alignment, we show that cross-model interactions can dampen or even invert this effect, ultimately degrading long-term alignment.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29267",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 15,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "首次分析多模型自消费循环中人类策展的负面影响，揭示跨模型交互会削弱甚至逆转对齐收益，对合成数据训练生态有重要预警，但偏理论，直接工程复用性较弱。",
+        "one_sentence_summary": "形式化多模型自消费训练框架，研究人类策展在交互模型中的自影响与跨影响，证明当模型间存在交互时策展可能适得其反，导致长期偏好对齐倒退，扩展了此前单模型侧写的结论。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 15,
+        "timeliness_rarity": 21
+      },
+      "score_total": 81,
+      "score_reason": "首次分析多模型自消费循环中人类策展的负面影响，揭示跨模型交互会削弱甚至逆转对齐收益，对合成数据训练生态有重要预警，但偏理论，直接工程复用性较弱。",
+      "one_sentence_summary": "形式化多模型自消费训练框架，研究人类策展在交互模型中的自影响与跨影响，证明当模型间存在交互时策展可能适得其反，导致长期偏好对齐倒退，扩展了此前单模型侧写的结论。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29271",
+      "arxiv_id": "2605.29271",
+      "title": "CoHyDE: Iterative Co-Training of LLM Rewriter & Dense Encoder for Tool Retrieval",
+      "url": "https://arxiv.org/abs/2605.29271",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Tool retrieval over large API catalogs is a core bottleneck for LLM agents: user queries arrive in colloquial, often underspecified language, while the catalog uses technical API vocabulary that no fixed encoder can bridge on its own. The two dominant training approaches, contrastive encoder fine-tuning and HyDE-style query expansion with a frozen LLM, address this problem from opposite ends and fail in complementary directions: the fine-tuned encoder excels when the query's surface form already matches the catalog but collapses when it does not, while zero-shot HyDE is more robust to underspecified queries yet generates catalog-unaware hypothetical descriptions that degrade retrieval when queries are well-formed. We introduce CoHyDE, an iterative procedure that trains the dense encoder and the LLM rewriter as a single co-evolving system: the encoder is retrained with InfoNCE on catalog-style hypothetical descriptions produced by the rewriter, and the rewriter is preference-aligned via DPO against the encoder's retrieval scores, with both sides warm-started on the tool catalog before the loop begins. On a ~10k tool subset of the ToolBench catalog, three rounds of CoHyDE improve over the strongest single-component baseline by +2.5 pp NDCG@5 on standard queries and +6.3 pp on held-out vague queries, with gains as large as +8 pp on the hardest vague tier. Ablations confirm that co-training is the key ingredient: using either component in isolation fails to match CoHyDE on both well-formed and vague queries, with losses of up to -8 pp on vague queries.",
+      "summary": "Tool retrieval over large API catalogs is a core bottleneck for LLM agents: user queries arrive in colloquial, often underspecified language, while the catalog uses technical API vocabulary that no fixed encoder can bridge on its own. The two dominant training approaches, contrastive encoder fine-tuning and HyDE-style query expansion with a frozen LLM, address this problem from opposite ends and fail in complementary directions: the fine-tuned encoder excels when the query's surface form already matches the catalog but collapses when it does not, while zero-shot HyDE is more robust to underspecified queries yet generates catalog-unaware hypothetical descriptions that degrade retrieval when queries are well-formed. We introduce CoHyDE, an iterative procedure that trains the dense encoder and the LLM rewriter as a single co-evolving system: the encoder is retrained with InfoNCE on catalog-style hypothetical descriptions produced by the rewriter, and the rewriter is preference-aligned via DPO against the encoder's retrieval scores, with both sides warm-started on the tool catalog before the loop begins. On a ~10k tool subset of the ToolBench catalog, three rounds of CoHyDE improve over the strongest single-component baseline by +2.5 pp NDCG@5 on standard queries and +6.3 pp on held-out vague queries, with gains as large as +8 pp on the hardest vague tier. Ablations confirm that co-training is the key ingredient: using either component in isolation fails to match CoHyDE on both well-formed and vague queries, with losses of up to -8 pp on vague queries.",
+      "abstract": "Tool retrieval over large API catalogs is a core bottleneck for LLM agents: user queries arrive in colloquial, often underspecified language, while the catalog uses technical API vocabulary that no fixed encoder can bridge on its own. The two dominant training approaches, contrastive encoder fine-tuning and HyDE-style query expansion with a frozen LLM, address this problem from opposite ends and fail in complementary directions: the fine-tuned encoder excels when the query's surface form already matches the catalog but collapses when it does not, while zero-shot HyDE is more robust to underspecified queries yet generates catalog-unaware hypothetical descriptions that degrade retrieval when queries are well-formed. We introduce CoHyDE, an iterative procedure that trains the dense encoder and the LLM rewriter as a single co-evolving system: the encoder is retrained with InfoNCE on catalog-style hypothetical descriptions produced by the rewriter, and the rewriter is preference-aligned via DPO against the encoder's retrieval scores, with both sides warm-started on the tool catalog before the loop begins. On a ~10k tool subset of the ToolBench catalog, three rounds of CoHyDE improve over the strongest single-component baseline by +2.5 pp NDCG@5 on standard queries and +6.3 pp on held-out vague queries, with gains as large as +8 pp on the hardest vague tier. Ablations confirm that co-training is the key ingredient: using either component in isolation fails to match CoHyDE on both well-formed and vague queries, with losses of up to -8 pp on vague queries.",
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29271",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "Addresses a key agent bottleneck by co-evolving a rewriter and retriever for tool queries, demonstrating significant gains on vague queries and providing a practical training recipe.",
+        "one_sentence_summary": "该论文提出 CoHyDE 方法，通过迭代联合训练稠密编码器与 LLM 重写器，使重写器生成目录风格描述并用偏好对齐优化，在 ToolBench 约 1 万工具子集上，尤其对模糊查询的检索 NDCG@5 提升高达 8 个百分点，证明了协同训练的关键作用。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 24
+      },
+      "score_total": 95,
+      "score_reason": "Addresses a key agent bottleneck by co-evolving a rewriter and retriever for tool queries, demonstrating significant gains on vague queries and providing a practical training recipe.",
+      "one_sentence_summary": "该论文提出 CoHyDE 方法，通过迭代联合训练稠密编码器与 LLM 重写器，使重写器生成目录风格描述并用偏好对齐优化，在 ToolBench 约 1 万工具子集上，尤其对模糊查询的检索 NDCG@5 提升高达 8 个百分点，证明了协同训练的关键作用。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29310",
+      "arxiv_id": "2605.29310",
+      "title": "Rubric-Guided Process Reward for Stepwise Model Routing",
+      "url": "https://arxiv.org/abs/2605.29310",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Stepwise model routing improves the efficiency of Large Reasoning Models (LRMs) by assigning each reasoning step to a suitable model. Recent methods formulate routing as a sequential decision process and train the router with reinforcement learning. However, although they model routing as a process, they still supervise the router with outcome rewards. Such rewards only reflect final answer correctness and fail to evaluate intermediate routing decisions, which can weaken performance and generalization. To address this gap, we propose RoRo, a rubric-guided process reward framework for stepwise model routing. RoRo first collects diverse routing trajectories and constructs preference pairs based on outcome, cost, and process quality. It then trains a Rubricor to generate a query-specific evaluation rubric and a Judge to score routing trajectories under this rubric through alternating optimization. The resulting process rewards are combined with outcome rewards to optimize the routing policy via GRPO. Experiments on five reasoning benchmarks under both same-family and cross-family settings show that RoRo consistently outperforms strong baselines and achieves better accuracy and cost trade-offs.",
+      "summary": "Stepwise model routing improves the efficiency of Large Reasoning Models (LRMs) by assigning each reasoning step to a suitable model. Recent methods formulate routing as a sequential decision process and train the router with reinforcement learning. However, although they model routing as a process, they still supervise the router with outcome rewards. Such rewards only reflect final answer correctness and fail to evaluate intermediate routing decisions, which can weaken performance and generalization. To address this gap, we propose RoRo, a rubric-guided process reward framework for stepwise model routing. RoRo first collects diverse routing trajectories and constructs preference pairs based on outcome, cost, and process quality. It then trains a Rubricor to generate a query-specific evaluation rubric and a Judge to score routing trajectories under this rubric through alternating optimization. The resulting process rewards are combined with outcome rewards to optimize the routing policy via GRPO. Experiments on five reasoning benchmarks under both same-family and cross-family settings show that RoRo consistently outperforms strong baselines and achieves better accuracy and cost trade-offs.",
+      "abstract": "Stepwise model routing improves the efficiency of Large Reasoning Models (LRMs) by assigning each reasoning step to a suitable model. Recent methods formulate routing as a sequential decision process and train the router with reinforcement learning. However, although they model routing as a process, they still supervise the router with outcome rewards. Such rewards only reflect final answer correctness and fail to evaluate intermediate routing decisions, which can weaken performance and generalization. To address this gap, we propose RoRo, a rubric-guided process reward framework for stepwise model routing. RoRo first collects diverse routing trajectories and constructs preference pairs based on outcome, cost, and process quality. It then trains a Rubricor to generate a query-specific evaluation rubric and a Judge to score routing trajectories under this rubric through alternating optimization. The resulting process rewards are combined with outcome rewards to optimize the routing policy via GRPO. Experiments on five reasoning benchmarks under both same-family and cross-family settings show that RoRo consistently outperforms strong baselines and achieves better accuracy and cost trade-offs.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29310",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "RoRo直接解决分步模型路由的中间决策评估问题，提出的量表引导过程奖励框架新颖有效，可集成到多模型推理系统中，顺应过程奖励与智能体路由趋势。",
+        "one_sentence_summary": "为解决分步模型路由中过程奖励缺失，RoRo收集多样路由轨迹并基于结果、成本与过程质量构建偏好对，交替训练Rubricor与Judge生成步骤级评分，再结合GRPO优化策略，在五个推理基准上实现更好的准确率-成本权衡，适用于多模型协作推理场景。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 87,
+      "score_reason": "RoRo直接解决分步模型路由的中间决策评估问题，提出的量表引导过程奖励框架新颖有效，可集成到多模型推理系统中，顺应过程奖励与智能体路由趋势。",
+      "one_sentence_summary": "为解决分步模型路由中过程奖励缺失，RoRo收集多样路由轨迹并基于结果、成本与过程质量构建偏好对，交替训练Rubricor与Judge生成步骤级评分，再结合GRPO优化策略，在五个推理基准上实现更好的准确率-成本权衡，适用于多模型协作推理场景。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29430",
+      "arxiv_id": "2605.29430",
+      "title": "Towards Human-Like Interactive Speech Recognition With Agentic Correction and Semantic Evaluation",
+      "url": "https://arxiv.org/abs/2605.29430",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Automatic speech recognition (ASR) is a core component of human--computer interaction and an increasingly important front-end for LLM-based assistants and agents. However, most current ASR systems still follow a single-pass paradigm, which is poorly aligned with human communication, where misunderstandings are resolved through iterative clarification and refinement. This mismatch makes it difficult to correct meaning-critical errors once they occur. Meanwhile, token-level metrics such as WER or CER cannot adequately reflect such a problem. To address these limitations, we formulate \\emph{Interactive ASR} as a multi-turn refinement task and propose \\textbf{Agentic ASR}, a closed-loop framework that combines a single-pass ASR front-end with semantic correction, intent routing, and reasoning-based editing. We further introduce the \\textbf{Sentence-level Semantic Error Rate} ($S^2ER$), an LLM-based semantic evaluation metric, together with an \\textbf{Interactive Simulation System} for scalable and reproducible benchmarking. Experiments on multilingual, named-entity-intensive, and code-switching benchmarks show that iterative interaction consistently reduces semantic errors, with much larger gains in $S^2ER$ than in conventional token-level metrics. Human--AI alignment and ablation studies further validate the reliability of the semantic judge and the robustness of the proposed framework. The code is available at: https://interactiveasr.github.io/ and the live demo is available at https://i-asr.sjtuxlance.com/",
+      "summary": "Automatic speech recognition (ASR) is a core component of human--computer interaction and an increasingly important front-end for LLM-based assistants and agents. However, most current ASR systems still follow a single-pass paradigm, which is poorly aligned with human communication, where misunderstandings are resolved through iterative clarification and refinement. This mismatch makes it difficult to correct meaning-critical errors once they occur. Meanwhile, token-level metrics such as WER or CER cannot adequately reflect such a problem. To address these limitations, we formulate \\emph{Interactive ASR} as a multi-turn refinement task and propose \\textbf{Agentic ASR}, a closed-loop framework that combines a single-pass ASR front-end with semantic correction, intent routing, and reasoning-based editing. We further introduce the \\textbf{Sentence-level Semantic Error Rate} ($S^2ER$), an LLM-based semantic evaluation metric, together with an \\textbf{Interactive Simulation System} for scalable and reproducible benchmarking. Experiments on multilingual, named-entity-intensive, and code-switching benchmarks show that iterative interaction consistently reduces semantic errors, with much larger gains in $S^2ER$ than in conventional token-level metrics. Human--AI alignment and ablation studies further validate the reliability of the semantic judge and the robustness of the proposed framework. The code is available at: https://interactiveasr.github.io/ and the live demo is available at https://i-asr.sjtuxlance.com/",
+      "abstract": "Automatic speech recognition (ASR) is a core component of human--computer interaction and an increasingly important front-end for LLM-based assistants and agents. However, most current ASR systems still follow a single-pass paradigm, which is poorly aligned with human communication, where misunderstandings are resolved through iterative clarification and refinement. This mismatch makes it difficult to correct meaning-critical errors once they occur. Meanwhile, token-level metrics such as WER or CER cannot adequately reflect such a problem. To address these limitations, we formulate \\emph{Interactive ASR} as a multi-turn refinement task and propose \\textbf{Agentic ASR}, a closed-loop framework that combines a single-pass ASR front-end with semantic correction, intent routing, and reasoning-based editing. We further introduce the \\textbf{Sentence-level Semantic Error Rate} ($S^2ER$), an LLM-based semantic evaluation metric, together with an \\textbf{Interactive Simulation System} for scalable and reproducible benchmarking. Experiments on multilingual, named-entity-intensive, and code-switching benchmarks show that iterative interaction consistently reduces semantic errors, with much larger gains in $S^2ER$ than in conventional token-level metrics. Human--AI alignment and ablation studies further validate the reliability of the semantic judge and the robustness of the proposed framework. The code is available at: https://interactiveasr.github.io/ and the live demo is available at https://i-asr.sjtuxlance.com/",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29430",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 25,
+          "engineering_utility": 25,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "Highly relevant to AI assistants and agents, introduces new semantic metric and interactive benchmarking, open-source and integrable, timely in voice-based agent interaction.",
+        "one_sentence_summary": "该论文提出 Agentic ASR 框架，将单次语音识别与语义纠错、意图路由和推理编辑结合，实现多轮交互式修正，并引入句子级语义错误率 S^2ER 及交互仿真系统，在多语言、命名实体密集和语码切换数据上验证了语义错误的显著降低。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 25,
+        "engineering_utility": 25,
+        "timeliness_rarity": 24
+      },
+      "score_total": 99,
+      "score_reason": "Highly relevant to AI assistants and agents, introduces new semantic metric and interactive benchmarking, open-source and integrable, timely in voice-based agent interaction.",
+      "one_sentence_summary": "该论文提出 Agentic ASR 框架，将单次语音识别与语义纠错、意图路由和推理编辑结合，实现多轮交互式修正，并引入句子级语义错误率 S^2ER 及交互仿真系统，在多语言、命名实体密集和语码切换数据上验证了语义错误的显著降低。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29561",
+      "arxiv_id": "2605.29561",
+      "title": "ParaTool: Shifting Tool Representations from Context to Parameters",
+      "url": "https://arxiv.org/abs/2605.29561",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Tool calling extends large language models (LLMs) by enabling grounded interaction with external executable interfaces, thereby supporting environment-coupled problem solving. However, mainstream in-context learning (ICL) approaches typically incorporate detailed tool documentation and usage examples directly into the context. This results in substantial inference overhead and heightened risks of hallucination as the context length grows. Conversely, while tuning-based methods improve general tool-calling capabilities, they often fail to effectively internalize the specific details of previously seen tools, thereby retaining a dependency on in-context documentation. To address these limitations, we propose ParaTool, a framework that projects each tool into a dedicated, loadable set of parameters. By equipping a dynamic integration of these parameterized tools, the LLM can perform tool calling without relying on in-context documents or examples. Specifically, our approach consists of three stages: (1) parametric tool pre-training encapsulates the knowledge of different tools into independent parameter modules; (2) soft tool selection employs a gating network to dynamically weigh and aggregate relevant tool parameters; and (3) parametric tool fine-tuning jointly updates tool parameters to align the training and inference processes. Experiments on Stable ToolBench and BFCL demonstrate that ParaTool significantly outperforms strong ICL-based baselines, achieving superior performance while reducing computational complexity.",
+      "summary": "Tool calling extends large language models (LLMs) by enabling grounded interaction with external executable interfaces, thereby supporting environment-coupled problem solving. However, mainstream in-context learning (ICL) approaches typically incorporate detailed tool documentation and usage examples directly into the context. This results in substantial inference overhead and heightened risks of hallucination as the context length grows. Conversely, while tuning-based methods improve general tool-calling capabilities, they often fail to effectively internalize the specific details of previously seen tools, thereby retaining a dependency on in-context documentation. To address these limitations, we propose ParaTool, a framework that projects each tool into a dedicated, loadable set of parameters. By equipping a dynamic integration of these parameterized tools, the LLM can perform tool calling without relying on in-context documents or examples. Specifically, our approach consists of three stages: (1) parametric tool pre-training encapsulates the knowledge of different tools into independent parameter modules; (2) soft tool selection employs a gating network to dynamically weigh and aggregate relevant tool parameters; and (3) parametric tool fine-tuning jointly updates tool parameters to align the training and inference processes. Experiments on Stable ToolBench and BFCL demonstrate that ParaTool significantly outperforms strong ICL-based baselines, achieving superior performance while reducing computational complexity.",
+      "abstract": "Tool calling extends large language models (LLMs) by enabling grounded interaction with external executable interfaces, thereby supporting environment-coupled problem solving. However, mainstream in-context learning (ICL) approaches typically incorporate detailed tool documentation and usage examples directly into the context. This results in substantial inference overhead and heightened risks of hallucination as the context length grows. Conversely, while tuning-based methods improve general tool-calling capabilities, they often fail to effectively internalize the specific details of previously seen tools, thereby retaining a dependency on in-context documentation. To address these limitations, we propose ParaTool, a framework that projects each tool into a dedicated, loadable set of parameters. By equipping a dynamic integration of these parameterized tools, the LLM can perform tool calling without relying on in-context documents or examples. Specifically, our approach consists of three stages: (1) parametric tool pre-training encapsulates the knowledge of different tools into independent parameter modules; (2) soft tool selection employs a gating network to dynamically weigh and aggregate relevant tool parameters; and (3) parametric tool fine-tuning jointly updates tool parameters to align the training and inference processes. Experiments on Stable ToolBench and BFCL demonstrate that ParaTool significantly outperforms strong ICL-based baselines, achieving superior performance while reducing computational complexity.",
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29561",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "ParaTool将工具从上下文迁移至模型参数，极大降低上下文开销与幻觉风险，对智能体工具调用具有高实用价值，方法新颖且可复现，紧跟高效工具集成趋势。",
+        "one_sentence_summary": "ParaTool通过将每个工具封装为独立的参数模块，采用软选择门控聚合相关工具参数，并联合微调，实现无需上下文文档的工具调用，在Stable ToolBench与BFCL上显著超越上下文学习基线，降低推理开销，适用于高效智能体工具集成。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "ParaTool将工具从上下文迁移至模型参数，极大降低上下文开销与幻觉风险，对智能体工具调用具有高实用价值，方法新颖且可复现，紧跟高效工具集成趋势。",
+      "one_sentence_summary": "ParaTool通过将每个工具封装为独立的参数模块，采用软选择门控聚合相关工具参数，并联合微调，实现无需上下文文档的工具调用，在Stable ToolBench与BFCL上显著超越上下文学习基线，降低推理开销，适用于高效智能体工具集成。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.29676",
+      "arxiv_id": "2605.29676",
+      "title": "Notation Matters: A Benchmark Study of Token-Optimized Formats in Agentic AI Systems",
+      "url": "https://arxiv.org/abs/2605.29676",
+      "published_at": "2026-05-29T04:00:00+00:00",
+      "publish_date": "2026-05-29",
+      "description": "Large language models in Agentic AI systems consume tool schemas and execution results and emit tool invocations as structured data. The default language for that exchange, JSON, was designed for application-to-application interchange rather than token efficiency, so its structural elements impose substantial token overhead. Recent work proposes token-optimized alternatives such as TOON (Token-Oriented Object Notation) and TRON (Token Reduced Object Notation) as more compact replacements, but these formats have been evaluated only on isolated comprehension or generation tasks. Whether their token reductions hold inside end-to-end agentic loops therefore remains an open question. We evaluate TOON and TRON on four agentic benchmarks (BFCL, MCPToolBenchPP, MCP-Universe, StableToolBench) and five open-weight LLMs, decoupling input compression from output compression to measure comprehension and generation independently. TRON reduces tokens by up to 27% with accuracy within 14pp of the JSON baseline. TOON achieves up to 18% reduction at a similar 9pp accuracy cost, but additionally cascades on multi-turn parsing failures and collapses parallel tool-call output for most models.",
+      "summary": "Large language models in Agentic AI systems consume tool schemas and execution results and emit tool invocations as structured data. The default language for that exchange, JSON, was designed for application-to-application interchange rather than token efficiency, so its structural elements impose substantial token overhead. Recent work proposes token-optimized alternatives such as TOON (Token-Oriented Object Notation) and TRON (Token Reduced Object Notation) as more compact replacements, but these formats have been evaluated only on isolated comprehension or generation tasks. Whether their token reductions hold inside end-to-end agentic loops therefore remains an open question. We evaluate TOON and TRON on four agentic benchmarks (BFCL, MCPToolBenchPP, MCP-Universe, StableToolBench) and five open-weight LLMs, decoupling input compression from output compression to measure comprehension and generation independently. TRON reduces tokens by up to 27% with accuracy within 14pp of the JSON baseline. TOON achieves up to 18% reduction at a similar 9pp accuracy cost, but additionally cascades on multi-turn parsing failures and collapses parallel tool-call output for most models.",
+      "abstract": "Large language models in Agentic AI systems consume tool schemas and execution results and emit tool invocations as structured data. The default language for that exchange, JSON, was designed for application-to-application interchange rather than token efficiency, so its structural elements impose substantial token overhead. Recent work proposes token-optimized alternatives such as TOON (Token-Oriented Object Notation) and TRON (Token Reduced Object Notation) as more compact replacements, but these formats have been evaluated only on isolated comprehension or generation tasks. Whether their token reductions hold inside end-to-end agentic loops therefore remains an open question. We evaluate TOON and TRON on four agentic benchmarks (BFCL, MCPToolBenchPP, MCP-Universe, StableToolBench) and five open-weight LLMs, decoupling input compression from output compression to measure comprehension and generation independently. TRON reduces tokens by up to 27% with accuracy within 14pp of the JSON baseline. TOON achieves up to 18% reduction at a similar 9pp accuracy cost, but additionally cascades on multi-turn parsing failures and collapses parallel tool-call output for most models.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2605.29676",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 23,
+          "engineering_utility": 25,
+          "timeliness_rarity": 25
+        },
+        "score_reason": "Highly practical for agent engineering, empirically comparing JSON alternatives to reduce token overhead in tool-calling loops, with clear integration path and immediate cost-saving potential.",
+        "one_sentence_summary": "该论文在四个智能体基准上评估了 TOON 和 TRON 两种令牌优化格式替代 JSON 的效果，发现 TRON 最多减少 27% 令牌且准确率接近基线，但 TOON 存在多轮解析失败与并行工具调用输出坍塌问题，为智能体系统中的工具调用格式选择提供了量化依据。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 23,
+        "engineering_utility": 25,
+        "timeliness_rarity": 25
+      },
+      "score_total": 98,
+      "score_reason": "Highly practical for agent engineering, empirically comparing JSON alternatives to reduce token overhead in tool-calling loops, with clear integration path and immediate cost-saving potential.",
+      "one_sentence_summary": "该论文在四个智能体基准上评估了 TOON 和 TRON 两种令牌优化格式替代 JSON 的效果，发现 TRON 最多减少 27% 令牌且准确率接近基线，但 TOON 存在多轮解析失败与并行工具调用输出坍塌问题，为智能体系统中的工具调用格式选择提供了量化依据。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-29T05:52:35.141121+00:00",
+      "pushed_at": "2026-05-29T05:52:35.141121+00:00",
+      "source_run_id": "2026-05-29",
+      "pushed_run_id": "2026-05-29"
     }
   ]
 }
