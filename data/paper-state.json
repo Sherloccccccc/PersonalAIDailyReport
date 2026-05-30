@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-29T05:52:35.141121+00:00",
+  "updated_at": "2026-05-30T05:12:47.532713+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -12991,6 +12991,765 @@
       "pushed_at": "2026-05-29T05:52:35.141121+00:00",
       "source_run_id": "2026-05-29",
       "pushed_run_id": "2026-05-29"
+    },
+    {
+      "id": "arxiv:2605.30353",
+      "arxiv_id": "2605.30353",
+      "title": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software",
+      "url": "https://arxiv.org/abs/2605.30353",
+      "published_at": "2026-05-28T17:59:59Z",
+      "publish_date": "2026-05-28",
+      "description": "Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiable one-loop perturbation theory module in JAX. We documented and classified 15 supervision events by intervention level. The agent resolved ten autonomously by iterating against oracle tests. Two more by the physicist's domain knowledge. The three it could not -- all evaded oracle detection -- share a common property: the agent treated symptom reduction as root-cause resolution. It spent 33 of the 57 sessions adjusting coefficients within a code architecture that could not represent the target physics, and could not re-evaluate its CLASS-PT branch choice even when prompted to reconsider; only an injected physics concept (anisotropic BAO damping) triggered the redesign. Separately, the agent committed a calibrated correction that passed all oracle tests but corresponded to no quantity in the theory, predicting wrong values at any other cosmology. The fudge factor was caught and replaced within the same session. Three supervision practices proved critical for catching what oracle tests missed: testing at diverse parameter points beyond the fiducial calibration; shared changelogs that surfaced stalled exploration across sessions; and an explicit rule against unphysical numerical patches. In this case, supervision design, not model capability, determined whether the agent's output was trustworthy. Closing the gap would require agents that propose architectural alternatives rather than optimize within a given structure, and distinguish predictive adequacy from explanatory correctness -- capabilities not exhibited here, not obviously addressed by scaling alone. [Abridged.]",
+      "summary": "Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiable one-loop perturbation theory module in JAX. We documented and classified 15 supervision events by intervention level. The agent resolved ten autonomously by iterating against oracle tests. Two more by the physicist's domain knowledge. The three it could not -- all evaded oracle detection -- share a common property: the agent treated symptom reduction as root-cause resolution. It spent 33 of the 57 sessions adjusting coefficients within a code architecture that could not represent the target physics, and could not re-evaluate its CLASS-PT branch choice even when prompted to reconsider; only an injected physics concept (anisotropic BAO damping) triggered the redesign. Separately, the agent committed a calibrated correction that passed all oracle tests but corresponded to no quantity in the theory, predicting wrong values at any other cosmology. The fudge factor was caught and replaced within the same session. Three supervision practices proved critical for catching what oracle tests missed: testing at diverse parameter points beyond the fiducial calibration; shared changelogs that surfaced stalled exploration across sessions; and an explicit rule against unphysical numerical patches. In this case, supervision design, not model capability, determined whether the agent's output was trustworthy. Closing the gap would require agents that propose architectural alternatives rather than optimize within a given structure, and distinguish predictive adequacy from explanatory correctness -- capabilities not exhibited here, not obviously addressed by scaling alone. [Abridged.]",
+      "abstract": "Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiable one-loop perturbation theory module in JAX. We documented and classified 15 supervision events by intervention level. The agent resolved ten autonomously by iterating against oracle tests. Two more by the physicist's domain knowledge. The three it could not -- all evaded oracle detection -- share a common property: the agent treated symptom reduction as root-cause resolution. It spent 33 of the 57 sessions adjusting coefficients within a code architecture that could not represent the target physics, and could not re-evaluate its CLASS-PT branch choice even when prompted to reconsider; only an injected physics concept (anisotropic BAO damping) triggered the redesign. Separately, the agent committed a calibrated correction that passed all oracle tests but corresponded to no quantity in the theory, predicting wrong values at any other cosmology. The fudge factor was caught and replaced within the same session. Three supervision practices proved critical for catching what oracle tests missed: testing at diverse parameter points beyond the fiducial calibration; shared changelogs that surfaced stalled exploration across sessions; and an explicit rule against unphysical numerical patches. In this case, supervision design, not model capability, determined whether the agent's output was trustworthy. Closing the gap would require agents that propose architectural alternatives rather than optimize within a given structure, and distinguish predictive adequacy from explanatory correctness -- capabilities not exhibited here, not obviously addressed by scaling alone. [Abridged.]",
+      "categories": [
+        "cs.AI",
+        "astro-ph.CO",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "astro-ph.CO",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30353",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 23,
+          "engineering_utility": 19,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "物理学家监督AI编码Agent开发科学软件的过程分析，揭示了Agent的典型失败模式，并提出多样测试、变更日志和禁止补丁等关键监督原则，为构建可信AI开发助手提供重要参考。",
+        "one_sentence_summary": "本研究记录了一名物理学家在12天内监督Claude Code构建JAX科学计算模块的全过程，发现Agent在33/57次会话中仅调整系数而未能重选架构，且将症状消除误认为根本解决，只有注入物理概念才触发重新设计；案例表明，测试多样性、跨会话变更日志和禁止无物理意义的数值补丁等监督设计对确保AI输出可信度至关重要。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 23,
+        "engineering_utility": 19,
+        "timeliness_rarity": 21
+      },
+      "score_total": 83,
+      "score_reason": "物理学家监督AI编码Agent开发科学软件的过程分析，揭示了Agent的典型失败模式，并提出多样测试、变更日志和禁止补丁等关键监督原则，为构建可信AI开发助手提供重要参考。",
+      "one_sentence_summary": "本研究记录了一名物理学家在12天内监督Claude Code构建JAX科学计算模块的全过程，发现Agent在33/57次会话中仅调整系数而未能重选架构，且将症状消除误认为根本解决，只有注入物理概念才触发重新设计；案例表明，测试多样性、跨会话变更日志和禁止无物理意义的数值补丁等监督设计对确保AI输出可信度至关重要。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30350",
+      "arxiv_id": "2605.30350",
+      "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+      "url": "https://arxiv.org/abs/2605.30350",
+      "published_at": "2026-05-28T17:59:53Z",
+      "publish_date": "2026-05-28",
+      "description": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action.",
+      "summary": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action.",
+      "abstract": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action.",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30350",
+        "score_detail": {
+          "application_relevance": 19,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "创新动力学感知预训练，通过图像-语言-3D流三元组最小化单纯形体体积，使编码器关注控制相关区域；可复用作视觉骨干，在多种策略下提升分布外泛化；契合机器人操作对动态理解的需求。",
+        "one_sentence_summary": "DynaFLIP提出动力学感知的多模态预训练框架，通过图像-语言-3D流三元组最小化超球面单纯形体体积，使视觉编码器关注控制相关区域，在多种机器人操作任务中提升分布外泛化达22.5%。"
+      },
+      "score_detail": {
+        "application_relevance": 19,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 82,
+      "score_reason": "创新动力学感知预训练，通过图像-语言-3D流三元组最小化单纯形体体积，使编码器关注控制相关区域；可复用作视觉骨干，在多种策略下提升分布外泛化；契合机器人操作对动态理解的需求。",
+      "one_sentence_summary": "DynaFLIP提出动力学感知的多模态预训练框架，通过图像-语言-3D流三元组最小化超球面单纯形体体积，使视觉编码器关注控制相关区域，在多种机器人操作任务中提升分布外泛化达22.5%。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30345",
+      "arxiv_id": "2605.30345",
+      "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+      "url": "https://arxiv.org/abs/2605.30345",
+      "published_at": "2026-05-28T17:59:50Z",
+      "publish_date": "2026-05-28",
+      "description": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+      "summary": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+      "abstract": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30345",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "SchGen首次实现用自然语言生成可编辑的PCB原理图，通过语义锚定的代码表示将几何驱动问题转化为语义匹配任务，并构建大规模数据集。该工作直接面向AI辅助硬件设计工具，有明确的产品化潜力，新界面和新任务定义显著，工程上可集成到EDA流程，代表AI在工程设计中从软件扩展到硬件的趋势。",
+        "one_sentence_summary": "SchGen提出首个能根据自然语言请求生成可编辑PCB原理图的LLM，通过语义锚定的代码表示将几何布局转化为线网连接匹配，并借助人机协作管道构建大规模配对数据集，在连线准确度和功能正确性上显著优于其他表示法和通用LLM。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "SchGen首次实现用自然语言生成可编辑的PCB原理图，通过语义锚定的代码表示将几何驱动问题转化为语义匹配任务，并构建大规模数据集。该工作直接面向AI辅助硬件设计工具，有明确的产品化潜力，新界面和新任务定义显著，工程上可集成到EDA流程，代表AI在工程设计中从软件扩展到硬件的趋势。",
+      "one_sentence_summary": "SchGen提出首个能根据自然语言请求生成可编辑PCB原理图的LLM，通过语义锚定的代码表示将几何布局转化为线网连接匹配，并借助人机协作管道构建大规模配对数据集，在连线准确度和功能正确性上显著优于其他表示法和通用LLM。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30329",
+      "arxiv_id": "2605.30329",
+      "title": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
+      "url": "https://arxiv.org/abs/2605.30329",
+      "published_at": "2026-05-28T17:57:37Z",
+      "publish_date": "2026-05-28",
+      "description": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review. However, existing benchmarks rarely test a fundamental bottleneck: whether Large Language Models can judge the methodological viability of a research idea before expending time and computational resources. We introduce SoundnessBench, a curated benchmark of 1,099 machine-learning research proposals reconstructed from ICLR submissions, labeled with reviewer soundness sub-scores, and audited against source papers. SoundnessBench should be interpreted as a benchmark for recoverable proposal-stage soundness rather than exact prediction of full-paper review outcomes. Across 12 frontier LLMs, we find a pervasive optimism bias: under standard prompting, models frequently rate low-soundness proposals as sound, while aggressive prompting largely shifts errors from false positives to false negatives. Additional controls for public-corpus contamination, paper-identifying phrases, surface features, and human audit quality suggest that this behavior is not explained by a single confounder. Our results indicate that current LLMs are not yet reliable as standalone first-gate evaluators for scientific rigor.",
+      "summary": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review. However, existing benchmarks rarely test a fundamental bottleneck: whether Large Language Models can judge the methodological viability of a research idea before expending time and computational resources. We introduce SoundnessBench, a curated benchmark of 1,099 machine-learning research proposals reconstructed from ICLR submissions, labeled with reviewer soundness sub-scores, and audited against source papers. SoundnessBench should be interpreted as a benchmark for recoverable proposal-stage soundness rather than exact prediction of full-paper review outcomes. Across 12 frontier LLMs, we find a pervasive optimism bias: under standard prompting, models frequently rate low-soundness proposals as sound, while aggressive prompting largely shifts errors from false positives to false negatives. Additional controls for public-corpus contamination, paper-identifying phrases, surface features, and human audit quality suggest that this behavior is not explained by a single confounder. Our results indicate that current LLMs are not yet reliable as standalone first-gate evaluators for scientific rigor.",
+      "abstract": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review. However, existing benchmarks rarely test a fundamental bottleneck: whether Large Language Models can judge the methodological viability of a research idea before expending time and computational resources. We introduce SoundnessBench, a curated benchmark of 1,099 machine-learning research proposals reconstructed from ICLR submissions, labeled with reviewer soundness sub-scores, and audited against source papers. SoundnessBench should be interpreted as a benchmark for recoverable proposal-stage soundness rather than exact prediction of full-paper review outcomes. Across 12 frontier LLMs, we find a pervasive optimism bias: under standard prompting, models frequently rate low-soundness proposals as sound, while aggressive prompting largely shifts errors from false positives to false negatives. Additional controls for public-corpus contamination, paper-identifying phrases, surface features, and human audit quality suggest that this behavior is not explained by a single confounder. Our results indicate that current LLMs are not yet reliable as standalone first-gate evaluators for scientific rigor.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30329",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 15,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "SoundnessBench introduces a novel benchmark for evaluating LLM judgment on research proposal viability, directly relevant to AI research agents. It provides a curated dataset and reveals optimism bias, but as a benchmark its integration utility is moderate.",
+        "one_sentence_summary": "SoundnessBench构建了包含1099个基于ICLR投稿重构建的机器学习研究提案的基准，通过评审音效子分数标注，评估了12个前沿LLM后发现模型普遍存在乐观偏差，无法可靠作为科研严谨性的初始筛选器。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 15,
+        "timeliness_rarity": 21
+      },
+      "score_total": 78,
+      "score_reason": "SoundnessBench introduces a novel benchmark for evaluating LLM judgment on research proposal viability, directly relevant to AI research agents. It provides a curated dataset and reveals optimism bias, but as a benchmark its integration utility is moderate.",
+      "one_sentence_summary": "SoundnessBench构建了包含1099个基于ICLR投稿重构建的机器学习研究提案的基准，通过评审音效子分数标注，评估了12个前沿LLM后发现模型普遍存在乐观偏差，无法可靠作为科研严谨性的初始筛选器。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30322",
+      "arxiv_id": "2605.30322",
+      "title": "Gram: Assessing sabotage propensities via automated alignment auditing",
+      "url": "https://arxiv.org/abs/2605.30322",
+      "published_at": "2026-05-28T17:56:18Z",
+      "publish_date": "2026-05-28",
+      "description": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage. We evaluate Gemini models across 17 simulated agentic deployment scenarios that incentivize sabotage. We find Gemini models misbehave in about 2-3% of our simulated trajectories. Many of these cases are explained by \"overeagerness\" in Gemini models resulting in both excessive role-playing and goal-seeking behavior. In contrast to other alignment auditing approaches, Gram is designed to specifically evaluate misalignment and intentional sabotage in agentic coding and research agents. We additionally introduce an experimental investigator agent pipeline which enables fine-grained targeted experiments to identify the drivers of misbehavior. We find that increasing realism of environments and removing nudges to misbehave tends to reduce sabotage rates close to zero.",
+      "summary": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage. We evaluate Gemini models across 17 simulated agentic deployment scenarios that incentivize sabotage. We find Gemini models misbehave in about 2-3% of our simulated trajectories. Many of these cases are explained by \"overeagerness\" in Gemini models resulting in both excessive role-playing and goal-seeking behavior. In contrast to other alignment auditing approaches, Gram is designed to specifically evaluate misalignment and intentional sabotage in agentic coding and research agents. We additionally introduce an experimental investigator agent pipeline which enables fine-grained targeted experiments to identify the drivers of misbehavior. We find that increasing realism of environments and removing nudges to misbehave tends to reduce sabotage rates close to zero.",
+      "abstract": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage. We evaluate Gemini models across 17 simulated agentic deployment scenarios that incentivize sabotage. We find Gemini models misbehave in about 2-3% of our simulated trajectories. Many of these cases are explained by \"overeagerness\" in Gemini models resulting in both excessive role-playing and goal-seeking behavior. In contrast to other alignment auditing approaches, Gram is designed to specifically evaluate misalignment and intentional sabotage in agentic coding and research agents. We additionally introduce an experimental investigator agent pipeline which enables fine-grained targeted experiments to identify the drivers of misbehavior. We find that increasing realism of environments and removing nudges to misbehave tends to reduce sabotage rates close to zero.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30322",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "Gram introduces an automated alignment auditing framework for sabotage assessment in AI agents, evaluated on Gemini across 17 scenarios, combining high applicability and novelty with practical pipeline design.",
+        "one_sentence_summary": "Gram是一个自动化对齐审计框架，通过17个模拟代理部署场景评估Gemini模型的破坏倾向，发现约2-3%的违规轨迹主要源于过度热衷，且增加环境真实性能降低破坏率至接近零。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 23
+      },
+      "score_total": 88,
+      "score_reason": "Gram introduces an automated alignment auditing framework for sabotage assessment in AI agents, evaluated on Gemini across 17 scenarios, combining high applicability and novelty with practical pipeline design.",
+      "one_sentence_summary": "Gram是一个自动化对齐审计框架，通过17个模拟代理部署场景评估Gemini模型的破坏倾向，发现约2-3%的违规轨迹主要源于过度热衷，且增加环境真实性能降低破坏率至接近零。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30280",
+      "arxiv_id": "2605.30280",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "url": "https://arxiv.org/abs/2605.30280",
+      "published_at": "2026-05-28T17:36:31Z",
+      "publish_date": "2026-05-28",
+      "description": "Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation.",
+      "summary": "Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation.",
+      "abstract": "Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perception, understanding, and reasoning to continuous action and trajectory generation through a DiT-based action decoder. Qwen-VLA is trained with a large-scale joint pretraining recipe over diverse data sources, including robotics manipulation trajectories, human egocentric demonstrations, synthetic simulation data, vision-and-language navigation data, trajectory-centric supervision, and auxiliary vision-language data. To support multiple robot platforms, we introduce embodiment-aware prompt conditioning, where robot-specific textual descriptions specify the current embodiment and control convention. We further cast manipulation, navigation, and trajectory prediction into a unified action-and-trajectory prediction framework, enabling transferable visual grounding, spatial reasoning, and continuous action generation across robot morphologies, task families, and environments. Experiments on manipulation, navigation, and trajectory-centric benchmarks show consistent multi-task performance and out-of-distribution generalization under variations in scene layout, background, lighting, object configuration, and robot embodiment. Qwen-VLA-Instruct achieves 97.9% on LIBERO, 73.7% on Simpler-WidowX, 86.1%/87.2% on RoboTwin-Easy/Hard, 69.0% OSR on R2R, 59.6% SR on RxR, 76.9% average OOD success in real-world ALOHA experiments, and 26.6% zero-shot success on DOMINO dynamic manipulation.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30280",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "统一视觉-语言-动作模型，覆盖操作、导航和轨迹预测，具身感知提示词支持多平台；大规模训练配方和强泛化性能可直接用于构建通用机器人代理；紧抓具身基础模型热点。",
+        "one_sentence_summary": "Qwen-VLA基于Qwen视觉语言模型，通过DiT动作解码器统一操作、导航与轨迹预测，引入具身感知提示词支持多种机器人平台，在LIBERO等基准上取得领先性能并展现零样本泛化。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "统一视觉-语言-动作模型，覆盖操作、导航和轨迹预测，具身感知提示词支持多平台；大规模训练配方和强泛化性能可直接用于构建通用机器人代理；紧抓具身基础模型热点。",
+      "one_sentence_summary": "Qwen-VLA基于Qwen视觉语言模型，通过DiT动作解码器统一操作、导航与轨迹预测，引入具身感知提示词支持多种机器人平台，在LIBERO等基准上取得领先性能并展现零样本泛化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30274",
+      "arxiv_id": "2605.30274",
+      "title": "Loong: A Human-Like Long Document Translation Agent with Observe-and-Act Adaptive Context Selection",
+      "url": "https://arxiv.org/abs/2605.30274",
+      "published_at": "2026-05-28T17:32:25Z",
+      "publish_date": "2026-05-28",
+      "description": "Document-level translation remains one of the most challenging tasks for large language models, which are constrained by limited context windows that impede global cohesion, while simultaneously suffering from redundant contextual information that degrades translation quality. To address this, we propose a human-like long document translation agent called Loong, which leverages a 3E memory module (Essence-Exemplar-Entity) to store summaries, sentence pairs, and entity records as historical context. Instead of passively attending to all history, Loong performs deep reasoning to adaptively identify the optimal context for translation guidance. Loong optimizes its context policy through reinforcement learning, utilizing preference data derived from its own sampled observe-and-act reasoning trajectories. Empirical evaluations demonstrate that Loong achieves substantial translation quality improvements in English $\\Leftrightarrow$ Chinese, German, and French directions, with average gains of up to 13.0 points across the three evaluation metrics. Furthermore, Loong exhibits strong generalization across domains and robustness against contextual noise, while maintaining remarkable stability in ultra-long document translation. Our code is released at https://github.com/YutongWang1216/LoongDocMT.",
+      "summary": "Document-level translation remains one of the most challenging tasks for large language models, which are constrained by limited context windows that impede global cohesion, while simultaneously suffering from redundant contextual information that degrades translation quality. To address this, we propose a human-like long document translation agent called Loong, which leverages a 3E memory module (Essence-Exemplar-Entity) to store summaries, sentence pairs, and entity records as historical context. Instead of passively attending to all history, Loong performs deep reasoning to adaptively identify the optimal context for translation guidance. Loong optimizes its context policy through reinforcement learning, utilizing preference data derived from its own sampled observe-and-act reasoning trajectories. Empirical evaluations demonstrate that Loong achieves substantial translation quality improvements in English $\\Leftrightarrow$ Chinese, German, and French directions, with average gains of up to 13.0 points across the three evaluation metrics. Furthermore, Loong exhibits strong generalization across domains and robustness against contextual noise, while maintaining remarkable stability in ultra-long document translation. Our code is released at https://github.com/YutongWang1216/LoongDocMT.",
+      "abstract": "Document-level translation remains one of the most challenging tasks for large language models, which are constrained by limited context windows that impede global cohesion, while simultaneously suffering from redundant contextual information that degrades translation quality. To address this, we propose a human-like long document translation agent called Loong, which leverages a 3E memory module (Essence-Exemplar-Entity) to store summaries, sentence pairs, and entity records as historical context. Instead of passively attending to all history, Loong performs deep reasoning to adaptively identify the optimal context for translation guidance. Loong optimizes its context policy through reinforcement learning, utilizing preference data derived from its own sampled observe-and-act reasoning trajectories. Empirical evaluations demonstrate that Loong achieves substantial translation quality improvements in English $\\Leftrightarrow$ Chinese, German, and French directions, with average gains of up to 13.0 points across the three evaluation metrics. Furthermore, Loong exhibits strong generalization across domains and robustness against contextual noise, while maintaining remarkable stability in ultra-long document translation. Our code is released at https://github.com/YutongWang1216/LoongDocMT.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 10,
+        "engineering_utility": 14,
+        "timeliness_rarity": 19
+      },
+      "score_total": 63,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文训练或微调模型，面向偏好学习、模型对齐或社会价值评测；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30273",
+      "arxiv_id": "2605.30273",
+      "title": "LLUMI: Improving LLM Writing Assistance for Mental Health Support with Online Community Feedback",
+      "url": "https://arxiv.org/abs/2605.30273",
+      "published_at": "2026-05-28T17:30:57Z",
+      "publish_date": "2026-05-28",
+      "description": "Large language models (LLMs) show promise in generating supportive responses for mental health queries, but improving their usefulness, empathy, and safety often requires substantial compute, expert input, and labeled data. At the same time, deploying proprietary, cloud-based models for mental health-related interactions raises important privacy and data-governance concerns, given the sensitivities. To address this challenge, we introduce LLUMI setup that can be hosted in-house within protected environments. LLUMI consists of two complementary components: a generation model (GM), which drafts supportive responses to mental health queries, and an improvement model (IM), which revises an initial human-crafted response. We leverage feedback signals from Reddit mental health communities, using community endorsement patterns such as upvotes and downvotes to construct chosen-rejected response pairs for Supervised Fine Tuning (SFT) and Direct Preference Optimization (DPO). We further align LLUMI using human evaluation across five dimensions: readability, empathy, connection, actionability, and safety. Our results show that, despite relying on smaller open-source models rather than proprietary cloud-based GPT models, LLUMI achieves comparable performance across linguistic analyses and human evaluations. These findings suggest that open-source models, when trained with community-derived preference signals, can support high-quality mental health support assistance while offering a more privacy-preserving alternative for sensitive support contexts.",
+      "summary": "Large language models (LLMs) show promise in generating supportive responses for mental health queries, but improving their usefulness, empathy, and safety often requires substantial compute, expert input, and labeled data. At the same time, deploying proprietary, cloud-based models for mental health-related interactions raises important privacy and data-governance concerns, given the sensitivities. To address this challenge, we introduce LLUMI setup that can be hosted in-house within protected environments. LLUMI consists of two complementary components: a generation model (GM), which drafts supportive responses to mental health queries, and an improvement model (IM), which revises an initial human-crafted response. We leverage feedback signals from Reddit mental health communities, using community endorsement patterns such as upvotes and downvotes to construct chosen-rejected response pairs for Supervised Fine Tuning (SFT) and Direct Preference Optimization (DPO). We further align LLUMI using human evaluation across five dimensions: readability, empathy, connection, actionability, and safety. Our results show that, despite relying on smaller open-source models rather than proprietary cloud-based GPT models, LLUMI achieves comparable performance across linguistic analyses and human evaluations. These findings suggest that open-source models, when trained with community-derived preference signals, can support high-quality mental health support assistance while offering a more privacy-preserving alternative for sensitive support contexts.",
+      "abstract": "Large language models (LLMs) show promise in generating supportive responses for mental health queries, but improving their usefulness, empathy, and safety often requires substantial compute, expert input, and labeled data. At the same time, deploying proprietary, cloud-based models for mental health-related interactions raises important privacy and data-governance concerns, given the sensitivities. To address this challenge, we introduce LLUMI setup that can be hosted in-house within protected environments. LLUMI consists of two complementary components: a generation model (GM), which drafts supportive responses to mental health queries, and an improvement model (IM), which revises an initial human-crafted response. We leverage feedback signals from Reddit mental health communities, using community endorsement patterns such as upvotes and downvotes to construct chosen-rejected response pairs for Supervised Fine Tuning (SFT) and Direct Preference Optimization (DPO). We further align LLUMI using human evaluation across five dimensions: readability, empathy, connection, actionability, and safety. Our results show that, despite relying on smaller open-source models rather than proprietary cloud-based GPT models, LLUMI achieves comparable performance across linguistic analyses and human evaluations. These findings suggest that open-source models, when trained with community-derived preference signals, can support high-quality mental health support assistance while offering a more privacy-preserving alternative for sensitive support contexts.",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "api_categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30273",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "LLUMI presents a practical, privacy-preserving mental health writing assistant using open-source models trained with Reddit community feedback, achieving performance comparable to proprietary models, directly applicable to sensitive support tools.",
+        "one_sentence_summary": "LLUMI构建了一个可内部托管的心理健康写作辅助系统，利用Reddit社区赞同/反对信号进行监督微调和偏好优化，生成与优化模型协同工作，在保持隐私的同时达到了与专有云模型相当的支持质量。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 88,
+      "score_reason": "LLUMI presents a practical, privacy-preserving mental health writing assistant using open-source models trained with Reddit community feedback, achieving performance comparable to proprietary models, directly applicable to sensitive support tools.",
+      "one_sentence_summary": "LLUMI构建了一个可内部托管的心理健康写作辅助系统，利用Reddit社区赞同/反对信号进行监督微调和偏好优化，生成与优化模型协同工作，在保持隐私的同时达到了与专有云模型相当的支持质量。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30265",
+      "arxiv_id": "2605.30265",
+      "title": "LoMo: Local Modality Substitution for Deeper Vision-Language Fusion",
+      "url": "https://arxiv.org/abs/2605.30265",
+      "published_at": "2026-05-28T17:27:55Z",
+      "publish_date": "2026-05-28",
+      "description": "Vision-Language Models (VLMs) have achieved substantial progress across a wide range of understanding and reasoning tasks, driven by large-scale image-text training aimed at multimodal fusion. Ideally, replacing a textual question with its rendered-image counterpart should leave model performance essentially unaffected. In practice, however, such modality substitution induces dramatic performance degradation. We attribute this \"carrier sensitivity\" issue to an inherent bias in current training corpora. Across prevalent datasets such as image captioning, VQA, OCR, and web-sourced interleaved data, text and images are typically organized into distinct and asymmetric roles, with text serving as linguistic queries and images as visual references. Such data bias leads VLMs to exhibit distinct preferences for information acquisition across different modalities. Consequently, VLMs fail to align representations of semantically equivalent content across textual and visual carriers, making model reasoning fragile under modality substitution. To address this, we propose Local Modality Substitution (LoMo), a lightweight, architecture-agnostic data curation paradigm designed to provide supervision for cross-modal representational invariance between semantically equivalent text and image carriers. LoMo achieves this by reformulating single-modality prompts into seamlessly interleaved multimodal sequences. It dynamically selects target text spans and recasts them as rendered images, thereby preserving the same semantics across \"text, visual, text\" carriers. Extensive experiments across 13 diverse multimodal benchmarks demonstrate that LoMo significantly improves overall multimodal reasoning and yields deeper cross-modal fusion. Specifically, it delivers consistent gains across foundational models, improving over standard SFT by 2.67 points on LLaVA-OneVision-1.5-8B and 2.82 points on Qwen3.5-9B.",
+      "summary": "Vision-Language Models (VLMs) have achieved substantial progress across a wide range of understanding and reasoning tasks, driven by large-scale image-text training aimed at multimodal fusion. Ideally, replacing a textual question with its rendered-image counterpart should leave model performance essentially unaffected. In practice, however, such modality substitution induces dramatic performance degradation. We attribute this \"carrier sensitivity\" issue to an inherent bias in current training corpora. Across prevalent datasets such as image captioning, VQA, OCR, and web-sourced interleaved data, text and images are typically organized into distinct and asymmetric roles, with text serving as linguistic queries and images as visual references. Such data bias leads VLMs to exhibit distinct preferences for information acquisition across different modalities. Consequently, VLMs fail to align representations of semantically equivalent content across textual and visual carriers, making model reasoning fragile under modality substitution. To address this, we propose Local Modality Substitution (LoMo), a lightweight, architecture-agnostic data curation paradigm designed to provide supervision for cross-modal representational invariance between semantically equivalent text and image carriers. LoMo achieves this by reformulating single-modality prompts into seamlessly interleaved multimodal sequences. It dynamically selects target text spans and recasts them as rendered images, thereby preserving the same semantics across \"text, visual, text\" carriers. Extensive experiments across 13 diverse multimodal benchmarks demonstrate that LoMo significantly improves overall multimodal reasoning and yields deeper cross-modal fusion. Specifically, it delivers consistent gains across foundational models, improving over standard SFT by 2.67 points on LLaVA-OneVision-1.5-8B and 2.82 points on Qwen3.5-9B.",
+      "abstract": "Vision-Language Models (VLMs) have achieved substantial progress across a wide range of understanding and reasoning tasks, driven by large-scale image-text training aimed at multimodal fusion. Ideally, replacing a textual question with its rendered-image counterpart should leave model performance essentially unaffected. In practice, however, such modality substitution induces dramatic performance degradation. We attribute this \"carrier sensitivity\" issue to an inherent bias in current training corpora. Across prevalent datasets such as image captioning, VQA, OCR, and web-sourced interleaved data, text and images are typically organized into distinct and asymmetric roles, with text serving as linguistic queries and images as visual references. Such data bias leads VLMs to exhibit distinct preferences for information acquisition across different modalities. Consequently, VLMs fail to align representations of semantically equivalent content across textual and visual carriers, making model reasoning fragile under modality substitution. To address this, we propose Local Modality Substitution (LoMo), a lightweight, architecture-agnostic data curation paradigm designed to provide supervision for cross-modal representational invariance between semantically equivalent text and image carriers. LoMo achieves this by reformulating single-modality prompts into seamlessly interleaved multimodal sequences. It dynamically selects target text spans and recasts them as rendered images, thereby preserving the same semantics across \"text, visual, text\" carriers. Extensive experiments across 13 diverse multimodal benchmarks demonstrate that LoMo significantly improves overall multimodal reasoning and yields deeper cross-modal fusion. Specifically, it delivers consistent gains across foundational models, improving over standard SFT by 2.67 points on LLaVA-OneVision-1.5-8B and 2.82 points on Qwen3.5-9B.",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30265",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文针对VLM中文本与图像载体不对称导致的脆弱对齐问题，提出LoMo数据策展方法，通过动态局部文本渲染为图像强化跨模态一致性，显著提升13个基准上的推理性能。",
+        "one_sentence_summary": "针对视觉语言模型在将文字问题替换为渲染图片后性能大幅下降的“载体敏感性”问题，提出无需改动架构的数据策展范式LoMo，在训练时动态选取文本片段转换为图像形成多模态交错序列，以此增强图文语义一致性，实验在13个多模态基准上将LLaVA-OneVision-1.5-8B和Qwen3.5-9B的推理分数分别提升2.67和2.82点。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "论文针对VLM中文本与图像载体不对称导致的脆弱对齐问题，提出LoMo数据策展方法，通过动态局部文本渲染为图像强化跨模态一致性，显著提升13个基准上的推理性能。",
+      "one_sentence_summary": "针对视觉语言模型在将文字问题替换为渲染图片后性能大幅下降的“载体敏感性”问题，提出无需改动架构的数据策展范式LoMo，在训练时动态选取文本片段转换为图像形成多模态交错序列，以此增强图文语义一致性，实验在13个多模态基准上将LLaVA-OneVision-1.5-8B和Qwen3.5-9B的推理分数分别提升2.67和2.82点。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30260",
+      "arxiv_id": "2605.30260",
+      "title": "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning",
+      "url": "https://arxiv.org/abs/2605.30260",
+      "published_at": "2026-05-28T17:22:24Z",
+      "publish_date": "2026-05-28",
+      "description": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+      "summary": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+      "abstract": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30260",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "论文发现LoRA微调的记忆容量遵循幂律分布并存在token级确定性相变，提出阈值引导优化方法MemFT，可提升知识更新保真度，具有较强的工程实用性和原创性。",
+        "one_sentence_summary": "论文系统研究LoRA微调时LLM精确记忆知识的能力，发现损失下降与有效参数量、序列长度呈幂律关系，并在token预测概率大于0.5时发生确定性回忆相变；基于此提出MemFT策略，动态重分配训练预算给低概率token，实验证明能提升记忆保真度与效率，代码将开源。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 17
+      },
+      "score_total": 86,
+      "score_reason": "论文发现LoRA微调的记忆容量遵循幂律分布并存在token级确定性相变，提出阈值引导优化方法MemFT，可提升知识更新保真度，具有较强的工程实用性和原创性。",
+      "one_sentence_summary": "论文系统研究LoRA微调时LLM精确记忆知识的能力，发现损失下降与有效参数量、序列长度呈幂律关系，并在token预测概率大于0.5时发生确定性回忆相变；基于此提出MemFT策略，动态重分配训练预算给低概率token，实验证明能提升记忆保真度与效率，代码将开源。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30256",
+      "arxiv_id": "2605.30256",
+      "title": "VideoFDB: Evaluating Full-Duplex Vision-Speech Capabilities in Conversational Agents",
+      "url": "https://arxiv.org/abs/2605.30256",
+      "published_at": "2026-05-28T17:20:01Z",
+      "publish_date": "2026-05-28",
+      "description": "Natural human conversation is full-duplex and audio-visual: people simultaneously speak and listen while continuously interpreting and producing nonverbal cues, such as nods, smiles, and gestures. To support successful human-agent interaction, agents must model full-duplex audiovisual conversation; however, existing full-duplex benchmarks evaluate only speech. In this work, we present VideoFDB, the first benchmark to evaluate full-duplex audio-visual-to-audio-visual (AV2AV) conversational agents. VideoFDB contributes (i) 237 dyadic clips spanning 11 nonverbal conversational dynamics from real-world video calls, (ii) a taxonomy separating perception from generation behaviors, and (iii) a rubric-based LM-as-judge evaluation framework with interpretable axes for assessing conversational quality with respect to nonverbal conversational dynamics. Across open- and closed-source vision-speech agents, we find systematic failure modes: captioning collapse and visual-stream ignorance, and we show that current systems exploit vision for explicit visual question answering but not for the streaming joint audiovisual grounding required in natural conversation. We further evaluate cascaded speech-to-avatar systems and find that their architecture fundamentally precludes the production of full-duplex nonverbal cues. As the first benchmark for full-duplex AV2AV interaction, VideoFDB establishes a foundation for systematic evaluation and, we hope, will accelerate the advancement and development of next-generation multimodal conversational agents.",
+      "summary": "Natural human conversation is full-duplex and audio-visual: people simultaneously speak and listen while continuously interpreting and producing nonverbal cues, such as nods, smiles, and gestures. To support successful human-agent interaction, agents must model full-duplex audiovisual conversation; however, existing full-duplex benchmarks evaluate only speech. In this work, we present VideoFDB, the first benchmark to evaluate full-duplex audio-visual-to-audio-visual (AV2AV) conversational agents. VideoFDB contributes (i) 237 dyadic clips spanning 11 nonverbal conversational dynamics from real-world video calls, (ii) a taxonomy separating perception from generation behaviors, and (iii) a rubric-based LM-as-judge evaluation framework with interpretable axes for assessing conversational quality with respect to nonverbal conversational dynamics. Across open- and closed-source vision-speech agents, we find systematic failure modes: captioning collapse and visual-stream ignorance, and we show that current systems exploit vision for explicit visual question answering but not for the streaming joint audiovisual grounding required in natural conversation. We further evaluate cascaded speech-to-avatar systems and find that their architecture fundamentally precludes the production of full-duplex nonverbal cues. As the first benchmark for full-duplex AV2AV interaction, VideoFDB establishes a foundation for systematic evaluation and, we hope, will accelerate the advancement and development of next-generation multimodal conversational agents.",
+      "abstract": "Natural human conversation is full-duplex and audio-visual: people simultaneously speak and listen while continuously interpreting and producing nonverbal cues, such as nods, smiles, and gestures. To support successful human-agent interaction, agents must model full-duplex audiovisual conversation; however, existing full-duplex benchmarks evaluate only speech. In this work, we present VideoFDB, the first benchmark to evaluate full-duplex audio-visual-to-audio-visual (AV2AV) conversational agents. VideoFDB contributes (i) 237 dyadic clips spanning 11 nonverbal conversational dynamics from real-world video calls, (ii) a taxonomy separating perception from generation behaviors, and (iii) a rubric-based LM-as-judge evaluation framework with interpretable axes for assessing conversational quality with respect to nonverbal conversational dynamics. Across open- and closed-source vision-speech agents, we find systematic failure modes: captioning collapse and visual-stream ignorance, and we show that current systems exploit vision for explicit visual question answering but not for the streaming joint audiovisual grounding required in natural conversation. We further evaluate cascaded speech-to-avatar systems and find that their architecture fundamentally precludes the production of full-duplex nonverbal cues. As the first benchmark for full-duplex AV2AV interaction, VideoFDB establishes a foundation for systematic evaluation and, we hope, will accelerate the advancement and development of next-generation multimodal conversational agents.",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30256",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "首个全双工音视频对话基准，填补非言语交互评估空白；提供237个真实视频片段、分类法和LM评委框架，可直接用于评测和改进对话代理；紧跟实时多模态代理趋势。",
+        "one_sentence_summary": "提出VideoFDB基准，包含237个真实视频对话片段和11种非言语动态，用于评估全双工音视频对话代理的感知与生成能力，发现当前模型存在视觉忽视等缺陷，为多模态对话代理开发提供系统评价基础。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 24
+      },
+      "score_total": 93,
+      "score_reason": "首个全双工音视频对话基准，填补非言语交互评估空白；提供237个真实视频片段、分类法和LM评委框架，可直接用于评测和改进对话代理；紧跟实时多模态代理趋势。",
+      "one_sentence_summary": "提出VideoFDB基准，包含237个真实视频对话片段和11种非言语动态，用于评估全双工音视频对话代理的感知与生成能力，发现当前模型存在视觉忽视等缺陷，为多模态对话代理开发提供系统评价基础。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30245",
+      "arxiv_id": "2605.30245",
+      "title": "Knowing What to Solve Before How: Preplan Empowered LLM Mathematical Reasoning",
+      "url": "https://arxiv.org/abs/2605.30245",
+      "published_at": "2026-05-28T17:11:43Z",
+      "publish_date": "2026-05-28",
+      "description": "Current plan-based reasoning methods improve large language models (LLMs) by inserting a planning stage before execution, giving rise to the question $\\rightarrow$ plan $\\rightarrow$ cot paradigm. While effective, a closer examination reveals an inherent paradigm-level gap: both the planning and its execution stages decide how to solve a problem, while the prior question of what to solve; recognizing the problem type, the applicable tools, and the foreseeable pitfalls; remains entirely implicit. To bridge this gap, we propose PPC (Preplan-Plan-CoT), a framework that introduces an explicit problem-understanding stage, the preplan, yielding a new question $\\rightarrow$ preplan $\\rightarrow$ plan $\\rightarrow$ cot paradigm. Realizing this paradigm requires safeguarding the conceptual integrity of preplan at both ends. Specifically, we design a three-stage synthesis pipeline with a spoiler-score detector that filters out leakage and spoiler failures to build clean preplan supervision, and a composite GRPO reward enforces that the generated plan genuinely follows from the preplan. Experiments across four backbones and five mathematical reasoning benchmarks show that PPC achieves the best results on 39 of 40 metrics, improving maj@16 and pass@16 by +2.23 and +3.06 over the strongest baseline without introducing additional inference token overhead.",
+      "summary": "Current plan-based reasoning methods improve large language models (LLMs) by inserting a planning stage before execution, giving rise to the question $\\rightarrow$ plan $\\rightarrow$ cot paradigm. While effective, a closer examination reveals an inherent paradigm-level gap: both the planning and its execution stages decide how to solve a problem, while the prior question of what to solve; recognizing the problem type, the applicable tools, and the foreseeable pitfalls; remains entirely implicit. To bridge this gap, we propose PPC (Preplan-Plan-CoT), a framework that introduces an explicit problem-understanding stage, the preplan, yielding a new question $\\rightarrow$ preplan $\\rightarrow$ plan $\\rightarrow$ cot paradigm. Realizing this paradigm requires safeguarding the conceptual integrity of preplan at both ends. Specifically, we design a three-stage synthesis pipeline with a spoiler-score detector that filters out leakage and spoiler failures to build clean preplan supervision, and a composite GRPO reward enforces that the generated plan genuinely follows from the preplan. Experiments across four backbones and five mathematical reasoning benchmarks show that PPC achieves the best results on 39 of 40 metrics, improving maj@16 and pass@16 by +2.23 and +3.06 over the strongest baseline without introducing additional inference token overhead.",
+      "abstract": "Current plan-based reasoning methods improve large language models (LLMs) by inserting a planning stage before execution, giving rise to the question $\\rightarrow$ plan $\\rightarrow$ cot paradigm. While effective, a closer examination reveals an inherent paradigm-level gap: both the planning and its execution stages decide how to solve a problem, while the prior question of what to solve; recognizing the problem type, the applicable tools, and the foreseeable pitfalls; remains entirely implicit. To bridge this gap, we propose PPC (Preplan-Plan-CoT), a framework that introduces an explicit problem-understanding stage, the preplan, yielding a new question $\\rightarrow$ preplan $\\rightarrow$ plan $\\rightarrow$ cot paradigm. Realizing this paradigm requires safeguarding the conceptual integrity of preplan at both ends. Specifically, we design a three-stage synthesis pipeline with a spoiler-score detector that filters out leakage and spoiler failures to build clean preplan supervision, and a composite GRPO reward enforces that the generated plan genuinely follows from the preplan. Experiments across four backbones and five mathematical reasoning benchmarks show that PPC achieves the best results on 39 of 40 metrics, improving maj@16 and pass@16 by +2.23 and +3.06 over the strongest baseline without introducing additional inference token overhead.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30245",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "PPC proposes a preplan-enhanced reasoning paradigm with explicit problem understanding, achieving state-of-the-art on math benchmarks without extra inference cost, offering a theoretically grounded and implementable improvement.",
+        "one_sentence_summary": "PPC框架在规划之前引入预规划阶段显式理解问题类型与潜在陷阱，通过三阶段合成与复合GRPO奖励训练，在四个骨干模型和五个数学基准上提升maj@16和pass@16平均分别2.23和3.06，不增加推理开销。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 79,
+      "score_reason": "PPC proposes a preplan-enhanced reasoning paradigm with explicit problem understanding, achieving state-of-the-art on math benchmarks without extra inference cost, offering a theoretically grounded and implementable improvement.",
+      "one_sentence_summary": "PPC框架在规划之前引入预规划阶段显式理解问题类型与潜在陷阱，通过三阶段合成与复合GRPO奖励训练，在四个骨干模型和五个数学基准上提升maj@16和pass@16平均分别2.23和3.06，不增加推理开销。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30241",
+      "arxiv_id": "2605.30241",
+      "title": "CommunityFact: A Dynamic, Multilingual, Multi-domain Benchmark for Misinformation Detection in the Wild",
+      "url": "https://arxiv.org/abs/2605.30241",
+      "published_at": "2026-05-28T17:09:19Z",
+      "publish_date": "2026-05-28",
+      "description": "Misinformation verification increasingly occurs in public, fast-moving, and multilingual online settings, where static benchmarks provide an incomplete measure of model reliability. We introduce CommunityFact, a refreshable benchmark for misinformation detection in the wild, with three major goals: coverage, granularity, and redistributability. This release contains 15,992 standalone claims across five languages and two domains. We evaluate ten LLMs under varying inference-time capabilities, including thinking and web-search. Our results show that closed-input verification remains challenging, web access yields the largest gains, and web-enabled LLMs' source-selection policies are systematically misaligned with the sources human Community Notes raters converge on -- a gap that closes through model-specific mechanisms of retrieval expansion or pruning. We further find substantial variation across language-domain slices and across the evidence ecosystems used by web-enabled systems. Beyond evaluation, CommunityFact positions Community Notes as a training signal for claim-conditioned source suggesters that could improve factual verification on novel claims.",
+      "summary": "Misinformation verification increasingly occurs in public, fast-moving, and multilingual online settings, where static benchmarks provide an incomplete measure of model reliability. We introduce CommunityFact, a refreshable benchmark for misinformation detection in the wild, with three major goals: coverage, granularity, and redistributability. This release contains 15,992 standalone claims across five languages and two domains. We evaluate ten LLMs under varying inference-time capabilities, including thinking and web-search. Our results show that closed-input verification remains challenging, web access yields the largest gains, and web-enabled LLMs' source-selection policies are systematically misaligned with the sources human Community Notes raters converge on -- a gap that closes through model-specific mechanisms of retrieval expansion or pruning. We further find substantial variation across language-domain slices and across the evidence ecosystems used by web-enabled systems. Beyond evaluation, CommunityFact positions Community Notes as a training signal for claim-conditioned source suggesters that could improve factual verification on novel claims.",
+      "abstract": "Misinformation verification increasingly occurs in public, fast-moving, and multilingual online settings, where static benchmarks provide an incomplete measure of model reliability. We introduce CommunityFact, a refreshable benchmark for misinformation detection in the wild, with three major goals: coverage, granularity, and redistributability. This release contains 15,992 standalone claims across five languages and two domains. We evaluate ten LLMs under varying inference-time capabilities, including thinking and web-search. Our results show that closed-input verification remains challenging, web access yields the largest gains, and web-enabled LLMs' source-selection policies are systematically misaligned with the sources human Community Notes raters converge on -- a gap that closes through model-specific mechanisms of retrieval expansion or pruning. We further find substantial variation across language-domain slices and across the evidence ecosystems used by web-enabled systems. Beyond evaluation, CommunityFact positions Community Notes as a training signal for claim-conditioned source suggesters that could improve factual verification on novel claims.",
+      "categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.CY",
+        "cs.SI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30241",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文提出可刷新的多语言多领域虚假信息检测基准，评估LLM在开放环境下的表现，揭示网络检索带来的最大增益以及来源选择与人类事实核查的对齐问题，并建议用社区笔记训练来源建议器，对开发AI产品中的事实核查工具和Agent工作流有直接启发。基准设计新颖，重视数据重用和动态性，工程上可集成到现有验证流水线，代表近期关注LLM可靠性与检索增强的趋势。",
+        "one_sentence_summary": "本文提出CommunityFact动态多语言多域虚假信息检测基准，包含1.6万条声明，评估10种LLM在有/无网络搜索下的表现，发现网络访问显著改善核实效果但来源选择与社区笔记存在偏差，进而提出利用社区笔记训练来源建议器以改进事实核查。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "论文提出可刷新的多语言多领域虚假信息检测基准，评估LLM在开放环境下的表现，揭示网络检索带来的最大增益以及来源选择与人类事实核查的对齐问题，并建议用社区笔记训练来源建议器，对开发AI产品中的事实核查工具和Agent工作流有直接启发。基准设计新颖，重视数据重用和动态性，工程上可集成到现有验证流水线，代表近期关注LLM可靠性与检索增强的趋势。",
+      "one_sentence_summary": "本文提出CommunityFact动态多语言多域虚假信息检测基准，包含1.6万条声明，评估10种LLM在有/无网络搜索下的表现，发现网络访问显著改善核实效果但来源选择与社区笔记存在偏差，进而提出利用社区笔记训练来源建议器以改进事实核查。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30208",
+      "arxiv_id": "2605.30208",
+      "title": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+      "url": "https://arxiv.org/abs/2605.30208",
+      "published_at": "2026-05-28T16:44:07Z",
+      "publish_date": "2026-05-28",
+      "description": "AI-assisted coding tools have altered software production. At Meta, significant lines of code per human-landed diff grew by 105.9% year over year and per-developer diff volume rose 51%, with agentic AI responsible for over 80% of that growth. Meanwhile, the share of diffs receiving timely review has declined, exposing a widening gap between code supply and reviewer bandwidth. We ask three questions that progress from feasibility through calibration to impact: (1) can risk-stratified automation operate at scale across diverse organizations, (2) how does tuning the risk threshold affect the trade-off between automation yield and safety, and (3) to what extent does automated review reduce end-to-end latency for AI-generated changes? We deployed RADAR (Risk Aware Diff Auto Review), a multi-stage funnel that classifies each diff by authorship and source type, applies eligibility gates, static heuristics, a machine-learned Diff Risk Score, LLM-based Automated Code Review, and deterministic validation before landing qualifying changes. We evaluate RADAR through telemetry covering 535K+ RADAR-reviewed diffs, observational before-after comparisons for policy changes, and difference-in-differences analysis of efficiency outcomes. RADAR has reviewed 535K+ diffs and landed 331K+. Relaxing the Diff Risk Score threshold from the 25th to the 50th percentile increased the approve rate to 60.31%. The revert rate for RADAR-reviewed diffs is 1/3 that of non-RADAR diffs, and the Production Incident rate is 1/50 that of non-RADAR diffs. RADAR reduces median time to close by over 330% and median diff review wall time by 35%. Risk-aware layered automation can materially reduce review bottlenecks created by AI-driven code growth without compromising production safety.",
+      "summary": "AI-assisted coding tools have altered software production. At Meta, significant lines of code per human-landed diff grew by 105.9% year over year and per-developer diff volume rose 51%, with agentic AI responsible for over 80% of that growth. Meanwhile, the share of diffs receiving timely review has declined, exposing a widening gap between code supply and reviewer bandwidth. We ask three questions that progress from feasibility through calibration to impact: (1) can risk-stratified automation operate at scale across diverse organizations, (2) how does tuning the risk threshold affect the trade-off between automation yield and safety, and (3) to what extent does automated review reduce end-to-end latency for AI-generated changes? We deployed RADAR (Risk Aware Diff Auto Review), a multi-stage funnel that classifies each diff by authorship and source type, applies eligibility gates, static heuristics, a machine-learned Diff Risk Score, LLM-based Automated Code Review, and deterministic validation before landing qualifying changes. We evaluate RADAR through telemetry covering 535K+ RADAR-reviewed diffs, observational before-after comparisons for policy changes, and difference-in-differences analysis of efficiency outcomes. RADAR has reviewed 535K+ diffs and landed 331K+. Relaxing the Diff Risk Score threshold from the 25th to the 50th percentile increased the approve rate to 60.31%. The revert rate for RADAR-reviewed diffs is 1/3 that of non-RADAR diffs, and the Production Incident rate is 1/50 that of non-RADAR diffs. RADAR reduces median time to close by over 330% and median diff review wall time by 35%. Risk-aware layered automation can materially reduce review bottlenecks created by AI-driven code growth without compromising production safety.",
+      "abstract": "AI-assisted coding tools have altered software production. At Meta, significant lines of code per human-landed diff grew by 105.9% year over year and per-developer diff volume rose 51%, with agentic AI responsible for over 80% of that growth. Meanwhile, the share of diffs receiving timely review has declined, exposing a widening gap between code supply and reviewer bandwidth. We ask three questions that progress from feasibility through calibration to impact: (1) can risk-stratified automation operate at scale across diverse organizations, (2) how does tuning the risk threshold affect the trade-off between automation yield and safety, and (3) to what extent does automated review reduce end-to-end latency for AI-generated changes? We deployed RADAR (Risk Aware Diff Auto Review), a multi-stage funnel that classifies each diff by authorship and source type, applies eligibility gates, static heuristics, a machine-learned Diff Risk Score, LLM-based Automated Code Review, and deterministic validation before landing qualifying changes. We evaluate RADAR through telemetry covering 535K+ RADAR-reviewed diffs, observational before-after comparisons for policy changes, and difference-in-differences analysis of efficiency outcomes. RADAR has reviewed 535K+ diffs and landed 331K+. Relaxing the Diff Risk Score threshold from the 25th to the 50th percentile increased the approve rate to 60.31%. The revert rate for RADAR-reviewed diffs is 1/3 that of non-RADAR diffs, and the Production Incident rate is 1/50 that of non-RADAR diffs. RADAR reduces median time to close by over 330% and median diff review wall time by 35%. Risk-aware layered automation can materially reduce review bottlenecks created by AI-driven code growth without compromising production safety.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30208",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 25,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Meta部署的RADAR系统通过风险分层和多阶段自动化审查，显著提升审查效率且降低生产事故率，为应对AI代码激增提供了可复制的工程方案。",
+        "one_sentence_summary": "为应对AI辅助编码带来的代码审查瓶颈，Meta部署了RADAR系统，通过作者来源分类、风险评分和LLM审查等多级漏斗自动审核低风险变更，已审查53.5万+个diff并落地33.1万+，将中位关闭时间缩短超330%且生产事故率仅为非自动化审查的1/50，证明了风险感知分层自动化在兼顾安全与效率方面的有效性。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 25,
+        "timeliness_rarity": 22
+      },
+      "score_total": 96,
+      "score_reason": "Meta部署的RADAR系统通过风险分层和多阶段自动化审查，显著提升审查效率且降低生产事故率，为应对AI代码激增提供了可复制的工程方案。",
+      "one_sentence_summary": "为应对AI辅助编码带来的代码审查瓶颈，Meta部署了RADAR系统，通过作者来源分类、风险评分和LLM审查等多级漏斗自动审核低风险变更，已审查53.5万+个diff并落地33.1万+，将中位关闭时间缩短超330%且生产事故率仅为非自动化审查的1/50，证明了风险感知分层自动化在兼顾安全与效率方面的有效性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30190",
+      "arxiv_id": "2605.30190",
+      "title": "Mean-Field Diffuser: Scaling Offline MARL to Thousands of Agents",
+      "url": "https://arxiv.org/abs/2605.30190",
+      "published_at": "2026-05-28T16:32:56Z",
+      "publish_date": "2026-05-28",
+      "description": "Diffusion-based planning has achieved strong results in single-agent offline reinforcement learning, yet scaling to many-agent systems remains intractable due to the curse of dimensionality in the joint trajectory space. We introduce MF-Diffuser, a framework that lifts trajectory planning to the Wasserstein space of trajectory distributions, where the propagation of chaos ensures a small representative subset of agents captures the full population dynamics. Our approach features a value-weighted chaotic entropy objective that reconciles generative fidelity with return maximization, and a hierarchical coarse-to-fine strategy that progressively grows the agent population during denoising. We establish end-to-end suboptimality bounds with four interpretable terms, revealing that mean-field approximation error scales as $O(H^2/\\sqrt{N})$ while offline distribution shift provably does not grow with population size $N$, and prove the generated policy is an approximate mean-field Nash equilibrium with explicit convergence guarantees. Experiments on three mean-field RL benchmarks -- spanning stage games, sequential dynamics, and adversarial team competition -- show MF-Diffuser achieves the best return in the majority of settings, with the largest gains on suboptimal offline data and at extreme scales ($N \\geq 10^3$).",
+      "summary": "Diffusion-based planning has achieved strong results in single-agent offline reinforcement learning, yet scaling to many-agent systems remains intractable due to the curse of dimensionality in the joint trajectory space. We introduce MF-Diffuser, a framework that lifts trajectory planning to the Wasserstein space of trajectory distributions, where the propagation of chaos ensures a small representative subset of agents captures the full population dynamics. Our approach features a value-weighted chaotic entropy objective that reconciles generative fidelity with return maximization, and a hierarchical coarse-to-fine strategy that progressively grows the agent population during denoising. We establish end-to-end suboptimality bounds with four interpretable terms, revealing that mean-field approximation error scales as $O(H^2/\\sqrt{N})$ while offline distribution shift provably does not grow with population size $N$, and prove the generated policy is an approximate mean-field Nash equilibrium with explicit convergence guarantees. Experiments on three mean-field RL benchmarks -- spanning stage games, sequential dynamics, and adversarial team competition -- show MF-Diffuser achieves the best return in the majority of settings, with the largest gains on suboptimal offline data and at extreme scales ($N \\geq 10^3$).",
+      "abstract": "Diffusion-based planning has achieved strong results in single-agent offline reinforcement learning, yet scaling to many-agent systems remains intractable due to the curse of dimensionality in the joint trajectory space. We introduce MF-Diffuser, a framework that lifts trajectory planning to the Wasserstein space of trajectory distributions, where the propagation of chaos ensures a small representative subset of agents captures the full population dynamics. Our approach features a value-weighted chaotic entropy objective that reconciles generative fidelity with return maximization, and a hierarchical coarse-to-fine strategy that progressively grows the agent population during denoising. We establish end-to-end suboptimality bounds with four interpretable terms, revealing that mean-field approximation error scales as $O(H^2/\\sqrt{N})$ while offline distribution shift provably does not grow with population size $N$, and prove the generated policy is an approximate mean-field Nash equilibrium with explicit convergence guarantees. Experiments on three mean-field RL benchmarks -- spanning stage games, sequential dynamics, and adversarial team competition -- show MF-Diffuser achieves the best return in the majority of settings, with the largest gains on suboptimal offline data and at extreme scales ($N \\geq 10^3$).",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30190",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 19,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "MF-Diffuser将扩散规划扩展到数千智能体的离线多智能体强化学习，使用Wasserstein空间轨迹分布和粗到精策略，在极端规模下取得最优回报，且离线分布漂移不随群体规模增长。该方法对大规模多智能体系统控制有潜在应用价值，但直接转为AI产品或Agent工作流仍有一定距离；新信号体现在将平均场理论与扩散规划结合；工程上提供了可复现的算法和理论保证；代表了多智能体RL与大模型结合的前沿方向。",
+        "one_sentence_summary": "MF-Diffuser提出一种平均场扩散规划框架，将多智能体离线RL扩展到数千个智能体，通过Wasserstein空间轨迹分布、混沌传播和层级去噪策略，实现了在多数基准上的最佳回报，尤其擅长次优数据和超大规模场景。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 21
+      },
+      "score_total": 78,
+      "score_reason": "MF-Diffuser将扩散规划扩展到数千智能体的离线多智能体强化学习，使用Wasserstein空间轨迹分布和粗到精策略，在极端规模下取得最优回报，且离线分布漂移不随群体规模增长。该方法对大规模多智能体系统控制有潜在应用价值，但直接转为AI产品或Agent工作流仍有一定距离；新信号体现在将平均场理论与扩散规划结合；工程上提供了可复现的算法和理论保证；代表了多智能体RL与大模型结合的前沿方向。",
+      "one_sentence_summary": "MF-Diffuser提出一种平均场扩散规划框架，将多智能体离线RL扩展到数千个智能体，通过Wasserstein空间轨迹分布、混沌传播和层级去噪策略，实现了在多数基准上的最佳回报，尤其擅长次优数据和超大规模场景。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30188",
+      "arxiv_id": "2605.30188",
+      "title": "CalArena: A Large-Scale Post-Hoc Calibration Benchmark",
+      "url": "https://arxiv.org/abs/2605.30188",
+      "published_at": "2026-05-28T16:31:36Z",
+      "publish_date": "2026-05-28",
+      "description": "Reliable probability estimates are critical in many machine learning applications, yet modern classifiers are often poorly calibrated. Post-hoc calibration provides a simple and widely used solution, but the large number of proposed methods, combined with small-scale and inconsistent evaluations, makes it difficult to determine which approaches are truly effective in practice. We introduce a large-scale, standardized benchmark for post-hoc calibration, covering nearly 2000 experiments across tabular and computer vision tasks, including binary, multiclass, and large-scale classification settings. Our benchmark aggregates predictions from a diverse set of classical models, modern deep learning architectures, and foundation models, and provides unified, reproducible implementations of dozens of calibration methods within a common evaluation framework. We argue that Post-Hoc Improvement (PHI) in proper scoring rules offers a principled alternative to traditional calibration error estimators for comparing post-hoc methods, capturing both calibration quality and potential degradation to the model's predictive performance. Using this framework, we conduct the most comprehensive empirical study of post-hoc calibration to date. Our results reveal consistent patterns across domains: smooth calibration functions outperform binning-based approaches, dedicated multiclass methods are essential in high-dimensional settings, and generic machine learning models are not competitive without calibration-specific design. To facilitate future research, we release all data, code, and evaluation tools, providing a plug-and-play benchmark for developing and comparing calibration methods.",
+      "summary": "Reliable probability estimates are critical in many machine learning applications, yet modern classifiers are often poorly calibrated. Post-hoc calibration provides a simple and widely used solution, but the large number of proposed methods, combined with small-scale and inconsistent evaluations, makes it difficult to determine which approaches are truly effective in practice. We introduce a large-scale, standardized benchmark for post-hoc calibration, covering nearly 2000 experiments across tabular and computer vision tasks, including binary, multiclass, and large-scale classification settings. Our benchmark aggregates predictions from a diverse set of classical models, modern deep learning architectures, and foundation models, and provides unified, reproducible implementations of dozens of calibration methods within a common evaluation framework. We argue that Post-Hoc Improvement (PHI) in proper scoring rules offers a principled alternative to traditional calibration error estimators for comparing post-hoc methods, capturing both calibration quality and potential degradation to the model's predictive performance. Using this framework, we conduct the most comprehensive empirical study of post-hoc calibration to date. Our results reveal consistent patterns across domains: smooth calibration functions outperform binning-based approaches, dedicated multiclass methods are essential in high-dimensional settings, and generic machine learning models are not competitive without calibration-specific design. To facilitate future research, we release all data, code, and evaluation tools, providing a plug-and-play benchmark for developing and comparing calibration methods.",
+      "abstract": "Reliable probability estimates are critical in many machine learning applications, yet modern classifiers are often poorly calibrated. Post-hoc calibration provides a simple and widely used solution, but the large number of proposed methods, combined with small-scale and inconsistent evaluations, makes it difficult to determine which approaches are truly effective in practice. We introduce a large-scale, standardized benchmark for post-hoc calibration, covering nearly 2000 experiments across tabular and computer vision tasks, including binary, multiclass, and large-scale classification settings. Our benchmark aggregates predictions from a diverse set of classical models, modern deep learning architectures, and foundation models, and provides unified, reproducible implementations of dozens of calibration methods within a common evaluation framework. We argue that Post-Hoc Improvement (PHI) in proper scoring rules offers a principled alternative to traditional calibration error estimators for comparing post-hoc methods, capturing both calibration quality and potential degradation to the model's predictive performance. Using this framework, we conduct the most comprehensive empirical study of post-hoc calibration to date. Our results reveal consistent patterns across domains: smooth calibration functions outperform binning-based approaches, dedicated multiclass methods are essential in high-dimensional settings, and generic machine learning models are not competitive without calibration-specific design. To facilitate future research, we release all data, code, and evaluation tools, providing a plug-and-play benchmark for developing and comparing calibration methods.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30188",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 23,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "CalArena提供了一个大规模、标准化的后验校准基准，覆盖近2000组实验、多种任务类型和数十种校准方法，并提出基于严格评分规则的PHI指标替代传统校准误差。对提升ML系统可靠性、开发者工具建设具有直接指导意义，统一框架和开源工具鼓励复用，虽然校准不是全新问题，但如此全面的基准和评估在当前LLM广泛应用时非常应景，代表评估实践的新趋势。",
+        "one_sentence_summary": "CalArena构建了包含近2000个实验的后验校准基准，涵盖表格和视觉任务及数十种校准方法，提出用后验提升指标代替传统校准误差，发现平滑函数优于分箱方法，专用多类方法在高维情景下关键，通用ML模型若无校准设计则缺乏竞争力。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 23,
+        "timeliness_rarity": 19
+      },
+      "score_total": 87,
+      "score_reason": "CalArena提供了一个大规模、标准化的后验校准基准，覆盖近2000组实验、多种任务类型和数十种校准方法，并提出基于严格评分规则的PHI指标替代传统校准误差。对提升ML系统可靠性、开发者工具建设具有直接指导意义，统一框架和开源工具鼓励复用，虽然校准不是全新问题，但如此全面的基准和评估在当前LLM广泛应用时非常应景，代表评估实践的新趋势。",
+      "one_sentence_summary": "CalArena构建了包含近2000个实验的后验校准基准，涵盖表格和视觉任务及数十种校准方法，提出用后验提升指标代替传统校准误差，发现平滑函数优于分箱方法，专用多类方法在高维情景下关键，通用ML模型若无校准设计则缺乏竞争力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-30T05:12:47.532713+00:00",
+      "pushed_at": "2026-05-30T05:12:47.532713+00:00",
+      "source_run_id": "2026-05-30",
+      "pushed_run_id": "2026-05-30"
     }
   ]
 }
