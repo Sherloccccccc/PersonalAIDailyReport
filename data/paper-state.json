@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-30T05:12:47.532713+00:00",
+  "updated_at": "2026-05-31T05:57:52.128128+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -11654,11 +11654,11 @@
       "score_reason": "FoundObj利用自监督基础模型作为奖励信号，实现无标注3D对象分割的新范式，代理式发现框架新颖，方法具可复现性并展现零样本泛化，适应无监督3D理解的前沿需求。",
       "one_sentence_summary": "FoundObj提出一种无标注3D对象分割框架，基于超点的发现代理通过强化学习逐步合并邻近超点，利用自监督2D/3D基础模型的语义和几何奖励引导，在多个基准上超越现有方法，并展示零样本和长尾强泛化能力。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-27T05:55:35.727988+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
       "source_run_id": "2026-05-27",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-31"
     },
     {
       "id": "arxiv:2605.27156",
@@ -13084,11 +13084,11 @@
       "score_reason": "创新动力学感知预训练，通过图像-语言-3D流三元组最小化单纯形体体积，使编码器关注控制相关区域；可复用作视觉骨干，在多种策略下提升分布外泛化；契合机器人操作对动态理解的需求。",
       "one_sentence_summary": "DynaFLIP提出动力学感知的多模态预训练框架，通过图像-语言-3D流三元组最小化超球面单纯形体体积，使视觉编码器关注控制相关区域，在多种机器人操作任务中提升分布外泛化达22.5%。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-31"
     },
     {
       "id": "arxiv:2605.30345",
@@ -13301,20 +13301,31 @@
       "feed_title": "cs.AI updates on arXiv.org",
       "source": "arxiv_api",
       "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 10,
-        "engineering_utility": 14,
-        "timeliness_rarity": 19
+        "application_relevance": 23,
+        "new_signal": 21,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
       },
-      "score_total": 63,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文训练或微调模型，面向偏好学习、模型对齐或社会价值评测；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
-      "score_source": "rules",
-      "if_pushed": 0,
+      "score_total": 87,
+      "score_reason": "Loong presents an agentic translation system with adaptive context selection and open-source code, significantly improving long document translation and demonstrating robustness.",
+      "one_sentence_summary": "Loong是一个长文档翻译智能体，通过3E记忆模块存储摘要、范例和实体，并利用强化学习从自身采样轨迹中学习自适应选择最优上下文，在英中德法等翻译方向上平均提升13.0分，且对超长文档和领域迁移鲁棒。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-31",
+      "ai_score": {
+        "id": "arxiv:2605.30274",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 21,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "Loong presents an agentic translation system with adaptive context selection and open-source code, significantly improving long document translation and demonstrating robustness.",
+        "one_sentence_summary": "Loong是一个长文档翻译智能体，通过3E记忆模块存储摘要、范例和实体，并利用强化学习从自身采样轨迹中学习自适应选择最优上下文，在英中德法等翻译方向上平均提升13.0分，且对超长文档和领域迁移鲁棒。"
+      }
     },
     {
       "id": "arxiv:2605.30273",
@@ -13604,11 +13615,11 @@
       "score_reason": "论文提出可刷新的多语言多领域虚假信息检测基准，评估LLM在开放环境下的表现，揭示网络检索带来的最大增益以及来源选择与人类事实核查的对齐问题，并建议用社区笔记训练来源建议器，对开发AI产品中的事实核查工具和Agent工作流有直接启发。基准设计新颖，重视数据重用和动态性，工程上可集成到现有验证流水线，代表近期关注LLM可靠性与检索增强的趋势。",
       "one_sentence_summary": "本文提出CommunityFact动态多语言多域虚假信息检测基准，包含1.6万条声明，评估10种LLM在有/无网络搜索下的表现，发现网络访问显著改善核实效果但来源选择与社区笔记存在偏差，进而提出利用社区笔记训练来源建议器以改进事实核查。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-05-31"
     },
     {
       "id": "arxiv:2605.30208",
@@ -13750,6 +13761,429 @@
       "pushed_at": "2026-05-30T05:12:47.532713+00:00",
       "source_run_id": "2026-05-30",
       "pushed_run_id": "2026-05-30"
+    },
+    {
+      "id": "arxiv:2605.30348",
+      "arxiv_id": "2605.30348",
+      "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+      "url": "https://arxiv.org/abs/2605.30348",
+      "published_at": "2026-05-28T17:59:53Z",
+      "publish_date": "2026-05-28",
+      "description": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+      "summary": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+      "abstract": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30348",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "Introduces a post-hoc auditing method for inferring data mixture from LLM outputs, useful for transparency but less directly tied to product features.",
+        "one_sentence_summary": "本文提出LLMSurgeon框架，通过估计软混淆矩阵并求解约束逆问题，仅凭大模型生成文本即可推断其预训练数据领域分布，为模型数据混合的事后审计提供了实用方法。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 78,
+      "score_reason": "Introduces a post-hoc auditing method for inferring data mixture from LLM outputs, useful for transparency but less directly tied to product features.",
+      "one_sentence_summary": "本文提出LLMSurgeon框架，通过估计软混淆矩阵并求解约束逆问题，仅凭大模型生成文本即可推断其预训练数据领域分布，为模型数据混合的事后审计提供了实用方法。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30343",
+      "arxiv_id": "2605.30343",
+      "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
+      "url": "https://arxiv.org/abs/2605.30343",
+      "published_at": "2026-05-28T17:59:49Z",
+      "publish_date": "2026-05-28",
+      "description": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to autoregressive generation and thereby conflates internal computation with external communication. In contrast, human cognition can use working memory to hold and manipulate information internally without the need to externalize intermediate thoughts. Drawing on this principle, we introduce Reasoning in Memory (RiM), a latent reasoning method that replaces the autoregressive generation of reasoning steps with memory blocks. These memory blocks are fixed sequences of special tokens that unlock the working-memory capacity of large language models. Since they are fixed rather than generated, they can be processed in a single forward pass, enabling compute-efficient latent reasoning. To operationalize these memory blocks, we employ a two-stage curriculum. First, we ground them by predicting explicit reasoning steps after each memory block. Second, we discard this step-level supervision and iteratively refine the final answer after each memory block. Our experiments on reasoning benchmarks show that, across language models of different families and sizes, RiM matches or exceeds existing latent reasoning methods while avoiding the autoregressive generation of thoughts. These results demonstrate that large language models can be trained to use working memory as an effective mechanism for latent reasoning.",
+      "summary": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to autoregressive generation and thereby conflates internal computation with external communication. In contrast, human cognition can use working memory to hold and manipulate information internally without the need to externalize intermediate thoughts. Drawing on this principle, we introduce Reasoning in Memory (RiM), a latent reasoning method that replaces the autoregressive generation of reasoning steps with memory blocks. These memory blocks are fixed sequences of special tokens that unlock the working-memory capacity of large language models. Since they are fixed rather than generated, they can be processed in a single forward pass, enabling compute-efficient latent reasoning. To operationalize these memory blocks, we employ a two-stage curriculum. First, we ground them by predicting explicit reasoning steps after each memory block. Second, we discard this step-level supervision and iteratively refine the final answer after each memory block. Our experiments on reasoning benchmarks show that, across language models of different families and sizes, RiM matches or exceeds existing latent reasoning methods while avoiding the autoregressive generation of thoughts. These results demonstrate that large language models can be trained to use working memory as an effective mechanism for latent reasoning.",
+      "abstract": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to autoregressive generation and thereby conflates internal computation with external communication. In contrast, human cognition can use working memory to hold and manipulate information internally without the need to externalize intermediate thoughts. Drawing on this principle, we introduce Reasoning in Memory (RiM), a latent reasoning method that replaces the autoregressive generation of reasoning steps with memory blocks. These memory blocks are fixed sequences of special tokens that unlock the working-memory capacity of large language models. Since they are fixed rather than generated, they can be processed in a single forward pass, enabling compute-efficient latent reasoning. To operationalize these memory blocks, we employ a two-stage curriculum. First, we ground them by predicting explicit reasoning steps after each memory block. Second, we discard this step-level supervision and iteratively refine the final answer after each memory block. Our experiments on reasoning benchmarks show that, across language models of different families and sizes, RiM matches or exceeds existing latent reasoning methods while avoiding the autoregressive generation of thoughts. These results demonstrate that large language models can be trained to use working memory as an effective mechanism for latent reasoning.",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30343",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 23,
+          "engineering_utility": 21,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Proposes a latent reasoning method using fixed memory blocks instead of autoregressive thought generation, enhancing efficiency with competitive performance.",
+        "one_sentence_summary": "该文提出名为RiM的潜在推理方法，用固定的记忆块序列替代中间推理词的自回归生成，通过两阶段课程训练，使大模型在单次前向传播中实现高效推理，性能匹配甚至超越现有方法。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 23,
+        "engineering_utility": 21,
+        "timeliness_rarity": 22
+      },
+      "score_total": 89,
+      "score_reason": "Proposes a latent reasoning method using fixed memory blocks instead of autoregressive thought generation, enhancing efficiency with competitive performance.",
+      "one_sentence_summary": "该文提出名为RiM的潜在推理方法，用固定的记忆块序列替代中间推理词的自回归生成，通过两阶段课程训练，使大模型在单次前向传播中实现高效推理，性能匹配甚至超越现有方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30337",
+      "arxiv_id": "2605.30337",
+      "title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "url": "https://arxiv.org/abs/2605.30337",
+      "published_at": "2026-05-28T17:59:01Z",
+      "publish_date": "2026-05-28",
+      "description": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a geometric approach to TTFT that addresses both bottlenecks. Given a query, HullFT first represents the query embedding as a sparse convex combination of few training sequences, using efficient projection-free Frank-Wolfe optimization. This yields a support set that is inherently relevant and diverse. We then convert the fractional convex weights into an exact integer multiset for finetuning through a geometric integerization procedure. The resulting multiplicities naturally create repeated examples, which we exploit with Gradient Reuse to amortize forward-backward computation across repeated finetuning steps. Our experiments show that HullFT improves the quality-efficiency tradeoff over current state-of-the-art TTFT methods, achieving lower bits-per-byte at substantially lower total runtime.",
+      "summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a geometric approach to TTFT that addresses both bottlenecks. Given a query, HullFT first represents the query embedding as a sparse convex combination of few training sequences, using efficient projection-free Frank-Wolfe optimization. This yields a support set that is inherently relevant and diverse. We then convert the fractional convex weights into an exact integer multiset for finetuning through a geometric integerization procedure. The resulting multiplicities naturally create repeated examples, which we exploit with Gradient Reuse to amortize forward-backward computation across repeated finetuning steps. Our experiments show that HullFT improves the quality-efficiency tradeoff over current state-of-the-art TTFT methods, achieving lower bits-per-byte at substantially lower total runtime.",
+      "abstract": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a geometric approach to TTFT that addresses both bottlenecks. Given a query, HullFT first represents the query embedding as a sparse convex combination of few training sequences, using efficient projection-free Frank-Wolfe optimization. This yields a support set that is inherently relevant and diverse. We then convert the fractional convex weights into an exact integer multiset for finetuning through a geometric integerization procedure. The resulting multiplicities naturally create repeated examples, which we exploit with Gradient Reuse to amortize forward-backward computation across repeated finetuning steps. Our experiments show that HullFT improves the quality-efficiency tradeoff over current state-of-the-art TTFT methods, achieving lower bits-per-byte at substantially lower total runtime.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30337",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "针对测试时微调的速度瓶颈，提出几何优化与梯度复用方法，显著提升效率，可立即用于推理服务优化，对开发者体验改善直接。",
+        "one_sentence_summary": "HullFT 采用凸重建将查询嵌入表示为少数训练样本的稀疏组合并进行整数化，利用梯度复用加速重复样本的微调，实验表明在更短总运行时间内获得更低的 bits-per-byte。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 18
+      },
+      "score_total": 83,
+      "score_reason": "针对测试时微调的速度瓶颈，提出几何优化与梯度复用方法，显著提升效率，可立即用于推理服务优化，对开发者体验改善直接。",
+      "one_sentence_summary": "HullFT 采用凸重建将查询嵌入表示为少数训练样本的稀疏组合并进行整数化，利用梯度复用加速重复样本的微调，实验表明在更短总运行时间内获得更低的 bits-per-byte。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30335",
+      "arxiv_id": "2605.30335",
+      "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
+      "url": "https://arxiv.org/abs/2605.30335",
+      "published_at": "2026-05-28T17:58:55Z",
+      "publish_date": "2026-05-28",
+      "description": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is locally coherent. We formalise this locally coherent, globally incoherent failure via the compositional residual eps*, the L2 distance from the composed quote to the joint coherent polytope, computable at runtime from system output and the declared cross-component coupling constraints. A product-structure dichotomy characterises when local coherence suffices, and a Rayleigh-quotient prediction matches the observed residual within 7% on three of four relation classes. A hierarchical Boyle-Dykstra projection repairs the composition deterministically; an anytime-valid e-process gives sequential coherence monitoring. Across 1,876 ensemble cliques on a four-LLM mid-tier panel (frontier-panel rerun in Section 5.5), eps* > 0 on 33-94% of cliques, translating to +0.115 nats per bet of regret on 1,770 resolved bets under the proportional allocation rule (the gain collapses to +0.006 under bettors that themselves coherentise). Three intuitive LLM-side mitigations(retrieval, partition-aware prompting, aggregator-LLM) each fail or regress.",
+      "summary": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is locally coherent. We formalise this locally coherent, globally incoherent failure via the compositional residual eps*, the L2 distance from the composed quote to the joint coherent polytope, computable at runtime from system output and the declared cross-component coupling constraints. A product-structure dichotomy characterises when local coherence suffices, and a Rayleigh-quotient prediction matches the observed residual within 7% on three of four relation classes. A hierarchical Boyle-Dykstra projection repairs the composition deterministically; an anytime-valid e-process gives sequential coherence monitoring. Across 1,876 ensemble cliques on a four-LLM mid-tier panel (frontier-panel rerun in Section 5.5), eps* > 0 on 33-94% of cliques, translating to +0.115 nats per bet of regret on 1,770 resolved bets under the proportional allocation rule (the gain collapses to +0.006 under bettors that themselves coherentise). Three intuitive LLM-side mitigations(retrieval, partition-aware prompting, aggregator-LLM) each fail or regress.",
+      "abstract": "Multi-component LLM agents assemble probabilistic claims from components that each see only part of a joint problem; the composition can violate basic probability axioms even when every component is locally coherent. We formalise this locally coherent, globally incoherent failure via the compositional residual eps*, the L2 distance from the composed quote to the joint coherent polytope, computable at runtime from system output and the declared cross-component coupling constraints. A product-structure dichotomy characterises when local coherence suffices, and a Rayleigh-quotient prediction matches the observed residual within 7% on three of four relation classes. A hierarchical Boyle-Dykstra projection repairs the composition deterministically; an anytime-valid e-process gives sequential coherence monitoring. Across 1,876 ensemble cliques on a four-LLM mid-tier panel (frontier-panel rerun in Section 5.5), eps* > 0 on 33-94% of cliques, translating to +0.115 nats per bet of regret on 1,770 resolved bets under the proportional allocation rule (the gain collapses to +0.006 under bettors that themselves coherentise). Three intuitive LLM-side mitigations(retrieval, partition-aware prompting, aggregator-LLM) each fail or regress.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30335",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "该论文直接针对多组件LLM智能体的全局不一致问题，提出运行时检测和修复方法，对构建可靠智能体产品有实际工程价值，方法可实现性强，符合当前智能体可靠性热点方向。",
+        "one_sentence_summary": "该论文针对多组件LLM智能体中各组件局部一致但全局不一致问题，通过组合残差ε*的L2距离量化不一致程度，利用层次Boyle-Dykstra投影确定性修复组合，并提供随时有效的e-过程进行序贯监控；实验在多个模型集成团上检测到高比例不一致，证明了方法的必要性。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "该论文直接针对多组件LLM智能体的全局不一致问题，提出运行时检测和修复方法，对构建可靠智能体产品有实际工程价值，方法可实现性强，符合当前智能体可靠性热点方向。",
+      "one_sentence_summary": "该论文针对多组件LLM智能体中各组件局部一致但全局不一致问题，通过组合残差ε*的L2距离量化不一致程度，利用层次Boyle-Dykstra投影确定性修复组合，并提供随时有效的e-过程进行序贯监控；实验在多个模型集成团上检测到高比例不一致，证明了方法的必要性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30323",
+      "arxiv_id": "2605.30323",
+      "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+      "url": "https://arxiv.org/abs/2605.30323",
+      "published_at": "2026-05-28T17:56:54Z",
+      "publish_date": "2026-05-28",
+      "description": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+      "summary": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+      "abstract": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30323",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该研究提出基于上下文学习的奖励自适应方法，利用人类响应时间作为辅助信号，实现即时的偏好建模，无需重新训练，对开发个性化AI产品有直接启发，方法可集成到现有RLHF流程中，契合当前对齐与个性化趋势。",
+        "one_sentence_summary": "该论文提出In-Context Reward Adaptation框架，利用Transformer的上下文学习能力从少量偏好示例中在线推断奖励结构，并通过引入人类响应时间作为辅助信号克服渐进偏差，实现稳健的未见偏好建模；实验显示该方法能缓解分布偏移脆弱性，为灵活AI对齐提供扩展路径。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 22
+      },
+      "score_total": 88,
+      "score_reason": "该研究提出基于上下文学习的奖励自适应方法，利用人类响应时间作为辅助信号，实现即时的偏好建模，无需重新训练，对开发个性化AI产品有直接启发，方法可集成到现有RLHF流程中，契合当前对齐与个性化趋势。",
+      "one_sentence_summary": "该论文提出In-Context Reward Adaptation框架，利用Transformer的上下文学习能力从少量偏好示例中在线推断奖励结构，并通过引入人类响应时间作为辅助信号克服渐进偏差，实现稳健的未见偏好建模；实验显示该方法能缓解分布偏移脆弱性，为灵活AI对齐提供扩展路径。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30277",
+      "arxiv_id": "2605.30277",
+      "title": "Neural Operator-Based Surrogate Model for CFD:Helical Coil Steam Generator in Small Modular Reactor",
+      "url": "https://arxiv.org/abs/2605.30277",
+      "published_at": "2026-05-28T17:33:22Z",
+      "publish_date": "2026-05-28",
+      "description": "Real-time thermal-hydraulic simulation is essential for digital twin (DT) technology that supports the safe and efficient operation of small modular reactors (SMRs). Computational fluid dynamics (CFD) provides high-fidelity flow analysis, but its computational cost prevents direct use in DT applications. AI-based surrogate modeling has been actively investigated to address this limitation, yet neural operator--based surrogates for CFD-level transient analysis of SMR-specific geometries have not been reported. This study presents an integrated framework that combines a reduced-order model (ROM) with neural operators, applied to the helical coil steam generator (HCSG) of the System-integrated Modular Advanced Reactor (SMART). Two ROM strategies tailored to each CFD data type were compared, an MLP-based autoencoder (AE) for unstructured mesh data and a convolutional autoencoder (CAE) for structured mesh data, and each was coupled with the deep operator network (DeepONet) to construct the latent DeepONet (L-DeepONet). The Fourier neural operator (FNO) was additionally adopted for comparison. A multi-scale technique was incorporated into both frameworks to mitigate spectral bias and improve the prediction of Kármán vortex streets developing inside the HCSG. The multi-scale L-DeepONet captured the instantaneous periodic vortex dynamics in both velocity and pressure fields, while the FNO and its multi-scale variant predicted the time-averaged mean flow and provided reliable pressure drop estimates. These complementary characteristics provide a practical model-selection guideline that links each architecture to specific DT objectives based on CFD data type and the required level of flow resolution.",
+      "summary": "Real-time thermal-hydraulic simulation is essential for digital twin (DT) technology that supports the safe and efficient operation of small modular reactors (SMRs). Computational fluid dynamics (CFD) provides high-fidelity flow analysis, but its computational cost prevents direct use in DT applications. AI-based surrogate modeling has been actively investigated to address this limitation, yet neural operator--based surrogates for CFD-level transient analysis of SMR-specific geometries have not been reported. This study presents an integrated framework that combines a reduced-order model (ROM) with neural operators, applied to the helical coil steam generator (HCSG) of the System-integrated Modular Advanced Reactor (SMART). Two ROM strategies tailored to each CFD data type were compared, an MLP-based autoencoder (AE) for unstructured mesh data and a convolutional autoencoder (CAE) for structured mesh data, and each was coupled with the deep operator network (DeepONet) to construct the latent DeepONet (L-DeepONet). The Fourier neural operator (FNO) was additionally adopted for comparison. A multi-scale technique was incorporated into both frameworks to mitigate spectral bias and improve the prediction of Kármán vortex streets developing inside the HCSG. The multi-scale L-DeepONet captured the instantaneous periodic vortex dynamics in both velocity and pressure fields, while the FNO and its multi-scale variant predicted the time-averaged mean flow and provided reliable pressure drop estimates. These complementary characteristics provide a practical model-selection guideline that links each architecture to specific DT objectives based on CFD data type and the required level of flow resolution.",
+      "abstract": "Real-time thermal-hydraulic simulation is essential for digital twin (DT) technology that supports the safe and efficient operation of small modular reactors (SMRs). Computational fluid dynamics (CFD) provides high-fidelity flow analysis, but its computational cost prevents direct use in DT applications. AI-based surrogate modeling has been actively investigated to address this limitation, yet neural operator--based surrogates for CFD-level transient analysis of SMR-specific geometries have not been reported. This study presents an integrated framework that combines a reduced-order model (ROM) with neural operators, applied to the helical coil steam generator (HCSG) of the System-integrated Modular Advanced Reactor (SMART). Two ROM strategies tailored to each CFD data type were compared, an MLP-based autoencoder (AE) for unstructured mesh data and a convolutional autoencoder (CAE) for structured mesh data, and each was coupled with the deep operator network (DeepONet) to construct the latent DeepONet (L-DeepONet). The Fourier neural operator (FNO) was additionally adopted for comparison. A multi-scale technique was incorporated into both frameworks to mitigate spectral bias and improve the prediction of Kármán vortex streets developing inside the HCSG. The multi-scale L-DeepONet captured the instantaneous periodic vortex dynamics in both velocity and pressure fields, while the FNO and its multi-scale variant predicted the time-averaged mean flow and provided reliable pressure drop estimates. These complementary characteristics provide a practical model-selection guideline that links each architecture to specific DT objectives based on CFD data type and the required level of flow resolution.",
+      "categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30277",
+        "score_detail": {
+          "application_relevance": 12,
+          "new_signal": 18,
+          "engineering_utility": 15,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "首次将神经算子代理模型用于特定核反应堆 CFD 瞬态仿真，为工业数字孪生提供架构比较和选择指导，但应用领域较窄。",
+        "one_sentence_summary": "该研究针对 SMR 螺旋线圈蒸汽发生器的 CFD 仿真，提出结合降阶模型与神经网络算子的代理框架，比较了 L-DeepONet 与 FNO 在瞬态与平均流预测上的表现，为数字孪生应用提供了模型选择依据。"
+      },
+      "score_detail": {
+        "application_relevance": 12,
+        "new_signal": 18,
+        "engineering_utility": 15,
+        "timeliness_rarity": 16
+      },
+      "score_total": 61,
+      "score_reason": "首次将神经算子代理模型用于特定核反应堆 CFD 瞬态仿真，为工业数字孪生提供架构比较和选择指导，但应用领域较窄。",
+      "one_sentence_summary": "该研究针对 SMR 螺旋线圈蒸汽发生器的 CFD 仿真，提出结合降阶模型与神经网络算子的代理框架，比较了 L-DeepONet 与 FNO 在瞬态与平均流预测上的表现，为数字孪生应用提供了模型选择依据。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.30219",
+      "arxiv_id": "2605.30219",
+      "title": "When Should Models Change Their Minds? Contextual Belief Management in Large Language Models",
+      "url": "https://arxiv.org/abs/2605.30219",
+      "published_at": "2026-05-28T16:52:04Z",
+      "publish_date": "2026-05-28",
+      "description": "Long-horizon interactions require language models to manage accumulating information: when to update their state, when to preserve their state, and what to ignore. We study this challenge as \\textbf{Contextual Belief Management (CBM)}: maintaining a predicted belief state aligned with formal evidence while isolating task-irrelevant noise. To make CBM measurable, we introduce BeliefTrack, a closed-world benchmark spanning Rule Discovery and Circuit Diagnosis, where a finite belief space and symbolic verifiers enable exact turn-level evaluation. BeliefTrack diagnoses three failures: Failed Stay, Failed Update, and Failed Isolation. Across multiple LLMs, vanilla models exhibit severe CBM failures, while explicit belief-tracking prompts provide limited gains. In contrast, reinforcement learning with belief-state rewards reduces failure rates by 70.9\\% on average. Further probing reveals latent belief-state dynamics behind these failures, and representation-level steering reduces failure rates by 46.1\\% across two tasks\\footnote{Code is coming soon at https://github.com/zjunlp/CBM.",
+      "summary": "Long-horizon interactions require language models to manage accumulating information: when to update their state, when to preserve their state, and what to ignore. We study this challenge as \\textbf{Contextual Belief Management (CBM)}: maintaining a predicted belief state aligned with formal evidence while isolating task-irrelevant noise. To make CBM measurable, we introduce BeliefTrack, a closed-world benchmark spanning Rule Discovery and Circuit Diagnosis, where a finite belief space and symbolic verifiers enable exact turn-level evaluation. BeliefTrack diagnoses three failures: Failed Stay, Failed Update, and Failed Isolation. Across multiple LLMs, vanilla models exhibit severe CBM failures, while explicit belief-tracking prompts provide limited gains. In contrast, reinforcement learning with belief-state rewards reduces failure rates by 70.9\\% on average. Further probing reveals latent belief-state dynamics behind these failures, and representation-level steering reduces failure rates by 46.1\\% across two tasks\\footnote{Code is coming soon at https://github.com/zjunlp/CBM.",
+      "abstract": "Long-horizon interactions require language models to manage accumulating information: when to update their state, when to preserve their state, and what to ignore. We study this challenge as \\textbf{Contextual Belief Management (CBM)}: maintaining a predicted belief state aligned with formal evidence while isolating task-irrelevant noise. To make CBM measurable, we introduce BeliefTrack, a closed-world benchmark spanning Rule Discovery and Circuit Diagnosis, where a finite belief space and symbolic verifiers enable exact turn-level evaluation. BeliefTrack diagnoses three failures: Failed Stay, Failed Update, and Failed Isolation. Across multiple LLMs, vanilla models exhibit severe CBM failures, while explicit belief-tracking prompts provide limited gains. In contrast, reinforcement learning with belief-state rewards reduces failure rates by 70.9\\% on average. Further probing reveals latent belief-state dynamics behind these failures, and representation-level steering reduces failure rates by 46.1\\% across two tasks\\footnote{Code is coming soon at https://github.com/zjunlp/CBM.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30219",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "Addresses belief updating in LLM agents with a new benchmark and RL-based method, offering practical insights for long-horizon interactions.",
+        "one_sentence_summary": "本文针对大模型在持续交互中何时更新、维持或忽略信念的问题，提出上下文信念管理框架与BeliefTrack基准，通过强化学习训练显著降低信念管理失败率，并揭示表征层面的潜在动态。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "Addresses belief updating in LLM agents with a new benchmark and RL-based method, offering practical insights for long-horizon interactions.",
+      "one_sentence_summary": "本文针对大模型在持续交互中何时更新、维持或忽略信念的问题，提出上下文信念管理框架与BeliefTrack基准，通过强化学习训练显著降低信念管理失败率，并揭示表征层面的潜在动态。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30218",
+      "arxiv_id": "2605.30218",
+      "title": "MarginGate: Sparse Margin-Triggered Verification for Batch-Invariant LLM Inference",
+      "url": "https://arxiv.org/abs/2605.30218",
+      "published_at": "2026-05-28T16:50:19Z",
+      "publish_date": "2026-05-28",
+      "description": "Temperature-zero BF16 LLM inference is often treated as reproducible, yet the same request can emit different tokens when decoded alone or inside a larger batch. Existing fixes use batch-invariant operators or LLM-42's per-token verification, incurring cost even when most steps are stable. We ask whether verification can be applied exclusively to flipped tokens. Across five models, batch-induced token flips are sparse on the flip-rate benchmarks: on MATH500, Llama-3.1-8B flips on $0.48\\%$ of synchronous decode steps, and all tested models stay within the 0.3-1.3% range on MATH500, GSM8K, and HumanEval. K/V perturbations remain flat before flips, while low top-1/top-2 logit margins expose much of the flip risk. MarginGate turns these observations into a verifier policy: it keeps BF16 decoding on high-margin steps, verifies only low-margin steps, and repairs confirmed mismatches by replacing the current K/V column. We evaluate on four datasets, calibrating on MATH500 and transferring to GSM8K, SharedGPT, and HumanEval. MarginGate restores 100% sequence-level deterministic decoding on Llama-3.1-8B and Qwen2.5-14B with 18.56%/15.05% verifier trigger rates, reducing LLM-42's latency increment by 2.23x/1.99x relative to always-on verification. On DSR1-Distill-Qwen-7B, the same policy reaches determinism in a harder regime at 49.50% triggers.",
+      "summary": "Temperature-zero BF16 LLM inference is often treated as reproducible, yet the same request can emit different tokens when decoded alone or inside a larger batch. Existing fixes use batch-invariant operators or LLM-42's per-token verification, incurring cost even when most steps are stable. We ask whether verification can be applied exclusively to flipped tokens. Across five models, batch-induced token flips are sparse on the flip-rate benchmarks: on MATH500, Llama-3.1-8B flips on $0.48\\%$ of synchronous decode steps, and all tested models stay within the 0.3-1.3% range on MATH500, GSM8K, and HumanEval. K/V perturbations remain flat before flips, while low top-1/top-2 logit margins expose much of the flip risk. MarginGate turns these observations into a verifier policy: it keeps BF16 decoding on high-margin steps, verifies only low-margin steps, and repairs confirmed mismatches by replacing the current K/V column. We evaluate on four datasets, calibrating on MATH500 and transferring to GSM8K, SharedGPT, and HumanEval. MarginGate restores 100% sequence-level deterministic decoding on Llama-3.1-8B and Qwen2.5-14B with 18.56%/15.05% verifier trigger rates, reducing LLM-42's latency increment by 2.23x/1.99x relative to always-on verification. On DSR1-Distill-Qwen-7B, the same policy reaches determinism in a harder regime at 49.50% triggers.",
+      "abstract": "Temperature-zero BF16 LLM inference is often treated as reproducible, yet the same request can emit different tokens when decoded alone or inside a larger batch. Existing fixes use batch-invariant operators or LLM-42's per-token verification, incurring cost even when most steps are stable. We ask whether verification can be applied exclusively to flipped tokens. Across five models, batch-induced token flips are sparse on the flip-rate benchmarks: on MATH500, Llama-3.1-8B flips on $0.48\\%$ of synchronous decode steps, and all tested models stay within the 0.3-1.3% range on MATH500, GSM8K, and HumanEval. K/V perturbations remain flat before flips, while low top-1/top-2 logit margins expose much of the flip risk. MarginGate turns these observations into a verifier policy: it keeps BF16 decoding on high-margin steps, verifies only low-margin steps, and repairs confirmed mismatches by replacing the current K/V column. We evaluate on four datasets, calibrating on MATH500 and transferring to GSM8K, SharedGPT, and HumanEval. MarginGate restores 100% sequence-level deterministic decoding on Llama-3.1-8B and Qwen2.5-14B with 18.56%/15.05% verifier trigger rates, reducing LLM-42's latency increment by 2.23x/1.99x relative to always-on verification. On DSR1-Distill-Qwen-7B, the same policy reaches determinism in a harder regime at 49.50% triggers.",
+      "categories": [
+        "cs.LG",
+        "cs.PF"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.PF"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30218",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 24,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "Solves batch-induced non-determinism in LLM inference with margin-triggered sparse verification, directly reducing overhead in production systems.",
+        "one_sentence_summary": "该文提出MarginGate，利用logit边界值触发稀疏验证，在保持大模型批量推理确定性结果的同时，将验证触发率控制在18.56%至49.50%，显著降低了全量验证的延迟开销。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 24,
+        "timeliness_rarity": 19
+      },
+      "score_total": 85,
+      "score_reason": "Solves batch-induced non-determinism in LLM inference with margin-triggered sparse verification, directly reducing overhead in production systems.",
+      "one_sentence_summary": "该文提出MarginGate，利用logit边界值触发稀疏验证，在保持大模型批量推理确定性结果的同时，将验证触发率控制在18.56%至49.50%，显著降低了全量验证的延迟开销。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": "2026-05-31T05:57:52.128128+00:00",
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": "2026-05-31"
+    },
+    {
+      "id": "arxiv:2605.30214",
+      "arxiv_id": "2605.30214",
+      "title": "GRUFF: LLM Pronoun Fidelity, Reasoning, and Biases in German",
+      "url": "https://arxiv.org/abs/2605.30214",
+      "published_at": "2026-05-28T16:47:46Z",
+      "publish_date": "2026-05-28",
+      "description": "Third-person singular pronouns have long been used to study stereotypical biases in language models and to test their abilities to reason about reference. More recently, the interplay between reasoning and bias has been investigated with the task of pronoun fidelity, which assesses models' abilities to correctly reuse a previously-specified pronoun for a discourse entity, independent of other potentially distracting discourse entities mentioned in between. However, such research focuses on English, which is a language with limited grammatical gender and almost no gender agreement. In this paper we contribute a novel, large-scale dataset, GRUFF, to measure pronoun fidelity in German, covering four different gender agreement systems in nouns, and four sets of pronouns. With this dataset, we show that LLMs show strong grammatical agreement for masculine and feminine entities in the absence of explicit context, but not for neopronouns xier and en. Models are generally not robust to distractors, but encoder-only models are more robust in German than in English, reflecting the importance of grammatical gender. Finally, we show that occupational stereotypes in this context are poorly correlated across grammatical cases, and across most models, except ones with closely related architectures. We release all code and data to encourage further work on gender-inclusive language and referential reasoning in German.",
+      "summary": "Third-person singular pronouns have long been used to study stereotypical biases in language models and to test their abilities to reason about reference. More recently, the interplay between reasoning and bias has been investigated with the task of pronoun fidelity, which assesses models' abilities to correctly reuse a previously-specified pronoun for a discourse entity, independent of other potentially distracting discourse entities mentioned in between. However, such research focuses on English, which is a language with limited grammatical gender and almost no gender agreement. In this paper we contribute a novel, large-scale dataset, GRUFF, to measure pronoun fidelity in German, covering four different gender agreement systems in nouns, and four sets of pronouns. With this dataset, we show that LLMs show strong grammatical agreement for masculine and feminine entities in the absence of explicit context, but not for neopronouns xier and en. Models are generally not robust to distractors, but encoder-only models are more robust in German than in English, reflecting the importance of grammatical gender. Finally, we show that occupational stereotypes in this context are poorly correlated across grammatical cases, and across most models, except ones with closely related architectures. We release all code and data to encourage further work on gender-inclusive language and referential reasoning in German.",
+      "abstract": "Third-person singular pronouns have long been used to study stereotypical biases in language models and to test their abilities to reason about reference. More recently, the interplay between reasoning and bias has been investigated with the task of pronoun fidelity, which assesses models' abilities to correctly reuse a previously-specified pronoun for a discourse entity, independent of other potentially distracting discourse entities mentioned in between. However, such research focuses on English, which is a language with limited grammatical gender and almost no gender agreement. In this paper we contribute a novel, large-scale dataset, GRUFF, to measure pronoun fidelity in German, covering four different gender agreement systems in nouns, and four sets of pronouns. With this dataset, we show that LLMs show strong grammatical agreement for masculine and feminine entities in the absence of explicit context, but not for neopronouns xier and en. Models are generally not robust to distractors, but encoder-only models are more robust in German than in English, reflecting the importance of grammatical gender. Finally, we show that occupational stereotypes in this context are poorly correlated across grammatical cases, and across most models, except ones with closely related architectures. We release all code and data to encourage further work on gender-inclusive language and referential reasoning in German.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.30214",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 21,
+          "engineering_utility": 16,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "论文发布德语代词忠实度新数据集GRUFF，涵盖四种性别协议系统和新型代词，揭示LLM在无干扰时语法一致性强、有干扰时鲁棒性差，以及职业刻板印象跨格和模型的不一致性，对多语言包容性产品评估有参考价值，数据集可复用但缺乏直接工具。",
+        "one_sentence_summary": "该论文为德语构建了大规模代词忠实度数据集GRUFF，覆盖四种名词性别一致系统和四组代词（含新代词xier/en），评估LLM在有无干扰句时的代词复用能力；实验发现LLM对传统代词一致性强，但对新代词和干扰句鲁棒性不足，职业刻板印象相关性低，揭示德语性别包容语言推理与偏见问题。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 21,
+        "engineering_utility": 16,
+        "timeliness_rarity": 19
+      },
+      "score_total": 74,
+      "score_reason": "论文发布德语代词忠实度新数据集GRUFF，涵盖四种性别协议系统和新型代词，揭示LLM在无干扰时语法一致性强、有干扰时鲁棒性差，以及职业刻板印象跨格和模型的不一致性，对多语言包容性产品评估有参考价值，数据集可复用但缺乏直接工具。",
+      "one_sentence_summary": "该论文为德语构建了大规模代词忠实度数据集GRUFF，覆盖四种名词性别一致系统和四组代词（含新代词xier/en），评估LLM在有无干扰句时的代词复用能力；实验发现LLM对传统代词一致性强，但对新代词和干扰句鲁棒性不足，职业刻板印象相关性低，揭示德语性别包容语言推理与偏见问题。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-05-31T05:57:52.128128+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-05-31",
+      "pushed_run_id": null
     }
   ]
 }
