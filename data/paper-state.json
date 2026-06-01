@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-31T05:57:52.128128+00:00",
+  "updated_at": "2026-06-01T06:29:37.963294+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -11893,11 +11893,11 @@
       "score_reason": "多模态验证对可靠AI产品有价值；符号化元验证和解耦RL是新颖方法；可复现并驱动代理系统；自我校正为近期热点。",
       "one_sentence_summary": "OmniVerifier-M1提出利用边界框等符号化输出作为元验证反馈，通过解耦强化学习训练视觉验证器，实现细粒度错误定位并驱动M1-TTS系统进行动态区域级自我校正。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-28T05:53:36.448670+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
       "source_run_id": "2026-05-28",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-01"
     },
     {
       "id": "arxiv:2605.28803",
@@ -13566,11 +13566,11 @@
       "score_reason": "PPC proposes a preplan-enhanced reasoning paradigm with explicit problem understanding, achieving state-of-the-art on math benchmarks without extra inference cost, offering a theoretically grounded and implementable improvement.",
       "one_sentence_summary": "PPC框架在规划之前引入预规划阶段显式理解问题类型与潜在陷阱，通过三阶段合成与复合GRPO奖励训练，在四个骨干模型和五个数学基准上提升maj@16和pass@16平均分别2.23和3.06，不增加推理开销。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-01"
     },
     {
       "id": "arxiv:2605.30241",
@@ -14184,6 +14184,619 @@
       "pushed_at": null,
       "source_run_id": "2026-05-31",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31580",
+      "arxiv_id": "2605.31580",
+      "title": "Giving Sensors a Voice: Multimodal JEPA for Semantic Time-Series Embeddings",
+      "url": "https://arxiv.org/abs/2605.31580",
+      "published_at": "2026-05-29T17:48:30Z",
+      "publish_date": "2026-05-29",
+      "description": "Transformer-based architectures have advanced sequence modeling in language and vision, yet general-purpose representation learning for heterogeneous multivariate time series remains underexplored. We introduce CHARM (Channel-Aware Representation Model), which incorporates channel-level textual descriptions into a Transformer encoder equivariant to channel order. CHARM is trained with a Joint Embedding Predictive Architecture (JEPA) and a novel loss promoting informative, temporally stable embeddings; latent-space prediction encourages robustness to sensor noise while description-aware gating provides interpretability through learned inter-channel relationships. Across anomaly detection, classification, and short- and long-term forecasting, the learned embeddings achieve strong performance using only a linear probe. Performance is driven primarily by the JEPA objective and conditioning architecture, with text descriptions serving as channel identifiers for cross-dataset generalization.",
+      "summary": "Transformer-based architectures have advanced sequence modeling in language and vision, yet general-purpose representation learning for heterogeneous multivariate time series remains underexplored. We introduce CHARM (Channel-Aware Representation Model), which incorporates channel-level textual descriptions into a Transformer encoder equivariant to channel order. CHARM is trained with a Joint Embedding Predictive Architecture (JEPA) and a novel loss promoting informative, temporally stable embeddings; latent-space prediction encourages robustness to sensor noise while description-aware gating provides interpretability through learned inter-channel relationships. Across anomaly detection, classification, and short- and long-term forecasting, the learned embeddings achieve strong performance using only a linear probe. Performance is driven primarily by the JEPA objective and conditioning architecture, with text descriptions serving as channel identifiers for cross-dataset generalization.",
+      "abstract": "Transformer-based architectures have advanced sequence modeling in language and vision, yet general-purpose representation learning for heterogeneous multivariate time series remains underexplored. We introduce CHARM (Channel-Aware Representation Model), which incorporates channel-level textual descriptions into a Transformer encoder equivariant to channel order. CHARM is trained with a Joint Embedding Predictive Architecture (JEPA) and a novel loss promoting informative, temporally stable embeddings; latent-space prediction encourages robustness to sensor noise while description-aware gating provides interpretability through learned inter-channel relationships. Across anomaly detection, classification, and short- and long-term forecasting, the learned embeddings achieve strong performance using only a linear probe. Performance is driven primarily by the JEPA objective and conditioning architecture, with text descriptions serving as channel identifiers for cross-dataset generalization.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31580",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "通过文本描述增强时序嵌入，利用JEPA架构实现跨数据集泛化，为物联网和异常检测等应用提供可解释的语义表示。",
+        "one_sentence_summary": "提出CHARM模型，将传感器通道的文本描述集成到Transformer编码器中，通过联合嵌入预测架构（JEPA）训练得到语义时间序列嵌入，在异常检测、分类及预测任务上仅用线性探测头即取得强性能，且文本标识符支持跨数据集泛化。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 18
+      },
+      "score_total": 74,
+      "score_reason": "通过文本描述增强时序嵌入，利用JEPA架构实现跨数据集泛化，为物联网和异常检测等应用提供可解释的语义表示。",
+      "one_sentence_summary": "提出CHARM模型，将传感器通道的文本描述集成到Transformer编码器中，通过联合嵌入预测架构（JEPA）训练得到语义时间序列嵌入，在异常检测、分类及预测任务上仅用线性探测头即取得强性能，且文本标识符支持跨数据集泛化。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31545",
+      "arxiv_id": "2605.31545",
+      "title": "Preference-Aware Rubric Learning for Personalized Evaluation",
+      "url": "https://arxiv.org/abs/2605.31545",
+      "published_at": "2026-05-29T17:00:55Z",
+      "publish_date": "2026-05-29",
+      "description": "As Large Language Models (LLMs) evolve from general-purpose assistants to user-centric agents, personalization has become central to aligning model behavior with individual preferences, making the evaluation of personalized alignment a critical bottleneck. Existing evaluation methods-ranging from automatic metrics to LLM-as-a-judge approaches-fail to capture subjective, user-specific preferences embedded in long-term interaction histories. We identify three essential principles for reliable and effective personalized evaluation: Representativeness, User-Consistency, and Discriminativeness. To address these principles, we introduce Personalized Evaluation as Learning, a paradigm that formulates personalized evaluation as a learning problem rather than a static judgment. Under this paradigm, we propose PARL (Preference-Aware Rubric Learning for Personalized Evaluation), a framework that learns to induce preference-aware evaluation rubrics directly from raw user histories and performs a self-validation mechanism to ensure consistency with the user's preferences. PARL integrates rubric induction with a discriminative reinforcement learning objective that contrasts user-authored responses against competitive personalized model outputs, enabling the learned rubrics to capture precise, user-specific decision boundaries. Experiments on real-world personalized text generation tasks show that PARL consistently induces high-fidelity rubrics that reliably identify user-aligned responses and generalize across users and tasks, while capturing stable stylistic preferences and fine-grained evaluative patterns. To ensure reproducibility, our code is available at https://github.com/SnowCharmQ/PARL.",
+      "summary": "As Large Language Models (LLMs) evolve from general-purpose assistants to user-centric agents, personalization has become central to aligning model behavior with individual preferences, making the evaluation of personalized alignment a critical bottleneck. Existing evaluation methods-ranging from automatic metrics to LLM-as-a-judge approaches-fail to capture subjective, user-specific preferences embedded in long-term interaction histories. We identify three essential principles for reliable and effective personalized evaluation: Representativeness, User-Consistency, and Discriminativeness. To address these principles, we introduce Personalized Evaluation as Learning, a paradigm that formulates personalized evaluation as a learning problem rather than a static judgment. Under this paradigm, we propose PARL (Preference-Aware Rubric Learning for Personalized Evaluation), a framework that learns to induce preference-aware evaluation rubrics directly from raw user histories and performs a self-validation mechanism to ensure consistency with the user's preferences. PARL integrates rubric induction with a discriminative reinforcement learning objective that contrasts user-authored responses against competitive personalized model outputs, enabling the learned rubrics to capture precise, user-specific decision boundaries. Experiments on real-world personalized text generation tasks show that PARL consistently induces high-fidelity rubrics that reliably identify user-aligned responses and generalize across users and tasks, while capturing stable stylistic preferences and fine-grained evaluative patterns. To ensure reproducibility, our code is available at https://github.com/SnowCharmQ/PARL.",
+      "abstract": "As Large Language Models (LLMs) evolve from general-purpose assistants to user-centric agents, personalization has become central to aligning model behavior with individual preferences, making the evaluation of personalized alignment a critical bottleneck. Existing evaluation methods-ranging from automatic metrics to LLM-as-a-judge approaches-fail to capture subjective, user-specific preferences embedded in long-term interaction histories. We identify three essential principles for reliable and effective personalized evaluation: Representativeness, User-Consistency, and Discriminativeness. To address these principles, we introduce Personalized Evaluation as Learning, a paradigm that formulates personalized evaluation as a learning problem rather than a static judgment. Under this paradigm, we propose PARL (Preference-Aware Rubric Learning for Personalized Evaluation), a framework that learns to induce preference-aware evaluation rubrics directly from raw user histories and performs a self-validation mechanism to ensure consistency with the user's preferences. PARL integrates rubric induction with a discriminative reinforcement learning objective that contrasts user-authored responses against competitive personalized model outputs, enabling the learned rubrics to capture precise, user-specific decision boundaries. Experiments on real-world personalized text generation tasks show that PARL consistently induces high-fidelity rubrics that reliably identify user-aligned responses and generalize across users and tasks, while capturing stable stylistic preferences and fine-grained evaluative patterns. To ensure reproducibility, our code is available at https://github.com/SnowCharmQ/PARL.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31545",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "将个性化评估建模为学习问题，从用户历史中归纳偏好感知量表，结合判别强化学习，为构建用户中心代理提供可复现的评估方案。",
+        "one_sentence_summary": "提出PARL框架，将个性化评估建模为学习问题，从用户历史中归纳偏好感知的评分细则并通过自验证保持一致性，在真实个性化文本生成任务上显示出高保真度与跨用户泛化能力。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 22
+      },
+      "score_total": 88,
+      "score_reason": "将个性化评估建模为学习问题，从用户历史中归纳偏好感知量表，结合判别强化学习，为构建用户中心代理提供可复现的评估方案。",
+      "one_sentence_summary": "提出PARL框架，将个性化评估建模为学习问题，从用户历史中归纳偏好感知的评分细则并通过自验证保持一致性，在真实个性化文本生成任务上显示出高保真度与跨用户泛化能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31522",
+      "arxiv_id": "2605.31522",
+      "title": "Chem-PerturBridge: a harmonized compendium of small molecule perturbation transcriptomic effects",
+      "url": "https://arxiv.org/abs/2605.31522",
+      "published_at": "2026-05-29T16:38:30Z",
+      "publish_date": "2026-05-29",
+      "description": "Large perturbation models require training data encompassing chemical, cellular, and assay diversity. Current transcriptomic resources for small-molecule modeling, however, are fragmented across technologies, metadata conventions, controls, doses, and preprocessing pipelines. We introduce Chem-PerturBridge, a harmonized multi-dataset resource comprising over 37k compounds, 136 cellular contexts, and 1.25M transcriptomic samples across eight assay types, with standardized identifiers, metadata, and replicate-aware condition-level effects. We use the resource to evaluate matched-condition agreement across datasets and replicate agreement within datasets. Matched same-compound conditions generally show weak agreement in fine-grained logFC rankings and magnitudes across most dataset pairs, often falling below same-context different-compound baselines. In contrast, logFC direction agreement is substantially more stable and usually exceeds these baselines. We further evaluate Chem-PerturBridge as a pretraining resource for compound representation learning. Under a compound-held-out OP3 evaluation split, embeddings pretrained on Chem-PerturBridge improve over L1000-only embeddings, Morgan fingerprints, and the descriptor-free OP3 baseline across metrics. An extensive molecule-holdout evaluation across 11 datasets further shows that models trained on Chem-PerturBridge outperform or match those that are not. Chem-PerturBridge therefore supports both diagnostic evaluation of cross-dataset signature agreement and model-oriented reuse of heterogeneous perturbation transcriptomic data.",
+      "summary": "Large perturbation models require training data encompassing chemical, cellular, and assay diversity. Current transcriptomic resources for small-molecule modeling, however, are fragmented across technologies, metadata conventions, controls, doses, and preprocessing pipelines. We introduce Chem-PerturBridge, a harmonized multi-dataset resource comprising over 37k compounds, 136 cellular contexts, and 1.25M transcriptomic samples across eight assay types, with standardized identifiers, metadata, and replicate-aware condition-level effects. We use the resource to evaluate matched-condition agreement across datasets and replicate agreement within datasets. Matched same-compound conditions generally show weak agreement in fine-grained logFC rankings and magnitudes across most dataset pairs, often falling below same-context different-compound baselines. In contrast, logFC direction agreement is substantially more stable and usually exceeds these baselines. We further evaluate Chem-PerturBridge as a pretraining resource for compound representation learning. Under a compound-held-out OP3 evaluation split, embeddings pretrained on Chem-PerturBridge improve over L1000-only embeddings, Morgan fingerprints, and the descriptor-free OP3 baseline across metrics. An extensive molecule-holdout evaluation across 11 datasets further shows that models trained on Chem-PerturBridge outperform or match those that are not. Chem-PerturBridge therefore supports both diagnostic evaluation of cross-dataset signature agreement and model-oriented reuse of heterogeneous perturbation transcriptomic data.",
+      "abstract": "Large perturbation models require training data encompassing chemical, cellular, and assay diversity. Current transcriptomic resources for small-molecule modeling, however, are fragmented across technologies, metadata conventions, controls, doses, and preprocessing pipelines. We introduce Chem-PerturBridge, a harmonized multi-dataset resource comprising over 37k compounds, 136 cellular contexts, and 1.25M transcriptomic samples across eight assay types, with standardized identifiers, metadata, and replicate-aware condition-level effects. We use the resource to evaluate matched-condition agreement across datasets and replicate agreement within datasets. Matched same-compound conditions generally show weak agreement in fine-grained logFC rankings and magnitudes across most dataset pairs, often falling below same-context different-compound baselines. In contrast, logFC direction agreement is substantially more stable and usually exceeds these baselines. We further evaluate Chem-PerturBridge as a pretraining resource for compound representation learning. Under a compound-held-out OP3 evaluation split, embeddings pretrained on Chem-PerturBridge improve over L1000-only embeddings, Morgan fingerprints, and the descriptor-free OP3 baseline across metrics. An extensive molecule-holdout evaluation across 11 datasets further shows that models trained on Chem-PerturBridge outperform or match those that are not. Chem-PerturBridge therefore supports both diagnostic evaluation of cross-dataset signature agreement and model-oriented reuse of heterogeneous perturbation transcriptomic data.",
+      "categories": [
+        "cs.LG",
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31522",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "整合多源扰动转录组数据，提供标准化资源与预训练基线，对生物医药AI模型的训练和评估有直接工程复用价值。",
+        "one_sentence_summary": "构建了Chem-PerturBridge资源，整合八种分析类型、3.7万种化合物、136种细胞上下文和125万转录组样本，通过标准化标识符和效应量评估跨数据集一致性，并验证其作为预训练数据改善化合物表示在下游任务的表现。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 18
+      },
+      "score_total": 71,
+      "score_reason": "整合多源扰动转录组数据，提供标准化资源与预训练基线，对生物医药AI模型的训练和评估有直接工程复用价值。",
+      "one_sentence_summary": "构建了Chem-PerturBridge资源，整合八种分析类型、3.7万种化合物、136种细胞上下文和125万转录组样本，通过标准化标识符和效应量评估跨数据集一致性，并验证其作为预训练数据改善化合物表示在下游任务的表现。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31521",
+      "arxiv_id": "2605.31521",
+      "title": "UniAudio-Token: Empowering Semantic Speech Tokenizers with General Audio Perception",
+      "url": "https://arxiv.org/abs/2605.31521",
+      "published_at": "2026-05-29T16:36:21Z",
+      "publish_date": "2026-05-29",
+      "description": "Semantic speech tokenizers have become a widely used interface for Audio-LLMs, owing to their compact single-codebook design and strong linguistic alignment. However, their focus on linguistic abstraction induces acoustic blindness, limiting their applicability beyond speech-centric tasks. We propose UniAudio-Token, a framework that empowers semantic tokenizers with general audio perception without compromising speech ability. Instead of altering the semantic paradigm, UniAudio-Token mitigates its information loss through two key innovations: (1) Semantic-Acoustic Primitives (SAP) provide structured supervision by decomposing audio into linguistic content, vocal attributes, and auditory-scene primitives; and (2) Semantic-Acoustic Equilibrium (SAE) introduces a content-aware gating mechanism that adaptively restores fine-grained acoustic details from shallow layers. Extensive evaluations show that UniAudio-Token learns comprehensive universal representations while preserving high-fidelity speech generation. When integrated with downstream LLMs, it outperforms all single-codebook baseline tokenizers on both understanding and generation tasks, effectively serving as a unified audio interface. We publicly release all our code, including training and inference scripts, together with the model checkpoints at https://github.com/Tencent/Universal_Audio_Tokenizer.",
+      "summary": "Semantic speech tokenizers have become a widely used interface for Audio-LLMs, owing to their compact single-codebook design and strong linguistic alignment. However, their focus on linguistic abstraction induces acoustic blindness, limiting their applicability beyond speech-centric tasks. We propose UniAudio-Token, a framework that empowers semantic tokenizers with general audio perception without compromising speech ability. Instead of altering the semantic paradigm, UniAudio-Token mitigates its information loss through two key innovations: (1) Semantic-Acoustic Primitives (SAP) provide structured supervision by decomposing audio into linguistic content, vocal attributes, and auditory-scene primitives; and (2) Semantic-Acoustic Equilibrium (SAE) introduces a content-aware gating mechanism that adaptively restores fine-grained acoustic details from shallow layers. Extensive evaluations show that UniAudio-Token learns comprehensive universal representations while preserving high-fidelity speech generation. When integrated with downstream LLMs, it outperforms all single-codebook baseline tokenizers on both understanding and generation tasks, effectively serving as a unified audio interface. We publicly release all our code, including training and inference scripts, together with the model checkpoints at https://github.com/Tencent/Universal_Audio_Tokenizer.",
+      "abstract": "Semantic speech tokenizers have become a widely used interface for Audio-LLMs, owing to their compact single-codebook design and strong linguistic alignment. However, their focus on linguistic abstraction induces acoustic blindness, limiting their applicability beyond speech-centric tasks. We propose UniAudio-Token, a framework that empowers semantic tokenizers with general audio perception without compromising speech ability. Instead of altering the semantic paradigm, UniAudio-Token mitigates its information loss through two key innovations: (1) Semantic-Acoustic Primitives (SAP) provide structured supervision by decomposing audio into linguistic content, vocal attributes, and auditory-scene primitives; and (2) Semantic-Acoustic Equilibrium (SAE) introduces a content-aware gating mechanism that adaptively restores fine-grained acoustic details from shallow layers. Extensive evaluations show that UniAudio-Token learns comprehensive universal representations while preserving high-fidelity speech generation. When integrated with downstream LLMs, it outperforms all single-codebook baseline tokenizers on both understanding and generation tasks, effectively serving as a unified audio interface. We publicly release all our code, including training and inference scripts, together with the model checkpoints at https://github.com/Tencent/Universal_Audio_Tokenizer.",
+      "categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31521",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 20,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "针对语义语音分词器的声学盲点，提出语义-声学基元和内容感知门控，赋予其通用音频感知能力，与LLM集成后在理解和生成任务上均优于单码本基线，代码与模型已开源。",
+        "one_sentence_summary": "UniAudio-Token通过语义-声学基元分解和内容感知门控机制，在保持语音生成质量的同时为语义分词器注入通用音频感知，集成下游LLM后超越所有单码本基线，并已开源代码与模型。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 20,
+        "timeliness_rarity": 17
+      },
+      "score_total": 75,
+      "score_reason": "针对语义语音分词器的声学盲点，提出语义-声学基元和内容感知门控，赋予其通用音频感知能力，与LLM集成后在理解和生成任务上均优于单码本基线，代码与模型已开源。",
+      "one_sentence_summary": "UniAudio-Token通过语义-声学基元分解和内容感知门控机制，在保持语音生成质量的同时为语义分词器注入通用音频感知，集成下游LLM后超越所有单码本基线，并已开源代码与模型。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31520",
+      "arxiv_id": "2605.31520",
+      "title": "Separating Secrets from Placeholders: A Hybrid CNN-CodeBERT Framework for Three-Class Credential Leakage Detection",
+      "url": "https://arxiv.org/abs/2605.31520",
+      "published_at": "2026-05-29T16:36:20Z",
+      "publish_date": "2026-05-29",
+      "description": "Credential leakage in public source code repositories poses a critical security threat, with over 23.8 million secrets exposed in 2024 alone. Existing detection tools suffer from high false-positive rates because rigid pattern matching and binary classification schemes fail to distinguish genuine credentials from placeholder or weak credentials. We propose a three-class classification framework that explicitly models placeholder or weak credentials as a distinct class, leveraging CodeBERT-based semantic understanding combined with character-level pattern recognition. We evaluate our approach on a newly constructed dataset of 9,426 samples spanning 10 programming languages. Our model achieves a Matthews Correlation Coefficient of 0.86 and a macro F1-score of 0.90, achieving 93% recall and 89% precision for genuine credential leaks while reducing high severity alerts by 33.0% (from 373 to 250) without sacrificing security coverage. Compared to prior character-level approaches, our method improves placeholder or weak credential detection from 54% to 81% F1-score while maintaining strong cross language generalization, with 9 of 10 languages achieving F1 above 0.80 under leave-one-language-out evaluation.",
+      "summary": "Credential leakage in public source code repositories poses a critical security threat, with over 23.8 million secrets exposed in 2024 alone. Existing detection tools suffer from high false-positive rates because rigid pattern matching and binary classification schemes fail to distinguish genuine credentials from placeholder or weak credentials. We propose a three-class classification framework that explicitly models placeholder or weak credentials as a distinct class, leveraging CodeBERT-based semantic understanding combined with character-level pattern recognition. We evaluate our approach on a newly constructed dataset of 9,426 samples spanning 10 programming languages. Our model achieves a Matthews Correlation Coefficient of 0.86 and a macro F1-score of 0.90, achieving 93% recall and 89% precision for genuine credential leaks while reducing high severity alerts by 33.0% (from 373 to 250) without sacrificing security coverage. Compared to prior character-level approaches, our method improves placeholder or weak credential detection from 54% to 81% F1-score while maintaining strong cross language generalization, with 9 of 10 languages achieving F1 above 0.80 under leave-one-language-out evaluation.",
+      "abstract": "Credential leakage in public source code repositories poses a critical security threat, with over 23.8 million secrets exposed in 2024 alone. Existing detection tools suffer from high false-positive rates because rigid pattern matching and binary classification schemes fail to distinguish genuine credentials from placeholder or weak credentials. We propose a three-class classification framework that explicitly models placeholder or weak credentials as a distinct class, leveraging CodeBERT-based semantic understanding combined with character-level pattern recognition. We evaluate our approach on a newly constructed dataset of 9,426 samples spanning 10 programming languages. Our model achieves a Matthews Correlation Coefficient of 0.86 and a macro F1-score of 0.90, achieving 93% recall and 89% precision for genuine credential leaks while reducing high severity alerts by 33.0% (from 373 to 250) without sacrificing security coverage. Compared to prior character-level approaches, our method improves placeholder or weak credential detection from 54% to 81% F1-score while maintaining strong cross language generalization, with 9 of 10 languages achieving F1 above 0.80 under leave-one-language-out evaluation.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31520",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "通过三分类区分真实凭证与占位符，结合CodeBERT和CNN，大幅降低误报，提供跨语言检测工具，可直接增强现有安全扫描。",
+        "one_sentence_summary": "提出CNN-CodeBERT混合框架，通过三分类（真实凭证、占位符/弱凭证、非凭证）检测代码库中的凭证泄露，在10种语言的9426样本数据集上大幅降低误报，提升占位符检测的F1分数至81%。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 19
+      },
+      "score_total": 84,
+      "score_reason": "通过三分类区分真实凭证与占位符，结合CodeBERT和CNN，大幅降低误报，提供跨语言检测工具，可直接增强现有安全扫描。",
+      "one_sentence_summary": "提出CNN-CodeBERT混合框架，通过三分类（真实凭证、占位符/弱凭证、非凭证）检测代码库中的凭证泄露，在10种语言的9426样本数据集上大幅降低误报，提升占位符检测的F1分数至81%。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31506",
+      "arxiv_id": "2605.31506",
+      "title": "Evaluating Factual Density in Multi-Source RAG: A Study in Medical AI Accuracy",
+      "url": "https://arxiv.org/abs/2605.31506",
+      "published_at": "2026-05-29T16:25:39Z",
+      "publish_date": "2026-05-29",
+      "description": "Retrieval-Augmented Generation (RAG) is the current industry standard for grounding AI in real-world facts. Traditional retrieval methods rely on keyword matching and topic proximity, ranking content based on how closely it sounds like the user's query. What they do not measure is how many verified facts the content actually contains. This structural gap, termed the Expert Blindness Effect, causes standard RAG pipelines to consistently bury high-density factual evidence in favor of lexically dominant text on the same topic. To address this gap, this paper introduces Factual Density (FD*), a novel retrieval optimization signal that measures the proportion of verified atomic claims relative to total token count. Using the NexusAgentics Ghost Audit preprocessing pipeline, raw text is scored for factual specificity using probabilistic factuality analysis to filter content before corpus ingestion. An initial formulation introduced a severe document-length confound (Pearson R = -0.8636, p = 2.27e-07). Implementing Z-score normalization within length bins resolved this bias, validating FD* as a length-independent density signal (p = 0.0749). Evaluated against the HealthFC benchmark (750 health claims labeled Supported, Refuted, or No Evidence by medical experts), FD*-optimized retrieval was the only condition to achieve 100% systematic review saturation in top-5 results, surfacing Cochrane evidence that standard cosine similarity ranked outside the top ten. Ground truth verification confirmed 25 mappings across seven HealthFC-supported claims. While full statistical validation across n=50 queries remains future work due to constraints on corpus-benchmark alignment, these findings establish factual density reranking as a low-cost, high-impact intervention for improving factual precision in health RAG architectures.",
+      "summary": "Retrieval-Augmented Generation (RAG) is the current industry standard for grounding AI in real-world facts. Traditional retrieval methods rely on keyword matching and topic proximity, ranking content based on how closely it sounds like the user's query. What they do not measure is how many verified facts the content actually contains. This structural gap, termed the Expert Blindness Effect, causes standard RAG pipelines to consistently bury high-density factual evidence in favor of lexically dominant text on the same topic. To address this gap, this paper introduces Factual Density (FD*), a novel retrieval optimization signal that measures the proportion of verified atomic claims relative to total token count. Using the NexusAgentics Ghost Audit preprocessing pipeline, raw text is scored for factual specificity using probabilistic factuality analysis to filter content before corpus ingestion. An initial formulation introduced a severe document-length confound (Pearson R = -0.8636, p = 2.27e-07). Implementing Z-score normalization within length bins resolved this bias, validating FD* as a length-independent density signal (p = 0.0749). Evaluated against the HealthFC benchmark (750 health claims labeled Supported, Refuted, or No Evidence by medical experts), FD*-optimized retrieval was the only condition to achieve 100% systematic review saturation in top-5 results, surfacing Cochrane evidence that standard cosine similarity ranked outside the top ten. Ground truth verification confirmed 25 mappings across seven HealthFC-supported claims. While full statistical validation across n=50 queries remains future work due to constraints on corpus-benchmark alignment, these findings establish factual density reranking as a low-cost, high-impact intervention for improving factual precision in health RAG architectures.",
+      "abstract": "Retrieval-Augmented Generation (RAG) is the current industry standard for grounding AI in real-world facts. Traditional retrieval methods rely on keyword matching and topic proximity, ranking content based on how closely it sounds like the user's query. What they do not measure is how many verified facts the content actually contains. This structural gap, termed the Expert Blindness Effect, causes standard RAG pipelines to consistently bury high-density factual evidence in favor of lexically dominant text on the same topic. To address this gap, this paper introduces Factual Density (FD*), a novel retrieval optimization signal that measures the proportion of verified atomic claims relative to total token count. Using the NexusAgentics Ghost Audit preprocessing pipeline, raw text is scored for factual specificity using probabilistic factuality analysis to filter content before corpus ingestion. An initial formulation introduced a severe document-length confound (Pearson R = -0.8636, p = 2.27e-07). Implementing Z-score normalization within length bins resolved this bias, validating FD* as a length-independent density signal (p = 0.0749). Evaluated against the HealthFC benchmark (750 health claims labeled Supported, Refuted, or No Evidence by medical experts), FD*-optimized retrieval was the only condition to achieve 100% systematic review saturation in top-5 results, surfacing Cochrane evidence that standard cosine similarity ranked outside the top ten. Ground truth verification confirmed 25 mappings across seven HealthFC-supported claims. While full statistical validation across n=50 queries remains future work due to constraints on corpus-benchmark alignment, these findings establish factual density reranking as a low-cost, high-impact intervention for improving factual precision in health RAG architectures.",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31506",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "提出事实密度重排序解决RAG中的专家盲区效应，在医疗基准上验证了低成本、高精度的检索干预，可直接集成到现有管道。",
+        "one_sentence_summary": "提出事实密度(FD*)检索优化方法，通过量化原子声明数与词元数的比例并消除文档长度偏差，在HealthFC医疗事实核查数据集上将系统综述证据的Top-5饱和度提升至100%，为标准RAG管道提供了低成本高精度的重排序干预。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 91,
+      "score_reason": "提出事实密度重排序解决RAG中的专家盲区效应，在医疗基准上验证了低成本、高精度的检索干预，可直接集成到现有管道。",
+      "one_sentence_summary": "提出事实密度(FD*)检索优化方法，通过量化原子声明数与词元数的比例并消除文档长度偏差，在HealthFC医疗事实核查数据集上将系统综述证据的Top-5饱和度提升至100%，为标准RAG管道提供了低成本高精度的重排序干预。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31504",
+      "arxiv_id": "2605.31504",
+      "title": "When Are Multimodal Predictions Biologically Supported? A Diagnostic Evaluation Framework",
+      "url": "https://arxiv.org/abs/2605.31504",
+      "published_at": "2026-05-29T16:25:31Z",
+      "publish_date": "2026-05-29",
+      "description": "Multimodal models in oncology can produce accurate predictions, but accurate prediction does not reveal whether the model has learned biology that is shared across modalities, biology confined to one modality, or spurious correlations that reflect confounders rather than genuine biology. We introduce DECAT, a model-agnostic post-hoc evaluation framework that classifies multimodal representations into four diagnostic scenarios for a given task and modality, using five null-referenced metrics and a rule-based decision procedure. The framework operates on learned representations, requires no knowledge of which specific confounder is present, and returns indeterminate when the evidence is insufficient. We validate DECAT on synthetic data across four multimodal model classes (over 2,500 trained representations) and on real data from 8,979 TCGA patients, evaluating both multimodal embeddings and five pretrained pathology foundation models. Entangled models (e.g., CLIP) achieve near-perfect shared biology detection but falsely claim shared biology in the majority of cases where it is absent on real foundation model embeddings. This false claim rate increases with confound strength so that larger cohorts and stronger representations produce more confident but still incorrect diagnoses. Applied to both multimodal TCGA embeddings and five pathology foundation models without paired RNA, DECAT detects confounding invisible to AUROC without requiring the confounder labels, as confirmed by post-hoc stratification.",
+      "summary": "Multimodal models in oncology can produce accurate predictions, but accurate prediction does not reveal whether the model has learned biology that is shared across modalities, biology confined to one modality, or spurious correlations that reflect confounders rather than genuine biology. We introduce DECAT, a model-agnostic post-hoc evaluation framework that classifies multimodal representations into four diagnostic scenarios for a given task and modality, using five null-referenced metrics and a rule-based decision procedure. The framework operates on learned representations, requires no knowledge of which specific confounder is present, and returns indeterminate when the evidence is insufficient. We validate DECAT on synthetic data across four multimodal model classes (over 2,500 trained representations) and on real data from 8,979 TCGA patients, evaluating both multimodal embeddings and five pretrained pathology foundation models. Entangled models (e.g., CLIP) achieve near-perfect shared biology detection but falsely claim shared biology in the majority of cases where it is absent on real foundation model embeddings. This false claim rate increases with confound strength so that larger cohorts and stronger representations produce more confident but still incorrect diagnoses. Applied to both multimodal TCGA embeddings and five pathology foundation models without paired RNA, DECAT detects confounding invisible to AUROC without requiring the confounder labels, as confirmed by post-hoc stratification.",
+      "abstract": "Multimodal models in oncology can produce accurate predictions, but accurate prediction does not reveal whether the model has learned biology that is shared across modalities, biology confined to one modality, or spurious correlations that reflect confounders rather than genuine biology. We introduce DECAT, a model-agnostic post-hoc evaluation framework that classifies multimodal representations into four diagnostic scenarios for a given task and modality, using five null-referenced metrics and a rule-based decision procedure. The framework operates on learned representations, requires no knowledge of which specific confounder is present, and returns indeterminate when the evidence is insufficient. We validate DECAT on synthetic data across four multimodal model classes (over 2,500 trained representations) and on real data from 8,979 TCGA patients, evaluating both multimodal embeddings and five pretrained pathology foundation models. Entangled models (e.g., CLIP) achieve near-perfect shared biology detection but falsely claim shared biology in the majority of cases where it is absent on real foundation model embeddings. This false claim rate increases with confound strength so that larger cohorts and stronger representations produce more confident but still incorrect diagnoses. Applied to both multimodal TCGA embeddings and five pathology foundation models without paired RNA, DECAT detects confounding invisible to AUROC without requiring the confounder labels, as confirmed by post-hoc stratification.",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31504",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 12,
+          "engineering_utility": 20,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "DECAT框架直接服务于多模态医疗模型的可信评估，提供模型无关的现成诊断工具，实用性强，虽非开拓全新任务，但针对多模态混淆的检测方法稀缺且当前急需。",
+        "one_sentence_summary": "提出DECAT评估框架，利用五种空参考指标和规则分类多模态表示中的生物学支持情况，在合成与TCGA数据上验证能检测混淆，无需已知混淆因素，提升模型可靠性。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 12,
+        "engineering_utility": 20,
+        "timeliness_rarity": 15
+      },
+      "score_total": 62,
+      "score_reason": "DECAT框架直接服务于多模态医疗模型的可信评估，提供模型无关的现成诊断工具，实用性强，虽非开拓全新任务，但针对多模态混淆的检测方法稀缺且当前急需。",
+      "one_sentence_summary": "提出DECAT评估框架，利用五种空参考指标和规则分类多模态表示中的生物学支持情况，在合成与TCGA数据上验证能检测混淆，无需已知混淆因素，提升模型可靠性。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31503",
+      "arxiv_id": "2605.31503",
+      "title": "How can embedding models bind concepts?",
+      "url": "https://arxiv.org/abs/2605.31503",
+      "published_at": "2026-05-29T16:23:41Z",
+      "publish_date": "2026-05-29",
+      "description": "Humans easily determine which color belongs to which shape in multi-object scenes, an ability known as concept binding. Vision-language embedding models such as CLIP struggle with binding: they recognize individual concepts but fail to represent which concepts form which objects. Although CLIP behaves like a bag-of-concepts model in cross-modal retrieval, object information is recoverable from its image and text embeddings separately. We study this tension through the binding function, which maps concepts to scene embeddings. We find that scene embeddings decompose additively into object representations, explaining why uni-modal probes can recover object information. However, CLIP's binding function is high-complexity, which likely prevents the image and text encoders from learning a shared binding mechanism that generalizes to unseen concept combinations. We then ask whether this limitation is fundamental. We show that it is not. In controlled transformer models trained from scratch, binding generalization emerges with sufficient data coverage. These models learn low-complexity binding functions characterized by multiplicative interactions between concepts, enabling systematic generalization. Code is publicly available at https://github.com/oshapio/binding-concepts-complexity.",
+      "summary": "Humans easily determine which color belongs to which shape in multi-object scenes, an ability known as concept binding. Vision-language embedding models such as CLIP struggle with binding: they recognize individual concepts but fail to represent which concepts form which objects. Although CLIP behaves like a bag-of-concepts model in cross-modal retrieval, object information is recoverable from its image and text embeddings separately. We study this tension through the binding function, which maps concepts to scene embeddings. We find that scene embeddings decompose additively into object representations, explaining why uni-modal probes can recover object information. However, CLIP's binding function is high-complexity, which likely prevents the image and text encoders from learning a shared binding mechanism that generalizes to unseen concept combinations. We then ask whether this limitation is fundamental. We show that it is not. In controlled transformer models trained from scratch, binding generalization emerges with sufficient data coverage. These models learn low-complexity binding functions characterized by multiplicative interactions between concepts, enabling systematic generalization. Code is publicly available at https://github.com/oshapio/binding-concepts-complexity.",
+      "abstract": "Humans easily determine which color belongs to which shape in multi-object scenes, an ability known as concept binding. Vision-language embedding models such as CLIP struggle with binding: they recognize individual concepts but fail to represent which concepts form which objects. Although CLIP behaves like a bag-of-concepts model in cross-modal retrieval, object information is recoverable from its image and text embeddings separately. We study this tension through the binding function, which maps concepts to scene embeddings. We find that scene embeddings decompose additively into object representations, explaining why uni-modal probes can recover object information. However, CLIP's binding function is high-complexity, which likely prevents the image and text encoders from learning a shared binding mechanism that generalizes to unseen concept combinations. We then ask whether this limitation is fundamental. We show that it is not. In controlled transformer models trained from scratch, binding generalization emerges with sufficient data coverage. These models learn low-complexity binding functions characterized by multiplicative interactions between concepts, enabling systematic generalization. Code is publicly available at https://github.com/oshapio/binding-concepts-complexity.",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31503",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "工作直指当前多模态模型核心缺陷（概念绑定），并给出可控实验中实现系统泛化的方法，代码开源，对改进下游产品感知能力有直接价值，问题提法和解决方案均具前沿性。",
+        "one_sentence_summary": "分析CLIP等视觉语言模型在概念绑定上的失败根源，发现其因绑定函数高复杂度无法泛化，并通过充足数据训练的Transformer学到低复杂度乘法交互，实现系统泛化，代码已公开。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 78,
+      "score_reason": "工作直指当前多模态模型核心缺陷（概念绑定），并给出可控实验中实现系统泛化的方法，代码开源，对改进下游产品感知能力有直接价值，问题提法和解决方案均具前沿性。",
+      "one_sentence_summary": "分析CLIP等视觉语言模型在概念绑定上的失败根源，发现其因绑定函数高复杂度无法泛化，并通过充足数据训练的Transformer学到低复杂度乘法交互，实现系统泛化，代码已公开。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2605.31483",
+      "arxiv_id": "2605.31483",
+      "title": "BenHalluEval: A Multi-Task Hallucination Evaluation Framework for Large Language Models on Bengali",
+      "url": "https://arxiv.org/abs/2605.31483",
+      "published_at": "2026-05-29T16:07:33Z",
+      "publish_date": "2026-05-29",
+      "description": "Despite Bengali being the sixth most spoken language in the world, no prior work has systematically evaluated hallucination in large language models (LLMs) for Bengali. We introduce BenHalluEval, a fine-grained hallucination evaluation framework for Bengali covering four tasks: Generative Question Answering (GQA), Bangla-English Code-Mixed QA, Summarization, and Reasoning. We construct 12,000 hallucinated candidates using GPT-5.4 across twelve task-specific hallucination types, drawn from three existing Bengali datasets, and evaluate seven LLMs spanning reasoning-oriented, multilingual, and Bengali-centric categories under a dual-track protocol that independently measures false-positive rate on ground-truth instances (Track A) and hallucination detection rate on hallucinated candidates (Track B). To jointly penalise both failure modes and prevent inflated scores from uniform response bias, we propose BenHalluScore, a dual-track calibration metric that ranges from 7.72% to 55.42% across models and tasks, revealing substantial variation in hallucination calibration. Chain-of-thought prompting, applied as a mitigation strategy, shifts response distributions without consistently improving hallucination discrimination. BenHalluEval establishes the first dedicated hallucination benchmark for Bengali and highlights the inadequacy of single-track and prompting-only evaluation approaches for low-resource language settings. The dataset and code are available at https://anonymous.4open.science/r/BanglaHalluEval-EB77.",
+      "summary": "Despite Bengali being the sixth most spoken language in the world, no prior work has systematically evaluated hallucination in large language models (LLMs) for Bengali. We introduce BenHalluEval, a fine-grained hallucination evaluation framework for Bengali covering four tasks: Generative Question Answering (GQA), Bangla-English Code-Mixed QA, Summarization, and Reasoning. We construct 12,000 hallucinated candidates using GPT-5.4 across twelve task-specific hallucination types, drawn from three existing Bengali datasets, and evaluate seven LLMs spanning reasoning-oriented, multilingual, and Bengali-centric categories under a dual-track protocol that independently measures false-positive rate on ground-truth instances (Track A) and hallucination detection rate on hallucinated candidates (Track B). To jointly penalise both failure modes and prevent inflated scores from uniform response bias, we propose BenHalluScore, a dual-track calibration metric that ranges from 7.72% to 55.42% across models and tasks, revealing substantial variation in hallucination calibration. Chain-of-thought prompting, applied as a mitigation strategy, shifts response distributions without consistently improving hallucination discrimination. BenHalluEval establishes the first dedicated hallucination benchmark for Bengali and highlights the inadequacy of single-track and prompting-only evaluation approaches for low-resource language settings. The dataset and code are available at https://anonymous.4open.science/r/BanglaHalluEval-EB77.",
+      "abstract": "Despite Bengali being the sixth most spoken language in the world, no prior work has systematically evaluated hallucination in large language models (LLMs) for Bengali. We introduce BenHalluEval, a fine-grained hallucination evaluation framework for Bengali covering four tasks: Generative Question Answering (GQA), Bangla-English Code-Mixed QA, Summarization, and Reasoning. We construct 12,000 hallucinated candidates using GPT-5.4 across twelve task-specific hallucination types, drawn from three existing Bengali datasets, and evaluate seven LLMs spanning reasoning-oriented, multilingual, and Bengali-centric categories under a dual-track protocol that independently measures false-positive rate on ground-truth instances (Track A) and hallucination detection rate on hallucinated candidates (Track B). To jointly penalise both failure modes and prevent inflated scores from uniform response bias, we propose BenHalluScore, a dual-track calibration metric that ranges from 7.72% to 55.42% across models and tasks, revealing substantial variation in hallucination calibration. Chain-of-thought prompting, applied as a mitigation strategy, shifts response distributions without consistently improving hallucination discrimination. BenHalluEval establishes the first dedicated hallucination benchmark for Bengali and highlights the inadequacy of single-track and prompting-only evaluation approaches for low-resource language settings. The dataset and code are available at https://anonymous.4open.science/r/BanglaHalluEval-EB77.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31483",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该工作构建了首个孟加拉语幻觉评估框架，涵盖多任务和双轨校准，直接为低资源语言LLM的可靠性评估提供可复用的工具和数据集，对多语言AI产品的安全部署有参考价值。",
+        "one_sentence_summary": "提出BenHalluEval框架，针对孟加拉语构建包含生成式问答、代码混合QA、摘要、推理四任务的12,000条幻觉样本，评估七种大模型，并设计双轨校准指标BenHalluScore以同时惩罚漏报和误报，发现链式思考提示未能稳定提升判别能力。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 82,
+      "score_reason": "该工作构建了首个孟加拉语幻觉评估框架，涵盖多任务和双轨校准，直接为低资源语言LLM的可靠性评估提供可复用的工具和数据集，对多语言AI产品的安全部署有参考价值。",
+      "one_sentence_summary": "提出BenHalluEval框架，针对孟加拉语构建包含生成式问答、代码混合QA、摘要、推理四任务的12,000条幻觉样本，评估七种大模型，并设计双轨校准指标BenHalluScore以同时惩罚漏报和误报，发现链式思考提示未能稳定提升判别能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31478",
+      "arxiv_id": "2605.31478",
+      "title": "Knowledge Boundary Probing and Demand-Guided Intervention for LLM-Based Power System Code Generation",
+      "url": "https://arxiv.org/abs/2605.31478",
+      "published_at": "2026-05-29T16:06:34Z",
+      "publish_date": "2026-05-29",
+      "description": "Large language models (LLMs) are increasingly used to automate power-system analysis, but many utilities and energy-research labs require on-premise serving for confidentiality, regulatory, reproducibility, and cost reasons. This makes the reliability of open-weight models a deployment issue. We show that first-pass failures in power-system code generation are dominated not by reasoning alone, but by structured API-knowledge boundary errors: hallucinated function names, misused parameters, and mishandled result tables in versioned simulation libraries. We introduce PowerCodeBench, an execution-validated benchmark generator that pairs natural-language operator queries with pandapower code and numerical ground truth; an L0-L3 documentation-driven probing procedure that measures per-model API knowledge profiles; and a boundary-aware intervention that combines query-side API demand estimation with targeted proactive documentation injection and routed reactive correction. On a 2,000-task frozen release, we evaluate ten open-weight LLMs (1.5B-480B parameters) and four commercial mid-tier APIs. The intervention improves every evaluated open-weight model of at least 7B parameters and every commercial API by 32 to 56 accuracy points. Open-weight models in the 70B-120B range match the commercial mid-tier accuracy range, while Llama-3.1-405B and Qwen3-Coder-480B lead the panel. The targeted prompts preserve the full-context accuracy ceiling while using 41% of the prompt-token cost. The result is an accuracy-side, deployment-time path toward reliable on-premise LLM assistance for grid-analysis workflows without fine-tuning or cloud inference.",
+      "summary": "Large language models (LLMs) are increasingly used to automate power-system analysis, but many utilities and energy-research labs require on-premise serving for confidentiality, regulatory, reproducibility, and cost reasons. This makes the reliability of open-weight models a deployment issue. We show that first-pass failures in power-system code generation are dominated not by reasoning alone, but by structured API-knowledge boundary errors: hallucinated function names, misused parameters, and mishandled result tables in versioned simulation libraries. We introduce PowerCodeBench, an execution-validated benchmark generator that pairs natural-language operator queries with pandapower code and numerical ground truth; an L0-L3 documentation-driven probing procedure that measures per-model API knowledge profiles; and a boundary-aware intervention that combines query-side API demand estimation with targeted proactive documentation injection and routed reactive correction. On a 2,000-task frozen release, we evaluate ten open-weight LLMs (1.5B-480B parameters) and four commercial mid-tier APIs. The intervention improves every evaluated open-weight model of at least 7B parameters and every commercial API by 32 to 56 accuracy points. Open-weight models in the 70B-120B range match the commercial mid-tier accuracy range, while Llama-3.1-405B and Qwen3-Coder-480B lead the panel. The targeted prompts preserve the full-context accuracy ceiling while using 41% of the prompt-token cost. The result is an accuracy-side, deployment-time path toward reliable on-premise LLM assistance for grid-analysis workflows without fine-tuning or cloud inference.",
+      "abstract": "Large language models (LLMs) are increasingly used to automate power-system analysis, but many utilities and energy-research labs require on-premise serving for confidentiality, regulatory, reproducibility, and cost reasons. This makes the reliability of open-weight models a deployment issue. We show that first-pass failures in power-system code generation are dominated not by reasoning alone, but by structured API-knowledge boundary errors: hallucinated function names, misused parameters, and mishandled result tables in versioned simulation libraries. We introduce PowerCodeBench, an execution-validated benchmark generator that pairs natural-language operator queries with pandapower code and numerical ground truth; an L0-L3 documentation-driven probing procedure that measures per-model API knowledge profiles; and a boundary-aware intervention that combines query-side API demand estimation with targeted proactive documentation injection and routed reactive correction. On a 2,000-task frozen release, we evaluate ten open-weight LLMs (1.5B-480B parameters) and four commercial mid-tier APIs. The intervention improves every evaluated open-weight model of at least 7B parameters and every commercial API by 32 to 56 accuracy points. Open-weight models in the 70B-120B range match the commercial mid-tier accuracy range, while Llama-3.1-405B and Qwen3-Coder-480B lead the panel. The targeted prompts preserve the full-context accuracy ceiling while using 41% of the prompt-token cost. The result is an accuracy-side, deployment-time path toward reliable on-premise LLM assistance for grid-analysis workflows without fine-tuning or cloud inference.",
+      "categories": [
+        "cs.SE",
+        "cs.CL",
+        "eess.SY"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.CL",
+        "eess.SY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31478",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "针对电力系统代码生成中开源模型因API知识边界错误导致可靠性低的问题，提出PowerCodeBench基准、L0-L3文档探查和需求引导的干预方法，在2000个任务上使7B以上模型和商业API准确率提升32-56个百分点，且提示词成本降低59%，为无需微调的本地化AI辅助提供了路径。",
+        "one_sentence_summary": "该论文提出PowerCodeBench基准和基于文档探查与需求引导的干预方法，显著提升开源LLM在电力系统代码生成中的准确率并降低提示成本，为无需微调的本地化AI辅助提供了可行路径。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 89,
+      "score_reason": "针对电力系统代码生成中开源模型因API知识边界错误导致可靠性低的问题，提出PowerCodeBench基准、L0-L3文档探查和需求引导的干预方法，在2000个任务上使7B以上模型和商业API准确率提升32-56个百分点，且提示词成本降低59%，为无需微调的本地化AI辅助提供了路径。",
+      "one_sentence_summary": "该论文提出PowerCodeBench基准和基于文档探查与需求引导的干预方法，显著提升开源LLM在电力系统代码生成中的准确率并降低提示成本，为无需微调的本地化AI辅助提供了可行路径。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31464",
+      "arxiv_id": "2605.31464",
+      "title": "GPU Forecasters: Language Models as Selective Surrogates for Kernel Runtime Optimization",
+      "url": "https://arxiv.org/abs/2605.31464",
+      "published_at": "2026-05-29T15:56:08Z",
+      "publish_date": "2026-05-29",
+      "description": "GPU kernels are the workhorse of modern deep learning, and optimizing them (via evolutionary search or coding agents) usually requires repeated measurement on target hardware. While these measurements provide the ground-truth signal necessary for kernel search, they are costly, because each evaluation of a kernel requires compilation and repeated execution on a GPU. As improvements in LLM inference reduce the cost of writing novel kernels and LLM-driven searches scale to large search budgets, on-device evaluation becomes a bottleneck. To address this, we study how LLMs can serve as selective GPU surrogates for kernel evaluation, by forecasting the performance of proposed kernels. A useful surrogate should be accurate, and it should be selective, by knowing when it could be wrong, and deferring to the GPU. To evaluate surrogates, we measure whether their forecasts are accurate, calibrated, and practically useful for recovering fast kernels under limited GPU-measurement budgets. Next, we study whether reinforcement learning can improve forecast accuracy and confidence calibration. Our experiments demonstrate that LLMs can accurately forecast relative kernel performance, that their utility can be improved through reinforcement learning. Used inside a kernel search, the surrogate lets the search consider several times as many candidates under the same GPU evaluation budget, and that leads to finding faster kernels than an equal-budget baseline. These results suggest that LLMs can play a broader role in kernel optimization, by acting as virtual models of a GPU rather than solely as kernel generators for search.",
+      "summary": "GPU kernels are the workhorse of modern deep learning, and optimizing them (via evolutionary search or coding agents) usually requires repeated measurement on target hardware. While these measurements provide the ground-truth signal necessary for kernel search, they are costly, because each evaluation of a kernel requires compilation and repeated execution on a GPU. As improvements in LLM inference reduce the cost of writing novel kernels and LLM-driven searches scale to large search budgets, on-device evaluation becomes a bottleneck. To address this, we study how LLMs can serve as selective GPU surrogates for kernel evaluation, by forecasting the performance of proposed kernels. A useful surrogate should be accurate, and it should be selective, by knowing when it could be wrong, and deferring to the GPU. To evaluate surrogates, we measure whether their forecasts are accurate, calibrated, and practically useful for recovering fast kernels under limited GPU-measurement budgets. Next, we study whether reinforcement learning can improve forecast accuracy and confidence calibration. Our experiments demonstrate that LLMs can accurately forecast relative kernel performance, that their utility can be improved through reinforcement learning. Used inside a kernel search, the surrogate lets the search consider several times as many candidates under the same GPU evaluation budget, and that leads to finding faster kernels than an equal-budget baseline. These results suggest that LLMs can play a broader role in kernel optimization, by acting as virtual models of a GPU rather than solely as kernel generators for search.",
+      "abstract": "GPU kernels are the workhorse of modern deep learning, and optimizing them (via evolutionary search or coding agents) usually requires repeated measurement on target hardware. While these measurements provide the ground-truth signal necessary for kernel search, they are costly, because each evaluation of a kernel requires compilation and repeated execution on a GPU. As improvements in LLM inference reduce the cost of writing novel kernels and LLM-driven searches scale to large search budgets, on-device evaluation becomes a bottleneck. To address this, we study how LLMs can serve as selective GPU surrogates for kernel evaluation, by forecasting the performance of proposed kernels. A useful surrogate should be accurate, and it should be selective, by knowing when it could be wrong, and deferring to the GPU. To evaluate surrogates, we measure whether their forecasts are accurate, calibrated, and practically useful for recovering fast kernels under limited GPU-measurement budgets. Next, we study whether reinforcement learning can improve forecast accuracy and confidence calibration. Our experiments demonstrate that LLMs can accurately forecast relative kernel performance, that their utility can be improved through reinforcement learning. Used inside a kernel search, the surrogate lets the search consider several times as many candidates under the same GPU evaluation budget, and that leads to finding faster kernels than an equal-budget baseline. These results suggest that LLMs can play a broader role in kernel optimization, by acting as virtual models of a GPU rather than solely as kernel generators for search.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31464",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "将LLM作为GPU性能的替代模型，带有选择性预测机制，可直接加速内核搜索和自动优化工具，对AI编译器和开发者工具链有显著工程价值。",
+        "one_sentence_summary": "提出利用大语言模型作为GPU内核性能的预测器，通过选择性预测机制在不确定时回退至真实执行，结合强化学习提升预测准确率和校准度，实验表明在相同评估预算下可将候选内核数量提升数倍并找到更快内核。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 89,
+      "score_reason": "将LLM作为GPU性能的替代模型，带有选择性预测机制，可直接加速内核搜索和自动优化工具，对AI编译器和开发者工具链有显著工程价值。",
+      "one_sentence_summary": "提出利用大语言模型作为GPU内核性能的预测器，通过选择性预测机制在不确定时回退至真实执行，结合强化学习提升预测准确率和校准度，实验表明在相同评估预算下可将候选内核数量提升数倍并找到更快内核。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31463",
+      "arxiv_id": "2605.31463",
+      "title": "PithTrain: A Compact and Agent-Native MoE Training System",
+      "url": "https://arxiv.org/abs/2605.31463",
+      "published_at": "2026-05-29T15:52:58Z",
+      "publish_date": "2026-05-29",
+      "description": "Mixture-of-Experts (MoE) has become the dominant architecture for frontier language models. To meet this demand, production frameworks have built optimized MoE training stacks over years of engineering effort. Yet evolving these stacks for new architectures and system optimizations remains expensive. With the rise of AI coding agents, they could automate parts of training-framework development and accelerate this evolution. But applying them to these existing frameworks carries hidden costs, invisible to today's throughput-only evaluations. We name this missing dimension agent-task efficiency (ATE): the cost of using coding agents to understand, operate, and extend a framework. Grounded in four agent-native design principles, we build PithTrain, a compact, agent-native MoE training framework. We further introduce ATE-Bench, covering real-world training-framework tasks. Our evaluation shows PithTrain matches the throughput of production frameworks, and on ATE-Bench, PithTrain enables higher agent-task efficiency, with up to 62% fewer Agent Turns and 64% less Active GPU Time.",
+      "summary": "Mixture-of-Experts (MoE) has become the dominant architecture for frontier language models. To meet this demand, production frameworks have built optimized MoE training stacks over years of engineering effort. Yet evolving these stacks for new architectures and system optimizations remains expensive. With the rise of AI coding agents, they could automate parts of training-framework development and accelerate this evolution. But applying them to these existing frameworks carries hidden costs, invisible to today's throughput-only evaluations. We name this missing dimension agent-task efficiency (ATE): the cost of using coding agents to understand, operate, and extend a framework. Grounded in four agent-native design principles, we build PithTrain, a compact, agent-native MoE training framework. We further introduce ATE-Bench, covering real-world training-framework tasks. Our evaluation shows PithTrain matches the throughput of production frameworks, and on ATE-Bench, PithTrain enables higher agent-task efficiency, with up to 62% fewer Agent Turns and 64% less Active GPU Time.",
+      "abstract": "Mixture-of-Experts (MoE) has become the dominant architecture for frontier language models. To meet this demand, production frameworks have built optimized MoE training stacks over years of engineering effort. Yet evolving these stacks for new architectures and system optimizations remains expensive. With the rise of AI coding agents, they could automate parts of training-framework development and accelerate this evolution. But applying them to these existing frameworks carries hidden costs, invisible to today's throughput-only evaluations. We name this missing dimension agent-task efficiency (ATE): the cost of using coding agents to understand, operate, and extend a framework. Grounded in four agent-native design principles, we build PithTrain, a compact, agent-native MoE training framework. We further introduce ATE-Bench, covering real-world training-framework tasks. Our evaluation shows PithTrain matches the throughput of production frameworks, and on ATE-Bench, PithTrain enables higher agent-task efficiency, with up to 62% fewer Agent Turns and 64% less Active GPU Time.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.DC"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.DC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31463",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "针对AI编码代理在现有训练框架上效率低的问题，提出代理原生设计原则并构建PithTrain框架及ATE-Bench基准，在匹配生产框架吞吐量的同时，代理轮次减少62%、GPU时间减少64%。",
+        "one_sentence_summary": "PithTrain是一个遵循代理原生设计原则的紧凑型MoE训练框架，在ATE-Bench上相比现有生产框架可减少高达62%的代理交互轮次和64%的活跃GPU时间，同时保持训练吞吐量。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 21
+      },
+      "score_total": 92,
+      "score_reason": "针对AI编码代理在现有训练框架上效率低的问题，提出代理原生设计原则并构建PithTrain框架及ATE-Bench基准，在匹配生产框架吞吐量的同时，代理轮次减少62%、GPU时间减少64%。",
+      "one_sentence_summary": "PithTrain是一个遵循代理原生设计原则的紧凑型MoE训练框架，在ATE-Bench上相比现有生产框架可减少高达62%的代理交互轮次和64%的活跃GPU时间，同时保持训练吞吐量。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2605.31433",
+      "arxiv_id": "2605.31433",
+      "title": "SCOPE: Self-Play via Co-Evolving Policies for Open-Ended Tasks",
+      "url": "https://arxiv.org/abs/2605.31433",
+      "published_at": "2026-05-29T15:28:26Z",
+      "publish_date": "2026-05-29",
+      "description": "Self-play can train language models without external supervision. However, existing methods require rule-checkable answers, leaving open-ended tasks dependent on curated prompts or frontier-model judges. We introduce SCOPE, a data-free self-play framework for open-ended tasks that co-evolves two policies: a Challenger that generates document-grounded tasks, and a Solver that answers them through multi-turn retrieval. A frozen copy of the initial model serves as the self-judge, which writes task-specific rubrics from the source document and grades Solver responses against them. Across three 7-8B instruction-tuned models (Qwen2.5, Qwen3, OLMo-3), SCOPE improves open-ended performance by up to +10.4 points on eight benchmarks and matches or exceeds GRPO_data trained on ~9K curated prompts. Although trained only on open-ended tasks, SCOPE also improves held-out short-form QA by up to +13.8 points on seven held-out benchmarks, surpassing GRPO_data on all three models. Ablations show that co-evolving the Challenger is necessary to keep tasks near the Solver's frontier, that gains arise from improvements in both retrieval and synthesis with the relative contribution varying by task, and that rubric generation quality is the bottleneck for self-judging.",
+      "summary": "Self-play can train language models without external supervision. However, existing methods require rule-checkable answers, leaving open-ended tasks dependent on curated prompts or frontier-model judges. We introduce SCOPE, a data-free self-play framework for open-ended tasks that co-evolves two policies: a Challenger that generates document-grounded tasks, and a Solver that answers them through multi-turn retrieval. A frozen copy of the initial model serves as the self-judge, which writes task-specific rubrics from the source document and grades Solver responses against them. Across three 7-8B instruction-tuned models (Qwen2.5, Qwen3, OLMo-3), SCOPE improves open-ended performance by up to +10.4 points on eight benchmarks and matches or exceeds GRPO_data trained on ~9K curated prompts. Although trained only on open-ended tasks, SCOPE also improves held-out short-form QA by up to +13.8 points on seven held-out benchmarks, surpassing GRPO_data on all three models. Ablations show that co-evolving the Challenger is necessary to keep tasks near the Solver's frontier, that gains arise from improvements in both retrieval and synthesis with the relative contribution varying by task, and that rubric generation quality is the bottleneck for self-judging.",
+      "abstract": "Self-play can train language models without external supervision. However, existing methods require rule-checkable answers, leaving open-ended tasks dependent on curated prompts or frontier-model judges. We introduce SCOPE, a data-free self-play framework for open-ended tasks that co-evolves two policies: a Challenger that generates document-grounded tasks, and a Solver that answers them through multi-turn retrieval. A frozen copy of the initial model serves as the self-judge, which writes task-specific rubrics from the source document and grades Solver responses against them. Across three 7-8B instruction-tuned models (Qwen2.5, Qwen3, OLMo-3), SCOPE improves open-ended performance by up to +10.4 points on eight benchmarks and matches or exceeds GRPO_data trained on ~9K curated prompts. Although trained only on open-ended tasks, SCOPE also improves held-out short-form QA by up to +13.8 points on seven held-out benchmarks, surpassing GRPO_data on all three models. Ablations show that co-evolving the Challenger is necessary to keep tasks near the Solver's frontier, that gains arise from improvements in both retrieval and synthesis with the relative contribution varying by task, and that rubric generation quality is the bottleneck for self-judging.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2605.31433",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "针对开放域任务的无监督自对弈训练框架，共同演化挑战者和求解器，通过自评量表提升多种模型性能，可复用于AI产品迭代。",
+        "one_sentence_summary": "提出SCOPE框架，通过挑战者与求解器双策略协同演化实现开放任务的自我对抗训练，使用自我评判生成评分细则，在多个7-8B模型上将开放任务性能最高提升10.4分，并泛化至问答任务。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 24
+      },
+      "score_total": 95,
+      "score_reason": "针对开放域任务的无监督自对弈训练框架，共同演化挑战者和求解器，通过自评量表提升多种模型性能，可复用于AI产品迭代。",
+      "one_sentence_summary": "提出SCOPE框架，通过挑战者与求解器双策略协同演化实现开放任务的自我对抗训练，使用自我评判生成评分细则，在多个7-8B模型上将开放任务性能最高提升10.4分，并泛化至问答任务。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-01T06:29:37.963294+00:00",
+      "pushed_at": "2026-06-01T06:29:37.963294+00:00",
+      "source_run_id": "2026-06-01",
+      "pushed_run_id": "2026-06-01"
     }
   ]
 }
