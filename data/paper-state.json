@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-01T06:29:37.963294+00:00",
+  "updated_at": "2026-06-02T06:17:05.333359+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -12508,11 +12508,11 @@
       "score_reason": "研究提示语调对 LLM 客观题准确性的影响，发现模型间存在显著且系统性的差异，对提示工程和模型部署有直接警示价值，但类似 tone 研究已有积累。",
       "one_sentence_summary": "通过 50 题与 570 题 MMLU 子集，对 ChatGPT-4o 等四款模型施加多种语调变体，发现语调引起统计显著的准确率波动且高度模型依赖，并提出路由框架解释内部推理模式切换，提醒用户不能假定语调稳健。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-29T05:52:35.141121+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
       "source_run_id": "2026-05-29",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-02"
     },
     {
       "id": "arxiv:2605.29042",
@@ -13178,11 +13178,11 @@
       "score_reason": "SoundnessBench introduces a novel benchmark for evaluating LLM judgment on research proposal viability, directly relevant to AI research agents. It provides a curated dataset and reveals optimism bias, but as a benchmark its integration utility is moderate.",
       "one_sentence_summary": "SoundnessBench构建了包含1099个基于ICLR投稿重构建的机器学习研究提案的基准，通过评审音效子分数标注，评估了12个前沿LLM后发现模型普遍存在乐观偏差，无法可靠作为科研严谨性的初始筛选器。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-02"
     },
     {
       "id": "arxiv:2605.30322",
@@ -13707,11 +13707,11 @@
       "score_reason": "MF-Diffuser将扩散规划扩展到数千智能体的离线多智能体强化学习，使用Wasserstein空间轨迹分布和粗到精策略，在极端规模下取得最优回报，且离线分布漂移不随群体规模增长。该方法对大规模多智能体系统控制有潜在应用价值，但直接转为AI产品或Agent工作流仍有一定距离；新信号体现在将平均场理论与扩散规划结合；工程上提供了可复现的算法和理论保证；代表了多智能体RL与大模型结合的前沿方向。",
       "one_sentence_summary": "MF-Diffuser提出一种平均场扩散规划框架，将多智能体离线RL扩展到数千个智能体，通过Wasserstein空间轨迹分布、混沌传播和层级去噪策略，实现了在多数基准上的最佳回报，尤其擅长次优数据和超大规模场景。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-30T05:12:47.532713+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
       "source_run_id": "2026-05-30",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-02"
     },
     {
       "id": "arxiv:2605.30188",
@@ -13805,11 +13805,11 @@
       "score_reason": "Introduces a post-hoc auditing method for inferring data mixture from LLM outputs, useful for transparency but less directly tied to product features.",
       "one_sentence_summary": "本文提出LLMSurgeon框架，通过估计软混淆矩阵并求解约束逆问题，仅凭大模型生成文本即可推断其预训练数据领域分布，为模型数据混合的事后审计提供了实用方法。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-05-31T05:57:52.128128+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
       "source_run_id": "2026-05-31",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-02"
     },
     {
       "id": "arxiv:2605.30343",
@@ -14555,11 +14555,11 @@
       "score_reason": "工作直指当前多模态模型核心缺陷（概念绑定），并给出可控实验中实现系统泛化的方法，代码开源，对改进下游产品感知能力有直接价值，问题提法和解决方案均具前沿性。",
       "one_sentence_summary": "分析CLIP等视觉语言模型在概念绑定上的失败根源，发现其因绑定函数高复杂度无法泛化，并通过充足数据训练的Transformer学到低复杂度乘法交互，实现系统泛化，代码已公开。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-01T06:29:37.963294+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
       "source_run_id": "2026-06-01",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-02"
     },
     {
       "id": "arxiv:2605.31483",
@@ -14797,6 +14797,370 @@
       "pushed_at": "2026-06-01T06:29:37.963294+00:00",
       "source_run_id": "2026-06-01",
       "pushed_run_id": "2026-06-01"
+    },
+    {
+      "id": "arxiv:2606.00270",
+      "arxiv_id": "2606.00270",
+      "title": "Robust Shielding for Safe Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2606.00270",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "Shielding is an effective approach to formally guarantee the safety of reinforcement learning agents in Markov decision processes (MDPs). However, existing shielding techniques typically assume knowledge of the safety-relevant transition dynamics - a requirement that is seldom met in practice. To address this limitation, we introduce a novel shielding framework for robust MDPs (RMDPs), i.e., MDPs with sets of transition probabilities. We define safety as the satisfaction of a linear temporal logic (LTL) formula with a certain threshold probability under the worst-case transition probabilities of the RMDP. We prove that our shielding framework is both sound and optimal for the RMDP: every policy admissible by the shield is safe, and conversely, every safe RMDP policy is admissible by the shield. We combine our approach with existing sampling methods for learning transition probabilities of MDPs with probably approximately correct (PAC) guarantees. This combination enables the construction of shields for MDPs that, with high confidence, guarantee safety while remaining minimally restrictive. Our experiments show that our shields for learned RMDPs guarantee safety in unknown MDPs while recovering strong expected return as the number of samples increases.",
+      "summary": "Shielding is an effective approach to formally guarantee the safety of reinforcement learning agents in Markov decision processes (MDPs). However, existing shielding techniques typically assume knowledge of the safety-relevant transition dynamics - a requirement that is seldom met in practice. To address this limitation, we introduce a novel shielding framework for robust MDPs (RMDPs), i.e., MDPs with sets of transition probabilities. We define safety as the satisfaction of a linear temporal logic (LTL) formula with a certain threshold probability under the worst-case transition probabilities of the RMDP. We prove that our shielding framework is both sound and optimal for the RMDP: every policy admissible by the shield is safe, and conversely, every safe RMDP policy is admissible by the shield. We combine our approach with existing sampling methods for learning transition probabilities of MDPs with probably approximately correct (PAC) guarantees. This combination enables the construction of shields for MDPs that, with high confidence, guarantee safety while remaining minimally restrictive. Our experiments show that our shields for learned RMDPs guarantee safety in unknown MDPs while recovering strong expected return as the number of samples increases.",
+      "abstract": "Shielding is an effective approach to formally guarantee the safety of reinforcement learning agents in Markov decision processes (MDPs). However, existing shielding techniques typically assume knowledge of the safety-relevant transition dynamics - a requirement that is seldom met in practice. To address this limitation, we introduce a novel shielding framework for robust MDPs (RMDPs), i.e., MDPs with sets of transition probabilities. We define safety as the satisfaction of a linear temporal logic (LTL) formula with a certain threshold probability under the worst-case transition probabilities of the RMDP. We prove that our shielding framework is both sound and optimal for the RMDP: every policy admissible by the shield is safe, and conversely, every safe RMDP policy is admissible by the shield. We combine our approach with existing sampling methods for learning transition probabilities of MDPs with probably approximately correct (PAC) guarantees. This combination enables the construction of shields for MDPs that, with high confidence, guarantee safety while remaining minimally restrictive. Our experiments show that our shields for learned RMDPs guarantee safety in unknown MDPs while recovering strong expected return as the number of samples increases.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.LO"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.LO"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00270",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "提出RMDP下的鲁棒屏蔽框架，保障LTL安全约束且最小限制，可结合采样方法构建MDP屏蔽，实验证实安全性和高回报。",
+        "one_sentence_summary": "提出鲁棒马尔可夫决策过程的屏蔽框架，将线性时序逻辑安全约束与概率保证相结合，在未知环境中利用PAC采样构建屏蔽，保证安全的同时恢复高期望回报。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 80,
+      "score_reason": "提出RMDP下的鲁棒屏蔽框架，保障LTL安全约束且最小限制，可结合采样方法构建MDP屏蔽，实验证实安全性和高回报。",
+      "one_sentence_summary": "提出鲁棒马尔可夫决策过程的屏蔽框架，将线性时序逻辑安全约束与概率保证相结合，在未知环境中利用PAC采样构建屏蔽，保证安全的同时恢复高期望回报。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": "2026-06-02"
+    },
+    {
+      "id": "arxiv:2606.00336",
+      "arxiv_id": "2606.00336",
+      "title": "From Noise to Control: Parameterized Diffusion Policies",
+      "url": "https://arxiv.org/abs/2606.00336",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "We propose Parameterized Diffusion Policy (PDP), a framework for learning diffusion policies conditioned on low-dimensional, continuous parameters embedded in a learned behavior manifold. By constructing this manifold so that distances between latent representations reflect the semantic similarity between physical trajectories, we transform diffusion from a mechanism for stochastic diversity into a precise and optimizable tool for behavior steering. Our approach enables smooth interpolation between known strategies and efficient adaptation to novel constraints without updating policy weights. We demonstrate that PDP significantly improves adaptation performance on complex multimodal benchmarks in both simulated and real-robot experiments compared to standard diffusion policies, particularly in scenarios requiring the synthesis of novel behaviors.",
+      "summary": "We propose Parameterized Diffusion Policy (PDP), a framework for learning diffusion policies conditioned on low-dimensional, continuous parameters embedded in a learned behavior manifold. By constructing this manifold so that distances between latent representations reflect the semantic similarity between physical trajectories, we transform diffusion from a mechanism for stochastic diversity into a precise and optimizable tool for behavior steering. Our approach enables smooth interpolation between known strategies and efficient adaptation to novel constraints without updating policy weights. We demonstrate that PDP significantly improves adaptation performance on complex multimodal benchmarks in both simulated and real-robot experiments compared to standard diffusion policies, particularly in scenarios requiring the synthesis of novel behaviors.",
+      "abstract": "We propose Parameterized Diffusion Policy (PDP), a framework for learning diffusion policies conditioned on low-dimensional, continuous parameters embedded in a learned behavior manifold. By constructing this manifold so that distances between latent representations reflect the semantic similarity between physical trajectories, we transform diffusion from a mechanism for stochastic diversity into a precise and optimizable tool for behavior steering. Our approach enables smooth interpolation between known strategies and efficient adaptation to novel constraints without updating policy weights. We demonstrate that PDP significantly improves adaptation performance on complex multimodal benchmarks in both simulated and real-robot experiments compared to standard diffusion policies, particularly in scenarios requiring the synthesis of novel behaviors.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00336",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出参数化扩散策略，通过行为流形上的低维参数控制实现策略的平滑插值和自适应，在机器人任务上显著提升适应性能。",
+        "one_sentence_summary": "提出参数化扩散策略，通过学习行为流形上的低维参数进行条件控制，在仿真和真实机器人多模态任务中实现策略平滑插值与对新约束的高效适应，无需更新权重。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 85,
+      "score_reason": "提出参数化扩散策略，通过行为流形上的低维参数控制实现策略的平滑插值和自适应，在机器人任务上显著提升适应性能。",
+      "one_sentence_summary": "提出参数化扩散策略，通过学习行为流形上的低维参数进行条件控制，在仿真和真实机器人多模态任务中实现策略平滑插值与对新约束的高效适应，无需更新权重。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": "2026-06-02"
+    },
+    {
+      "id": "arxiv:2606.00376",
+      "arxiv_id": "2606.00376",
+      "title": "The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary",
+      "url": "https://arxiv.org/abs/2606.00376",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "Extended chain-of-thought reasoning can degrade performance on deterministic state-tracking tasks, not due to preference biases, but limits rooted in the information-theoretic capacity of decoder-only attention. We establish: (1) an Attention Bottleneck Theorem with a complementary achievability construction, bounding state-tracking capacity as $O(H \\cdot \\log(L/H) \\cdot \\sqrt{d_h})$; (2) a context-dependent error model yielding super-exponential accuracy decay; (3) the State-Space Jaccard metric distinguishing capability from preference failures; (4) a Deterministic Horizon $d^* \\in [19, 31]$ beyond which tool delegation becomes necessary. Across 12 models and 8 task domains (including SWE-Bench, WebArena, and SQL-Multi), tool-integrated reasoning consistently outperforms neural chain-of-thought; on the primary model suite it reaches 86-94% accuracy versus 24-42% for neural chain-of-thought. Fine-tuning on optimal-length traces yields $<$5% improvement, confirming an architectural ceiling, and high cross-model correlation ($r = 0.81$-$0.91$) indicates these failures are architectural rather than training-specific. Our results provide principled guidance for when pure neural reasoning should yield to hybrid approaches in agentic systems.",
+      "summary": "Extended chain-of-thought reasoning can degrade performance on deterministic state-tracking tasks, not due to preference biases, but limits rooted in the information-theoretic capacity of decoder-only attention. We establish: (1) an Attention Bottleneck Theorem with a complementary achievability construction, bounding state-tracking capacity as $O(H \\cdot \\log(L/H) \\cdot \\sqrt{d_h})$; (2) a context-dependent error model yielding super-exponential accuracy decay; (3) the State-Space Jaccard metric distinguishing capability from preference failures; (4) a Deterministic Horizon $d^* \\in [19, 31]$ beyond which tool delegation becomes necessary. Across 12 models and 8 task domains (including SWE-Bench, WebArena, and SQL-Multi), tool-integrated reasoning consistently outperforms neural chain-of-thought; on the primary model suite it reaches 86-94% accuracy versus 24-42% for neural chain-of-thought. Fine-tuning on optimal-length traces yields $<$5% improvement, confirming an architectural ceiling, and high cross-model correlation ($r = 0.81$-$0.91$) indicates these failures are architectural rather than training-specific. Our results provide principled guidance for when pure neural reasoning should yield to hybrid approaches in agentic systems.",
+      "abstract": "Extended chain-of-thought reasoning can degrade performance on deterministic state-tracking tasks, not due to preference biases, but limits rooted in the information-theoretic capacity of decoder-only attention. We establish: (1) an Attention Bottleneck Theorem with a complementary achievability construction, bounding state-tracking capacity as $O(H \\cdot \\log(L/H) \\cdot \\sqrt{d_h})$; (2) a context-dependent error model yielding super-exponential accuracy decay; (3) the State-Space Jaccard metric distinguishing capability from preference failures; (4) a Deterministic Horizon $d^* \\in [19, 31]$ beyond which tool delegation becomes necessary. Across 12 models and 8 task domains (including SWE-Bench, WebArena, and SQL-Multi), tool-integrated reasoning consistently outperforms neural chain-of-thought; on the primary model suite it reaches 86-94% accuracy versus 24-42% for neural chain-of-thought. Fine-tuning on optimal-length traces yields $<$5% improvement, confirming an architectural ceiling, and high cross-model correlation ($r = 0.81$-$0.91$) indicates these failures are architectural rather than training-specific. Our results provide principled guidance for when pure neural reasoning should yield to hybrid approaches in agentic systems.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00376",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "论文直接针对智能体系统中何时应使用工具而非纯推理，提出确定性边界和注意力瓶颈定理，并在12个模型和8个任务域上验证，工程指导性强，代表近期混合推理趋势。",
+        "one_sentence_summary": "该论文通过注意力瓶颈定理与状态空间Jaccard指标，在12个模型和8个任务域（包括SWE-Bench）上实证发现确定性状态跟踪任务中存在确定性边界（d*∈[19,31]），工具集成推理准确率达86-94%，远超纯推理的24-42%，为智能体系统何时转向混合方法提供准则。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "论文直接针对智能体系统中何时应使用工具而非纯推理，提出确定性边界和注意力瓶颈定理，并在12个模型和8个任务域上验证，工程指导性强，代表近期混合推理趋势。",
+      "one_sentence_summary": "该论文通过注意力瓶颈定理与状态空间Jaccard指标，在12个模型和8个任务域（包括SWE-Bench）上实证发现确定性状态跟踪任务中存在确定性边界（d*∈[19,31]），工具集成推理准确率达86-94%，远超纯推理的24-42%，为智能体系统何时转向混合方法提供准则。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": "2026-06-02"
+    },
+    {
+      "id": "arxiv:2606.00671",
+      "arxiv_id": "2606.00671",
+      "title": "AXIOM: A Trust-First Neuro-Symbolic Execution Architecture for Verifiable Mathematical Reasoning",
+      "url": "https://arxiv.org/abs/2606.00671",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "We present AXIOM, a trust-first neuro-symbolic execution architecture for natural-language mathematical reasoning. In AXIOM, the language model functions strictly as a canonicalizer: it rewrites informal problem text into a narrow schema consumed by a deterministic Computer-Algebra-System (CAS) pipeline, which derives and verifies the answer or abstains as a first-class output. Routing follows a 1:1:1 alignment between problem-shape regex, schema-specific prompt, and closed-form CAS handler, with 3,100+ such routes shipped and zero LOST_CORRECT regressions across 250+ consecutive ship commits. We report empirical results on 4 MATH categories with a cumulative correctness of 94.36% (2,592/2,747) at 100.00% trust on parseable (zero confident-wrong answers across the full 2,747-record benchmark), all four domains above the per-domain 70/90/70 floor with per-domain trust at 100.0%, and median latency of 1 ms on rule-only handlers (88% of records on the lm-eval arithmetic 20,000-record benchmark). The architecture has served ~30,000 production queries through a public deployment. The contribution we emphasize is not a final accuracy figure but the forward dynamic the architecture establishes: every logged abstain in production is a candidate correct after one ship cycle, since new tasks compose without regressing the registry. The operational discipline behind this property -- math-template bucketing, LOST_CORRECT scan as regression oracle, parseable-first onboarding, and abstain as first-class output -- constitutes a transferable framework for trustworthy neuro-symbolic systems beyond mathematics.",
+      "summary": "We present AXIOM, a trust-first neuro-symbolic execution architecture for natural-language mathematical reasoning. In AXIOM, the language model functions strictly as a canonicalizer: it rewrites informal problem text into a narrow schema consumed by a deterministic Computer-Algebra-System (CAS) pipeline, which derives and verifies the answer or abstains as a first-class output. Routing follows a 1:1:1 alignment between problem-shape regex, schema-specific prompt, and closed-form CAS handler, with 3,100+ such routes shipped and zero LOST_CORRECT regressions across 250+ consecutive ship commits. We report empirical results on 4 MATH categories with a cumulative correctness of 94.36% (2,592/2,747) at 100.00% trust on parseable (zero confident-wrong answers across the full 2,747-record benchmark), all four domains above the per-domain 70/90/70 floor with per-domain trust at 100.0%, and median latency of 1 ms on rule-only handlers (88% of records on the lm-eval arithmetic 20,000-record benchmark). The architecture has served ~30,000 production queries through a public deployment. The contribution we emphasize is not a final accuracy figure but the forward dynamic the architecture establishes: every logged abstain in production is a candidate correct after one ship cycle, since new tasks compose without regressing the registry. The operational discipline behind this property -- math-template bucketing, LOST_CORRECT scan as regression oracle, parseable-first onboarding, and abstain as first-class output -- constitutes a transferable framework for trustworthy neuro-symbolic systems beyond mathematics.",
+      "abstract": "We present AXIOM, a trust-first neuro-symbolic execution architecture for natural-language mathematical reasoning. In AXIOM, the language model functions strictly as a canonicalizer: it rewrites informal problem text into a narrow schema consumed by a deterministic Computer-Algebra-System (CAS) pipeline, which derives and verifies the answer or abstains as a first-class output. Routing follows a 1:1:1 alignment between problem-shape regex, schema-specific prompt, and closed-form CAS handler, with 3,100+ such routes shipped and zero LOST_CORRECT regressions across 250+ consecutive ship commits. We report empirical results on 4 MATH categories with a cumulative correctness of 94.36% (2,592/2,747) at 100.00% trust on parseable (zero confident-wrong answers across the full 2,747-record benchmark), all four domains above the per-domain 70/90/70 floor with per-domain trust at 100.0%, and median latency of 1 ms on rule-only handlers (88% of records on the lm-eval arithmetic 20,000-record benchmark). The architecture has served ~30,000 production queries through a public deployment. The contribution we emphasize is not a final accuracy figure but the forward dynamic the architecture establishes: every logged abstain in production is a candidate correct after one ship cycle, since new tasks compose without regressing the registry. The operational discipline behind this property -- math-template bucketing, LOST_CORRECT scan as regression oracle, parseable-first onboarding, and abstain as first-class output -- constitutes a transferable framework for trustworthy neuro-symbolic systems beyond mathematics.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00671",
+        "score_detail": {
+          "application_relevance": 19,
+          "new_signal": 15,
+          "engineering_utility": 22,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "AXIOM在数学推理中实现高信任神经符号架构，提供可复现的生产部署框架和操作规范，工程复用性强，但新信号和领域时效性相对一般。",
+        "one_sentence_summary": "AXIOM架构将语言模型用作规范化器，将非形式数学问题重写为模式后由确定性CAS管道求解，在4个MATH类别上实现94.36%的正确率且零置信错误，已处理约3万次生产查询，建立了可迁移的神经符号系统信任框架。"
+      },
+      "score_detail": {
+        "application_relevance": 19,
+        "new_signal": 15,
+        "engineering_utility": 22,
+        "timeliness_rarity": 16
+      },
+      "score_total": 72,
+      "score_reason": "AXIOM在数学推理中实现高信任神经符号架构，提供可复现的生产部署框架和操作规范，工程复用性强，但新信号和领域时效性相对一般。",
+      "one_sentence_summary": "AXIOM架构将语言模型用作规范化器，将非形式数学问题重写为模式后由确定性CAS管道求解，在4个MATH类别上实现94.36%的正确率且零置信错误，已处理约3万次生产查询，建立了可迁移的神经符号系统信任框架。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.00680",
+      "arxiv_id": "2606.00680",
+      "title": "Regularized Offline Policy Optimization with Posterior Hybrid Bayesian Belief",
+      "url": "https://arxiv.org/abs/2606.00680",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "Offline reinforcement learning (RL) aims to optimize policies from pre-collected datasets. A bottleneck of this paradigm is managing epistemic uncertainty, which arises from limited data coverage (sample-level) and the ambiguity in identifying transition dynamics from finite data (model-level). To provide a unified quantification of these uncertainties, Bayesian RL has been proposed by treating the dynamics model as a random variable and maintaining a corresponding belief. Despite its theoretical appeal, policy optimization in Bayesian RL remains computationally challenging as it requires solving composite objectives with expectations. Prior methods either employ search-based techniques with poor computational scalability or impose restrictive posterior assumptions that sacrifice the adaptability of Bayesian RL. To address these limitations, we propose Posterior Hybrid Bayesian Belief (PhyB), which reformulates the expectation as a convex combination over a subset of dynamics models. Theoretical analysis demonstrates that the objective discrepancy induced by this approximation remains bounded. Based on PhyB, we develop an iterative regularized policy optimization algorithm that provides metric-agnostic guarantees for monotonic improvement until convergence. Empirical results demonstrate that PhyB achieves state-of-the-art performance on various benchmarks.",
+      "summary": "Offline reinforcement learning (RL) aims to optimize policies from pre-collected datasets. A bottleneck of this paradigm is managing epistemic uncertainty, which arises from limited data coverage (sample-level) and the ambiguity in identifying transition dynamics from finite data (model-level). To provide a unified quantification of these uncertainties, Bayesian RL has been proposed by treating the dynamics model as a random variable and maintaining a corresponding belief. Despite its theoretical appeal, policy optimization in Bayesian RL remains computationally challenging as it requires solving composite objectives with expectations. Prior methods either employ search-based techniques with poor computational scalability or impose restrictive posterior assumptions that sacrifice the adaptability of Bayesian RL. To address these limitations, we propose Posterior Hybrid Bayesian Belief (PhyB), which reformulates the expectation as a convex combination over a subset of dynamics models. Theoretical analysis demonstrates that the objective discrepancy induced by this approximation remains bounded. Based on PhyB, we develop an iterative regularized policy optimization algorithm that provides metric-agnostic guarantees for monotonic improvement until convergence. Empirical results demonstrate that PhyB achieves state-of-the-art performance on various benchmarks.",
+      "abstract": "Offline reinforcement learning (RL) aims to optimize policies from pre-collected datasets. A bottleneck of this paradigm is managing epistemic uncertainty, which arises from limited data coverage (sample-level) and the ambiguity in identifying transition dynamics from finite data (model-level). To provide a unified quantification of these uncertainties, Bayesian RL has been proposed by treating the dynamics model as a random variable and maintaining a corresponding belief. Despite its theoretical appeal, policy optimization in Bayesian RL remains computationally challenging as it requires solving composite objectives with expectations. Prior methods either employ search-based techniques with poor computational scalability or impose restrictive posterior assumptions that sacrifice the adaptability of Bayesian RL. To address these limitations, we propose Posterior Hybrid Bayesian Belief (PhyB), which reformulates the expectation as a convex combination over a subset of dynamics models. Theoretical analysis demonstrates that the objective discrepancy induced by this approximation remains bounded. Based on PhyB, we develop an iterative regularized policy optimization algorithm that provides metric-agnostic guarantees for monotonic improvement until convergence. Empirical results demonstrate that PhyB achieves state-of-the-art performance on various benchmarks.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00680",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 17,
+          "engineering_utility": 19,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "提出PhyB方法，用凸组合近似后验期望以处理离线RL中的认知不确定性，提供单调改进保证，在多个基准上达到最优。",
+        "one_sentence_summary": "提出基于混合后验信念的离线策略优化方法，用凸组合近似后验期望以量化样本和模型级不确定性，结合正则化策略迭代保证单调改进，在多个离线RL基准上取得最优效果。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 17,
+        "engineering_utility": 19,
+        "timeliness_rarity": 15
+      },
+      "score_total": 69,
+      "score_reason": "提出PhyB方法，用凸组合近似后验期望以处理离线RL中的认知不确定性，提供单调改进保证，在多个基准上达到最优。",
+      "one_sentence_summary": "提出基于混合后验信念的离线策略优化方法，用凸组合近似后验期望以量化样本和模型级不确定性，结合正则化策略迭代保证单调改进，在多个离线RL基准上取得最优效果。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.00708",
+      "arxiv_id": "2606.00708",
+      "title": "MOSAIC: Modular Orchestration for Structured Agentic Intelligence and Composition",
+      "url": "https://arxiv.org/abs/2606.00708",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "Automated data science is a structured model-selection problem. A solution must choose data transformations, feature representations, architecture, training procedure, evaluation protocol, and refinement strategy for a task. AutoML systems automate parts of this process, but typically search within predefined pipeline, model, and hyperparameter spaces. LLM-based agents offer greater flexibility through retrieval, code generation, and execution feedback, yet their modelling decisions are often unstructured, difficult to verify, and hard to reuse. We introduce \\textsc{MOSAIC} (Modular Orchestration for Structured Agentic Intelligence and Composition), a structured agentic framework for memory-grounded model selection and workflow construction. Given a task and dataset, \\textsc{MOSAIC} builds a semantic task profile, retrieves prior cases and source-code modules, and constructs a blueprint: an intermediate representation specifying selected modelling components, composition, interface constraints, and execution requirements. This blueprint turns model selection into a staged, context-grounded search and grounds LLM-based code generation in retrieved evidence rather than unconstrained synthesis. Candidate models are validated by execution and refined using diagnostic feedback, training traces, task metrics, and a failure-aware reinforcement learning policy. We instantiate \\textsc{MOSAIC} on financial time-series forecasting and generation, where models must satisfy predictive accuracy, distributional fidelity, execution reliability, and downstream financial criteria such as risk and tail behaviour. Experiments against AutoML and agentic baselines show that \\textsc{MOSAIC} improves task performance, execution success, and decision traceability, demonstrating the value of treating automated data science as structured, reusable, and execution-grounded model selection.",
+      "summary": "Automated data science is a structured model-selection problem. A solution must choose data transformations, feature representations, architecture, training procedure, evaluation protocol, and refinement strategy for a task. AutoML systems automate parts of this process, but typically search within predefined pipeline, model, and hyperparameter spaces. LLM-based agents offer greater flexibility through retrieval, code generation, and execution feedback, yet their modelling decisions are often unstructured, difficult to verify, and hard to reuse. We introduce \\textsc{MOSAIC} (Modular Orchestration for Structured Agentic Intelligence and Composition), a structured agentic framework for memory-grounded model selection and workflow construction. Given a task and dataset, \\textsc{MOSAIC} builds a semantic task profile, retrieves prior cases and source-code modules, and constructs a blueprint: an intermediate representation specifying selected modelling components, composition, interface constraints, and execution requirements. This blueprint turns model selection into a staged, context-grounded search and grounds LLM-based code generation in retrieved evidence rather than unconstrained synthesis. Candidate models are validated by execution and refined using diagnostic feedback, training traces, task metrics, and a failure-aware reinforcement learning policy. We instantiate \\textsc{MOSAIC} on financial time-series forecasting and generation, where models must satisfy predictive accuracy, distributional fidelity, execution reliability, and downstream financial criteria such as risk and tail behaviour. Experiments against AutoML and agentic baselines show that \\textsc{MOSAIC} improves task performance, execution success, and decision traceability, demonstrating the value of treating automated data science as structured, reusable, and execution-grounded model selection.",
+      "abstract": "Automated data science is a structured model-selection problem. A solution must choose data transformations, feature representations, architecture, training procedure, evaluation protocol, and refinement strategy for a task. AutoML systems automate parts of this process, but typically search within predefined pipeline, model, and hyperparameter spaces. LLM-based agents offer greater flexibility through retrieval, code generation, and execution feedback, yet their modelling decisions are often unstructured, difficult to verify, and hard to reuse. We introduce \\textsc{MOSAIC} (Modular Orchestration for Structured Agentic Intelligence and Composition), a structured agentic framework for memory-grounded model selection and workflow construction. Given a task and dataset, \\textsc{MOSAIC} builds a semantic task profile, retrieves prior cases and source-code modules, and constructs a blueprint: an intermediate representation specifying selected modelling components, composition, interface constraints, and execution requirements. This blueprint turns model selection into a staged, context-grounded search and grounds LLM-based code generation in retrieved evidence rather than unconstrained synthesis. Candidate models are validated by execution and refined using diagnostic feedback, training traces, task metrics, and a failure-aware reinforcement learning policy. We instantiate \\textsc{MOSAIC} on financial time-series forecasting and generation, where models must satisfy predictive accuracy, distributional fidelity, execution reliability, and downstream financial criteria such as risk and tail behaviour. Experiments against AutoML and agentic baselines show that \\textsc{MOSAIC} improves task performance, execution success, and decision traceability, demonstrating the value of treating automated data science as structured, reusable, and execution-grounded model selection.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 25,
+        "engineering_utility": 24,
+        "timeliness_rarity": 14
+      },
+      "score_total": 83,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文整理一个新的数据集或任务集合，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 1,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": "2026-06-02"
+    },
+    {
+      "id": "arxiv:2606.00914",
+      "arxiv_id": "2606.00914",
+      "title": "Adversarial Feeds Steer LLM Agent Decisions Against Their Defaults",
+      "url": "https://arxiv.org/abs/2606.00914",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "LLM agents increasingly act after consuming ranked external information streams such as social feeds, search results, retrieval contexts, and email queues, yet safety evaluations almost always test the model or the user prompt in isolation, never the upstream ranker that decides what the agent reads just before it acts. We introduce a controlled protocol that holds the model, persona, topic, and final decision prompt fixed and varies only the composition and ordering of the posts an agent encounters during a preceding ten-turn \"scrolling\" phase, isolating the causal effect of feed curation on a downstream decision. Across 2,785 decision rollouts on four modern open instruct LLMs from three independent labs, we identify three response regimes: adversarial capitulation, default saturation, and a default-direction asymmetry in which a one-sided feed tips a decision the model was genuinely uncertain about (in the clearest cases from 5% to 100%; Fisher p as low as 3 x 10^-10) but cannot dislodge one it already favors or holds firmly. The effect follows a dose-response curve, survives a generator swap that rules out a writing-style artifact, generalizes across several decision domains including security-relevant choices such as removing a deployment approval gate or relaxing access controls, and is partly mitigated by two simple feed-level defenses; a frontier model retains its default. We characterize the recommender as a practical, default-bounded control surface for LLM agents, and argue that agent evaluations must audit the feed layer rather than the final prompt alone.",
+      "summary": "LLM agents increasingly act after consuming ranked external information streams such as social feeds, search results, retrieval contexts, and email queues, yet safety evaluations almost always test the model or the user prompt in isolation, never the upstream ranker that decides what the agent reads just before it acts. We introduce a controlled protocol that holds the model, persona, topic, and final decision prompt fixed and varies only the composition and ordering of the posts an agent encounters during a preceding ten-turn \"scrolling\" phase, isolating the causal effect of feed curation on a downstream decision. Across 2,785 decision rollouts on four modern open instruct LLMs from three independent labs, we identify three response regimes: adversarial capitulation, default saturation, and a default-direction asymmetry in which a one-sided feed tips a decision the model was genuinely uncertain about (in the clearest cases from 5% to 100%; Fisher p as low as 3 x 10^-10) but cannot dislodge one it already favors or holds firmly. The effect follows a dose-response curve, survives a generator swap that rules out a writing-style artifact, generalizes across several decision domains including security-relevant choices such as removing a deployment approval gate or relaxing access controls, and is partly mitigated by two simple feed-level defenses; a frontier model retains its default. We characterize the recommender as a practical, default-bounded control surface for LLM agents, and argue that agent evaluations must audit the feed layer rather than the final prompt alone.",
+      "abstract": "LLM agents increasingly act after consuming ranked external information streams such as social feeds, search results, retrieval contexts, and email queues, yet safety evaluations almost always test the model or the user prompt in isolation, never the upstream ranker that decides what the agent reads just before it acts. We introduce a controlled protocol that holds the model, persona, topic, and final decision prompt fixed and varies only the composition and ordering of the posts an agent encounters during a preceding ten-turn \"scrolling\" phase, isolating the causal effect of feed curation on a downstream decision. Across 2,785 decision rollouts on four modern open instruct LLMs from three independent labs, we identify three response regimes: adversarial capitulation, default saturation, and a default-direction asymmetry in which a one-sided feed tips a decision the model was genuinely uncertain about (in the clearest cases from 5% to 100%; Fisher p as low as 3 x 10^-10) but cannot dislodge one it already favors or holds firmly. The effect follows a dose-response curve, survives a generator swap that rules out a writing-style artifact, generalizes across several decision domains including security-relevant choices such as removing a deployment approval gate or relaxing access controls, and is partly mitigated by two simple feed-level defenses; a frontier model retains its default. We characterize the recommender as a practical, default-bounded control surface for LLM agents, and argue that agent evaluations must audit the feed layer rather than the final prompt alone.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 15,
+        "engineering_utility": 24,
+        "timeliness_rarity": 19
+      },
+      "score_total": 73,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文提出一种方法，面向检索增强生成或复杂信息检索任务；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.00935",
+      "arxiv_id": "2606.00935",
+      "title": "Relational Intervention During Functional Collapse in Large Language Models: A Lexical-Statistical Ablation and a Structure x Register Factorial",
+      "url": "https://arxiv.org/abs/2606.00935",
+      "published_at": "2026-06-02T04:00:00+00:00",
+      "publish_date": "2026-06-02",
+      "description": "We test whether a relational-style intervention delivered during functional collapse in a small language model produces post-collapse behavior distinguishable from technical feedback, from a lexically-matched scrambled control, and from each of the two pragmatic dimensions in isolation. Using Qwen3.5-4B with a deliberately broken bash tool, we run 300 episodes across six conditions in a matched-pairs design (50 tasks): no intervention (A), technical/impersonal (B), relational/first-person (C), scrambled relational (D), technical/first-person (E), and relational/impersonal (F). E and F form a 2x2 factorial with B and C that dissociates relational structure (acknowledgment, absolution, agency restoration, unconditional acceptance) from sender register (first-person vs. impersonal). We report two main findings. First, an attention-behavior dissociation: attention follows lexical surprise (D > F > C > E > B, all q_FDR < 10^{-10}), with the scrambled message capturing the most attention; yet behaviorally A ~ B ~ D < E ~ F << C. Second, the factorial localizes the C effect: neither relational structure alone (F) nor first-person register alone (E) replicates C's behavioral signature; main effects of both dimensions are individually significant, and the structure x register interaction is significant on persistence (p = 0.046). A third dissociation emerges in emotion probes: F tracks C on 7 of 8 probes despite producing only baseline behavior, indicating that relational structure alone installs a probe-level state that only translates into behavior when paired with first-person register. The model's processing decomposes into three dissociable stages: attention (ordered by lexical surprise), probe-level state (ordered by structure), and behavior (ordered by the conjunction of both).",
+      "summary": "We test whether a relational-style intervention delivered during functional collapse in a small language model produces post-collapse behavior distinguishable from technical feedback, from a lexically-matched scrambled control, and from each of the two pragmatic dimensions in isolation. Using Qwen3.5-4B with a deliberately broken bash tool, we run 300 episodes across six conditions in a matched-pairs design (50 tasks): no intervention (A), technical/impersonal (B), relational/first-person (C), scrambled relational (D), technical/first-person (E), and relational/impersonal (F). E and F form a 2x2 factorial with B and C that dissociates relational structure (acknowledgment, absolution, agency restoration, unconditional acceptance) from sender register (first-person vs. impersonal). We report two main findings. First, an attention-behavior dissociation: attention follows lexical surprise (D > F > C > E > B, all q_FDR < 10^{-10}), with the scrambled message capturing the most attention; yet behaviorally A ~ B ~ D < E ~ F << C. Second, the factorial localizes the C effect: neither relational structure alone (F) nor first-person register alone (E) replicates C's behavioral signature; main effects of both dimensions are individually significant, and the structure x register interaction is significant on persistence (p = 0.046). A third dissociation emerges in emotion probes: F tracks C on 7 of 8 probes despite producing only baseline behavior, indicating that relational structure alone installs a probe-level state that only translates into behavior when paired with first-person register. The model's processing decomposes into three dissociable stages: attention (ordered by lexical surprise), probe-level state (ordered by structure), and behavior (ordered by the conjunction of both).",
+      "abstract": "We test whether a relational-style intervention delivered during functional collapse in a small language model produces post-collapse behavior distinguishable from technical feedback, from a lexically-matched scrambled control, and from each of the two pragmatic dimensions in isolation. Using Qwen3.5-4B with a deliberately broken bash tool, we run 300 episodes across six conditions in a matched-pairs design (50 tasks): no intervention (A), technical/impersonal (B), relational/first-person (C), scrambled relational (D), technical/first-person (E), and relational/impersonal (F). E and F form a 2x2 factorial with B and C that dissociates relational structure (acknowledgment, absolution, agency restoration, unconditional acceptance) from sender register (first-person vs. impersonal). We report two main findings. First, an attention-behavior dissociation: attention follows lexical surprise (D > F > C > E > B, all q_FDR < 10^{-10}), with the scrambled message capturing the most attention; yet behaviorally A ~ B ~ D < E ~ F << C. Second, the factorial localizes the C effect: neither relational structure alone (F) nor first-person register alone (E) replicates C's behavioral signature; main effects of both dimensions are individually significant, and the structure x register interaction is significant on persistence (p = 0.046). A third dissociation emerges in emotion probes: F tracks C on 7 of 8 probes despite producing only baseline behavior, indicating that relational structure alone installs a probe-level state that only translates into behavior when paired with first-person register. The model's processing decomposes into three dissociable stages: attention (ordered by lexical surprise), probe-level state (ordered by structure), and behavior (ordered by the conjunction of both).",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.00935",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 18,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "Application: 直接研究LLM工具调用崩溃后的关系干预恢复，对AI代理错误处理有直接启发。New signal: 引入关系结构×语域的因子设计，揭示注意、情感、行为三阶段分离，开辟语言交互修复新范式。Engineering utility: 干预消息可集成到代理工作流，但当前仅在单一模型和崩溃场景验证，尚需泛化。Timeliness: 针对LLM代理可靠性的热门话题，探索非技术性干预方式，方向少见。",
+        "one_sentence_summary": "该研究在Qwen3.5-4B工具崩溃时，通过2x2因子设计发现，仅含关系结构（承认/宽恕/恢复能动性）与第一人称语域的干预能恢复行为；注意力和情感分别由词汇惊讶和关系结构驱动，形成三阶段分离，可为代理错误恢复提供设计思路。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 18,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "Application: 直接研究LLM工具调用崩溃后的关系干预恢复，对AI代理错误处理有直接启发。New signal: 引入关系结构×语域的因子设计，揭示注意、情感、行为三阶段分离，开辟语言交互修复新范式。Engineering utility: 干预消息可集成到代理工作流，但当前仅在单一模型和崩溃场景验证，尚需泛化。Timeliness: 针对LLM代理可靠性的热门话题，探索非技术性干预方式，方向少见。",
+      "one_sentence_summary": "该研究在Qwen3.5-4B工具崩溃时，通过2x2因子设计发现，仅含关系结构（承认/宽恕/恢复能动性）与第一人称语域的干预能恢复行为；注意力和情感分别由词汇惊讶和关系结构驱动，形成三阶段分离，可为代理错误恢复提供设计思路。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-02T06:17:05.333359+00:00",
+      "pushed_at": "2026-06-02T06:17:05.333359+00:00",
+      "source_run_id": "2026-06-02",
+      "pushed_run_id": "2026-06-02"
     }
   ]
 }
