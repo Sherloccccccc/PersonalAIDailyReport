@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-03T06:27:33.284681+00:00",
+  "updated_at": "2026-06-04T06:21:53.335762+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -15398,6 +15398,625 @@
       "pushed_at": "2026-06-03T06:27:33.284681+00:00",
       "source_run_id": "2026-06-03",
       "pushed_run_id": "2026-06-03"
+    },
+    {
+      "id": "arxiv:2606.05152",
+      "arxiv_id": "2606.05152",
+      "title": "Reinforcement Learning from Rich Feedback with Distributional DAgger",
+      "url": "https://arxiv.org/abs/2606.05152",
+      "published_at": "2026-06-03T17:54:04Z",
+      "publish_date": "2026-06-03",
+      "description": "Reasoning models have advanced rapidly, but the dominant reinforcement learning from verifiable rewards (RLVR) recipe remains surprisingly narrow: sample many responses and reward each with a single bit indicating whether the final answer is correct. Yet many settings provide rich feedback, including execution traces, tool outputs, expert corrections, and model self-evaluations. We study how to use such feedback through a distributional variant of the classic imitation learning algorithm DAgger, where the learner has local access to an expert distribution on states visited by the current policy. This yields a simple forward cross-entropy objective that admits a blackbox expert and whose sequence-level gradient {conduct rich credit assignment by propagating} future expert-student disagreement back to earlier decisions. We show that prior RL with self-distillation objectives based on reverse KL or Jensen-Shannon fail to guarantee monotonic policy improvement: even when the expert has higher reward, their updates may increase probability on worse actions. In contrast, we show that forward cross-entropy admits monotonic policy improvement and enjoys guarantees on regret. We further show that our objective optimizes a lower bound on teacher-weighted likelihood of success, leading to improved Pass@N. Empirically, our approach, DistIL, improves over RLVR and RL with self-distillation baselines across a variety of domains: scientific reasoning, coding, and solving hard mathematical problems.",
+      "summary": "Reasoning models have advanced rapidly, but the dominant reinforcement learning from verifiable rewards (RLVR) recipe remains surprisingly narrow: sample many responses and reward each with a single bit indicating whether the final answer is correct. Yet many settings provide rich feedback, including execution traces, tool outputs, expert corrections, and model self-evaluations. We study how to use such feedback through a distributional variant of the classic imitation learning algorithm DAgger, where the learner has local access to an expert distribution on states visited by the current policy. This yields a simple forward cross-entropy objective that admits a blackbox expert and whose sequence-level gradient {conduct rich credit assignment by propagating} future expert-student disagreement back to earlier decisions. We show that prior RL with self-distillation objectives based on reverse KL or Jensen-Shannon fail to guarantee monotonic policy improvement: even when the expert has higher reward, their updates may increase probability on worse actions. In contrast, we show that forward cross-entropy admits monotonic policy improvement and enjoys guarantees on regret. We further show that our objective optimizes a lower bound on teacher-weighted likelihood of success, leading to improved Pass@N. Empirically, our approach, DistIL, improves over RLVR and RL with self-distillation baselines across a variety of domains: scientific reasoning, coding, and solving hard mathematical problems.",
+      "abstract": "Reasoning models have advanced rapidly, but the dominant reinforcement learning from verifiable rewards (RLVR) recipe remains surprisingly narrow: sample many responses and reward each with a single bit indicating whether the final answer is correct. Yet many settings provide rich feedback, including execution traces, tool outputs, expert corrections, and model self-evaluations. We study how to use such feedback through a distributional variant of the classic imitation learning algorithm DAgger, where the learner has local access to an expert distribution on states visited by the current policy. This yields a simple forward cross-entropy objective that admits a blackbox expert and whose sequence-level gradient {conduct rich credit assignment by propagating} future expert-student disagreement back to earlier decisions. We show that prior RL with self-distillation objectives based on reverse KL or Jensen-Shannon fail to guarantee monotonic policy improvement: even when the expert has higher reward, their updates may increase probability on worse actions. In contrast, we show that forward cross-entropy admits monotonic policy improvement and enjoys guarantees on regret. We further show that our objective optimizes a lower bound on teacher-weighted likelihood of success, leading to improved Pass@N. Empirically, our approach, DistIL, improves over RLVR and RL with self-distillation baselines across a variety of domains: scientific reasoning, coding, and solving hard mathematical problems.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05152",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "DistIL 针对推理模型强化学习提出分布式的DAgger变体，通过前向交叉熵实现丰富反馈下的单调策略改进，在科学推理、编程和数学任务上超越RLVR与自蒸馏基线。",
+        "one_sentence_summary": "DistIL 提出分布式的DAgger方法，以前向交叉熵目标从代码执行轨迹、工具输出等丰富反馈中学习，保证策略单调改进，在科学推理、编程和数学解题上取得更高Pass@N成绩。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "DistIL 针对推理模型强化学习提出分布式的DAgger变体，通过前向交叉熵实现丰富反馈下的单调策略改进，在科学推理、编程和数学任务上超越RLVR与自蒸馏基线。",
+      "one_sentence_summary": "DistIL 提出分布式的DAgger方法，以前向交叉熵目标从代码执行轨迹、工具输出等丰富反馈中学习，保证策略单调改进，在科学推理、编程和数学解题上取得更高Pass@N成绩。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05139",
+      "arxiv_id": "2606.05139",
+      "title": "BBOmix: A Tabular Benchmark for Hyperparameter Optimization of Unsupervised Biological Representation Learning",
+      "url": "https://arxiv.org/abs/2606.05139",
+      "published_at": "2026-06-03T17:48:31Z",
+      "publish_date": "2026-06-03",
+      "description": "The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used for dimensionality reduction and representation learning in this domain. However, AEs are highly sensitive to architectural choices and hyperparameters, and unsupervised optimization typically relies on reconstruction loss, which may be a poor proxy for downstream utility. Exhaustive hyperparameter optimization (HPO) is computationally expensive, leading researchers to frequently rely on suboptimal default configurations. To democratize access to large-scale unsupervised HPO research, we introduce $\\textbf{BBOmix}$, the first open-source tabular benchmark for unsupervised representation learning on real-world biological data. Our benchmark includes 105,000 evaluations across four AE architectures and seven multi-omics modalities from the TCGA and SCHC datasets. We quantify the correlation between reconstruction loss and downstream task performance and provide an extensive evaluation of state-of-the-art single-fidelity, multi-fidelity, and transfer learning HPO methods, establishing a rigorous baseline for future research in unsupervised biological representation learning.",
+      "summary": "The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used for dimensionality reduction and representation learning in this domain. However, AEs are highly sensitive to architectural choices and hyperparameters, and unsupervised optimization typically relies on reconstruction loss, which may be a poor proxy for downstream utility. Exhaustive hyperparameter optimization (HPO) is computationally expensive, leading researchers to frequently rely on suboptimal default configurations. To democratize access to large-scale unsupervised HPO research, we introduce $\\textbf{BBOmix}$, the first open-source tabular benchmark for unsupervised representation learning on real-world biological data. Our benchmark includes 105,000 evaluations across four AE architectures and seven multi-omics modalities from the TCGA and SCHC datasets. We quantify the correlation between reconstruction loss and downstream task performance and provide an extensive evaluation of state-of-the-art single-fidelity, multi-fidelity, and transfer learning HPO methods, establishing a rigorous baseline for future research in unsupervised biological representation learning.",
+      "abstract": "The rapid advancement of high-throughput sequencing has led to large, high-dimensional omics datasets. Deep unsupervised learning architectures, particularly Autoencoders (AEs), are increasingly used for dimensionality reduction and representation learning in this domain. However, AEs are highly sensitive to architectural choices and hyperparameters, and unsupervised optimization typically relies on reconstruction loss, which may be a poor proxy for downstream utility. Exhaustive hyperparameter optimization (HPO) is computationally expensive, leading researchers to frequently rely on suboptimal default configurations. To democratize access to large-scale unsupervised HPO research, we introduce $\\textbf{BBOmix}$, the first open-source tabular benchmark for unsupervised representation learning on real-world biological data. Our benchmark includes 105,000 evaluations across four AE architectures and seven multi-omics modalities from the TCGA and SCHC datasets. We quantify the correlation between reconstruction loss and downstream task performance and provide an extensive evaluation of state-of-the-art single-fidelity, multi-fidelity, and transfer learning HPO methods, establishing a rigorous baseline for future research in unsupervised biological representation learning.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05139",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "首个无监督生物表示学习超参优化基准，包含大规模评估数据，支持多种 HPO 方法对比，降低实验门槛，适合复现与集成，但领域较专。",
+        "one_sentence_summary": "BBOmix 是首个面向无监督生物表示学习的表格基准，涵盖 105,000 次评估、四种自编码器架构和七种多组学模态，量化了重建损失与下游性能相关性，并提供多种 HPO 方法的基线，旨在使大规模无监督超参优化研究更易于访问和复现。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 16
+      },
+      "score_total": 76,
+      "score_reason": "首个无监督生物表示学习超参优化基准，包含大规模评估数据，支持多种 HPO 方法对比，降低实验门槛，适合复现与集成，但领域较专。",
+      "one_sentence_summary": "BBOmix 是首个面向无监督生物表示学习的表格基准，涵盖 105,000 次评估、四种自编码器架构和七种多组学模态，量化了重建损失与下游性能相关性，并提供多种 HPO 方法的基线，旨在使大规模无监督超参优化研究更易于访问和复现。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.05121",
+      "arxiv_id": "2606.05121",
+      "title": "Audio Interaction Model",
+      "url": "https://arxiv.org/abs/2606.05121",
+      "published_at": "2026-06-03T17:26:11Z",
+      "publish_date": "2026-06-03",
+      "description": "Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are offline, and streaming audio models each handle only a single task such as streaming ASR or voice chatting. It is time to unify them into one online LALM: a model that, through an always-on perceive-decide-respond loop, listens to sound, environment, and instructions in real time and reacts on the fly. We formalize this regime as the Audio Interaction Model, and realize it with Audio-Interaction, a unified streaming model that retains offline task execution while adding online general audio instruction following, from dialogue to full voice chatting, deciding when to respond from the semantics of the stream. To enable this, we propose SoundFlow, a framework that instantiates the perceive-decide-respond loop end to end, from data to training to deployment, through streaming-native data construction, comprehension-aware training, and asynchronous low-latency inference for stable real-time interaction. We further construct StreamAudio-2M, a 2.6M-item streaming corpus spanning 7 fundamental abilities and 28 sub-tasks, and Proactive-Sound-Bench for evaluating proactive audio intervention. Across 8 benchmarks, Audio-Interaction preserves competitive performance on mainstream audio tasks while unlocking capabilities inaccessible to offline LALMs, including real-time ASR, streaming audio instruction following, and proactive help.",
+      "summary": "Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are offline, and streaming audio models each handle only a single task such as streaming ASR or voice chatting. It is time to unify them into one online LALM: a model that, through an always-on perceive-decide-respond loop, listens to sound, environment, and instructions in real time and reacts on the fly. We formalize this regime as the Audio Interaction Model, and realize it with Audio-Interaction, a unified streaming model that retains offline task execution while adding online general audio instruction following, from dialogue to full voice chatting, deciding when to respond from the semantics of the stream. To enable this, we propose SoundFlow, a framework that instantiates the perceive-decide-respond loop end to end, from data to training to deployment, through streaming-native data construction, comprehension-aware training, and asynchronous low-latency inference for stable real-time interaction. We further construct StreamAudio-2M, a 2.6M-item streaming corpus spanning 7 fundamental abilities and 28 sub-tasks, and Proactive-Sound-Bench for evaluating proactive audio intervention. Across 8 benchmarks, Audio-Interaction preserves competitive performance on mainstream audio tasks while unlocking capabilities inaccessible to offline LALMs, including real-time ASR, streaming audio instruction following, and proactive help.",
+      "abstract": "Audio is an inherently interactive modality, yet today's Large Audio Language Models (LALMs) are offline, and streaming audio models each handle only a single task such as streaming ASR or voice chatting. It is time to unify them into one online LALM: a model that, through an always-on perceive-decide-respond loop, listens to sound, environment, and instructions in real time and reacts on the fly. We formalize this regime as the Audio Interaction Model, and realize it with Audio-Interaction, a unified streaming model that retains offline task execution while adding online general audio instruction following, from dialogue to full voice chatting, deciding when to respond from the semantics of the stream. To enable this, we propose SoundFlow, a framework that instantiates the perceive-decide-respond loop end to end, from data to training to deployment, through streaming-native data construction, comprehension-aware training, and asynchronous low-latency inference for stable real-time interaction. We further construct StreamAudio-2M, a 2.6M-item streaming corpus spanning 7 fundamental abilities and 28 sub-tasks, and Proactive-Sound-Bench for evaluating proactive audio intervention. Across 8 benchmarks, Audio-Interaction preserves competitive performance on mainstream audio tasks while unlocking capabilities inaccessible to offline LALMs, including real-time ASR, streaming audio instruction following, and proactive help.",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "api_categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.MM",
+        "eess.AS"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05121",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 25,
+          "engineering_utility": 23,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "文章形式化并实现了音频交互模型，通过SoundFlow框架构建感知-决策-响应闭环，新数据集StreamAudio-2M和Proactive-Sound-Bench支持实时音频指令跟随与主动干预，开启在线LALM新范式。",
+        "one_sentence_summary": "该工作提出音频交互模型，基于SoundFlow框架实现流式感知-决策-响应闭环，构建260万条数据的StreamAudio-2M语料库和主动音频干预基准，使模型能实时理解声音、跟随指令并主动提供帮助。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 25,
+        "engineering_utility": 23,
+        "timeliness_rarity": 24
+      },
+      "score_total": 97,
+      "score_reason": "文章形式化并实现了音频交互模型，通过SoundFlow框架构建感知-决策-响应闭环，新数据集StreamAudio-2M和Proactive-Sound-Bench支持实时音频指令跟随与主动干预，开启在线LALM新范式。",
+      "one_sentence_summary": "该工作提出音频交互模型，基于SoundFlow框架实现流式感知-决策-响应闭环，构建260万条数据的StreamAudio-2M语料库和主动音频干预基准，使模型能实时理解声音、跟随指令并主动提供帮助。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05037",
+      "arxiv_id": "2606.05037",
+      "title": "Self-Reflective APIs: Structure Beats Verbosity for AI Agent Recovery",
+      "url": "https://arxiv.org/abs/2606.05037",
+      "published_at": "2026-06-03T16:02:11Z",
+      "publish_date": "2026-06-03",
+      "description": "When an AI agent calls an API and hits a validation error, it needs more than what went wrong -- it needs what to do next. A self-reflective API returns, on validation failure, a machine-readable recovery\\_feedback.suggestions[] payload sufficient for the agent to repair the request and retry without external reasoning. On a leak-audited pilot ($N{=}30$ per cell, 3 LLMs, 10 adversarial tasks), structured suggestions lift task-completion rate by $+36.7$--$40.0$pp over plain-English diagnoses on Anthropic models (Fisher's exact $p \\le 0.0022$), at $1.8$--$2.2\\times$ better per-success token efficiency. The lift is not significant on gpt-4o-mini ($p{=}0.435$); a second-domain replication on a billing API confirms the pattern. The comparison only holds after auditing two undocumented classes of answer leakage in LLM benchmarks. We shipaudit\\_prompt\\_leakage.py as reusable CI infrastructure. Code and data: https://github.com/arquicanedo/self-reflective-apis.",
+      "summary": "When an AI agent calls an API and hits a validation error, it needs more than what went wrong -- it needs what to do next. A self-reflective API returns, on validation failure, a machine-readable recovery\\_feedback.suggestions[] payload sufficient for the agent to repair the request and retry without external reasoning. On a leak-audited pilot ($N{=}30$ per cell, 3 LLMs, 10 adversarial tasks), structured suggestions lift task-completion rate by $+36.7$--$40.0$pp over plain-English diagnoses on Anthropic models (Fisher's exact $p \\le 0.0022$), at $1.8$--$2.2\\times$ better per-success token efficiency. The lift is not significant on gpt-4o-mini ($p{=}0.435$); a second-domain replication on a billing API confirms the pattern. The comparison only holds after auditing two undocumented classes of answer leakage in LLM benchmarks. We shipaudit\\_prompt\\_leakage.py as reusable CI infrastructure. Code and data: https://github.com/arquicanedo/self-reflective-apis.",
+      "abstract": "When an AI agent calls an API and hits a validation error, it needs more than what went wrong -- it needs what to do next. A self-reflective API returns, on validation failure, a machine-readable recovery\\_feedback.suggestions[] payload sufficient for the agent to repair the request and retry without external reasoning. On a leak-audited pilot ($N{=}30$ per cell, 3 LLMs, 10 adversarial tasks), structured suggestions lift task-completion rate by $+36.7$--$40.0$pp over plain-English diagnoses on Anthropic models (Fisher's exact $p \\le 0.0022$), at $1.8$--$2.2\\times$ better per-success token efficiency. The lift is not significant on gpt-4o-mini ($p{=}0.435$); a second-domain replication on a billing API confirms the pattern. The comparison only holds after auditing two undocumented classes of answer leakage in LLM benchmarks. We shipaudit\\_prompt\\_leakage.py as reusable CI infrastructure. Code and data: https://github.com/arquicanedo/self-reflective-apis.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05037",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "Directly improves AI agent tool-use recovery; proposes structured API feedback; provides reusable evaluation infrastructure; addresses prompt leakage.",
+        "one_sentence_summary": "论文提出自反射API，在API验证失败时向AI代理返回机器可读的结构化修复建议，支持自动请求修复与重试；在10个对抗任务上，结构化建议使Anthropic模型任务完成率提升36.7-40.0个百分点，且成功令牌效率提高1.8-2.2倍，同时发布防泄漏审计脚本。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 89,
+      "score_reason": "Directly improves AI agent tool-use recovery; proposes structured API feedback; provides reusable evaluation infrastructure; addresses prompt leakage.",
+      "one_sentence_summary": "论文提出自反射API，在API验证失败时向AI代理返回机器可读的结构化修复建议，支持自动请求修复与重试；在10个对抗任务上，结构化建议使Anthropic模型任务完成率提升36.7-40.0个百分点，且成功令牌效率提高1.8-2.2倍，同时发布防泄漏审计脚本。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05030",
+      "arxiv_id": "2606.05030",
+      "title": "Imbuing Large Language Models with Bidirectional Logic for Robust Chain Repair",
+      "url": "https://arxiv.org/abs/2606.05030",
+      "published_at": "2026-06-03T15:58:48Z",
+      "publish_date": "2026-06-03",
+      "description": "Autoregressive chain-of-thought (CoT) reasoning in large language models (LLMs) is fundamentally forward-directed: each step conditions only on prior tokens. This unidirectional inductive bias renders even capable models susceptible to error snowballing, wherein a single logical or arithmetic mistake in an early step irreversibly corrupts the entire reasoning chain. We introduce Teleological Reasoning Infilling (\\TRI{}), a training framework that endows decoder-only transformers with a native \\emph{goal-conditioned bridging} capability. The key insight is to reframe erroneous reasoning segments as fill-in-the-middle (FIM) tasks: given a verified prefix premise $P$, a verified downstream milestone $S$, and the original query $Q$, the model must synthesise the logical bridge $M$ that connects $P$ to $S$ rigorously and completely. To achieve this with standard causal architectures, we introduce a Prefix-Suffix-Middle (PSM) sequence rearrangement with three non-overlapping sentinel tokens, enabling $M$ to attend to both $P$ and $S$ without any structural modification to the self-attention mechanism. Training proceeds in two stages: (i) Supervised Fine-Tuning (SFT) on symbolically verified $(P, S, M)$ triples extracted from formal mathematics corpora, and (ii) Direct Preference Optimisation (DPO) with a deterministic symbolic verifier (Lean 4 / Python) as the sole reward oracle, eliminating LLM-judge sycophancy. At inference, TRI operates as a surgical repair module within a dual-system loop: a causal draft model generates an initial trace, the verifier pinpoints failures, and TRI infills only the damaged segment, leaving verified sections intact. Comprehensive experiments on three benchmarks demonstrate that TRI achieves state-of-the-art performance across all tasks, while reducing per-problem token expenditure by 31.2%.",
+      "summary": "Autoregressive chain-of-thought (CoT) reasoning in large language models (LLMs) is fundamentally forward-directed: each step conditions only on prior tokens. This unidirectional inductive bias renders even capable models susceptible to error snowballing, wherein a single logical or arithmetic mistake in an early step irreversibly corrupts the entire reasoning chain. We introduce Teleological Reasoning Infilling (\\TRI{}), a training framework that endows decoder-only transformers with a native \\emph{goal-conditioned bridging} capability. The key insight is to reframe erroneous reasoning segments as fill-in-the-middle (FIM) tasks: given a verified prefix premise $P$, a verified downstream milestone $S$, and the original query $Q$, the model must synthesise the logical bridge $M$ that connects $P$ to $S$ rigorously and completely. To achieve this with standard causal architectures, we introduce a Prefix-Suffix-Middle (PSM) sequence rearrangement with three non-overlapping sentinel tokens, enabling $M$ to attend to both $P$ and $S$ without any structural modification to the self-attention mechanism. Training proceeds in two stages: (i) Supervised Fine-Tuning (SFT) on symbolically verified $(P, S, M)$ triples extracted from formal mathematics corpora, and (ii) Direct Preference Optimisation (DPO) with a deterministic symbolic verifier (Lean 4 / Python) as the sole reward oracle, eliminating LLM-judge sycophancy. At inference, TRI operates as a surgical repair module within a dual-system loop: a causal draft model generates an initial trace, the verifier pinpoints failures, and TRI infills only the damaged segment, leaving verified sections intact. Comprehensive experiments on three benchmarks demonstrate that TRI achieves state-of-the-art performance across all tasks, while reducing per-problem token expenditure by 31.2%.",
+      "abstract": "Autoregressive chain-of-thought (CoT) reasoning in large language models (LLMs) is fundamentally forward-directed: each step conditions only on prior tokens. This unidirectional inductive bias renders even capable models susceptible to error snowballing, wherein a single logical or arithmetic mistake in an early step irreversibly corrupts the entire reasoning chain. We introduce Teleological Reasoning Infilling (\\TRI{}), a training framework that endows decoder-only transformers with a native \\emph{goal-conditioned bridging} capability. The key insight is to reframe erroneous reasoning segments as fill-in-the-middle (FIM) tasks: given a verified prefix premise $P$, a verified downstream milestone $S$, and the original query $Q$, the model must synthesise the logical bridge $M$ that connects $P$ to $S$ rigorously and completely. To achieve this with standard causal architectures, we introduce a Prefix-Suffix-Middle (PSM) sequence rearrangement with three non-overlapping sentinel tokens, enabling $M$ to attend to both $P$ and $S$ without any structural modification to the self-attention mechanism. Training proceeds in two stages: (i) Supervised Fine-Tuning (SFT) on symbolically verified $(P, S, M)$ triples extracted from formal mathematics corpora, and (ii) Direct Preference Optimisation (DPO) with a deterministic symbolic verifier (Lean 4 / Python) as the sole reward oracle, eliminating LLM-judge sycophancy. At inference, TRI operates as a surgical repair module within a dual-system loop: a causal draft model generates an initial trace, the verifier pinpoints failures, and TRI infills only the damaged segment, leaving verified sections intact. Comprehensive experiments on three benchmarks demonstrate that TRI achieves state-of-the-art performance across all tasks, while reducing per-problem token expenditure by 31.2%.",
+      "categories": [
+        "cs.CL",
+        "cs.SC"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.SC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05030",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Improves CoT robustness via surgical repair, enhancing LLM-based reasoning products. Novel goal-conditioned infilling and PSM arrangement. Implementable with symbolic verifier training. Addresses a recent challenge in LLM error correction.",
+        "one_sentence_summary": "TRI 框架通过将错误推理段转化为填空任务，利用前缀-后缀-中间序列重排和符号验证器微调解码器模型，在推理时手术式修复受损环节，实现三项基准最优并减少 31.2% 的令牌消耗。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 87,
+      "score_reason": "Improves CoT robustness via surgical repair, enhancing LLM-based reasoning products. Novel goal-conditioned infilling and PSM arrangement. Implementable with symbolic verifier training. Addresses a recent challenge in LLM error correction.",
+      "one_sentence_summary": "TRI 框架通过将错误推理段转化为填空任务，利用前缀-后缀-中间序列重排和符号验证器微调解码器模型，在推理时手术式修复受损环节，实现三项基准最优并减少 31.2% 的令牌消耗。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05008",
+      "arxiv_id": "2606.05008",
+      "title": "M$^3$Eval: Multi-Modal Memory Evaluation through Cognitively-Grounded Video Tasks",
+      "url": "https://arxiv.org/abs/2606.05008",
+      "published_at": "2026-06-03T15:28:57Z",
+      "publish_date": "2026-06-03",
+      "description": "As multi-modal models advance towards long-form video understanding, memory emerges as a critical capability. Despite substantial efforts in developing video datasets and benchmarks, existing works primarily focus on perception and reasoning, without systematically evaluating memory: what models retain, how faithfully information is preserved, and how robust memory remains under interference. To address this gap, we introduce M$^3$Eval, the first comprehensive evaluation framework and benchmark for probing different memory dimensions in multi-modal models. Grounded in cognitive psychology, our design features carefully constructed tasks that isolate key aspects of memory. Leveraging M$^3$Eval, we conduct extensive experiments across representative multi-modal models, revealing consistent weaknesses and distinctive behaviors. We find that models struggle to maintain disentangled representations when processing parallel video streams, exhibit interference patterns differing substantially from those observed in human memory, ground memory sources more reliably in the spatial domain than the temporal domain, and demonstrate limited symbolic memory. Collectively, our benchmark provides a valuable resource for future research, while our findings highlight memory as a fundamental yet underexplored capability and offer insights for designing more effective memory mechanisms in multi-modal models. Our code and dataset are available at https://pku-value-lab.github.io/m3eval-homepage.",
+      "summary": "As multi-modal models advance towards long-form video understanding, memory emerges as a critical capability. Despite substantial efforts in developing video datasets and benchmarks, existing works primarily focus on perception and reasoning, without systematically evaluating memory: what models retain, how faithfully information is preserved, and how robust memory remains under interference. To address this gap, we introduce M$^3$Eval, the first comprehensive evaluation framework and benchmark for probing different memory dimensions in multi-modal models. Grounded in cognitive psychology, our design features carefully constructed tasks that isolate key aspects of memory. Leveraging M$^3$Eval, we conduct extensive experiments across representative multi-modal models, revealing consistent weaknesses and distinctive behaviors. We find that models struggle to maintain disentangled representations when processing parallel video streams, exhibit interference patterns differing substantially from those observed in human memory, ground memory sources more reliably in the spatial domain than the temporal domain, and demonstrate limited symbolic memory. Collectively, our benchmark provides a valuable resource for future research, while our findings highlight memory as a fundamental yet underexplored capability and offer insights for designing more effective memory mechanisms in multi-modal models. Our code and dataset are available at https://pku-value-lab.github.io/m3eval-homepage.",
+      "abstract": "As multi-modal models advance towards long-form video understanding, memory emerges as a critical capability. Despite substantial efforts in developing video datasets and benchmarks, existing works primarily focus on perception and reasoning, without systematically evaluating memory: what models retain, how faithfully information is preserved, and how robust memory remains under interference. To address this gap, we introduce M$^3$Eval, the first comprehensive evaluation framework and benchmark for probing different memory dimensions in multi-modal models. Grounded in cognitive psychology, our design features carefully constructed tasks that isolate key aspects of memory. Leveraging M$^3$Eval, we conduct extensive experiments across representative multi-modal models, revealing consistent weaknesses and distinctive behaviors. We find that models struggle to maintain disentangled representations when processing parallel video streams, exhibit interference patterns differing substantially from those observed in human memory, ground memory sources more reliably in the spatial domain than the temporal domain, and demonstrate limited symbolic memory. Collectively, our benchmark provides a valuable resource for future research, while our findings highlight memory as a fundamental yet underexplored capability and offer insights for designing more effective memory mechanisms in multi-modal models. Our code and dataset are available at https://pku-value-lab.github.io/m3eval-homepage.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05008",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 24,
+          "engineering_utility": 19,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Directly evaluates memory in multimodal models, informing AI product design for video agents. New benchmark based on cognitive psychology reveals underexplored memory dimensions. Provides open-source code and dataset for integration. Timely topic with long-form video understanding.",
+        "one_sentence_summary": "M³Eval 是一个基于认知心理学设计的多模态模型记忆评测框架，通过精心构造的视频任务系统评估模型在平行流、干扰、时空线索绑定和符号记忆等维度的表现，代码与数据集已开源。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 24,
+        "engineering_utility": 19,
+        "timeliness_rarity": 22
+      },
+      "score_total": 85,
+      "score_reason": "Directly evaluates memory in multimodal models, informing AI product design for video agents. New benchmark based on cognitive psychology reveals underexplored memory dimensions. Provides open-source code and dataset for integration. Timely topic with long-form video understanding.",
+      "one_sentence_summary": "M³Eval 是一个基于认知心理学设计的多模态模型记忆评测框架，通过精心构造的视频任务系统评估模型在平行流、干扰、时空线索绑定和符号记忆等维度的表现，代码与数据集已开源。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05001",
+      "arxiv_id": "2606.05001",
+      "title": "TeleSWEBench: A Commit-Driven Benchmark for Evaluating LLM-Powered Software Engineering in Telecommunications",
+      "url": "https://arxiv.org/abs/2606.05001",
+      "published_at": "2026-06-03T15:19:40Z",
+      "publish_date": "2026-06-03",
+      "description": "With the telecommunications field embracing zero touch management alongside novel O-RAN and AI-RAN frameworks, contemporary telecom networks now function as immensely intricate and heavily softwareized codebases. While automated software engineering (ASE) tools and Software Engineering (SWE) Agents hold the potential to alleviate the critical code generation bottleneck in this domain, their ability to navigate and modify specialized, mathematically rigorous wireless stacks like srsRAN 5G remains unverified. General-purpose coding benchmarks fail to capture the stateful logic and strict requirements of telecommunications, leaving a critical evaluation gap. In this paper, we introduce TeleSWEBench, the first commit-driven benchmark specifically designed to measure an agent's performance in the telecom domain. We mine real developer commits from the srsRAN 5G repository and distill them into structured test cases across three difficulty tiers (Easy, Medium, and Difficult). Our benchmark consists of 734 questions that are accompanied by executable unit tests. To avoid the rigidity of test cases, we further propose a hierarchical LLM as a Judge framework called TeleJudge that scores agent outputs at the file level and aggregates verdicts holistically. This follows an evaluation based on context and semantic similarity in parallel to a standard unit test-based evaluation. Using this benchmark, we evaluate AIDER, OpenHands, and the ClaudeCode frameworks, powered by state-of-the-art reasoning LLMs, including Qwen3, GPT OSS, Gemma 4, Kimi, and Qwencoder 2.5. Our two-stage evaluation reveals that models suffer from a lack of both localization accuracy and functional correctness, with the strongest ASE tools achieving up to 25% of shippable changes.",
+      "summary": "With the telecommunications field embracing zero touch management alongside novel O-RAN and AI-RAN frameworks, contemporary telecom networks now function as immensely intricate and heavily softwareized codebases. While automated software engineering (ASE) tools and Software Engineering (SWE) Agents hold the potential to alleviate the critical code generation bottleneck in this domain, their ability to navigate and modify specialized, mathematically rigorous wireless stacks like srsRAN 5G remains unverified. General-purpose coding benchmarks fail to capture the stateful logic and strict requirements of telecommunications, leaving a critical evaluation gap. In this paper, we introduce TeleSWEBench, the first commit-driven benchmark specifically designed to measure an agent's performance in the telecom domain. We mine real developer commits from the srsRAN 5G repository and distill them into structured test cases across three difficulty tiers (Easy, Medium, and Difficult). Our benchmark consists of 734 questions that are accompanied by executable unit tests. To avoid the rigidity of test cases, we further propose a hierarchical LLM as a Judge framework called TeleJudge that scores agent outputs at the file level and aggregates verdicts holistically. This follows an evaluation based on context and semantic similarity in parallel to a standard unit test-based evaluation. Using this benchmark, we evaluate AIDER, OpenHands, and the ClaudeCode frameworks, powered by state-of-the-art reasoning LLMs, including Qwen3, GPT OSS, Gemma 4, Kimi, and Qwencoder 2.5. Our two-stage evaluation reveals that models suffer from a lack of both localization accuracy and functional correctness, with the strongest ASE tools achieving up to 25% of shippable changes.",
+      "abstract": "With the telecommunications field embracing zero touch management alongside novel O-RAN and AI-RAN frameworks, contemporary telecom networks now function as immensely intricate and heavily softwareized codebases. While automated software engineering (ASE) tools and Software Engineering (SWE) Agents hold the potential to alleviate the critical code generation bottleneck in this domain, their ability to navigate and modify specialized, mathematically rigorous wireless stacks like srsRAN 5G remains unverified. General-purpose coding benchmarks fail to capture the stateful logic and strict requirements of telecommunications, leaving a critical evaluation gap. In this paper, we introduce TeleSWEBench, the first commit-driven benchmark specifically designed to measure an agent's performance in the telecom domain. We mine real developer commits from the srsRAN 5G repository and distill them into structured test cases across three difficulty tiers (Easy, Medium, and Difficult). Our benchmark consists of 734 questions that are accompanied by executable unit tests. To avoid the rigidity of test cases, we further propose a hierarchical LLM as a Judge framework called TeleJudge that scores agent outputs at the file level and aggregates verdicts holistically. This follows an evaluation based on context and semantic similarity in parallel to a standard unit test-based evaluation. Using this benchmark, we evaluate AIDER, OpenHands, and the ClaudeCode frameworks, powered by state-of-the-art reasoning LLMs, including Qwen3, GPT OSS, Gemma 4, Kimi, and Qwencoder 2.5. Our two-stage evaluation reveals that models suffer from a lack of both localization accuracy and functional correctness, with the strongest ASE tools achieving up to 25% of shippable changes.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.05001",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 25,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "在电信软件工程领域首创 agent 基准，提供可执行测试和层次化评判框架，评估多款 ASE 工具并揭示模型弱点，高度契合 AI 产品与工作流趋势，可复现且稀缺。",
+        "one_sentence_summary": "TeleSWEBench 是首个电信领域 commit 驱动基准，从 srsRAN 5G 仓库挖掘 734 个带单元测试的用例，并用 TeleJudge 层次 LLM 评判框架评估 AIDER、OpenHands 等工具，发现最强 agent 仅实现 25% 可交付变更，用于推动电信软件工程 agent 研究。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 25,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 94,
+      "score_reason": "在电信软件工程领域首创 agent 基准，提供可执行测试和层次化评判框架，评估多款 ASE 工具并揭示模型弱点，高度契合 AI 产品与工作流趋势，可复现且稀缺。",
+      "one_sentence_summary": "TeleSWEBench 是首个电信领域 commit 驱动基准，从 srsRAN 5G 仓库挖掘 734 个带单元测试的用例，并用 TeleJudge 层次 LLM 评判框架评估 AIDER、OpenHands 等工具，发现最强 agent 仅实现 25% 可交付变更，用于推动电信软件工程 agent 研究。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.04974",
+      "arxiv_id": "2606.04974",
+      "title": "SAID: Accelerating Diffusion-Based Language Models via Scaffold-Aware Iterative Decoding",
+      "url": "https://arxiv.org/abs/2606.04974",
+      "published_at": "2026-06-03T14:56:42Z",
+      "publish_date": "2026-06-03",
+      "description": "Diffusion large language models (DLLMs) enable non-autoregressive generation by iteratively denoising corrupted token sequences with bidirectional context. Despite their ability to update multiple positions in parallel, inference remains costly due to the many denoising steps required for high-quality generation. We propose SAID, a Scaffold-Aware Iterative Decoding framework that accelerates DLLMs by reallocating computation across tokens. SAID first spends denoising computation on scaffold tokens to establish the coarse semantic structure, and then completes predictable detail tokens with fewer steps. We further adapt SAID to block-wise diffusion decoding and introduce Confidence-Hierarchical Layered Generation (CHLG), which assigns additional steps only to low-confidence tokens. Experiments on LLaDA-8B and LLaDA 1.5 across math, coding, and knowledge benchmarks show that SAID significantly accelerates DLLM inference with a maximum speedup of 9.1x while maintaining competitive performance. Our code is publicly available: https://github.com/TH-AI-Lab-PKU/SAID.",
+      "summary": "Diffusion large language models (DLLMs) enable non-autoregressive generation by iteratively denoising corrupted token sequences with bidirectional context. Despite their ability to update multiple positions in parallel, inference remains costly due to the many denoising steps required for high-quality generation. We propose SAID, a Scaffold-Aware Iterative Decoding framework that accelerates DLLMs by reallocating computation across tokens. SAID first spends denoising computation on scaffold tokens to establish the coarse semantic structure, and then completes predictable detail tokens with fewer steps. We further adapt SAID to block-wise diffusion decoding and introduce Confidence-Hierarchical Layered Generation (CHLG), which assigns additional steps only to low-confidence tokens. Experiments on LLaDA-8B and LLaDA 1.5 across math, coding, and knowledge benchmarks show that SAID significantly accelerates DLLM inference with a maximum speedup of 9.1x while maintaining competitive performance. Our code is publicly available: https://github.com/TH-AI-Lab-PKU/SAID.",
+      "abstract": "Diffusion large language models (DLLMs) enable non-autoregressive generation by iteratively denoising corrupted token sequences with bidirectional context. Despite their ability to update multiple positions in parallel, inference remains costly due to the many denoising steps required for high-quality generation. We propose SAID, a Scaffold-Aware Iterative Decoding framework that accelerates DLLMs by reallocating computation across tokens. SAID first spends denoising computation on scaffold tokens to establish the coarse semantic structure, and then completes predictable detail tokens with fewer steps. We further adapt SAID to block-wise diffusion decoding and introduce Confidence-Hierarchical Layered Generation (CHLG), which assigns additional steps only to low-confidence tokens. Experiments on LLaDA-8B and LLaDA 1.5 across math, coding, and knowledge benchmarks show that SAID significantly accelerates DLLM inference with a maximum speedup of 9.1x while maintaining competitive performance. Our code is publicly available: https://github.com/TH-AI-Lab-PKU/SAID.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04974",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "Accelerates diffusion LMs, directly improving generation efficiency for products. Novel scaffold-aware and confidence-based decoding strategies. Code provided for easy integration. Timely as diffusion LMs gain traction.",
+        "one_sentence_summary": "SAID 框架通过优先对骨架词去噪建立语义结构，再对细节词省步解码，结合置信度分层生成，在数学、代码和知识任务上将扩散语言模型 LLaDA 推理加速最高 9.1 倍且性能持平，代码已开源。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 92,
+      "score_reason": "Accelerates diffusion LMs, directly improving generation efficiency for products. Novel scaffold-aware and confidence-based decoding strategies. Code provided for easy integration. Timely as diffusion LMs gain traction.",
+      "one_sentence_summary": "SAID 框架通过优先对骨架词去噪建立语义结构，再对细节词省步解码，结合置信度分层生成，在数学、代码和知识任务上将扩散语言模型 LLaDA 推理加速最高 9.1 倍且性能持平，代码已开源。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.04971",
+      "arxiv_id": "2606.04971",
+      "title": "Be Fair! Can Machine Learning Engineering Agents Adhere to Fairness Constraints?",
+      "url": "https://arxiv.org/abs/2606.04971",
+      "published_at": "2026-06-03T14:52:49Z",
+      "publish_date": "2026-06-03",
+      "description": "Machine learning engineering (MLE) agents promise to automate end-to-end ML pipeline development from raw data and natural language instructions, potentially making ML accessible to non-technical domain experts. However, in sensitive and regulated domains, this abstraction creates a responsibility gap: end-users may lack visibility into design choices that affect correctness, robustness, fairness, and regulatory compliance. We argue that existing benchmarks are insufficient to assess whether MLE agents can be safely applied in such settings. We propose desiderata for a responsibility-centered evaluation framework and conduct an exploratory study on melanoma classification, focusing on fairness across skin tones as a responsibility constraint. When evaluating two recent MLE agents, we find that agent-generated pipelines show high variance and consistently underperform manually designed baselines in both predictive quality and fairness, despite fairness-oriented prompts. These preliminary results suggest that further research is needed towards redesigning MLE agents to allow humans to guide the search process and reliably assess the compliance and quality of the generated ML pipelines.",
+      "summary": "Machine learning engineering (MLE) agents promise to automate end-to-end ML pipeline development from raw data and natural language instructions, potentially making ML accessible to non-technical domain experts. However, in sensitive and regulated domains, this abstraction creates a responsibility gap: end-users may lack visibility into design choices that affect correctness, robustness, fairness, and regulatory compliance. We argue that existing benchmarks are insufficient to assess whether MLE agents can be safely applied in such settings. We propose desiderata for a responsibility-centered evaluation framework and conduct an exploratory study on melanoma classification, focusing on fairness across skin tones as a responsibility constraint. When evaluating two recent MLE agents, we find that agent-generated pipelines show high variance and consistently underperform manually designed baselines in both predictive quality and fairness, despite fairness-oriented prompts. These preliminary results suggest that further research is needed towards redesigning MLE agents to allow humans to guide the search process and reliably assess the compliance and quality of the generated ML pipelines.",
+      "abstract": "Machine learning engineering (MLE) agents promise to automate end-to-end ML pipeline development from raw data and natural language instructions, potentially making ML accessible to non-technical domain experts. However, in sensitive and regulated domains, this abstraction creates a responsibility gap: end-users may lack visibility into design choices that affect correctness, robustness, fairness, and regulatory compliance. We argue that existing benchmarks are insufficient to assess whether MLE agents can be safely applied in such settings. We propose desiderata for a responsibility-centered evaluation framework and conduct an exploratory study on melanoma classification, focusing on fairness across skin tones as a responsibility constraint. When evaluating two recent MLE agents, we find that agent-generated pipelines show high variance and consistently underperform manually designed baselines in both predictive quality and fairness, despite fairness-oriented prompts. These preliminary results suggest that further research is needed towards redesigning MLE agents to allow humans to guide the search process and reliably assess the compliance and quality of the generated ML pipelines.",
+      "categories": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04971",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 18,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "Studies MLE agents' ability to meet fairness constraints, critical for responsible AI tools. Highlights a novel gap in agent evaluation. Informs engineering practices for agent design. Timely intersection of automated ML and fairness.",
+        "one_sentence_summary": "该研究通过皮肤黑色素瘤分类任务中的肤色公平性约束，评估了两个最新的机器学习工程智能体，发现即使给定公平性提示，它们生成的流水线在预测质量和公平性上仍持续劣于人工基线，呼吁重新设计可引导的智能体。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 18,
+        "timeliness_rarity": 23
+      },
+      "score_total": 87,
+      "score_reason": "Studies MLE agents' ability to meet fairness constraints, critical for responsible AI tools. Highlights a novel gap in agent evaluation. Informs engineering practices for agent design. Timely intersection of automated ML and fairness.",
+      "one_sentence_summary": "该研究通过皮肤黑色素瘤分类任务中的肤色公平性约束，评估了两个最新的机器学习工程智能体，发现即使给定公平性提示，它们生成的流水线在预测质量和公平性上仍持续劣于人工基线，呼吁重新设计可引导的智能体。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.04967",
+      "arxiv_id": "2606.04967",
+      "title": "From Prompt to Process: a Process Taxonomy and Comparative Assessment of Frameworks Supporting AI Software Development Agents",
+      "url": "https://arxiv.org/abs/2606.04967",
+      "published_at": "2026-06-03T14:49:15Z",
+      "publish_date": "2026-06-03",
+      "description": "AI tools for programming are no longer just autocomplete or chat assistants: they organize themselves as development frameworks, with process, roles, artifacts and verification. Recent surveys map agents and LLMs for software engineering, but a study centered on the operational frameworks that turn these capabilities into process is missing. We ran a directed search of primary sources, with a functional inclusion criterion and traction measurement, and selected six frameworks: GitHub Spec Kit, OpenSpec, BMAD Method, Get Shit Done (GSD), Spec Kitty and Reversa. Each attacks AI development through a different path: spec-driven development in full and lightweight variants, agent-driven agile planning, context engineering over the agent, worktree isolation and review, and recovery of operational specifications from legacy systems. Our central contribution is a six-dimension process taxonomy: specification, context, roles, execution, validation and portability, with a scoring rubric that turns it into a replicable instrument. We apply it to the six frameworks and an out-of-sample case, Spec-Flow. Two results stand out. Among frameworks that already adopt some process there is convergence: the isolated prompt loses centrality, and persistent artifacts, work contracts, traceability and human review become mechanisms that reduce ambiguity and coordinate agents. And no framework strongly covers all six dimensions, exposing a structural trade-off between process depth and portability across agents. We also found recurring risks: drift between specification and code, excessive trust in generated artifacts, fragility of community extensions, platform dependence and a lack of benchmarks for the complete process. We close with a research agenda for empirical evaluation, focused on intermediate-quality metrics, context governance, installation security and reproducibility.",
+      "summary": "AI tools for programming are no longer just autocomplete or chat assistants: they organize themselves as development frameworks, with process, roles, artifacts and verification. Recent surveys map agents and LLMs for software engineering, but a study centered on the operational frameworks that turn these capabilities into process is missing. We ran a directed search of primary sources, with a functional inclusion criterion and traction measurement, and selected six frameworks: GitHub Spec Kit, OpenSpec, BMAD Method, Get Shit Done (GSD), Spec Kitty and Reversa. Each attacks AI development through a different path: spec-driven development in full and lightweight variants, agent-driven agile planning, context engineering over the agent, worktree isolation and review, and recovery of operational specifications from legacy systems. Our central contribution is a six-dimension process taxonomy: specification, context, roles, execution, validation and portability, with a scoring rubric that turns it into a replicable instrument. We apply it to the six frameworks and an out-of-sample case, Spec-Flow. Two results stand out. Among frameworks that already adopt some process there is convergence: the isolated prompt loses centrality, and persistent artifacts, work contracts, traceability and human review become mechanisms that reduce ambiguity and coordinate agents. And no framework strongly covers all six dimensions, exposing a structural trade-off between process depth and portability across agents. We also found recurring risks: drift between specification and code, excessive trust in generated artifacts, fragility of community extensions, platform dependence and a lack of benchmarks for the complete process. We close with a research agenda for empirical evaluation, focused on intermediate-quality metrics, context governance, installation security and reproducibility.",
+      "abstract": "AI tools for programming are no longer just autocomplete or chat assistants: they organize themselves as development frameworks, with process, roles, artifacts and verification. Recent surveys map agents and LLMs for software engineering, but a study centered on the operational frameworks that turn these capabilities into process is missing. We ran a directed search of primary sources, with a functional inclusion criterion and traction measurement, and selected six frameworks: GitHub Spec Kit, OpenSpec, BMAD Method, Get Shit Done (GSD), Spec Kitty and Reversa. Each attacks AI development through a different path: spec-driven development in full and lightweight variants, agent-driven agile planning, context engineering over the agent, worktree isolation and review, and recovery of operational specifications from legacy systems. Our central contribution is a six-dimension process taxonomy: specification, context, roles, execution, validation and portability, with a scoring rubric that turns it into a replicable instrument. We apply it to the six frameworks and an out-of-sample case, Spec-Flow. Two results stand out. Among frameworks that already adopt some process there is convergence: the isolated prompt loses centrality, and persistent artifacts, work contracts, traceability and human review become mechanisms that reduce ambiguity and coordinate agents. And no framework strongly covers all six dimensions, exposing a structural trade-off between process depth and portability across agents. We also found recurring risks: drift between specification and code, excessive trust in generated artifacts, fragility of community extensions, platform dependence and a lack of benchmarks for the complete process. We close with a research agenda for empirical evaluation, focused on intermediate-quality metrics, context governance, installation security and reproducibility.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04967",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出六维过程分类法并设计评分量表，对比六个 AI 开发框架，揭示过程深度与可移植性权衡，对 agent 工作流设计有直接参考价值，但框架本身工程成熟度有限。",
+        "one_sentence_summary": "本文针对 AI 软件工程开发框架，构建了包含规范、上下文、角色等六维度的过程分类法和评分量表，对 GitHub Spec Kit、OpenSpec 等六个框架进行比较，发现持久工件和人工审核成为协调 agent 的关键机制，为选择或设计框架提供评估工具。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 20
+      },
+      "score_total": 85,
+      "score_reason": "提出六维过程分类法并设计评分量表，对比六个 AI 开发框架，揭示过程深度与可移植性权衡，对 agent 工作流设计有直接参考价值，但框架本身工程成熟度有限。",
+      "one_sentence_summary": "本文针对 AI 软件工程开发框架，构建了包含规范、上下文、角色等六维度的过程分类法和评分量表，对 GitHub Spec Kit、OpenSpec 等六个框架进行比较，发现持久工件和人工审核成为协调 agent 的关键机制，为选择或设计框架提供评估工具。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.04957",
+      "arxiv_id": "2606.04957",
+      "title": "NLLog: Lightweight, Explainable SOC Anomaly Detection via Log-to-Language Rewriting",
+      "url": "https://arxiv.org/abs/2606.04957",
+      "published_at": "2026-06-03T14:45:29Z",
+      "publish_date": "2026-06-03",
+      "description": "System-generated logs underpin security monitoring, yet their rigid template-based format hinders both automated analysis and human comprehension. We present NLLog (Natural-Language Log), a lightweight pipeline that deterministically rewrites parsed templates into WHO-WHAT-SEVERITY sentences, pools them with term-frequency-inverse-document-frequency weighting, classifies sessions with tree ensembles, and back-projects evidence with TreeSHAP for analyst review. On Hadoop Distributed File System (HDFS) and Blue Gene/L (BGL) corpora, NLLog exceeds two reproduced matched-protocol baselines; across HDFS, BGL, and the AIT Alert Data Set, it sustains low false-positive rates with commodity-hardware latency suitable for security operations center triage. Coverage, sparse-versus-dense, faithfulness, and adversarial ablations show that fallback sufficiency is corpus-dependent, that an enrollment-time coverage check can surface refinement requirements before deployment, and that an auditable deterministic rewrite combined with lightweight dense encoding provides a measurable representation layer for log-anomaly detection and triage.",
+      "summary": "System-generated logs underpin security monitoring, yet their rigid template-based format hinders both automated analysis and human comprehension. We present NLLog (Natural-Language Log), a lightweight pipeline that deterministically rewrites parsed templates into WHO-WHAT-SEVERITY sentences, pools them with term-frequency-inverse-document-frequency weighting, classifies sessions with tree ensembles, and back-projects evidence with TreeSHAP for analyst review. On Hadoop Distributed File System (HDFS) and Blue Gene/L (BGL) corpora, NLLog exceeds two reproduced matched-protocol baselines; across HDFS, BGL, and the AIT Alert Data Set, it sustains low false-positive rates with commodity-hardware latency suitable for security operations center triage. Coverage, sparse-versus-dense, faithfulness, and adversarial ablations show that fallback sufficiency is corpus-dependent, that an enrollment-time coverage check can surface refinement requirements before deployment, and that an auditable deterministic rewrite combined with lightweight dense encoding provides a measurable representation layer for log-anomaly detection and triage.",
+      "abstract": "System-generated logs underpin security monitoring, yet their rigid template-based format hinders both automated analysis and human comprehension. We present NLLog (Natural-Language Log), a lightweight pipeline that deterministically rewrites parsed templates into WHO-WHAT-SEVERITY sentences, pools them with term-frequency-inverse-document-frequency weighting, classifies sessions with tree ensembles, and back-projects evidence with TreeSHAP for analyst review. On Hadoop Distributed File System (HDFS) and Blue Gene/L (BGL) corpora, NLLog exceeds two reproduced matched-protocol baselines; across HDFS, BGL, and the AIT Alert Data Set, it sustains low false-positive rates with commodity-hardware latency suitable for security operations center triage. Coverage, sparse-versus-dense, faithfulness, and adversarial ablations show that fallback sufficiency is corpus-dependent, that an enrollment-time coverage check can surface refinement requirements before deployment, and that an auditable deterministic rewrite combined with lightweight dense encoding provides a measurable representation layer for log-anomaly detection and triage.",
+      "categories": [
+        "cs.CR",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04957",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 22,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "提供可解释、轻量级日志异常检测管线，通过确定性重写和TreeSHAP支持分析师回溯证据，在HDFS/BGL等数据集上验证低误报率和低延迟，适合SOC分诊部署。",
+        "one_sentence_summary": "NLLog 提出将日志模板确定性转写为自然语言句子并结合TF-IDF与树集成分类，利用TreeSHAP反向投影提供可解释证据，在HDFS和BGL等语料上维持低误报，适用于安全运营中心实时分诊。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 22,
+        "timeliness_rarity": 15
+      },
+      "score_total": 75,
+      "score_reason": "提供可解释、轻量级日志异常检测管线，通过确定性重写和TreeSHAP支持分析师回溯证据，在HDFS/BGL等数据集上验证低误报率和低延迟，适合SOC分诊部署。",
+      "one_sentence_summary": "NLLog 提出将日志模板确定性转写为自然语言句子并结合TF-IDF与树集成分类，利用TreeSHAP反向投影提供可解释证据，在HDFS和BGL等语料上维持低误报，适用于安全运营中心实时分诊。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.04923",
+      "arxiv_id": "2606.04923",
+      "title": "Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2606.04923",
+      "published_at": "2026-06-03T14:18:23Z",
+      "publish_date": "2026-06-03",
+      "description": "Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a controllable hacking environment for rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and precise identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent-based system for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at https://github.com/THUAIS-Lab/CHERRL.",
+      "summary": "Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a controllable hacking environment for rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and precise identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent-based system for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at https://github.com/THUAIS-Lab/CHERRL.",
+      "abstract": "Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a controllable hacking environment for rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and precise identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent-based system for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at https://github.com/THUAIS-Lab/CHERRL.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04923",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 21,
+          "engineering_utility": 22,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "Introduces CHERRL environment for reward hacking analysis; code public; relevant to LLM training safety.",
+        "one_sentence_summary": "论文提出CHERRL，一个用于研究基于量规的强化学习中奖励欺骗的可控环境，通过向LLM裁判注入已知偏见来稳定复现欺骗行为，并从可发现性与可剥削性两个角度分析偏见影响，同时开发基于代理的系统从训练日志自动检测欺骗发生点，代码已公开。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 21,
+        "engineering_utility": 22,
+        "timeliness_rarity": 18
+      },
+      "score_total": 81,
+      "score_reason": "Introduces CHERRL environment for reward hacking analysis; code public; relevant to LLM training safety.",
+      "one_sentence_summary": "论文提出CHERRL，一个用于研究基于量规的强化学习中奖励欺骗的可控环境，通过向LLM裁判注入已知偏见来稳定复现欺骗行为，并从可发现性与可剥削性两个角度分析偏见影响，同时开发基于代理的系统从训练日志自动检测欺骗发生点，代码已公开。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.04909",
+      "arxiv_id": "2606.04909",
+      "title": "BEATS: Bootstrapping E-commerce Attribute Taxonomies for Search through Iterative Human-AI Collaboration",
+      "url": "https://arxiv.org/abs/2606.04909",
+      "published_at": "2026-06-03T14:06:27Z",
+      "publish_date": "2026-06-03",
+      "description": "E-commerce platforms in emerging markets often operate with underdeveloped product catalogs that contain only category taxonomies but lack structured attribute schemas. This absence of fine-grained product attributes limits search capabilities -- preventing faceted filtering, degrading query understanding, and weakening semantic representations used by search systems. We present BEATS, a human-in-the-loop LLM framework for bootstrapping product attribute taxonomies entirely from scratch. Our approach extends a multi-stage LLM generation pipeline with two critical production stages: (1) proactive quality checking by model developers to filter erroneous outputs, and (2) human annotation by domain-expert local staff to validate generated attributes. The framework operates iteratively -- prompts at each generation stage are refined based on quality check observations and annotator feedback across successive rounds, progressively improving attribute quality. Once the attribute taxonomy is established, we employ LLMs to perform structured attribute tagging on individual product items, enriching their contextual representations. The enriched catalog directly benefits multiple components of the search system: enabling granular attribute-based filtering, providing structured features for ranking models, and improving semantic representations for dense retrieval. We validate the generated taxonomy by training dense retrieval models on attribute-enriched product data, demonstrating consistent improvements over baselines using original catalog information. Our system has been deployed at Rakuten Taiwan, enriching 9 major categories spanning 2,694 sub-categories with 67,277 generated attributes, and over 5.4 million products have been tagged with the generated attributes, with plans to enrich the entire product catalog.",
+      "summary": "E-commerce platforms in emerging markets often operate with underdeveloped product catalogs that contain only category taxonomies but lack structured attribute schemas. This absence of fine-grained product attributes limits search capabilities -- preventing faceted filtering, degrading query understanding, and weakening semantic representations used by search systems. We present BEATS, a human-in-the-loop LLM framework for bootstrapping product attribute taxonomies entirely from scratch. Our approach extends a multi-stage LLM generation pipeline with two critical production stages: (1) proactive quality checking by model developers to filter erroneous outputs, and (2) human annotation by domain-expert local staff to validate generated attributes. The framework operates iteratively -- prompts at each generation stage are refined based on quality check observations and annotator feedback across successive rounds, progressively improving attribute quality. Once the attribute taxonomy is established, we employ LLMs to perform structured attribute tagging on individual product items, enriching their contextual representations. The enriched catalog directly benefits multiple components of the search system: enabling granular attribute-based filtering, providing structured features for ranking models, and improving semantic representations for dense retrieval. We validate the generated taxonomy by training dense retrieval models on attribute-enriched product data, demonstrating consistent improvements over baselines using original catalog information. Our system has been deployed at Rakuten Taiwan, enriching 9 major categories spanning 2,694 sub-categories with 67,277 generated attributes, and over 5.4 million products have been tagged with the generated attributes, with plans to enrich the entire product catalog.",
+      "abstract": "E-commerce platforms in emerging markets often operate with underdeveloped product catalogs that contain only category taxonomies but lack structured attribute schemas. This absence of fine-grained product attributes limits search capabilities -- preventing faceted filtering, degrading query understanding, and weakening semantic representations used by search systems. We present BEATS, a human-in-the-loop LLM framework for bootstrapping product attribute taxonomies entirely from scratch. Our approach extends a multi-stage LLM generation pipeline with two critical production stages: (1) proactive quality checking by model developers to filter erroneous outputs, and (2) human annotation by domain-expert local staff to validate generated attributes. The framework operates iteratively -- prompts at each generation stage are refined based on quality check observations and annotator feedback across successive rounds, progressively improving attribute quality. Once the attribute taxonomy is established, we employ LLMs to perform structured attribute tagging on individual product items, enriching their contextual representations. The enriched catalog directly benefits multiple components of the search system: enabling granular attribute-based filtering, providing structured features for ranking models, and improving semantic representations for dense retrieval. We validate the generated taxonomy by training dense retrieval models on attribute-enriched product data, demonstrating consistent improvements over baselines using original catalog information. Our system has been deployed at Rakuten Taiwan, enriching 9 major categories spanning 2,694 sub-categories with 67,277 generated attributes, and over 5.4 million products have been tagged with the generated attributes, with plans to enrich the entire product catalog.",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.04909",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 22,
+          "engineering_utility": 25,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "BEATS 是已在乐天台湾部署的人机协同LLM框架，从零构建电商属性分类体系并打标540万商品，直接增强搜索的筛选、排序和稠密检索，体现完整工程落地。",
+        "one_sentence_summary": "BEATS 提供迭代式人机协作框架，利用LLM生成商品属性分类并通过质检和本地专家标注循环优化，已在乐天台湾9大类2694子类生成67277属性并打标超540万商品，提升稠密检索效果。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 22,
+        "engineering_utility": 25,
+        "timeliness_rarity": 20
+      },
+      "score_total": 92,
+      "score_reason": "BEATS 是已在乐天台湾部署的人机协同LLM框架，从零构建电商属性分类体系并打标540万商品，直接增强搜索的筛选、排序和稠密检索，体现完整工程落地。",
+      "one_sentence_summary": "BEATS 提供迭代式人机协作框架，利用LLM生成商品属性分类并通过质检和本地专家标注循环优化，已在乐天台湾9大类2694子类生成67277属性并打标超540万商品，提升稠密检索效果。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-04T06:21:53.335762+00:00",
+      "pushed_at": "2026-06-04T06:21:53.335762+00:00",
+      "source_run_id": "2026-06-04",
+      "pushed_run_id": "2026-06-04"
     }
   ]
 }
