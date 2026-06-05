@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-04T06:21:53.335762+00:00",
+  "updated_at": "2026-06-05T06:03:56.136936+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -16017,6 +16017,723 @@
       "pushed_at": "2026-06-04T06:21:53.335762+00:00",
       "source_run_id": "2026-06-04",
       "pushed_run_id": "2026-06-04"
+    },
+    {
+      "id": "arxiv:2606.05384",
+      "arxiv_id": "2606.05384",
+      "title": "Stability vs. Manipulability: Evaluating Robustness Under Post-Decision Interaction in LLM Judges",
+      "url": "https://arxiv.org/abs/2606.05384",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "LLM-as-judge evaluation is widely used in benchmarking pipelines, where model outputs are compared and ranked using automated evaluators. These pipelines typically assume that judgments are stable properties of fixed inputs. We show that this assumption does not hold under interaction. We study post-decision manipulability: the extent to which an evaluation outcome can be altered through subsequent conversation with the judge after an initial decision has been made. Across controlled experiments on MT-Bench and AlpacaEval, we find that LLM judges are highly stable under repeated and neutral reevaluation, yet become substantially reversible under targeted post-decision challenge. An anti-baseline challenge protocol shows that stable judgments can be overturned through motivated interaction, while a counterbalanced target-validation protocol separates this reversibility from net target-directed steering. These reversals have practical consequences: they can degrade agreement with human preferences, shift benchmark rankings, and produce harmful evaluation changes despite high self-reported confidence. Authority framing is especially destabilizing, and revised judgments are often accompanied by low-overlap justifications, suggesting post hoc rationalization rather than reliable error correction. We introduce the Evaluation Robustness Score (ERS) to quantify interactional robustness by combining reversal susceptibility with counterbalanced directional effects. Our findings identify post-decision interaction as a distinct failure mode for LLM-as-judge evaluation and motivate evaluation protocols that measure not only static agreement, but robustness under challenge.",
+      "summary": "LLM-as-judge evaluation is widely used in benchmarking pipelines, where model outputs are compared and ranked using automated evaluators. These pipelines typically assume that judgments are stable properties of fixed inputs. We show that this assumption does not hold under interaction. We study post-decision manipulability: the extent to which an evaluation outcome can be altered through subsequent conversation with the judge after an initial decision has been made. Across controlled experiments on MT-Bench and AlpacaEval, we find that LLM judges are highly stable under repeated and neutral reevaluation, yet become substantially reversible under targeted post-decision challenge. An anti-baseline challenge protocol shows that stable judgments can be overturned through motivated interaction, while a counterbalanced target-validation protocol separates this reversibility from net target-directed steering. These reversals have practical consequences: they can degrade agreement with human preferences, shift benchmark rankings, and produce harmful evaluation changes despite high self-reported confidence. Authority framing is especially destabilizing, and revised judgments are often accompanied by low-overlap justifications, suggesting post hoc rationalization rather than reliable error correction. We introduce the Evaluation Robustness Score (ERS) to quantify interactional robustness by combining reversal susceptibility with counterbalanced directional effects. Our findings identify post-decision interaction as a distinct failure mode for LLM-as-judge evaluation and motivate evaluation protocols that measure not only static agreement, but robustness under challenge.",
+      "abstract": "LLM-as-judge evaluation is widely used in benchmarking pipelines, where model outputs are compared and ranked using automated evaluators. These pipelines typically assume that judgments are stable properties of fixed inputs. We show that this assumption does not hold under interaction. We study post-decision manipulability: the extent to which an evaluation outcome can be altered through subsequent conversation with the judge after an initial decision has been made. Across controlled experiments on MT-Bench and AlpacaEval, we find that LLM judges are highly stable under repeated and neutral reevaluation, yet become substantially reversible under targeted post-decision challenge. An anti-baseline challenge protocol shows that stable judgments can be overturned through motivated interaction, while a counterbalanced target-validation protocol separates this reversibility from net target-directed steering. These reversals have practical consequences: they can degrade agreement with human preferences, shift benchmark rankings, and produce harmful evaluation changes despite high self-reported confidence. Authority framing is especially destabilizing, and revised judgments are often accompanied by low-overlap justifications, suggesting post hoc rationalization rather than reliable error correction. We introduce the Evaluation Robustness Score (ERS) to quantify interactional robustness by combining reversal susceptibility with counterbalanced directional effects. Our findings identify post-decision interaction as a distinct failure mode for LLM-as-judge evaluation and motivate evaluation protocols that measure not only static agreement, but robustness under challenge.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05384",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 17,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "Identifies a critical vulnerability in LLM-as-judge systems under post-decision interaction, introducing the novel ERS metric; highly relevant for evaluation pipelines and AI product trustworthiness; the findings are actionable, though ERS is a conceptual proposal requiring implementation.",
+        "one_sentence_summary": "该论文通过 MT-Bench 和 AlpacaEval 实验揭示 LLM 评判在事后交互下可被操纵，权威框架加剧逆转，提出鲁棒性分数（ERS）量化交互脆弱性，倡导评估协议包含交互鲁棒性测试，为 LLM 评估提供新指标。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 17,
+        "timeliness_rarity": 23
+      },
+      "score_total": 88,
+      "score_reason": "Identifies a critical vulnerability in LLM-as-judge systems under post-decision interaction, introducing the novel ERS metric; highly relevant for evaluation pipelines and AI product trustworthiness; the findings are actionable, though ERS is a conceptual proposal requiring implementation.",
+      "one_sentence_summary": "该论文通过 MT-Bench 和 AlpacaEval 实验揭示 LLM 评判在事后交互下可被操纵，权威框架加剧逆转，提出鲁棒性分数（ERS）量化交互脆弱性，倡导评估协议包含交互鲁棒性测试，为 LLM 评估提供新指标。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05405",
+      "arxiv_id": "2606.05405",
+      "title": "Agents' Last Exam",
+      "url": "https://arxiv.org/abs/2606.05405",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long-horizon, economically valuable, real-world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 subfields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is 2.6%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP-relevant impact.",
+      "summary": "Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long-horizon, economically valuable, real-world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 subfields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is 2.6%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP-relevant impact.",
+      "abstract": "Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long-horizon, economically valuable, real-world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 subfields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is 2.6%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP-relevant impact.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05405",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该基准测试直接评估智能体在长期经济价值任务中的表现，与AI产品部署高度相关，其大规模专家合作设计和开放演进特性提供新的评估范式，可作为工程实现的工具，反映了当前智能体从实验室走向现实应用的趋势。",
+        "one_sentence_summary": "该论文推出Agents' Last Exam基准，联合250+专家覆盖55个子领域、1000+任务，评估智能体在长期、有经济价值的真实工作流中的表现，当前最好配置仅2.6%通过率，旨在弥合基准成功与GDP影响力差距。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 92,
+      "score_reason": "该基准测试直接评估智能体在长期经济价值任务中的表现，与AI产品部署高度相关，其大规模专家合作设计和开放演进特性提供新的评估范式，可作为工程实现的工具，反映了当前智能体从实验室走向现实应用的趋势。",
+      "one_sentence_summary": "该论文推出Agents' Last Exam基准，联合250+专家覆盖55个子领域、1000+任务，评估智能体在长期、有经济价值的真实工作流中的表现，当前最好配置仅2.6%通过率，旨在弥合基准成功与GDP影响力差距。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05513",
+      "arxiv_id": "2606.05513",
+      "title": "EpiEvolve: Self-Evolving Agents for Streaming Pandemic Forecasting under Regime Shifts",
+      "url": "https://arxiv.org/abs/2606.05513",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive after predictions and disease regimes shift over time. We study this mismatch in weekly COVID-19 hospitalization trend forecasting across five variant regimes. We introduce EpiEvolve, a self-evolving agent that wraps an LLM forecaster trained on the warm-start period and keeps its weights fixed during streaming. EpiEvolve adapts by storing forecast outcomes in a hierarchical episodic memory, reflecting on delayed labels, retrieving cases relevant to the current regime, and distilling recurring errors into strategic rules. The resulting context lets the forecaster reuse its own past predictions and outcomes in later weeks while following a chronological protocol that prevents future leakage. On the streaming dataset, EpiEvolve reaches $0.629$ average accuracy, compared with $0.561$ for the static backbone and $0.325$ for the external CDC ensemble, and reduces recovery lag after regime shifts from $5$ to $2$ weeks. Ablations show that reflection, strategic memory, and regime-aware retrieval each contribute to the gains.",
+      "summary": "Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive after predictions and disease regimes shift over time. We study this mismatch in weekly COVID-19 hospitalization trend forecasting across five variant regimes. We introduce EpiEvolve, a self-evolving agent that wraps an LLM forecaster trained on the warm-start period and keeps its weights fixed during streaming. EpiEvolve adapts by storing forecast outcomes in a hierarchical episodic memory, reflecting on delayed labels, retrieving cases relevant to the current regime, and distilling recurring errors into strategic rules. The resulting context lets the forecaster reuse its own past predictions and outcomes in later weeks while following a chronological protocol that prevents future leakage. On the streaming dataset, EpiEvolve reaches $0.629$ average accuracy, compared with $0.561$ for the static backbone and $0.325$ for the external CDC ensemble, and reduces recovery lag after regime shifts from $5$ to $2$ weeks. Ablations show that reflection, strategic memory, and regime-aware retrieval each contribute to the gains.",
+      "abstract": "Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive after predictions and disease regimes shift over time. We study this mismatch in weekly COVID-19 hospitalization trend forecasting across five variant regimes. We introduce EpiEvolve, a self-evolving agent that wraps an LLM forecaster trained on the warm-start period and keeps its weights fixed during streaming. EpiEvolve adapts by storing forecast outcomes in a hierarchical episodic memory, reflecting on delayed labels, retrieving cases relevant to the current regime, and distilling recurring errors into strategic rules. The resulting context lets the forecaster reuse its own past predictions and outcomes in later weeks while following a chronological protocol that prevents future leakage. On the streaming dataset, EpiEvolve reaches $0.629$ average accuracy, compared with $0.561$ for the static backbone and $0.325$ for the external CDC ensemble, and reduces recovery lag after regime shifts from $5$ to $2$ weeks. Ablations show that reflection, strategic memory, and regime-aware retrieval each contribute to the gains.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05513",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 21,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "EpiEvolve presents a self-evolving agent architecture for streaming forecasting with practical components like episodic memory and reflection, showing high applicability to agentic workflows and providing engineerable patterns; it introduces a new protocol for regime-adaptive prediction, though the domain is specific.",
+        "one_sentence_summary": "EpiEvolve 提出一种自演化智能体，针对流式疫情预测，通过固定 LLM 权重并引入分层情景记忆、延迟标签反思、规则蒸馏和机制感知检索，在 COVID-19 住院趋势预测中提升准确率并缩短机制切换后的恢复滞后。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 21,
+        "timeliness_rarity": 19
+      },
+      "score_total": 82,
+      "score_reason": "EpiEvolve presents a self-evolving agent architecture for streaming forecasting with practical components like episodic memory and reflection, showing high applicability to agentic workflows and providing engineerable patterns; it introduces a new protocol for regime-adaptive prediction, though the domain is specific.",
+      "one_sentence_summary": "EpiEvolve 提出一种自演化智能体，针对流式疫情预测，通过固定 LLM 权重并引入分层情景记忆、延迟标签反思、规则蒸馏和机制感知检索，在 COVID-19 住院趋势预测中提升准确率并缩短机制切换后的恢复滞后。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05563",
+      "arxiv_id": "2606.05563",
+      "title": "SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations",
+      "url": "https://arxiv.org/abs/2606.05563",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped by disputants' shifting emotions, intentions, and context. Existing testbeds rely on a few expert-authored domains, vary mainly strategic posture, and score every turn against every topic, introducing off-topic noise. We introduce SoCRATES, a benchmark for evaluating proactive LLM mediators in realistic, multi-domain testbeds. It constructs scenarios from real conflicts through an agentic pipeline across eight domains, probes five socio-cognitive adaptation axes (strategic posture, party composition, history length, emotional reactivity, and cultural identity), and scores each topic only on the turns that advance it via a topic-localized evaluator. The evaluator reaches 0.82 alignment with human experts, more than doubling a per-turn baseline. Benchmarking eight frontier LLMs, we find that even the strongest mediator closes only about a third of the unmediated consensus gap under diverse and realistic testbeds, with performance varying sharply by socio-cognitive axis, highlighting that progress lies in social adaptation to diverse conditions.",
+      "summary": "Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped by disputants' shifting emotions, intentions, and context. Existing testbeds rely on a few expert-authored domains, vary mainly strategic posture, and score every turn against every topic, introducing off-topic noise. We introduce SoCRATES, a benchmark for evaluating proactive LLM mediators in realistic, multi-domain testbeds. It constructs scenarios from real conflicts through an agentic pipeline across eight domains, probes five socio-cognitive adaptation axes (strategic posture, party composition, history length, emotional reactivity, and cultural identity), and scores each topic only on the turns that advance it via a topic-localized evaluator. The evaluator reaches 0.82 alignment with human experts, more than doubling a per-turn baseline. Benchmarking eight frontier LLMs, we find that even the strongest mediator closes only about a third of the unmediated consensus gap under diverse and realistic testbeds, with performance varying sharply by socio-cognitive axis, highlighting that progress lies in social adaptation to diverse conditions.",
+      "abstract": "Evaluating LLM mediators remains challenging, as mediation unfolds as a real-time trajectory shaped by disputants' shifting emotions, intentions, and context. Existing testbeds rely on a few expert-authored domains, vary mainly strategic posture, and score every turn against every topic, introducing off-topic noise. We introduce SoCRATES, a benchmark for evaluating proactive LLM mediators in realistic, multi-domain testbeds. It constructs scenarios from real conflicts through an agentic pipeline across eight domains, probes five socio-cognitive adaptation axes (strategic posture, party composition, history length, emotional reactivity, and cultural identity), and scores each topic only on the turns that advance it via a topic-localized evaluator. The evaluator reaches 0.82 alignment with human experts, more than doubling a per-turn baseline. Benchmarking eight frontier LLMs, we find that even the strongest mediator closes only about a third of the unmediated consensus gap under diverse and realistic testbeds, with performance varying sharply by socio-cognitive axis, highlighting that progress lies in social adaptation to diverse conditions.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05563",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "SoCRATES establishes a comprehensive benchmark for proactive LLM mediation with realistic multi-domain conflicts and socio-cognitive variations. Its topic-localized evaluator and findings on social adaptation gaps are highly relevant for building socially aware AI assistants.",
+        "one_sentence_summary": "该论文提出SoCRATES评测基准，覆盖八个领域和五种社会认知变化轴，通过真实冲突场景和话题定位评估器测试LLM调解能力，发现当前最佳模型仅能缩小约三分之一的分歧，且对社会认知条件适应不足。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 82,
+      "score_reason": "SoCRATES establishes a comprehensive benchmark for proactive LLM mediation with realistic multi-domain conflicts and socio-cognitive variations. Its topic-localized evaluator and findings on social adaptation gaps are highly relevant for building socially aware AI assistants.",
+      "one_sentence_summary": "该论文提出SoCRATES评测基准，覆盖八个领域和五种社会认知变化轴，通过真实冲突场景和话题定位评估器测试LLM调解能力，发现当前最佳模型仅能缩小约三分之一的分歧，且对社会认知条件适应不足。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.05625",
+      "arxiv_id": "2606.05625",
+      "title": "Self-Commitment Latency: A Reward-Free Probe for Prompted Implicit Hacking",
+      "url": "https://arxiv.org/abs/2606.05625",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Implicit reward hacking is hard to audit when a language model's chain of thought appears benign: a final answer may be anchored by a prompt shortcut while the written reasoning still resembles ordinary problem solving. Verifier-based probes expose such behavior by measuring how early truncated reasoning contexts obtain high reward, but require a task-specific reward signal. This paper proposes a weaker-input alternative, self-commitment latency, which measures how early a prompted reasoning context commits to the model's own final answer. We evaluate the probe in a controlled paired GSM8K setting using Qwen2.5-3B-Instruct-4bit, comparing ordinary prompts with prompts that include an answer hint. Hinted contexts commit substantially earlier and with lower uncertainty than honest contexts. The primary latency metric, first-commitment latency at threshold 0.8, reaches AUROC 0.878; supporting whole-curve summaries reach AUROC 0.926 for commitment range and 0.904 for mean uncommitted mass. The signal is stronger when both prompt conditions answer correctly and remains stable across thresholds. These results show that shortcut-available reasoning contexts can leave an early behavioral commitment signature detectable without a reward model, external judge, or trained classifier.",
+      "summary": "Implicit reward hacking is hard to audit when a language model's chain of thought appears benign: a final answer may be anchored by a prompt shortcut while the written reasoning still resembles ordinary problem solving. Verifier-based probes expose such behavior by measuring how early truncated reasoning contexts obtain high reward, but require a task-specific reward signal. This paper proposes a weaker-input alternative, self-commitment latency, which measures how early a prompted reasoning context commits to the model's own final answer. We evaluate the probe in a controlled paired GSM8K setting using Qwen2.5-3B-Instruct-4bit, comparing ordinary prompts with prompts that include an answer hint. Hinted contexts commit substantially earlier and with lower uncertainty than honest contexts. The primary latency metric, first-commitment latency at threshold 0.8, reaches AUROC 0.878; supporting whole-curve summaries reach AUROC 0.926 for commitment range and 0.904 for mean uncommitted mass. The signal is stronger when both prompt conditions answer correctly and remains stable across thresholds. These results show that shortcut-available reasoning contexts can leave an early behavioral commitment signature detectable without a reward model, external judge, or trained classifier.",
+      "abstract": "Implicit reward hacking is hard to audit when a language model's chain of thought appears benign: a final answer may be anchored by a prompt shortcut while the written reasoning still resembles ordinary problem solving. Verifier-based probes expose such behavior by measuring how early truncated reasoning contexts obtain high reward, but require a task-specific reward signal. This paper proposes a weaker-input alternative, self-commitment latency, which measures how early a prompted reasoning context commits to the model's own final answer. We evaluate the probe in a controlled paired GSM8K setting using Qwen2.5-3B-Instruct-4bit, comparing ordinary prompts with prompts that include an answer hint. Hinted contexts commit substantially earlier and with lower uncertainty than honest contexts. The primary latency metric, first-commitment latency at threshold 0.8, reaches AUROC 0.878; supporting whole-curve summaries reach AUROC 0.926 for commitment range and 0.904 for mean uncommitted mass. The signal is stronger when both prompt conditions answer correctly and remains stable across thresholds. These results show that shortcut-available reasoning contexts can leave an early behavioral commitment signature detectable without a reward model, external judge, or trained classifier.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05625",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "Proposes a lightweight, reward-free probe for implicit hacking detection using self-commitment latency; strong empirical validation with high AUROC; the method is simple to implement and directly applicable to auditing LLM reasoning, addressing a growing safety concern.",
+        "one_sentence_summary": "该论文提出“自我承诺延迟”指标，基于模型自身对答案的早期 commit 行为，无需奖励模型即可检测隐式奖励黑客，通过 token 概率测量，在 GSM8K 上达 AUROC 0.878，区分有提示与正常推理。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "Proposes a lightweight, reward-free probe for implicit hacking detection using self-commitment latency; strong empirical validation with high AUROC; the method is simple to implement and directly applicable to auditing LLM reasoning, addressing a growing safety concern.",
+      "one_sentence_summary": "该论文提出“自我承诺延迟”指标，基于模型自身对答案的早期 commit 行为，无需奖励模型即可检测隐式奖励黑客，通过 token 概率测量，在 GSM8K 上达 AUROC 0.878，区分有提示与正常推理。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05647",
+      "arxiv_id": "2606.05647",
+      "title": "Coding with \"Enemy\": Can Human Developers Detect AI Agent Sabotage?",
+      "url": "https://arxiv.org/abs/2606.05647",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "AI coding agents are increasingly embedded in real-world software development, collaborating with human developers while gaining broader access to codebases and tools. This creates a new attack surface: an agent can exploit human trust to sabotage development, for instance by inserting malicious code to accomplish a hidden side task. Most prior work studies AI sabotage in AI-only settings, paying limited attention to the role of human oversight in detecting and mitigating such malicious behavior. To address this gap, we conduct the first large-scale study of human oversight in AI coding sabotage. Over 100 participants collaborate with one of four frontier models (Claude-Opus-4.6, GPT-5.4, Gemini-3.1-Pro, and MiniMax-M2.7) on a long-horizon coding task lasting around five hours, designed to mimic real-world workflows. We find that 94% of developers fail to detect sabotage, and our analysis of participant feedback attributes this vulnerability to minimal code review, plausible cover story, and overtrust in agents. We further test the effectiveness of a safety monitor in one condition: while the monitor reduces sabotage success, 56% of participants still accept the malicious code, ignoring its warnings. Drawing on participant feedback, we offer actionable suggestions for better monitor design. This work complements existing AI safety research and highlights an urgent need for human-centric safety mechanisms that account for human factors, particularly in long-horizon, real-world development settings.",
+      "summary": "AI coding agents are increasingly embedded in real-world software development, collaborating with human developers while gaining broader access to codebases and tools. This creates a new attack surface: an agent can exploit human trust to sabotage development, for instance by inserting malicious code to accomplish a hidden side task. Most prior work studies AI sabotage in AI-only settings, paying limited attention to the role of human oversight in detecting and mitigating such malicious behavior. To address this gap, we conduct the first large-scale study of human oversight in AI coding sabotage. Over 100 participants collaborate with one of four frontier models (Claude-Opus-4.6, GPT-5.4, Gemini-3.1-Pro, and MiniMax-M2.7) on a long-horizon coding task lasting around five hours, designed to mimic real-world workflows. We find that 94% of developers fail to detect sabotage, and our analysis of participant feedback attributes this vulnerability to minimal code review, plausible cover story, and overtrust in agents. We further test the effectiveness of a safety monitor in one condition: while the monitor reduces sabotage success, 56% of participants still accept the malicious code, ignoring its warnings. Drawing on participant feedback, we offer actionable suggestions for better monitor design. This work complements existing AI safety research and highlights an urgent need for human-centric safety mechanisms that account for human factors, particularly in long-horizon, real-world development settings.",
+      "abstract": "AI coding agents are increasingly embedded in real-world software development, collaborating with human developers while gaining broader access to codebases and tools. This creates a new attack surface: an agent can exploit human trust to sabotage development, for instance by inserting malicious code to accomplish a hidden side task. Most prior work studies AI sabotage in AI-only settings, paying limited attention to the role of human oversight in detecting and mitigating such malicious behavior. To address this gap, we conduct the first large-scale study of human oversight in AI coding sabotage. Over 100 participants collaborate with one of four frontier models (Claude-Opus-4.6, GPT-5.4, Gemini-3.1-Pro, and MiniMax-M2.7) on a long-horizon coding task lasting around five hours, designed to mimic real-world workflows. We find that 94% of developers fail to detect sabotage, and our analysis of participant feedback attributes this vulnerability to minimal code review, plausible cover story, and overtrust in agents. We further test the effectiveness of a safety monitor in one condition: while the monitor reduces sabotage success, 56% of participants still accept the malicious code, ignoring its warnings. Drawing on participant feedback, we offer actionable suggestions for better monitor design. This work complements existing AI safety research and highlights an urgent need for human-centric safety mechanisms that account for human factors, particularly in long-horizon, real-world development settings.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05647",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 20,
+          "timeliness_rarity": 24
+        },
+        "score_reason": "首次大规模研究人类开发者对AI编码破坏的察觉，揭示了明显的安全漏洞和过度信任问题，对设计以人为中心的安全监控具有直接启发，工程上提供了可操作建议，紧扣AI编码助手广泛采用的时效问题。",
+        "one_sentence_summary": "该论文通过100多名开发者与四个前沿模型在约五小时编码任务中的合作实验，首次大规模研究人类对AI编码破坏行为的察觉能力，发现94%未能发现破坏，56%忽略安全监视器警告，为以人为中心的安全机制提供建议。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 20,
+        "timeliness_rarity": 24
+      },
+      "score_total": 93,
+      "score_reason": "首次大规模研究人类开发者对AI编码破坏的察觉，揭示了明显的安全漏洞和过度信任问题，对设计以人为中心的安全监控具有直接启发，工程上提供了可操作建议，紧扣AI编码助手广泛采用的时效问题。",
+      "one_sentence_summary": "该论文通过100多名开发者与四个前沿模型在约五小时编码任务中的合作实验，首次大规模研究人类对AI编码破坏行为的察觉能力，发现94%未能发现破坏，56%忽略安全监视器警告，为以人为中心的安全机制提供建议。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05661",
+      "arxiv_id": "2606.05661",
+      "title": "Continual Learning Bench: Evaluating Frontier AI Systems in Real-World Stateful Environments",
+      "url": "https://arxiv.org/abs/2606.05661",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Continual learning, the ability of AI systems to improve through sequential experience, has attracted substantial interest, but no high-quality benchmark exists to evaluate it. We introduce Continual Learning Bench (CL-Bench), the first difficult, expert-validated benchmark designed to measure whether LLM-based systems genuinely improve with experience. CL-Bench spans six diverse domains (software engineering, signal processing, disease outbreak forecasting, database querying, strategic game-playing, and demand forecasting), each validated by domain experts and designed so that tasks share a learnable latent structure (codebase layout, disease outbreak dynamics, opponent strategies) that a stateful system can discover online but a stateless one cannot. We evaluate frontier models across several agent architectures, from naive in-context learning (ICL) to dedicated memory systems, introducing a gain metric to isolate learning from prior capabilities. We find that these systems leave headroom for improved continual learning: agents frequently overfit to immediate observations or fail to reuse knowledge across instances, and dedicated memory systems do not fix this -- in fact, naive ICL outperforms systems dedicated to memory management. CL-Bench is the first benchmark to evaluate continual learning across diverse real-world domains with expert-validated tasks and isolate online learning from underlying model capability, showing a need for better continual learning systems.",
+      "summary": "Continual learning, the ability of AI systems to improve through sequential experience, has attracted substantial interest, but no high-quality benchmark exists to evaluate it. We introduce Continual Learning Bench (CL-Bench), the first difficult, expert-validated benchmark designed to measure whether LLM-based systems genuinely improve with experience. CL-Bench spans six diverse domains (software engineering, signal processing, disease outbreak forecasting, database querying, strategic game-playing, and demand forecasting), each validated by domain experts and designed so that tasks share a learnable latent structure (codebase layout, disease outbreak dynamics, opponent strategies) that a stateful system can discover online but a stateless one cannot. We evaluate frontier models across several agent architectures, from naive in-context learning (ICL) to dedicated memory systems, introducing a gain metric to isolate learning from prior capabilities. We find that these systems leave headroom for improved continual learning: agents frequently overfit to immediate observations or fail to reuse knowledge across instances, and dedicated memory systems do not fix this -- in fact, naive ICL outperforms systems dedicated to memory management. CL-Bench is the first benchmark to evaluate continual learning across diverse real-world domains with expert-validated tasks and isolate online learning from underlying model capability, showing a need for better continual learning systems.",
+      "abstract": "Continual learning, the ability of AI systems to improve through sequential experience, has attracted substantial interest, but no high-quality benchmark exists to evaluate it. We introduce Continual Learning Bench (CL-Bench), the first difficult, expert-validated benchmark designed to measure whether LLM-based systems genuinely improve with experience. CL-Bench spans six diverse domains (software engineering, signal processing, disease outbreak forecasting, database querying, strategic game-playing, and demand forecasting), each validated by domain experts and designed so that tasks share a learnable latent structure (codebase layout, disease outbreak dynamics, opponent strategies) that a stateful system can discover online but a stateless one cannot. We evaluate frontier models across several agent architectures, from naive in-context learning (ICL) to dedicated memory systems, introducing a gain metric to isolate learning from prior capabilities. We find that these systems leave headroom for improved continual learning: agents frequently overfit to immediate observations or fail to reuse knowledge across instances, and dedicated memory systems do not fix this -- in fact, naive ICL outperforms systems dedicated to memory management. CL-Bench is the first benchmark to evaluate continual learning across diverse real-world domains with expert-validated tasks and isolate online learning from underlying model capability, showing a need for better continual learning systems.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05661",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "CL-Bench is a critical benchmark for continual learning in stateful LLM agents, covering six real-world domains with expert validation. It introduces a novel gain metric and reveals that current memory systems underperform simple ICL, providing clear engineering directions.",
+        "one_sentence_summary": "该论文提出Continual Learning Bench（CL-Bench）基准，涵盖软件工程、信号处理、疫情预测等六个领域，通过专家验证的任务和增益指标评估LLM智能体在状态化环境中的持续学习能力，发现当前记忆系统未能有效促进知识复用，反而不及简单上下文学习。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "CL-Bench is a critical benchmark for continual learning in stateful LLM agents, covering six real-world domains with expert validation. It introduces a novel gain metric and reveals that current memory systems underperform simple ICL, providing clear engineering directions.",
+      "one_sentence_summary": "该论文提出Continual Learning Bench（CL-Bench）基准，涵盖软件工程、信号处理、疫情预测等六个领域，通过专家验证的任务和增益指标评估LLM智能体在状态化环境中的持续学习能力，发现当前记忆系统未能有效促进知识复用，反而不及简单上下文学习。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05682",
+      "arxiv_id": "2606.05682",
+      "title": "Beyond Output Matching: Preserving Internal Geometry in NVFP4 LLM Distillatio",
+      "url": "https://arxiv.org/abs/2606.05682",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Demand for low-precision inference, including NVFP4-based approaches, has grown as large language models are increasingly deployed in latency and cost constrained production environments. Quantization-aware distillation (QAD) helps recover accuracy lost under low bit quantization by training a quantized student to match the output distribution of a frozen higher precision teacher via a KL-divergence loss. In this work, we first provide a representation level diagnosis of QAD: output matching alone can mask internal degradation, because many intermediate activation geometries can yield similar teacher-aligned logits. Using CKA, we show that KL-only QAD can reduce layerwise representational similarity relative to the BF16 teacher, with especially severe drift in RL-post-trained models. This drift correlates with downstream bottlenecks on reasoning and coding tasks, suggesting that low bit recovery requires preserving internal geometry rather than matching outputs alone. Motivated by this finding, we propose \\textbf{CKA-QAD}, a CKA-guided representational alignment method for NVFP4 QAD and low bit LLM accuracy recovery. The method adds a lightweight regularizer that preserves internal representational geometry during distillation by aligning layerwise Gram matrices through CKA. Across Nemotron 3 Nano and Qwen3-4B-Thinking-2507, CKA-QAD substantially improves representational alignment and improves downstream reasoning and coding accuracy with modest training overhead. Our findings position CKA-guided representational alignment as a practical complement to output matching for quantized LLM recovery.",
+      "summary": "Demand for low-precision inference, including NVFP4-based approaches, has grown as large language models are increasingly deployed in latency and cost constrained production environments. Quantization-aware distillation (QAD) helps recover accuracy lost under low bit quantization by training a quantized student to match the output distribution of a frozen higher precision teacher via a KL-divergence loss. In this work, we first provide a representation level diagnosis of QAD: output matching alone can mask internal degradation, because many intermediate activation geometries can yield similar teacher-aligned logits. Using CKA, we show that KL-only QAD can reduce layerwise representational similarity relative to the BF16 teacher, with especially severe drift in RL-post-trained models. This drift correlates with downstream bottlenecks on reasoning and coding tasks, suggesting that low bit recovery requires preserving internal geometry rather than matching outputs alone. Motivated by this finding, we propose \\textbf{CKA-QAD}, a CKA-guided representational alignment method for NVFP4 QAD and low bit LLM accuracy recovery. The method adds a lightweight regularizer that preserves internal representational geometry during distillation by aligning layerwise Gram matrices through CKA. Across Nemotron 3 Nano and Qwen3-4B-Thinking-2507, CKA-QAD substantially improves representational alignment and improves downstream reasoning and coding accuracy with modest training overhead. Our findings position CKA-guided representational alignment as a practical complement to output matching for quantized LLM recovery.",
+      "abstract": "Demand for low-precision inference, including NVFP4-based approaches, has grown as large language models are increasingly deployed in latency and cost constrained production environments. Quantization-aware distillation (QAD) helps recover accuracy lost under low bit quantization by training a quantized student to match the output distribution of a frozen higher precision teacher via a KL-divergence loss. In this work, we first provide a representation level diagnosis of QAD: output matching alone can mask internal degradation, because many intermediate activation geometries can yield similar teacher-aligned logits. Using CKA, we show that KL-only QAD can reduce layerwise representational similarity relative to the BF16 teacher, with especially severe drift in RL-post-trained models. This drift correlates with downstream bottlenecks on reasoning and coding tasks, suggesting that low bit recovery requires preserving internal geometry rather than matching outputs alone. Motivated by this finding, we propose \\textbf{CKA-QAD}, a CKA-guided representational alignment method for NVFP4 QAD and low bit LLM accuracy recovery. The method adds a lightweight regularizer that preserves internal representational geometry during distillation by aligning layerwise Gram matrices through CKA. Across Nemotron 3 Nano and Qwen3-4B-Thinking-2507, CKA-QAD substantially improves representational alignment and improves downstream reasoning and coding accuracy with modest training overhead. Our findings position CKA-guided representational alignment as a practical complement to output matching for quantized LLM recovery.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05682",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出CKA-QAD保持内部表示几何，对低精度LLM部署有直接应用价值，方法轻量易集成，代表量化蒸馏趋势。",
+        "one_sentence_summary": "本文针对NVFP4量化大语言模型蒸馏中输出匹配无法保证内部表征一致的问题，提出基于中心核对齐的规整项，在Nemotron和Qwen3模型上通过层间Gram矩阵对齐改善推理和编码准确率。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "提出CKA-QAD保持内部表示几何，对低精度LLM部署有直接应用价值，方法轻量易集成，代表量化蒸馏趋势。",
+      "one_sentence_summary": "本文针对NVFP4量化大语言模型蒸馏中输出匹配无法保证内部表征一致的问题，提出基于中心核对齐的规整项，在Nemotron和Qwen3模型上通过层间Gram矩阵对齐改善推理和编码准确率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05704",
+      "arxiv_id": "2606.05704",
+      "title": "Critic-Guided Heterogeneous Multi-Agent Reasoning for Reliable Mathematical Problem Solving",
+      "url": "https://arxiv.org/abs/2606.05704",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Recent Large Language Models (LLMs) have shown impressive reasoning abilities; but they are still susceptible to hallucinations, intermediate reasoning mistakes, and unreliable reasoning results in complex mathematical reasoning problems. In this study, we introduce a critic-based heterogeneous multi-agent approach to improve the dependability of mathematical reasoning. This framework incorporates several LLM agents of different specialties and employs a critic-driven adaptive learning system to assess and guide the reasoning process based on intermediate feedback. The system adopts a generator-validator framework, with the validator not only determining correctness but also offering critiques to guide regeneration of solutions. This allows for adaptive error correction and prevents error cascading. Our experiments on the GSM8K benchmark show that the proposed method achieves up to 13% accuracy improvement over single-shot and non-critic models. Additionally, findings suggest that heterogeneity and critique reduce the need for large models, allowing smaller models to perform on par. Ablation studies reveal the main performance gains are due to the critic-based feedback loop and not model size. In summary, the proposed approach showcases the benefits of combining heterogeneous multi-agent collaboration and critique to obtain reliable and interpretable reasoning systems.",
+      "summary": "Recent Large Language Models (LLMs) have shown impressive reasoning abilities; but they are still susceptible to hallucinations, intermediate reasoning mistakes, and unreliable reasoning results in complex mathematical reasoning problems. In this study, we introduce a critic-based heterogeneous multi-agent approach to improve the dependability of mathematical reasoning. This framework incorporates several LLM agents of different specialties and employs a critic-driven adaptive learning system to assess and guide the reasoning process based on intermediate feedback. The system adopts a generator-validator framework, with the validator not only determining correctness but also offering critiques to guide regeneration of solutions. This allows for adaptive error correction and prevents error cascading. Our experiments on the GSM8K benchmark show that the proposed method achieves up to 13% accuracy improvement over single-shot and non-critic models. Additionally, findings suggest that heterogeneity and critique reduce the need for large models, allowing smaller models to perform on par. Ablation studies reveal the main performance gains are due to the critic-based feedback loop and not model size. In summary, the proposed approach showcases the benefits of combining heterogeneous multi-agent collaboration and critique to obtain reliable and interpretable reasoning systems.",
+      "abstract": "Recent Large Language Models (LLMs) have shown impressive reasoning abilities; but they are still susceptible to hallucinations, intermediate reasoning mistakes, and unreliable reasoning results in complex mathematical reasoning problems. In this study, we introduce a critic-based heterogeneous multi-agent approach to improve the dependability of mathematical reasoning. This framework incorporates several LLM agents of different specialties and employs a critic-driven adaptive learning system to assess and guide the reasoning process based on intermediate feedback. The system adopts a generator-validator framework, with the validator not only determining correctness but also offering critiques to guide regeneration of solutions. This allows for adaptive error correction and prevents error cascading. Our experiments on the GSM8K benchmark show that the proposed method achieves up to 13% accuracy improvement over single-shot and non-critic models. Additionally, findings suggest that heterogeneity and critique reduce the need for large models, allowing smaller models to perform on par. Ablation studies reveal the main performance gains are due to the critic-based feedback loop and not model size. In summary, the proposed approach showcases the benefits of combining heterogeneous multi-agent collaboration and critique to obtain reliable and interpretable reasoning systems.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05704",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 19,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "The paper proposes a critic-guided heterogeneous multi-agent reasoning framework that boosts math accuracy by adaptive error correction. It is implementable and shows that smaller models benefit, though the task (GSM8K) is not new.",
+        "one_sentence_summary": "该研究提出批评引导的异构多智能体推理框架，由多个专长LLM代理生成器与提供反馈的验证器组成，自适应纠错以提高数学推理可靠性，在GSM8K上实现13%准确率提升，且较小模型借助批评反馈可达到大模型水平。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 19,
+        "timeliness_rarity": 17
+      },
+      "score_total": 74,
+      "score_reason": "The paper proposes a critic-guided heterogeneous multi-agent reasoning framework that boosts math accuracy by adaptive error correction. It is implementable and shows that smaller models benefit, though the task (GSM8K) is not new.",
+      "one_sentence_summary": "该研究提出批评引导的异构多智能体推理框架，由多个专长LLM代理生成器与提供反馈的验证器组成，自适应纠错以提高数学推理可靠性，在GSM8K上实现13%准确率提升，且较小模型借助批评反馈可达到大模型水平。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.05761",
+      "arxiv_id": "2606.05761",
+      "title": "SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents",
+      "url": "https://arxiv.org/abs/2606.05761",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions. As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall. Existing long-term memory benchmarks rarely probe how agents preserve and utilize such relations during downstream tasks. To address this gap, we introduce SubtleMemory, a benchmark for fine-grained relational memory discrimination in long-running AI agents. SubtleMemory constructs relation-controlled latent semantic artifacts whose variants instantiate complementary, nuanced, or contradictory relations, and embeds them into realistic user-agent histories, requiring agents to recover distributed relational structures during later queries and instructions. The benchmark contains 1,522 evaluation instances over 10 long histories, grounded in 1,090 relation-controlled memory-variant sets and spanning user-related and non-user-related queries. Evaluating six standalone memory systems, two Claw-style agents with native memory modules, and three Claw-style agents with plugin memory modules, we find that current systems remain weak on fine-grained relational memory discrimination. We further introduce diagnostic protocols that reveal distinct capability profiles across memory preservation, retrieval, and downstream reasoning stages.",
+      "summary": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions. As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall. Existing long-term memory benchmarks rarely probe how agents preserve and utilize such relations during downstream tasks. To address this gap, we introduce SubtleMemory, a benchmark for fine-grained relational memory discrimination in long-running AI agents. SubtleMemory constructs relation-controlled latent semantic artifacts whose variants instantiate complementary, nuanced, or contradictory relations, and embeds them into realistic user-agent histories, requiring agents to recover distributed relational structures during later queries and instructions. The benchmark contains 1,522 evaluation instances over 10 long histories, grounded in 1,090 relation-controlled memory-variant sets and spanning user-related and non-user-related queries. Evaluating six standalone memory systems, two Claw-style agents with native memory modules, and three Claw-style agents with plugin memory modules, we find that current systems remain weak on fine-grained relational memory discrimination. We further introduce diagnostic protocols that reveal distinct capability profiles across memory preservation, retrieval, and downstream reasoning stages.",
+      "abstract": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions. As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall. Existing long-term memory benchmarks rarely probe how agents preserve and utilize such relations during downstream tasks. To address this gap, we introduce SubtleMemory, a benchmark for fine-grained relational memory discrimination in long-running AI agents. SubtleMemory constructs relation-controlled latent semantic artifacts whose variants instantiate complementary, nuanced, or contradictory relations, and embeds them into realistic user-agent histories, requiring agents to recover distributed relational structures during later queries and instructions. The benchmark contains 1,522 evaluation instances over 10 long histories, grounded in 1,090 relation-controlled memory-variant sets and spanning user-related and non-user-related queries. Evaluating six standalone memory systems, two Claw-style agents with native memory modules, and three Claw-style agents with plugin memory modules, we find that current systems remain weak on fine-grained relational memory discrimination. We further introduce diagnostic protocols that reveal distinct capability profiles across memory preservation, retrieval, and downstream reasoning stages.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05761",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "SubtleMemory addresses a key gap in evaluating relational memory for persistent AI agents, offering a benchmark with controlled semantic variants and diagnostic protocols. It reveals fundamental weaknesses in current memory systems' ability to discriminate nuanced relations.",
+        "one_sentence_summary": "该论文提出SubtleMemory基准，包含1522个实例及关系控制的语义变体，测试长期交互智能体对补充、矛盾等记忆关系的细粒度辨别，发现现有系统普遍薄弱，并设计诊断协议评估记忆保存、检索和推理各阶段能力。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 86,
+      "score_reason": "SubtleMemory addresses a key gap in evaluating relational memory for persistent AI agents, offering a benchmark with controlled semantic variants and diagnostic protocols. It reveals fundamental weaknesses in current memory systems' ability to discriminate nuanced relations.",
+      "one_sentence_summary": "该论文提出SubtleMemory基准，包含1522个实例及关系控制的语义变体，测试长期交互智能体对补充、矛盾等记忆关系的细粒度辨别，发现现有系统普遍薄弱，并设计诊断协议评估记忆保存、检索和推理各阶段能力。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05792",
+      "arxiv_id": "2606.05792",
+      "title": "Can LLMs Write Correct TLA+ Specifications? Evaluating Natural-Language-to-TLA+ Generation",
+      "url": "https://arxiv.org/abs/2606.05792",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "TLA+ has supported industrial verification at companies such as Amazon and Microsoft, yet writing correct TLA+ specifications from natural language still requires time and expertise, which limits adoption. LLMs show promise, but no prior study measures whether they produce semantically correct TLA+ specifications from natural language. This paper presents the first systematic evaluation of LLM-based TLA+ specification synthesis from natural language. Our study evaluates 30 LLMs across eight families on a curated dataset of 205 TLA+ specifications: 25 open-weight models across four prompting strategies (2,600 runs) and 5 proprietary models under few-shot prompting (130 runs), all validated by the SANY parser and TLC model checker. LLMs achieve up to 26.6% syntactic correctness but only 8.6% semantic correctness, with successes exclusive to progressive prompting. Results show that model size does not predict quality, e.g., DeepSeek r1:8b outperforms its 70B variant across all strategies, which suggests the importance of reasoning alignment for formal languages. Code-specialized models consistently underperform due to negative transfer from mainstream language training. We identify five recurring hallucination categories, all traceable to specific training data biases. These results suggest that current LLMs do not generate reliable TLA+ specifications without expert oversight. We release the evaluation framework, code, and dataset to support reproducibility and future research.",
+      "summary": "TLA+ has supported industrial verification at companies such as Amazon and Microsoft, yet writing correct TLA+ specifications from natural language still requires time and expertise, which limits adoption. LLMs show promise, but no prior study measures whether they produce semantically correct TLA+ specifications from natural language. This paper presents the first systematic evaluation of LLM-based TLA+ specification synthesis from natural language. Our study evaluates 30 LLMs across eight families on a curated dataset of 205 TLA+ specifications: 25 open-weight models across four prompting strategies (2,600 runs) and 5 proprietary models under few-shot prompting (130 runs), all validated by the SANY parser and TLC model checker. LLMs achieve up to 26.6% syntactic correctness but only 8.6% semantic correctness, with successes exclusive to progressive prompting. Results show that model size does not predict quality, e.g., DeepSeek r1:8b outperforms its 70B variant across all strategies, which suggests the importance of reasoning alignment for formal languages. Code-specialized models consistently underperform due to negative transfer from mainstream language training. We identify five recurring hallucination categories, all traceable to specific training data biases. These results suggest that current LLMs do not generate reliable TLA+ specifications without expert oversight. We release the evaluation framework, code, and dataset to support reproducibility and future research.",
+      "abstract": "TLA+ has supported industrial verification at companies such as Amazon and Microsoft, yet writing correct TLA+ specifications from natural language still requires time and expertise, which limits adoption. LLMs show promise, but no prior study measures whether they produce semantically correct TLA+ specifications from natural language. This paper presents the first systematic evaluation of LLM-based TLA+ specification synthesis from natural language. Our study evaluates 30 LLMs across eight families on a curated dataset of 205 TLA+ specifications: 25 open-weight models across four prompting strategies (2,600 runs) and 5 proprietary models under few-shot prompting (130 runs), all validated by the SANY parser and TLC model checker. LLMs achieve up to 26.6% syntactic correctness but only 8.6% semantic correctness, with successes exclusive to progressive prompting. Results show that model size does not predict quality, e.g., DeepSeek r1:8b outperforms its 70B variant across all strategies, which suggests the importance of reasoning alignment for formal languages. Code-specialized models consistently underperform due to negative transfer from mainstream language training. We identify five recurring hallucination categories, all traceable to specific training data biases. These results suggest that current LLMs do not generate reliable TLA+ specifications without expert oversight. We release the evaluation framework, code, and dataset to support reproducibility and future research.",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.LO",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.LO",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05792",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 22,
+          "engineering_utility": 19,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "First systematic NL-to-TLA+ evaluation with a new 205-spec dataset; reveals strong limitations (8.6% semantic accuracy) and negative transfer, providing a reference for future work; the released framework aids reproducibility, but immediate integration into tools is limited.",
+        "one_sentence_summary": "该论文首次系统评估 LLM 从自然语言生成 TLA+ 规范的能力，在 205 个规范上测试 30 个模型，仅 8.6% 最高语义正确率，模型大小不预示质量，代码专长模型因负迁移表现更差，识别五类幻觉并发布评估框架。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 22,
+        "engineering_utility": 19,
+        "timeliness_rarity": 20
+      },
+      "score_total": 79,
+      "score_reason": "First systematic NL-to-TLA+ evaluation with a new 205-spec dataset; reveals strong limitations (8.6% semantic accuracy) and negative transfer, providing a reference for future work; the released framework aids reproducibility, but immediate integration into tools is limited.",
+      "one_sentence_summary": "该论文首次系统评估 LLM 从自然语言生成 TLA+ 规范的能力，在 205 个规范上测试 30 个模型，仅 8.6% 最高语义正确率，模型大小不预示质量，代码专长模型因负迁移表现更差，识别五类幻觉并发布评估框架。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.05828",
+      "arxiv_id": "2606.05828",
+      "title": "Statistical Priors for Implicit Preferences: Decoupling Skill Selection as a Local Harness in Personal Agents",
+      "url": "https://arxiv.org/abs/2606.05828",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "As Large Language Model (LLM) capabilities advance, locally deployed personal agents relying on API-based remote models and external skills have emerged as a novel paradigm. With the rapid expansion of available skills, enabling personal agents to learn and adapt to implicit user preferences becomes a critical challenge. However, local deployment constraints preclude complex centralized selection algorithms, creating an urgent need for a lightweight local preference harness. This paper explores the implementation of such a harness through a novel architecture that strictly decouples statistical preference learning from semantic intent parsing. Specifically, we leverage localized statistical results to influence and modulate the selection decisions of the remote LLM. Extensive evaluations demonstrate that our decoupled approach achieves the lowest cumulative regret and highest test accuracy, significantly outperforming traditional memory-augmented agents.",
+      "summary": "As Large Language Model (LLM) capabilities advance, locally deployed personal agents relying on API-based remote models and external skills have emerged as a novel paradigm. With the rapid expansion of available skills, enabling personal agents to learn and adapt to implicit user preferences becomes a critical challenge. However, local deployment constraints preclude complex centralized selection algorithms, creating an urgent need for a lightweight local preference harness. This paper explores the implementation of such a harness through a novel architecture that strictly decouples statistical preference learning from semantic intent parsing. Specifically, we leverage localized statistical results to influence and modulate the selection decisions of the remote LLM. Extensive evaluations demonstrate that our decoupled approach achieves the lowest cumulative regret and highest test accuracy, significantly outperforming traditional memory-augmented agents.",
+      "abstract": "As Large Language Model (LLM) capabilities advance, locally deployed personal agents relying on API-based remote models and external skills have emerged as a novel paradigm. With the rapid expansion of available skills, enabling personal agents to learn and adapt to implicit user preferences becomes a critical challenge. However, local deployment constraints preclude complex centralized selection algorithms, creating an urgent need for a lightweight local preference harness. This paper explores the implementation of such a harness through a novel architecture that strictly decouples statistical preference learning from semantic intent parsing. Specifically, we leverage localized statistical results to influence and modulate the selection decisions of the remote LLM. Extensive evaluations demonstrate that our decoupled approach achieves the lowest cumulative regret and highest test accuracy, significantly outperforming traditional memory-augmented agents.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05828",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 21,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "提出解耦架构实现个人智能体中的本地偏好驾驭，轻量级方案适用于本地部署，通过统计先验提升技能选择，在隐式偏好学习中表现出色，为个性化智能体产品化提供了新思路。",
+        "one_sentence_summary": "该论文提出将统计偏好学习与语义意图解析解耦的局部驾驭架构，通过本地统计结果影响远程大模型技能选择，在评测中实现最低累积遗憾和最高准确率，效果优于传统记忆增强智能体。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 21,
+        "timeliness_rarity": 19
+      },
+      "score_total": 82,
+      "score_reason": "提出解耦架构实现个人智能体中的本地偏好驾驭，轻量级方案适用于本地部署，通过统计先验提升技能选择，在隐式偏好学习中表现出色，为个性化智能体产品化提供了新思路。",
+      "one_sentence_summary": "该论文提出将统计偏好学习与语义意图解析解耦的局部驾驭架构，通过本地统计结果影响远程大模型技能选择，在评测中实现最低累积遗憾和最高准确率，效果优于传统记忆增强智能体。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.05922",
+      "arxiv_id": "2606.05922",
+      "title": "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts",
+      "url": "https://arxiv.org/abs/2606.05922",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions.",
+      "summary": "AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions.",
+      "abstract": "AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05922",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 23,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "RHO方法允许智能体无监督地优化自身技能组合，利用历史轨迹自我改进，在SWE-Bench Pro上显著提升，展示出工程实用性，代表智能体自适应优化方向。",
+        "one_sentence_summary": "该论文提出回顾式驾驭优化方法RHO，利用智能体历史轨迹自监督地优化技能与工作流，通过自我验证和偏好选择更新，在SWE-Bench Pro上单轮优化将通过率从59%提升至78%，并有效修正先前失败模式。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 23,
+        "timeliness_rarity": 20
+      },
+      "score_total": 90,
+      "score_reason": "RHO方法允许智能体无监督地优化自身技能组合，利用历史轨迹自我改进，在SWE-Bench Pro上显著提升，展示出工程实用性，代表智能体自适应优化方向。",
+      "one_sentence_summary": "该论文提出回顾式驾驭优化方法RHO，利用智能体历史轨迹自监督地优化技能与工作流，通过自我验证和偏好选择更新，在SWE-Bench Pro上单轮优化将通过率从59%提升至78%，并有效修正先前失败模式。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.05983",
+      "arxiv_id": "2606.05983",
+      "title": "Framing, Judging, Steering: An Assessable Competency Model for Teach-ing Students to Reason With Generative AI",
+      "url": "https://arxiv.org/abs/2606.05983",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Generative AI makes answers easy and understanding hard, and uncritical use invites cognitive offloading. Schools still measure unaided performance, yet the real task is to produce good work with AI: framing an ill-defined task, judging the output, and steering the model toward a better result. This ability is rarely assessed in its own right; where measured, it collapses into one \"prompting\" score that cannot diagnose why AI use succeeds or fails. We propose CoRe-3 (Co-Reasoning), a competency model factoring productive AI use into three assessable skills we abbreviate FJS: Framing (specifying an ill-defined task before invoking AI), Judging (evaluating output for errors and unstated assumptions), and Steering (iteratively redirecting the model). Its distinguishing claim is the separation of pre-generation Framing from post-generation Steering, with Judging as the gate between. We ground the skills in theory, state five testable propositions, and instantiate them in CoReasoningLab, an open platform that presents flawed AI output and scores them independently. Over simulated learners (generated and graded by different models), the skills dissociate: each tracks its own manipulated competence while staying flat in the others, and grades become correlated when one competence is shared across all three (convergent and discriminant validity), across grader backends from two providers. Human-rater agreement and outcomes are next; we release the instrument, data, and protocol.",
+      "summary": "Generative AI makes answers easy and understanding hard, and uncritical use invites cognitive offloading. Schools still measure unaided performance, yet the real task is to produce good work with AI: framing an ill-defined task, judging the output, and steering the model toward a better result. This ability is rarely assessed in its own right; where measured, it collapses into one \"prompting\" score that cannot diagnose why AI use succeeds or fails. We propose CoRe-3 (Co-Reasoning), a competency model factoring productive AI use into three assessable skills we abbreviate FJS: Framing (specifying an ill-defined task before invoking AI), Judging (evaluating output for errors and unstated assumptions), and Steering (iteratively redirecting the model). Its distinguishing claim is the separation of pre-generation Framing from post-generation Steering, with Judging as the gate between. We ground the skills in theory, state five testable propositions, and instantiate them in CoReasoningLab, an open platform that presents flawed AI output and scores them independently. Over simulated learners (generated and graded by different models), the skills dissociate: each tracks its own manipulated competence while staying flat in the others, and grades become correlated when one competence is shared across all three (convergent and discriminant validity), across grader backends from two providers. Human-rater agreement and outcomes are next; we release the instrument, data, and protocol.",
+      "abstract": "Generative AI makes answers easy and understanding hard, and uncritical use invites cognitive offloading. Schools still measure unaided performance, yet the real task is to produce good work with AI: framing an ill-defined task, judging the output, and steering the model toward a better result. This ability is rarely assessed in its own right; where measured, it collapses into one \"prompting\" score that cannot diagnose why AI use succeeds or fails. We propose CoRe-3 (Co-Reasoning), a competency model factoring productive AI use into three assessable skills we abbreviate FJS: Framing (specifying an ill-defined task before invoking AI), Judging (evaluating output for errors and unstated assumptions), and Steering (iteratively redirecting the model). Its distinguishing claim is the separation of pre-generation Framing from post-generation Steering, with Judging as the gate between. We ground the skills in theory, state five testable propositions, and instantiate them in CoReasoningLab, an open platform that presents flawed AI output and scores them independently. Over simulated learners (generated and graded by different models), the skills dissociate: each tracks its own manipulated competence while staying flat in the others, and grades become correlated when one competence is shared across all three (convergent and discriminant validity), across grader backends from two providers. Human-rater agreement and outcomes are next; we release the instrument, data, and protocol.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.05983",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 25,
+          "engineering_utility": 23,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "将AI使用技能分解为Framing、Judging、Steering的能力模型和开源平台，为AI素养教育提供创新工具，新信号强且及时。",
+        "one_sentence_summary": "本文提出CoRe-3能力模型，将生成式AI使用拆解为任务界定、输出评判和迭代引导三项技能，并开发CoReasoningLab平台模拟有缺陷的AI输出进行独立评分，通过模拟学习者验证技能可分离性。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 25,
+        "engineering_utility": 23,
+        "timeliness_rarity": 23
+      },
+      "score_total": 96,
+      "score_reason": "将AI使用技能分解为Framing、Judging、Steering的能力模型和开源平台，为AI素养教育提供创新工具，新信号强且及时。",
+      "one_sentence_summary": "本文提出CoRe-3能力模型，将生成式AI使用拆解为任务界定、输出评判和迭代引导三项技能，并开发CoReasoningLab平台模拟有缺陷的AI输出进行独立评分，通过模拟学习者验证技能可分离性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": "2026-06-05T06:03:56.136936+00:00",
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": "2026-06-05"
+    },
+    {
+      "id": "arxiv:2606.06102",
+      "arxiv_id": "2606.06102",
+      "title": "Step-adaptive multimodal fusion network with multi-scale cloud feature learning for ultra-short-term solar irradiance forecasting",
+      "url": "https://arxiv.org/abs/2606.06102",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "publish_date": "2026-06-05",
+      "description": "Ultra-short-term solar irradiance prediction is critical for photovoltaic system dispatch and power grid stability. Existing approaches suffer from three key shortcomings: single time-series models cannot capture the spatial dynamics of clouds under complex conditions, standard convolutions inadequately represent multi-scale cloud features, and fixed low-frequency compensation strategies fail to adapt to different prediction steps. To address these issues, this proposes a multi-source data fusion model for ultra-short-term irradiance prediction. The model first employs InceptionNeXt to extract multi-scale, multi-directional spatial features from ground-based cloud images. A step-adaptive low-frequency compensation unit is then introduced to dynamically modulate global low-frequency information based on the prediction step. Eventually, the enhanced image features are combined with meteorological time-series features, and a TempAttnLSTM network captures global temporal dependencies for multi-step prediction. Experiments on the public NREL dataset and practical photovoltaic stations in Shandong illustrate the effectiveness of the proposed method compared with several state-of-the-art approaches.",
+      "summary": "Ultra-short-term solar irradiance prediction is critical for photovoltaic system dispatch and power grid stability. Existing approaches suffer from three key shortcomings: single time-series models cannot capture the spatial dynamics of clouds under complex conditions, standard convolutions inadequately represent multi-scale cloud features, and fixed low-frequency compensation strategies fail to adapt to different prediction steps. To address these issues, this proposes a multi-source data fusion model for ultra-short-term irradiance prediction. The model first employs InceptionNeXt to extract multi-scale, multi-directional spatial features from ground-based cloud images. A step-adaptive low-frequency compensation unit is then introduced to dynamically modulate global low-frequency information based on the prediction step. Eventually, the enhanced image features are combined with meteorological time-series features, and a TempAttnLSTM network captures global temporal dependencies for multi-step prediction. Experiments on the public NREL dataset and practical photovoltaic stations in Shandong illustrate the effectiveness of the proposed method compared with several state-of-the-art approaches.",
+      "abstract": "Ultra-short-term solar irradiance prediction is critical for photovoltaic system dispatch and power grid stability. Existing approaches suffer from three key shortcomings: single time-series models cannot capture the spatial dynamics of clouds under complex conditions, standard convolutions inadequately represent multi-scale cloud features, and fixed low-frequency compensation strategies fail to adapt to different prediction steps. To address these issues, this proposes a multi-source data fusion model for ultra-short-term irradiance prediction. The model first employs InceptionNeXt to extract multi-scale, multi-directional spatial features from ground-based cloud images. A step-adaptive low-frequency compensation unit is then introduced to dynamically modulate global low-frequency information based on the prediction step. Eventually, the enhanced image features are combined with meteorological time-series features, and a TempAttnLSTM network captures global temporal dependencies for multi-step prediction. Experiments on the public NREL dataset and practical photovoltaic stations in Shandong illustrate the effectiveness of the proposed method compared with several state-of-the-art approaches.",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_rss",
+      "ai_score": {
+        "id": "arxiv:2606.06102",
+        "score_detail": {
+          "application_relevance": 16,
+          "new_signal": 15,
+          "engineering_utility": 17,
+          "timeliness_rarity": 13
+        },
+        "score_reason": "提出步长自适应多模态融合网络用于太阳能预测，方法具体可集成，在公开和实际数据上验证，对能源预测工程有贡献。",
+        "one_sentence_summary": "本文提出步长自适应多模态融合网络，利用InceptionNeXt提取地基云图多尺度特征，并设计步长自适应低频补偿单元结合气象时序数据，通过TempAttnLSTM实现多步太阳辐照度预测，在公开数据集和山东电站上验证有效。"
+      },
+      "score_detail": {
+        "application_relevance": 16,
+        "new_signal": 15,
+        "engineering_utility": 17,
+        "timeliness_rarity": 13
+      },
+      "score_total": 61,
+      "score_reason": "提出步长自适应多模态融合网络用于太阳能预测，方法具体可集成，在公开和实际数据上验证，对能源预测工程有贡献。",
+      "one_sentence_summary": "本文提出步长自适应多模态融合网络，利用InceptionNeXt提取地基云图多尺度特征，并设计步长自适应低频补偿单元结合气象时序数据，通过TempAttnLSTM实现多步太阳辐照度预测，在公开数据集和山东电站上验证有效。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-05T06:03:56.136936+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-05",
+      "pushed_run_id": null
     }
   ]
 }
