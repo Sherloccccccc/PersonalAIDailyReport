@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-05T06:03:56.136936+00:00",
+  "updated_at": "2026-06-06T05:16:19.783977+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -15965,11 +15965,11 @@
       "score_reason": "Introduces CHERRL environment for reward hacking analysis; code public; relevant to LLM training safety.",
       "one_sentence_summary": "论文提出CHERRL，一个用于研究基于量规的强化学习中奖励欺骗的可控环境，通过向LLM裁判注入已知偏见来稳定复现欺骗行为，并从可发现性与可剥削性两个角度分析偏见影响，同时开发基于代理的系统从训练日志自动检测欺骗发生点，代码已公开。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-04T06:21:53.335762+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
       "source_run_id": "2026-06-04",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-06"
     },
     {
       "id": "arxiv:2606.04909",
@@ -16202,11 +16202,11 @@
       "score_reason": "SoCRATES establishes a comprehensive benchmark for proactive LLM mediation with realistic multi-domain conflicts and socio-cognitive variations. Its topic-localized evaluator and findings on social adaptation gaps are highly relevant for building socially aware AI assistants.",
       "one_sentence_summary": "该论文提出SoCRATES评测基准，覆盖八个领域和五种社会认知变化轴，通过真实冲突场景和话题定位评估器测试LLM调解能力，发现当前最佳模型仅能缩小约三分之一的分歧，且对社会认知条件适应不足。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-05T06:03:56.136936+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
       "source_run_id": "2026-06-05",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-06"
     },
     {
       "id": "arxiv:2606.05625",
@@ -16586,11 +16586,11 @@
       "score_reason": "提出解耦架构实现个人智能体中的本地偏好驾驭，轻量级方案适用于本地部署，通过统计先验提升技能选择，在隐式偏好学习中表现出色，为个性化智能体产品化提供了新思路。",
       "one_sentence_summary": "该论文提出将统计偏好学习与语义意图解析解耦的局部驾驭架构，通过本地统计结果影响远程大模型技能选择，在评测中实现最低累积遗憾和最高准确率，效果优于传统记忆增强智能体。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-05T06:03:56.136936+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
       "source_run_id": "2026-06-05",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-06"
     },
     {
       "id": "arxiv:2606.05922",
@@ -16734,6 +16734,673 @@
       "pushed_at": null,
       "source_run_id": "2026-06-05",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06493",
+      "arxiv_id": "2606.06493",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "url": "https://arxiv.org/abs/2606.06493",
+      "published_at": "2026-06-04T17:59:50Z",
+      "publish_date": "2026-06-04",
+      "description": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.",
+      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.",
+      "abstract": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06493",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 18,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "提出HANDOFF人形机器人全身控制器，通过多教师KL蒸馏与上下文门控混合专家实现紧凑接口，结合VLM驱动规划器在硬件上演示自然语言任务。",
+        "one_sentence_summary": "HANDOFF为Unitree G1人形机器人设计了一种紧凑、直观的任务空间控制接口，通过从运动追踪、行走和摔倒恢复三个专家策略蒸馏出混合专家学生，并配以VLM驱动的智能体规划器，在不需要任务特定数据或控制器微调下实现了自然语言驱动的多样化操作技能硬件演示。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 18,
+        "timeliness_rarity": 17
+      },
+      "score_total": 68,
+      "score_reason": "提出HANDOFF人形机器人全身控制器，通过多教师KL蒸馏与上下文门控混合专家实现紧凑接口，结合VLM驱动规划器在硬件上演示自然语言任务。",
+      "one_sentence_summary": "HANDOFF为Unitree G1人形机器人设计了一种紧凑、直观的任务空间控制接口，通过从运动追踪、行走和摔倒恢复三个专家策略蒸馏出混合专家学生，并配以VLM驱动的智能体规划器，在不需要任务特定数据或控制器微调下实现了自然语言驱动的多样化操作技能硬件演示。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06492",
+      "arxiv_id": "2606.06492",
+      "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+      "url": "https://arxiv.org/abs/2606.06492",
+      "published_at": "2026-06-04T17:59:46Z",
+      "publish_date": "2026-06-04",
+      "description": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.",
+      "summary": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.",
+      "abstract": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 9
+      },
+      "score_total": 68,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06481",
+      "arxiv_id": "2606.06481",
+      "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+      "url": "https://arxiv.org/abs/2606.06481",
+      "published_at": "2026-06-04T17:58:05Z",
+      "publish_date": "2026-06-04",
+      "description": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorship signals emerge, accumulate, or disappear throughout the revision process. We introduce OpAI-Bench, an operation-guided benchmark for studying progressive human-to-AI text transformation across document, sentence, token, and span granularities. Starting from human-written documents, OpAI-Bench constructs nine sequentially revised versions for each sample under predefined AI coverage levels and five representative AI edit operations, covering four domains while preserving complete authorship provenance at multiple granularities. The benchmark supports comprehensive evaluation with 8 document-level detectors, 7 sentence-level detectors, and 2 fine-grained token/span-level detectors. Experiments reveal that AI-text detectability is governed not only by the proportion of AI-edited content, but also by edit operation, domain, and cumulative revision history. Interestingly, we notice that mixed-authorship intermediate versions are often harder to detect than both fully human and heavily AI-edited endpoints, exposing non-monotonic detection patterns missed by existing benchmarks. OpAI-Bench provides a controlled testbed for analyzing whether, when, and how AI-assisted writing becomes detectable under realistic progressive editing scenarios. Our code and benchmark are available at https://github.com/VILA-Lab/OpAI-Bench.",
+      "summary": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorship signals emerge, accumulate, or disappear throughout the revision process. We introduce OpAI-Bench, an operation-guided benchmark for studying progressive human-to-AI text transformation across document, sentence, token, and span granularities. Starting from human-written documents, OpAI-Bench constructs nine sequentially revised versions for each sample under predefined AI coverage levels and five representative AI edit operations, covering four domains while preserving complete authorship provenance at multiple granularities. The benchmark supports comprehensive evaluation with 8 document-level detectors, 7 sentence-level detectors, and 2 fine-grained token/span-level detectors. Experiments reveal that AI-text detectability is governed not only by the proportion of AI-edited content, but also by edit operation, domain, and cumulative revision history. Interestingly, we notice that mixed-authorship intermediate versions are often harder to detect than both fully human and heavily AI-edited endpoints, exposing non-monotonic detection patterns missed by existing benchmarks. OpAI-Bench provides a controlled testbed for analyzing whether, when, and how AI-assisted writing becomes detectable under realistic progressive editing scenarios. Our code and benchmark are available at https://github.com/VILA-Lab/OpAI-Bench.",
+      "abstract": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorship signals emerge, accumulate, or disappear throughout the revision process. We introduce OpAI-Bench, an operation-guided benchmark for studying progressive human-to-AI text transformation across document, sentence, token, and span granularities. Starting from human-written documents, OpAI-Bench constructs nine sequentially revised versions for each sample under predefined AI coverage levels and five representative AI edit operations, covering four domains while preserving complete authorship provenance at multiple granularities. The benchmark supports comprehensive evaluation with 8 document-level detectors, 7 sentence-level detectors, and 2 fine-grained token/span-level detectors. Experiments reveal that AI-text detectability is governed not only by the proportion of AI-edited content, but also by edit operation, domain, and cumulative revision history. Interestingly, we notice that mixed-authorship intermediate versions are often harder to detect than both fully human and heavily AI-edited endpoints, exposing non-monotonic detection patterns missed by existing benchmarks. OpAI-Bench provides a controlled testbed for analyzing whether, when, and how AI-assisted writing becomes detectable under realistic progressive editing scenarios. Our code and benchmark are available at https://github.com/VILA-Lab/OpAI-Bench.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 15,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 68,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "训练带语言特征融合的 Transformer AI 文本检测器，并固定一个验证集阈值去测试跨数据集、跨领域、跨生成器迁移；重点观察真实部署时的分布偏移和错误不对称，而不是只看域内高分。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06480",
+      "arxiv_id": "2606.06480",
+      "title": "DNQ: Deep Nash Q-Network for Partially Observable n-Player Games",
+      "url": "https://arxiv.org/abs/2606.06480",
+      "published_at": "2026-06-04T17:58:01Z",
+      "publish_date": "2026-06-04",
+      "description": "Many real-world competitive systems require multiple decision-makers to act simultaneously under shared constraints, limited information, and repeated interaction, as in auctions, resource allocation, and security competition. We study multi-turn simultaneous bidding as a controlled testbed for such problems and propose DNQ, a solver-in-the-loop equilibrium supervision framework for training bidding agents. DNQ alternates between trajectory collection, critic-based payoff estimation, equilibrium computation, and policy imitation. At each visited state, a shared critic predicts either pairwise payoff matrices or an exact N-player payoff tensor, an external solver computes equilibrium strategies, and the agents are trained by minimizing the KL divergence between their masked policies and the solver-derived equilibrium targets. We focus on a scalable pairwise formulation that greatly reduces equilibrium-solving cost and training time compared with the exact formulation, while the shared critic amortizes payoff learning across agents and states. Experiments compare the pairwise and exact variants using critic loss, policy entropy, bidding resource usage, and training cost, showing that the pairwise method scales to larger numbers of agents, whereas the exact method becomes computationally impractical as the joint game grows. These results illustrate the trade-off between strategic fidelity and scalability in repeated competitive environments.",
+      "summary": "Many real-world competitive systems require multiple decision-makers to act simultaneously under shared constraints, limited information, and repeated interaction, as in auctions, resource allocation, and security competition. We study multi-turn simultaneous bidding as a controlled testbed for such problems and propose DNQ, a solver-in-the-loop equilibrium supervision framework for training bidding agents. DNQ alternates between trajectory collection, critic-based payoff estimation, equilibrium computation, and policy imitation. At each visited state, a shared critic predicts either pairwise payoff matrices or an exact N-player payoff tensor, an external solver computes equilibrium strategies, and the agents are trained by minimizing the KL divergence between their masked policies and the solver-derived equilibrium targets. We focus on a scalable pairwise formulation that greatly reduces equilibrium-solving cost and training time compared with the exact formulation, while the shared critic amortizes payoff learning across agents and states. Experiments compare the pairwise and exact variants using critic loss, policy entropy, bidding resource usage, and training cost, showing that the pairwise method scales to larger numbers of agents, whereas the exact method becomes computationally impractical as the joint game grows. These results illustrate the trade-off between strategic fidelity and scalability in repeated competitive environments.",
+      "abstract": "Many real-world competitive systems require multiple decision-makers to act simultaneously under shared constraints, limited information, and repeated interaction, as in auctions, resource allocation, and security competition. We study multi-turn simultaneous bidding as a controlled testbed for such problems and propose DNQ, a solver-in-the-loop equilibrium supervision framework for training bidding agents. DNQ alternates between trajectory collection, critic-based payoff estimation, equilibrium computation, and policy imitation. At each visited state, a shared critic predicts either pairwise payoff matrices or an exact N-player payoff tensor, an external solver computes equilibrium strategies, and the agents are trained by minimizing the KL divergence between their masked policies and the solver-derived equilibrium targets. We focus on a scalable pairwise formulation that greatly reduces equilibrium-solving cost and training time compared with the exact formulation, while the shared critic amortizes payoff learning across agents and states. Experiments compare the pairwise and exact variants using critic loss, policy entropy, bidding resource usage, and training cost, showing that the pairwise method scales to larger numbers of agents, whereas the exact method becomes computationally impractical as the joint game grows. These results illustrate the trade-off between strategic fidelity and scalability in repeated competitive environments.",
+      "categories": [
+        "cs.GT",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.GT",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06480",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 16,
+          "engineering_utility": 15,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "论文提出DNQ框架，通过求解器生成均衡策略并模仿训练竞价智能体，适用于拍卖、资源分配等多智能体场景，对AI产品中竞争性多智能体决策有启发；方法引入成对支付估算提升可扩展性，但工程复杂度较高；多智能体学习是近期活跃方向。",
+        "one_sentence_summary": "该论文提出Deep Nash Q-Network (DNQ)，在部分可观察多玩家游戏中交替进行轨迹收集、支付估计、均衡计算与策略模仿，通过成对或精确N玩家支付张量训练多个智能体，实验比较可扩展性与战略保真度，用于拍卖等竞争环境。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 16,
+        "engineering_utility": 15,
+        "timeliness_rarity": 16
+      },
+      "score_total": 65,
+      "score_reason": "论文提出DNQ框架，通过求解器生成均衡策略并模仿训练竞价智能体，适用于拍卖、资源分配等多智能体场景，对AI产品中竞争性多智能体决策有启发；方法引入成对支付估算提升可扩展性，但工程复杂度较高；多智能体学习是近期活跃方向。",
+      "one_sentence_summary": "该论文提出Deep Nash Q-Network (DNQ)，在部分可观察多玩家游戏中交替进行轨迹收集、支付估计、均衡计算与策略模仿，通过成对或精确N玩家支付张量训练多个智能体，实验比较可扩展性与战略保真度，用于拍卖等竞争环境。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06474",
+      "arxiv_id": "2606.06474",
+      "title": "Self-Augmenting Retrieval for Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2606.06474",
+      "published_at": "2026-06-04T17:56:27Z",
+      "publish_date": "2026-06-04",
+      "description": "Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confident predictions to the output and discarding the unconfident ones. We show that the discarded tokens are in fact a useful lookahead signal for retrieval-augmented generation: even low-confidence tokens often surface salient entities early in the denoising trajectory, enabling retrieval of stronger evidence before the output is finalized. We exploit this through Self-Augmenting Retrieval for Diffusion Language Models (SARDI), a dynamic RAG framework that uses these lookahead tokens to guide retrieval during denoising. SARDI is training-free, retriever-agnostic, and applicable to any reasoning-capable discrete diffusion language model. Across five multi-hop QA benchmarks, SARDI outperforms current training-free diffusion and autoregressive retrieval baselines at up to $8\\times$ higher throughput.",
+      "summary": "Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confident predictions to the output and discarding the unconfident ones. We show that the discarded tokens are in fact a useful lookahead signal for retrieval-augmented generation: even low-confidence tokens often surface salient entities early in the denoising trajectory, enabling retrieval of stronger evidence before the output is finalized. We exploit this through Self-Augmenting Retrieval for Diffusion Language Models (SARDI), a dynamic RAG framework that uses these lookahead tokens to guide retrieval during denoising. SARDI is training-free, retriever-agnostic, and applicable to any reasoning-capable discrete diffusion language model. Across five multi-hop QA benchmarks, SARDI outperforms current training-free diffusion and autoregressive retrieval baselines at up to $8\\times$ higher throughput.",
+      "abstract": "Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confident predictions to the output and discarding the unconfident ones. We show that the discarded tokens are in fact a useful lookahead signal for retrieval-augmented generation: even low-confidence tokens often surface salient entities early in the denoising trajectory, enabling retrieval of stronger evidence before the output is finalized. We exploit this through Self-Augmenting Retrieval for Diffusion Language Models (SARDI), a dynamic RAG framework that uses these lookahead tokens to guide retrieval during denoising. SARDI is training-free, retriever-agnostic, and applicable to any reasoning-capable discrete diffusion language model. Across five multi-hop QA benchmarks, SARDI outperforms current training-free diffusion and autoregressive retrieval baselines at up to $8\\times$ higher throughput.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06474",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提出一种训练无关、检索器无关的动态RAG框架，利用扩散语言模型去噪过程中的前瞻令牌增强检索，在多跳QA上以更高吞吐量超越基线。",
+        "one_sentence_summary": "SARDI框架利用扩散语言模型去噪过程中丢弃的低置信度令牌作为前瞻信号，在生成过程中动态触发检索以获取更强证据，无需训练且与检索器无关，在五个多跳问答基准上以最高8倍吞吐量超越现有训练无关的扩散和自回归检索基线。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 89,
+      "score_reason": "提出一种训练无关、检索器无关的动态RAG框架，利用扩散语言模型去噪过程中的前瞻令牌增强检索，在多跳QA上以更高吞吐量超越基线。",
+      "one_sentence_summary": "SARDI框架利用扩散语言模型去噪过程中丢弃的低置信度令牌作为前瞻信号，在生成过程中动态触发检索以获取更强证据，无需训练且与检索器无关，在五个多跳问答基准上以最高8倍吞吐量超越现有训练无关的扩散和自回归检索基线。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06467",
+      "arxiv_id": "2606.06467",
+      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
+      "url": "https://arxiv.org/abs/2606.06467",
+      "published_at": "2026-06-04T17:54:04Z",
+      "publish_date": "2026-06-04",
+      "description": "Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a practical efficiency-quality trade-off. Structured block sparse methods typically provide stronger acceleration but incur noticeable quality loss, while token sparse methods are usually more accurate yet deliver limited end-to-end speedup because top-k routing over the full cache remains expensive. In this work, we propose cross-layer sparse attention (CLSA), which is built on top of KV-sharing architectures such as YOCO. The core idea is to share not only the KV cache across cross-decoder layers, but also the routing index. A single indexer computes token-level top-k selection once and reuses the resulting index across layers, thereby preserving the fine-grained selectivity of token sparse attention while amortizing the routing overhead. The resulting architecture improves all major inference bottlenecks jointly, including pre-filling, KV-cache storage, and long-context decoding. Experiments across short-context and long-context benchmarks show that CLSA is both accurate and efficient, achieving up to 7.6x decoding speedup and 17.1x overall throughput improvement at 128K context. These results suggest a more complete architectural solution for long-context LLMs that jointly advances model quality and inference efficiency.",
+      "summary": "Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a practical efficiency-quality trade-off. Structured block sparse methods typically provide stronger acceleration but incur noticeable quality loss, while token sparse methods are usually more accurate yet deliver limited end-to-end speedup because top-k routing over the full cache remains expensive. In this work, we propose cross-layer sparse attention (CLSA), which is built on top of KV-sharing architectures such as YOCO. The core idea is to share not only the KV cache across cross-decoder layers, but also the routing index. A single indexer computes token-level top-k selection once and reuses the resulting index across layers, thereby preserving the fine-grained selectivity of token sparse attention while amortizing the routing overhead. The resulting architecture improves all major inference bottlenecks jointly, including pre-filling, KV-cache storage, and long-context decoding. Experiments across short-context and long-context benchmarks show that CLSA is both accurate and efficient, achieving up to 7.6x decoding speedup and 17.1x overall throughput improvement at 128K context. These results suggest a more complete architectural solution for long-context LLMs that jointly advances model quality and inference efficiency.",
+      "abstract": "Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a practical efficiency-quality trade-off. Structured block sparse methods typically provide stronger acceleration but incur noticeable quality loss, while token sparse methods are usually more accurate yet deliver limited end-to-end speedup because top-k routing over the full cache remains expensive. In this work, we propose cross-layer sparse attention (CLSA), which is built on top of KV-sharing architectures such as YOCO. The core idea is to share not only the KV cache across cross-decoder layers, but also the routing index. A single indexer computes token-level top-k selection once and reuses the resulting index across layers, thereby preserving the fine-grained selectivity of token sparse attention while amortizing the routing overhead. The resulting architecture improves all major inference bottlenecks jointly, including pre-filling, KV-cache storage, and long-context decoding. Experiments across short-context and long-context benchmarks show that CLSA is both accurate and efficient, achieving up to 7.6x decoding speedup and 17.1x overall throughput improvement at 128K context. These results suggest a more complete architectural solution for long-context LLMs that jointly advances model quality and inference efficiency.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06467",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "论文提出跨层稀疏注意力（CLSA），在KV共享架构上复用路由索引，大幅提升长上下文LLM的推理效率，对AI产品中高效部署LLM有直接实用价值；方法通过一次索引计算跨层共享，新颖地平衡了精度与加速；工程可集成性强，方向切合当前大模型推理优化热点。",
+        "one_sentence_summary": "该论文提出跨层稀疏注意力（CLSA），在YOCO等KV共享架构中，单个索引器一次计算token级top-k选择并跨解码层共享，在128K上下文下实现7.6倍解码加速和17.1倍吞吐提升，兼顾准确性与效率，为长上下文LLM提供完整架构方案。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 93,
+      "score_reason": "论文提出跨层稀疏注意力（CLSA），在KV共享架构上复用路由索引，大幅提升长上下文LLM的推理效率，对AI产品中高效部署LLM有直接实用价值；方法通过一次索引计算跨层共享，新颖地平衡了精度与加速；工程可集成性强，方向切合当前大模型推理优化热点。",
+      "one_sentence_summary": "该论文提出跨层稀疏注意力（CLSA），在YOCO等KV共享架构中，单个索引器一次计算token级top-k选择并跨解码层共享，在128K上下文下实现7.6倍解码加速和17.1倍吞吐提升，兼顾准确性与效率，为长上下文LLM提供完整架构方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06454",
+      "arxiv_id": "2606.06454",
+      "title": "Scaffold, Not Vocabulary? A Controlled, Two-Tier, Pre-Registered Study of a Popperian Code-Generation Skill",
+      "url": "https://arxiv.org/abs/2606.06454",
+      "published_at": "2026-06-04T17:49:00Z",
+      "publish_date": "2026-06-04",
+      "description": "Large language models increasingly write, review, and judge code, and a fast-growing practice equips them with prompt 'skills' that ask the model to reason like a scientist. A prominent example tells the model to act as a Popperian falsificationist, and such skills are reported to improve generated code. But these gains are almost always read off an LLM-as-a-judge, an instrument with documented positional, self-preference, and stylistic biases. We ask: if it appears to help, is the gain from the skill's Popperian content, or from the structure any scaffold imposes? We pre-register a two-tier ablation with three controls: a length-matched placebo, a labels-only scaffold that keeps the Popperian headers but strips the procedure, and an execution oracle (HumanEval+ unit tests), plus a vocabulary-halo sentinel and a same-model self-judge audit. On a frontier model (Claude Sonnet 4.6, N=163) all conditions sit near the benchmark ceiling and do not separate, so the pre-registered +5-point improvement is not supported (a ceiling-limited non-detection). On a small model (Qwen2.5-Coder-0.5B, N=164) structured arms lift best-of-eight correctness by 20-22 points, but the full skill shows no separable benefit over a labels-only scaffold (aggregate F@8=L@8 vs V@8=34.8%), and the placebo trails by only 2.4 points. A 0.5B self-judge applying the Popperian rubric does not beat random selection and concentrates 60% of its picks on one index. In the two settings tested, the skill's Popperian procedural content adds no separable execution-correctness benefit beyond a labels-only scaffold, so the gains track scaffold structure. We contribute a calibrated negative result and a reusable disambiguation protocol; the finding bounds an engineering claim about one prompt-skill family and is not an evaluation of Popperian methodology in general.",
+      "summary": "Large language models increasingly write, review, and judge code, and a fast-growing practice equips them with prompt 'skills' that ask the model to reason like a scientist. A prominent example tells the model to act as a Popperian falsificationist, and such skills are reported to improve generated code. But these gains are almost always read off an LLM-as-a-judge, an instrument with documented positional, self-preference, and stylistic biases. We ask: if it appears to help, is the gain from the skill's Popperian content, or from the structure any scaffold imposes? We pre-register a two-tier ablation with three controls: a length-matched placebo, a labels-only scaffold that keeps the Popperian headers but strips the procedure, and an execution oracle (HumanEval+ unit tests), plus a vocabulary-halo sentinel and a same-model self-judge audit. On a frontier model (Claude Sonnet 4.6, N=163) all conditions sit near the benchmark ceiling and do not separate, so the pre-registered +5-point improvement is not supported (a ceiling-limited non-detection). On a small model (Qwen2.5-Coder-0.5B, N=164) structured arms lift best-of-eight correctness by 20-22 points, but the full skill shows no separable benefit over a labels-only scaffold (aggregate F@8=L@8 vs V@8=34.8%), and the placebo trails by only 2.4 points. A 0.5B self-judge applying the Popperian rubric does not beat random selection and concentrates 60% of its picks on one index. In the two settings tested, the skill's Popperian procedural content adds no separable execution-correctness benefit beyond a labels-only scaffold, so the gains track scaffold structure. We contribute a calibrated negative result and a reusable disambiguation protocol; the finding bounds an engineering claim about one prompt-skill family and is not an evaluation of Popperian methodology in general.",
+      "abstract": "Large language models increasingly write, review, and judge code, and a fast-growing practice equips them with prompt 'skills' that ask the model to reason like a scientist. A prominent example tells the model to act as a Popperian falsificationist, and such skills are reported to improve generated code. But these gains are almost always read off an LLM-as-a-judge, an instrument with documented positional, self-preference, and stylistic biases. We ask: if it appears to help, is the gain from the skill's Popperian content, or from the structure any scaffold imposes? We pre-register a two-tier ablation with three controls: a length-matched placebo, a labels-only scaffold that keeps the Popperian headers but strips the procedure, and an execution oracle (HumanEval+ unit tests), plus a vocabulary-halo sentinel and a same-model self-judge audit. On a frontier model (Claude Sonnet 4.6, N=163) all conditions sit near the benchmark ceiling and do not separate, so the pre-registered +5-point improvement is not supported (a ceiling-limited non-detection). On a small model (Qwen2.5-Coder-0.5B, N=164) structured arms lift best-of-eight correctness by 20-22 points, but the full skill shows no separable benefit over a labels-only scaffold (aggregate F@8=L@8 vs V@8=34.8%), and the placebo trails by only 2.4 points. A 0.5B self-judge applying the Popperian rubric does not beat random selection and concentrates 60% of its picks on one index. In the two settings tested, the skill's Popperian procedural content adds no separable execution-correctness benefit beyond a labels-only scaffold, so the gains track scaffold structure. We contribute a calibrated negative result and a reusable disambiguation protocol; the finding bounds an engineering claim about one prompt-skill family and is not an evaluation of Popperian methodology in general.",
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06454",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 24,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "预注册的对照消融实验表明，提示中的波普尔式技能增益源于结构性框架而非程序内容，在大小模型上均无独立程序收益，并贡献了可复用的评估协议。",
+        "one_sentence_summary": "通过预注册的双模型消融实验，对比完整波普尔式技能、纯标签框架、长度匹配安慰剂与执行神谕，发现大型模型因天花板效应未显示增益，小型模型的结构化提示提升20-22个点的执行正确率但程序内容无额外收益，表明收益归因于框架结构，提供校准性负面结果及可复用的提示技能评估协议。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 24,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
+      },
+      "score_total": 89,
+      "score_reason": "预注册的对照消融实验表明，提示中的波普尔式技能增益源于结构性框架而非程序内容，在大小模型上均无独立程序收益，并贡献了可复用的评估协议。",
+      "one_sentence_summary": "通过预注册的双模型消融实验，对比完整波普尔式技能、纯标签框架、长度匹配安慰剂与执行神谕，发现大型模型因天花板效应未显示增益，小型模型的结构化提示提升20-22个点的执行正确率但程序内容无额外收益，表明收益归因于框架结构，提供校准性负面结果及可复用的提示技能评估协议。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06420",
+      "arxiv_id": "2606.06420",
+      "title": "A Komi-Yazva--Russian Parallel Corpus and Evaluation Protocol for Zero- and Few-Shot LLM Translation",
+      "url": "https://arxiv.org/abs/2606.06420",
+      "published_at": "2026-06-04T17:26:38Z",
+      "publish_date": "2026-06-04",
+      "description": "We present the first Komi-Yazva--Russian parallel corpus together with an explicit evaluation protocol for studying LLM translation in an endangered, extremely low-resource setting. The dataset contains 457 aligned sentence pairs from 74 narrative texts and is accompanied by documented provenance, sentence-level alignment, and story identifiers that enable leakage-aware evaluation. We use this setup to compare modern large language models on Komi-Yazva-to-Russian translation under severe parallel-data scarcity in zero-shot and retrieval-based few-shot regimes. The protocol includes story-level cross-validation, deterministic retrieval for few-shot prompting, strict validation of generated outputs, complementary reference-based and judge-based metrics, and story-level uncertainty estimates. Across models, LLMs produce non-trivial translations, but performance varies strongly by model family and prompting regime. Retrieval-based few-shot prompting consistently improves over zero-shot prompting, while gains beyond a small retrieved context remain limited. The results show that evaluative conclusions in this setting depend materially on metric choice and failure handling, so the paper frames the corpus as both a dataset contribution and a reproducible evaluation testbed for endangered-language machine translation.",
+      "summary": "We present the first Komi-Yazva--Russian parallel corpus together with an explicit evaluation protocol for studying LLM translation in an endangered, extremely low-resource setting. The dataset contains 457 aligned sentence pairs from 74 narrative texts and is accompanied by documented provenance, sentence-level alignment, and story identifiers that enable leakage-aware evaluation. We use this setup to compare modern large language models on Komi-Yazva-to-Russian translation under severe parallel-data scarcity in zero-shot and retrieval-based few-shot regimes. The protocol includes story-level cross-validation, deterministic retrieval for few-shot prompting, strict validation of generated outputs, complementary reference-based and judge-based metrics, and story-level uncertainty estimates. Across models, LLMs produce non-trivial translations, but performance varies strongly by model family and prompting regime. Retrieval-based few-shot prompting consistently improves over zero-shot prompting, while gains beyond a small retrieved context remain limited. The results show that evaluative conclusions in this setting depend materially on metric choice and failure handling, so the paper frames the corpus as both a dataset contribution and a reproducible evaluation testbed for endangered-language machine translation.",
+      "abstract": "We present the first Komi-Yazva--Russian parallel corpus together with an explicit evaluation protocol for studying LLM translation in an endangered, extremely low-resource setting. The dataset contains 457 aligned sentence pairs from 74 narrative texts and is accompanied by documented provenance, sentence-level alignment, and story identifiers that enable leakage-aware evaluation. We use this setup to compare modern large language models on Komi-Yazva-to-Russian translation under severe parallel-data scarcity in zero-shot and retrieval-based few-shot regimes. The protocol includes story-level cross-validation, deterministic retrieval for few-shot prompting, strict validation of generated outputs, complementary reference-based and judge-based metrics, and story-level uncertainty estimates. Across models, LLMs produce non-trivial translations, but performance varies strongly by model family and prompting regime. Retrieval-based few-shot prompting consistently improves over zero-shot prompting, while gains beyond a small retrieved context remain limited. The results show that evaluative conclusions in this setting depend materially on metric choice and failure handling, so the paper frames the corpus as both a dataset contribution and a reproducible evaluation testbed for endangered-language machine translation.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 10,
+        "engineering_utility": 19,
+        "timeliness_rarity": 19
+      },
+      "score_total": 68,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文整理一个新的数据集或任务集合，面向偏好学习、模型对齐或社会价值评测；重点说明数据构造、样本筛选和任务定义方式；用途是把社会评价任务接入偏好学习、reward model 或模型对齐评测流程。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06416",
+      "arxiv_id": "2606.06416",
+      "title": "Unsupervised Skill Discovery for Agentic Data Analysis",
+      "url": "https://arxiv.org/abs/2606.06416",
+      "published_at": "2026-06-04T17:20:47Z",
+      "publish_date": "2026-06-04",
+      "description": "Inference-time skill augmentation provides a lightweight way to improve data-analytic agents by injecting reusable procedural knowledge without updating model parameters. However, discovering effective skills for data analysis remains challenging, as reliable supervision is expensive and success criteria vary across analytical formats. This raises the key question of how to discover reusable data-analysis skills from unlabeled exploration alone. We propose DataCOPE, an unsupervised verifier-guided skill discovery framework for data-analytic agents. DataCOPE derives verifier signals from the exploration trajectories and uses them to characterize relative quality or aggreement among trajectories. It iteratively coordinates a Data-Analytic Agent for trajectory generation, an Unsupervised Verifier for signal extraction, and a Skill Manager for contrastive skill distillation. For report-style analysis, we instantiate the verifier as an Adaptive Checklist Verifier that derives task-specific criteria, scores reports by verifiable coverage, and iteratively refines the checklist. For reasoning-style analysis, we instantiate it as an Answer Agreement Verifier that groups trajectories by answer agreement and uses self-consistency as an auxiliary signal. We evaluate DataCOPE on report-style analysis from Deep Data Research and reasoning-style analysis from DABStep. Across both settings, DataCOPE consistently improves held-out performance over baselines. Averaged across four model settings, DataCOPE improves the mean score by 9.71% and 32.30% on report-style and reasoning-style tasks respectively.",
+      "summary": "Inference-time skill augmentation provides a lightweight way to improve data-analytic agents by injecting reusable procedural knowledge without updating model parameters. However, discovering effective skills for data analysis remains challenging, as reliable supervision is expensive and success criteria vary across analytical formats. This raises the key question of how to discover reusable data-analysis skills from unlabeled exploration alone. We propose DataCOPE, an unsupervised verifier-guided skill discovery framework for data-analytic agents. DataCOPE derives verifier signals from the exploration trajectories and uses them to characterize relative quality or aggreement among trajectories. It iteratively coordinates a Data-Analytic Agent for trajectory generation, an Unsupervised Verifier for signal extraction, and a Skill Manager for contrastive skill distillation. For report-style analysis, we instantiate the verifier as an Adaptive Checklist Verifier that derives task-specific criteria, scores reports by verifiable coverage, and iteratively refines the checklist. For reasoning-style analysis, we instantiate it as an Answer Agreement Verifier that groups trajectories by answer agreement and uses self-consistency as an auxiliary signal. We evaluate DataCOPE on report-style analysis from Deep Data Research and reasoning-style analysis from DABStep. Across both settings, DataCOPE consistently improves held-out performance over baselines. Averaged across four model settings, DataCOPE improves the mean score by 9.71% and 32.30% on report-style and reasoning-style tasks respectively.",
+      "abstract": "Inference-time skill augmentation provides a lightweight way to improve data-analytic agents by injecting reusable procedural knowledge without updating model parameters. However, discovering effective skills for data analysis remains challenging, as reliable supervision is expensive and success criteria vary across analytical formats. This raises the key question of how to discover reusable data-analysis skills from unlabeled exploration alone. We propose DataCOPE, an unsupervised verifier-guided skill discovery framework for data-analytic agents. DataCOPE derives verifier signals from the exploration trajectories and uses them to characterize relative quality or aggreement among trajectories. It iteratively coordinates a Data-Analytic Agent for trajectory generation, an Unsupervised Verifier for signal extraction, and a Skill Manager for contrastive skill distillation. For report-style analysis, we instantiate the verifier as an Adaptive Checklist Verifier that derives task-specific criteria, scores reports by verifiable coverage, and iteratively refines the checklist. For reasoning-style analysis, we instantiate it as an Answer Agreement Verifier that groups trajectories by answer agreement and uses self-consistency as an auxiliary signal. We evaluate DataCOPE on report-style analysis from Deep Data Research and reasoning-style analysis from DABStep. Across both settings, DataCOPE consistently improves held-out performance over baselines. Averaged across four model settings, DataCOPE improves the mean score by 9.71% and 32.30% on report-style and reasoning-style tasks respectively.",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06416",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 21,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "DataCOPE introduces an unsupervised verifier-guided skill discovery framework for data-analytic agents, with a novel iterative process and two instantiations for report and reasoning tasks. It achieves significant performance improvements, is practically implementable, and addresses a timely challenge in agentic data analysis.",
+        "one_sentence_summary": "DataCOPE提出无监督技能发现框架，通过自适应检查表验证器与答案一致性验证器从探索轨迹中提取信号，迭代蒸馏可复用数据分析技能，在报告和分析任务上平均提升9.71%和32.30%。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 21,
+        "timeliness_rarity": 20
+      },
+      "score_total": 83,
+      "score_reason": "DataCOPE introduces an unsupervised verifier-guided skill discovery framework for data-analytic agents, with a novel iterative process and two instantiations for report and reasoning tasks. It achieves significant performance improvements, is practically implementable, and addresses a timely challenge in agentic data analysis.",
+      "one_sentence_summary": "DataCOPE提出无监督技能发现框架，通过自适应检查表验证器与答案一致性验证器从探索轨迹中提取信号，迭代蒸馏可复用数据分析技能，在报告和分析任务上平均提升9.71%和32.30%。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06399",
+      "arxiv_id": "2606.06399",
+      "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+      "url": "https://arxiv.org/abs/2606.06399",
+      "published_at": "2026-06-04T17:06:22Z",
+      "publish_date": "2026-06-04",
+      "description": "Multi-agent systems (MAS) built on large language models have shown growing promise, with their effectiveness resting on agents' ability to coordinate through text-based channels much as human teams do. Yet recent study suggests that MAS often falter not because agents lack individual task-solving ability, but because they lack collaborative competence: the capacity to establish common ground, maintain shared task understanding, balance individual and collective incentives, and repair misalignment as interaction unfolds. Decades of research in Computer-Supported Cooperative Work have characterized these requirements for human teams coordinating under constrained communication, yet existing MAS evaluations focus mainly on task outcomes or single-agent proficiency in reasoning, planning, and tool use. To enable a systematic analysis of agents' collaborative competence in MAS, we introduce CollabSim, a configurable simulation framework that combines a theory-grounded definition of collaborative capabilities, controlled manipulation of interaction conditions, and action-level probing of agents' internal states. Experiments across four LLMs show that CollabSim can capture condition effects, separate model performance patterns, and reveal task-dependent effects of agent design.",
+      "summary": "Multi-agent systems (MAS) built on large language models have shown growing promise, with their effectiveness resting on agents' ability to coordinate through text-based channels much as human teams do. Yet recent study suggests that MAS often falter not because agents lack individual task-solving ability, but because they lack collaborative competence: the capacity to establish common ground, maintain shared task understanding, balance individual and collective incentives, and repair misalignment as interaction unfolds. Decades of research in Computer-Supported Cooperative Work have characterized these requirements for human teams coordinating under constrained communication, yet existing MAS evaluations focus mainly on task outcomes or single-agent proficiency in reasoning, planning, and tool use. To enable a systematic analysis of agents' collaborative competence in MAS, we introduce CollabSim, a configurable simulation framework that combines a theory-grounded definition of collaborative capabilities, controlled manipulation of interaction conditions, and action-level probing of agents' internal states. Experiments across four LLMs show that CollabSim can capture condition effects, separate model performance patterns, and reveal task-dependent effects of agent design.",
+      "abstract": "Multi-agent systems (MAS) built on large language models have shown growing promise, with their effectiveness resting on agents' ability to coordinate through text-based channels much as human teams do. Yet recent study suggests that MAS often falter not because agents lack individual task-solving ability, but because they lack collaborative competence: the capacity to establish common ground, maintain shared task understanding, balance individual and collective incentives, and repair misalignment as interaction unfolds. Decades of research in Computer-Supported Cooperative Work have characterized these requirements for human teams coordinating under constrained communication, yet existing MAS evaluations focus mainly on task outcomes or single-agent proficiency in reasoning, planning, and tool use. To enable a systematic analysis of agents' collaborative competence in MAS, we introduce CollabSim, a configurable simulation framework that combines a theory-grounded definition of collaborative capabilities, controlled manipulation of interaction conditions, and action-level probing of agents' internal states. Experiments across four LLMs show that CollabSim can capture condition effects, separate model performance patterns, and reveal task-dependent effects of agent design.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06399",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "CollabSim offers a theory-grounded simulation framework for evaluating LLM agents' collaborative competence, enabling systematic analysis of coordination capabilities. It is relevant for building robust multi-agent products, though more focused on evaluation.",
+        "one_sentence_summary": "CollabSim基于CSCW理论构建可配置模拟框架，通过控制交互条件和探测内部状态，评估大模型智能体在协作中的共同基础、对齐与修复能力，揭示不同模型和设计的效果差异，为多智能体系统设计提供参考。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 19
+      },
+      "score_total": 79,
+      "score_reason": "CollabSim offers a theory-grounded simulation framework for evaluating LLM agents' collaborative competence, enabling systematic analysis of coordination capabilities. It is relevant for building robust multi-agent products, though more focused on evaluation.",
+      "one_sentence_summary": "CollabSim基于CSCW理论构建可配置模拟框架，通过控制交互条件和探测内部状态，评估大模型智能体在协作中的共同基础、对齐与修复能力，揭示不同模型和设计的效果差异，为多智能体系统设计提供参考。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06388",
+      "arxiv_id": "2606.06388",
+      "title": "Humans' ALMANAC: A Human Collaboration Dataset of Action-Level Mental Model Annotations for Agent Collaboration",
+      "url": "https://arxiv.org/abs/2606.06388",
+      "published_at": "2026-06-04T16:56:12Z",
+      "publish_date": "2026-06-04",
+      "description": "Recent advances in LLM agents have enabled complex cognitive capabilities, such as multi-step reasoning, planning, and tool use, that increasingly position these agents as human collaborators. Effective collaboration, however, requires collaborators to continuously maintain and align mental models of their own reasoning,partners' intentions, and shared goals during the collaborative process. Today's agents rarely develop such capabilities since they are primarily optimized for task completion, and the community lacks authentic human collaboration data with action-level mental model annotations that could guide agents toward process-level collaborative competence. To bridge this gap, we present ALMANAC, a dataset of Action-Level Mental model ANnotations for Agent Collaboration built from the Map Task, a classic dyadic routing task from social science. ALMANAC contains 2,987 collaboration actions, each paired with theory-informed mental model annotations that record the participants' self-reasoning, perceived partner intent, and perceived team goal. We benchmark six LLMs on predicting humans' next-turn behavior and mental models. Our results demonstrate ALMANAC's utility in evaluating models' ability to simulate human collaborative behaviors and infer their underlying mental models.",
+      "summary": "Recent advances in LLM agents have enabled complex cognitive capabilities, such as multi-step reasoning, planning, and tool use, that increasingly position these agents as human collaborators. Effective collaboration, however, requires collaborators to continuously maintain and align mental models of their own reasoning,partners' intentions, and shared goals during the collaborative process. Today's agents rarely develop such capabilities since they are primarily optimized for task completion, and the community lacks authentic human collaboration data with action-level mental model annotations that could guide agents toward process-level collaborative competence. To bridge this gap, we present ALMANAC, a dataset of Action-Level Mental model ANnotations for Agent Collaboration built from the Map Task, a classic dyadic routing task from social science. ALMANAC contains 2,987 collaboration actions, each paired with theory-informed mental model annotations that record the participants' self-reasoning, perceived partner intent, and perceived team goal. We benchmark six LLMs on predicting humans' next-turn behavior and mental models. Our results demonstrate ALMANAC's utility in evaluating models' ability to simulate human collaborative behaviors and infer their underlying mental models.",
+      "abstract": "Recent advances in LLM agents have enabled complex cognitive capabilities, such as multi-step reasoning, planning, and tool use, that increasingly position these agents as human collaborators. Effective collaboration, however, requires collaborators to continuously maintain and align mental models of their own reasoning,partners' intentions, and shared goals during the collaborative process. Today's agents rarely develop such capabilities since they are primarily optimized for task completion, and the community lacks authentic human collaboration data with action-level mental model annotations that could guide agents toward process-level collaborative competence. To bridge this gap, we present ALMANAC, a dataset of Action-Level Mental model ANnotations for Agent Collaboration built from the Map Task, a classic dyadic routing task from social science. ALMANAC contains 2,987 collaboration actions, each paired with theory-informed mental model annotations that record the participants' self-reasoning, perceived partner intent, and perceived team goal. We benchmark six LLMs on predicting humans' next-turn behavior and mental models. Our results demonstrate ALMANAC's utility in evaluating models' ability to simulate human collaborative behaviors and infer their underlying mental models.",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06388",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 20,
+          "engineering_utility": 19,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "ALMANAC provides a unique dataset of human dyadic collaboration with fine-grained mental model annotations, enabling the development and evaluation of agents that can align internal models during collaboration. This addresses a key gap for building effective collaborative AI.",
+        "one_sentence_summary": "ALMANAC数据集基于地图任务采集2987次协作行为，并标注参与者的自我推理、伙伴意图和团队目标，用于训练和评估智能体的行为预测与心智模型推断能力，为协作智能体提供过程级心智模型对齐基准。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 19
+      },
+      "score_total": 79,
+      "score_reason": "ALMANAC provides a unique dataset of human dyadic collaboration with fine-grained mental model annotations, enabling the development and evaluation of agents that can align internal models during collaboration. This addresses a key gap for building effective collaborative AI.",
+      "one_sentence_summary": "ALMANAC数据集基于地图任务采集2987次协作行为，并标注参与者的自我推理、伙伴意图和团队目标，用于训练和评估智能体的行为预测与心智模型推断能力，为协作智能体提供过程级心智模型对齐基准。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06350",
+      "arxiv_id": "2606.06350",
+      "title": "EDIT: Evidence-Diagnosed Intervention Training for Rule-Faithful LLM Grading",
+      "url": "https://arxiv.org/abs/2606.06350",
+      "published_at": "2026-06-04T16:20:17Z",
+      "publish_date": "2026-06-04",
+      "description": "Reliable rubric grading requires more than accurate score prediction. Each judgement must be grounded in the mark scheme and evidence from the student answer. Existing credit-assignment and intervention methods, primarily designed for self-contained reasoning tasks such as mathematics reasoning, struggle in this setting because they do not identify where grading reasoning goes wrong or how the model's belief about the final mark changes during reasoning. We propose Evidence-Diagnosed Intervention Training (EDIT), a two-phase framework for training more rubric-faithful LLM graders. First, EDIT-SFT locates problematic reasoning steps using internal model signals: posterior belief over the final mark and input-grounding scores. It then revises only these local steps with help from a rubric checklist. Second, EDIT-RL calibrates the grader with belief-guided reward shaping, penalising large harmful belief drifts while still allowing helpful exploration. Experiments on two real-world, multi-subject grading benchmarks demonstrate that EDIT consistently outperforms strong supervised fine-tuning and reinforcement learning baselines on both in-domain and out-of-domain splits, with ablation studies confirming that internal-state diagnostics drive these gains.",
+      "summary": "Reliable rubric grading requires more than accurate score prediction. Each judgement must be grounded in the mark scheme and evidence from the student answer. Existing credit-assignment and intervention methods, primarily designed for self-contained reasoning tasks such as mathematics reasoning, struggle in this setting because they do not identify where grading reasoning goes wrong or how the model's belief about the final mark changes during reasoning. We propose Evidence-Diagnosed Intervention Training (EDIT), a two-phase framework for training more rubric-faithful LLM graders. First, EDIT-SFT locates problematic reasoning steps using internal model signals: posterior belief over the final mark and input-grounding scores. It then revises only these local steps with help from a rubric checklist. Second, EDIT-RL calibrates the grader with belief-guided reward shaping, penalising large harmful belief drifts while still allowing helpful exploration. Experiments on two real-world, multi-subject grading benchmarks demonstrate that EDIT consistently outperforms strong supervised fine-tuning and reinforcement learning baselines on both in-domain and out-of-domain splits, with ablation studies confirming that internal-state diagnostics drive these gains.",
+      "abstract": "Reliable rubric grading requires more than accurate score prediction. Each judgement must be grounded in the mark scheme and evidence from the student answer. Existing credit-assignment and intervention methods, primarily designed for self-contained reasoning tasks such as mathematics reasoning, struggle in this setting because they do not identify where grading reasoning goes wrong or how the model's belief about the final mark changes during reasoning. We propose Evidence-Diagnosed Intervention Training (EDIT), a two-phase framework for training more rubric-faithful LLM graders. First, EDIT-SFT locates problematic reasoning steps using internal model signals: posterior belief over the final mark and input-grounding scores. It then revises only these local steps with help from a rubric checklist. Second, EDIT-RL calibrates the grader with belief-guided reward shaping, penalising large harmful belief drifts while still allowing helpful exploration. Experiments on two real-world, multi-subject grading benchmarks demonstrate that EDIT consistently outperforms strong supervised fine-tuning and reinforcement learning baselines on both in-domain and out-of-domain splits, with ablation studies confirming that internal-state diagnostics drive these gains.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06350",
+        "score_detail": {
+          "application_relevance": 21,
+          "new_signal": 21,
+          "engineering_utility": 20,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "EDIT introduces an evidence-diagnosed intervention framework for improving LLM grading faithfulness, using internal belief and grounding signals to guide local revision and reward shaping. It demonstrates strong empirical results and is practically applicable for building reliable automated grading systems.",
+        "one_sentence_summary": "EDIT通过诊断模型内部信念和证据基础信号定位评分推理错误，分阶段进行局部修正和信念引导的强化学习校准，在多学科评分基准上显著提升了评分规则忠实性，该方法结合监督微调与强化学习，解决自动评分中的可解释性难题。"
+      },
+      "score_detail": {
+        "application_relevance": 21,
+        "new_signal": 21,
+        "engineering_utility": 20,
+        "timeliness_rarity": 19
+      },
+      "score_total": 81,
+      "score_reason": "EDIT introduces an evidence-diagnosed intervention framework for improving LLM grading faithfulness, using internal belief and grounding signals to guide local revision and reward shaping. It demonstrates strong empirical results and is practically applicable for building reliable automated grading systems.",
+      "one_sentence_summary": "EDIT通过诊断模型内部信念和证据基础信号定位评分推理错误，分阶段进行局部修正和信念引导的强化学习校准，在多学科评分基准上显著提升了评分规则忠实性，该方法结合监督微调与强化学习，解决自动评分中的可解释性难题。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06328",
+      "arxiv_id": "2606.06328",
+      "title": "PAMF: Prior-Aware Multimodal Fusion for Incomplete Time Series Data",
+      "url": "https://arxiv.org/abs/2606.06328",
+      "published_at": "2026-06-04T16:04:21Z",
+      "publish_date": "2026-06-04",
+      "description": "In healthcare, multimodal time series tasks often operate on incomplete observations in practice, for example when ECG segments are lost because electrodes detach or an entire respiratory channel is unavailable during overnight monitoring. Such missingness typically appears in two structurally distinct patterns: within-modality missing, where values are absent within an otherwise observed modality, and modality-level missing, where an entire modality is unavailable. Existing methods typically represent unobserved data implicitly through masks or missing embeddings, without learning instance-specific missing information, and most are designed for only one missingness pattern. A natural approach is to explicitly estimate the missing data; however, existing imputation methods treat missingness uniformly despite their different structural priors, and the imputation process is often isolated from downstream tasks, preventing downstream tasks from guiding imputation toward more informative representations. To address these limitations, we present PAMF, a multimodal time-series framework that explicitly handles different missingness patterns while coupling imputation with downstream prediction through prior-aware flow matching and weight sharing. Specifically, the method initializes the flow-matching source state with type-specific priors to distinguish two missing types. It further connects imputation and classification through architecturally matched encoders with weight sharing, transferring task-relevant representations into the imputation process. Experiments on multiple multimodal healthcare time-series benchmarks show that the proposed method achieves the strongest overall downstream performance across diverse datasets and missing settings compared with existing baselines.",
+      "summary": "In healthcare, multimodal time series tasks often operate on incomplete observations in practice, for example when ECG segments are lost because electrodes detach or an entire respiratory channel is unavailable during overnight monitoring. Such missingness typically appears in two structurally distinct patterns: within-modality missing, where values are absent within an otherwise observed modality, and modality-level missing, where an entire modality is unavailable. Existing methods typically represent unobserved data implicitly through masks or missing embeddings, without learning instance-specific missing information, and most are designed for only one missingness pattern. A natural approach is to explicitly estimate the missing data; however, existing imputation methods treat missingness uniformly despite their different structural priors, and the imputation process is often isolated from downstream tasks, preventing downstream tasks from guiding imputation toward more informative representations. To address these limitations, we present PAMF, a multimodal time-series framework that explicitly handles different missingness patterns while coupling imputation with downstream prediction through prior-aware flow matching and weight sharing. Specifically, the method initializes the flow-matching source state with type-specific priors to distinguish two missing types. It further connects imputation and classification through architecturally matched encoders with weight sharing, transferring task-relevant representations into the imputation process. Experiments on multiple multimodal healthcare time-series benchmarks show that the proposed method achieves the strongest overall downstream performance across diverse datasets and missing settings compared with existing baselines.",
+      "abstract": "In healthcare, multimodal time series tasks often operate on incomplete observations in practice, for example when ECG segments are lost because electrodes detach or an entire respiratory channel is unavailable during overnight monitoring. Such missingness typically appears in two structurally distinct patterns: within-modality missing, where values are absent within an otherwise observed modality, and modality-level missing, where an entire modality is unavailable. Existing methods typically represent unobserved data implicitly through masks or missing embeddings, without learning instance-specific missing information, and most are designed for only one missingness pattern. A natural approach is to explicitly estimate the missing data; however, existing imputation methods treat missingness uniformly despite their different structural priors, and the imputation process is often isolated from downstream tasks, preventing downstream tasks from guiding imputation toward more informative representations. To address these limitations, we present PAMF, a multimodal time-series framework that explicitly handles different missingness patterns while coupling imputation with downstream prediction through prior-aware flow matching and weight sharing. Specifically, the method initializes the flow-matching source state with type-specific priors to distinguish two missing types. It further connects imputation and classification through architecturally matched encoders with weight sharing, transferring task-relevant representations into the imputation process. Experiments on multiple multimodal healthcare time-series benchmarks show that the proposed method achieves the strongest overall downstream performance across diverse datasets and missing settings compared with existing baselines.",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06328",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "论文提出处理多模态时间序列缺失数据的新框架，结合先验流匹配与权重共享联合优化填补与下游任务，对医疗监测等AI产品有直接启发，工程上可实现集成；方法设计针对两种缺失模式，具有新颖性；近期多模态融合与缺失处理是热门方向。",
+        "one_sentence_summary": "该论文提出PAMF框架，针对多模态时间序列中的单一模态内缺失和整个模态缺失，使用先验感知的流匹配与权重共享编码器连接填补与分类，在多个医疗时间序列基准上取得最优下游性能，为不完整数据的融合提供了新方案。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
+      },
+      "score_total": 86,
+      "score_reason": "论文提出处理多模态时间序列缺失数据的新框架，结合先验流匹配与权重共享联合优化填补与下游任务，对医疗监测等AI产品有直接启发，工程上可实现集成；方法设计针对两种缺失模式，具有新颖性；近期多模态融合与缺失处理是热门方向。",
+      "one_sentence_summary": "该论文提出PAMF框架，针对多模态时间序列中的单一模态内缺失和整个模态缺失，使用先验感知的流匹配与权重共享编码器连接填补与分类，在多个医疗时间序列基准上取得最优下游性能，为不完整数据的融合提供了新方案。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06324",
+      "arxiv_id": "2606.06324",
+      "title": "From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws",
+      "url": "https://arxiv.org/abs/2606.06324",
+      "published_at": "2026-06-04T15:58:30Z",
+      "publish_date": "2026-06-04",
+      "description": "LLM-based agents increasingly rely on harnesses that provide execution environments, tool interfaces, context, lifecycle orchestration, observability, verification, and governance. Existing self-improving agents and automatic harness evolution methods mainly improve agents through runtime supervision, prompt optimization, workflow search, or harness modification based on final outcomes. However, they often fail to diagnose where the responsible evidence lies in failed trajectories and which harness layer causes the unreliable behavior, resulting in broad, indirect, or poorly scoped changes. This paper proposes HarnessFix, a trace-guided framework for diagnosing agent failures and repairing agent harnesses. HarnessFix compiles raw execution traces and harness code into a Harness-aware Trace Intermediate Representation (HTIR), which normalizes fragmented trajectory evidence and captures step-level provenance and control-flow relations. It then attributes failures to responsible trajectory steps and harness layers, consolidates recurring diagnoses into actionable flaw records, and maps them to scoped repair operators. Finally, HarnessFix generates and validates harness patches under flaw-specific repair specifications to reduce target flaws without introducing unacceptable regressions. We evaluate HarnessFix on SWE-Bench Verified, Terminal-Bench 2.0 Verified, GAIA and AppWorld. Across these benchmarks, HarnessFix improves held-out test performance over the initial harnesses by 15.2%--50.0%, outperforms human-designed and self-evolution baselines, and reveals recurring harness-flaw patterns across ETCLOVG layers.",
+      "summary": "LLM-based agents increasingly rely on harnesses that provide execution environments, tool interfaces, context, lifecycle orchestration, observability, verification, and governance. Existing self-improving agents and automatic harness evolution methods mainly improve agents through runtime supervision, prompt optimization, workflow search, or harness modification based on final outcomes. However, they often fail to diagnose where the responsible evidence lies in failed trajectories and which harness layer causes the unreliable behavior, resulting in broad, indirect, or poorly scoped changes. This paper proposes HarnessFix, a trace-guided framework for diagnosing agent failures and repairing agent harnesses. HarnessFix compiles raw execution traces and harness code into a Harness-aware Trace Intermediate Representation (HTIR), which normalizes fragmented trajectory evidence and captures step-level provenance and control-flow relations. It then attributes failures to responsible trajectory steps and harness layers, consolidates recurring diagnoses into actionable flaw records, and maps them to scoped repair operators. Finally, HarnessFix generates and validates harness patches under flaw-specific repair specifications to reduce target flaws without introducing unacceptable regressions. We evaluate HarnessFix on SWE-Bench Verified, Terminal-Bench 2.0 Verified, GAIA and AppWorld. Across these benchmarks, HarnessFix improves held-out test performance over the initial harnesses by 15.2%--50.0%, outperforms human-designed and self-evolution baselines, and reveals recurring harness-flaw patterns across ETCLOVG layers.",
+      "abstract": "LLM-based agents increasingly rely on harnesses that provide execution environments, tool interfaces, context, lifecycle orchestration, observability, verification, and governance. Existing self-improving agents and automatic harness evolution methods mainly improve agents through runtime supervision, prompt optimization, workflow search, or harness modification based on final outcomes. However, they often fail to diagnose where the responsible evidence lies in failed trajectories and which harness layer causes the unreliable behavior, resulting in broad, indirect, or poorly scoped changes. This paper proposes HarnessFix, a trace-guided framework for diagnosing agent failures and repairing agent harnesses. HarnessFix compiles raw execution traces and harness code into a Harness-aware Trace Intermediate Representation (HTIR), which normalizes fragmented trajectory evidence and captures step-level provenance and control-flow relations. It then attributes failures to responsible trajectory steps and harness layers, consolidates recurring diagnoses into actionable flaw records, and maps them to scoped repair operators. Finally, HarnessFix generates and validates harness patches under flaw-specific repair specifications to reduce target flaws without introducing unacceptable regressions. We evaluate HarnessFix on SWE-Bench Verified, Terminal-Bench 2.0 Verified, GAIA and AppWorld. Across these benchmarks, HarnessFix improves held-out test performance over the initial harnesses by 15.2%--50.0%, outperforms human-designed and self-evolution baselines, and reveals recurring harness-flaw patterns across ETCLOVG layers.",
+      "categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 20,
+        "engineering_utility": 19,
+        "timeliness_rarity": 14
+      },
+      "score_total": 73,
+      "score_reason": "agent relevance, evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06301",
+      "arxiv_id": "2606.06301",
+      "title": "More than a Judge: An Empirical Study of Agent-Human Interaction in Crowdsourced Testing Assessment",
+      "url": "https://arxiv.org/abs/2606.06301",
+      "published_at": "2026-06-04T15:39:05Z",
+      "publish_date": "2026-06-04",
+      "description": "Agentic AI is increasingly being integrated into software engineering workflows. In crowdsourced testing, however, the large volume and uneven quality of submitted reports still create a substantial review burden for developers. In prior work, we developed and validated a multi-agent assessment backbone based on the LLM-as-a-Judge paradigm. That backbone assesses reports along three dimensions--textuality, adequacy, and competitiveness--and was shown to align well with human consensus while substantially reducing assessment effort. Yet reliable automated judging does not by itself show whether agent outputs can improve human work when embedded into workflow. This paper studies that missing question in the context of crowdsourced testing. We investigate whether assessment-derived, actionable feedback can improve how testers revise reports, perform on later tasks, and transfer reporting practices across applications. To do so, we conducted a controlled four-stage human-subject study with 20 testers across three real-world applications. The results show that agent-generated feedback supports immediate improvements in revised reports, better first submissions on a new task after prior feedback exposure, and evidence of partial but meaningful transfer to a later application. A post-task questionnaire completed by 17 participants complements these artifact-based findings by suggesting that the feedback was generally understandable, acted upon in revision, and carried into later tasks, while also revealing remaining friction in specificity and execution. Overall, the study provides empirical evidence that, in the studied crowdsourced testing setting, assessment agents can serve not only as post-hoc judges but also as workflow-integrated feedback providers that support upstream report-quality improvement.",
+      "summary": "Agentic AI is increasingly being integrated into software engineering workflows. In crowdsourced testing, however, the large volume and uneven quality of submitted reports still create a substantial review burden for developers. In prior work, we developed and validated a multi-agent assessment backbone based on the LLM-as-a-Judge paradigm. That backbone assesses reports along three dimensions--textuality, adequacy, and competitiveness--and was shown to align well with human consensus while substantially reducing assessment effort. Yet reliable automated judging does not by itself show whether agent outputs can improve human work when embedded into workflow. This paper studies that missing question in the context of crowdsourced testing. We investigate whether assessment-derived, actionable feedback can improve how testers revise reports, perform on later tasks, and transfer reporting practices across applications. To do so, we conducted a controlled four-stage human-subject study with 20 testers across three real-world applications. The results show that agent-generated feedback supports immediate improvements in revised reports, better first submissions on a new task after prior feedback exposure, and evidence of partial but meaningful transfer to a later application. A post-task questionnaire completed by 17 participants complements these artifact-based findings by suggesting that the feedback was generally understandable, acted upon in revision, and carried into later tasks, while also revealing remaining friction in specificity and execution. Overall, the study provides empirical evidence that, in the studied crowdsourced testing setting, assessment agents can serve not only as post-hoc judges but also as workflow-integrated feedback providers that support upstream report-quality improvement.",
+      "abstract": "Agentic AI is increasingly being integrated into software engineering workflows. In crowdsourced testing, however, the large volume and uneven quality of submitted reports still create a substantial review burden for developers. In prior work, we developed and validated a multi-agent assessment backbone based on the LLM-as-a-Judge paradigm. That backbone assesses reports along three dimensions--textuality, adequacy, and competitiveness--and was shown to align well with human consensus while substantially reducing assessment effort. Yet reliable automated judging does not by itself show whether agent outputs can improve human work when embedded into workflow. This paper studies that missing question in the context of crowdsourced testing. We investigate whether assessment-derived, actionable feedback can improve how testers revise reports, perform on later tasks, and transfer reporting practices across applications. To do so, we conducted a controlled four-stage human-subject study with 20 testers across three real-world applications. The results show that agent-generated feedback supports immediate improvements in revised reports, better first submissions on a new task after prior feedback exposure, and evidence of partial but meaningful transfer to a later application. A post-task questionnaire completed by 17 participants complements these artifact-based findings by suggesting that the feedback was generally understandable, acted upon in revision, and carried into later tasks, while also revealing remaining friction in specificity and execution. Overall, the study provides empirical evidence that, in the studied crowdsourced testing setting, assessment agents can serve not only as post-hoc judges but also as workflow-integrated feedback providers that support upstream report-quality improvement.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06301",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "通过受控人因实验，证明众包测试中智能体反馈能提升报告修订质量、后续任务表现和跨应用迁移，将智能体从评判者转化为工作流集成的反馈提供者。",
+        "one_sentence_summary": "通过20名测试者在三个真实应用上的四阶段受控实验，发现多智能体评估系统生成的反馈不仅改善即时报告修订，还提升新任务首次提交质量和跨应用实践迁移，结合事后问卷证实反馈被理解、采纳并延续，表明评估智能体可成为上游报告质量改进的工作流集成反馈提供者。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
+      },
+      "score_total": 90,
+      "score_reason": "通过受控人因实验，证明众包测试中智能体反馈能提升报告修订质量、后续任务表现和跨应用迁移，将智能体从评判者转化为工作流集成的反馈提供者。",
+      "one_sentence_summary": "通过20名测试者在三个真实应用上的四阶段受控实验，发现多智能体评估系统生成的反馈不仅改善即时报告修订，还提升新任务首次提交质量和跨应用实践迁移，结合事后问卷证实反馈被理解、采纳并延续，表明评估智能体可成为上游报告质量改进的工作流集成反馈提供者。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-06T05:16:19.783977+00:00",
+      "pushed_at": "2026-06-06T05:16:19.783977+00:00",
+      "source_run_id": "2026-06-06",
+      "pushed_run_id": "2026-06-06"
     }
   ]
 }
