@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-06T05:16:19.783977+00:00",
+  "updated_at": "2026-06-07T06:03:48.565673+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -15487,11 +15487,11 @@
       "score_reason": "首个无监督生物表示学习超参优化基准，包含大规模评估数据，支持多种 HPO 方法对比，降低实验门槛，适合复现与集成，但领域较专。",
       "one_sentence_summary": "BBOmix 是首个面向无监督生物表示学习的表格基准，涵盖 105,000 次评估、四种自编码器架构和七种多组学模态，量化了重建损失与下游性能相关性，并提供多种 HPO 方法的基线，旨在使大规模无监督超参优化研究更易于访问和复现。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-04T06:21:53.335762+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-04",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07"
     },
     {
       "id": "arxiv:2606.05121",
@@ -16539,11 +16539,11 @@
       "score_reason": "First systematic NL-to-TLA+ evaluation with a new 205-spec dataset; reveals strong limitations (8.6% semantic accuracy) and negative transfer, providing a reference for future work; the released framework aids reproducibility, but immediate integration into tools is limited.",
       "one_sentence_summary": "该论文首次系统评估 LLM 从自然语言生成 TLA+ 规范的能力，在 205 个规范上测试 30 个模型，仅 8.6% 最高语义正确率，模型大小不预示质量，代码专长模型因负迁移表现更差，识别五类幻觉并发布评估框架。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-05T06:03:56.136936+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-05",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07"
     },
     {
       "id": "arxiv:2606.05828",
@@ -16760,29 +16760,29 @@
       "ai_score": {
         "id": "arxiv:2606.06493",
         "score_detail": {
-          "application_relevance": 15,
-          "new_signal": 18,
-          "engineering_utility": 18,
-          "timeliness_rarity": 17
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
         },
-        "score_reason": "提出HANDOFF人形机器人全身控制器，通过多教师KL蒸馏与上下文门控混合专家实现紧凑接口，结合VLM驱动规划器在硬件上演示自然语言任务。",
-        "one_sentence_summary": "HANDOFF为Unitree G1人形机器人设计了一种紧凑、直观的任务空间控制接口，通过从运动追踪、行走和摔倒恢复三个专家策略蒸馏出混合专家学生，并配以VLM驱动的智能体规划器，在不需要任务特定数据或控制器微调下实现了自然语言驱动的多样化操作技能硬件演示。"
+        "score_reason": "该论文提出人形机器人全身控制的新接口，结合专家蒸馏和代理规划器，具有高应用潜力、新颖的任务设定和可实现的工程价值，反映了语言驱动机器人操作的前沿趋势。",
+        "one_sentence_summary": "HANDOFF提出一种人形机器人全身控制器，通过多教师KL蒸馏将运动跟踪、移动和跌倒恢复三个专家模型融合为混合专家学生，在Unitree G1上实现领先的速度跟踪和大范围操作空间，并由VLM驱动的代理规划器完成自然语言任务。"
       },
       "score_detail": {
-        "application_relevance": 15,
-        "new_signal": 18,
-        "engineering_utility": 18,
-        "timeliness_rarity": 17
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
       },
-      "score_total": 68,
-      "score_reason": "提出HANDOFF人形机器人全身控制器，通过多教师KL蒸馏与上下文门控混合专家实现紧凑接口，结合VLM驱动规划器在硬件上演示自然语言任务。",
-      "one_sentence_summary": "HANDOFF为Unitree G1人形机器人设计了一种紧凑、直观的任务空间控制接口，通过从运动追踪、行走和摔倒恢复三个专家策略蒸馏出混合专家学生，并配以VLM驱动的智能体规划器，在不需要任务特定数据或控制器微调下实现了自然语言驱动的多样化操作技能硬件演示。",
+      "score_total": 87,
+      "score_reason": "该论文提出人形机器人全身控制的新接口，结合专家蒸馏和代理规划器，具有高应用潜力、新颖的任务设定和可实现的工程价值，反映了语言驱动机器人操作的前沿趋势。",
+      "one_sentence_summary": "HANDOFF提出一种人形机器人全身控制器，通过多教师KL蒸馏将运动跟踪、移动和跌倒恢复三个专家模型融合为混合专家学生，在Unitree G1上实现领先的速度跟踪和大范围操作空间，并由VLM驱动的代理规划器完成自然语言任务。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-06T05:16:19.783977+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-06",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07"
     },
     {
       "id": "arxiv:2606.06492",
@@ -16807,20 +16807,31 @@
       "feed_title": "cs.AI updates on arXiv.org",
       "source": "arxiv_api",
       "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 20,
-        "engineering_utility": 19,
-        "timeliness_rarity": 9
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
       },
-      "score_total": 68,
-      "score_reason": "evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
-      "score_source": "rules",
-      "if_pushed": 0,
+      "score_total": 88,
+      "score_reason": "Code2LoRA用超网络生成仓库专用适配器，避免推理时上下文开销，并支持代码演进，附带新基准RepoPeftBench，方法新颖且开源，对代码助手有直接实用价值。",
+      "one_sentence_summary": "Code2LoRA利用超网络为代码大模型生成仓库特定的LoRA适配器，支持静态和动态代码演进场景，在RepoPeftBench基准上实现63.8%和60.3%的准确率，无需额外推理开销。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
       "added_at": "2026-06-06T05:16:19.783977+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-06",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07",
+      "ai_score": {
+        "id": "arxiv:2606.06492",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "Code2LoRA用超网络生成仓库专用适配器，避免推理时上下文开销，并支持代码演进，附带新基准RepoPeftBench，方法新颖且开源，对代码助手有直接实用价值。",
+        "one_sentence_summary": "Code2LoRA利用超网络为代码大模型生成仓库特定的LoRA适配器，支持静态和动态代码演进场景，在RepoPeftBench基准上实现63.8%和60.3%的准确率，无需额外推理开销。"
+      }
     },
     {
       "id": "arxiv:2606.06481",
@@ -17158,29 +17169,29 @@
       "ai_score": {
         "id": "arxiv:2606.06399",
         "score_detail": {
-          "application_relevance": 22,
-          "new_signal": 20,
-          "engineering_utility": 18,
-          "timeliness_rarity": 19
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 21
         },
-        "score_reason": "CollabSim offers a theory-grounded simulation framework for evaluating LLM agents' collaborative competence, enabling systematic analysis of coordination capabilities. It is relevant for building robust multi-agent products, though more focused on evaluation.",
-        "one_sentence_summary": "CollabSim基于CSCW理论构建可配置模拟框架，通过控制交互条件和探测内部状态，评估大模型智能体在协作中的共同基础、对齐与修复能力，揭示不同模型和设计的效果差异，为多智能体系统设计提供参考。"
+        "score_reason": "CollabSim提供了一个理论驱动的多智能体协作评估框架，通过可控实验系统分析代理协作能力，兼具高度的应用价值和工程可复用性，代表了多代理系统评估的新方向。",
+        "one_sentence_summary": "CollabSim是一个基于CSCW理论的多智能体协作能力评估框架，通过可控仿真实验记录行动级内部状态，在四个大语言模型上量化代理的共同基础建立和意图理解能力，揭示了任务结构对协作的影响，为设计协作型AI代理提供了评估基准。"
       },
       "score_detail": {
-        "application_relevance": 22,
-        "new_signal": 20,
-        "engineering_utility": 18,
-        "timeliness_rarity": 19
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 21
       },
-      "score_total": 79,
-      "score_reason": "CollabSim offers a theory-grounded simulation framework for evaluating LLM agents' collaborative competence, enabling systematic analysis of coordination capabilities. It is relevant for building robust multi-agent products, though more focused on evaluation.",
-      "one_sentence_summary": "CollabSim基于CSCW理论构建可配置模拟框架，通过控制交互条件和探测内部状态，评估大模型智能体在协作中的共同基础、对齐与修复能力，揭示不同模型和设计的效果差异，为多智能体系统设计提供参考。",
+      "score_total": 90,
+      "score_reason": "CollabSim提供了一个理论驱动的多智能体协作评估框架，通过可控实验系统分析代理协作能力，兼具高度的应用价值和工程可复用性，代表了多代理系统评估的新方向。",
+      "one_sentence_summary": "CollabSim是一个基于CSCW理论的多智能体协作能力评估框架，通过可控仿真实验记录行动级内部状态，在四个大语言模型上量化代理的共同基础建立和意图理解能力，揭示了任务结构对协作的影响，为设计协作型AI代理提供了评估基准。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-06T05:16:19.783977+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-06",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07"
     },
     {
       "id": "arxiv:2606.06388",
@@ -17205,29 +17216,29 @@
       "ai_score": {
         "id": "arxiv:2606.06388",
         "score_detail": {
-          "application_relevance": 21,
-          "new_signal": 20,
-          "engineering_utility": 19,
-          "timeliness_rarity": 19
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 20,
+          "timeliness_rarity": 22
         },
-        "score_reason": "ALMANAC provides a unique dataset of human dyadic collaboration with fine-grained mental model annotations, enabling the development and evaluation of agents that can align internal models during collaboration. This addresses a key gap for building effective collaborative AI.",
-        "one_sentence_summary": "ALMANAC数据集基于地图任务采集2987次协作行为，并标注参与者的自我推理、伙伴意图和团队目标，用于训练和评估智能体的行为预测与心智模型推断能力，为协作智能体提供过程级心智模型对齐基准。"
+        "score_reason": "ALMANAC数据集首次提供行动级心智模型注释，为协作AI代理的训练和评估开辟了新途径，数据稀缺性使其具有很高的新颖性和时效价值。",
+        "one_sentence_summary": "ALMANAC是一个基于地图任务的人类协作数据集，包含2987个行动级协作动作，每个动作均标注了参与者自我推理、对伙伴意图感知和团队目标的心智模型，并在六个大语言模型上评测了预测行为和心智模型的能力，为开发具备协作心智建模能力的AI代理提供了数据支撑。"
       },
       "score_detail": {
-        "application_relevance": 21,
-        "new_signal": 20,
-        "engineering_utility": 19,
-        "timeliness_rarity": 19
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 20,
+        "timeliness_rarity": 22
       },
-      "score_total": 79,
-      "score_reason": "ALMANAC provides a unique dataset of human dyadic collaboration with fine-grained mental model annotations, enabling the development and evaluation of agents that can align internal models during collaboration. This addresses a key gap for building effective collaborative AI.",
-      "one_sentence_summary": "ALMANAC数据集基于地图任务采集2987次协作行为，并标注参与者的自我推理、伙伴意图和团队目标，用于训练和评估智能体的行为预测与心智模型推断能力，为协作智能体提供过程级心智模型对齐基准。",
+      "score_total": 90,
+      "score_reason": "ALMANAC数据集首次提供行动级心智模型注释，为协作AI代理的训练和评估开辟了新途径，数据稀缺性使其具有很高的新颖性和时效价值。",
+      "one_sentence_summary": "ALMANAC是一个基于地图任务的人类协作数据集，包含2987个行动级协作动作，每个动作均标注了参与者自我推理、对伙伴意图感知和团队目标的心智模型，并在六个大语言模型上评测了预测行为和心智模型的能力，为开发具备协作心智建模能力的AI代理提供了数据支撑。",
       "score_source": "deepseek",
-      "if_pushed": 0,
+      "if_pushed": 1,
       "added_at": "2026-06-06T05:16:19.783977+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-06",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07"
     },
     {
       "id": "arxiv:2606.06350",
@@ -17342,20 +17353,31 @@
       "feed_title": "cs.AI updates on arXiv.org",
       "source": "arxiv_api",
       "score_detail": {
-        "application_relevance": 20,
-        "new_signal": 20,
-        "engineering_utility": 19,
-        "timeliness_rarity": 14
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 23,
+        "timeliness_rarity": 21
       },
-      "score_total": 73,
-      "score_reason": "agent relevance, evaluation signal, engineering utility",
-      "one_sentence_summary": "这篇论文构建一个新的 benchmark，面向检索增强生成或复杂信息检索任务；通过实验或基准测试验证方法是否真的改善任务表现；用途是判断检索系统能否为复杂推理持续提供有效证据。",
-      "score_source": "rules",
-      "if_pushed": 0,
+      "score_total": 89,
+      "score_reason": "HarnessFix框架通过轨迹引导诊断和修复智能体执行环境的缺陷，直接提升LLM智能体可靠性，提供清晰的工程实现和显著性能提升，高度切合当前智能体可靠性的趋势。",
+      "one_sentence_summary": "该论文提出HarnessFix框架，通过构建Harness-aware Trace IR并基于轨迹证据归因故障到具体步骤和层，生成并验证补丁，在SWE-Bench Verified等四个基准上提升性能15.2%-50.0%，显著改善LLM智能体的可靠性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
       "added_at": "2026-06-06T05:16:19.783977+00:00",
-      "pushed_at": null,
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
       "source_run_id": "2026-06-06",
-      "pushed_run_id": null
+      "pushed_run_id": "2026-06-07",
+      "ai_score": {
+        "id": "arxiv:2606.06324",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 23,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "HarnessFix框架通过轨迹引导诊断和修复智能体执行环境的缺陷，直接提升LLM智能体可靠性，提供清晰的工程实现和显著性能提升，高度切合当前智能体可靠性的趋势。",
+        "one_sentence_summary": "该论文提出HarnessFix框架，通过构建Harness-aware Trace IR并基于轨迹证据归因故障到具体步骤和层，生成并验证补丁，在SWE-Bench Verified等四个基准上提升性能15.2%-50.0%，显著改善LLM智能体的可靠性。"
+      }
     },
     {
       "id": "arxiv:2606.06301",
@@ -17401,6 +17423,243 @@
       "pushed_at": "2026-06-06T05:16:19.783977+00:00",
       "source_run_id": "2026-06-06",
       "pushed_run_id": "2026-06-06"
+    },
+    {
+      "id": "arxiv:2606.06458",
+      "arxiv_id": "2606.06458",
+      "title": "In-Context Multiple Instance Learning",
+      "url": "https://arxiv.org/abs/2606.06458",
+      "published_at": "2026-06-04T17:50:32Z",
+      "publish_date": "2026-06-04",
+      "description": "Multiple Instance Learning (MIL) addresses problems where supervision is available at the level of bags of instances and has been successfully applied in fields ranging from computational pathology to satellite imagery. Nevertheless, existing algorithms struggle in the low-label regime that characterizes many real-world applications. Flexible models overfit and rigid ones fail to adapt to the task at hand. We show that pretraining an in-context learner with a Perceiver-style architecture on synthetic data yields a model that can solve new tasks from a handful of labeled bags. At inference time, classification happens in a single forward pass and requires no gradient updates. We propose and investigate different synthetic data generators for bag-structured data and find that they capture complementary inductive biases. A model pretrained on a mixture of these generators inherits their per-task strengths and achieves the best average performance across twelve MIL benchmarks, outperforming supervised baselines that require task-specific training.",
+      "summary": "Multiple Instance Learning (MIL) addresses problems where supervision is available at the level of bags of instances and has been successfully applied in fields ranging from computational pathology to satellite imagery. Nevertheless, existing algorithms struggle in the low-label regime that characterizes many real-world applications. Flexible models overfit and rigid ones fail to adapt to the task at hand. We show that pretraining an in-context learner with a Perceiver-style architecture on synthetic data yields a model that can solve new tasks from a handful of labeled bags. At inference time, classification happens in a single forward pass and requires no gradient updates. We propose and investigate different synthetic data generators for bag-structured data and find that they capture complementary inductive biases. A model pretrained on a mixture of these generators inherits their per-task strengths and achieves the best average performance across twelve MIL benchmarks, outperforming supervised baselines that require task-specific training.",
+      "abstract": "Multiple Instance Learning (MIL) addresses problems where supervision is available at the level of bags of instances and has been successfully applied in fields ranging from computational pathology to satellite imagery. Nevertheless, existing algorithms struggle in the low-label regime that characterizes many real-world applications. Flexible models overfit and rigid ones fail to adapt to the task at hand. We show that pretraining an in-context learner with a Perceiver-style architecture on synthetic data yields a model that can solve new tasks from a handful of labeled bags. At inference time, classification happens in a single forward pass and requires no gradient updates. We propose and investigate different synthetic data generators for bag-structured data and find that they capture complementary inductive biases. A model pretrained on a mixture of these generators inherits their per-task strengths and achieves the best average performance across twelve MIL benchmarks, outperforming supervised baselines that require task-specific training.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06458",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 24,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该工作将上下文学习引入多实例学习，基于合成数据预训练Perceiver架构模型，在少标签下表现优异，具有产品化潜力。",
+        "one_sentence_summary": "本文提出上下文多实例学习，用合成数据预训练感知器架构模型，在新任务上仅需少量标注包即可单次前向分类，在十二个基准上超越任务特定训练的有监督基线。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 24,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 93,
+      "score_reason": "该工作将上下文学习引入多实例学习，基于合成数据预训练Perceiver架构模型，在少标签下表现优异，具有产品化潜力。",
+      "one_sentence_summary": "本文提出上下文多实例学习，用合成数据预训练感知器架构模型，在新任务上仅需少量标注包即可单次前向分类，在十二个基准上超越任务特定训练的有监督基线。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-07T06:03:48.565673+00:00",
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
+      "source_run_id": "2026-06-07",
+      "pushed_run_id": "2026-06-07"
+    },
+    {
+      "id": "arxiv:2606.06447",
+      "arxiv_id": "2606.06447",
+      "title": "Latent Reasoning with Normalizing Flows",
+      "url": "https://arxiv.org/abs/2606.06447",
+      "published_at": "2026-06-04T17:44:17Z",
+      "publish_date": "2026-06-04",
+      "description": "Large language models often improve reasoning by generating explicit chain-of-thought (CoT), demonstrating the importance of intermediate computation. However, textual CoT forces this computation through a discrete, serial, and communication-oriented token stream: each reasoning step must be verbalized before the model can proceed, even when the underlying update is semantic, uncertain, or only partially formed. Latent reasoning offers a higher-bandwidth alternative by performing intermediate computation in compact continuous states before committing to text. Yet existing latent-reasoning methods often sacrifice key advantages that make CoT effective in autoregressive language models, including native left-to-right generation, probabilistic sampling, compatibility with KV-cache decoding, and tractable likelihood estimation. We propose NF-CoT, a latent reasoning framework that preserves these advantages by modeling continuous thoughts with normalizing flows. NF-CoT instantiates a TARFlow-style normalizing flow inside the LLM backbone, defining a tractable probability model over compact continuous thoughts distilled from explicit CoT. Continuous-thought positions are generated by an NF head, while text positions are generated by the standard LM head within the same causal stream. This design provides exact likelihoods for latent thoughts, enables probabilistic left-to-right decoding with the original KV cache, and supports direct policy-gradient optimization in the latent reasoning space. On code-generation benchmarks, NF-CoT improves pass rates over explicit-CoT and prior latent-reasoning baselines while substantially reducing intermediate-reasoning cost.",
+      "summary": "Large language models often improve reasoning by generating explicit chain-of-thought (CoT), demonstrating the importance of intermediate computation. However, textual CoT forces this computation through a discrete, serial, and communication-oriented token stream: each reasoning step must be verbalized before the model can proceed, even when the underlying update is semantic, uncertain, or only partially formed. Latent reasoning offers a higher-bandwidth alternative by performing intermediate computation in compact continuous states before committing to text. Yet existing latent-reasoning methods often sacrifice key advantages that make CoT effective in autoregressive language models, including native left-to-right generation, probabilistic sampling, compatibility with KV-cache decoding, and tractable likelihood estimation. We propose NF-CoT, a latent reasoning framework that preserves these advantages by modeling continuous thoughts with normalizing flows. NF-CoT instantiates a TARFlow-style normalizing flow inside the LLM backbone, defining a tractable probability model over compact continuous thoughts distilled from explicit CoT. Continuous-thought positions are generated by an NF head, while text positions are generated by the standard LM head within the same causal stream. This design provides exact likelihoods for latent thoughts, enables probabilistic left-to-right decoding with the original KV cache, and supports direct policy-gradient optimization in the latent reasoning space. On code-generation benchmarks, NF-CoT improves pass rates over explicit-CoT and prior latent-reasoning baselines while substantially reducing intermediate-reasoning cost.",
+      "abstract": "Large language models often improve reasoning by generating explicit chain-of-thought (CoT), demonstrating the importance of intermediate computation. However, textual CoT forces this computation through a discrete, serial, and communication-oriented token stream: each reasoning step must be verbalized before the model can proceed, even when the underlying update is semantic, uncertain, or only partially formed. Latent reasoning offers a higher-bandwidth alternative by performing intermediate computation in compact continuous states before committing to text. Yet existing latent-reasoning methods often sacrifice key advantages that make CoT effective in autoregressive language models, including native left-to-right generation, probabilistic sampling, compatibility with KV-cache decoding, and tractable likelihood estimation. We propose NF-CoT, a latent reasoning framework that preserves these advantages by modeling continuous thoughts with normalizing flows. NF-CoT instantiates a TARFlow-style normalizing flow inside the LLM backbone, defining a tractable probability model over compact continuous thoughts distilled from explicit CoT. Continuous-thought positions are generated by an NF head, while text positions are generated by the standard LM head within the same causal stream. This design provides exact likelihoods for latent thoughts, enables probabilistic left-to-right decoding with the original KV cache, and supports direct policy-gradient optimization in the latent reasoning space. On code-generation benchmarks, NF-CoT improves pass rates over explicit-CoT and prior latent-reasoning baselines while substantially reducing intermediate-reasoning cost.",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06447",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 22,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "Introduces normalizing flows for latent reasoning in LLMs, retaining autoregressive properties and KV-cache compatibility, which is highly novel and directly applicable for efficient inference in products.",
+        "one_sentence_summary": "提出NF-CoT，在LLM内部嵌入标准化流建模紧凑连续思维，实现保留自回归解码和KV缓存的潜在推理，在代码生成上提升通过率并降低中间推理成本。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 22,
+        "timeliness_rarity": 18
+      },
+      "score_total": 82,
+      "score_reason": "Introduces normalizing flows for latent reasoning in LLMs, retaining autoregressive properties and KV-cache compatibility, which is highly novel and directly applicable for efficient inference in products.",
+      "one_sentence_summary": "提出NF-CoT，在LLM内部嵌入标准化流建模紧凑连续思维，实现保留自回归解码和KV缓存的潜在推理，在代码生成上提升通过率并降低中间推理成本。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-07T06:03:48.565673+00:00",
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
+      "source_run_id": "2026-06-07",
+      "pushed_run_id": "2026-06-07"
+    },
+    {
+      "id": "arxiv:2606.06444",
+      "arxiv_id": "2606.06444",
+      "title": "USAD 2.0: Scaling Representation Distillation for Universal Audio Understanding",
+      "url": "https://arxiv.org/abs/2606.06444",
+      "published_at": "2026-06-04T17:42:05Z",
+      "publish_date": "2026-06-04",
+      "description": "Audio encoders are critical to modern audio applications as large language models (LLMs) increasingly rely on a single encoder for diverse inputs. While self-supervised learning (SSL) has yielded strong domain-specific encoders like speech or music experts, multi-domain approaches like USAD and SPEAR remain limited in coverage and evaluation. Recent studies also suggest supervised encoders align better with audio LLMs. We present USAD 2.0, a universal encoder integrating knowledge from both SSL and supervised foundation models. USAD 2.0 introduces domain-aware distillation to address teacher mismatch, extends coverage to the music domain, and adds second-stage supervised distillation for downstream use. We further scale the model to one billion parameters via depth scaling. Experiments show USAD 2.0 achieves strong or state-of-the-art performance across probing and LLM-based evaluations.",
+      "summary": "Audio encoders are critical to modern audio applications as large language models (LLMs) increasingly rely on a single encoder for diverse inputs. While self-supervised learning (SSL) has yielded strong domain-specific encoders like speech or music experts, multi-domain approaches like USAD and SPEAR remain limited in coverage and evaluation. Recent studies also suggest supervised encoders align better with audio LLMs. We present USAD 2.0, a universal encoder integrating knowledge from both SSL and supervised foundation models. USAD 2.0 introduces domain-aware distillation to address teacher mismatch, extends coverage to the music domain, and adds second-stage supervised distillation for downstream use. We further scale the model to one billion parameters via depth scaling. Experiments show USAD 2.0 achieves strong or state-of-the-art performance across probing and LLM-based evaluations.",
+      "abstract": "Audio encoders are critical to modern audio applications as large language models (LLMs) increasingly rely on a single encoder for diverse inputs. While self-supervised learning (SSL) has yielded strong domain-specific encoders like speech or music experts, multi-domain approaches like USAD and SPEAR remain limited in coverage and evaluation. Recent studies also suggest supervised encoders align better with audio LLMs. We present USAD 2.0, a universal encoder integrating knowledge from both SSL and supervised foundation models. USAD 2.0 introduces domain-aware distillation to address teacher mismatch, extends coverage to the music domain, and adds second-stage supervised distillation for downstream use. We further scale the model to one billion parameters via depth scaling. Experiments show USAD 2.0 achieves strong or state-of-the-art performance across probing and LLM-based evaluations.",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "api_categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06444",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 23,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "提出USAD 2.0通用音频编码器，通过领域感知蒸馏和监督蒸馏融合自监督与监督基础模型，扩展至音乐领域并缩放至十亿参数，在多项评估中取得领先性能。",
+        "one_sentence_summary": "USAD 2.0通过领域感知蒸馏和监督蒸馏整合自监督与监督基础模型，构建了覆盖语音、音乐等多领域的通用音频编码器，缩放至十亿参数后在探测任务和LLM评估中取得最佳效果。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 23,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 83,
+      "score_reason": "提出USAD 2.0通用音频编码器，通过领域感知蒸馏和监督蒸馏融合自监督与监督基础模型，扩展至音乐领域并缩放至十亿参数，在多项评估中取得领先性能。",
+      "one_sentence_summary": "USAD 2.0通过领域感知蒸馏和监督蒸馏整合自监督与监督基础模型，构建了覆盖语音、音乐等多领域的通用音频编码器，缩放至十亿参数后在探测任务和LLM评估中取得最佳效果。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-07T06:03:48.565673+00:00",
+      "pushed_at": "2026-06-07T06:03:48.565673+00:00",
+      "source_run_id": "2026-06-07",
+      "pushed_run_id": "2026-06-07"
+    },
+    {
+      "id": "arxiv:2606.06393",
+      "arxiv_id": "2606.06393",
+      "title": "Proper Scoring Rules for Right-Censored Survival Data",
+      "url": "https://arxiv.org/abs/2606.06393",
+      "published_at": "2026-06-04T17:00:29Z",
+      "publish_date": "2026-06-04",
+      "description": "Proper scoring rules provide a rigorous theoretical basis for the training and evaluation of probabilistic forecasts. However, in the presence of right censoring, the event time is only partially observed, rendering conventional scoring rules inapplicable in their standard form. We propose a framework for proper scoring of right-censored survival outcomes based on a simple idea: first, map the predictive distribution through the censoring mechanism, then apply the underlying proper score on the induced observed-data law. This yields localized scores for fixed censoring times and marginalized scores when the censoring time is random or only partially observed. The resulting construction recovers familiar right-censored likelihood and IPCW-type criteria within a coherent framework, while also yielding right-censored versions of the CRPS, pinball loss, Brier score, and energy score. We show that the marginalized score is proper under conditional independent censoring and strictly proper on the identifiable region. The same principle also leads to censored engression, a sample-based learning objective for multivariate right-censored survival modeling. In experiments, our scores correctly rank the oracle forecast across several censoring regimes, whereas forecast-dependent plug-in weighted scores can exhibit ranking reversals. Censored engression likewise substantially improves over naive training on censored outcomes.",
+      "summary": "Proper scoring rules provide a rigorous theoretical basis for the training and evaluation of probabilistic forecasts. However, in the presence of right censoring, the event time is only partially observed, rendering conventional scoring rules inapplicable in their standard form. We propose a framework for proper scoring of right-censored survival outcomes based on a simple idea: first, map the predictive distribution through the censoring mechanism, then apply the underlying proper score on the induced observed-data law. This yields localized scores for fixed censoring times and marginalized scores when the censoring time is random or only partially observed. The resulting construction recovers familiar right-censored likelihood and IPCW-type criteria within a coherent framework, while also yielding right-censored versions of the CRPS, pinball loss, Brier score, and energy score. We show that the marginalized score is proper under conditional independent censoring and strictly proper on the identifiable region. The same principle also leads to censored engression, a sample-based learning objective for multivariate right-censored survival modeling. In experiments, our scores correctly rank the oracle forecast across several censoring regimes, whereas forecast-dependent plug-in weighted scores can exhibit ranking reversals. Censored engression likewise substantially improves over naive training on censored outcomes.",
+      "abstract": "Proper scoring rules provide a rigorous theoretical basis for the training and evaluation of probabilistic forecasts. However, in the presence of right censoring, the event time is only partially observed, rendering conventional scoring rules inapplicable in their standard form. We propose a framework for proper scoring of right-censored survival outcomes based on a simple idea: first, map the predictive distribution through the censoring mechanism, then apply the underlying proper score on the induced observed-data law. This yields localized scores for fixed censoring times and marginalized scores when the censoring time is random or only partially observed. The resulting construction recovers familiar right-censored likelihood and IPCW-type criteria within a coherent framework, while also yielding right-censored versions of the CRPS, pinball loss, Brier score, and energy score. We show that the marginalized score is proper under conditional independent censoring and strictly proper on the identifiable region. The same principle also leads to censored engression, a sample-based learning objective for multivariate right-censored survival modeling. In experiments, our scores correctly rank the oracle forecast across several censoring regimes, whereas forecast-dependent plug-in weighted scores can exhibit ranking reversals. Censored engression likewise substantially improves over naive training on censored outcomes.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06393",
+        "score_detail": {
+          "application_relevance": 16,
+          "new_signal": 21,
+          "engineering_utility": 19,
+          "timeliness_rarity": 17
+        },
+        "score_reason": "该工作提出了右删失生存数据的适当评分规则框架，通过映射预测分布到删失机制，导出删失CRPS等新准则，并在实验中正确排序预测，同时提出删失engression改进训练。",
+        "one_sentence_summary": "本文构建了右删失生存数据的适当评分规则框架，通过删失机制映射预测分布，导出了删失CRPS等新准则，并提出了删失engression用于多元生存建模，实验表明其能正确排序预测。"
+      },
+      "score_detail": {
+        "application_relevance": 16,
+        "new_signal": 21,
+        "engineering_utility": 19,
+        "timeliness_rarity": 17
+      },
+      "score_total": 73,
+      "score_reason": "该工作提出了右删失生存数据的适当评分规则框架，通过映射预测分布到删失机制，导出删失CRPS等新准则，并在实验中正确排序预测，同时提出删失engression改进训练。",
+      "one_sentence_summary": "本文构建了右删失生存数据的适当评分规则框架，通过删失机制映射预测分布，导出了删失CRPS等新准则，并提出了删失engression用于多元生存建模，实验表明其能正确排序预测。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-07T06:03:48.565673+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-07",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.06391",
+      "arxiv_id": "2606.06391",
+      "title": "Conformal Risk Sharing: Certified Cost Allocation with Participation Guarantees",
+      "url": "https://arxiv.org/abs/2606.06391",
+      "published_at": "2026-06-04T16:59:27Z",
+      "publish_date": "2026-06-04",
+      "description": "Sharing the financial impact of rare adverse events across a group can soften extreme individual burdens, but any participant made worse off by the arrangement has reason to leave. A credible mechanism must therefore provide each agent with a trustworthy cap on their future obligation and should be deployed only if the aggregate harm across participants is bounded. We formalise this as the Certified Allocation Problem: from finite data and without distributional assumptions, find a redistribution rule, produce obligation caps for every participant, and verify that no participant is made materially worse off. We propose Conformal Risk Sharing, which solves this problem by pairing an interpretable sharing policy with split conformal calibration. The sharing intensity is tuned on training data, while held-out calibration data produces distribution-free per-agent guarantees (valid under exchangeability). Experiments on synthetic and real-world data, including precipitation and energy-cooperative data, confirm that the framework can substantially reduce extreme obligations for high-risk agents while controlling harm to others.",
+      "summary": "Sharing the financial impact of rare adverse events across a group can soften extreme individual burdens, but any participant made worse off by the arrangement has reason to leave. A credible mechanism must therefore provide each agent with a trustworthy cap on their future obligation and should be deployed only if the aggregate harm across participants is bounded. We formalise this as the Certified Allocation Problem: from finite data and without distributional assumptions, find a redistribution rule, produce obligation caps for every participant, and verify that no participant is made materially worse off. We propose Conformal Risk Sharing, which solves this problem by pairing an interpretable sharing policy with split conformal calibration. The sharing intensity is tuned on training data, while held-out calibration data produces distribution-free per-agent guarantees (valid under exchangeability). Experiments on synthetic and real-world data, including precipitation and energy-cooperative data, confirm that the framework can substantially reduce extreme obligations for high-risk agents while controlling harm to others.",
+      "abstract": "Sharing the financial impact of rare adverse events across a group can soften extreme individual burdens, but any participant made worse off by the arrangement has reason to leave. A credible mechanism must therefore provide each agent with a trustworthy cap on their future obligation and should be deployed only if the aggregate harm across participants is bounded. We formalise this as the Certified Allocation Problem: from finite data and without distributional assumptions, find a redistribution rule, produce obligation caps for every participant, and verify that no participant is made materially worse off. We propose Conformal Risk Sharing, which solves this problem by pairing an interpretable sharing policy with split conformal calibration. The sharing intensity is tuned on training data, while held-out calibration data produces distribution-free per-agent guarantees (valid under exchangeability). Experiments on synthetic and real-world data, including precipitation and energy-cooperative data, confirm that the framework can substantially reduce extreme obligations for high-risk agents while controlling harm to others.",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.06391",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 20,
+          "engineering_utility": 18,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "该工作形式化认证分配问题，提出保形风险分担方法，通过分裂保形校准提供无分布假设的个体义务上限保证，在气候和能源数据上验证了降低极端风险的效果。",
+        "one_sentence_summary": "本文提出保形风险分担方法，结合可解释共享策略与分裂保形校准，在无分布假设下为每个参与者提供义务上限保证，实验表明能有效降低高风险个体的极端负担。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 20,
+        "engineering_utility": 18,
+        "timeliness_rarity": 19
+      },
+      "score_total": 72,
+      "score_reason": "该工作形式化认证分配问题，提出保形风险分担方法，通过分裂保形校准提供无分布假设的个体义务上限保证，在气候和能源数据上验证了降低极端风险的效果。",
+      "one_sentence_summary": "本文提出保形风险分担方法，结合可解释共享策略与分裂保形校准，在无分布假设下为每个参与者提供义务上限保证，实验表明能有效降低高风险个体的极端负担。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-07T06:03:48.565673+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-07",
+      "pushed_run_id": null
     }
   ]
 }
