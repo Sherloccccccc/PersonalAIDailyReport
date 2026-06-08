@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-07T06:03:48.565673+00:00",
+  "updated_at": "2026-06-08T06:20:28.674426+00:00",
   "papers": [
     {
       "id": "arxiv:2605.04018",
@@ -17660,6 +17660,716 @@
       "pushed_at": null,
       "source_run_id": "2026-06-07",
       "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07515",
+      "arxiv_id": "2606.07515",
+      "title": "How reliable are LLMs when it comes to playing dice?",
+      "url": "https://arxiv.org/abs/2606.07515",
+      "published_at": "2026-06-05T17:59:42Z",
+      "publish_date": "2026-06-05",
+      "description": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuitive ones. We further provide empirical evidence of token bias: performance drops by over 20% when canonical formulations are replaced by disguised variants. Embedding misleading suggestions in the prompt reduces performance by up to 34%, with no model proving immune. Taken together, the reported findings suggest that current LLMs are not yet genuine probabilistic reasoners, despite their success in advanced mathematical problems.",
+      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuitive ones. We further provide empirical evidence of token bias: performance drops by over 20% when canonical formulations are replaced by disguised variants. Embedding misleading suggestions in the prompt reduces performance by up to 34%, with no model proving immune. Taken together, the reported findings suggest that current LLMs are not yet genuine probabilistic reasoners, despite their success in advanced mathematical problems.",
+      "abstract": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuitive ones. We further provide empirical evidence of token bias: performance drops by over 20% when canonical formulations are replaced by disguised variants. Embedding misleading suggestions in the prompt reduces performance by up to 34%, with no model proving immune. Taken together, the reported findings suggest that current LLMs are not yet genuine probabilistic reasoners, despite their success in advanced mathematical problems.",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "math.PR"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "math.PR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07515",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 12,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "论文通过构建标准与反直觉概率问题数据集，评估了8个LLM的推理能力，发现模型在反直觉问题上准确率骤降，并存在词元偏差和误导易感性。该工作揭示了LLM的概率推理缺陷，对依赖概率决策的AI产品有警示作用，但工程复用性有限。",
+        "one_sentence_summary": "本文构建了两个离散概率问题数据集（标准与反直觉），测试8个大模型的推理能力，发现模型在反直觉问题准确率仅0.59，且受词元偏差和误导提示影响，表明当前LLM并非真正的概率推理者。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 12,
+        "timeliness_rarity": 16
+      },
+      "score_total": 61,
+      "score_reason": "论文通过构建标准与反直觉概率问题数据集，评估了8个LLM的推理能力，发现模型在反直觉问题上准确率骤降，并存在词元偏差和误导易感性。该工作揭示了LLM的概率推理缺陷，对依赖概率决策的AI产品有警示作用，但工程复用性有限。",
+      "one_sentence_summary": "本文构建了两个离散概率问题数据集（标准与反直觉），测试8个大模型的推理能力，发现模型在反直觉问题准确率仅0.59，且受词元偏差和误导提示影响，表明当前LLM并非真正的概率推理者。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07513",
+      "arxiv_id": "2606.07513",
+      "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+      "url": "https://arxiv.org/abs/2606.07513",
+      "published_at": "2026-06-05T17:59:31Z",
+      "publish_date": "2026-06-05",
+      "description": "Humans learn from social life. Simulating this process with LLM-powered agents represents a promising research direction, raising a natural question: whether LLMs can learn from such simulated social experience to better understand and replicate human behavior. However, prior agent society simulations typically operate at the scale of days, limiting the depth of social interactions and long-term growth. In this paper, we study long-term life simulation and LLM learning in agent societies, with two goals: (1) investigating social behaviors that emerge from life-long simulation, and (2) developing anthropomorphic capabilities in LLMs, particularly intelligence in social life, through years of simulated social experience. Specifically, we present Agentopia, a comprehensive framework for long-term life simulation in multi-agent societies, where 100 agents autonomously pursue personal growth, develop social relationships, and fulfill their needs and goals over 10 simulated years. We define life reward to mirror human well-being, and leverage this reward to train LLMs via rejection sampling. Extensive experiments show that agents exhibit rich emergent social behaviors. Furthermore, life reward training effectively enhances the underlying LLM, which leads to improved agent well-being in simulation, and generalizes to downstream role-playing benchmarks with +15.6% improvement.",
+      "summary": "Humans learn from social life. Simulating this process with LLM-powered agents represents a promising research direction, raising a natural question: whether LLMs can learn from such simulated social experience to better understand and replicate human behavior. However, prior agent society simulations typically operate at the scale of days, limiting the depth of social interactions and long-term growth. In this paper, we study long-term life simulation and LLM learning in agent societies, with two goals: (1) investigating social behaviors that emerge from life-long simulation, and (2) developing anthropomorphic capabilities in LLMs, particularly intelligence in social life, through years of simulated social experience. Specifically, we present Agentopia, a comprehensive framework for long-term life simulation in multi-agent societies, where 100 agents autonomously pursue personal growth, develop social relationships, and fulfill their needs and goals over 10 simulated years. We define life reward to mirror human well-being, and leverage this reward to train LLMs via rejection sampling. Extensive experiments show that agents exhibit rich emergent social behaviors. Furthermore, life reward training effectively enhances the underlying LLM, which leads to improved agent well-being in simulation, and generalizes to downstream role-playing benchmarks with +15.6% improvement.",
+      "abstract": "Humans learn from social life. Simulating this process with LLM-powered agents represents a promising research direction, raising a natural question: whether LLMs can learn from such simulated social experience to better understand and replicate human behavior. However, prior agent society simulations typically operate at the scale of days, limiting the depth of social interactions and long-term growth. In this paper, we study long-term life simulation and LLM learning in agent societies, with two goals: (1) investigating social behaviors that emerge from life-long simulation, and (2) developing anthropomorphic capabilities in LLMs, particularly intelligence in social life, through years of simulated social experience. Specifically, we present Agentopia, a comprehensive framework for long-term life simulation in multi-agent societies, where 100 agents autonomously pursue personal growth, develop social relationships, and fulfill their needs and goals over 10 simulated years. We define life reward to mirror human well-being, and leverage this reward to train LLMs via rejection sampling. Extensive experiments show that agents exhibit rich emergent social behaviors. Furthermore, life reward training effectively enhances the underlying LLM, which leads to improved agent well-being in simulation, and generalizes to downstream role-playing benchmarks with +15.6% improvement.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07513",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 21,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该工作构建了100个AI代理的十年期社会模拟框架，定义了生活奖励并通过拒绝采样训练LLM，直接启发代理产品与社交模拟应用，方法可复用，长期视角在当前较为少见。",
+        "one_sentence_summary": "Agentopia构建了一个包含100个AI代理的十年期生活模拟框架，通过定义生活奖励并利用拒绝采样训练大语言模型，提升了代理的社交行为表现，并在角色扮演任务上取得15.6%的提升。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 21,
+        "timeliness_rarity": 22
+      },
+      "score_total": 88,
+      "score_reason": "该工作构建了100个AI代理的十年期社会模拟框架，定义了生活奖励并通过拒绝采样训练LLM，直接启发代理产品与社交模拟应用，方法可复用，长期视角在当前较为少见。",
+      "one_sentence_summary": "Agentopia构建了一个包含100个AI代理的十年期生活模拟框架，通过定义生活奖励并利用拒绝采样训练大语言模型，提升了代理的社交行为表现，并在角色扮演任务上取得15.6%的提升。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07502",
+      "arxiv_id": "2606.07502",
+      "title": "Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings",
+      "url": "https://arxiv.org/abs/2606.07502",
+      "published_at": "2026-06-05T17:54:32Z",
+      "publish_date": "2026-06-05",
+      "description": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+      "summary": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+      "abstract": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "api_categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07502",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 22,
+          "engineering_utility": 25,
+          "timeliness_rarity": 21
+        },
+        "score_reason": "论文揭示了LLM嵌入偏向高频词的现象，提出EmbedFilter方法，利用解嵌入矩阵过滤高频词子空间，从而增强语义表示并实现维度缩减。该方法可直接应用于现有嵌入模型，提升检索效率和性能，工程价值极高，代码已开源。",
+        "one_sentence_summary": "本文发现LLM文本嵌入因解嵌入矩阵的作用而偏向高频无用词，提出EmbedFilter线性变换，通过滤除该矩阵中对应高频词的子空间来精炼嵌入，既能提升语义质量又可降维加速检索，在多个LLM上零样本性能显著提升。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 22,
+        "engineering_utility": 25,
+        "timeliness_rarity": 21
+      },
+      "score_total": 91,
+      "score_reason": "论文揭示了LLM嵌入偏向高频词的现象，提出EmbedFilter方法，利用解嵌入矩阵过滤高频词子空间，从而增强语义表示并实现维度缩减。该方法可直接应用于现有嵌入模型，提升检索效率和性能，工程价值极高，代码已开源。",
+      "one_sentence_summary": "本文发现LLM文本嵌入因解嵌入矩阵的作用而偏向高频无用词，提出EmbedFilter线性变换，通过滤除该矩阵中对应高频词的子空间来精炼嵌入，既能提升语义质量又可降维加速检索，在多个LLM上零样本性能显著提升。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07491",
+      "arxiv_id": "2606.07491",
+      "title": "Twelve quick tips for designing AI-driven HPC workflows",
+      "url": "https://arxiv.org/abs/2606.07491",
+      "published_at": "2026-06-05T17:46:32Z",
+      "publish_date": "2026-06-05",
+      "description": "High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration. This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical system-level bottlenecks - such as containerisation for environment portability, strategic deployment of job arrays, explicit feedback loop mechanics, and I/O optimisation for small files - this article offers a framework for transitioning from rigid execution pipelines to adaptive, intelligent computational environments. While these architectural principles are broadly applicable across distributed environments, they are particularly tailored to the resource-intensive throughput demands of modern computational biology.",
+      "summary": "High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration. This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical system-level bottlenecks - such as containerisation for environment portability, strategic deployment of job arrays, explicit feedback loop mechanics, and I/O optimisation for small files - this article offers a framework for transitioning from rigid execution pipelines to adaptive, intelligent computational environments. While these architectural principles are broadly applicable across distributed environments, they are particularly tailored to the resource-intensive throughput demands of modern computational biology.",
+      "abstract": "High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration. This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical system-level bottlenecks - such as containerisation for environment portability, strategic deployment of job arrays, explicit feedback loop mechanics, and I/O optimisation for small files - this article offers a framework for transitioning from rigid execution pipelines to adaptive, intelligent computational environments. While these architectural principles are broadly applicable across distributed environments, they are particularly tailored to the resource-intensive throughput demands of modern computational biology.",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07491",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 18,
+          "engineering_utility": 24,
+          "timeliness_rarity": 20
+        },
+        "score_reason": "提供十二条设计AI驱动HPC工作流的实用技巧，涵盖容器化、作业阵列、反馈循环等，直接指导AI产品与Agent工程化，内容虽非全新但适配基础模型时代，技巧可立即集成实施，时效性高。",
+        "one_sentence_summary": "该论文面向研究人员提供十二条实用建议，涵盖容器化、作业阵列、反馈循环和小文件I/O优化等，用于设计高效、可扩展且可复现的AI驱动高性能计算工作流，尤其适用于计算生物学等资源密集型场景。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 18,
+        "engineering_utility": 24,
+        "timeliness_rarity": 20
+      },
+      "score_total": 84,
+      "score_reason": "提供十二条设计AI驱动HPC工作流的实用技巧，涵盖容器化、作业阵列、反馈循环等，直接指导AI产品与Agent工程化，内容虽非全新但适配基础模型时代，技巧可立即集成实施，时效性高。",
+      "one_sentence_summary": "该论文面向研究人员提供十二条实用建议，涵盖容器化、作业阵列、反馈循环和小文件I/O优化等，用于设计高效、可扩展且可复现的AI驱动高性能计算工作流，尤其适用于计算生物学等资源密集型场景。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07451",
+      "arxiv_id": "2606.07451",
+      "title": "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment",
+      "url": "https://arxiv.org/abs/2606.07451",
+      "published_at": "2026-06-05T16:54:40Z",
+      "publish_date": "2026-06-05",
+      "description": "Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we use sparse autoencoders to disentangle image embeddings and train a masking module to selectively reconstruct the embedding based on a given caption. In a controlled setup with synthetic captions, we show that TEVI is effective at preserving caption-described attributes while discarding others. By applying TEVI to CLIP models trained on natural images, we further achieve improved retrieval performance across coarse-grained short-caption (MS COCO, Flickr) and fine-grained long-caption (IIW, DOCCI) benchmarks, with stronger gains on richer captions, and improved robustness on the RoCOCO benchmark.",
+      "summary": "Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we use sparse autoencoders to disentangle image embeddings and train a masking module to selectively reconstruct the embedding based on a given caption. In a controlled setup with synthetic captions, we show that TEVI is effective at preserving caption-described attributes while discarding others. By applying TEVI to CLIP models trained on natural images, we further achieve improved retrieval performance across coarse-grained short-caption (MS COCO, Flickr) and fine-grained long-caption (IIW, DOCCI) benchmarks, with stronger gains on richer captions, and improved robustness on the RoCOCO benchmark.",
+      "abstract": "Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we use sparse autoencoders to disentangle image embeddings and train a masking module to selectively reconstruct the embedding based on a given caption. In a controlled setup with synthetic captions, we show that TEVI is effective at preserving caption-described attributes while discarding others. By applying TEVI to CLIP models trained on natural images, we further achieve improved retrieval performance across coarse-grained short-caption (MS COCO, Flickr) and fine-grained long-caption (IIW, DOCCI) benchmarks, with stronger gains on richer captions, and improved robustness on the RoCOCO benchmark.",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07451",
+        "score_detail": {
+          "application_relevance": 18,
+          "new_signal": 17,
+          "engineering_utility": 19,
+          "timeliness_rarity": 15
+        },
+        "score_reason": "论文提出基于稀疏自编码器的文本条件视觉表示编辑方法，可改善视觉-语言对齐并提升检索性能，对多模态产品有借鉴意义，但主题方向较为常规。",
+        "one_sentence_summary": "TEVI提出一种基于稀疏自编码器的文本条件视觉表示编辑方法，通过选择性重建图像嵌入来改善视觉-语言对齐，在多项跨度检索基准上取得提升，尤其在长标题上增益更明显。"
+      },
+      "score_detail": {
+        "application_relevance": 18,
+        "new_signal": 17,
+        "engineering_utility": 19,
+        "timeliness_rarity": 15
+      },
+      "score_total": 69,
+      "score_reason": "论文提出基于稀疏自编码器的文本条件视觉表示编辑方法，可改善视觉-语言对齐并提升检索性能，对多模态产品有借鉴意义，但主题方向较为常规。",
+      "one_sentence_summary": "TEVI提出一种基于稀疏自编码器的文本条件视觉表示编辑方法，通过选择性重建图像嵌入来改善视觉-语言对齐，在多项跨度检索基准上取得提升，尤其在长标题上增益更明显。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07437",
+      "arxiv_id": "2606.07437",
+      "title": "Re-imagining ISO 26262 in the Age of Autonomous Vehicles: Enhancing Controllability through Transferability and Predictability",
+      "url": "https://arxiv.org/abs/2606.07437",
+      "published_at": "2026-06-05T16:35:58Z",
+      "publish_date": "2026-06-05",
+      "description": "The ISO 26262 standard defines functional safety for road vehicles through risk assessments based on Severity, Exposure, and Controllability, grounded in a human-driven vehicle paradigm. In the context of autonomous vehicles (AVs), the absence of a human driver necessitates revisiting these principles. This paper decomposes the Controllability placeholder into two auditable evidence dimensions of ISO 26262 by introducing two measurable sub-concepts: Transferability and Predictability. Transferability extends Controllability to capture AV systems' ability to hand off control to dedicated fallback safety mechanisms, while Predictability captures how easily external agents can anticipate AV behavior. Predictability is formally defined from human-robot interaction-inspired principles, and a mathematical framework is provided to quantify it. A designed-versus-achievable gap is introduced to distinguish architectural fallback claims from scene-conditioned achievable fallback capability. The proposed metrics align with ISO 26262 and ISO/PAS 21448 (SOTIF), rendering fallback and interaction claims falsifiable and traceable across ODD slices. These dimensions complement rather than replace existing standards, and the enhancements preserve the structure of ISO 26262 while extending its applicability to driverless automated systems operating at SAE Levels 4 and 5.",
+      "summary": "The ISO 26262 standard defines functional safety for road vehicles through risk assessments based on Severity, Exposure, and Controllability, grounded in a human-driven vehicle paradigm. In the context of autonomous vehicles (AVs), the absence of a human driver necessitates revisiting these principles. This paper decomposes the Controllability placeholder into two auditable evidence dimensions of ISO 26262 by introducing two measurable sub-concepts: Transferability and Predictability. Transferability extends Controllability to capture AV systems' ability to hand off control to dedicated fallback safety mechanisms, while Predictability captures how easily external agents can anticipate AV behavior. Predictability is formally defined from human-robot interaction-inspired principles, and a mathematical framework is provided to quantify it. A designed-versus-achievable gap is introduced to distinguish architectural fallback claims from scene-conditioned achievable fallback capability. The proposed metrics align with ISO 26262 and ISO/PAS 21448 (SOTIF), rendering fallback and interaction claims falsifiable and traceable across ODD slices. These dimensions complement rather than replace existing standards, and the enhancements preserve the structure of ISO 26262 while extending its applicability to driverless automated systems operating at SAE Levels 4 and 5.",
+      "abstract": "The ISO 26262 standard defines functional safety for road vehicles through risk assessments based on Severity, Exposure, and Controllability, grounded in a human-driven vehicle paradigm. In the context of autonomous vehicles (AVs), the absence of a human driver necessitates revisiting these principles. This paper decomposes the Controllability placeholder into two auditable evidence dimensions of ISO 26262 by introducing two measurable sub-concepts: Transferability and Predictability. Transferability extends Controllability to capture AV systems' ability to hand off control to dedicated fallback safety mechanisms, while Predictability captures how easily external agents can anticipate AV behavior. Predictability is formally defined from human-robot interaction-inspired principles, and a mathematical framework is provided to quantify it. A designed-versus-achievable gap is introduced to distinguish architectural fallback claims from scene-conditioned achievable fallback capability. The proposed metrics align with ISO 26262 and ISO/PAS 21448 (SOTIF), rendering fallback and interaction claims falsifiable and traceable across ODD slices. These dimensions complement rather than replace existing standards, and the enhancements preserve the structure of ISO 26262 while extending its applicability to driverless automated systems operating at SAE Levels 4 and 5.",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.SE",
+        "eess.SY"
+      ],
+      "api_categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.SE",
+        "eess.SY"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07437",
+        "score_detail": {
+          "application_relevance": 20,
+          "new_signal": 18,
+          "engineering_utility": 15,
+          "timeliness_rarity": 19
+        },
+        "score_reason": "论文针对自动驾驶汽车，将ISO 26262中的可控性概念分解为可转移性和可预测性，并提供数学框架量化可预测性。该工作为高级别自动驾驶的安全工程提供了可审计的指标，对AI安全产品设计有重要参考价值，但工程实现需进一步落地。",
+        "one_sentence_summary": "本文针对自动驾驶汽车，将ISO 26262中的可控性分解为可转移性（系统向安全机制移交控制的能力）和可预测性（外部智能体对车辆行为的可预期程度），并提出量化方法及设计-实现差距概念，使功能安全声明可验证可追踪，扩展标准至L4/L5。"
+      },
+      "score_detail": {
+        "application_relevance": 20,
+        "new_signal": 18,
+        "engineering_utility": 15,
+        "timeliness_rarity": 19
+      },
+      "score_total": 72,
+      "score_reason": "论文针对自动驾驶汽车，将ISO 26262中的可控性概念分解为可转移性和可预测性，并提供数学框架量化可预测性。该工作为高级别自动驾驶的安全工程提供了可审计的指标，对AI安全产品设计有重要参考价值，但工程实现需进一步落地。",
+      "one_sentence_summary": "本文针对自动驾驶汽车，将ISO 26262中的可控性分解为可转移性（系统向安全机制移交控制的能力）和可预测性（外部智能体对车辆行为的可预期程度），并提出量化方法及设计-实现差距概念，使功能安全声明可验证可追踪，扩展标准至L4/L5。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07412",
+      "arxiv_id": "2606.07412",
+      "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
+      "url": "https://arxiv.org/abs/2606.07412",
+      "published_at": "2026-06-05T16:00:17Z",
+      "publish_date": "2026-06-05",
+      "description": "LLM-driven software engineering agents have become a central testbed for real-world language-model capability, yet their training remains limited by the availability of high-quality SWE tasks. Existing synthetic data methods typically create tasks through fixed mutation or bug-injection procedures, making the resulting distributions largely independent of the agent's own weaknesses and training progress. We introduce Socratic-SWE, a closed-loop self-evolution framework that reuses the agent's historical solving traces as a source of training signal. Rather than treating traces only as evidence for reward computation, Socratic-SWE distills them into structured agent skills that summarize recurring failures and effective repair patterns. These skills then guide the generation of targeted repair tasks in real repositories. Candidate tasks are checked through execution-based validation and scored with a solver-gradient alignment reward, so that the retained tasks are both verifiable and useful for improving the Solver. The updated Solver produces new traces, enabling the task curriculum to adapt over successive rounds. Across SWE-bench Verified, SWE-bench Lite, SWE-bench Pro, and Terminal-Bench 2.0, Socratic-SWE consistently improves over self-evolving baselines under the same compute budget, reaching 50.40% on SWE-bench Verified after three iterations. These results suggest that solving traces can serve as a scalable substrate for self-evolving SWE agents.",
+      "summary": "LLM-driven software engineering agents have become a central testbed for real-world language-model capability, yet their training remains limited by the availability of high-quality SWE tasks. Existing synthetic data methods typically create tasks through fixed mutation or bug-injection procedures, making the resulting distributions largely independent of the agent's own weaknesses and training progress. We introduce Socratic-SWE, a closed-loop self-evolution framework that reuses the agent's historical solving traces as a source of training signal. Rather than treating traces only as evidence for reward computation, Socratic-SWE distills them into structured agent skills that summarize recurring failures and effective repair patterns. These skills then guide the generation of targeted repair tasks in real repositories. Candidate tasks are checked through execution-based validation and scored with a solver-gradient alignment reward, so that the retained tasks are both verifiable and useful for improving the Solver. The updated Solver produces new traces, enabling the task curriculum to adapt over successive rounds. Across SWE-bench Verified, SWE-bench Lite, SWE-bench Pro, and Terminal-Bench 2.0, Socratic-SWE consistently improves over self-evolving baselines under the same compute budget, reaching 50.40% on SWE-bench Verified after three iterations. These results suggest that solving traces can serve as a scalable substrate for self-evolving SWE agents.",
+      "abstract": "LLM-driven software engineering agents have become a central testbed for real-world language-model capability, yet their training remains limited by the availability of high-quality SWE tasks. Existing synthetic data methods typically create tasks through fixed mutation or bug-injection procedures, making the resulting distributions largely independent of the agent's own weaknesses and training progress. We introduce Socratic-SWE, a closed-loop self-evolution framework that reuses the agent's historical solving traces as a source of training signal. Rather than treating traces only as evidence for reward computation, Socratic-SWE distills them into structured agent skills that summarize recurring failures and effective repair patterns. These skills then guide the generation of targeted repair tasks in real repositories. Candidate tasks are checked through execution-based validation and scored with a solver-gradient alignment reward, so that the retained tasks are both verifiable and useful for improving the Solver. The updated Solver produces new traces, enabling the task curriculum to adapt over successive rounds. Across SWE-bench Verified, SWE-bench Lite, SWE-bench Pro, and Terminal-Bench 2.0, Socratic-SWE consistently improves over self-evolving baselines under the same compute budget, reaching 50.40% on SWE-bench Verified after three iterations. These results suggest that solving traces can serve as a scalable substrate for self-evolving SWE agents.",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07412",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "Socratic-SWE闭环自进化框架将历史解决轨迹提炼为结构化技能，据此生成针对性修复任务，通过执行验证和求解器梯度对齐奖励迭代提升，在SWE-bench Verified上达到50.40%，为代码代理训练提供了新范式。",
+        "one_sentence_summary": "提出Socratic-SWE框架，从代码代理的历史解决轨迹中提炼结构化技能，以生成针对性修复任务并迭代自我进化，在SWE-bench Verified上达到50.40%的准确率。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 92,
+      "score_reason": "Socratic-SWE闭环自进化框架将历史解决轨迹提炼为结构化技能，据此生成针对性修复任务，通过执行验证和求解器梯度对齐奖励迭代提升，在SWE-bench Verified上达到50.40%，为代码代理训练提供了新范式。",
+      "one_sentence_summary": "提出Socratic-SWE框架，从代码代理的历史解决轨迹中提炼结构化技能，以生成针对性修复任务并迭代自我进化，在SWE-bench Verified上达到50.40%的准确率。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07402",
+      "arxiv_id": "2606.07402",
+      "title": "M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions",
+      "url": "https://arxiv.org/abs/2606.07402",
+      "published_at": "2026-06-05T15:44:18Z",
+      "publish_date": "2026-06-05",
+      "description": "Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward content, evaluating neither reasoning over authentic multimodal file interaction nor the interpretation of concealed user information. We therefore introduce M$^3$Exam, a query-centric multimodal conversational memory benchmark built on realistic user-agent interaction, with multi-dimensional evaluation spanning cross-modal grounding and implicit information inference. Benchmarking MLLMs and memory systems reveals persistent gaps in cross-modal grounding, cross session reasoning, and the efficiency cost of accumulating multimodal context. We further propose M$^3$Proctor, a multimodal memory method that detects query modality bias and consumes raw visual sources only on demand, improving accuracy by 13% while cutting index-construction time and retrieved tokens by over 70%.",
+      "summary": "Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward content, evaluating neither reasoning over authentic multimodal file interaction nor the interpretation of concealed user information. We therefore introduce M$^3$Exam, a query-centric multimodal conversational memory benchmark built on realistic user-agent interaction, with multi-dimensional evaluation spanning cross-modal grounding and implicit information inference. Benchmarking MLLMs and memory systems reveals persistent gaps in cross-modal grounding, cross session reasoning, and the efficiency cost of accumulating multimodal context. We further propose M$^3$Proctor, a multimodal memory method that detects query modality bias and consumes raw visual sources only on demand, improving accuracy by 13% while cutting index-construction time and retrieved tokens by over 70%.",
+      "abstract": "Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward content, evaluating neither reasoning over authentic multimodal file interaction nor the interpretation of concealed user information. We therefore introduce M$^3$Exam, a query-centric multimodal conversational memory benchmark built on realistic user-agent interaction, with multi-dimensional evaluation spanning cross-modal grounding and implicit information inference. Benchmarking MLLMs and memory systems reveals persistent gaps in cross-modal grounding, cross session reasoning, and the efficiency cost of accumulating multimodal context. We further propose M$^3$Proctor, a multimodal memory method that detects query modality bias and consumes raw visual sources only on demand, improving accuracy by 13% while cutting index-construction time and retrieved tokens by over 70%.",
+      "categories": [
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07402",
+        "score_detail": {
+          "application_relevance": 24,
+          "new_signal": 23,
+          "engineering_utility": 24,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "M³Exam基准直接针对真实用户-代理交互中的多模态记忆挑战，覆盖跨模态推理与隐含信息，提出的M³Proctor方法高效且可集成，契合当前代理记忆优化趋势。",
+        "one_sentence_summary": "M³Exam构建了一个面向真实用户-代理交互的多模态对话记忆基准，评估跨模态推理与隐含信息理解，并提出M³Proctor按需使用视觉源的方法，实现了13%的准确率提升和超过70%的资源节省。"
+      },
+      "score_detail": {
+        "application_relevance": 24,
+        "new_signal": 23,
+        "engineering_utility": 24,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "M³Exam基准直接针对真实用户-代理交互中的多模态记忆挑战，覆盖跨模态推理与隐含信息，提出的M³Proctor方法高效且可集成，契合当前代理记忆优化趋势。",
+      "one_sentence_summary": "M³Exam构建了一个面向真实用户-代理交互的多模态对话记忆基准，评估跨模态推理与隐含信息理解，并提出M³Proctor按需使用视觉源的方法，实现了13%的准确率提升和超过70%的资源节省。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07393",
+      "arxiv_id": "2606.07393",
+      "title": "Is US Defense Acquisition Ready to Acquire AI-Enabled Capabilities? Assessing the DoD Software Acquisition Pathway Through a Scenario-Based Policy Analysis",
+      "url": "https://arxiv.org/abs/2606.07393",
+      "published_at": "2026-06-05T15:30:48Z",
+      "publish_date": "2026-06-05",
+      "description": "As AI systems transition from experimental prototypes to mission-critical tools, their dependence on dynamic data, evolving models, and governance raises questions about whether existing acquisition pathways can keep pace. The U.S. Department of Defense has modernized its acquisition processes through the Adaptive Acquisition Framework, with the Software Acquisition Pathway (SWP) serving as the primary mechanism for acquiring software-intensive capabilities. This paper evaluates whether SWP is sufficient to address the unique demands of AI acquisition. In this work, we perform a scenario-based evaluation that traces a notional AI-enabled program through key SWP planning activities to assess how policy translates into program artifacts and decisions. We use Policy Scenario Analysis to examine whether the SWP-centered governance stack provides sufficient actionable support for AI acquisition. The governance stack provides a viable foundation for iterative delivery and AI testing. However, we identify a recurring actionability problem in the core guidance. AI-specific controls for data provenance, lifecycle management, and human oversight remain distributed across supplemental documents rather than embedded in the program-facing mechanisms through which SWP is executed. This disconnect leaves program offices reliant on inconsistent local interpretation. We conclude by recommending an AI-supporting sub-path and targeted artifact refinements to better bridge this policy-to-artifact gap.",
+      "summary": "As AI systems transition from experimental prototypes to mission-critical tools, their dependence on dynamic data, evolving models, and governance raises questions about whether existing acquisition pathways can keep pace. The U.S. Department of Defense has modernized its acquisition processes through the Adaptive Acquisition Framework, with the Software Acquisition Pathway (SWP) serving as the primary mechanism for acquiring software-intensive capabilities. This paper evaluates whether SWP is sufficient to address the unique demands of AI acquisition. In this work, we perform a scenario-based evaluation that traces a notional AI-enabled program through key SWP planning activities to assess how policy translates into program artifacts and decisions. We use Policy Scenario Analysis to examine whether the SWP-centered governance stack provides sufficient actionable support for AI acquisition. The governance stack provides a viable foundation for iterative delivery and AI testing. However, we identify a recurring actionability problem in the core guidance. AI-specific controls for data provenance, lifecycle management, and human oversight remain distributed across supplemental documents rather than embedded in the program-facing mechanisms through which SWP is executed. This disconnect leaves program offices reliant on inconsistent local interpretation. We conclude by recommending an AI-supporting sub-path and targeted artifact refinements to better bridge this policy-to-artifact gap.",
+      "abstract": "As AI systems transition from experimental prototypes to mission-critical tools, their dependence on dynamic data, evolving models, and governance raises questions about whether existing acquisition pathways can keep pace. The U.S. Department of Defense has modernized its acquisition processes through the Adaptive Acquisition Framework, with the Software Acquisition Pathway (SWP) serving as the primary mechanism for acquiring software-intensive capabilities. This paper evaluates whether SWP is sufficient to address the unique demands of AI acquisition. In this work, we perform a scenario-based evaluation that traces a notional AI-enabled program through key SWP planning activities to assess how policy translates into program artifacts and decisions. We use Policy Scenario Analysis to examine whether the SWP-centered governance stack provides sufficient actionable support for AI acquisition. The governance stack provides a viable foundation for iterative delivery and AI testing. However, we identify a recurring actionability problem in the core guidance. AI-specific controls for data provenance, lifecycle management, and human oversight remain distributed across supplemental documents rather than embedded in the program-facing mechanisms through which SWP is executed. This disconnect leaves program offices reliant on inconsistent local interpretation. We conclude by recommending an AI-supporting sub-path and targeted artifact refinements to better bridge this policy-to-artifact gap.",
+      "categories": [
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 10,
+        "engineering_utility": 19,
+        "timeliness_rarity": 9
+      },
+      "score_total": 63,
+      "score_reason": "evaluation signal, engineering utility",
+      "one_sentence_summary": "这篇论文提出一个可复用框架，面向大模型能力评测；通过实验或基准测试验证方法是否真的改善任务表现；用途是给模型、agent 或工具链提供更可复现的横向比较标准。",
+      "score_source": "rules",
+      "if_pushed": 0,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07379",
+      "arxiv_id": "2606.07379",
+      "title": "Do Coding Agents Deceive Us? Detecting and Preventing Cheating via Capped Evaluation with Randomized Tests",
+      "url": "https://arxiv.org/abs/2606.07379",
+      "published_at": "2026-06-05T15:20:37Z",
+      "publish_date": "2026-06-05",
+      "description": "A growing failure mode in agent evaluation and training is that models can achieve high evaluation scores by exploiting shortcuts instead of solving the intended task, producing deceptive performance. This makes evaluation scores unreliable as measures of true task-solving ability. We propose CapCode, a framework for constructing coding datasets with randomized tests whose best achievable non-cheating performance is deliberately capped below one. This capped-performance design gives evaluation scores a clearer interpretation: scores substantially above the cap are implausible and therefore provide evidence of cheating. To prevent cheating, we propose CapReward, a reward design based on the CapCode principle to discourage optimization beyond the cap. Experiments across multiple datasets show that CapCode detects cheating while preserving performance ranking of models, and CapReward reduces cheating behavior, yielding models that better follow the intended task specification.",
+      "summary": "A growing failure mode in agent evaluation and training is that models can achieve high evaluation scores by exploiting shortcuts instead of solving the intended task, producing deceptive performance. This makes evaluation scores unreliable as measures of true task-solving ability. We propose CapCode, a framework for constructing coding datasets with randomized tests whose best achievable non-cheating performance is deliberately capped below one. This capped-performance design gives evaluation scores a clearer interpretation: scores substantially above the cap are implausible and therefore provide evidence of cheating. To prevent cheating, we propose CapReward, a reward design based on the CapCode principle to discourage optimization beyond the cap. Experiments across multiple datasets show that CapCode detects cheating while preserving performance ranking of models, and CapReward reduces cheating behavior, yielding models that better follow the intended task specification.",
+      "abstract": "A growing failure mode in agent evaluation and training is that models can achieve high evaluation scores by exploiting shortcuts instead of solving the intended task, producing deceptive performance. This makes evaluation scores unreliable as measures of true task-solving ability. We propose CapCode, a framework for constructing coding datasets with randomized tests whose best achievable non-cheating performance is deliberately capped below one. This capped-performance design gives evaluation scores a clearer interpretation: scores substantially above the cap are implausible and therefore provide evidence of cheating. To prevent cheating, we propose CapReward, a reward design based on the CapCode principle to discourage optimization beyond the cap. Experiments across multiple datasets show that CapCode detects cheating while preserving performance ranking of models, and CapReward reduces cheating behavior, yielding models that better follow the intended task specification.",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "stat.ME"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "stat.ME"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07379",
+        "score_detail": {
+          "application_relevance": 25,
+          "new_signal": 24,
+          "engineering_utility": 22,
+          "timeliness_rarity": 23
+        },
+        "score_reason": "该工作直接应对代码代理评测中的欺骗性表现问题，通过CapCode设定非作弊性能上限来检测作弊，CapReward则防止模型走捷径，为构建可靠基准和训练提供原则性方法。",
+        "one_sentence_summary": "提出CapCode框架，通过随机测试将非作弊性能上限有意设定在满分以下以检测欺骗，并设计CapReward奖励机制防止模型走捷径，提升代码代理评测的可靠性。"
+      },
+      "score_detail": {
+        "application_relevance": 25,
+        "new_signal": 24,
+        "engineering_utility": 22,
+        "timeliness_rarity": 23
+      },
+      "score_total": 94,
+      "score_reason": "该工作直接应对代码代理评测中的欺骗性表现问题，通过CapCode设定非作弊性能上限来检测作弊，CapReward则防止模型走捷径，为构建可靠基准和训练提供原则性方法。",
+      "one_sentence_summary": "提出CapCode框架，通过随机测试将非作弊性能上限有意设定在满分以下以检测欺骗，并设计CapReward奖励机制防止模型走捷径，提升代码代理评测的可靠性。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07363",
+      "arxiv_id": "2606.07363",
+      "title": "On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus",
+      "url": "https://arxiv.org/abs/2606.07363",
+      "published_at": "2026-06-05T15:08:32Z",
+      "publish_date": "2026-06-05",
+      "description": "High-quality smart contract auditing datasets are crucial for evaluating security tools and advancing smart contract security research. Two major limitations of existing datasets are the manual-induced scalability bottleneck and the deficiency in data granularity and diversity. To address these limitations, we propose GiANT, an automated framework designed to curate smart contract auditing datasets by distilling vulnerability insights from real-world auditing reports. GiANT employs a divide-and-conquer strategy coupled with the Chain-of-Thought technique to extract structured vulnerability information from Code4rena reports, followed by an LLM-as-a-judge mechanism to perform rigorous quality assurance. To evaluate GiANT's effectiveness, we run it on 388 real-world audit reports and generate the GiAnt Corpus comprising 7,711 vulnerability findings across five severity levels. Manual assessment of the dataset demonstrates exceptional reliability in information extraction, achieving a mean quality score of $4.76\\pm0.37$ (out of 5) with inter-rater agreement $κ$ of 0.88. We further validate the practicality of our dataset by benchmarking 4 state-of-the-art LLMs on vulnerability detection, code summarization, mitigation recommendation, and automated gas optimization tasks, to establish performance baselines, thereby providing a valuable data foundation for future research in automated smart contract auditing.",
+      "summary": "High-quality smart contract auditing datasets are crucial for evaluating security tools and advancing smart contract security research. Two major limitations of existing datasets are the manual-induced scalability bottleneck and the deficiency in data granularity and diversity. To address these limitations, we propose GiANT, an automated framework designed to curate smart contract auditing datasets by distilling vulnerability insights from real-world auditing reports. GiANT employs a divide-and-conquer strategy coupled with the Chain-of-Thought technique to extract structured vulnerability information from Code4rena reports, followed by an LLM-as-a-judge mechanism to perform rigorous quality assurance. To evaluate GiANT's effectiveness, we run it on 388 real-world audit reports and generate the GiAnt Corpus comprising 7,711 vulnerability findings across five severity levels. Manual assessment of the dataset demonstrates exceptional reliability in information extraction, achieving a mean quality score of $4.76\\pm0.37$ (out of 5) with inter-rater agreement $κ$ of 0.88. We further validate the practicality of our dataset by benchmarking 4 state-of-the-art LLMs on vulnerability detection, code summarization, mitigation recommendation, and automated gas optimization tasks, to establish performance baselines, thereby providing a valuable data foundation for future research in automated smart contract auditing.",
+      "abstract": "High-quality smart contract auditing datasets are crucial for evaluating security tools and advancing smart contract security research. Two major limitations of existing datasets are the manual-induced scalability bottleneck and the deficiency in data granularity and diversity. To address these limitations, we propose GiANT, an automated framework designed to curate smart contract auditing datasets by distilling vulnerability insights from real-world auditing reports. GiANT employs a divide-and-conquer strategy coupled with the Chain-of-Thought technique to extract structured vulnerability information from Code4rena reports, followed by an LLM-as-a-judge mechanism to perform rigorous quality assurance. To evaluate GiANT's effectiveness, we run it on 388 real-world audit reports and generate the GiAnt Corpus comprising 7,711 vulnerability findings across five severity levels. Manual assessment of the dataset demonstrates exceptional reliability in information extraction, achieving a mean quality score of $4.76\\pm0.37$ (out of 5) with inter-rater agreement $κ$ of 0.88. We further validate the practicality of our dataset by benchmarking 4 state-of-the-art LLMs on vulnerability detection, code summarization, mitigation recommendation, and automated gas optimization tasks, to establish performance baselines, thereby providing a valuable data foundation for future research in automated smart contract auditing.",
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "api_categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07363",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 20,
+          "engineering_utility": 20,
+          "timeliness_rarity": 18
+        },
+        "score_reason": "论文提出了GiANT框架，从审计报告中自动生成智能合约漏洞数据集，并基准测试了LLM在漏洞检测等任务上的性能。该工作直接推动自动化安全审计工具的开发，具有明确的产品和工程价值，数据集新颖且实用。",
+        "one_sentence_summary": "本文提出GiANT框架，利用思维链和LLM评判从388份Code4rena审计报告中自动提取7711条漏洞，构建GiAnt Corpus，并在漏洞检测、代码摘要等四项任务上对4个大模型进行基准评测，为智能合约自动化审计提供数据基础。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 20,
+        "engineering_utility": 20,
+        "timeliness_rarity": 18
+      },
+      "score_total": 80,
+      "score_reason": "论文提出了GiANT框架，从审计报告中自动生成智能合约漏洞数据集，并基准测试了LLM在漏洞检测等任务上的性能。该工作直接推动自动化安全审计工具的开发，具有明确的产品和工程价值，数据集新颖且实用。",
+      "one_sentence_summary": "本文提出GiANT框架，利用思维链和LLM评判从388份Code4rena审计报告中自动提取7711条漏洞，构建GiAnt Corpus，并在漏洞检测、代码摘要等四项任务上对4个大模型进行基准评测，为智能合约自动化审计提供数据基础。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07362",
+      "arxiv_id": "2606.07362",
+      "title": "Breaking the Ice: Analyzing Cold Start Latency in vLLM",
+      "url": "https://arxiv.org/abs/2606.07362",
+      "published_at": "2026-06-05T15:07:22Z",
+      "publish_date": "2026-06-05",
+      "description": "As scalable inference services become popular, the cold start latency of an inference engine becomes important. Today, vLLM has evolved into the de facto inference engine of choice for many inference workloads. Although popular, due to its complexity and rapid evolution, there has not been a systematic study of its startup latency. With major architectural innovations such as the V1 API and the introduction of torch.compile, this paper presents the first detailed performance characterization of vLLM startup latency. We break down the startup process into six foundational steps and demonstrate that it is predominantly CPU bound. Each step exhibits consistent and interpretable scaling trends with respect to model-level and system-level parameters, enabling fine-grained attribution of latency sources. Building on these insights, we develop a lightweight analytical model that accurately predicts vLLM startup latency for a given hardware configuration, providing actionable guidance for resource planning in large-scale inference environments. All benchmarking datasets, analysis tools, and prediction scripts are open sourced at https://github.com/upb-cn/vllm-startup-profiler.",
+      "summary": "As scalable inference services become popular, the cold start latency of an inference engine becomes important. Today, vLLM has evolved into the de facto inference engine of choice for many inference workloads. Although popular, due to its complexity and rapid evolution, there has not been a systematic study of its startup latency. With major architectural innovations such as the V1 API and the introduction of torch.compile, this paper presents the first detailed performance characterization of vLLM startup latency. We break down the startup process into six foundational steps and demonstrate that it is predominantly CPU bound. Each step exhibits consistent and interpretable scaling trends with respect to model-level and system-level parameters, enabling fine-grained attribution of latency sources. Building on these insights, we develop a lightweight analytical model that accurately predicts vLLM startup latency for a given hardware configuration, providing actionable guidance for resource planning in large-scale inference environments. All benchmarking datasets, analysis tools, and prediction scripts are open sourced at https://github.com/upb-cn/vllm-startup-profiler.",
+      "abstract": "As scalable inference services become popular, the cold start latency of an inference engine becomes important. Today, vLLM has evolved into the de facto inference engine of choice for many inference workloads. Although popular, due to its complexity and rapid evolution, there has not been a systematic study of its startup latency. With major architectural innovations such as the V1 API and the introduction of torch.compile, this paper presents the first detailed performance characterization of vLLM startup latency. We break down the startup process into six foundational steps and demonstrate that it is predominantly CPU bound. Each step exhibits consistent and interpretable scaling trends with respect to model-level and system-level parameters, enabling fine-grained attribution of latency sources. Building on these insights, we develop a lightweight analytical model that accurately predicts vLLM startup latency for a given hardware configuration, providing actionable guidance for resource planning in large-scale inference environments. All benchmarking datasets, analysis tools, and prediction scripts are open sourced at https://github.com/upb-cn/vllm-startup-profiler.",
+      "categories": [
+        "cs.LG"
+      ],
+      "api_categories": [
+        "cs.LG"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07362",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 20,
+          "engineering_utility": 23,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "首次系统分析vLLM冷启动延迟，拆解为CPU密集型六步骤并构建解析预测模型，直接关联推理服务扩展性与部署规划，开源工具可集成，是下热门引擎的稀缺分析。",
+        "one_sentence_summary": "该论文首次系统分析了vLLM推理引擎的冷启动延迟，将其分解为六个CPU密集型步骤并建立解析模型以预测不同硬件配置下的启动时间，并提供开源工具，可为大规模推理环境的资源规划提供指导。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 20,
+        "engineering_utility": 23,
+        "timeliness_rarity": 22
+      },
+      "score_total": 88,
+      "score_reason": "首次系统分析vLLM冷启动延迟，拆解为CPU密集型六步骤并构建解析预测模型，直接关联推理服务扩展性与部署规划，开源工具可集成，是下热门引擎的稀缺分析。",
+      "one_sentence_summary": "该论文首次系统分析了vLLM推理引擎的冷启动延迟，将其分解为六个CPU密集型步骤并建立解析模型以预测不同硬件配置下的启动时间，并提供开源工具，可为大规模推理环境的资源规划提供指导。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07314",
+      "arxiv_id": "2606.07314",
+      "title": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+      "url": "https://arxiv.org/abs/2606.07314",
+      "published_at": "2026-06-05T14:34:46Z",
+      "publish_date": "2026-06-05",
+      "description": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+      "summary": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+      "abstract": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+      "categories": [
+        "cs.SE",
+        "cs.ET",
+        "quant-ph"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.ET",
+        "quant-ph"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07314",
+        "score_detail": {
+          "application_relevance": 15,
+          "new_signal": 18,
+          "engineering_utility": 14,
+          "timeliness_rarity": 16
+        },
+        "score_reason": "QBugLM针对量子软件调试这一新兴领域构建了多智能体基准框架，虽场景较窄但提供了LLM在该任务上的初步洞察，工程通用性有限，不过迭代反馈等发现仍有启发。",
+        "one_sentence_summary": "提出QBugLM多智能体框架，针对OpenQASM 3.0量子软件进行自动调试，评测LLM的检测与修复能力，发现迭代反馈至关重要且简单提示有时优于链式思考。"
+      },
+      "score_detail": {
+        "application_relevance": 15,
+        "new_signal": 18,
+        "engineering_utility": 14,
+        "timeliness_rarity": 16
+      },
+      "score_total": 63,
+      "score_reason": "QBugLM针对量子软件调试这一新兴领域构建了多智能体基准框架，虽场景较窄但提供了LLM在该任务上的初步洞察，工程通用性有限，不过迭代反馈等发现仍有启发。",
+      "one_sentence_summary": "提出QBugLM多智能体框架，针对OpenQASM 3.0量子软件进行自动调试，评测LLM的检测与修复能力，发现迭代反馈至关重要且简单提示有时优于链式思考。",
+      "score_source": "deepseek",
+      "if_pushed": 0,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": null,
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": null
+    },
+    {
+      "id": "arxiv:2606.07297",
+      "arxiv_id": "2606.07297",
+      "title": "SWE-Explore: Benchmarking How Coding Agents Explore Repositories",
+      "url": "https://arxiv.org/abs/2606.07297",
+      "published_at": "2026-06-05T14:08:27Z",
+      "publish_date": "2026-06-05",
+      "description": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents. Yet they usually treat coding tasks as a holistic, binary prediction problem (e.g., resolved or unresolved), neglecting fine-grained agent capabilities such as repository understanding, context retrieval, code localization, and bug diagnosis. In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. Given a repository and an issue, SWE-Explore asks an explorer to return a ranked list of relevant code regions under a fixed line budget. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories. For each instance, we derive line-level ground truth from independent agent trajectories that successfully solved the same issue, distilling the specific code regions their solution paths actually consulted. We evaluate exploration along coverage, ranking, and context-efficiency dimensions, showing that these metrics strongly track downstream repair behavior. Across a broad set of retrieval methods, general coding agents, and specialized localizers, we find that agentic explorers form a clear tier above classical retrieval. While file-level localization is already strong for modern methods, line-level coverage and efficient ranking remain the key axes differentiating state-of-the-art explorers.",
+      "summary": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents. Yet they usually treat coding tasks as a holistic, binary prediction problem (e.g., resolved or unresolved), neglecting fine-grained agent capabilities such as repository understanding, context retrieval, code localization, and bug diagnosis. In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. Given a repository and an issue, SWE-Explore asks an explorer to return a ranked list of relevant code regions under a fixed line budget. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories. For each instance, we derive line-level ground truth from independent agent trajectories that successfully solved the same issue, distilling the specific code regions their solution paths actually consulted. We evaluate exploration along coverage, ranking, and context-efficiency dimensions, showing that these metrics strongly track downstream repair behavior. Across a broad set of retrieval methods, general coding agents, and specialized localizers, we find that agentic explorers form a clear tier above classical retrieval. While file-level localization is already strong for modern methods, line-level coverage and efficient ranking remain the key axes differentiating state-of-the-art explorers.",
+      "abstract": "Repository-level coding benchmarks such as SWE-bench have driven a rapid surge in the capabilities of coding agents. Yet they usually treat coding tasks as a holistic, binary prediction problem (e.g., resolved or unresolved), neglecting fine-grained agent capabilities such as repository understanding, context retrieval, code localization, and bug diagnosis. In this paper, we introduce SWE-Explore, a benchmark that isolates the evaluation of repository exploration, a critical capability of coding agents. Given a repository and an issue, SWE-Explore asks an explorer to return a ranked list of relevant code regions under a fixed line budget. SWE-Explore covers 848 issues across 10 programming languages and 203 open-source repositories. For each instance, we derive line-level ground truth from independent agent trajectories that successfully solved the same issue, distilling the specific code regions their solution paths actually consulted. We evaluate exploration along coverage, ranking, and context-efficiency dimensions, showing that these metrics strongly track downstream repair behavior. Across a broad set of retrieval methods, general coding agents, and specialized localizers, we find that agentic explorers form a clear tier above classical retrieval. While file-level localization is already strong for modern methods, line-level coverage and efficient ranking remain the key axes differentiating state-of-the-art explorers.",
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "api_categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07297",
+        "score_detail": {
+          "application_relevance": 23,
+          "new_signal": 23,
+          "engineering_utility": 22,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "该基准针对代码代理的仓库探索能力进行细粒度评估，从成功轨迹中提取行级真值，提供覆盖度、排序和上下文效率等指标，与下游修复性能紧密相关，极具工程实用性。",
+        "one_sentence_summary": "提出了SWE-Explore基准，通过从成功修复轨迹中提取行级真值，在多语言仓库中评测代码代理的仓库探索能力，衡量覆盖度、排序与上下文效率，发现智能探索器优于传统检索方法。"
+      },
+      "score_detail": {
+        "application_relevance": 23,
+        "new_signal": 23,
+        "engineering_utility": 22,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "该基准针对代码代理的仓库探索能力进行细粒度评估，从成功轨迹中提取行级真值，提供覆盖度、排序和上下文效率等指标，与下游修复性能紧密相关，极具工程实用性。",
+      "one_sentence_summary": "提出了SWE-Explore基准，通过从成功修复轨迹中提取行级真值，在多语言仓库中评测代码代理的仓库探索能力，衡量覆盖度、排序与上下文效率，发现智能探索器优于传统检索方法。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
+    },
+    {
+      "id": "arxiv:2606.07289",
+      "arxiv_id": "2606.07289",
+      "title": "Closed-Form Spectral Regularization for Multi-Task Model Merging",
+      "url": "https://arxiv.org/abs/2606.07289",
+      "published_at": "2026-06-05T14:00:47Z",
+      "publish_date": "2026-06-05",
+      "description": "Model merging combines several independently fine-tuned experts into a single multi-task model without any training data, reducing the storage, serving, and decentralized-development costs of large foundation models. State-of-the-art merging methods formulate merging as a layer-wise quadratic interference minimization problem. Although this problem admits an exact closed-form pseudoinverse solution, that solution underperforms hundreds of iterations of gradient descent in practice. The iterative loop dominates the cost of the pipeline, yet its effectiveness has remained unexplained. We revisit this regime and show that the iterative solver does not primarily act as an optimizer; rather, it serves as an implicit spectral regularizer for an ill-posed normal equation, where small-eigenvalue directions of the per-layer interference operator amplify proxy noise. Building on this finding, we formalize multi-task model merging as a noisy linear inverse problem and propose a spectral filtering estimator parameterized by a per-direction filter. We instantiate this estimator with SWUDI, a closed-form method that combines a soft exponential filter, which matches the gradient-flow trajectory of iterative descent, with a hard top-K truncation that suppresses noise-amplifying small-eigenvalue directions. Furthermore, we propose SWUDI-A, an adaptive variant that replaces the global rank hyperparameter with per-layer rank rules, further improving robustness across architectures. Both variants share a single symmetric eigendecomposition per linear layer and require no training data or optimizer state. Across four general benchmarks and a multimodal merging benchmark spanning VQA, Geometry, Chart, OCR, Grounding, and modality merging, our proposed spectral solvers match or outperform state-of-the-art merging methods. Crucially, they reduce wall-clock time by 28-72x and peak GPU memory by up to 50%.",
+      "summary": "Model merging combines several independently fine-tuned experts into a single multi-task model without any training data, reducing the storage, serving, and decentralized-development costs of large foundation models. State-of-the-art merging methods formulate merging as a layer-wise quadratic interference minimization problem. Although this problem admits an exact closed-form pseudoinverse solution, that solution underperforms hundreds of iterations of gradient descent in practice. The iterative loop dominates the cost of the pipeline, yet its effectiveness has remained unexplained. We revisit this regime and show that the iterative solver does not primarily act as an optimizer; rather, it serves as an implicit spectral regularizer for an ill-posed normal equation, where small-eigenvalue directions of the per-layer interference operator amplify proxy noise. Building on this finding, we formalize multi-task model merging as a noisy linear inverse problem and propose a spectral filtering estimator parameterized by a per-direction filter. We instantiate this estimator with SWUDI, a closed-form method that combines a soft exponential filter, which matches the gradient-flow trajectory of iterative descent, with a hard top-K truncation that suppresses noise-amplifying small-eigenvalue directions. Furthermore, we propose SWUDI-A, an adaptive variant that replaces the global rank hyperparameter with per-layer rank rules, further improving robustness across architectures. Both variants share a single symmetric eigendecomposition per linear layer and require no training data or optimizer state. Across four general benchmarks and a multimodal merging benchmark spanning VQA, Geometry, Chart, OCR, Grounding, and modality merging, our proposed spectral solvers match or outperform state-of-the-art merging methods. Crucially, they reduce wall-clock time by 28-72x and peak GPU memory by up to 50%.",
+      "abstract": "Model merging combines several independently fine-tuned experts into a single multi-task model without any training data, reducing the storage, serving, and decentralized-development costs of large foundation models. State-of-the-art merging methods formulate merging as a layer-wise quadratic interference minimization problem. Although this problem admits an exact closed-form pseudoinverse solution, that solution underperforms hundreds of iterations of gradient descent in practice. The iterative loop dominates the cost of the pipeline, yet its effectiveness has remained unexplained. We revisit this regime and show that the iterative solver does not primarily act as an optimizer; rather, it serves as an implicit spectral regularizer for an ill-posed normal equation, where small-eigenvalue directions of the per-layer interference operator amplify proxy noise. Building on this finding, we formalize multi-task model merging as a noisy linear inverse problem and propose a spectral filtering estimator parameterized by a per-direction filter. We instantiate this estimator with SWUDI, a closed-form method that combines a soft exponential filter, which matches the gradient-flow trajectory of iterative descent, with a hard top-K truncation that suppresses noise-amplifying small-eigenvalue directions. Furthermore, we propose SWUDI-A, an adaptive variant that replaces the global rank hyperparameter with per-layer rank rules, further improving robustness across architectures. Both variants share a single symmetric eigendecomposition per linear layer and require no training data or optimizer state. Across four general benchmarks and a multimodal merging benchmark spanning VQA, Geometry, Chart, OCR, Grounding, and modality merging, our proposed spectral solvers match or outperform state-of-the-art merging methods. Crucially, they reduce wall-clock time by 28-72x and peak GPU memory by up to 50%.",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "api_categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "feed_title": "cs.AI updates on arXiv.org",
+      "source": "arxiv_api",
+      "ai_score": {
+        "id": "arxiv:2606.07289",
+        "score_detail": {
+          "application_relevance": 22,
+          "new_signal": 22,
+          "engineering_utility": 24,
+          "timeliness_rarity": 22
+        },
+        "score_reason": "提出闭式谱正则化方法SWUDI用于多任务模型合并，揭示迭代求解的隐式正则化本质，无需训练数据且加速28-72倍，直接服务于模型服务与存储优化，方法新颖、可复现性强，紧贴模型复用趋势。",
+        "one_sentence_summary": "针对多任务模型合并中的干扰最小化问题，该论文提出闭式谱正则化方法SWUDI及其自适应变体SWUDI-A，通过单次特征分解替代迭代求解，无需训练数据即可在多个基准上匹配或超越现有方法，并将计算时间缩短28至72倍，适用于基础模型的存储与服务优化。"
+      },
+      "score_detail": {
+        "application_relevance": 22,
+        "new_signal": 22,
+        "engineering_utility": 24,
+        "timeliness_rarity": 22
+      },
+      "score_total": 90,
+      "score_reason": "提出闭式谱正则化方法SWUDI用于多任务模型合并，揭示迭代求解的隐式正则化本质，无需训练数据且加速28-72倍，直接服务于模型服务与存储优化，方法新颖、可复现性强，紧贴模型复用趋势。",
+      "one_sentence_summary": "针对多任务模型合并中的干扰最小化问题，该论文提出闭式谱正则化方法SWUDI及其自适应变体SWUDI-A，通过单次特征分解替代迭代求解，无需训练数据即可在多个基准上匹配或超越现有方法，并将计算时间缩短28至72倍，适用于基础模型的存储与服务优化。",
+      "score_source": "deepseek",
+      "if_pushed": 1,
+      "added_at": "2026-06-08T06:20:28.674426+00:00",
+      "pushed_at": "2026-06-08T06:20:28.674426+00:00",
+      "source_run_id": "2026-06-08",
+      "pushed_run_id": "2026-06-08"
     }
   ]
 }
